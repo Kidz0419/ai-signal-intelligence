@@ -21,7 +21,6 @@
     ],
     "secondary_tags": [],
     "why_it_matters_cn": "模型更新与免费层分发同时发生，影响能力竞争与用户获得先进模型的门槛。",
-    "potential_impact_on_lianlian_cn": "需核验 Sol 的具体改进、Luna 免费额度、地区和默认模型策略。",
     "product_opportunity_cn": "跟踪模型能力、分发和成本是否同步变化。",
     "competitive_risk_cn": "头部模型以免费层扩大触达，会强化产品留存和生态优势。",
     "recommended_action": "investigate",
@@ -52,7 +51,8 @@
     "last_seen_date": "2026-08-12",
     "run_dates": [
       "2026-08-12"
-    ]
+    ],
+    "personal_relevance_cn": "需核验 Sol 的具体改进、Luna 免费额度、地区和默认模型策略。"
   },
   {
     "id": "2026-08-12-nvidia-nemotron35",
@@ -76,7 +76,6 @@
     ],
     "secondary_tags": [],
     "why_it_matters_cn": "专用 Agent 模型把竞争从通用聊天扩展到长任务成本、速度与可靠性。",
-    "potential_impact_on_lianlian_cn": "应使用真实长任务评估成功率、成本、工具调用稳定性和恢复能力。",
     "product_opportunity_cn": "建立长任务模型评测集。",
     "competitive_risk_cn": "专用模型若降低 Agent 成本，多模型产品会更具优势。",
     "recommended_action": "investigate",
@@ -107,7 +106,8 @@
     "last_seen_date": "2026-08-12",
     "run_dates": [
       "2026-08-12"
-    ]
+    ],
+    "personal_relevance_cn": "应使用真实长任务评估成功率、成本、工具调用稳定性和恢复能力。"
   },
   {
     "id": "2026-08-12-nvidia-switchyard",
@@ -131,7 +131,6 @@
     ],
     "secondary_tags": [],
     "why_it_matters_cn": "模型选择从静态配置变为运行时控制层，可同时优化能力、成本、延迟和数据边界。",
-    "potential_impact_on_lianlian_cn": "可按风险、预算、地域和能力标签选模，并配置回退与审计。",
     "product_opportunity_cn": "设计企业 Agent 动态模型路由。",
     "competitive_risk_cn": "模型编排层可能成为云和算力平台的新控制入口。",
     "recommended_action": "investigate",
@@ -162,7 +161,8 @@
     "last_seen_date": "2026-08-12",
     "run_dates": [
       "2026-08-12"
-    ]
+    ],
+    "personal_relevance_cn": "可按风险、预算、地域和能力标签选模，并配置回退与审计。"
   },
   {
     "id": "2026-08-12-openai-workspace-agents",
@@ -186,7 +186,6 @@
     ],
     "secondary_tags": [],
     "why_it_matters_cn": "Agent 进入共享工作空间，意味着上下文、权限、协作和治理从个人层升级到组织层。",
-    "potential_impact_on_lianlian_cn": "必须登录产品核验真实 UI 和完整执行链路。",
     "product_opportunity_cn": "拆解团队 Agent 的对象、动作、审批与日志。",
     "competitive_risk_cn": "工作空间可能成为企业 Agent 的关键分发入口。",
     "recommended_action": "investigate",
@@ -217,7 +216,8 @@
     "last_seen_date": "2026-08-12",
     "run_dates": [
       "2026-08-12"
-    ]
+    ],
+    "personal_relevance_cn": "必须登录产品核验真实 UI 和完整执行链路。"
   },
   {
     "id": "2026-08-12-xai-grok-bot-enterprise",
@@ -241,7 +241,6 @@
     ],
     "secondary_tags": [],
     "why_it_matters_cn": "企业 Agent 竞争从能否执行转向审批、权限、安全、隐私和管理员控制面。",
-    "potential_impact_on_lianlian_cn": "应拆解操作对象、动作、审批/自动执行边界、日志、暂停和回滚。",
     "product_opportunity_cn": "登录后竞品拆解。",
     "competitive_risk_cn": "xAI 可能快速占据团队级 Agent 入口。",
     "recommended_action": "investigate",
@@ -272,7 +271,8 @@
     "last_seen_date": "2026-08-12",
     "run_dates": [
       "2026-08-12"
-    ]
+    ],
+    "personal_relevance_cn": "应拆解操作对象、动作、审批/自动执行边界、日志、暂停和回滚。"
   },
   {
     "id": "2026-08-12-xai-grok-build",
@@ -296,7 +296,6 @@
     ],
     "secondary_tags": [],
     "why_it_matters_cn": "编码 Agent 是模型能力、工具执行和开发工作流结合最紧密的产品类别之一。",
-    "potential_impact_on_lianlian_cn": "需核验真实 UI、支持动作、执行环境、审批和交付边界。",
     "product_opportunity_cn": "对比 Codex、Claude Code 等产品。",
     "competitive_risk_cn": "xAI 可能把 Grok 扩展到开发者工作流。",
     "recommended_action": "monitor",
@@ -327,7 +326,8 @@
     "last_seen_date": "2026-08-12",
     "run_dates": [
       "2026-08-12"
-    ]
+    ],
+    "personal_relevance_cn": "需核验真实 UI、支持动作、执行环境、审批和交付边界。"
   },
   {
     "id": "2026-08-12-google-gemini-1b-mau",
@@ -351,7 +351,6 @@
     ],
     "secondary_tags": [],
     "why_it_matters_cn": "月活越过 10 亿意味着通用 AI 产品进入超大规模分发阶段，竞争不再只看模型能力。",
-    "potential_impact_on_lianlian_cn": "应关注流量入口、默认分发、留存、频次和商业化。",
     "product_opportunity_cn": "跟踪生态分发和用户行为指标。",
     "competitive_risk_cn": "Google 可借搜索、Android、Workspace 与账户体系强化优势。",
     "recommended_action": "monitor",
@@ -382,7 +381,8 @@
     "last_seen_date": "2026-08-12",
     "run_dates": [
       "2026-08-12"
-    ]
+    ],
+    "personal_relevance_cn": "应关注流量入口、默认分发、留存、频次和商业化。"
   },
   {
     "id": "2026-08-12-coreweave-capex",
@@ -406,7 +406,6 @@
     ],
     "secondary_tags": [],
     "why_it_matters_cn": "专业 AI 云继续扩大资本开支，说明算力需求推动高资本、重融资的供给扩张。",
-    "potential_impact_on_lianlian_cn": "影响模型公司、云厂商、芯片供应商、资本市场和企业客户。",
     "product_opportunity_cn": "跟踪算力供给、价格与利用率。",
     "competitive_risk_cn": "资本开支快于现金流和需求兑现，可能放大财务风险。",
     "recommended_action": "monitor",
@@ -437,6 +436,7 @@
     "last_seen_date": "2026-08-12",
     "run_dates": [
       "2026-08-12"
-    ]
+    ],
+    "personal_relevance_cn": "影响模型公司、云厂商、芯片供应商、资本市场和企业客户。"
   }
 ]

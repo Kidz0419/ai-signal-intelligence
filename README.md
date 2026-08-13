@@ -1,6 +1,8 @@
 # AI Signal Intelligence
 
-独立于 Agentic Payment 的 AI 产品与 Agent 情报知识库。
+个人使用的 AI 产品与 Agent 情报知识库，覆盖模型、Agent 架构、AI 产品和 AI 宏观发展。
+
+> 本项目为个人独立信息工具，不代表任何公司或机构；内容仅用于个人研究与产品判断。
 
 - `FILTER_RULES_AI_V1.md`：筛选口径
 - `daily/YYYY-MM-DD/`：不可变日报产物

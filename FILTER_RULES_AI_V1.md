@@ -1,6 +1,7 @@
 # AI Signal Intelligence Filter V1
 
-**适用对象：** 连连支付创新产品、战略与研究团队  
+**适用对象：** 个人 AI 情报研究与产品判断  
+**身份边界：** 本项目为个人使用的独立信息工具，不代表任何雇主、公司或机构。职业场景相关性只作为个人分析视角，不构成公司立场、官方建议或产品归属。  
 **目标：** 围绕用户的四条核心关注主线，建立高精度、可持续的 AI 情报日报：模型、Agent 架构、AI 产品、AI 宏观发展。筛选重点是重大能力变化、架构演进、真实产品工作流和会改变产业格局的宏观事件，而不是泛 AI 新闻聚合。
 
 ## 1. 四条一级主线
@@ -74,24 +75,40 @@
 5. **证据表达**：原始长文、官方访谈、完整演讲或可核验逐字稿标记为 `primary_statement`；媒体转述标记为 `reported`。高管判断不等于模型已经发布或能力已经得到独立验证。
 6. **默认分流**：有正式模型发布或技术材料佐证时可进入 `core / P1`；只有高价值路线判断时进入 `research` 或 `strategic_radar / P2`；重大路线转向可提升优先级。
 
-## 4. 默认排除
+## 4. AI 一线实践者观点：优秀产品负责人和 AI 开发者
+
+除模型大厂高管外，允许收录在 AI 产品或工程实践中具有公认影响力的产品负责人、独立研究者、开发者和开源项目核心维护者的原创发言。该栏目不是“名人观点”，必须同时通过以下门槛：
+
+1. **主体门槛**：发言者至少满足一项：负责过有广泛影响力的 AI 产品；是重要 Agent/模型工具、协议、框架或开源项目的核心作者/维护者；持续产出被业界引用的原创 AI 产品或工程研究；能提供来自一线构建、部署或评测的直接经验。粉丝数、职位头衔或“大厂背景”本身不构成入选理由。
+2. **主题门槛**：内容必须直接对应四条主线之一，优先收录：AI 产品范式与交互设计、Agent 工作流和执行边界、Context/Memory/Tool Use/Evals、模型选型与成本、真实用户行为、组织采用、失败复盘、工程方法和可复用产品框架。
+3. **信息增量**：必须包含至少一种可长期引用的增量：新事实或数据、真实案例、具体产品判断、操作方法、失败教训、技术解释、反直觉观察、可检验预测或原创框架。只有立场、情绪、转发评论和泛泛趋势判断不收录。
+4. **一手证据**：优先原始博客、个人网站、完整演讲/访谈/播客逐字稿、公开技术文档、GitHub 讨论、本人发布的长帖或可核验线程。媒体摘句和二手转述只作为 `reported`，不得扩写上下文。
+5. **事实边界**：实践者的判断标记为 `primary_statement`，不等同于产品已上线、模型能力已验证或行业共识。涉及其所在产品时，仍须以 Release Notes、帮助中心、真实 UI 或代码核验上线状态。
+6. **优先级分流**：有新数据、公开工件或可复现方法，且会改变产品/架构决策时可进入 `research / P1`；高质量原创框架进入 `research` 或 `strategic_radar / P2`；普通观点仅归档或排除。
+7. **来源多样性**：不得长期被少数名人垄断。每次运行先看内容价值，再看作者身份；同一作者重复既有观点不重复入库。
+
+可重点关注但不机械白名单化的人群包括：头部 AI 产品负责人、模型/Agent 开发工具的创建者、重要开源 Agent 框架与协议维护者、长期进行模型与 AI 产品实测的独立开发者。是否入选仍以单篇内容质量为准。
+
+每条实践者观点增加：`speaker_name`、`speaker_role`、`speaker_type`、`statement_topic`、`original_source_url`、`new_information`、`evidence_artifact`。`speaker_type` 可取 `ai_product_leader`、`ai_developer`、`open_source_maintainer`、`independent_researcher`。
+
+## 5. 默认排除
 
 - 只有模型跑分、参数规模或主观体验，无法对应产品能力变化
 - 套壳工具、无真实 UI/文档/用户证据的“AI 产品发布”
-- 非模型大厂高管的泛 AI 长文、访谈、播客或营销观点
+- 非模型大厂高管、产品负责人或开发者的泛 AI 长文、访谈、播客或营销观点；实践者内容未达到第 4 节门槛时排除
 - 模型大厂高管谈组织管理、融资、宏观产业或一般产品营销，但没有模型层新信息
 - 单纯融资、股价、人物八卦和营销表态
 - 无新增事实的趋势文章、转载和内容农场
 - 与产品经理决策无关的纯学术增量；重大能力突破除外
 
-## 5. 栏目
+## 6. 栏目
 
 `signal_type`：`core`、`strategic_radar`、`competitor`、`regulation`、`research`  
-`content_type`：`official_release`、`technical_update`、`executive_statement`、`media_report`、`analysis`、`regulatory`  
+`content_type`：`official_release`、`technical_update`、`executive_statement`、`practitioner_statement`、`media_report`、`analysis`、`regulatory`  
 `topic_lane`：`model`、`agent_architecture`、`ai_product`、`ai_macro`  
 `information_type`：`model_capability`、`model_release`、`model_research`、`agent_architecture`、`agent_runtime`、`agent_governance`、`agent_product`、`developer_ecosystem`、`enterprise_adoption`、`product_workflow`、`compute_infrastructure`、`industry_structure`、`regulation_policy`、`company_strategy`、`research_insight`
 
-## 6. 证据等级
+## 7. 证据等级
 
 - `confirmed`：官方产品页、帮助中心、开发文档、代码、监管文件或可实际访问的产品
 - `primary_statement`：具名负责人一手表态，不等于已上线
@@ -99,7 +116,7 @@
 - `inferred`：从招聘、代码或生态痕迹推断
 - `speculative`：预测或传闻；默认不推送
 
-## 7. 十项评分（0–5）
+## 8. 十项评分（0–5）
 
 基础五项：`topic_relevance`、`novelty`、`technical_or_product_significance`、`strategic_value`、`source_quality`。
 
@@ -107,7 +124,7 @@
 
 四条主线分别评分，不要求每条信号四项都高。至少一个主线价值应达到 4；宏观信号可以 `product_impact` 较低，但 `macro_value` 与 `strategic_value` 必须高。
 
-## 8. 优先级
+## 9. 优先级
 
 - **P0**：头部平台或关键基础设施出现立即影响产品路线、风险或竞争位置的变化
 - **P1**：值得进入当日日报并启动调研的正式产品、技术、采用或治理信号
@@ -116,7 +133,7 @@
 
 关键词只负责召回；最终纳入必须基于正文、证据等级和产品影响判断。允许静默日为 0 条，不为凑数降低标准。
 
-## 9. 每条入库记录必须回答
+## 10. 每条入库记录必须回答
 
 - 发生了什么，以及证据边界
 - 为什么重要
@@ -124,3 +141,12 @@
 - 产品机会与竞争风险
 - 建议行动
 - 待验证问题与后续触发器
+
+## 11. 每 4 小时增量运行规则
+
+- 运行频率为北京时间每 4 小时一次；每次窗口为“北京时间当天 00:00 至实际运行时刻”，同时检查上一轮后新增或发生实质更新的来源。
+- 同一天使用同一个 `daily/YYYY-MM-DD/selected.json` 日桶；后续运行必须先读取当天已有信号，再按稳定事件 ID、`canonical_url`、官方事件标识和标题相似度做事件级去重，只追加新事件或合并同一事件的新证据，不得覆盖丢失既有条目。
+- 同一事件新增一手来源、状态、价格、真实 UI 或关键证据时，更新原事件的 `related_sources`、`last_seen_date`、证据边界和判断；普通转载不创建新卡片。
+- 每次增量合并后必须同步重建 selected、P0–P3 计数、日报正文、引用账本、history/latest 数据和公网展示；不得只更新文案而不更新结构化数据。
+- 当轮无新增或实质更新时，不新增重复记录、不降低门槛；保留当天既有日报并允许对用户静默。
+- 同日多轮运行的 `run-summary.json` 应记录 `run_at`、`previous_count`、`new_count`、`updated_count`、`total_count`，便于审计四小时增量。

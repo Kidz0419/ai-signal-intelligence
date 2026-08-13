@@ -63,12 +63,11 @@ window.DAILY_HISTORY = {
         "Visual Work"
       ],
       "why_it_matters_cn": "这不是单纯跑分更新：训练路线、长任务定位、首发分发渠道和 API 价格同时变化，使模型选择可以直接进入 Agent 成本—成功率评估。",
-      "potential_impact_on_lianlian_cn": "应把 Grok 4.6 加入支付运营、研发和知识工作长任务评测，重点测试跨步骤状态保持、自我校验、工具调用、失败恢复、延迟与单位成功任务成本。",
       "product_opportunity_cn": "在多模型路由中为长编码、网页生成和复杂知识任务建立候选模型，并利用 API 与现有开发工具分发降低试用成本。",
       "competitive_risk_cn": "xAI 以较低公开 token 价格和 Cursor/Grok Build 同日分发争夺编码与长任务入口；若实际成功率接近高价模型，将压缩现有模型供应商溢价。",
       "recommended_action": "alert",
       "questions_to_validate": [
-        "在连连真实长任务上，端到端成功率、漂移率、自我校验有效性和失败恢复表现如何？",
+        "在个人真实长任务集上，端到端成功率、漂移率、自我校验有效性和失败恢复表现如何？",
         "标准版与两倍价格快速版的延迟、吞吐和单位成功任务成本差异是什么？",
         "官方 AA Intelligence、GDPVal-AA、DeepSWE、CursorBench 和 FrontierCode 结果能否被独立复现？"
       ],
@@ -96,7 +95,8 @@ window.DAILY_HISTORY = {
       "last_seen_date": "2026-08-13",
       "run_dates": [
         "2026-08-13"
-      ]
+      ],
+      "personal_relevance_cn": "应把 Grok 4.6 加入支付运营、研发和知识工作长任务评测，重点测试跨步骤状态保持、自我校验、工具调用、失败恢复、延迟与单位成功任务成本。"
     },
     {
       "id": "2026-08-13-anthropic-multiagent-systems",
@@ -125,7 +125,6 @@ window.DAILY_HISTORY = {
         "Evals"
       ],
       "why_it_matters_cn": "研究把多 Agent 风险从抽象提示注入扩展到系统级涌现：长期身份、共享资源、竞争目标和机器速度会让个体层看似可接受的行为累积为串谋、误信或破坏。",
-      "potential_impact_on_lianlian_cn": "涉及资金、商户或运营权限的多 Agent 系统不能把其他 Agent 当作天然可信工具；需要独立身份、最小权限、资源隔离、双重审批、冲突检测和可回放审计。",
       "product_opportunity_cn": "建立多 Agent 对抗评测，覆盖同伴说谎、目标冲突、共享代码/文件/账户、仲裁失效、权限升级与人工接管。",
       "competitive_risk_cn": "只强调并行化和吞吐、没有同伴可信度与冲突治理的 Agent 平台，能力越强可能越快放大系统性事故。",
       "recommended_action": "investigate",
@@ -158,7 +157,8 @@ window.DAILY_HISTORY = {
       "last_seen_date": "2026-08-13",
       "run_dates": [
         "2026-08-13"
-      ]
+      ],
+      "personal_relevance_cn": "涉及资金、商户或运营权限的多 Agent 系统不能把其他 Agent 当作天然可信工具；需要独立身份、最小权限、资源隔离、双重审批、冲突检测和可回放审计。"
     },
     {
       "id": "2026-08-12-openai-gpt56-sol-luna",
@@ -182,7 +182,6 @@ window.DAILY_HISTORY = {
       ],
       "secondary_tags": [],
       "why_it_matters_cn": "模型更新与免费层分发同时发生，影响能力竞争与用户获得先进模型的门槛。",
-      "potential_impact_on_lianlian_cn": "需核验 Sol 的具体改进、Luna 免费额度、地区和默认模型策略。",
       "product_opportunity_cn": "跟踪模型能力、分发和成本是否同步变化。",
       "competitive_risk_cn": "头部模型以免费层扩大触达，会强化产品留存和生态优势。",
       "recommended_action": "investigate",
@@ -213,7 +212,8 @@ window.DAILY_HISTORY = {
       "last_seen_date": "2026-08-12",
       "run_dates": [
         "2026-08-12"
-      ]
+      ],
+      "personal_relevance_cn": "需核验 Sol 的具体改进、Luna 免费额度、地区和默认模型策略。"
     },
     {
       "id": "2026-08-12-nvidia-nemotron35",
@@ -237,7 +237,6 @@ window.DAILY_HISTORY = {
       ],
       "secondary_tags": [],
       "why_it_matters_cn": "专用 Agent 模型把竞争从通用聊天扩展到长任务成本、速度与可靠性。",
-      "potential_impact_on_lianlian_cn": "应使用真实长任务评估成功率、成本、工具调用稳定性和恢复能力。",
       "product_opportunity_cn": "建立长任务模型评测集。",
       "competitive_risk_cn": "专用模型若降低 Agent 成本，多模型产品会更具优势。",
       "recommended_action": "investigate",
@@ -268,7 +267,8 @@ window.DAILY_HISTORY = {
       "last_seen_date": "2026-08-12",
       "run_dates": [
         "2026-08-12"
-      ]
+      ],
+      "personal_relevance_cn": "应使用真实长任务评估成功率、成本、工具调用稳定性和恢复能力。"
     },
     {
       "id": "2026-08-12-nvidia-switchyard",
@@ -292,7 +292,6 @@ window.DAILY_HISTORY = {
       ],
       "secondary_tags": [],
       "why_it_matters_cn": "模型选择从静态配置变为运行时控制层，可同时优化能力、成本、延迟和数据边界。",
-      "potential_impact_on_lianlian_cn": "可按风险、预算、地域和能力标签选模，并配置回退与审计。",
       "product_opportunity_cn": "设计企业 Agent 动态模型路由。",
       "competitive_risk_cn": "模型编排层可能成为云和算力平台的新控制入口。",
       "recommended_action": "investigate",
@@ -323,7 +322,8 @@ window.DAILY_HISTORY = {
       "last_seen_date": "2026-08-12",
       "run_dates": [
         "2026-08-12"
-      ]
+      ],
+      "personal_relevance_cn": "可按风险、预算、地域和能力标签选模，并配置回退与审计。"
     },
     {
       "id": "2026-08-12-openai-workspace-agents",
@@ -347,7 +347,6 @@ window.DAILY_HISTORY = {
       ],
       "secondary_tags": [],
       "why_it_matters_cn": "Agent 进入共享工作空间，意味着上下文、权限、协作和治理从个人层升级到组织层。",
-      "potential_impact_on_lianlian_cn": "必须登录产品核验真实 UI 和完整执行链路。",
       "product_opportunity_cn": "拆解团队 Agent 的对象、动作、审批与日志。",
       "competitive_risk_cn": "工作空间可能成为企业 Agent 的关键分发入口。",
       "recommended_action": "investigate",
@@ -378,7 +377,8 @@ window.DAILY_HISTORY = {
       "last_seen_date": "2026-08-12",
       "run_dates": [
         "2026-08-12"
-      ]
+      ],
+      "personal_relevance_cn": "必须登录产品核验真实 UI 和完整执行链路。"
     },
     {
       "id": "2026-08-12-xai-grok-bot-enterprise",
@@ -402,7 +402,6 @@ window.DAILY_HISTORY = {
       ],
       "secondary_tags": [],
       "why_it_matters_cn": "企业 Agent 竞争从能否执行转向审批、权限、安全、隐私和管理员控制面。",
-      "potential_impact_on_lianlian_cn": "应拆解操作对象、动作、审批/自动执行边界、日志、暂停和回滚。",
       "product_opportunity_cn": "登录后竞品拆解。",
       "competitive_risk_cn": "xAI 可能快速占据团队级 Agent 入口。",
       "recommended_action": "investigate",
@@ -433,7 +432,8 @@ window.DAILY_HISTORY = {
       "last_seen_date": "2026-08-12",
       "run_dates": [
         "2026-08-12"
-      ]
+      ],
+      "personal_relevance_cn": "应拆解操作对象、动作、审批/自动执行边界、日志、暂停和回滚。"
     },
     {
       "id": "2026-08-12-xai-grok-build",
@@ -457,7 +457,6 @@ window.DAILY_HISTORY = {
       ],
       "secondary_tags": [],
       "why_it_matters_cn": "编码 Agent 是模型能力、工具执行和开发工作流结合最紧密的产品类别之一。",
-      "potential_impact_on_lianlian_cn": "需核验真实 UI、支持动作、执行环境、审批和交付边界。",
       "product_opportunity_cn": "对比 Codex、Claude Code 等产品。",
       "competitive_risk_cn": "xAI 可能把 Grok 扩展到开发者工作流。",
       "recommended_action": "monitor",
@@ -488,7 +487,8 @@ window.DAILY_HISTORY = {
       "last_seen_date": "2026-08-12",
       "run_dates": [
         "2026-08-12"
-      ]
+      ],
+      "personal_relevance_cn": "需核验真实 UI、支持动作、执行环境、审批和交付边界。"
     },
     {
       "id": "2026-08-12-google-gemini-1b-mau",
@@ -512,7 +512,6 @@ window.DAILY_HISTORY = {
       ],
       "secondary_tags": [],
       "why_it_matters_cn": "月活越过 10 亿意味着通用 AI 产品进入超大规模分发阶段，竞争不再只看模型能力。",
-      "potential_impact_on_lianlian_cn": "应关注流量入口、默认分发、留存、频次和商业化。",
       "product_opportunity_cn": "跟踪生态分发和用户行为指标。",
       "competitive_risk_cn": "Google 可借搜索、Android、Workspace 与账户体系强化优势。",
       "recommended_action": "monitor",
@@ -543,7 +542,8 @@ window.DAILY_HISTORY = {
       "last_seen_date": "2026-08-12",
       "run_dates": [
         "2026-08-12"
-      ]
+      ],
+      "personal_relevance_cn": "应关注流量入口、默认分发、留存、频次和商业化。"
     },
     {
       "id": "2026-08-12-coreweave-capex",
@@ -567,7 +567,6 @@ window.DAILY_HISTORY = {
       ],
       "secondary_tags": [],
       "why_it_matters_cn": "专业 AI 云继续扩大资本开支，说明算力需求推动高资本、重融资的供给扩张。",
-      "potential_impact_on_lianlian_cn": "影响模型公司、云厂商、芯片供应商、资本市场和企业客户。",
       "product_opportunity_cn": "跟踪算力供给、价格与利用率。",
       "competitive_risk_cn": "资本开支快于现金流和需求兑现，可能放大财务风险。",
       "recommended_action": "monitor",
@@ -598,7 +597,8 @@ window.DAILY_HISTORY = {
       "last_seen_date": "2026-08-12",
       "run_dates": [
         "2026-08-12"
-      ]
+      ],
+      "personal_relevance_cn": "影响模型公司、云厂商、芯片供应商、资本市场和企业客户。"
     }
   ],
   "duplicate_log": []

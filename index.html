@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AI Signal Intelligence — 连连支付创新产品情报知识库 MVP" />
+  <meta name="description" content="AI Signal Intelligence — 个人 AI 情报知识库" />
   <title>AI Signal Intelligence</title>
   <style>
     :root {
@@ -240,7 +240,7 @@
   <div class="app">
     <aside class="sidebar" id="sidebar">
       <div class="brand">
-        <div class="brand-kicker">LLIANLIAN · INNOVATION</div>
+        <div class="brand-kicker">PERSONAL · AI INTELLIGENCE</div>
         <h1>AI Signal<br/>Intelligence</h1>
         <p>从每日信号到长期知识资产</p>
       </div>
@@ -310,6 +310,7 @@
               <option value="official_release">官方发布</option>
               <option value="technical_update">技术更新</option>
               <option value="executive_statement">高管发言</option>
+              <option value="practitioner_statement">实践者观点</option>
               <option value="media_report">媒体报道</option>
               <option value="analysis">深度分析</option>
               <option value="regulatory">监管</option>
@@ -367,9 +368,9 @@
             <div class="method-cell"><h3>Strategic Radar</h3><p>尚未形成成熟产品，但可能改变 AI 产品入口、Agent 执行边界、企业采购或竞争格局的前置信号。</p></div>
             <div class="method-cell"><h3>三层分类</h3><p>Signal Type 决定进入哪个情报流，Content Type 描述载体形式，Information Type 描述事件本质，避免把“媒体报道”和“协议标准”混为一类。</p></div>
             <div class="method-cell"><h3>证据优先</h3><p>区分 confirmed、primary statement、reported、inferred 与 speculative，避免把高管计划或媒体报道写成已上线事实。</p></div>
-            <div class="method-cell"><h3>连连视角</h3><p>额外评价支付邻接、工作流影响、产品可行动性、竞争影响，以及对连连产品与合作路径的直接相关性。</p></div>
+            <div class="method-cell"><h3>个人产品视角</h3><p>额外评价工作流影响、产品可行动性、竞争影响和职业场景相关性；不代表任何公司或机构立场。</p></div>
             <div class="method-cell"><h3>事件而非文章</h3><p>同一事件关联官方、媒体、高管和技术来源；以一手来源为主，减少重复新闻卡片。</p></div>
-            <div class="method-cell"><h3>行动闭环</h3><p>每条 Include / Watchlist 都要给出对连连的影响、产品机会、竞争风险、建议行动、待验证问题和后续触发器。</p></div>
+            <div class="method-cell"><h3>行动闭环</h3><p>每条 Include / Watchlist 都要给出个人关注价值、产品机会、竞争风险、建议行动、待验证问题和后续触发器。</p></div>
             <div class="method-cell"><h3>P3 仍可检索</h3><p>低相关内容不推送但不物理删除，保留历史回溯，在后续信号出现时重新评估。</p></div>
           </div>
           <p style="margin-top:18px;color:var(--muted)">完整规则见同目录 <strong>FILTER_RULES_AI_V1.md</strong>。</p>
@@ -410,7 +411,7 @@
     const rowsForDay = date => { const ids=new Set(dayDefinition(date).signal_ids||[]); return historicalSignals.filter(s=>ids.has(s.id)); };
     const priorityRank = {P0:0,P1:1,P2:2,P3:3};
     const actionLabel = {alert:"立即关注",investigate:"调研",discuss:"讨论",monitor:"持续观察",archive:"归档"};
-    const contentLabel = {official_release:"官方发布",technical_update:"技术更新",executive_statement:"高管发言",media_report:"媒体报道",analysis:"深度分析",opinion:"观点",regulatory:"监管"};
+    const contentLabel = {official_release:"官方发布",technical_update:"技术更新",executive_statement:"高管发言",practitioner_statement:"实践者观点",media_report:"媒体报道",analysis:"深度分析",opinion:"观点",regulatory:"监管"};
     const informationLabel = {model_capability:"模型能力",model_release:"模型发布",model_research:"模型研究",agent_architecture:"Agent 架构",agent_runtime:"Agent 运行时",agent_governance:"Agent 治理",agent_product:"Agent 产品",developer_ecosystem:"开发者生态",enterprise_adoption:"企业采用",product_workflow:"产品工作流",compute_infrastructure:"算力基础设施",industry_structure:"产业结构",regulation_policy:"监管政策",company_strategy:"公司战略",research_insight:"研究 / 洞察"};
     const evidenceLabel = {confirmed:"已确认",primary_statement:"一手发言",reported:"媒体报道",inferred:"推断",speculative:"推测"};
 
@@ -425,7 +426,7 @@
       return a.toDateString() === b.toDateString();
     }
     function searchable(s) {
-      return [s.title,s.summary,s.source,s.why_it_matters_cn,s.potential_impact_on_lianlian_cn,s.product_opportunity_cn,...(s.primary_tags||[]),...(s.secondary_tags||[])].join(" ").toLowerCase();
+      return [s.title,s.summary,s.source,s.why_it_matters_cn,s.personal_relevance_cn,s.product_opportunity_cn,...(s.primary_tags||[]),...(s.secondary_tags||[])].join(" ").toLowerCase();
     }
     function visibleSignals() {
       let rows = allSignals();
@@ -494,7 +495,7 @@
         <h2>${escapeHtml(s.title)}</h2><p class="detail-lead">${escapeHtml(s.summary||'')}</p>
         <div class="tags">${[...(s.primary_tags||[]),...(s.secondary_tags||[])].map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}</div>
         <div class="detail-section"><h3>为什么重要</h3><p>${escapeHtml(s.why_it_matters_cn||'暂无')}</p></div>
-        <div class="detail-section"><h3>对连连的潜在影响</h3><p>${escapeHtml(s.potential_impact_on_lianlian_cn||'暂无')}</p></div>
+        <div class="detail-section"><h3>个人关注价值</h3><p>${escapeHtml(s.personal_relevance_cn||'暂无')}</p></div>
         <div class="detail-section"><h3>产品机会</h3><p>${escapeHtml(s.product_opportunity_cn||'暂无')}</p></div>
         <div class="detail-section"><h3>竞争风险</h3><p>${escapeHtml(s.competitive_risk_cn||'暂无')}</p></div>
         <div class="detail-section"><h3>评分</h3><div class="score-grid">${scoreBlock(s.scores)}</div></div>
@@ -574,7 +575,7 @@
       try {
         let data; if(file.name.endsWith('.jsonl')) data=text.split(/\n/).filter(Boolean).map(JSON.parse); else data=JSON.parse(text);
         if(!Array.isArray(data)) data=data.signals||data.items||[data];
-        data=data.map((s,i)=>({...s,id:s.id||s.entity_id||s.signal_id||`import-${Date.now()}-${i}`,scores:s.scores||Object.fromEntries(['ai_relevance','product_impact','technical_significance','strategic_value','source_quality','lianlian_relevance','payment_adjacency','workflow_impact','product_actionability','competitive_impact'].map(k=>[k,s[k]||0]))}));
+        data=data.map((s,i)=>({...s,id:s.id||s.entity_id||s.signal_id||`import-${Date.now()}-${i}`,personal_relevance_cn:s.personal_relevance_cn||s.organizational_relevance_cn||'',scores:s.scores||Object.fromEntries(['topic_relevance','novelty','technical_or_product_significance','strategic_value','source_quality','model_value','agent_architecture_value','ai_product_value','macro_value','actionability'].map(k=>[k,s[k]||0]))}));
         state.imported=[...data,...state.imported]; localStorage.setItem('aisignal-imported',JSON.stringify(state.imported)); switchView('library'); toast(`已导入 ${data.length} 条信号`);
       } catch(err){ toast('导入失败：请检查 JSON / JSONL 格式'); }
       e.target.value='';
