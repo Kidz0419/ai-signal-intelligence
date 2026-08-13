@@ -7,6 +7,9 @@
 - `FILTER_RULES_AI_V1.md`：筛选口径
 - `daily/YYYY-MM-DD/`：不可变日报产物
 - `data/history.json`：跨日去重事件库
+- `backfills/YYYY-MM-DD_to_YYYY-MM-DD/`：人物观点等历史回溯产物（与当日日报分离）
+- `backfill-2026-07-13-to-2026-08-13.html`：近一个月人物信源审计与回溯页面
+- `config/person-source-registry.json`：人物原创信源注册表及覆盖缺口
 - `index.html`：Notion 风格浏览界面
 
 ## 在线访问

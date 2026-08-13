@@ -59,6 +59,21 @@ class DailyHistoryContractTest(unittest.TestCase):
         self.assertIn('id="dayPicker"', self.html)
         self.assertIn('window.DAILY_HISTORY', (ROOT / "data/history.js").read_text())
 
+    def test_person_backfill_contract(self):
+        root = ROOT / "backfills" / "2026-07-13_to_2026-08-13"
+        rows = json.loads((root / "selected.json").read_text())
+        self.assertEqual(len(rows), 13)
+        self.assertEqual(sum(row["content_type"] == "executive_statement" for row in rows), 3)
+        self.assertEqual(sum(row["content_type"] == "practitioner_statement" for row in rows), 10)
+        self.assertEqual(len({row["id"] for row in rows}), len(rows))
+        self.assertEqual(len({row["canonical_url"].rstrip("/") for row in rows}), len(rows))
+        required = {"speaker_name", "speaker_role", "new_information", "evidence_artifact", "evidence_excerpt", "evidence_boundary"}
+        self.assertTrue(all(required <= set(row) for row in rows))
+        coverage = json.loads((root / "source-coverage.json").read_text())
+        self.assertEqual(coverage["selected_counts"], {"total": 13, "model_company_leaders": 3, "practitioner_statements": 10})
+        self.assertIn("backfill-2026-07-13-to-2026-08-13.html", self.html)
+        self.assertTrue((ROOT / "backfill-2026-07-13-to-2026-08-13.html").exists())
+
 
 if __name__ == "__main__":
     unittest.main()
