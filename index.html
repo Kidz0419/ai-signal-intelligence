@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI Signal Intelligence — 连连支付创新产品情报知识库 MVP" />
+  <title>AI Signal Intelligence</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --surface-2: #f6f5f4;
+      --ink: rgba(0,0,0,.95);
+      --muted: #615d59;
+      --quiet: #a39e98;
+      --line: rgba(0,0,0,.10);
+      --accent: #0075de;
+      --accent-soft: #f2f9ff;
+      --hot: #d44c47;
+      --hot-soft: #fbeceb;
+      --amber: #c88700;
+      --amber-soft: #fbf3db;
+      --blue: #337ea9;
+      --blue-soft: #e7f3f8;
+      --shadow: rgba(0,0,0,.01) 0 1px 3px, rgba(0,0,0,.02) 0 3px 7px, rgba(0,0,0,.02) 0 7px 15px, rgba(0,0,0,.04) 0 14px 28px, rgba(0,0,0,.05) 0 23px 52px;
+      --radius: 8px;
+      --sidebar: 240px;
+      --detail: 520px;
+    }
+
+    * { box-sizing: border-box; }
+    html { color-scheme: light; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    button, input, select { font: inherit; }
+    button { color: inherit; }
+    :focus-visible { outline: 2px solid #097fe8; outline-offset: 2px; }
+
+    .app { min-height: 100vh; display: grid; grid-template-columns: var(--sidebar) minmax(0, 1fr); }
+    .sidebar {
+      position: fixed; inset: 0 auto 0 0; width: var(--sidebar);
+      padding: 14px 10px 14px;
+      background: #f7f7f5; color: var(--ink); border-right: 1px solid var(--line);
+      display: flex; flex-direction: column; z-index: 20;
+    }
+    .brand { padding: 8px 10px 17px; border-bottom: 1px solid var(--line); }
+    .brand-kicker { font: 600 10px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .08em; color: var(--quiet); }
+    .brand h1 { margin: 7px 0 0; font-size: 16px; line-height: 1.25; letter-spacing: -.015em; }
+    .brand p { margin: 6px 0 0; color: var(--muted); font-size: 11px; }
+
+    nav { margin-top: 12px; display: grid; gap: 2px; }
+    .nav-btn {
+      min-height: 36px; width: 100%; border: 0; border-radius: 5px; background: transparent;
+      color: var(--muted); text-align: left; padding: 0 10px; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-btn:hover { background: rgba(55,53,47,.08); color: var(--ink); }
+    .nav-btn.active { color: var(--ink); background: rgba(55,53,47,.10); font-weight: 600; }
+    .nav-count { color: var(--quiet); font: 500 11px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .sidebar-foot { margin-top: auto; padding: 14px 10px 0; border-top: 1px solid var(--line); }
+    .status { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 11px; }
+    .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #1aae39; }
+    .version { margin-top: 8px; color: var(--quiet); font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+    main { grid-column: 2; min-width: 0; }
+    .topbar {
+      position: sticky; top: 0; z-index: 12; height: 56px;
+      display: flex; align-items: center; gap: 12px;
+      padding: 0 24px; background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--line);
+    }
+    .mobile-menu { display: none; }
+    .search-wrap { position: relative; flex: 1; max-width: 720px; }
+    .search {
+      width: 100%; height: 36px; border: 1px solid var(--line); border-radius: 5px;
+      padding: 0 82px 0 39px; background: var(--surface); color: var(--ink);
+    }
+    .search:focus { border-color: var(--accent); }
+    .search-icon { position: absolute; left: 13px; top: 8px; color: var(--muted); }
+    .shortcut { position: absolute; right: 8px; top: 7px; padding: 1px 6px; border: 1px solid var(--line); border-radius: 4px; color: var(--quiet); font-size: 11px; background: var(--surface-2); }
+    .toolbar { margin-left: auto; display: flex; gap: 8px; }
+    .btn {
+      min-height: 34px; border: 1px solid var(--line); border-radius: 4px; padding: 0 12px;
+      background: var(--surface); cursor: pointer; white-space: nowrap;
+    }
+    .btn:hover { background: var(--surface-2); }
+    .btn.primary { color: white; border-color: var(--accent); background: var(--accent); }
+    .btn.primary:hover { background: #005bab; }
+
+    .content { padding: 52px 48px 80px; max-width: 1260px; margin: 0 auto; }
+    .page-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 28px; }
+    .eyebrow { color: var(--quiet); font: 600 11px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .07em; text-transform: uppercase; }
+    .page-head h2 { margin: 9px 0 0; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.08; letter-spacing: -1.1px; }
+    .page-subtitle { margin: 10px 0 0; color: var(--muted); max-width: 760px; font-size: 15px; }
+    .date-chip { color: var(--quiet); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; white-space: nowrap; }
+    .day-bar { display: none; align-items: center; gap: 10px; margin: -8px 0 24px; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-2); }
+    .day-bar.open { display: flex; }
+    .day-bar label { color: var(--muted); font-size: 12px; }
+    .day-picker { height: 34px; min-width: 170px; border: 1px solid var(--line); border-radius: 5px; background: white; padding: 0 10px; }
+    .day-note { margin-left: auto; color: var(--quiet); font-size: 11px; }
+    .feishu-view { display: none; max-width: 820px; }
+    .feishu-view.open { display: block; }
+    .feishu-actions { display: flex; gap: 8px; align-items: center; margin-bottom: 16px; }
+    .feishu-card { border: 1px solid var(--line); border-radius: 12px; background: white; box-shadow: rgba(0,0,0,.04) 0 4px 18px; overflow: hidden; }
+    .feishu-card-head { padding: 18px 22px; background: var(--surface-2); border-bottom: 1px solid var(--line); }
+    .feishu-card-head small { color: var(--quiet); font: 600 10px ui-monospace, monospace; letter-spacing: .08em; }
+    .feishu-card-head h3 { margin: 5px 0 0; font-size: 20px; }
+    .feishu-copy { margin: 0; padding: 24px; white-space: pre-wrap; overflow-wrap: anywhere; font: 14px/1.75 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); }
+
+    .summary-strip {
+      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+      border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-2); margin-bottom: 24px; overflow: hidden;
+    }
+    .metric { padding: 13px 16px; border-right: 1px solid var(--line); }
+    .metric:last-child { border-right: 0; }
+    .metric strong { display: block; font: 600 18px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .metric span { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; }
+
+    .filters { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+    .filter {
+      min-height: 30px; border: 1px solid transparent; border-radius: 5px; background: transparent;
+      padding: 0 9px; color: var(--muted); cursor: pointer;
+    }
+    .filter:hover { color: var(--ink); background: var(--surface-2); }
+    .filter.active { background: rgba(55,53,47,.10); border-color: transparent; color: var(--ink); font-weight: 600; }
+    .filter-divider { width: 1px; height: 22px; background: var(--line); margin: 0 3px; }
+    .select {
+      height: 30px; border: 1px solid transparent; border-radius: 5px; background: var(--surface-2); padding: 0 27px 0 8px; color: var(--muted);
+    }
+
+    .results-head { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; padding: 8px 2px; }
+    .signal-list { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+    .signal-row {
+      width: 100%; border: 0; border-bottom: 1px solid var(--line); background: var(--surface);
+      padding: 16px; text-align: left; cursor: pointer;
+      display: grid; grid-template-columns: 52px minmax(0, 1fr) 190px; gap: 14px; align-items: start;
+    }
+    .signal-row:last-child { border-bottom: 0; }
+    .signal-row:hover { background: #fbfbfa; }
+    .signal-row.selected { background: var(--accent-soft); box-shadow: inset 3px 0 var(--accent); }
+    .priority { width: 38px; height: 24px; border-radius: 4px; display: grid; place-items: center; font: 700 11px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .p0 { color: var(--hot); background: var(--hot-soft); }
+    .p1 { color: var(--amber); background: var(--amber-soft); }
+    .p2 { color: var(--blue); background: var(--blue-soft); }
+    .p3 { color: var(--muted); background: var(--surface-2); }
+    .signal-title { margin: 0; font-size: 15px; font-weight: 600; line-height: 1.4; letter-spacing: -.006em; }
+    .signal-summary { margin: 6px 0 0; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 10px; }
+    .tag { padding: 2px 7px; border: 0; border-radius: 4px; color: var(--muted); font-size: 10px; background: var(--surface-2); }
+    .signal-meta { text-align: right; color: var(--muted); font-size: 11px; }
+    .signal-meta strong { display: block; color: var(--ink); font-size: 12px; margin-bottom: 4px; }
+    .evidence { display: inline-block; margin-top: 7px; padding: 2px 6px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+    .info-type { display: inline-block; margin: 0 0 5px; padding: 2px 7px; border-radius: 4px; background: #eeeae4; color: #5b554f; font-size: 10px; font-weight: 600; }
+    .signal-meta .info-type { display: block; margin-left: auto; width: fit-content; }
+    .demo-label { display: inline-block; margin-left: 6px; color: var(--hot); font: 700 9px ui-monospace, SFMono-Regular, Menlo, monospace; vertical-align: 2px; }
+
+    .empty { display: none; padding: 70px 20px; text-align: center; color: var(--muted); }
+    .empty strong { display: block; color: var(--ink); font-size: 18px; margin-bottom: 7px; }
+
+    .detail-backdrop { position: fixed; inset: 0; background: rgba(15,15,15,.12); z-index: 29; opacity: 0; pointer-events: none; transition: opacity .18s ease; }
+    .detail-backdrop.open { opacity: 1; pointer-events: auto; }
+    .detail {
+      position: fixed; z-index: 30; top: 0; right: 0; width: min(var(--detail), 94vw); height: 100vh;
+      background: var(--surface); border-left: 1px solid var(--line); box-shadow: var(--shadow);
+      transform: translateX(102%); transition: transform .22s ease; overflow-y: auto;
+    }
+    .detail.open { transform: translateX(0); }
+    .detail-top { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid var(--line); background: rgba(255,255,255,.96); }
+    .icon-btn { width: 34px; height: 34px; border: 0; border-radius: 4px; background: transparent; cursor: pointer; }
+    .icon-btn:hover { background: var(--surface-2); }
+    .detail-body { padding: 38px 46px 64px; }
+    .detail-body h2 { margin: 18px 0 12px; font-size: 30px; line-height: 1.18; letter-spacing: -.7px; }
+    .detail-lead { color: var(--muted); font-size: 15px; }
+    .detail-section { padding: 20px 0; border-top: 1px solid var(--line); }
+    .detail-section h3 { margin: 0 0 9px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+    .detail-section p { margin: 0; }
+    .score-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; }
+    .score-item { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 8px; align-items: center; color: var(--muted); font-size: 11px; }
+    .bar { grid-column: 1 / -1; height: 4px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+    .bar i { display: block; height: 100%; background: #337ea9; }
+    .bullet-list { margin: 0; padding-left: 18px; color: var(--muted); }
+    .bullet-list li + li { margin-top: 6px; }
+    .source-link { color: var(--accent); text-decoration: none; word-break: break-all; }
+    .source-link:hover { text-decoration: underline; }
+
+    .methodology { display: none; max-width: 980px; }
+    .methodology.open { display: block; }
+    .method-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); box-shadow: rgba(0,0,0,.02) 0 4px 18px; }
+    .method-cell { padding: 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .method-cell:nth-child(2n) { border-right: 0; }
+    .method-cell:nth-last-child(-n+2) { border-bottom: 0; }
+    .method-cell h3 { margin: 0 0 7px; font-size: 16px; }
+    .method-cell p { margin: 0; color: var(--muted); }
+    .rule-callout { margin: 20px 0; padding: 18px 20px; background: var(--surface-2); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); font-size: 17px; }
+    .rule-callout small { display: block; color: var(--accent); margin-bottom: 6px; font: 700 10px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .1em; }
+
+    .toast { position: fixed; left: 50%; bottom: 24px; z-index: 50; transform: translate(-50%, 18px); opacity: 0; background: #31302e; color: white; padding: 10px 14px; border-radius: 5px; transition: .2s; pointer-events: none; }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+    input[type=file] { display: none; }
+
+    @media (max-width: 900px) {
+      :root { --sidebar: 0px; }
+      .app { display: block; }
+      .sidebar { transform: translateX(-102%); width: 230px; transition: transform .2s; }
+      .sidebar.open { transform: translateX(0); }
+      main { grid-column: 1; }
+      .mobile-menu { display: inline-grid; place-items: center; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+      .toolbar .btn:not(.primary) { display: none; }
+      .signal-row { grid-template-columns: 50px minmax(0,1fr); }
+      .signal-meta { grid-column: 2; text-align: left; display: flex; align-items: center; gap: 8px; }
+      .signal-meta strong { display: inline; margin: 0; }
+      .summary-strip { grid-template-columns: 1fr 1fr; }
+      .metric:nth-child(2) { border-right: 0; }
+      .metric:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    }
+    @media (max-width: 600px) {
+      .topbar { padding: 0 12px; }
+      .content { padding: 19px 14px 50px; }
+      .shortcut { display: none; }
+      .search { padding-right: 12px; }
+      .page-head { align-items: flex-start; flex-direction: column; }
+      .summary-strip { grid-template-columns: 1fr 1fr; }
+      .metric { padding: 12px; }
+      .signal-row { gap: 8px; padding: 14px 2px; }
+      .method-grid { grid-template-columns: 1fr; }
+      .method-cell, .method-cell:nth-child(2n), .method-cell:nth-last-child(-n+2) { border-right: 0; border-bottom: 1px solid var(--line); }
+      .method-cell:last-child { border-bottom: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-kicker">LLIANLIAN · INNOVATION</div>
+        <h1>AI Signal<br/>Intelligence</h1>
+        <p>从每日信号到长期知识资产</p>
+      </div>
+      <nav aria-label="知识库视图">
+        <button class="nav-btn active" data-view="today"><span>今日信号</span><span class="nav-count" id="todayCount">0</span></button>
+        <button class="nav-btn" data-view="daily"><span>按日查看</span><span class="nav-count" id="dayCount">0</span></button>
+        <button class="nav-btn" data-view="feishu"><span>飞书简报</span><span class="nav-count">复制</span></button>
+        <button class="nav-btn" data-view="library"><span>全部知识库</span><span class="nav-count" id="allCount">0</span></button>
+        <button class="nav-btn" data-view="watchlist"><span>战略雷达</span><span class="nav-count" id="watchCount">0</span></button>
+        <button class="nav-btn" data-view="competitor"><span>竞争动态</span><span class="nav-count" id="competitorCount">0</span></button>
+        <button class="nav-btn" data-view="saved"><span>已收藏</span><span class="nav-count" id="savedCount">0</span></button>
+        <button class="nav-btn" data-view="method"><span>筛选方法</span><span class="nav-count">V1</span></button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="status"><span class="status-dot"></span>本地知识库已就绪</div>
+        <div class="version">FILTER RULES · AI V1.0</div>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="打开菜单">☰</button>
+        <div class="search-wrap">
+          <span class="search-icon">⌕</span>
+          <input class="search" id="search" type="search" placeholder="搜索协议、公司、产品、观点或标签…" autocomplete="off" />
+          <span class="shortcut">/ 搜索</span>
+        </div>
+        <div class="toolbar">
+          <button class="btn" id="exportBtn">导出 JSON</button>
+          <button class="btn primary" id="importBtn">导入信号</button>
+          <input id="fileInput" type="file" accept="application/json,.json,.jsonl" />
+        </div>
+      </header>
+
+      <div class="content">
+        <section id="signalsView">
+          <div class="page-head">
+            <div>
+              <div class="eyebrow" id="eyebrow">Daily intelligence</div>
+              <h2 id="pageTitle">今日 AI Signal</h2>
+              <p class="page-subtitle" id="pageSubtitle">Core Signal 聚焦真实能力、产品与工作流变化；Strategic Radar 捕捉治理、基础设施与竞争格局的前置信号。</p>
+            </div>
+            <div class="date-chip" id="dateChip"></div>
+          </div>
+
+          <div class="day-bar" id="dayBar">
+            <label for="dayPicker">日报日期</label>
+            <select class="day-picker" id="dayPicker" aria-label="选择日报日期"></select>
+            <span class="day-note" id="dayNote"></span>
+          </div>
+
+          <div class="summary-strip" aria-label="信号统计">
+            <div class="metric"><strong id="metricP0">0</strong><span>P0 · 立即关注</span></div>
+            <div class="metric"><strong id="metricCore">0</strong><span>Core · 核心信号</span></div>
+            <div class="metric"><strong id="metricRadar">0</strong><span>Radar · 战略雷达</span></div>
+            <div class="metric"><strong id="metricAction">0</strong><span>待调研 / 讨论</span></div>
+          </div>
+
+          <div class="filters" aria-label="筛选器">
+            <button class="filter active" data-priority="all">全部优先级</button>
+            <button class="filter" data-priority="P0">P0</button>
+            <button class="filter" data-priority="P1">P1</button>
+            <button class="filter" data-priority="P2">P2</button>
+            <span class="filter-divider"></span>
+            <select class="select" id="contentFilter" aria-label="内容类型">
+              <option value="all">全部内容类型</option>
+              <option value="official_release">官方发布</option>
+              <option value="technical_update">技术更新</option>
+              <option value="executive_statement">高管发言</option>
+              <option value="media_report">媒体报道</option>
+              <option value="analysis">深度分析</option>
+              <option value="regulatory">监管</option>
+            </select>
+            <select class="select" id="informationFilter" aria-label="信息类型">
+              <option value="all">全部信息类型</option>
+              <option value="model_capability">模型能力</option>
+              <option value="agent_product">Agent 产品</option>
+              <option value="developer_ecosystem">开发者生态</option>
+              <option value="enterprise_adoption">企业采用</option>
+              <option value="company_strategy">公司战略</option>
+              <option value="security_governance">安全 / 治理</option>
+              <option value="compute_infrastructure">算力基础设施</option>
+              <option value="research_insight">研究 / 洞察</option>
+              
+              
+              
+            </select>
+            <select class="select" id="actionFilter" aria-label="行动建议">
+              <option value="all">全部行动</option>
+              <option value="alert">立即关注</option>
+              <option value="investigate">调研</option>
+              <option value="discuss">讨论</option>
+              <option value="monitor">持续观察</option>
+              <option value="archive">归档</option>
+            </select>
+          </div>
+
+          <div class="results-head"><span id="resultCount">0 条信号</span><span>按优先级与行动价值排序</span></div>
+          <div class="signal-list" id="signalList"></div>
+          <div class="empty" id="empty"><strong>没有匹配的信号</strong>该日可能是静默日，或当前筛选条件没有结果。</div>
+        </section>
+
+        <section class="feishu-view" id="feishuView">
+          <div class="page-head">
+            <div><div class="eyebrow">Feishu-ready brief</div><h2>飞书群简报</h2><p class="page-subtitle">短、直接、保留证据边界。选择日期后可一键复制到飞书群。</p></div>
+          </div>
+          <div class="feishu-actions">
+            <select class="day-picker" id="feishuDayPicker" aria-label="选择飞书简报日期"></select>
+            <button class="btn primary" id="copyFeishuBtn">复制飞书简报</button>
+          </div>
+          <div class="feishu-card">
+            <div class="feishu-card-head"><small>READY TO SEND</small><h3 id="feishuTitle">AI Signal 日报</h3></div>
+            <pre class="feishu-copy" id="feishuCopy"></pre>
+          </div>
+        </section>
+
+        <section class="methodology" id="methodology">
+          <div class="page-head">
+            <div><div class="eyebrow">Methodology · AI V1</div><h2>双层情报筛选方法</h2><p class="page-subtitle">日报是知识库的每日视图；每条信号都沉淀为可跟踪、可验证、可行动的知识对象。</p></div>
+          </div>
+          <div class="rule-callout"><small>CORE RULE</small>不能解释 AI 能力如何改变真实产品、Agent 工作流、基础设施或治理边界，就不进入 Core Signal。</div>
+          <div class="method-grid">
+            <div class="method-cell"><h3>Core Signal</h3><p>明确涉及模型能力、Agent 产品、开发工具、企业应用、安全治理或算力基础设施变化的高精度信号。</p></div>
+            <div class="method-cell"><h3>Strategic Radar</h3><p>尚未形成成熟产品，但可能改变 AI 产品入口、Agent 执行边界、企业采购或竞争格局的前置信号。</p></div>
+            <div class="method-cell"><h3>三层分类</h3><p>Signal Type 决定进入哪个情报流，Content Type 描述载体形式，Information Type 描述事件本质，避免把“媒体报道”和“协议标准”混为一类。</p></div>
+            <div class="method-cell"><h3>证据优先</h3><p>区分 confirmed、primary statement、reported、inferred 与 speculative，避免把高管计划或媒体报道写成已上线事实。</p></div>
+            <div class="method-cell"><h3>连连视角</h3><p>额外评价支付邻接、工作流影响、产品可行动性、竞争影响，以及对连连产品与合作路径的直接相关性。</p></div>
+            <div class="method-cell"><h3>事件而非文章</h3><p>同一事件关联官方、媒体、高管和技术来源；以一手来源为主，减少重复新闻卡片。</p></div>
+            <div class="method-cell"><h3>行动闭环</h3><p>每条 Include / Watchlist 都要给出对连连的影响、产品机会、竞争风险、建议行动、待验证问题和后续触发器。</p></div>
+            <div class="method-cell"><h3>P3 仍可检索</h3><p>低相关内容不推送但不物理删除，保留历史回溯，在后续信号出现时重新评估。</p></div>
+          </div>
+          <p style="margin-top:18px;color:var(--muted)">完整规则见同目录 <strong>FILTER_RULES_AI_V1.md</strong>。</p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div class="detail-backdrop" id="detailBackdrop"></div>
+  <aside class="detail" id="detail" aria-label="信号详情" aria-hidden="true">
+    <div class="detail-top">
+      <button class="icon-btn" id="saveBtn" aria-label="收藏">☆</button>
+      <button class="icon-btn" id="closeDetail" aria-label="关闭">×</button>
+    </div>
+    <div class="detail-body" id="detailBody"></div>
+  </aside>
+  <div class="toast" id="toast"></div>
+
+  <script src="data/history.js"></script>
+  <script src="data/latest.js"></script>
+  <script>
+    const demoSignals = [];
+
+    const history = window.DAILY_HISTORY && Array.isArray(window.DAILY_HISTORY.days) ? window.DAILY_HISTORY : {days:[],signals:[]};
+    const dailySignals = Array.isArray(window.DAILY_SIGNALS) ? window.DAILY_SIGNALS : [];
+    const historicalSignals = Array.isArray(history.signals) ? history.signals : dailySignals;
+    const latestDate = history.latest_date || new Date().toISOString().slice(0,10);
+    const state = {
+      view: "today", selectedDay: latestDate, priority: "all", content: "all", information: "all", action: "all", query: "",
+      selected: null, saved: new Set(JSON.parse(localStorage.getItem("aisignal-saved") || "[]")),
+      imported: JSON.parse(localStorage.getItem("aisignal-imported") || "[]")
+    };
+
+    const el = id => document.getElementById(id);
+    const uniqueById = rows => [...new Map(rows.map(x=>[x.id,x])).values()];
+    const allSignals = () => uniqueById([...state.imported, ...historicalSignals, ...demoSignals]);
+    const dayDefinition = date => history.days.find(d=>d.date===date) || {date,signal_ids:[],counts:{total:0,P0:0,P1:0,P2:0}};
+    const rowsForDay = date => { const ids=new Set(dayDefinition(date).signal_ids||[]); return historicalSignals.filter(s=>ids.has(s.id)); };
+    const priorityRank = {P0:0,P1:1,P2:2,P3:3};
+    const actionLabel = {alert:"立即关注",investigate:"调研",discuss:"讨论",monitor:"持续观察",archive:"归档"};
+    const contentLabel = {official_release:"官方发布",technical_update:"技术更新",executive_statement:"高管发言",media_report:"媒体报道",analysis:"深度分析",opinion:"观点",regulatory:"监管"};
+    const informationLabel = {model_capability:"模型能力",model_release:"模型发布",model_research:"模型研究",agent_architecture:"Agent 架构",agent_runtime:"Agent 运行时",agent_governance:"Agent 治理",agent_product:"Agent 产品",developer_ecosystem:"开发者生态",enterprise_adoption:"企业采用",product_workflow:"产品工作流",compute_infrastructure:"算力基础设施",industry_structure:"产业结构",regulation_policy:"监管政策",company_strategy:"公司战略",research_insight:"研究 / 洞察"};
+    const evidenceLabel = {confirmed:"已确认",primary_statement:"一手发言",reported:"媒体报道",inferred:"推断",speculative:"推测"};
+
+    function dateText(value) {
+      if (!value) return "持续监控";
+      const d = new Date(value); if (Number.isNaN(d.getTime())) return value;
+      return new Intl.DateTimeFormat("zh-CN", {year:"numeric",month:"2-digit",day:"2-digit"}).format(d);
+    }
+    function isToday(value) {
+      if (!value) return false;
+      const a = new Date(value), b = new Date();
+      return a.toDateString() === b.toDateString();
+    }
+    function searchable(s) {
+      return [s.title,s.summary,s.source,s.why_it_matters_cn,s.potential_impact_on_lianlian_cn,s.product_opportunity_cn,...(s.primary_tags||[]),...(s.secondary_tags||[])].join(" ").toLowerCase();
+    }
+    function visibleSignals() {
+      let rows = allSignals();
+      if (state.view === "today") rows = rowsForDay(latestDate);
+      if (state.view === "daily") rows = rowsForDay(state.selectedDay);
+      if (state.view === "watchlist") rows = rows.filter(s => s.signal_type === "strategic_radar" || s.decision === "watchlist");
+      if (state.view === "competitor") rows = rows.filter(s => s.signal_type === "competitor");
+      if (state.view === "saved") rows = rows.filter(s => state.saved.has(s.id));
+      if (state.priority !== "all") rows = rows.filter(s => s.relevance_level === state.priority);
+      if (state.content !== "all") rows = rows.filter(s => s.content_type === state.content);
+      if (state.information !== "all") rows = rows.filter(s => s.information_type === state.information);
+      if (state.action !== "all") rows = rows.filter(s => s.recommended_action === state.action);
+      if (state.query.trim()) {
+        const terms = state.query.toLowerCase().trim().split(/\s+/);
+        rows = rows.filter(s => terms.every(t => searchable(s).includes(t)));
+      }
+      return rows.sort((a,b) => (priorityRank[a.relevance_level] ?? 9) - (priorityRank[b.relevance_level] ?? 9) || (b.scores?.product_actionability||0) - (a.scores?.product_actionability||0));
+    }
+
+    function render() {
+      const rows = visibleSignals();
+      el("signalList").innerHTML = rows.map(s => `
+        <button class="signal-row ${state.selected===s.id?'selected':''}" data-id="${escapeHtml(s.id)}">
+          <span class="priority ${(s.relevance_level||'P3').toLowerCase()}">${escapeHtml(s.relevance_level||'P3')}</span>
+          <span>
+            <h3 class="signal-title">${escapeHtml(s.title)}${s.demo?'<span class="demo-label">DEMO</span>':''}</h3>
+            <p class="signal-summary">${escapeHtml(s.summary||'')}</p>
+            <span class="tags">${(s.primary_tags||[]).slice(0,3).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}</span>
+          </span>
+          <span class="signal-meta"><strong>${escapeHtml(s.source||'未知来源')}</strong><span class="info-type">${escapeHtml(informationLabel[s.information_type]||s.information_type||'未分类')}</span><span>${escapeHtml(contentLabel[s.content_type]||s.content_type||'')}</span><br/><span class="evidence">${escapeHtml(evidenceLabel[s.evidence_level]||s.evidence_level||'')}</span><br/>${escapeHtml(dateText(s.published_at))}</span>
+        </button>`).join("");
+      el("resultCount").textContent = `${rows.length} 条信号`;
+      el("empty").style.display = rows.length ? "none" : "block";
+      document.querySelectorAll(".signal-row").forEach(row => row.addEventListener("click", () => openDetail(row.dataset.id)));
+      updateMetrics(); updateCounts();
+    }
+
+    function updateMetrics() {
+      const rows = visibleSignals();
+      el("metricP0").textContent = rows.filter(s=>s.relevance_level==='P0').length;
+      el("metricCore").textContent = rows.filter(s=>s.signal_type==='core').length;
+      el("metricRadar").textContent = rows.filter(s=>s.signal_type==='strategic_radar'||s.decision==='watchlist').length;
+      el("metricAction").textContent = rows.filter(s=>['investigate','discuss'].includes(s.recommended_action)).length;
+    }
+    function updateCounts() {
+      const rows = allSignals();
+      el("allCount").textContent = rows.length;
+      el("todayCount").textContent = rowsForDay(latestDate).length;
+      el("dayCount").textContent = history.days.length;
+      el("watchCount").textContent = rows.filter(s=>s.signal_type==='strategic_radar'||s.decision==='watchlist').length;
+      el("competitorCount").textContent = rows.filter(s=>s.signal_type==='competitor').length;
+      el("savedCount").textContent = state.saved.size;
+    }
+    function escapeHtml(v) { return String(v ?? '').replace(/[&<>'"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
+    function scoreBlock(scores={}) {
+      const labels = {topic_relevance:'主题相关',novelty:'新颖性',technical_or_product_significance:'技术 / 产品价值',strategic_value:'战略价值',source_quality:'来源质量',model_value:'模型主线',agent_architecture_value:'Agent 架构主线',ai_product_value:'AI 产品主线',macro_value:'宏观主线',actionability:'可行动性'};
+      return Object.entries(labels).map(([k,l])=>`<div class="score-item"><span>${l}</span><b>${scores[k]??0}/5</b><span class="bar"><i style="width:${(scores[k]??0)*20}%"></i></span></div>`).join('');
+    }
+    function listBlock(items) { return (items&&items.length) ? `<ul class="bullet-list">${items.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>` : '<p style="color:var(--muted)">暂无</p>'; }
+
+    function openDetail(id) {
+      const s = allSignals().find(x=>x.id===id); if (!s) return;
+      state.selected=id;
+      el("detailBody").innerHTML = `
+        <div><span class="priority ${(s.relevance_level||'P3').toLowerCase()}">${escapeHtml(s.relevance_level)}</span><span class="info-type" style="margin-left:7px">${escapeHtml(informationLabel[s.information_type]||s.information_type||'未分类')}</span><span class="evidence" style="margin-left:7px">${escapeHtml(evidenceLabel[s.evidence_level]||s.evidence_level)}</span>${s.demo?'<span class="demo-label">DEMO DATA</span>':''}</div>
+        <h2>${escapeHtml(s.title)}</h2><p class="detail-lead">${escapeHtml(s.summary||'')}</p>
+        <div class="tags">${[...(s.primary_tags||[]),...(s.secondary_tags||[])].map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}</div>
+        <div class="detail-section"><h3>为什么重要</h3><p>${escapeHtml(s.why_it_matters_cn||'暂无')}</p></div>
+        <div class="detail-section"><h3>对连连的潜在影响</h3><p>${escapeHtml(s.potential_impact_on_lianlian_cn||'暂无')}</p></div>
+        <div class="detail-section"><h3>产品机会</h3><p>${escapeHtml(s.product_opportunity_cn||'暂无')}</p></div>
+        <div class="detail-section"><h3>竞争风险</h3><p>${escapeHtml(s.competitive_risk_cn||'暂无')}</p></div>
+        <div class="detail-section"><h3>评分</h3><div class="score-grid">${scoreBlock(s.scores)}</div></div>
+        <div class="detail-section"><h3>建议行动 · ${escapeHtml(actionLabel[s.recommended_action]||s.recommended_action||'')}</h3>${listBlock(s.questions_to_validate)}</div>
+        <div class="detail-section"><h3>后续触发器</h3>${listBlock(s.follow_up_triggers)}</div>
+        <div class="detail-section"><h3>来源</h3><p>${escapeHtml(s.source||'未知来源')} · ${escapeHtml(dateText(s.published_at))}</p>${s.url?`<p style="margin-top:7px"><a class="source-link" href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.url)}</a></p>`:''}</div>`;
+      el("saveBtn").textContent = state.saved.has(id)?'★':'☆';
+      el("detail").classList.add("open"); el("detailBackdrop").classList.add("open"); el("detail").setAttribute("aria-hidden","false"); render();
+    }
+    function closeDetail(){ el("detail").classList.remove("open"); el("detailBackdrop").classList.remove("open"); el("detail").setAttribute("aria-hidden","true"); state.selected=null; render(); }
+    function toast(msg){ el("toast").textContent=msg; el("toast").classList.add("show"); setTimeout(()=>el("toast").classList.remove("show"),1800); }
+
+    function formatReportDate(date) {
+      const d=new Date(`${date}T00:00:00+08:00`);
+      return new Intl.DateTimeFormat('zh-CN',{year:'numeric',month:'long',day:'numeric',weekday:'short',timeZone:'Asia/Shanghai'}).format(d);
+    }
+    function feishuBrief(date) {
+      const rows=rowsForDay(date).sort((a,b)=>(priorityRank[a.relevance_level]??9)-(priorityRank[b.relevance_level]??9));
+      const laneNames={model:'模型',agent_architecture:'Agent 架构',ai_product:'AI 产品',ai_macro:'AI 宏观'};
+      if(!rows.length) return `AI Signal 日报｜${date}\n\n一句话结论：今日无新增高价值信号。\n\n四主线重点\n- 模型：0 条\n- Agent 架构：0 条\n- AI 产品：0 条\n- AI 宏观：0 条\n\n判断：没有为了凑数收录弱相关内容。\n行动：继续按四主线监控。\n证据边界：无入库事件。\n来源 URL：无`;
+      const p0=rows.filter(x=>x.relevance_level==='P0').length, p1=rows.filter(x=>x.relevance_level==='P1').length, p2=rows.filter(x=>x.relevance_level==='P2').length;
+      const lead=p0 ? `今天有 ${p0} 条需要立即关注的信号。` : `今天没有 P0，重点是 ${p1} 条 P1 和 ${p2} 条 P2。`;
+      const laneItems=Object.entries(laneNames).map(([lane,name])=>{const xs=rows.filter(s=>s.topic_lane===lane);return xs.length?`- ${name}（${xs.length}）：${xs.map(s=>`[${s.relevance_level}] ${s.title}`).join('；')}`:`- ${name}：0 条`;}).join('\n');
+      const actions=rows.map(s=>`${s.title}：${actionLabel[s.recommended_action]||s.recommended_action}`).join('；');
+      const urls=rows.map(s=>s.url).filter(Boolean).join('\n');
+      const uncertain=rows.filter(x=>!['confirmed','primary_statement'].includes(x.evidence_level));
+      const boundary=uncertain.length ? `${uncertain.map(x=>`${x.source}为${evidenceLabel[x.evidence_level]||x.evidence_level}`).join('；')}，相关结论仍需一手材料确认。` : '入库事件均有一手正文；厂商能力声明仍需独立验证。';
+      return `AI Signal 日报｜${date}\n\n一句话结论：${lead}\n\n四主线重点\n${laneItems}\n\n判断：优先验证 P0/P1 的真实任务影响，不以营销声明替代实测。\n行动：${actions}\n证据边界：${boundary}\n来源 URL：\n${urls}`;
+    }
+    function renderFeishu(date=state.selectedDay) {
+      state.selectedDay=date;
+      el('feishuDayPicker').value=date;
+      el('feishuTitle').textContent=`AI Signal 日报｜${date}`;
+      el('feishuCopy').textContent=feishuBrief(date);
+    }
+    function setSelectedDay(date) {
+      state.selectedDay=date;
+      el('dayPicker').value=date; el('feishuDayPicker').value=date;
+      const day=dayDefinition(date); el('dayNote').textContent=`${day.counts?.total||0} 条 · P0 ${day.counts?.P0||0} · P1 ${day.counts?.P1||0} · P2 ${day.counts?.P2||0}`;
+      el('dateChip').textContent=formatReportDate(date);
+      renderFeishu(date); if(state.view==='daily') render();
+    }
+
+    function switchView(view) {
+      state.view=view; closeDetail();
+      document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===view));
+      const method=view==='method', feishu=view==='feishu';
+      el('signalsView').style.display=(method||feishu)?'none':'block';
+      el('methodology').classList.toggle('open',method); el('feishuView').classList.toggle('open',feishu);
+      el('dayBar').classList.toggle('open',view==='daily');
+      const titles={today:['Daily intelligence','今日 AI Signal','本期最新日报；Core Signal 保持高精度，Strategic Radar 捕捉前置信号。'],daily:['Daily archive','按日查看日报','按日报运行日期查看每日增量；同一事件跨日只保留一次。'],library:['Knowledge base','全部知识库','跨来源、跨时间沉淀的事件、协议、公司、人物与研究议题。'],watchlist:['Strategic radar','战略雷达','支付尚未发生，但可能改变 AI 产品入口、Agent 执行边界、企业工作流和竞争格局。'],competitor:['Competitive intelligence','竞争动态','跟踪卡组织、PSP、AI 平台与基础设施公司的 AI 产品与 Agent 布局。'],saved:['Saved intelligence','已收藏','你标记为后续调研、讨论或持续跟踪的信号。']};
+      if(!method&&!feishu){ const t=titles[view]||titles.library; el('eyebrow').textContent=t[0]; el('pageTitle').textContent=t[1]; el('pageSubtitle').textContent=t[2]; el('dateChip').textContent=formatReportDate(view==='daily'?state.selectedDay:latestDate); render(); }
+      if(feishu) renderFeishu(state.selectedDay);
+      el('sidebar').classList.remove('open');
+    }
+
+    document.querySelectorAll('.nav-btn').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
+    el('dayPicker').addEventListener('change',e=>setSelectedDay(e.target.value));
+    el('feishuDayPicker').addEventListener('change',e=>setSelectedDay(e.target.value));
+    el('copyFeishuBtn').addEventListener('click',async()=>{
+      try { await navigator.clipboard.writeText(el('feishuCopy').textContent); toast('飞书简报已复制'); }
+      catch (_) { const range=document.createRange(); range.selectNodeContents(el('feishuCopy')); const sel=getSelection(); sel.removeAllRanges(); sel.addRange(range); toast('已选中简报，请复制'); }
+    });
+    document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');state.priority=b.dataset.priority;render();}));
+    el('contentFilter').addEventListener('change',e=>{state.content=e.target.value;render();});
+    el('informationFilter').addEventListener('change',e=>{state.information=e.target.value;render();});
+    el('actionFilter').addEventListener('change',e=>{state.action=e.target.value;render();});
+    el('search').addEventListener('input',e=>{state.query=e.target.value; if(state.view==='method') switchView('library'); else render();});
+    el('closeDetail').addEventListener('click',closeDetail); el('detailBackdrop').addEventListener('click',closeDetail);
+    el('saveBtn').addEventListener('click',()=>{ if(!state.selected)return; if(state.saved.has(state.selected))state.saved.delete(state.selected);else state.saved.add(state.selected);localStorage.setItem('aisignal-saved',JSON.stringify([...state.saved]));el('saveBtn').textContent=state.saved.has(state.selected)?'★':'☆';toast(state.saved.has(state.selected)?'已收藏':'已取消收藏');updateCounts();});
+    el('mobileMenu').addEventListener('click',()=>el('sidebar').classList.toggle('open'));
+    document.addEventListener('keydown',e=>{if(e.key==='/'&&document.activeElement!==el('search')){e.preventDefault();el('search').focus();}if(e.key==='Escape')closeDetail();});
+
+    el('importBtn').addEventListener('click',()=>el('fileInput').click());
+    el('fileInput').addEventListener('change',async e=>{
+      const file=e.target.files[0]; if(!file)return; const text=await file.text();
+      try {
+        let data; if(file.name.endsWith('.jsonl')) data=text.split(/\n/).filter(Boolean).map(JSON.parse); else data=JSON.parse(text);
+        if(!Array.isArray(data)) data=data.signals||data.items||[data];
+        data=data.map((s,i)=>({...s,id:s.id||s.entity_id||s.signal_id||`import-${Date.now()}-${i}`,scores:s.scores||Object.fromEntries(['ai_relevance','product_impact','technical_significance','strategic_value','source_quality','lianlian_relevance','payment_adjacency','workflow_impact','product_actionability','competitive_impact'].map(k=>[k,s[k]||0]))}));
+        state.imported=[...data,...state.imported]; localStorage.setItem('aisignal-imported',JSON.stringify(state.imported)); switchView('library'); toast(`已导入 ${data.length} 条信号`);
+      } catch(err){ toast('导入失败：请检查 JSON / JSONL 格式'); }
+      e.target.value='';
+    });
+    el('exportBtn').addEventListener('click',()=>{
+      const blob=new Blob([JSON.stringify(allSignals(),null,2)],{type:'application/json'}); const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ai-signal-knowledge-base.json';a.click();URL.revokeObjectURL(a.href);toast('知识库 JSON 已导出');
+    });
+
+    const dayOptions=history.days.map(d=>`<option value="${escapeHtml(d.date)}">${escapeHtml(d.date)} · ${d.counts?.total||0} 条</option>`).join('');
+    el('dayPicker').innerHTML=dayOptions; el('feishuDayPicker').innerHTML=dayOptions;
+    setSelectedDay(latestDate);
+    render();
+  </script>
+</body>
+</html>

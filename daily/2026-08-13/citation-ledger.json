@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://x.ai/news/grok-4-6",
+      "title": "Introducing Grok 4.6",
+      "publisher": "xAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-13"
+    },
+    {
+      "id": 2,
+      "url": "https://www.anthropic.com/research/multiagent-systems",
+      "title": "Patterns and problems in emerging multiagent systems",
+      "publisher": "Anthropic",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-13"
+    }
+  ]
+}
