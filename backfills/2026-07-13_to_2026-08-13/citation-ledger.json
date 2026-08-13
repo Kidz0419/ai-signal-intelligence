@@ -1,0 +1,108 @@
+{
+  "sources": [
+    {
+      "id": 1,
+      "title": "Our position on open-weights models",
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "source_type": "executive_statement",
+      "evidence_excerpt": "“Open-weights models that don’t have dangerous capabilities are a public good...”；“Distillation ... can bring the Chinese frontier to within a few months of the US frontier.”；“All sufficiently capable models, open and closed, should go through mandatory safety testing.”",
+      "evidence_boundary": "这是 Amodei 的政策与风险判断，不是实验论文；正文没有公开定义“sufficiently capable”的数值阈值，也没有提供“few months”估计的计算方法。文中关于开放权重不可撤回、难以持续施加防护的论点有外部报告链接，但不能外推为所有开放模型都比闭源模型危险。"
+    },
+    {
+      "id": 2,
+      "title": "Introducing Gemini 3.5 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
+      "source_type": "executive_statement",
+      "evidence_excerpt": "“CodeMender invokes 3.5 Flash Cyber multiple times, so agents can analyze vastly more code paths...”；“3.5 Flash Cyber found 55 unique confirmed issues, compared to 47 found by mainline 3.5 Flash and 36 found by Opus 4.6, including 10 issues that the other two models tested did not catch.”；“In just 2 hours, the model uncovered remote code execution vulnerabilities...”",
+      "evidence_boundary": "竞品基准部分使用供应商自报成绩，且正文说明较新 Opus 版本因安全护栏拒答而未显示，不能把图表理解为完整、同策略的前沿排名。V8 的 55/47/36 是固定调用次数下的独特漏洞数，不等同于通用编码能力。两小时案例为 Google 内部测试，正文未公开目标代码、完整复现实验或成本。"
+    },
+    {
+      "id": 3,
+      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "source_type": "executive_statement",
+      "evidence_excerpt": "“We are making this possible through three highly capable models...”；“longer task sequences, lasting several minutes and involving hundreds of decisions.”；“adapt to new bi-arm robot embodiments with just a few hours of adaptation time, typically with less than 200 examples.”；“ASIMOV-Agentic, a new benchmark for agentic safety orchestration and uncertainty resolution.”",
+      "evidence_boundary": "文章给出模型分工、若干任务成功率图和演示，但没有公开训练数据规模、参数量、完整训练方法或与独立第三方系统的全面对比。“数小时、少于 200 示例”指适配特定新机器人形态，不代表零样本泛化；“数百次决策”也不等同于数百个独立复杂子任务。"
+    },
+    {
+      "id": 4,
+      "title": "Figma for Agents: How Airflow's Creator Coordinates AI ft. Maxime Beauchemin",
+      "url": "https://motherduck.com/blog/figma-for-agents-airflow-creator-maxime-beauchemin/",
+      "source_type": "practitioner_statement",
+      "evidence_excerpt": "“There are more agents than humans nowadays. Everyone has a Claude Max plan, and agents handle almost all code writing.”；“I trust agents the same way as I would an employee.”；访谈将“Okta for Agents”具体化为“identity, scoped delegated permissions, leases, and audit logs”，并举例“the sales agent only has access to sales documents.”",
+      "evidence_boundary": "文章由 Simon Späti 整理，部分段落是采访者转述而非逐字稿；“几乎所有代码”“Agent 多于人”没有公开团队规模、仓库统计或生产指标。Amdahl 的 2–3 倍是方法性判断，不是经审计的 Preset 效率测量。"
+    },
+    {
+      "id": 5,
+      "title": "My AI agents shipped 128 releases of a product no one ever used",
+      "url": "https://bramo.ai/blog/01-post-mortem",
+      "source_type": "practitioner_statement",
+      "evidence_excerpt": "“agents self-approving gates they were told never to self-approve… forge the human’s approval through stdin”；“The system grew to 442 passing tests.”；“the first time a real prompt produced a real, verified artifact end-to-end was after five weeks of building.”；“Agents make building so cheap that building becomes the procrastination.”",
+      "evidence_boundary": "所有数字和日志均由作者自报，未链接公开仓库、npm 发布记录或第三方用户分析；新 Bramo 仍处候补名单阶段，文中方法是从失败中形成的设计原则，不代表已验证商业成功。"
+    },
+    {
+      "id": 6,
+      "title": "Things I learned about how people use AI after 1,800 people",
+      "url": "https://news.ycombinator.com/item?id=49226913",
+      "source_type": "practitioner_statement",
+      "evidence_excerpt": "“after 1800 real users who interact with our chat bot 20-40 minutes”；“Product managers outscore engineers on AI fluency (59.2 vs 53.7).”；“The average AI fluency score across 1,800 professionals is 48”；“The gap between the least and most AI-fluent employee in one team was 82 points (15 to 97).”",
+      "evidence_boundary": "这是产品运营数据而非经同行评审的代表性人口调查；参与者是主动完成较长 AI 测试的自选择样本。官网所称与外部框架覆盖率、有效性和公平性主要为产品方自评；角色样本量、方差、显著性及完整抽样结构未公开，因此不能把角色差异解释为因果关系。"
+    },
+    {
+      "id": 7,
+      "title": "The death of AI workflow builders",
+      "url": "https://www.adriankrebs.ch/blog/death-of-ai-workflow-builders/",
+      "source_type": "practitioner_statement",
+      "evidence_excerpt": "“I think the future lies in deterministic workflow scripts with a robust agent harness around them that jumps in whenever the script fails and needs to adapt.”；“when a website or PDF layout changes, an agent investigates, fixes, and tests the extraction or transformation code. If it can’t figure it out, it escalates to a human operator.”",
+      "evidence_boundary": "文章关于多家大厂工作流构建器“均已弃用或关闭”及若干创业公司关停的外部判断未在本条逐一复核，因此不作为入选核心证据；Kadoa 模式没有公开成功率、恢复时长、误修率或人工升级率，现阶段是可信的一线方法陈述而非量化效果证明。"
+    },
+    {
+      "id": 8,
+      "title": "Why Software Factories Fail (or: harness engineering is not enough)",
+      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
+      "source_type": "practitioner_statement",
+      "evidence_excerpt": "“The narrative goes something like this: 1. You are the bottleneck. 2. The models are good enough. 3. Code is free. 4. Just ship more stuff.”；作者随后明确提醒 Faros 数据“is more of a correlation signal than a verifiable smoking gun”。",
+      "evidence_boundary": "文章核心是维护者经验与论证，不是受控因果实验。文中引用的 PR/事故统计只能证明相关性，作者本人也明确承认这一点；因此可支持“应保持人在回路”的工程风险判断，不能据此断言 AI coding tools 必然导致全部质量下降。"
+    },
+    {
+      "id": 9,
+      "title": "Benchmarking Opus 5 on SlopCodeBench",
+      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+      "source_type": "practitioner_statement",
+      "evidence_excerpt": "“For all 9 test runs, none of the models made it to the end of any challenge with everything passing, even on the problem marked as ‘easy’ difficulty.”；“the strict pass criteria means that if a model bungles something in checkpoint 4, it can't pass the following checkpoints because that failing part of the code carries forward”。",
+      "evidence_boundary": "这是小样本复现实验：仅三个问题、17 checkpoints，并由 Claude 协助选择子集；不能当作模型总体能力排名。它较可靠地支持“在该 harness 与该 SlopCodeBench 子集上，所有模型均出现累积失败”，但不能外推到所有代码库、提示策略或 agent runtime。"
+    },
+    {
+      "id": 10,
+      "title": "The new rules of context engineering for Claude 5 generation models",
+      "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+      "source_type": "practitioner_statement",
+      "evidence_excerpt": "“We removed over 80% of Claude Code’s system prompt for models like Claude Opus 5 and Claude Fable 5 with no measurable loss on our coding evaluations.”；“Some of our tools are ‘deferred loading,’ which means the agent must search for their full definitions using ToolSearch before using them.”",
+      "evidence_boundary": "“无可测损失”来自 Anthropic 内部 coding evaluations，正文未公开完整任务集、重复次数、统计区间或原始 traces；因此可核实这是团队报告的生产经验，不能独立验证 80% 精简对任意模型、任意 agent 产品都无损。"
+    },
+    {
+      "id": 11,
+      "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+      "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/",
+      "source_type": "practitioner_statement",
+      "evidence_excerpt": "“Today many models return a mix of reasoning text, output strings, tool calls, and even image attachments.”；“Tool chains can now pause for human approval and resume from a stored message history”；日志方案是“the new content-addressable message store, modeled after Git”。",
+      "evidence_boundary": "这是维护者对已发布功能的原始说明，可验证接口与设计取舍，但不是不同 runtime 的性能对比；“开始像 agent framework”是作者对项目边界的判断，而非行业统一定义。"
+    },
+    {
+      "id": 12,
+      "title": "Material Discovery Bench",
+      "url": "https://discoveredmaterials.com/research/",
+      "source_type": "practitioner_statement",
+      "evidence_excerpt": "“Across all models, we have discovered over 500 previously unknown materials”；“of the 500+ materials discovered, only 1 (one) material has a plausible synthesis pathway”；“Fable-5 was caught submitting the same material 58 times”；Sol 在“97.0 M tokens into a run”后“spent the next 3M tokens making the same tool call on loop”。",
+      "evidence_boundary": "“新材料”首先是计算候选，不等于已在实验室合成或具商业可用性；合成方案主要经专家制定 rubric 与校准后的 LLM grader 判断，只有部分进入人工/实验验证。网页未显示内嵌发布日期，因此发布日期依赖作者本人 2026-08-12 的公开发布帖交叉确认。"
+    },
+    {
+      "id": 13,
+      "title": "AI Product Engineering Notes",
+      "url": "https://hamel.dev/notes/llm/ai-product-engineering/",
+      "source_type": "practitioner_statement",
+      "evidence_excerpt": "“The lowest-hanging fruit is to optimize retrieval and context. Once that’s done, you should improve your systems and harness. Finally, consider post-training your own model after other approaches are exhausted.”；“9.5 hours of sessions comes out to about 20 minutes of reading”。",
+      "evidence_boundary": "这是一篇由 Hamel 编辑提炼的高密度二次综合，而非单一新实验；其原创增量主要是跨 13 场资料形成的优化顺序和工程分类。各分项的具体实验结论仍应回到所链接的讲者原始资料核验，不能全部归功于 Hamel。"
+    }
+  ]
+}

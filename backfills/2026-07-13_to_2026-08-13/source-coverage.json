@@ -1,0 +1,41 @@
+{
+  "window": {
+    "timezone": "Asia/Shanghai",
+    "start": "2026-07-13T00:00:00+08:00",
+    "end": "2026-08-13T17:00:00+08:00"
+  },
+  "conclusion": "此前两个 0 条存在明显信源不足导致的假阴性；补充个人博客、GitHub、完整访谈与公开 X Article 后核验出 13 条合格原创内容。",
+  "selected_counts": {
+    "total": 13,
+    "model_company_leaders": 3,
+    "practitioner_statements": 10
+  },
+  "coverage_gaps": [
+    {
+      "channel": "X official API",
+      "status": "xurl installed; no app/OAuth configured",
+      "impact": "无法系统检索全部公开长帖和 X Articles。",
+      "alternative": "个人博客、GitHub、官方站点及可公开访问的 X 页面。"
+    },
+    {
+      "channel": "YouTube transcripts",
+      "status": "runtime IP blocked by transcript API",
+      "impact": "无正文的访谈不能凭标题正式入库。",
+      "alternative": "发布者文字稿、博客整理和官方描述。"
+    },
+    {
+      "channel": "Chinese closed platforms",
+      "status": "partial",
+      "impact": "微信公众号、视频号与登录墙内访谈覆盖不完整。",
+      "alternative": "公司官网、公开演讲页和可访问原文。"
+    }
+  ],
+  "enabled_sources": [
+    "模型公司官方博客/Research/站点地图",
+    "个人博客与 RSS",
+    "GitHub 原始长文/实验/发布",
+    "完整访谈与播客发现",
+    "公开 X Article"
+  ],
+  "rejected_policy": "正文不可读、身份不可核验、只有标题/营销、时间不在窗口或无原创增量者不入库。"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "purpose": "AI Signal 人物原创信源注册表；关键词仅作发现，入选仍执行 FILTER_RULES_AI_V1.md 的人物门槛。",
+  "updated_at": "2026-08-13T17:00:00+08:00",
+  "channels": [
+    {
+      "id": "personal_blogs",
+      "status": "enabled",
+      "sources": [
+        {"name": "Hamel Husain", "url": "https://hamel.dev/", "speaker_type": "ai_developer"},
+        {"name": "Simon Willison", "url": "https://simonwillison.net/", "speaker_type": "independent_researcher"},
+        {"name": "Chip Huyen", "url": "https://huyenchip.com/", "speaker_type": "ai_developer"},
+        {"name": "swyx / Latent Space", "url": "https://www.latent.space/", "speaker_type": "ai_developer"}
+      ]
+    },
+    {
+      "id": "longform_video_podcasts",
+      "status": "enabled_with_retrieval_limits",
+      "sources": [
+        {"name": "AI Engineer", "url": "https://www.youtube.com/@aiDotEngineer"},
+        {"name": "Lenny's Podcast", "url": "https://www.youtube.com/@LennysPodcast"},
+        {"name": "No Priors", "url": "https://www.youtube.com/@NoPriorsPodcast"},
+        {"name": "Y Combinator", "url": "https://www.youtube.com/@ycombinator"},
+        {"name": "Bloomberg Originals", "url": "https://www.youtube.com/@business"},
+        {"name": "Dwarkesh Patel", "url": "https://www.youtube.com/@DwarkeshPatel"},
+        {"name": "Lex Fridman", "url": "https://www.youtube.com/@lexfridman"}
+      ],
+      "limitation": "YouTube transcript API currently blocks this runtime IP; browser-rendered title, date and description are still usable, but claims requiring transcript detail remain watchlist until body evidence is available."
+    },
+    {
+      "id": "github_primary",
+      "status": "enabled",
+      "scope": "重要 Agent、模型工具、协议和框架维护者的 Discussions、Issues、Release Notes 与设计文档"
+    },
+    {
+      "id": "model_company_leaders",
+      "status": "enabled",
+      "organizations": ["OpenAI", "Anthropic", "Google DeepMind", "Meta AI", "xAI", "Microsoft AI", "Amazon AGI", "Apple Foundation Models", "NVIDIA", "重要中国基础模型公司"],
+      "source_types": ["官方博客", "完整访谈", "公开演讲", "播客逐字稿", "负责人个人博客或长文"]
+    },
+    {
+      "id": "x_official_api",
+      "status": "adapter_installed_auth_required",
+      "tool": "xurl",
+      "scope": "公开帖子、线程与 X Articles 的发现和原文核验",
+      "privacy": "需要用户自行在 X Developer Portal 创建应用并在本机完成 OAuth；AI Signal 不读取、保存或发布凭据。",
+      "alternative": "未授权时继续使用作者个人博客、GitHub、YouTube/播客、官方站点和公开网页索引。"
+    }
+  ]
+}
