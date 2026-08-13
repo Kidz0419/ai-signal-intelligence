@@ -1,14 +1,20 @@
 {
-  "run_type": "daily_four_lane_recollection",
+  "run_type": "daily_four_lane_incremental",
+  "run_at": "2026-08-13T16:29:44+08:00",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-12T00:00:00+08:00",
-    "end": "2026-08-13T09:52:01+08:00"
+    "start": "2026-08-13T00:00:00+08:00",
+    "end": "2026-08-13T16:29:44+08:00",
+    "incremental_since": "2026-08-13T09:52:01+08:00"
   },
-  "queries": 34,
-  "raw_candidates": 555,
-  "unique_candidates": 464,
+  "queries": 42,
+  "raw_candidates": 640,
+  "unique_candidates": 549,
   "editorial_shortlist": 87,
+  "previous_count": 2,
+  "new_count": 0,
+  "updated_count": 0,
+  "total_count": 2,
   "selected": 2,
   "lane_counts": {
     "model": 1,
@@ -22,7 +28,14 @@
     "P2": 0
   },
   "executive_model_longform": 0,
+  "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
   "collection_errors": 0,
-  "note": "四主线均独立检索；产品与宏观没有达到规则阈值的新增事件，未凑数。"
+  "excluded_summary": {
+    "ordinary_or_unverified_github_updates": 18,
+    "help_or_index_pages_without_sufficient_body_or_ui_evidence": 14,
+    "secondary_reports_or_rumors_without_primary_confirmation": 11,
+    "ordinary_financing_marketing_or_low_relevance_items": 42
+  },
+  "note": "完整复跑四主线、高管模型内容与一线实践者通道；上一轮后宽召回 85 个新索引项，但均未达到新增事件或实质证据更新阈值。保留当天既有 2 条，不凑数。"
 }
