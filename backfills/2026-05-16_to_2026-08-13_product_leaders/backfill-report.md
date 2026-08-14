@@ -4,7 +4,7 @@
 
 **90 天主窗口：** 2026-05-16—2026-08-13（Asia/Shanghai）  
 **邻近窗口：** 2026-04-16—2026-05-15  
-**结果：** 日期确认节目/正文 **29 条**，涉及 **17 位人物、4 个组织、15 个主题簇**。
+**结果：** 日期确认节目/正文 **30 条**，涉及 **17 位人物、4 个组织、15 个主题簇**。
 
 ## 证据口径
 
@@ -16,12 +16,12 @@
 
 - Anthropic：17 条
 - Google：6 条
-- OpenAI：5 条
+- OpenAI：6 条
 - AWS：1 条
 
 ## 证据层级
 
-- `chapters`：9 条
+- `chapters`：10 条
 - `demo`：4 条
 - `full_text`：2 条
 - `show_notes`：13 条
@@ -85,47 +85,47 @@
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/inside-googles-creative-frontier-with-josh-woodward/id1860114911?i=1000768882280
 
-### 9. Google I/O 2026: A New Era of Work Just Started
+### 9. Nick Turley: Wie OpenAI fast aus Versehen die KI-Revolution startete
+- **日期 / 人物 / 组织：** 2026-05-21｜Nick Turley｜OpenAI
+- **证据层级：** `chapters`
+- **可确认主题：** ChatGPT 从研究预览发展为全球产品；OpenAI 从研究实验室走向产品公司的转变；模型内部测试、隐私与信息可见性；用户把 ChatGPT 用作搜索及产品广告问题；AI 安全复杂性与创作者判断力
+- **边界：** 节目公开说明提供逐段时间码，但未取得完整逐字稿；只登记节目方列出的主题，不复述 Nick Turley 的具体判断、原话或数据。
+- **来源：** https://podcasts.apple.com/us/podcast/nick-turley-wie-openai-fast-aus-versehen-die-ki-revolution/id1896390658?i=1000768856170&uo=4
+
+### 10. Google I/O 2026: A New Era of Work Just Started
 - **日期 / 人物 / 组织：** 2026-05-22｜Josh Woodward｜Google
 - **证据层级：** `show_notes`
 - **可确认主题：** 从亲自执行转向指导 AI；Gemini Spark、3.5 Flash、Ask YouTube 与智能眼镜；语音交互、人类判断与产品品味；小团队快速推出 AI 产品
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/google-i-o-2026-a-new-era-of-work-just-started-josh-woodward/id1819090545?i=1000769098854
 
-### 10. How the engineer behind Claude Cowork actually uses Claude
+### 11. How the engineer behind Claude Cowork actually uses Claude
 - **日期 / 人物 / 组织：** 2026-05-25｜Felix Rieseberg｜Anthropic
 - **证据层级：** `demo`
 - **可确认主题：** Claude Cowork 的真实生活与产品工作流；Live artifacts 和可刷新仪表盘；从二维平面图到交互式 3D artifact；使用物理按钮审批 Claude 动作
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/how-the-engineer-behind-claude-cowork-actually-uses/id1809663079?i=1000769476064
 
-### 11. Claude Code creator Boris Cherny on the end of the software engineer
+### 12. Claude Code creator Boris Cherny on the end of the software engineer
 - **日期 / 人物 / 组织：** 2026-05-27｜Boris Cherny｜Anthropic
 - **证据层级：** `show_notes`
 - **可确认主题：** “coding is solved”判断的含义；AI 工具对工程岗位和生产率的影响；Claude Code 在非工程职业中的使用
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/claude-code-creator-boris-cherny-on-the-end-of/id1868844067?i=1000769734571
 
-### 12. Anthropic Head of Design on Claude Code’s Evolution from an Internal Feature
+### 13. Anthropic Head of Design on Claude Code’s Evolution from an Internal Feature
 - **日期 / 人物 / 组织：** 2026-06-03｜Meaghan Choi｜Anthropic
 - **证据层级：** `show_notes`
 - **可确认主题：** Claude Code 从内部功能走向正式产品；小型 AI Builder pod 与 Agent 协作；高速交付同时保持质量；企业采用、PLG 与 AI ROI 衡量
 - **边界：** 节目方 Show Notes 包含营收、估值和增长数字，但本回溯未对这些商业数字做独立核验；只把产品演进和团队主题作为候选证据。
 - **来源：** https://podcasts.apple.com/us/podcast/anthropic-head-of-design-on-claude-codes-evolution/id1219400787?i=1000771025211
 
-### 13. How Anthropic Uses Claude Fable 5 With Mike Krieger
+### 14. How Anthropic Uses Claude Fable 5 With Mike Krieger
 - **日期 / 人物 / 组织：** 2026-06-10｜Mike Krieger｜Anthropic
 - **证据层级：** `chapters`
 - **可确认主题：** Sonnet 与 Fable 的任务分工；媒体追踪器与 Agent-native architecture；构建成本、Anthropic 工程工作方式和 verification；动态工作流
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/how-anthropic-uses-claude-fable-5-with-mike-krieger/id1719789201?i=1000772067637
-
-### 14. Wo steht ChatGPT? Interview mit Nick Turley von OpenAI
-- **日期 / 人物 / 组织：** 2026-06-17｜Nick Turley｜OpenAI
-- **证据层级：** `show_notes`
-- **可确认主题：** ChatGPT 当前产品位置；Agentic AI、Codex 与 AI Super App
-- **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
-- **来源：** https://podcasts.apple.com/us/podcast/630-wo-steht-chatgpt-interview-mit-nick-turley-von-openai/id1258254665?i=1000773098935
 
 ### 15. Snap Specs, Taste, Midjourney Hardware — Swami Sivasubramanian segment
 - **日期 / 人物 / 组织：** 2026-06-17｜Swami Sivasubramanian｜AWS
@@ -134,61 +134,61 @@
 - **边界：** 这是一档多嘉宾节目，Swami 的部分从节目方时间戳 01:36:46 开始；主题来自节目说明，未取得该片段逐字稿，不复述具体结论或产品效果。
 - **来源：** https://podcasts.apple.com/us/podcast/snap-specs-taste-midjourney-hardware-eric-newcomer/id1772360235?i=1000773178347
 
-### 16. What happens after coding is solved?
+### 16. Wo steht ChatGPT? Interview mit Nick Turley von OpenAI
+- **日期 / 人物 / 组织：** 2026-06-17｜Nick Turley｜OpenAI
+- **证据层级：** `show_notes`
+- **可确认主题：** ChatGPT 当前产品位置；Agentic AI、Codex 与 AI Super App
+- **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
+- **来源：** https://podcasts.apple.com/us/podcast/630-wo-steht-chatgpt-interview-mit-nick-turley-von-openai/id1258254665?i=1000773098935
+
+### 17. What happens after coding is solved?
 - **日期 / 人物 / 组织：** 2026-06-21｜Fiona Fung｜Anthropic
 - **证据层级：** `chapters`
 - **可确认主题：** AI-native 工程团队与代码审查、验证；Claude routines 与异步工作；Agent 并行带来的上下文切换；责任边界、dogfooding 与 JIT 规划
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/what-happens-after-coding-is-solved-fiona-fung-manager/id1627920305?i=1000773603724
 
-### 17. Google I/O 2026 Recap
+### 18. Google I/O 2026 Recap
 - **日期 / 人物 / 组织：** 2026-06-22｜Josh Woodward、Tulsee Doshi｜Google
 - **证据层级：** `show_notes`
 - **可确认主题：** Gemini 3.5 Flash、Gemini Omni 与 Gemini Spark；Agent payments、语音与 Google I/O 产品路线；下一阶段 Gemini 产品方向
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/google-i-o-2026-recap-with-logan-kilpatrick-josh/id1783661110?i=1000773758003
 
-### 18. Anthropic’s Labs Lead on Fable’s Capabilities + Building AI-Native Products
+### 19. Anthropic’s Labs Lead on Fable’s Capabilities + Building AI-Native Products
 - **日期 / 人物 / 组织：** 2026-06-24｜Mike Krieger｜Anthropic
 - **证据层级：** `show_notes`
 - **可确认主题：** 过夜排队执行的 AI 工作流；AI-native 产品开发；Anthropic 同时作为平台与产品的边界；模型安全警告与产品竞争
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/anthropics-labs-lead-on-fables-capabilities-building/id1522960417?i=1000774081295
 
-### 19. Inside Anthropic’s Bet on Claude Agents that Work While You Sleep
+### 20. Inside Anthropic’s Bet on Claude Agents that Work While You Sleep
 - **日期 / 人物 / 组织：** 2026-06-28｜Jess Yan｜Anthropic
 - **证据层级：** `demo`
 - **可确认主题：** 长时间和过夜运行的 Managed Agents；从零构建 Claude 分析 Agent；Traces、Evals 与 PM 内部 Agent 工作流；处理大规模候选名单及从单一用户问题开始
 - **边界：** 节目公开页确认日期、章节和演示主题；页面正文部分受付费墙限制，具体效果数据仍按节目方说明而非独立验证处理。
 - **来源：** https://podcasts.apple.com/us/podcast/inside-anthropics-bet-on-claude-agents-that-work-while/id1736359687?i=1000774570160
 
-### 20. OpenAI PM Reveals How He Uses Codex to Do Product Work
+### 21. OpenAI PM Reveals How He Uses Codex to Do Product Work
 - **日期 / 人物 / 组织：** 2026-07-05｜Rohan Varma｜OpenAI
 - **证据层级：** `demo`
 - **可确认主题：** 从 Slack、文档、Linear 和邮件汇集上下文；从 PRD 转向可演示原型；Slack 触发自动化、Image Gen 设计变体；把 Codex 线程变成 Skill、Site 和管理线程
 - **边界：** 公开节目页包含章节和操作演示说明；付费墙后的 Top 10 takeaways 不作为本条事实来源。
 - **来源：** https://podcasts.apple.com/us/podcast/openai-pm-reveals-how-he-uses-codex-to-do-product-work/id1736359687?i=1000775522699
 
-### 21. Über die Geburt von ChatGPT und wie wichtig Vorbilder sind
+### 22. Über die Geburt von ChatGPT und wie wichtig Vorbilder sind
 - **日期 / 人物 / 组织：** 2026-07-14｜Nick Turley｜OpenAI
 - **证据层级：** `show_notes`
 - **可确认主题：** ChatGPT 从短期 Demo 走向全球产品；Deep Research 与 Codex 的科研使用；Agentic AI、未来工作与产品研发
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/%C3%BCber-die-geburt-von-chatgpt-und-wie-wichtig-vorbilder/id6791125330?i=1000776891523
 
-### 22. Claude Fable, Claude Tag, and Anthropic’s Culture
+### 23. Claude Fable, Claude Tag, and Anthropic’s Culture
 - **日期 / 人物 / 组织：** 2026-07-15｜Cat Wu、Thariq Shihipar｜Anthropic
 - **证据层级：** `title_only`
 - **可确认主题：** Claude Fable、Claude Tag 与 Anthropic 产品文化
 - **边界：** YouTube 公开页面源码确认标题、频道和发布日期 2026-07-15；当前无法取得公开逐字稿，因此不展开节目中的具体产品观点。
 - **来源：** https://www.youtube.com/watch?v=uU5Gv2h8-9g
-
-### 23. NotebookLM is now Gemini Notebook
-- **日期 / 人物 / 组织：** 2026-07-16｜Josh Woodward｜Google
-- **证据层级：** `full_text`
-- **可确认主题：** NotebookLM 更名为 Gemini Notebook；独立研究产品与 Gemini、Search 的生态连接；安全云电脑、代码执行与来源约束分析；跨应用同步和分层开放范围
-- **边界：** Google 产品负责人署名官方正文，可确认名称、工作流和开放范围；用户与组织数量属于 Google 官方自报。
-- **来源：** https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/
 
 ### 24. Anthropic Engineer on the Future of Coding with AI
 - **日期 / 人物 / 组织：** 2026-07-16｜Thariq Shihipar｜Anthropic
@@ -197,35 +197,42 @@
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/anthropic-engineer-on-the-future-of-coding-with/id1759014294?i=1000777063615
 
-### 25. How I Plan, Build, and Run Loops with Claude Code in 40 Minutes
+### 25. NotebookLM is now Gemini Notebook
+- **日期 / 人物 / 组织：** 2026-07-16｜Josh Woodward｜Google
+- **证据层级：** `full_text`
+- **可确认主题：** NotebookLM 更名为 Gemini Notebook；独立研究产品与 Gemini、Search 的生态连接；安全云电脑、代码执行与来源约束分析；跨应用同步和分层开放范围
+- **边界：** Google 产品负责人署名官方正文，可确认名称、工作流和开放范围；用户与组织数量属于 Google 官方自报。
+- **来源：** https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/
+
+### 26. How I Plan, Build, and Run Loops with Claude Code in 40 Minutes
 - **日期 / 人物 / 组织：** 2026-07-19｜Thariq Shihipar｜Anthropic
 - **证据层级：** `demo`
 - **可确认主题：** Goals、loops 与更长时间运行；先消除未知再实施的规划方式；HTML artifacts 与 Slack 并行任务；creator/verifier 子 Agent 分工和 system prompt 精简
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/how-i-plan-build-and-run-loops-with-claude-code-in/id1736359687?i=1000777426705
 
-### 26. The Creator of Claude Code on The Hottest Piece of Software in the World
+### 27. The Creator of Claude Code on The Hottest Piece of Software in the World
 - **日期 / 人物 / 组织：** 2026-07-20｜Boris Cherny｜Anthropic
 - **证据层级：** `show_notes`
 - **可确认主题：** Claude Code 早期产品路径；Agentic coding harness 的产品目标；安全、对齐和工程师能力变化；从工具向协作对象转变
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/the-creator-of-claude-code-on-the-hottest-piece/id1056200096?i=1000777521827
 
-### 27. Anthropic’s first technical PM on token maxing, the jagged edge, and living in the future
+### 28. Anthropic’s first technical PM on token maxing, the jagged edge, and living in the future
 - **日期 / 人物 / 组织：** 2026-07-26｜Dianne Penn｜Anthropic
 - **证据层级：** `chapters`
 - **可确认主题：** Anthropic Labs 的孵化模式与研究产品管理；Token maxing 与模型能力 jagged edge；Eval-driven development、Evals 与 PRD；人类判断、验证和避免过度依赖
 - **边界：** Apple Podcasts 元数据明确声明逐字稿入口并提供完整章节；本轮未把付费墙后的逐字稿逐句作为证据，因此观点仍限制在公开 Show Notes 与章节范围。
 - **来源：** https://podcasts.apple.com/us/podcast/anthropics-first-technical-pm-on-token-maxing-the/id1627920305?i=1000778409270
 
-### 28. Boris Cherny: Building Claude Code
+### 29. Boris Cherny: Building Claude Code
 - **日期 / 人物 / 组织：** 2026-07-28｜Boris Cherny｜Anthropic
 - **证据层级：** `show_notes`
 - **可确认主题：** 新模型能力对 Claude Code 的影响；Claude Code 的产品起源；底层能力快速变化时如何构建上层产品
 - **边界：** 主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。
 - **来源：** https://podcasts.apple.com/us/podcast/boris-cherny-building-claude-code/id1236907421?i=1000778651350
 
-### 29. Building a Community of 950M Monthly Users
+### 30. Building a Community of 950M Monthly Users
 - **日期 / 人物 / 组织：** 2026-08-12｜Josh Woodward｜Google
 - **证据层级：** `chapters`
 - **可确认主题：** Google Labs、Gemini 与 AI Studio 产品线；Gemini 创作者工具；NotebookLM 教育使用与 AI 产品责任

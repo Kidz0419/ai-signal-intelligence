@@ -10,8 +10,8 @@
   },
   "policy": "发布日期、标题、嘉宾身份和节目主题可由节目页、官方频道、RSS 或公开播客元数据确认即可登记候选；无逐字稿不扩写观点。",
   "counts": {
-    "episodes": 29,
-    "main_90d": 26,
+    "episodes": 30,
+    "main_90d": 27,
     "adjacent_90_120d": 3,
     "people": 17,
     "organizations": 4
@@ -224,6 +224,32 @@
       "related_sources": []
     },
     {
+      "id": "2026-05-21-nick-turley-what-the-ai",
+      "decision": "backfill_candidate",
+      "window": "main_90d",
+      "organization": "OpenAI",
+      "speaker_name": "Nick Turley",
+      "speaker_role": "Head of ChatGPT, OpenAI",
+      "speaker_type": "ai_product_leader",
+      "title": "Nick Turley: Wie OpenAI fast aus Versehen die KI-Revolution startete",
+      "published_at": "2026-05-21T00:00:00+08:00",
+      "source_name": "What The AI?!",
+      "url": "https://podcasts.apple.com/us/podcast/nick-turley-wie-openai-fast-aus-versehen-die-ki-revolution/id1896390658?i=1000768856170&uo=4",
+      "content_format": "podcast",
+      "date_evidence": "Apple Podcasts 公开节目元数据 releaseDate 确认 2026-05-21；节目时长约 58 分钟。",
+      "body_evidence_level": "chapters",
+      "confirmed_topics": [
+        "ChatGPT 从研究预览发展为全球产品",
+        "OpenAI 从研究实验室走向产品公司的转变",
+        "模型内部测试、隐私与信息可见性",
+        "用户把 ChatGPT 用作搜索及产品广告问题",
+        "AI 安全复杂性与创作者判断力"
+      ],
+      "topic_cluster": "chatgpt-product-evolution",
+      "evidence_boundary": "节目公开说明提供逐段时间码，但未取得完整逐字稿；只登记节目方列出的主题，不复述 Nick Turley 的具体判断、原话或数据。",
+      "related_sources": []
+    },
+    {
       "id": "2026-05-22-josh-woodward-google-i-o-2026-a-new-era-of-work-just-started",
       "decision": "backfill_candidate",
       "window": "main_90d",
@@ -348,29 +374,6 @@
       "related_sources": []
     },
     {
-      "id": "2026-06-17-nick-turley-wo-steht-chatgpt-interview-mit-nick-turley-von-openai",
-      "decision": "backfill_candidate",
-      "window": "main_90d",
-      "organization": "OpenAI",
-      "speaker_name": "Nick Turley",
-      "speaker_role": "Head of ChatGPT / OpenAI 产品负责人",
-      "speaker_type": "ai_product_leader",
-      "title": "Wo steht ChatGPT? Interview mit Nick Turley von OpenAI",
-      "published_at": "2026-06-17T00:00:00+08:00",
-      "source_name": "TEO Podcast",
-      "url": "https://podcasts.apple.com/us/podcast/630-wo-steht-chatgpt-interview-mit-nick-turley-von-openai/id1258254665?i=1000773098935",
-      "content_format": "podcast",
-      "date_evidence": "TEO Podcast 公开节目元数据确认发布日期为 2026-06-17",
-      "body_evidence_level": "show_notes",
-      "confirmed_topics": [
-        "ChatGPT 当前产品位置",
-        "Agentic AI、Codex 与 AI Super App"
-      ],
-      "topic_cluster": "chatgpt-product-evolution",
-      "evidence_boundary": "主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。",
-      "related_sources": []
-    },
-    {
       "id": "2026-06-17-swami-sivasubramanian-snap-specs-taste-midjourney-hardware-swami-sivasubramanian-segment",
       "decision": "backfill_candidate",
       "window": "main_90d",
@@ -392,6 +395,29 @@
       ],
       "topic_cluster": "aws-agentic-ai-platform",
       "evidence_boundary": "这是一档多嘉宾节目，Swami 的部分从节目方时间戳 01:36:46 开始；主题来自节目说明，未取得该片段逐字稿，不复述具体结论或产品效果。",
+      "related_sources": []
+    },
+    {
+      "id": "2026-06-17-nick-turley-wo-steht-chatgpt-interview-mit-nick-turley-von-openai",
+      "decision": "backfill_candidate",
+      "window": "main_90d",
+      "organization": "OpenAI",
+      "speaker_name": "Nick Turley",
+      "speaker_role": "Head of ChatGPT / OpenAI 产品负责人",
+      "speaker_type": "ai_product_leader",
+      "title": "Wo steht ChatGPT? Interview mit Nick Turley von OpenAI",
+      "published_at": "2026-06-17T00:00:00+08:00",
+      "source_name": "TEO Podcast",
+      "url": "https://podcasts.apple.com/us/podcast/630-wo-steht-chatgpt-interview-mit-nick-turley-von-openai/id1258254665?i=1000773098935",
+      "content_format": "podcast",
+      "date_evidence": "TEO Podcast 公开节目元数据确认发布日期为 2026-06-17",
+      "body_evidence_level": "show_notes",
+      "confirmed_topics": [
+        "ChatGPT 当前产品位置",
+        "Agentic AI、Codex 与 AI Super App"
+      ],
+      "topic_cluster": "chatgpt-product-evolution",
+      "evidence_boundary": "主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。",
       "related_sources": []
     },
     {
@@ -585,31 +611,6 @@
       "related_sources": []
     },
     {
-      "id": "2026-07-16-josh-woodward-notebooklm-is-now-gemini-notebook",
-      "decision": "backfill_candidate",
-      "window": "main_90d",
-      "organization": "Google",
-      "speaker_name": "Josh Woodward",
-      "speaker_role": "VP, Google Labs, Gemini app and AI Studio",
-      "speaker_type": "ai_product_leader",
-      "title": "NotebookLM is now Gemini Notebook",
-      "published_at": "2026-07-16T00:00:00+08:00",
-      "source_name": "Google Blog",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
-      "content_format": "official_blog",
-      "date_evidence": "Google Blog 公开节目元数据确认发布日期为 2026-07-16",
-      "body_evidence_level": "full_text",
-      "confirmed_topics": [
-        "NotebookLM 更名为 Gemini Notebook",
-        "独立研究产品与 Gemini、Search 的生态连接",
-        "安全云电脑、代码执行与来源约束分析",
-        "跨应用同步和分层开放范围"
-      ],
-      "topic_cluster": "gemini-notebook-product-evolution",
-      "evidence_boundary": "Google 产品负责人署名官方正文，可确认名称、工作流和开放范围；用户与组织数量属于 Google 官方自报。",
-      "related_sources": []
-    },
-    {
       "id": "2026-07-16-thariq-shihipar-anthropic-engineer-on-the-future-of-coding-with-ai",
       "decision": "backfill_candidate",
       "window": "main_90d",
@@ -632,6 +633,31 @@
       ],
       "topic_cluster": "claude-code-product-building",
       "evidence_boundary": "主题来自节目方公开 Show Notes、章节或演示说明；不等同于逐字稿，未公开细节不得外推。",
+      "related_sources": []
+    },
+    {
+      "id": "2026-07-16-josh-woodward-notebooklm-is-now-gemini-notebook",
+      "decision": "backfill_candidate",
+      "window": "main_90d",
+      "organization": "Google",
+      "speaker_name": "Josh Woodward",
+      "speaker_role": "VP, Google Labs, Gemini app and AI Studio",
+      "speaker_type": "ai_product_leader",
+      "title": "NotebookLM is now Gemini Notebook",
+      "published_at": "2026-07-16T00:00:00+08:00",
+      "source_name": "Google Blog",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+      "content_format": "official_blog",
+      "date_evidence": "Google Blog 公开节目元数据确认发布日期为 2026-07-16",
+      "body_evidence_level": "full_text",
+      "confirmed_topics": [
+        "NotebookLM 更名为 Gemini Notebook",
+        "独立研究产品与 Gemini、Search 的生态连接",
+        "安全云电脑、代码执行与来源约束分析",
+        "跨应用同步和分层开放范围"
+      ],
+      "topic_cluster": "gemini-notebook-product-evolution",
+      "evidence_boundary": "Google 产品负责人署名官方正文，可确认名称、工作流和开放范围；用户与组织数量属于 Google 官方自报。",
       "related_sources": []
     },
     {
