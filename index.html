@@ -60,6 +60,7 @@
       min-height: 36px; width: 100%; border: 0; border-radius: 5px; background: transparent;
       color: var(--muted); text-align: left; padding: 0 10px; cursor: pointer;
       display: flex; align-items: center; justify-content: space-between;
+      text-decoration: none;
     }
     .nav-btn:hover { background: rgba(55,53,47,.08); color: var(--ink); }
     .nav-btn.active { color: var(--ink); background: rgba(55,53,47,.10); font-weight: 600; }
@@ -248,6 +249,7 @@
         <button class="nav-btn active" data-view="today"><span>今日信号</span><span class="nav-count" id="todayCount">0</span></button>
         <button class="nav-btn" data-view="daily"><span>按日查看</span><span class="nav-count" id="dayCount">0</span></button>
         <button class="nav-btn" data-view="feishu"><span>飞书简报</span><span class="nav-count">复制</span></button>
+        <a class="nav-btn" href="content-topic-studio.html"><span>自媒体选题</span><span class="nav-count">3 平台</span></a>
         <button class="nav-btn" data-view="library"><span>全部知识库</span><span class="nav-count" id="allCount">0</span></button>
         <button class="nav-btn" data-view="watchlist"><span>战略雷达</span><span class="nav-count" id="watchCount">0</span></button>
         <button class="nav-btn" data-view="competitor"><span>竞争动态</span><span class="nav-count" id="competitorCount">0</span></button>
@@ -373,7 +375,7 @@
             <div class="method-cell"><h3>行动闭环</h3><p>每条 Include / Watchlist 都要给出个人关注价值、产品机会、竞争风险、建议行动、待验证问题和后续触发器。</p></div>
             <div class="method-cell"><h3>P3 仍可检索</h3><p>低相关内容不推送但不物理删除，保留历史回溯，在后续信号出现时重新评估。</p></div>
           </div>
-          <p style="margin-top:18px;color:var(--muted)">完整规则见同目录 <strong>FILTER_RULES_AI_V1.md</strong>。人物原创信源审计与近一个月回溯见 <a href="backfill-2026-07-13-to-2026-08-13.html">人物观点回溯页面</a>；AI 产品负责人近期播客、访谈与长内容见 <a href="product-leader-backfill-2026-05-16-to-2026-08-13.html">产品负责人回溯页面</a>。</p>
+          <p style="margin-top:18px;color:var(--muted)">完整规则见同目录 <strong>FILTER_RULES_AI_V1.md</strong>。人物原创信源审计与近一个月回溯见 <a href="backfill-2026-07-13-to-2026-08-13.html">人物观点回溯页面</a>；AI 产品负责人近期播客、访谈与长内容见 <a href="product-leader-backfill-2026-05-16-to-2026-08-13.html">产品负责人回溯页面</a>；小红书、X / Twitter 和公众号的跨平台内容角度见 <a href="content-topic-studio.html">自媒体选题工作台</a>。</p>
         </section>
       </div>
     </main>
@@ -552,7 +554,7 @@
       el('sidebar').classList.remove('open');
     }
 
-    document.querySelectorAll('.nav-btn').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
+    document.querySelectorAll('.nav-btn[data-view]').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
     el('dayPicker').addEventListener('change',e=>setSelectedDay(e.target.value));
     el('feishuDayPicker').addEventListener('change',e=>setSelectedDay(e.target.value));
     el('copyFeishuBtn').addEventListener('click',async()=>{

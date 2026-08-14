@@ -21,16 +21,21 @@ python3 scripts/validate_daily.py "$DATE"
 mapfile_dates=()
 while IFS= read -r d; do mapfile_dates+=("$d"); done < <(find daily -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | LC_ALL=C sort)
 python3 scripts/build_history_store.py --dates "${mapfile_dates[@]}"
+if [[ -f "content-topics/$DATE/topics.json" ]]; then
+  python3 scripts/validate_content_topics.py "$DATE"
+  python3 scripts/build_content_topic_studio.py "$DATE"
+fi
 python3 tests/test_daily_history.py -v
 
 # Keep the public branch linear and refuse silent overwrite if remote diverged.
 git pull --ff-only origin main
 
 git add \
-  .gitignore .nojekyll README.md FILTER_RULES_AI_V1.md index.html \
+  .gitignore .nojekyll README.md FILTER_RULES_AI_V1.md CONTENT_TOPIC_RULES_V1.md index.html \
   data/history.json data/history.js data/latest.json data/latest.js \
   config backfills \
-  backfill-*.html product-leader-backfill-*.html \
+  content-topics \
+  backfill-*.html product-leader-backfill-*.html content-topic-studio.html \
   scripts tests \
   "daily/$DATE/selected.json" \
   "daily/$DATE/daily-brief.md" \

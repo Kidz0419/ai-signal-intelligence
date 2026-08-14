@@ -10,6 +10,9 @@
 - `backfills/YYYY-MM-DD_to_YYYY-MM-DD/`：人物观点等历史回溯产物（与当日日报分离）
 - `backfill-2026-07-13-to-2026-08-13.html`：近一个月人物信源审计与回溯页面
 - `config/person-source-registry.json`：人物原创信源注册表及覆盖缺口
+- `content-topics/YYYY-MM-DD/topics.json`：从当日 Signal 派生的跨平台选题候选
+- `CONTENT_TOPIC_RULES_V1.md`：小红书、X / Twitter、公众号选题与证据规则
+- `content-topic-studio.html`：自媒体选题工作台
 - `index.html`：Notion 风格浏览界面
 
 ## 在线访问
