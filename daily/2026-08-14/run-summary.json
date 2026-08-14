@@ -1,0 +1,43 @@
+{
+  "run_type": "daily_four_lane_incremental",
+  "run_at": "2026-08-14T09:45:25+08:00",
+  "window": {
+    "timezone": "Asia/Shanghai",
+    "start": "2026-08-14T00:00:00+08:00",
+    "end": "2026-08-14T09:45:25+08:00",
+    "incremental_since": "2026-08-14T00:00:00+08:00"
+  },
+  "queries": 10,
+  "raw_candidates": 40,
+  "unique_candidates": 40,
+  "editorial_shortlist": 4,
+  "previous_count": 0,
+  "new_count": 1,
+  "updated_count": 0,
+  "total_count": 1,
+  "selected": 1,
+  "lane_counts": {
+    "model": 1,
+    "agent_architecture": 0,
+    "ai_product": 0,
+    "ai_macro": 0
+  },
+  "priority_counts": {"P0": 1, "P1": 0, "P2": 0},
+  "executive_model_longform": 1,
+  "practitioner_statements": 0,
+  "cross_day_duplicates_removed": 0,
+  "collection_errors": 3,
+  "source_coverage": {
+    "official_model_sources": "covered; Google official RSS and full article verified",
+    "personal_blogs_and_github": "parallel targeted audit in progress at editorial cutoff",
+    "x_api": "xurl installed, but no app/OAuth configured; authenticated search unavailable",
+    "youtube_transcripts": "runtime IP previously blocked; title-only candidates not promoted",
+    "chinese_closed_platforms": "partial; WeChat/Video Accounts/login-walled sources not comprehensively accessible"
+  },
+  "excluded_summary": {
+    "secondary_reports_without_same-window_primary_confirmation": 2,
+    "events_published_before_today_window": 2,
+    "ordinary_financing_marketing_or_low_relevance_items": 36
+  },
+  "note": "00:46、04:41、08:29 三次定时任务分别因 idle timeout、idle timeout 与 connection error 失败；本轮改为短窗口分批采集并直接核验官方正文。Gemini 3.7 Flash 为截至 09:45 已确认新增。"
+}
