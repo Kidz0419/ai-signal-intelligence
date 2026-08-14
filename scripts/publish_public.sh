@@ -31,6 +31,7 @@ python3 scripts/apply_async_monthly_reconciliation.py
 python3 scripts/build_monthly_signal_backfill.py
 python3 scripts/validate_monthly_signal_backfill.py
 python3 scripts/build_monthly_reconciliation_audit.py
+python3 scripts/register_monthly_signal_sources.py
 python3 scripts/build_monthly_source_coverage.py
 python3 scripts/apply_github_monthly_coverage.py
 python3 scripts/build_monthly_signal_page.py

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "AI Signal 四主线召回信源注册表。信源只负责提高召回率，正式入选仍执行 FILTER_RULES_AI_V1.md。",
-  "updated_at": "2026-08-14T15:30:00+08:00",
+  "updated_at": "2026-08-14T16:30:00+08:00",
   "timezone": "Asia/Shanghai",
   "global_rules": {
     "recall_is_not_inclusion": true,
@@ -14,166 +14,668 @@
   "channels": [
     {
       "id": "frontier_model_official",
-      "lanes": ["model", "agent_architecture", "ai_product"],
+      "lanes": [
+        "model",
+        "agent_architecture",
+        "ai_product"
+      ],
       "cadence": "every_4_hours",
       "sources": [
-        {"name": "OpenAI News", "url": "https://openai.com/news/", "type": "official_news"},
-        {"name": "OpenAI Research", "url": "https://openai.com/research/", "type": "official_research"},
-        {"name": "OpenAI API Changelog", "url": "https://platform.openai.com/docs/changelog", "type": "developer_changelog"},
-        {"name": "OpenAI Help Center Release Notes", "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes", "type": "product_release_notes"},
-        {"name": "Anthropic News", "url": "https://www.anthropic.com/news", "type": "official_news"},
-        {"name": "Anthropic Research", "url": "https://www.anthropic.com/research", "type": "official_research"},
-        {"name": "Claude Release Notes", "url": "https://support.anthropic.com/en/articles/12138966-release-notes", "type": "product_release_notes"},
-        {"name": "Anthropic API Release Notes", "url": "https://docs.anthropic.com/en/release-notes/api", "type": "developer_changelog"},
-        {"name": "Google DeepMind Blog", "url": "https://deepmind.google/discover/blog/", "type": "official_research"},
-        {"name": "Google Innovation & AI", "url": "https://blog.google/innovation-and-ai/", "type": "official_news"},
-        {"name": "Gemini API Changelog", "url": "https://ai.google.dev/gemini-api/docs/changelog", "type": "developer_changelog"},
-        {"name": "Vertex AI Generative AI Release Notes", "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes", "type": "cloud_release_notes"},
-        {"name": "Meta AI Blog", "url": "https://ai.meta.com/blog/", "type": "official_research"},
-        {"name": "Meta Llama GitHub", "url": "https://github.com/meta-llama", "type": "github_org"},
-        {"name": "xAI News", "url": "https://x.ai/news", "type": "official_news"},
-        {"name": "xAI Docs", "url": "https://docs.x.ai/", "type": "developer_docs"},
-        {"name": "Microsoft AI Blog", "url": "https://microsoft.ai/news/", "type": "official_news"},
-        {"name": "Azure AI Foundry What's New", "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/whats-new-azure-ai-foundry", "type": "cloud_release_notes"},
-        {"name": "Amazon Science AI", "url": "https://www.amazon.science/tag/artificial-intelligence", "type": "official_research"},
-        {"name": "AWS Machine Learning Blog", "url": "https://aws.amazon.com/blogs/machine-learning/", "type": "official_technical_blog"},
-        {"name": "AWS What's New AI/ML", "url": "https://aws.amazon.com/about-aws/whats-new/machine-learning/", "type": "cloud_release_notes"},
-        {"name": "NVIDIA AI Developer Blog", "url": "https://developer.nvidia.com/blog/category/generative-ai/", "type": "official_technical_blog"},
-        {"name": "NVIDIA NeMo GitHub", "url": "https://github.com/NVIDIA/NeMo", "type": "github_releases"},
-        {"name": "Apple Machine Learning Research", "url": "https://machinelearning.apple.com/", "type": "official_research"}
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/news/",
+          "type": "official_news"
+        },
+        {
+          "name": "OpenAI Research",
+          "url": "https://openai.com/research/",
+          "type": "official_research"
+        },
+        {
+          "name": "OpenAI API Changelog",
+          "url": "https://platform.openai.com/docs/changelog",
+          "type": "developer_changelog"
+        },
+        {
+          "name": "OpenAI Help Center Release Notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "type": "product_release_notes"
+        },
+        {
+          "name": "Anthropic News",
+          "url": "https://www.anthropic.com/news",
+          "type": "official_news"
+        },
+        {
+          "name": "Anthropic Research",
+          "url": "https://www.anthropic.com/research",
+          "type": "official_research"
+        },
+        {
+          "name": "Claude Release Notes",
+          "url": "https://support.anthropic.com/en/articles/12138966-release-notes",
+          "type": "product_release_notes"
+        },
+        {
+          "name": "Anthropic API Release Notes",
+          "url": "https://docs.anthropic.com/en/release-notes/api",
+          "type": "developer_changelog"
+        },
+        {
+          "name": "Google DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/",
+          "type": "official_research"
+        },
+        {
+          "name": "Google Innovation & AI",
+          "url": "https://blog.google/innovation-and-ai/",
+          "type": "official_news"
+        },
+        {
+          "name": "Gemini API Changelog",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "type": "developer_changelog"
+        },
+        {
+          "name": "Vertex AI Generative AI Release Notes",
+          "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
+          "type": "cloud_release_notes"
+        },
+        {
+          "name": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/",
+          "type": "official_research"
+        },
+        {
+          "name": "Meta Llama GitHub",
+          "url": "https://github.com/meta-llama",
+          "type": "github_org"
+        },
+        {
+          "name": "xAI News",
+          "url": "https://x.ai/news",
+          "type": "official_news"
+        },
+        {
+          "name": "xAI Docs",
+          "url": "https://docs.x.ai/",
+          "type": "developer_docs"
+        },
+        {
+          "name": "Microsoft AI Blog",
+          "url": "https://microsoft.ai/news/",
+          "type": "official_news"
+        },
+        {
+          "name": "Azure AI Foundry What's New",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/whats-new-azure-ai-foundry",
+          "type": "cloud_release_notes"
+        },
+        {
+          "name": "Amazon Science AI",
+          "url": "https://www.amazon.science/tag/artificial-intelligence",
+          "type": "official_research"
+        },
+        {
+          "name": "AWS Machine Learning Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/",
+          "type": "official_technical_blog"
+        },
+        {
+          "name": "AWS What's New AI/ML",
+          "url": "https://aws.amazon.com/about-aws/whats-new/machine-learning/",
+          "type": "cloud_release_notes"
+        },
+        {
+          "name": "NVIDIA AI Developer Blog",
+          "url": "https://developer.nvidia.com/blog/category/generative-ai/",
+          "type": "official_technical_blog"
+        },
+        {
+          "name": "NVIDIA NeMo GitHub",
+          "url": "https://github.com/NVIDIA/NeMo",
+          "type": "github_releases"
+        },
+        {
+          "name": "Apple Machine Learning Research",
+          "url": "https://machinelearning.apple.com/",
+          "type": "official_research"
+        }
+      ],
+      "additional_sources": [
+        {
+          "name": "NVIDIA Newsroom",
+          "url": "https://nvidianews.nvidia.com/",
+          "type": "official_newsroom"
+        },
+        {
+          "name": "AMD Newsroom",
+          "url": "https://newsroom.amd.com/",
+          "type": "official_newsroom"
+        },
+        {
+          "name": "Meta Newsroom AI",
+          "url": "https://about.fb.com/news/tag/ai/",
+          "type": "official_newsroom"
+        }
       ]
     },
     {
       "id": "china_frontier_models",
-      "lanes": ["model", "agent_architecture", "ai_product"],
+      "lanes": [
+        "model",
+        "agent_architecture",
+        "ai_product"
+      ],
       "cadence": "every_4_hours",
       "sources": [
-        {"name": "DeepSeek News", "url": "https://www.deepseek.com/", "type": "official_site"},
-        {"name": "DeepSeek GitHub", "url": "https://github.com/deepseek-ai", "type": "github_org"},
-        {"name": "DeepSeek Hugging Face", "url": "https://huggingface.co/deepseek-ai", "type": "model_hub"},
-        {"name": "Qwen Blog", "url": "https://qwenlm.github.io/blog/", "type": "official_blog"},
-        {"name": "Qwen GitHub", "url": "https://github.com/QwenLM", "type": "github_org"},
-        {"name": "Qwen Hugging Face", "url": "https://huggingface.co/Qwen", "type": "model_hub"},
-        {"name": "Kimi Developer Docs", "url": "https://platform.moonshot.cn/docs", "type": "developer_docs"},
-        {"name": "Moonshot AI GitHub", "url": "https://github.com/MoonshotAI", "type": "github_org"},
-        {"name": "Zhipu AI Open Platform", "url": "https://open.bigmodel.cn/dev/api", "type": "developer_docs"},
-        {"name": "THUDM GitHub", "url": "https://github.com/THUDM", "type": "github_org"},
-        {"name": "MiniMax Open Platform", "url": "https://platform.minimaxi.com/document", "type": "developer_docs"},
-        {"name": "MiniMax GitHub", "url": "https://github.com/MiniMax-AI", "type": "github_org"},
-        {"name": "Baidu AI Cloud Qianfan", "url": "https://cloud.baidu.com/product/wenxinworkshop", "type": "official_product"}
+        {
+          "name": "DeepSeek News",
+          "url": "https://www.deepseek.com/",
+          "type": "official_site"
+        },
+        {
+          "name": "DeepSeek GitHub",
+          "url": "https://github.com/deepseek-ai",
+          "type": "github_org"
+        },
+        {
+          "name": "DeepSeek Hugging Face",
+          "url": "https://huggingface.co/deepseek-ai",
+          "type": "model_hub"
+        },
+        {
+          "name": "Qwen Blog",
+          "url": "https://qwenlm.github.io/blog/",
+          "type": "official_blog"
+        },
+        {
+          "name": "Qwen GitHub",
+          "url": "https://github.com/QwenLM",
+          "type": "github_org"
+        },
+        {
+          "name": "Qwen Hugging Face",
+          "url": "https://huggingface.co/Qwen",
+          "type": "model_hub"
+        },
+        {
+          "name": "Kimi Developer Docs",
+          "url": "https://platform.moonshot.cn/docs",
+          "type": "developer_docs"
+        },
+        {
+          "name": "Moonshot AI GitHub",
+          "url": "https://github.com/MoonshotAI",
+          "type": "github_org"
+        },
+        {
+          "name": "Zhipu AI Open Platform",
+          "url": "https://open.bigmodel.cn/dev/api",
+          "type": "developer_docs"
+        },
+        {
+          "name": "THUDM GitHub",
+          "url": "https://github.com/THUDM",
+          "type": "github_org"
+        },
+        {
+          "name": "MiniMax Open Platform",
+          "url": "https://platform.minimaxi.com/document",
+          "type": "developer_docs"
+        },
+        {
+          "name": "MiniMax GitHub",
+          "url": "https://github.com/MiniMax-AI",
+          "type": "github_org"
+        },
+        {
+          "name": "Baidu AI Cloud Qianfan",
+          "url": "https://cloud.baidu.com/product/wenxinworkshop",
+          "type": "official_product"
+        }
       ],
-      "coverage_note": "中文公司公众号、视频号和登录墙仍需单独人工补扫；GitHub、Hugging Face、开发文档与公开官网作为稳定替代。"
+      "coverage_note": "中文公司公众号、视频号和登录墙仍需单独人工补扫；GitHub、Hugging Face、开发文档与公开官网作为稳定替代。",
+      "additional_sources": [
+        {
+          "name": "Moonshot AI Kimi GitHub",
+          "url": "https://github.com/MoonshotAI/Kimi-K3",
+          "type": "official_github"
+        }
+      ]
     },
     {
       "id": "head_ai_product_release_notes",
-      "lanes": ["ai_product", "agent_architecture"],
+      "lanes": [
+        "ai_product",
+        "agent_architecture"
+      ],
       "cadence": "every_4_hours",
       "sources": [
-        {"name": "Google Workspace Updates", "url": "https://workspaceupdates.googleblog.com/", "type": "product_release_notes"},
-        {"name": "Gemini Apps Help", "url": "https://support.google.com/gemini/", "type": "help_center"},
-        {"name": "Microsoft 365 Roadmap", "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap", "type": "product_roadmap"},
-        {"name": "Microsoft Copilot Blog", "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/", "type": "official_product_blog"},
-        {"name": "GitHub Changelog Copilot", "url": "https://github.blog/changelog/label/copilot/", "type": "product_changelog"},
-        {"name": "GitHub Copilot Docs", "url": "https://docs.github.com/en/copilot", "type": "product_docs"},
-        {"name": "Cursor Changelog", "url": "https://cursor.com/changelog", "type": "product_changelog"},
-        {"name": "Cursor Docs", "url": "https://docs.cursor.com/", "type": "product_docs"},
-        {"name": "Perplexity Changelog", "url": "https://www.perplexity.ai/changelog", "type": "product_changelog"},
-        {"name": "Notion Releases", "url": "https://www.notion.com/releases", "type": "product_changelog"},
-        {"name": "Figma Release Notes", "url": "https://help.figma.com/hc/en-us/categories/360002051613-Release-notes", "type": "product_release_notes"},
-        {"name": "Canva Newsroom AI", "url": "https://www.canva.com/newsroom/news/", "type": "official_product_blog"},
-        {"name": "Slack Release Notes", "url": "https://slack.com/intl/en-gb/release-notes", "type": "product_release_notes"},
-        {"name": "Atlassian Intelligence Updates", "url": "https://confluence.atlassian.com/cloud/blog", "type": "product_release_notes"},
-        {"name": "Salesforce Release Notes AI", "url": "https://help.salesforce.com/s/articleView?id=release-notes.salesforce_release_notes.htm", "type": "product_release_notes"},
-        {"name": "Hugging Face Blog", "url": "https://huggingface.co/blog", "type": "official_technical_blog"}
+        {
+          "name": "Google Workspace Updates",
+          "url": "https://workspaceupdates.googleblog.com/",
+          "type": "product_release_notes"
+        },
+        {
+          "name": "Gemini Apps Help",
+          "url": "https://support.google.com/gemini/",
+          "type": "help_center"
+        },
+        {
+          "name": "Microsoft 365 Roadmap",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+          "type": "product_roadmap"
+        },
+        {
+          "name": "Microsoft Copilot Blog",
+          "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/",
+          "type": "official_product_blog"
+        },
+        {
+          "name": "GitHub Changelog Copilot",
+          "url": "https://github.blog/changelog/label/copilot/",
+          "type": "product_changelog"
+        },
+        {
+          "name": "GitHub Copilot Docs",
+          "url": "https://docs.github.com/en/copilot",
+          "type": "product_docs"
+        },
+        {
+          "name": "Cursor Changelog",
+          "url": "https://cursor.com/changelog",
+          "type": "product_changelog"
+        },
+        {
+          "name": "Cursor Docs",
+          "url": "https://docs.cursor.com/",
+          "type": "product_docs"
+        },
+        {
+          "name": "Perplexity Changelog",
+          "url": "https://www.perplexity.ai/changelog",
+          "type": "product_changelog"
+        },
+        {
+          "name": "Notion Releases",
+          "url": "https://www.notion.com/releases",
+          "type": "product_changelog"
+        },
+        {
+          "name": "Figma Release Notes",
+          "url": "https://help.figma.com/hc/en-us/categories/360002051613-Release-notes",
+          "type": "product_release_notes"
+        },
+        {
+          "name": "Canva Newsroom AI",
+          "url": "https://www.canva.com/newsroom/news/",
+          "type": "official_product_blog"
+        },
+        {
+          "name": "Slack Release Notes",
+          "url": "https://slack.com/intl/en-gb/release-notes",
+          "type": "product_release_notes"
+        },
+        {
+          "name": "Atlassian Intelligence Updates",
+          "url": "https://confluence.atlassian.com/cloud/blog",
+          "type": "product_release_notes"
+        },
+        {
+          "name": "Salesforce Release Notes AI",
+          "url": "https://help.salesforce.com/s/articleView?id=release-notes.salesforce_release_notes.htm",
+          "type": "product_release_notes"
+        },
+        {
+          "name": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog",
+          "type": "official_technical_blog"
+        }
       ],
-      "verification_order": ["actual_ui", "help_center", "release_notes", "developer_docs", "official_demo", "marketing_page"]
+      "verification_order": [
+        "actual_ui",
+        "help_center",
+        "release_notes",
+        "developer_docs",
+        "official_demo",
+        "marketing_page"
+      ]
     },
     {
       "id": "agent_runtime_and_open_source",
-      "lanes": ["agent_architecture", "ai_product"],
+      "lanes": [
+        "agent_architecture",
+        "ai_product"
+      ],
       "cadence": "daily_with_release_change_detection",
       "sources": [
-        {"name": "Model Context Protocol", "url": "https://github.com/modelcontextprotocol", "type": "github_org"},
-        {"name": "A2A Protocol", "url": "https://github.com/a2aproject/A2A", "type": "github_releases"},
-        {"name": "OpenAI Agents SDK", "url": "https://github.com/openai/openai-agents-python", "type": "github_releases"},
-        {"name": "Google Agent Development Kit", "url": "https://github.com/google/adk-python", "type": "github_releases"},
-        {"name": "Microsoft Agent Framework", "url": "https://github.com/microsoft/agent-framework", "type": "github_releases"},
-        {"name": "AWS Strands Agents", "url": "https://github.com/strands-agents", "type": "github_org"},
-        {"name": "LangGraph", "url": "https://github.com/langchain-ai/langgraph", "type": "github_releases"},
-        {"name": "LlamaIndex", "url": "https://github.com/run-llama/llama_index", "type": "github_releases"},
-        {"name": "CrewAI", "url": "https://github.com/crewAIInc/crewAI", "type": "github_releases"},
-        {"name": "AutoGen", "url": "https://github.com/microsoft/autogen", "type": "github_releases"},
-        {"name": "Browser Use", "url": "https://github.com/browser-use/browser-use", "type": "github_releases"},
-        {"name": "OpenHands", "url": "https://github.com/All-Hands-AI/OpenHands", "type": "github_releases"},
-        {"name": "SWE-agent", "url": "https://github.com/SWE-agent/SWE-agent", "type": "github_releases"},
-        {"name": "Anthropic Cookbook", "url": "https://github.com/anthropics/anthropic-cookbook", "type": "github_changes"},
-        {"name": "OpenAI Cookbook", "url": "https://github.com/openai/openai-cookbook", "type": "github_changes"},
-        {"name": "Microsoft Research AutoGen Blog", "url": "https://www.microsoft.com/en-us/research/project/autogen/", "type": "official_research"}
+        {
+          "name": "Model Context Protocol",
+          "url": "https://github.com/modelcontextprotocol",
+          "type": "github_org"
+        },
+        {
+          "name": "A2A Protocol",
+          "url": "https://github.com/a2aproject/A2A",
+          "type": "github_releases"
+        },
+        {
+          "name": "OpenAI Agents SDK",
+          "url": "https://github.com/openai/openai-agents-python",
+          "type": "github_releases"
+        },
+        {
+          "name": "Google Agent Development Kit",
+          "url": "https://github.com/google/adk-python",
+          "type": "github_releases"
+        },
+        {
+          "name": "Microsoft Agent Framework",
+          "url": "https://github.com/microsoft/agent-framework",
+          "type": "github_releases"
+        },
+        {
+          "name": "AWS Strands Agents",
+          "url": "https://github.com/strands-agents",
+          "type": "github_org"
+        },
+        {
+          "name": "LangGraph",
+          "url": "https://github.com/langchain-ai/langgraph",
+          "type": "github_releases"
+        },
+        {
+          "name": "LlamaIndex",
+          "url": "https://github.com/run-llama/llama_index",
+          "type": "github_releases"
+        },
+        {
+          "name": "CrewAI",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "type": "github_releases"
+        },
+        {
+          "name": "AutoGen",
+          "url": "https://github.com/microsoft/autogen",
+          "type": "github_releases"
+        },
+        {
+          "name": "Browser Use",
+          "url": "https://github.com/browser-use/browser-use",
+          "type": "github_releases"
+        },
+        {
+          "name": "OpenHands",
+          "url": "https://github.com/All-Hands-AI/OpenHands",
+          "type": "github_releases"
+        },
+        {
+          "name": "SWE-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent",
+          "type": "github_releases"
+        },
+        {
+          "name": "Anthropic Cookbook",
+          "url": "https://github.com/anthropics/anthropic-cookbook",
+          "type": "github_changes"
+        },
+        {
+          "name": "OpenAI Cookbook",
+          "url": "https://github.com/openai/openai-cookbook",
+          "type": "github_changes"
+        },
+        {
+          "name": "Microsoft Research AutoGen Blog",
+          "url": "https://www.microsoft.com/en-us/research/project/autogen/",
+          "type": "official_research"
+        }
       ],
       "inclusion_gate": "普通版本号、依赖升级和文档清理不收；只收改变 Runtime、权限、状态、恢复、协议、工具调用、评测或生产工作流的实质更新。"
     },
     {
       "id": "research_and_evaluation",
-      "lanes": ["model", "agent_architecture", "ai_product"],
+      "lanes": [
+        "model",
+        "agent_architecture",
+        "ai_product"
+      ],
       "cadence": "daily",
       "sources": [
-        {"name": "arXiv cs.AI", "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI", "type": "paper_api"},
-        {"name": "arXiv cs.CL", "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL", "type": "paper_api"},
-        {"name": "arXiv cs.LG", "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG", "type": "paper_api"},
-        {"name": "Hugging Face Daily Papers", "url": "https://huggingface.co/papers", "type": "paper_index"},
-        {"name": "Stanford HAI", "url": "https://hai.stanford.edu/news", "type": "research_institute"},
-        {"name": "METR", "url": "https://metr.org/blog/", "type": "evaluation_org"},
-        {"name": "Epoch AI", "url": "https://epoch.ai/blog", "type": "research_org"},
-        {"name": "Artificial Analysis", "url": "https://artificialanalysis.ai/", "type": "independent_evaluation"},
-        {"name": "SWE-bench", "url": "https://www.swebench.com/", "type": "benchmark"},
-        {"name": "LMSYS Chatbot Arena", "url": "https://lmarena.ai/", "type": "benchmark"}
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI",
+          "type": "paper_api"
+        },
+        {
+          "name": "arXiv cs.CL",
+          "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
+          "type": "paper_api"
+        },
+        {
+          "name": "arXiv cs.LG",
+          "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
+          "type": "paper_api"
+        },
+        {
+          "name": "Hugging Face Daily Papers",
+          "url": "https://huggingface.co/papers",
+          "type": "paper_index"
+        },
+        {
+          "name": "Stanford HAI",
+          "url": "https://hai.stanford.edu/news",
+          "type": "research_institute"
+        },
+        {
+          "name": "METR",
+          "url": "https://metr.org/blog/",
+          "type": "evaluation_org"
+        },
+        {
+          "name": "Epoch AI",
+          "url": "https://epoch.ai/blog",
+          "type": "research_org"
+        },
+        {
+          "name": "Artificial Analysis",
+          "url": "https://artificialanalysis.ai/",
+          "type": "independent_evaluation"
+        },
+        {
+          "name": "SWE-bench",
+          "url": "https://www.swebench.com/",
+          "type": "benchmark"
+        },
+        {
+          "name": "LMSYS Chatbot Arena",
+          "url": "https://lmarena.ai/",
+          "type": "benchmark"
+        }
       ],
-      "query_terms": ["agent", "tool use", "computer use", "long horizon", "memory", "context engineering", "reasoning", "inference", "multimodal", "safety", "evaluation"],
+      "query_terms": [
+        "agent",
+        "tool use",
+        "computer use",
+        "long horizon",
+        "memory",
+        "context engineering",
+        "reasoning",
+        "inference",
+        "multimodal",
+        "safety",
+        "evaluation"
+      ],
       "inclusion_gate": "不做论文数量聚合；只收改变真实模型能力边界、Agent 可靠性、评测方法或产品决策的重大研究。"
     },
     {
       "id": "ai_macro_primary",
-      "lanes": ["ai_macro"],
+      "lanes": [
+        "ai_macro"
+      ],
       "cadence": "daily",
       "sources": [
-        {"name": "OpenAI Company News", "url": "https://openai.com/news/company/", "type": "company_primary"},
-        {"name": "Alphabet Investor Relations", "url": "https://abc.xyz/investor/", "type": "company_ir"},
-        {"name": "Microsoft Investor Relations", "url": "https://www.microsoft.com/en-us/Investor", "type": "company_ir"},
-        {"name": "Meta Investor Relations", "url": "https://investor.atmeta.com/", "type": "company_ir"},
-        {"name": "Amazon Investor Relations", "url": "https://ir.aboutamazon.com/", "type": "company_ir"},
-        {"name": "NVIDIA Investor Relations", "url": "https://investor.nvidia.com/", "type": "company_ir"},
-        {"name": "CoreWeave Investor Relations", "url": "https://investors.coreweave.com/", "type": "company_ir"},
-        {"name": "SEC EDGAR", "url": "https://www.sec.gov/edgar/search/", "type": "regulatory_filings"},
-        {"name": "US NIST AI", "url": "https://www.nist.gov/artificial-intelligence", "type": "regulator"},
-        {"name": "US FTC Technology Blog", "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc", "type": "regulator"},
-        {"name": "EU AI Office", "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office", "type": "regulator"},
-        {"name": "European Commission AI Act", "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", "type": "regulator"},
-        {"name": "UK CMA Digital Markets", "url": "https://www.gov.uk/government/organisations/competition-and-markets-authority", "type": "regulator"},
-        {"name": "UK AI Security Institute", "url": "https://www.aisi.gov.uk/", "type": "government_research"},
-        {"name": "China CAC", "url": "https://www.cac.gov.cn/", "type": "regulator"},
-        {"name": "China MIIT", "url": "https://www.miit.gov.cn/", "type": "regulator"},
-        {"name": "IEA Data Centres and AI", "url": "https://www.iea.org/topics/data-centres-and-data-transmission-networks", "type": "energy_research"}
+        {
+          "name": "OpenAI Company News",
+          "url": "https://openai.com/news/company/",
+          "type": "company_primary"
+        },
+        {
+          "name": "Alphabet Investor Relations",
+          "url": "https://abc.xyz/investor/",
+          "type": "company_ir"
+        },
+        {
+          "name": "Microsoft Investor Relations",
+          "url": "https://www.microsoft.com/en-us/Investor",
+          "type": "company_ir"
+        },
+        {
+          "name": "Meta Investor Relations",
+          "url": "https://investor.atmeta.com/",
+          "type": "company_ir"
+        },
+        {
+          "name": "Amazon Investor Relations",
+          "url": "https://ir.aboutamazon.com/",
+          "type": "company_ir"
+        },
+        {
+          "name": "NVIDIA Investor Relations",
+          "url": "https://investor.nvidia.com/",
+          "type": "company_ir"
+        },
+        {
+          "name": "CoreWeave Investor Relations",
+          "url": "https://investors.coreweave.com/",
+          "type": "company_ir"
+        },
+        {
+          "name": "SEC EDGAR",
+          "url": "https://www.sec.gov/edgar/search/",
+          "type": "regulatory_filings"
+        },
+        {
+          "name": "US NIST AI",
+          "url": "https://www.nist.gov/artificial-intelligence",
+          "type": "regulator"
+        },
+        {
+          "name": "US FTC Technology Blog",
+          "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc",
+          "type": "regulator"
+        },
+        {
+          "name": "EU AI Office",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+          "type": "regulator"
+        },
+        {
+          "name": "European Commission AI Act",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "type": "regulator"
+        },
+        {
+          "name": "UK CMA Digital Markets",
+          "url": "https://www.gov.uk/government/organisations/competition-and-markets-authority",
+          "type": "regulator"
+        },
+        {
+          "name": "UK AI Security Institute",
+          "url": "https://www.aisi.gov.uk/",
+          "type": "government_research"
+        },
+        {
+          "name": "China CAC",
+          "url": "https://www.cac.gov.cn/",
+          "type": "regulator"
+        },
+        {
+          "name": "China MIIT",
+          "url": "https://www.miit.gov.cn/",
+          "type": "regulator"
+        },
+        {
+          "name": "IEA Data Centres and AI",
+          "url": "https://www.iea.org/topics/data-centres-and-data-transmission-networks",
+          "type": "energy_research"
+        }
       ],
-      "secondary_discovery_only": ["Reuters", "Financial Times", "Bloomberg", "The Information", "CNBC", "Semafor"],
+      "secondary_discovery_only": [
+        "Reuters",
+        "Financial Times",
+        "Bloomberg",
+        "The Information",
+        "CNBC",
+        "Semafor"
+      ],
       "inclusion_gate": "普通融资、股价和合作不收；必须改变算力供给、资本开支、监管义务、平台控制权、企业采用或开闭源竞争结构。"
     },
     {
       "id": "practitioner_and_product_leader_longform",
-      "lanes": ["model", "agent_architecture", "ai_product"],
+      "lanes": [
+        "model",
+        "agent_architecture",
+        "ai_product"
+      ],
       "cadence": "daily",
       "delegate_registry": "config/person-source-registry.json",
       "additional_sources": [
-        {"name": "Latent Space", "url": "https://www.latent.space/", "type": "longform_blog_podcast"},
-        {"name": "The Pragmatic Engineer", "url": "https://newsletter.pragmaticengineer.com/", "type": "longform_blog"},
-        {"name": "Every", "url": "https://every.to/", "type": "longform_blog_podcast"},
-        {"name": "Lenny's Newsletter", "url": "https://www.lennysnewsletter.com/", "type": "longform_blog_podcast"},
-        {"name": "Simon Willison", "url": "https://simonwillison.net/", "type": "personal_blog"},
-        {"name": "Hamel Husain", "url": "https://hamel.dev/", "type": "personal_blog"},
-        {"name": "Chip Huyen", "url": "https://huyenchip.com/", "type": "personal_blog"},
-        {"name": "Ahead of AI", "url": "https://magazine.sebastianraschka.com/", "type": "researcher_newsletter"},
-        {"name": "Lil'Log", "url": "https://lilianweng.github.io/", "type": "researcher_blog"},
-        {"name": "Interconnects", "url": "https://www.interconnects.ai/", "type": "researcher_newsletter"},
-        {"name": "Import AI", "url": "https://jack-clark.net/", "type": "researcher_newsletter"}
+        {
+          "name": "Latent Space",
+          "url": "https://www.latent.space/",
+          "type": "longform_blog_podcast"
+        },
+        {
+          "name": "The Pragmatic Engineer",
+          "url": "https://newsletter.pragmaticengineer.com/",
+          "type": "longform_blog"
+        },
+        {
+          "name": "Every",
+          "url": "https://every.to/",
+          "type": "longform_blog_podcast"
+        },
+        {
+          "name": "Lenny's Newsletter",
+          "url": "https://www.lennysnewsletter.com/",
+          "type": "longform_blog_podcast"
+        },
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/",
+          "type": "personal_blog"
+        },
+        {
+          "name": "Hamel Husain",
+          "url": "https://hamel.dev/",
+          "type": "personal_blog"
+        },
+        {
+          "name": "Chip Huyen",
+          "url": "https://huyenchip.com/",
+          "type": "personal_blog"
+        },
+        {
+          "name": "Ahead of AI",
+          "url": "https://magazine.sebastianraschka.com/",
+          "type": "researcher_newsletter"
+        },
+        {
+          "name": "Lil'Log",
+          "url": "https://lilianweng.github.io/",
+          "type": "researcher_blog"
+        },
+        {
+          "name": "Interconnects",
+          "url": "https://www.interconnects.ai/",
+          "type": "researcher_newsletter"
+        },
+        {
+          "name": "Import AI",
+          "url": "https://jack-clark.net/",
+          "type": "researcher_newsletter"
+        }
       ],
       "inclusion_gate": "人物身份不自动带来入选；必须有新数据、真实案例、失败复盘、技术解释、演示或可复用方法。"
     }
@@ -183,7 +685,15 @@
       "OpenAI News": "普通 curl 可能返回 403；使用浏览器渲染、OpenAI 官方索引或具体文章直链，不能记为 checked_no_match。",
       "SEC EDGAR": "普通 curl 可能返回 403；使用 SEC 官方 submissions/companyfacts API 并设置合规 User-Agent，或浏览器访问具体 filing。"
     },
-    "required_statuses": ["checked_no_match", "selected", "candidate_only", "access_blocked", "auth_required", "mechanical_failure", "not_checked"],
+    "required_statuses": [
+      "checked_no_match",
+      "selected",
+      "candidate_only",
+      "access_blocked",
+      "auth_required",
+      "mechanical_failure",
+      "not_checked"
+    ],
     "zero_lane_rule": "任一主线为 0 时必须说明是确无合格内容、访问受限、机械失败还是尚未覆盖，不能解释为全网没有内容。",
     "monthly_backfill": "按来源类型和组织报告已检查数量、候选数量、正式入选数量、失败数量和替代来源。"
   }

@@ -5,37 +5,37 @@
     "end": "2026-08-14",
     "timezone": "Asia/Shanghai"
   },
-  "registry_updated_at": "2026-08-14T15:30:00+08:00",
+  "registry_updated_at": "2026-08-14T16:30:00+08:00",
   "counts": {
-    "registered": 107,
+    "registered": 111,
     "access_blocked": 0,
     "auth_required": 0,
     "candidate_only": 3,
     "checked_no_match": 4,
     "mechanical_failure": 0,
-    "not_checked": 93,
-    "selected": 7
+    "not_checked": 84,
+    "selected": 20
   },
   "channels": {
     "frontier_model_official": {
-      "registered": 24,
+      "registered": 27,
       "access_blocked": 0,
       "auth_required": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
       "mechanical_failure": 0,
-      "not_checked": 22,
-      "selected": 2
+      "not_checked": 19,
+      "selected": 8
     },
     "china_frontier_models": {
-      "registered": 13,
+      "registered": 14,
       "access_blocked": 0,
       "auth_required": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
       "mechanical_failure": 0,
       "not_checked": 13,
-      "selected": 0
+      "selected": 1
     },
     "head_ai_product_release_notes": {
       "registered": 16,
@@ -44,8 +44,8 @@
       "candidate_only": 0,
       "checked_no_match": 0,
       "mechanical_failure": 0,
-      "not_checked": 16,
-      "selected": 0
+      "not_checked": 15,
+      "selected": 1
     },
     "agent_runtime_and_open_source": {
       "registered": 16,
@@ -84,8 +84,8 @@
       "candidate_only": 0,
       "checked_no_match": 0,
       "mechanical_failure": 0,
-      "not_checked": 11,
-      "selected": 0
+      "not_checked": 6,
+      "selected": 5
     }
   },
   "sources": [
@@ -94,12 +94,16 @@
       "name": "OpenAI News",
       "url": "https://openai.com/news/",
       "source_type": "official_news",
-      "status": "not_checked",
-      "checked_at": null,
-      "candidate_count": 0,
-      "selected_signal_ids": [],
-      "note": "尚未完成本窗口定向检查。",
-      "fallback_used": null
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 3,
+      "selected_signal_ids": [
+        "2026-07-31-openai-gpt56-efficiency-agent-harness",
+        "2026-08-12-openai-gpt56-sol-luna",
+        "2026-08-12-openai-workspace-agents"
+      ],
+      "note": "通过官方正文和索引核验 GPT-5.6 效率、Sol/Luna 更新与 Workspace Agents，并替换两条 Google News 索引。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "frontier_model_official",
@@ -142,12 +146,15 @@
       "name": "Anthropic News",
       "url": "https://www.anthropic.com/news",
       "source_type": "official_news",
-      "status": "not_checked",
-      "checked_at": null,
-      "candidate_count": 0,
-      "selected_signal_ids": [],
-      "note": "尚未完成本窗口定向检查。",
-      "fallback_used": null
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 2,
+      "selected_signal_ids": [
+        "2026-07-27-anthropic-cognizant-enterprise-delivery",
+        "2026-08-03-anthropic-cyber-eval-incidents"
+      ],
+      "note": "逐页核验 Cognizant 企业交付伙伴关系和网络安全评测事故复盘。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "frontier_model_official",
@@ -340,12 +347,15 @@
       "name": "AWS What's New AI/ML",
       "url": "https://aws.amazon.com/about-aws/whats-new/machine-learning/",
       "source_type": "cloud_release_notes",
-      "status": "not_checked",
-      "checked_at": null,
-      "candidate_count": 0,
-      "selected_signal_ids": [],
-      "note": "尚未完成本窗口定向检查。",
-      "fallback_used": null
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 2,
+      "selected_signal_ids": [
+        "2026-08-06-aws-agentcore-runtime-instances",
+        "2026-08-06-aws-agentcore-temporal-policies"
+      ],
+      "note": "AWS What's New 官方页确认 AgentCore Runtime Instances 与 Temporal Policies。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "frontier_model_official",
@@ -384,6 +394,50 @@
       "selected_signal_ids": [],
       "note": "尚未完成本窗口定向检查。",
       "fallback_used": null
+    },
+    {
+      "channel_id": "frontier_model_official",
+      "name": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/",
+      "source_type": "official_newsroom",
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 2,
+      "selected_signal_ids": [
+        "2026-07-27-ssi-nvidia-vera-rubin-partnership",
+        "2026-08-10-nvidia-ai-compute-financing-500b"
+      ],
+      "note": "NVIDIA Newsroom 官方核验 SSI 合作与 AI Compute 融资平台。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
+    },
+    {
+      "channel_id": "frontier_model_official",
+      "name": "AMD Newsroom",
+      "url": "https://newsroom.amd.com/",
+      "source_type": "official_newsroom",
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 2,
+      "selected_signal_ids": [
+        "2026-07-22-amd-anthropic-2gw-mi450",
+        "2026-08-06-amd-acquire-taalas-inference"
+      ],
+      "note": "AMD Newsroom 官方核验 Anthropic 2GW 计划与 Taalas 收购协议。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
+    },
+    {
+      "channel_id": "frontier_model_official",
+      "name": "Meta Newsroom AI",
+      "url": "https://about.fb.com/news/tag/ai/",
+      "source_type": "official_newsroom",
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 1,
+      "selected_signal_ids": [
+        "2026-07-24-meta-ai-muse-spark-actions"
+      ],
+      "note": "Meta Newsroom 正文确认 Email/Calendar、Slides、Daily Briefing 与部分市场滚动开放。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "china_frontier_models",
@@ -540,6 +594,20 @@
       "selected_signal_ids": [],
       "note": "尚未完成本窗口定向检查。",
       "fallback_used": null
+    },
+    {
+      "channel_id": "china_frontier_models",
+      "name": "Moonshot AI Kimi GitHub",
+      "url": "https://github.com/MoonshotAI/Kimi-K3",
+      "source_type": "official_github",
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 1,
+      "selected_signal_ids": [
+        "2026-07-28-kimi-k3-open-frontier-model"
+      ],
+      "note": "下载并抽取官方技术报告，核验模型架构、Agentic RL、Sandbox 与开放权重边界。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "head_ai_product_release_notes",
@@ -726,12 +794,15 @@
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "source_type": "official_technical_blog",
-      "status": "not_checked",
-      "checked_at": null,
-      "candidate_count": 0,
-      "selected_signal_ids": [],
-      "note": "尚未完成本窗口定向检查。",
-      "fallback_used": null
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 2,
+      "selected_signal_ids": [
+        "2026-08-10-meta-muse-glimmer-open-local-agent",
+        "2026-08-13-hf-icml-open-reproductions"
+      ],
+      "note": "浏览器核验 Muse Glimmer 生态发布与 ICML Open Reproductions 完整正文。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "agent_runtime_and_open_source",
@@ -1267,24 +1338,31 @@
       "name": "Latent Space",
       "url": "https://www.latent.space/",
       "source_type": "longform_blog_podcast",
-      "status": "not_checked",
-      "checked_at": null,
-      "candidate_count": 0,
-      "selected_signal_ids": [],
-      "note": "尚未完成本窗口定向检查。",
-      "fallback_used": null
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 3,
+      "selected_signal_ids": [
+        "2026-07-28-akshay-nathan-chatgpt-work",
+        "2026-08-03-baseten-inference-engineering",
+        "2026-08-11-chai-discovery-bioai-commercialization"
+      ],
+      "note": "核验产品负责人、推理工程和 BioAI 商业化三期完整逐字稿。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "practitioner_and_product_leader_longform",
       "name": "The Pragmatic Engineer",
       "url": "https://newsletter.pragmaticengineer.com/",
       "source_type": "longform_blog",
-      "status": "not_checked",
-      "checked_at": null,
-      "candidate_count": 0,
-      "selected_signal_ids": [],
-      "note": "尚未完成本窗口定向检查。",
-      "fallback_used": null
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 2,
+      "selected_signal_ids": [
+        "2026-07-28-gergely-orosz-anthropic-verification-bottleneck",
+        "2026-08-12-charity-majors-ai-engineering-practice"
+      ],
+      "note": "核验 Anthropic 工程深访和 Charity Majors 完整逐字稿。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "practitioner_and_product_leader_longform",
@@ -1315,12 +1393,15 @@
       "name": "Simon Willison",
       "url": "https://simonwillison.net/",
       "source_type": "personal_blog",
-      "status": "not_checked",
-      "checked_at": null,
-      "candidate_count": 0,
-      "selected_signal_ids": [],
-      "note": "尚未完成本窗口定向检查。",
-      "fallback_used": null
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 2,
+      "selected_signal_ids": [
+        "2026-08-04-simon-willison-new-release-of-llm-adds-support-",
+        "2026-08-07-simon-willison-agent-game-model-comparison"
+      ],
+      "note": "核验 Simon Willison 的可运行演示、仓库与同任务跨模型案例。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "practitioner_and_product_leader_longform",
@@ -1351,12 +1432,14 @@
       "name": "Ahead of AI",
       "url": "https://magazine.sebastianraschka.com/",
       "source_type": "researcher_newsletter",
-      "status": "not_checked",
-      "checked_at": null,
-      "candidate_count": 0,
-      "selected_signal_ids": [],
-      "note": "尚未完成本窗口定向检查。",
-      "fallback_used": null
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 1,
+      "selected_signal_ids": [
+        "2026-07-18-sebastian-raschka-reasoning-effort"
+      ],
+      "note": "核验 Reasoning Effort、Toggle 与 Token 效率技术分析。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "practitioner_and_product_leader_longform",
@@ -1375,12 +1458,15 @@
       "name": "Interconnects",
       "url": "https://www.interconnects.ai/",
       "source_type": "researcher_newsletter",
-      "status": "not_checked",
-      "checked_at": null,
-      "candidate_count": 0,
-      "selected_signal_ids": [],
-      "note": "尚未完成本窗口定向检查。",
-      "fallback_used": null
+      "status": "selected",
+      "checked_at": "2026-08-14T15:46:54+08:00",
+      "candidate_count": 2,
+      "selected_signal_ids": [
+        "2026-08-03-nathan-lambert-open-model-artifacts-hub",
+        "2026-08-12-nathan-lambert-ai-textbook-workflow"
+      ],
+      "note": "核验 Nathan Lambert 的开放模型采用数据和 AI 教材真实工作流复盘。",
+      "fallback_used": "GitHub REST API via gh；服务端裁剪 Release 字段以避免大响应截断。"
     },
     {
       "channel_id": "practitioner_and_product_leader_longform",
