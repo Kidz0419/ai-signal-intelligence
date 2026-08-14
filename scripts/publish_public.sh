@@ -29,6 +29,8 @@ git pull --ff-only origin main
 git add \
   .gitignore .nojekyll README.md FILTER_RULES_AI_V1.md index.html \
   data/history.json data/history.js data/latest.json data/latest.js \
+  config backfills \
+  backfill-*.html product-leader-backfill-*.html \
   scripts tests \
   "daily/$DATE/selected.json" \
   "daily/$DATE/daily-brief.md" \

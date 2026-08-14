@@ -91,6 +91,14 @@
 
 每条实践者观点增加：`speaker_name`、`speaker_role`、`speaker_type`、`statement_topic`、`original_source_url`、`new_information`、`evidence_artifact`。`speaker_type` 可取 `ai_product_leader`、`ai_developer`、`open_source_maintainer`、`independent_researcher`。
 
+### 4.1 产品负责人播客与访谈回溯候选
+
+- 对 CPO、Head/VP of Product、头部 AI 产品线负责人及创始产品工程负责人，节目页、官方频道、节目 RSS 或公开播客元数据能够确认发布日期、标题、嘉宾身份和节目主题，即可登记为 `backfill_candidate`。
+- `backfill_candidate` 不等于正式观点卡。没有逐字稿、Show Notes、章节、正文或可核验演示时，只记录标题层事实、嘉宾身份、节目主题和发布日期；不得补写访谈中的具体观点、数据、案例或方法。
+- 有 Show Notes 或章节时，只能提炼节目方明确列出的主题，并把证据等级标为 `show_notes` 或 `chapters`；有公开逐字稿、完整正文或原始演示后，才按第 4 节的信息增量门槛判断是否进入 `practitioner_statement`。
+- 默认近期回溯窗口为 90 天；90—120 天内的高价值内容可进入单独的邻近窗口，但必须保留真实发布日期并与日内新增、90 天主窗口分开统计。
+- 同一节目的视频、音频、Apple Podcasts、Spotify 与节目官网版本按一个事件合并；同一人物多期节目重复同一主题时，保留主来源并将其余节目登记为 `related_sources`。
+
 ## 5. 默认排除
 
 - 只有模型跑分、参数规模或主观体验，无法对应产品能力变化

@@ -1,0 +1,58 @@
+{
+  "window": {
+    "main_start": "2026-05-16",
+    "main_end": "2026-08-13",
+    "adjacent_start": "2026-04-16",
+    "adjacent_end": "2026-05-15"
+  },
+  "timezone": "Asia/Shanghai",
+  "conclusion": "确认 29 期近期 AI 产品负责人/核心产品构建者原创内容；其中 90 天主窗口 26 期、90—120 天邻近窗口 3 期。发布日期确认即可登记候选，但只有节目方明确列出的主题可写入；无逐字稿不扩写观点。",
+  "counts": {
+    "episodes": 29,
+    "main_90d": 26,
+    "adjacent_90_120d": 3,
+    "people": 17,
+    "organizations": 4,
+    "topic_clusters": 15
+  },
+  "by_organization": {
+    "AWS": 1,
+    "Anthropic": 17,
+    "Google": 6,
+    "OpenAI": 5
+  },
+  "by_body_evidence_level": {
+    "chapters": 9,
+    "demo": 4,
+    "full_text": 2,
+    "show_notes": 13,
+    "title_only": 1
+  },
+  "coverage_gaps": [
+    {
+      "channel": "YouTube transcripts",
+      "status": "runtime IP / anti-bot limited",
+      "impact": "多数公开视频无法稳定取得逐字稿。",
+      "alternative": "YouTube 页面源码日期、节目 RSS、Apple Podcasts 元数据、节目官网 Show Notes。"
+    },
+    {
+      "channel": "X official API",
+      "status": "no app/OAuth configured",
+      "impact": "无法系统回溯产品负责人的 X 长文和线程。",
+      "alternative": "个人博客、官方署名正文、公开节目页和 RSS。"
+    },
+    {
+      "channel": "Spotify and closed podcast platforms",
+      "status": "partial",
+      "impact": "无公开 RSS 或登录墙节目覆盖不完整。",
+      "alternative": "Apple Podcasts Search API、节目官网和官方 YouTube。"
+    },
+    {
+      "channel": "Microsoft AI / Meta AI / Cursor / xAI product leaders",
+      "status": "no strict date-confirmed candidate found in this pass",
+      "impact": "不能把 0 解释为近期没有内容，只能解释为本轮公开源未召回严格候选。",
+      "alternative": "后续继续按人物注册表定向扫描。"
+    }
+  ],
+  "exclusion_policy": "排除 AI 生成的播客摘要、二手新闻节目、CEO 泛宏观访谈、只有人名匹配但嘉宾未出席的节目，以及日期不能确认的条目。"
+}

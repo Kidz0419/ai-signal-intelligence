@@ -1,0 +1,584 @@
+{
+  "schema_version": 1,
+  "cluster_count": 15,
+  "clusters": [
+    {
+      "topic_cluster": "anthropic-ai-native-product-building",
+      "people": [
+        "Mike Krieger"
+      ],
+      "organizations": [
+        "Anthropic"
+      ],
+      "episode_count": 2,
+      "date_range": {
+        "start": "2026-06-10",
+        "end": "2026-06-24"
+      },
+      "confirmed_topics": [
+        "AI-native 产品开发",
+        "Anthropic 同时作为平台与产品的边界",
+        "Sonnet 与 Fable 的任务分工",
+        "动态工作流",
+        "媒体追踪器与 Agent-native architecture",
+        "构建成本、Anthropic 工程工作方式和 verification",
+        "模型安全警告与产品竞争",
+        "过夜排队执行的 AI 工作流"
+      ],
+      "episodes": [
+        {
+          "id": "2026-06-10-mike-krieger-how-anthropic-uses-claude-fable-5-with-mike-krieger",
+          "date": "2026-06-10",
+          "title": "How Anthropic Uses Claude Fable 5 With Mike Krieger",
+          "url": "https://podcasts.apple.com/us/podcast/how-anthropic-uses-claude-fable-5-with-mike-krieger/id1719789201?i=1000772067637",
+          "body_evidence_level": "chapters"
+        },
+        {
+          "id": "2026-06-24-mike-krieger-anthropic-s-labs-lead-on-fable-s-capabilities-building-ai-native-products",
+          "date": "2026-06-24",
+          "title": "Anthropic’s Labs Lead on Fable’s Capabilities + Building AI-Native Products",
+          "url": "https://podcasts.apple.com/us/podcast/anthropics-labs-lead-on-fables-capabilities-building/id1522960417?i=1000774081295",
+          "body_evidence_level": "show_notes"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "anthropic-product-operating-model",
+      "people": [
+        "Cat Wu",
+        "Fiona Fung",
+        "Meaghan Choi",
+        "Thariq Shihipar"
+      ],
+      "organizations": [
+        "Anthropic"
+      ],
+      "episode_count": 4,
+      "date_range": {
+        "start": "2026-04-23",
+        "end": "2026-07-15"
+      },
+      "confirmed_topics": [
+        "AI-native 工程团队与代码审查、验证",
+        "Agent 并行带来的上下文切换",
+        "Anthropic 产品团队的交付节奏",
+        "Claude Code 与 Cowork 的产品边界",
+        "Claude Code 从内部功能走向正式产品",
+        "Claude Fable、Claude Tag 与 Anthropic 产品文化",
+        "Claude routines 与异步工作",
+        "Evals、产品品味与模型变化",
+        "PRD、路线图与 PM/工程角色变化",
+        "企业采用、PLG 与 AI ROI 衡量",
+        "小型 AI Builder pod 与 Agent 协作",
+        "责任边界、dogfooding 与 JIT 规划",
+        "高速交付同时保持质量"
+      ],
+      "episodes": [
+        {
+          "id": "2026-04-23-cat-wu-how-anthropic-s-product-team-moves-faster-than-anyone-else",
+          "date": "2026-04-23",
+          "title": "How Anthropic’s product team moves faster than anyone else",
+          "url": "https://podcasts.apple.com/us/podcast/how-anthropics-product-team-moves-faster-than-anyone/id1627920305?i=1000763270413",
+          "body_evidence_level": "chapters"
+        },
+        {
+          "id": "2026-06-03-meaghan-choi-anthropic-head-of-design-on-claude-code-s-evolution-from-an-internal-feature",
+          "date": "2026-06-03",
+          "title": "Anthropic Head of Design on Claude Code’s Evolution from an Internal Feature",
+          "url": "https://podcasts.apple.com/us/podcast/anthropic-head-of-design-on-claude-codes-evolution/id1219400787?i=1000771025211",
+          "body_evidence_level": "show_notes"
+        },
+        {
+          "id": "2026-06-21-fiona-fung-what-happens-after-coding-is-solved",
+          "date": "2026-06-21",
+          "title": "What happens after coding is solved?",
+          "url": "https://podcasts.apple.com/us/podcast/what-happens-after-coding-is-solved-fiona-fung-manager/id1627920305?i=1000773603724",
+          "body_evidence_level": "chapters"
+        },
+        {
+          "id": "2026-07-15-cat-wu-thariq-shihipar-claude-fable-claude-tag-and-anthropic-s-culture",
+          "date": "2026-07-15",
+          "title": "Claude Fable, Claude Tag, and Anthropic’s Culture",
+          "url": "https://www.youtube.com/watch?v=uU5Gv2h8-9g",
+          "body_evidence_level": "title_only"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "anthropic-research-product-management",
+      "people": [
+        "Dianne Penn"
+      ],
+      "organizations": [
+        "Anthropic"
+      ],
+      "episode_count": 1,
+      "date_range": {
+        "start": "2026-07-26",
+        "end": "2026-07-26"
+      },
+      "confirmed_topics": [
+        "Anthropic Labs 的孵化模式与研究产品管理",
+        "Eval-driven development、Evals 与 PRD",
+        "Token maxing 与模型能力 jagged edge",
+        "人类判断、验证和避免过度依赖"
+      ],
+      "episodes": [
+        {
+          "id": "2026-07-26-dianne-penn-anthropic-s-first-technical-pm-on-token-maxing-the-jagged-edge-and-living-in-the-future",
+          "date": "2026-07-26",
+          "title": "Anthropic’s first technical PM on token maxing, the jagged edge, and living in the future",
+          "url": "https://podcasts.apple.com/us/podcast/anthropics-first-technical-pm-on-token-maxing-the/id1627920305?i=1000778409270",
+          "body_evidence_level": "chapters"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "aws-agentic-ai-platform",
+      "people": [
+        "Swami Sivasubramanian"
+      ],
+      "organizations": [
+        "AWS"
+      ],
+      "episode_count": 1,
+      "date_range": {
+        "start": "2026-06-17",
+        "end": "2026-06-17"
+      },
+      "confirmed_topics": [
+        "AI 软件开发中的速度、安全与可信执行",
+        "AWS Agentic AI 产品与企业平台",
+        "企业 Agent 的上下文整合"
+      ],
+      "episodes": [
+        {
+          "id": "2026-06-17-swami-sivasubramanian-snap-specs-taste-midjourney-hardware-swami-sivasubramanian-segment",
+          "date": "2026-06-17",
+          "title": "Snap Specs, Taste, Midjourney Hardware — Swami Sivasubramanian segment",
+          "url": "https://podcasts.apple.com/us/podcast/snap-specs-taste-midjourney-hardware-eric-newcomer/id1772360235?i=1000773178347",
+          "body_evidence_level": "show_notes"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "chatgpt-product-evolution",
+      "people": [
+        "Nick Turley"
+      ],
+      "organizations": [
+        "OpenAI"
+      ],
+      "episode_count": 3,
+      "date_range": {
+        "start": "2026-05-12",
+        "end": "2026-07-14"
+      },
+      "confirmed_topics": [
+        "Agentic AI、Codex 与 AI Super App",
+        "Agentic AI、未来工作与产品研发",
+        "ChatGPT 从应答式产品走向主动执行助手",
+        "ChatGPT 从短期 Demo 走向全球产品",
+        "ChatGPT 当前产品位置",
+        "Deep Research 与 Codex 的科研使用",
+        "健康问题使用、产品界面和创业机会",
+        "计算机操作与 Agent 产品方向"
+      ],
+      "episodes": [
+        {
+          "id": "2026-05-12-nick-turley-hey-chatgpt-chef-wie-weit-ist-ki-weg-die-einfach-f-r-uns-macht-nick-turley-66",
+          "date": "2026-05-12",
+          "title": "Hey ChatGPT Chef, wie weit ist KI weg, die einfach für uns macht, Nick Turley? (#66)",
+          "url": "https://podcasts.apple.com/us/podcast/hey-chatgpt-chef-wie-weit-ist-ki-weg-die-einfach-f%C3%BCr/id1510727410?i=1000767434909",
+          "body_evidence_level": "show_notes"
+        },
+        {
+          "id": "2026-06-17-nick-turley-wo-steht-chatgpt-interview-mit-nick-turley-von-openai",
+          "date": "2026-06-17",
+          "title": "Wo steht ChatGPT? Interview mit Nick Turley von OpenAI",
+          "url": "https://podcasts.apple.com/us/podcast/630-wo-steht-chatgpt-interview-mit-nick-turley-von-openai/id1258254665?i=1000773098935",
+          "body_evidence_level": "show_notes"
+        },
+        {
+          "id": "2026-07-14-nick-turley-ber-die-geburt-von-chatgpt-und-wie-wichtig-vorbilder-sind",
+          "date": "2026-07-14",
+          "title": "Über die Geburt von ChatGPT und wie wichtig Vorbilder sind",
+          "url": "https://podcasts.apple.com/us/podcast/%C3%BCber-die-geburt-von-chatgpt-und-wie-wichtig-vorbilder/id6791125330?i=1000776891523",
+          "body_evidence_level": "show_notes"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "claude-code-html-artifacts",
+      "people": [
+        "Thariq Shihipar"
+      ],
+      "organizations": [
+        "Anthropic"
+      ],
+      "episode_count": 1,
+      "date_range": {
+        "start": "2026-05-18",
+        "end": "2026-05-18"
+      },
+      "confirmed_topics": [
+        "使用 HTML artifact 进行规划、交互原型与沟通",
+        "可编辑微型 UI 与代码库内设计系统",
+        "给予模型灵活性同时保持人类在环"
+      ],
+      "episodes": [
+        {
+          "id": "2026-05-18-thariq-shihipar-html-is-the-new-markdown-how-anthropic-engineers-are-building-with-claude-code",
+          "date": "2026-05-18",
+          "title": "HTML is the new Markdown: How Anthropic engineers are building with Claude Code",
+          "url": "https://podcasts.apple.com/us/podcast/html-is-the-new-markdown-how-anthropic-engineers-are/id1809663079?i=1000768383813",
+          "body_evidence_level": "chapters"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "claude-code-product-building",
+      "people": [
+        "Thariq Shihipar"
+      ],
+      "organizations": [
+        "Anthropic"
+      ],
+      "episode_count": 2,
+      "date_range": {
+        "start": "2026-07-16",
+        "end": "2026-07-19"
+      },
+      "confirmed_topics": [
+        "AI 如何改变产品团队与创始人决策",
+        "Capability overhang、Harness Engineering 与 Evals",
+        "Claude Code 产品构建方式",
+        "Goals、loops 与更长时间运行",
+        "HTML artifacts 与 Slack 并行任务",
+        "Plan Mode、RAG 和提示实践",
+        "creator/verifier 子 Agent 分工和 system prompt 精简",
+        "先消除未知再实施的规划方式"
+      ],
+      "episodes": [
+        {
+          "id": "2026-07-16-thariq-shihipar-anthropic-engineer-on-the-future-of-coding-with-ai",
+          "date": "2026-07-16",
+          "title": "Anthropic Engineer on the Future of Coding with AI",
+          "url": "https://podcasts.apple.com/us/podcast/anthropic-engineer-on-the-future-of-coding-with/id1759014294?i=1000777063615",
+          "body_evidence_level": "chapters"
+        },
+        {
+          "id": "2026-07-19-thariq-shihipar-how-i-plan-build-and-run-loops-with-claude-code-in-40-minutes",
+          "date": "2026-07-19",
+          "title": "How I Plan, Build, and Run Loops with Claude Code in 40 Minutes",
+          "url": "https://podcasts.apple.com/us/podcast/how-i-plan-build-and-run-loops-with-claude-code-in/id1736359687?i=1000777426705",
+          "body_evidence_level": "demo"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "claude-code-product-strategy",
+      "people": [
+        "Boris Cherny"
+      ],
+      "organizations": [
+        "Anthropic"
+      ],
+      "episode_count": 4,
+      "date_range": {
+        "start": "2026-05-20",
+        "end": "2026-07-28"
+      },
+      "confirmed_topics": [
+        "AI 工具对工程岗位和生产率的影响",
+        "Agentic coding harness 的产品目标",
+        "Claude Code 在非工程职业中的使用",
+        "Claude Code 增长与 Agent 可持续性",
+        "Claude Code 早期产品路径",
+        "Claude Code 的产品起源",
+        "Codex 竞争、SaaS 变化和自改进系统",
+        "“coding is solved”判断的含义",
+        "从工具向协作对象转变",
+        "大量并行 Agent、Token 限制和下一阶段",
+        "安全、对齐和工程师能力变化",
+        "底层能力快速变化时如何构建上层产品",
+        "新模型能力对 Claude Code 的影响"
+      ],
+      "episodes": [
+        {
+          "id": "2026-05-20-boris-cherny-claude-code-head-boris-cherny-insane-growth-tokenmaxxing-ai-agents-next-frontier",
+          "date": "2026-05-20",
+          "title": "Claude Code Head Boris Cherny: Insane Growth, Tokenmaxxing, AI Agents’ Next Frontier",
+          "url": "https://podcasts.apple.com/us/podcast/claude-code-head-boris-cherny-insane-growth-tokenmaxxing/id1522960417?i=1000768721139",
+          "body_evidence_level": "show_notes"
+        },
+        {
+          "id": "2026-05-27-boris-cherny-claude-code-creator-boris-cherny-on-the-end-of-the-software-engineer",
+          "date": "2026-05-27",
+          "title": "Claude Code creator Boris Cherny on the end of the software engineer",
+          "url": "https://podcasts.apple.com/us/podcast/claude-code-creator-boris-cherny-on-the-end-of/id1868844067?i=1000769734571",
+          "body_evidence_level": "show_notes"
+        },
+        {
+          "id": "2026-07-20-boris-cherny-the-creator-of-claude-code-on-the-hottest-piece-of-software-in-the-world",
+          "date": "2026-07-20",
+          "title": "The Creator of Claude Code on The Hottest Piece of Software in the World",
+          "url": "https://podcasts.apple.com/us/podcast/the-creator-of-claude-code-on-the-hottest-piece/id1056200096?i=1000777521827",
+          "body_evidence_level": "show_notes"
+        },
+        {
+          "id": "2026-07-28-boris-cherny-boris-cherny-building-claude-code",
+          "date": "2026-07-28",
+          "title": "Boris Cherny: Building Claude Code",
+          "url": "https://podcasts.apple.com/us/podcast/boris-cherny-building-claude-code/id1236907421?i=1000778651350",
+          "body_evidence_level": "show_notes"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "claude-model-as-product",
+      "people": [
+        "Alex Albert"
+      ],
+      "organizations": [
+        "Anthropic"
+      ],
+      "episode_count": 1,
+      "date_range": {
+        "start": "2026-05-17",
+        "end": "2026-05-17"
+      },
+      "confirmed_topics": [
+        "Adaptive Thinking、Evals 与 Claude character",
+        "把新模型作为产品管理",
+        "用 Cowork 压测产品文档",
+        "用户反馈如何进入模型训练与能力优先级"
+      ],
+      "episodes": [
+        {
+          "id": "2026-05-17-alex-albert-inside-anthropic-how-claude-actually-gets-built",
+          "date": "2026-05-17",
+          "title": "Inside Anthropic: How Claude Actually Gets Built",
+          "url": "https://podcasts.apple.com/us/podcast/inside-anthropic-how-claude-actually-gets-built-alex/id1736359687?i=1000768251789",
+          "body_evidence_level": "chapters"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "codex-pm-workflow",
+      "people": [
+        "Rohan Varma"
+      ],
+      "organizations": [
+        "OpenAI"
+      ],
+      "episode_count": 1,
+      "date_range": {
+        "start": "2026-07-05",
+        "end": "2026-07-05"
+      },
+      "confirmed_topics": [
+        "Slack 触发自动化、Image Gen 设计变体",
+        "从 PRD 转向可演示原型",
+        "从 Slack、文档、Linear 和邮件汇集上下文",
+        "把 Codex 线程变成 Skill、Site 和管理线程"
+      ],
+      "episodes": [
+        {
+          "id": "2026-07-05-rohan-varma-openai-pm-reveals-how-he-uses-codex-to-do-product-work",
+          "date": "2026-07-05",
+          "title": "OpenAI PM Reveals How He Uses Codex to Do Product Work",
+          "url": "https://podcasts.apple.com/us/podcast/openai-pm-reveals-how-he-uses-codex-to-do-product-work/id1736359687?i=1000775522699",
+          "body_evidence_level": "demo"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "cowork-product-workflows",
+      "people": [
+        "Felix Rieseberg"
+      ],
+      "organizations": [
+        "Anthropic"
+      ],
+      "episode_count": 1,
+      "date_range": {
+        "start": "2026-05-25",
+        "end": "2026-05-25"
+      },
+      "confirmed_topics": [
+        "Claude Cowork 的真实生活与产品工作流",
+        "Live artifacts 和可刷新仪表盘",
+        "从二维平面图到交互式 3D artifact",
+        "使用物理按钮审批 Claude 动作"
+      ],
+      "episodes": [
+        {
+          "id": "2026-05-25-felix-rieseberg-how-the-engineer-behind-claude-cowork-actually-uses-claude",
+          "date": "2026-05-25",
+          "title": "How the engineer behind Claude Cowork actually uses Claude",
+          "url": "https://podcasts.apple.com/us/podcast/how-the-engineer-behind-claude-cowork-actually-uses/id1809663079?i=1000769476064",
+          "body_evidence_level": "demo"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "gemini-notebook-product-evolution",
+      "people": [
+        "Josh Woodward"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "episode_count": 1,
+      "date_range": {
+        "start": "2026-07-16",
+        "end": "2026-07-16"
+      },
+      "confirmed_topics": [
+        "NotebookLM 更名为 Gemini Notebook",
+        "安全云电脑、代码执行与来源约束分析",
+        "独立研究产品与 Gemini、Search 的生态连接",
+        "跨应用同步和分层开放范围"
+      ],
+      "episodes": [
+        {
+          "id": "2026-07-16-josh-woodward-notebooklm-is-now-gemini-notebook",
+          "date": "2026-07-16",
+          "title": "NotebookLM is now Gemini Notebook",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+          "body_evidence_level": "full_text"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "gemini-product-ecosystem",
+      "people": [
+        "Josh Woodward",
+        "Tulsee Doshi"
+      ],
+      "organizations": [
+        "Google"
+      ],
+      "episode_count": 5,
+      "date_range": {
+        "start": "2026-05-19",
+        "end": "2026-08-12"
+      },
+      "confirmed_topics": [
+        "AI 创意工具的限制与评估",
+        "Agent payments、语音与 Google I/O 产品路线",
+        "Daily Brief 和 Gemini Spark 的主动式 Agent 产品形态",
+        "Gemini 3.5 Flash、Gemini Omni 与 Gemini Spark",
+        "Gemini 3.5 Flash、Neural Expressive 与 Gemini Omni",
+        "Gemini Spark、3.5 Flash、Ask YouTube 与智能眼镜",
+        "Gemini 与创意产品的“almost possible”边界",
+        "Gemini 创作者工具",
+        "Google Flow 的产品形成过程",
+        "Google Labs、Gemini 与 AI Studio 产品线",
+        "NotebookLM 教育使用与 AI 产品责任",
+        "下一阶段 Gemini 产品方向",
+        "从亲自执行转向指导 AI",
+        "小团队快速推出 AI 产品",
+        "语音交互、人类判断与产品品味",
+        "连接应用、MCP、后台运行与 macOS 路线",
+        "降低用户恐惧、创意与人类判断",
+        "高风险动作事前确认和用户连接控制"
+      ],
+      "episodes": [
+        {
+          "id": "2026-05-19-josh-woodward-the-gemini-app-becomes-more-agentic-delivering-proactive-24-7-help",
+          "date": "2026-05-19",
+          "title": "The Gemini app becomes more agentic, delivering proactive, 24/7 help",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/",
+          "body_evidence_level": "full_text"
+        },
+        {
+          "id": "2026-05-21-josh-woodward-inside-google-s-creative-frontier-with-josh-woodward-robert-wong",
+          "date": "2026-05-21",
+          "title": "Inside Google’s Creative Frontier with Josh Woodward & Robert Wong",
+          "url": "https://podcasts.apple.com/us/podcast/inside-googles-creative-frontier-with-josh-woodward/id1860114911?i=1000768882280",
+          "body_evidence_level": "chapters"
+        },
+        {
+          "id": "2026-05-22-josh-woodward-google-i-o-2026-a-new-era-of-work-just-started",
+          "date": "2026-05-22",
+          "title": "Google I/O 2026: A New Era of Work Just Started",
+          "url": "https://podcasts.apple.com/us/podcast/google-i-o-2026-a-new-era-of-work-just-started-josh-woodward/id1819090545?i=1000769098854",
+          "body_evidence_level": "show_notes"
+        },
+        {
+          "id": "2026-06-22-josh-woodward-tulsee-doshi-google-i-o-2026-recap",
+          "date": "2026-06-22",
+          "title": "Google I/O 2026 Recap",
+          "url": "https://podcasts.apple.com/us/podcast/google-i-o-2026-recap-with-logan-kilpatrick-josh/id1783661110?i=1000773758003",
+          "body_evidence_level": "show_notes"
+        },
+        {
+          "id": "2026-08-12-josh-woodward-building-a-community-of-950m-monthly-users",
+          "date": "2026-08-12",
+          "title": "Building a Community of 950M Monthly Users",
+          "url": "https://podcasts.apple.com/us/podcast/josh-woodward-vp-google-labs-gemini-ai-studio-building/id1510330391?i=1000783000701",
+          "body_evidence_level": "chapters"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "managed-agents-product-workflow",
+      "people": [
+        "Jess Yan"
+      ],
+      "organizations": [
+        "Anthropic"
+      ],
+      "episode_count": 1,
+      "date_range": {
+        "start": "2026-06-28",
+        "end": "2026-06-28"
+      },
+      "confirmed_topics": [
+        "Traces、Evals 与 PM 内部 Agent 工作流",
+        "从零构建 Claude 分析 Agent",
+        "处理大规模候选名单及从单一用户问题开始",
+        "长时间和过夜运行的 Managed Agents"
+      ],
+      "episodes": [
+        {
+          "id": "2026-06-28-jess-yan-inside-anthropic-s-bet-on-claude-agents-that-work-while-you-sleep",
+          "date": "2026-06-28",
+          "title": "Inside Anthropic’s Bet on Claude Agents that Work While You Sleep",
+          "url": "https://podcasts.apple.com/us/podcast/inside-anthropics-bet-on-claude-agents-that-work-while/id1736359687?i=1000774570160",
+          "body_evidence_level": "demo"
+        }
+      ]
+    },
+    {
+      "topic_cluster": "openai-science-product-workflows",
+      "people": [
+        "Kevin Weil"
+      ],
+      "organizations": [
+        "OpenAI"
+      ],
+      "episode_count": 1,
+      "date_range": {
+        "start": "2026-04-29",
+        "end": "2026-04-29"
+      },
+      "confirmed_topics": [
+        "AI 科学采用障碍、同行评审与人类专业判断",
+        "AI 进入科学家的日常工作流",
+        "科学家如何参与前沿模型研发"
+      ],
+      "episodes": [
+        {
+          "id": "2026-04-29-kevin-weil-ep-15-kevin-weil-openai",
+          "date": "2026-04-29",
+          "title": "EP 15: Kevin Weil (OpenAI)",
+          "url": "https://podcasts.apple.com/us/podcast/ep-15-kevin-weil-openai/id1838537611?i=1000764565840",
+          "body_evidence_level": "show_notes"
+        }
+      ]
+    }
+  ]
+}

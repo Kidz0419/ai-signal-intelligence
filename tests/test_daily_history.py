@@ -74,6 +74,24 @@ class DailyHistoryContractTest(unittest.TestCase):
         self.assertIn("backfill-2026-07-13-to-2026-08-13.html", self.html)
         self.assertTrue((ROOT / "backfill-2026-07-13-to-2026-08-13.html").exists())
 
+    def test_product_leader_backfill_contract(self):
+        root = ROOT / "backfills" / "2026-05-16_to_2026-08-13_product_leaders"
+        data = json.loads((root / "candidates.json").read_text())
+        rows = data["episodes"]
+        self.assertGreaterEqual(len(rows), 1)
+        self.assertEqual(data["counts"]["episodes"], len(rows))
+        self.assertEqual(len({row["id"] for row in rows}), len(rows))
+        self.assertEqual(len({row["url"].rstrip("/") for row in rows}), len(rows))
+        required = {
+            "speaker_name", "speaker_role", "published_at", "date_evidence",
+            "body_evidence_level", "confirmed_topics", "evidence_boundary",
+        }
+        self.assertTrue(all(required <= set(row) for row in rows))
+        self.assertTrue(all(row["decision"] == "backfill_candidate" for row in rows))
+        page = "product-leader-backfill-2026-05-16-to-2026-08-13.html"
+        self.assertIn(page, self.html)
+        self.assertTrue((ROOT / page).exists())
+
 
 if __name__ == "__main__":
     unittest.main()
