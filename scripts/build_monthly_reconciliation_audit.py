@@ -1,0 +1,100 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "backfills/2026-07-16_to_2026-08-14_all_signals/coverage-funnel.json"
+
+batches = [
+    {
+        "id": "github_core_releases",
+        "label_cn": "12 个核心 Agent/Runtime 仓库 GitHub Releases",
+        "raw_hits": 65,
+        "date_confirmed": 65,
+        "formal_decisions": 8,
+        "net_new_unique_signals": 8,
+        "evidence_upgrades": 0,
+        "deduped_or_merged": 0,
+        "excluded_or_deferred": 57,
+        "note_cn": "高频 patch、依赖升级、普通 bugfix 与同主题连续版本不单独成卡；正式保留 8 个事件级主题。"
+    },
+    {
+        "id": "google_official_product_sitemap",
+        "label_cn": "Google 官方 Sitemap 定向产品补扫",
+        "raw_hits": 3,
+        "date_confirmed": 3,
+        "formal_decisions": 3,
+        "net_new_unique_signals": 3,
+        "evidence_upgrades": 0,
+        "deduped_or_merged": 0,
+        "excluded_or_deferred": 0,
+        "note_cn": "Managed Agents、Gemini Spark Chrome 与 Connected Apps 三条均逐页核验。"
+    },
+    {
+        "id": "manual_macro_primary_sources",
+        "label_cn": "Google 财报/组织与 EU 官方监管页",
+        "raw_hits": 3,
+        "date_confirmed": 3,
+        "formal_decisions": 3,
+        "net_new_unique_signals": 3,
+        "evidence_upgrades": 0,
+        "deduped_or_merged": 0,
+        "excluded_or_deferred": 0,
+        "note_cn": "Alphabet 企业采用与供给、EU Article 50、Google DeepMind 组织控制权。"
+    },
+    {
+        "id": "async_macro_people_audit",
+        "label_cn": "宏观四轨与人物原创异步审计",
+        "raw_hits": 25,
+        "date_confirmed": 25,
+        "formal_decisions": 19,
+        "net_new_unique_signals": 19,
+        "evidence_upgrades": 0,
+        "deduped_or_merged": 6,
+        "excluded_or_deferred": 0,
+        "note_cn": "Dario、Google 领导层、EU 执法、Anthropic 多 Agent 已存在；Nathan Kimi 分析并入 Kimi 事件；Simon 两次同任务演示合为一条。"
+    },
+    {
+        "id": "late_product_primary_pages",
+        "label_cn": "超时产品扫描日志恢复与官方正文复核",
+        "raw_hits": 9,
+        "date_confirmed": 6,
+        "formal_decisions": 6,
+        "net_new_unique_signals": 4,
+        "evidence_upgrades": 2,
+        "deduped_or_merged": 2,
+        "excluded_or_deferred": 3,
+        "note_cn": "新增 Meta AI、GitHub Copilot 与 2 条 AWS AgentCore；Workspace Agents 和 GPT-5.6 Sol/Luna 替换 Google News 索引。Lockdown Mode 窗口外、Codex GA 日期不满足本轮确认门槛、Cursor 正文提取失败。"
+    }
+]
+
+totals = {k: sum(b[k] for b in batches) for k in ("raw_hits", "date_confirmed", "formal_decisions", "net_new_unique_signals", "evidence_upgrades", "deduped_or_merged", "excluded_or_deferred")}
+payload = {
+    "schema_version": 1,
+    "window": {"start": "2026-07-16", "end": "2026-08-14", "timezone": "Asia/Shanghai"},
+    "scope_note_cn": "本漏斗只统计本轮扩源后可重建的五个扫描批次；不把早期日报丢失的原始抓取量反向编造成全局扫描量。",
+    "baseline_formal_unique_signals": 33,
+    "batches": batches,
+    "totals": totals,
+    "reconciliation": {
+        "baseline": 33,
+        "net_new_unique_signals": totals["net_new_unique_signals"],
+        "evidence_upgrades_without_new_card": totals["evidence_upgrades"],
+        "final_unique_signals": 70,
+        "equation": "33 + 37 = 70；另有 2 条旧卡完成官方证据替换。"
+    },
+    "formal_lane_counts": {"model": 16, "agent_architecture": 25, "ai_product": 19, "ai_macro": 10},
+    "exclusion_reason_distribution": {
+        "github_patch_bugfix_dependency_or_same_theme_noise": 57,
+        "outside_window": 1,
+        "publication_date_not_confirmed_in_window": 1,
+        "mechanical_body_extraction_failure": 1,
+        "merged_with_existing_or_same_person_theme": 6
+    },
+    "quality_rule_cn": "扩充信源只提高召回率；搜索摘要、Sitemap lastmod、节目标题和资源包文案不替代正文证据。"
+}
+assert totals == {"raw_hits": 105, "date_confirmed": 102, "formal_decisions": 39, "net_new_unique_signals": 37, "evidence_upgrades": 2, "deduped_or_merged": 8, "excluded_or_deferred": 60}
+assert payload["reconciliation"]["baseline"] + totals["net_new_unique_signals"] == payload["reconciliation"]["final_unique_signals"]
+OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+print(json.dumps({"output": str(OUT), **totals, "final_unique_signals": 70}, ensure_ascii=False))

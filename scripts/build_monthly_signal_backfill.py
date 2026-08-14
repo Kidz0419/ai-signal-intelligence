@@ -27,9 +27,8 @@ def main():
     people = json.loads((ROOT / "backfills/2026-07-13_to_2026-08-13/selected.json").read_text())
     additions_path = Path(args.additions)
     additions = json.loads(additions_path.read_text()) if additions_path.exists() else []
-    rows = []
-    seen_urls = set()
-    seen_ids = set()
+    rows_by_id = {}
+    id_by_url = {}
     for origin, batch in (("daily_history", history), ("person_original_backfill", people), ("curated_monthly_addition", additions)):
         for source in batch:
             if not START <= day(source) <= END:
@@ -46,14 +45,18 @@ def main():
             else:
                 item["monthly_review_status"] = "baseline_evidence_present"
             canonical = url(item)
-            if canonical and canonical in seen_urls:
+            existing_id = item["id"] if item["id"] in rows_by_id else id_by_url.get(canonical)
+            if existing_id and origin != "curated_monthly_addition":
                 continue
-            if item["id"] in seen_ids:
-                continue
-            seen_ids.add(item["id"])
+            if existing_id:
+                old = rows_by_id.pop(existing_id)
+                old_url = url(old)
+                if old_url:
+                    id_by_url.pop(old_url, None)
+            rows_by_id[item["id"]] = item
             if canonical:
-                seen_urls.add(canonical)
-            rows.append(item)
+                id_by_url[canonical] = item["id"]
+    rows = list(rows_by_id.values())
     rows.sort(key=lambda r: (day(r), r.get("topic_lane", ""), r.get("title", "")))
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "selected.json").write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n")

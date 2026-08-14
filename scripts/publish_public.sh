@@ -25,6 +25,18 @@ if [[ -f "content-topics/$DATE/topics.json" ]]; then
   python3 scripts/validate_content_topics.py "$DATE"
   python3 scripts/build_content_topic_studio.py "$DATE"
 fi
+
+MONTHLY_SCOPE="monthly-2026-07-16_to_2026-08-14"
+python3 scripts/apply_async_monthly_reconciliation.py
+python3 scripts/build_monthly_signal_backfill.py
+python3 scripts/validate_monthly_signal_backfill.py
+python3 scripts/build_monthly_reconciliation_audit.py
+python3 scripts/build_monthly_source_coverage.py
+python3 scripts/apply_github_monthly_coverage.py
+python3 scripts/build_monthly_signal_page.py
+python3 scripts/build_monthly_content_topics.py
+python3 scripts/validate_content_topics.py "$MONTHLY_SCOPE"
+python3 scripts/build_content_topic_studio.py "$MONTHLY_SCOPE"
 python3 tests/test_daily_history.py -v
 
 # Keep the public branch linear and refuse silent overwrite if remote diverged.
@@ -35,7 +47,7 @@ git add \
   data/history.json data/history.js data/latest.json data/latest.js \
   config backfills \
   content-topics \
-  backfill-*.html product-leader-backfill-*.html monthly-signal-*.html content-topic-studio.html \
+  backfill-*.html product-leader-backfill-*.html monthly-signal-*.html content-topic-studio.html monthly-content-topic-studio-*.html \
   scripts tests \
   "daily/$DATE/selected.json" \
   "daily/$DATE/daily-brief.md" \
