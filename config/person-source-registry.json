@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "AI Signal 人物原创信源注册表；关键词仅作发现，入选仍执行 FILTER_RULES_AI_V1.md 的人物门槛。",
-  "updated_at": "2026-08-13T17:00:00+08:00",
+  "updated_at": "2026-08-14T11:24:28+08:00",
   "channels": [
     {
       "id": "personal_blogs",
@@ -19,13 +19,33 @@
       "sources": [
         {"name": "AI Engineer", "url": "https://www.youtube.com/@aiDotEngineer"},
         {"name": "Lenny's Podcast", "url": "https://www.youtube.com/@LennysPodcast"},
+        {"name": "Peter Yang", "url": "https://www.youtube.com/@peteryangyt"},
+        {"name": "Every / AI & I", "url": "https://www.youtube.com/@everyinc"},
+        {"name": "The Pragmatic Engineer", "url": "https://www.youtube.com/@ThePragmaticEngineer"},
+        {"name": "Odd Lots / Bloomberg Podcasts", "url": "https://podcasts.apple.com/us/podcast/odd-lots/id1056200096"},
+        {"name": "South Park Commons", "url": "https://www.youtube.com/@southparkcommons"},
         {"name": "No Priors", "url": "https://www.youtube.com/@NoPriorsPodcast"},
         {"name": "Y Combinator", "url": "https://www.youtube.com/@ycombinator"},
         {"name": "Bloomberg Originals", "url": "https://www.youtube.com/@business"},
         {"name": "Dwarkesh Patel", "url": "https://www.youtube.com/@DwarkeshPatel"},
         {"name": "Lex Fridman", "url": "https://www.youtube.com/@lexfridman"}
       ],
-      "limitation": "YouTube transcript API currently blocks this runtime IP; browser-rendered title, date and description are still usable, but claims requiring transcript detail remain watchlist until body evidence is available."
+      "discovery_fallbacks": ["Apple Podcasts Search API 的 episode releaseDate、description、timestamps 与节目落地页", "节目官方 RSS", "主持人官网逐字稿"],
+      "limitation": "YouTube transcript API currently blocks this runtime IP; browser-rendered title, date, description and chapters are usable for discovery, but claims requiring transcript detail remain watchlist until body evidence is available. Apple Podcasts 元数据可核验节目日期和节目方说明，但不能冒充逐字稿。"
+    },
+    {
+      "id": "ai_product_leaders",
+      "status": "enabled",
+      "scope": "模型公司和头部 AI 产品的 CPO、Head/VP of Product、产品线负责人、创始产品工程负责人；重点覆盖完整播客、访谈、演讲、产品复盘和带演示的长内容。",
+      "anthropic_priority_people": [
+        {"name": "Mike Krieger", "role_scope": "Anthropic Labs / former CPO", "topics": ["AI-native product development", "agent-native architecture", "verification", "model-to-product workflows"]},
+        {"name": "Cat Wu", "role_scope": "Head of Product, Claude Code and Cowork", "topics": ["product operating model", "Claude Code", "Cowork", "evals", "shipping and dogfooding"]},
+        {"name": "Boris Cherny", "role_scope": "Creator and Head of Claude Code", "topics": ["agentic coding product", "harness design", "permissions and sandboxing", "system prompt simplification", "enterprise adoption"]},
+        {"name": "Jess Yan", "role_scope": "Anthropic product lead / Managed Agents", "topics": ["long-running agents", "traces", "evals", "overnight work", "internal PM workflows"]},
+        {"name": "Alex Albert", "role_scope": "Claude product and model experience", "topics": ["model-as-product", "adaptive thinking", "evals", "model character"]},
+        {"name": "Brad Abrams", "role_scope": "Claude Platform product", "topics": ["developer platform", "agent infrastructure", "context and memory", "observability"]}
+      ],
+      "inclusion_gate": "职位不是入选理由；必须有具体产品对象、真实工作流、决策边界、数据/案例、失败复盘、技术解释、演示或可复用方法。多个节目重复同一主题时做人物×主题级合并，并把节目作为 related_sources。"
     },
     {
       "id": "github_primary",
