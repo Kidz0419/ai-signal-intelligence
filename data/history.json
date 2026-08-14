@@ -245,7 +245,7 @@
       "demo": false,
       "topic_lane": "model",
       "title": "DeepSeek-V4-Pro 补报：三级推理强度、Agent 能力升级与原生 Responses API",
-      "summary": "DeepSeek 官方于昨日上一轮之后发布 V4-Pro，强调生产 Agent 能力升级；V4-Pro 与 V4-Flash 支持 low、high、max 三级 reasoning effort，分别面向简单任务、日常 Agent 工作流和复杂任务，并原生支持 OpenAI Responses API、为 Codex 提供一键配置。V4-Pro 已进入应用、网页 Expert Mode 和 API，但“production gains”没有公开具体评测、成本或延迟数据。",
+      "summary": "DeepSeek 官方于昨日上一轮之后发布 V4-Pro，强调生产 Agent 能力升级；V4-Pro 与 V4-Flash 支持 low、high、max 三级 reasoning effort，并原生支持 OpenAI Responses API、为 Codex 提供一键配置。V4-Pro 已进入应用、网页 Expert Mode 和 API。官方价格页在本轮补充了现价与 8 月 16 日起的峰谷定价：V4-Pro 当前每百万 cache-miss 输入/输出 token 为 0.435/0.87 美元；新方案的离峰价为 0.66/1.98 美元、峰值时段为 1.32/3.96 美元。能力收益和价格调整均缺少独立任务成本评测。",
       "decision": "include",
       "confidence": 94,
       "relevance_level": "P0",
@@ -267,15 +267,16 @@
       "why_it_matters_cn": "模型能力、推理预算控制、API 兼容和产品入口同步变化，可直接影响 Agent 模型选型与迁移成本。",
       "personal_relevance_cn": "把 low/high/max 纳入同任务成本—成功率评测，并核验 Responses API 兼容程度和 Codex 工具调用表现。",
       "product_opportunity_cn": "可按任务复杂度动态路由推理强度，减少简单任务成本，同时保留复杂任务上限。",
-      "competitive_risk_cn": "缺少公开生产增益数据；模型名保持不变可能造成版本与可复现性追踪困难。",
+      "competitive_risk_cn": "8 月 16 日起 V4-Pro 的峰值时段输入/输出单价将明显上调，模型路由若只按当前单价设计会低估生产成本；模型名保持不变也会增加版本与复现追踪难度。",
       "recommended_action": "alert",
       "questions_to_validate": [
-        "该结论或机制能否在真实任务、不同模型和生产环境中复现？",
-        "公开材料未披露的成本、失败率、权限、审计或回滚边界是什么？"
+        "low/high/max 在同一真实任务上的成功率、延迟、重试与总成本分别是多少？",
+        "8 月 16 日新价格生效后，峰谷路由、缓存命中率和并发限制如何影响单位成功任务成本？"
       ],
       "follow_up_triggers": [
-        "第三方复现、正式 GA 或完整技术报告发布",
-        "来源方公布成本、成功率、安全或真实采用数据"
+        "DeepSeek 于 2026-08-16 16:00 UTC 启用峰谷定价",
+        "第三方发布 V4-Pro Agent 能力与单位成功任务成本评测",
+        "DeepSeek 公布版本固定、生产收益或容量数据"
       ],
       "scores": {
         "topic_relevance": 5,
@@ -297,7 +298,17 @@
       "run_dates": [
         "2026-08-14"
       ],
-      "evidence_boundary": "“production gains”未提供任务集、成功率、成本或延迟；事件发生于昨日上一轮之后，以今日 report_date 补报。"
+      "evidence_boundary": "模型上线、API 兼容和价格表来自 DeepSeek 官方；“production gains”未提供任务集或成功率。新峰谷价格计划于 2026-08-16 16:00 UTC 生效，不应提前写成已执行。",
+      "related_sources": [
+        {
+          "url": "https://x.com/deepseek_ai/status/2087864585504305397",
+          "type": "official_announcement"
+        },
+        {
+          "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+          "type": "official_pricing"
+        }
+      ]
     },
     {
       "id": "2026-08-14-deepseek-harness-v01",

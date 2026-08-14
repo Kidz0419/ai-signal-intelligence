@@ -1,0 +1,1262 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-08-14",
+  "timezone": "Asia/Shanghai",
+  "scope_label_cn": "最近 30 天 · 2026-07-16—2026-08-14",
+  "source_scope": {
+    "type": "monthly_backfill",
+    "start": "2026-07-16",
+    "end": "2026-08-14",
+    "source_path": "backfills/2026-07-16_to_2026-08-14_all_signals/selected.json"
+  },
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。月度选题只引用正式入选 Signal，不引用日期候选或抓取失败项。",
+  "topics": [
+    {
+      "id": "2026-08-14-computer-history-memory-permission",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-14-openai-computer-history"
+      ],
+      "working_title_cn": "当 AI 开始记住你在所有应用里的操作，真正的产品问题不是记忆，而是权限",
+      "core_tension_cn": "跨应用记忆能让 Agent 持续理解用户，但也把知情、删除、错误纠正和企业管理变成产品主流程。",
+      "why_now_cn": "ChatGPT Computer History 已开始向 Mac 版 Pro、Business 和 Enterprise 用户推出，跨应用活动历史正在从研究概念进入真实产品。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "隐私与安全从业者",
+        "桌面 Agent 创业者"
+      ],
+      "evidence_boundary_cn": "官方确认功能、主动开启和首批开放范围；尚未公开记忆检索架构、保留周期、删除语义和企业管理员策略。",
+      "source_urls": [
+        "https://x.com/OpenAI/status/2087996496088297746"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI开始记住你电脑里的一切：我更关心这5个权限问题",
+          "hook": "ChatGPT 的新功能不是多记住一段聊天，而是记住你跨应用、跨网站做过什么。产品价值很直观，但最难的部分也刚刚开始。",
+          "format": "8页图文卡",
+          "outline": [
+            "Computer History 到底记什么",
+            "为什么跨应用记忆会改变桌面 Agent",
+            "用户是否真正知情",
+            "暂停、删除和纠错应该怎样设计",
+            "企业管理员能看见什么",
+            "产品经理的5项验收清单"
+          ],
+          "visual_direction": "时间线、权限开关和记忆纠错流程图；暖中性色，不使用窥视感恐怖视觉",
+          "cta": "你会愿意开启吗？什么控制项会让你放心？"
+        },
+        "twitter": {
+          "title": "Computer History turns memory into a permissions product",
+          "hook": "ChatGPT’s Computer History is not just a better memory feature. It turns cross-app context into a permissions, deletion, correction, and enterprise-governance problem.",
+          "format": "7帖 Thread",
+          "outline": [
+            "确认的产品变化",
+            "与聊天记忆的区别",
+            "opt-in 不等于充分知情",
+            "错误记忆与纠错",
+            "企业治理问题",
+            "公开材料没有回答什么",
+            "产品设计判断与来源"
+          ],
+          "visual_direction": "单张对象—动作—控制面示意图",
+          "cta": "What would your minimum trust contract be for cross-app memory?"
+        },
+        "wechat": {
+          "title": "从聊天记忆到电脑活动历史：桌面 Agent 的下一场竞争是权限设计",
+          "hook": "当 AI 的上下文从一段对话扩展到用户跨应用、跨网站的连续活动，记忆能力本身不再是唯一壁垒。谁能把采集、可见性、纠错、删除和高风险动作控制做成可理解的产品，谁才可能获得长期授权。",
+          "format": "1800—2500字深度文章",
+          "outline": [
+            "Computer History 已确认上线什么",
+            "跨应用记忆改变了哪些产品对象",
+            "从 opt-in 到持续知情",
+            "错误记忆、删除语义与权限继承",
+            "Business/Enterprise 场景的治理缺口",
+            "桌面 Agent 的最小信任合同"
+          ],
+          "visual_direction": "一张跨应用上下文生命周期图、一张最小权限检查表",
+          "cta": "文末附桌面 Agent 权限设计检查表"
+        }
+      }
+    },
+    {
+      "id": "2026-08-14-sheets-canvas-data-to-app",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-14-google-sheets-canvas"
+      ],
+      "working_title_cn": "表格正在变成应用生成底座，但双向写入比生成界面更值得关注",
+      "core_tension_cn": "AI 把结构化数据变成交互式 mini-app 的门槛显著下降，但错误写回、权限继承、协作冲突和回滚决定它能否进入真实业务。",
+      "why_now_cn": "Google 已在 Sheets 中推出可与原始表格双向同步的 Sheets canvas，并向个人订阅和部分 Workspace 套餐开放。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "低代码创业者",
+        "企业协作产品团队"
+      ],
+      "evidence_boundary_cn": "官方确认生成与双向同步能力及开放范围；未披露生成准确率、复杂工作簿兼容、权限继承、审计和回滚表现。",
+      "source_urls": [
+        "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "不用做后台，表格直接长出一个App？真正要测的是这6件事",
+          "hook": "Sheets canvas 最吸引人的不是‘一句话生成界面’，而是生成的 mini-app 能直接读写原表格。也正因为如此，它比普通 AI 页面生成器更危险。",
+          "format": "7页产品拆解",
+          "outline": [
+            "表格如何变成 mini-app",
+            "双向读写为何关键",
+            "适合的3个场景",
+            "错误写回风险",
+            "权限、协作与回滚",
+            "6项真实验收清单"
+          ],
+          "visual_direction": "表格→生成界面→写回数据的三段流程",
+          "cta": "你最想把哪张表变成应用？"
+        },
+        "twitter": {
+          "title": "Sheets canvas is a read-write application layer, not an AI dashboard feature",
+          "hook": "The important part of Sheets canvas is not UI generation. It is a bidirectional read-write layer on top of operational data.",
+          "format": "6帖 Thread",
+          "outline": [
+            "confirmed product behavior",
+            "why read-write changes the category",
+            "collaboration advantage",
+            "failure surface",
+            "missing controls",
+            "product opportunity"
+          ],
+          "visual_direction": "data layer / generated UI / action / audit diagram",
+          "cta": "The moat may be collaboration and permissions, not generation."
+        },
+        "wechat": {
+          "title": "当表格可以直接生成应用：Sheets canvas 改变的不是界面，而是业务数据的操作入口",
+          "hook": "过去 AI 生成页面往往停留在展示层。Sheets canvas 更重要的变化，是让生成界面成为原始业务数据上的双向读写层。",
+          "format": "2000字产品分析",
+          "outline": [
+            "从表格助手到应用生成层",
+            "对象—动作链路怎样缩短",
+            "原生协作与分发优势",
+            "写回、权限和回滚风险",
+            "低代码产品的竞争边界",
+            "团队可立即执行的评测方案"
+          ],
+          "visual_direction": "对象—动作链路对比和验收矩阵",
+          "cta": "附真实工作簿评测清单"
+        }
+      }
+    },
+    {
+      "id": "2026-08-14-vibe-coding-data-loss",
+      "status": "candidate",
+      "timeliness": "evergreen",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-14-francis-irving-personal-apps"
+      ],
+      "working_title_cn": "测试全绿仍然删光真实数据：Agent 编码最缺的不是代码能力，而是产品 QA",
+      "core_tension_cn": "Agent 能快速重构和交付应用，但自动测试不能替代真实数据恢复、视觉回归和人工 UX 判断。",
+      "why_now_cn": "一位资深产品开发者公开复盘三款本地优先应用及一次真实数据误删，提供了比泛泛讨论 vibe coding 更具体的失败链路。",
+      "target_audience_cn": [
+        "独立开发者",
+        "AI 编程用户",
+        "产品与 QA 团队"
+      ],
+      "evidence_boundary_cn": "这是单一开发者案例，没有工时、token 或缺陷密度对照；作者也明确仍投入大量人工产品 QA，且未细审全部代码。",
+      "source_urls": [
+        "https://www.flourish.org/2026/08/personal-apps"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI写App一个月：测试100%通过，还是把我的数据删光了",
+          "hook": "这不是‘AI 编程行不行’的观点帖，而是一份真实事故复盘：测试全绿、应用能跑，但一次列表重排删掉了全部数据。",
+          "format": "9页案例复盘",
+          "outline": [
+            "三款应用和技术栈",
+            "事故怎样发生",
+            "为什么测试没拦住",
+            "快照与像素差",
+            "同步日志和数据恢复",
+            "人工 UX QA",
+            "可复制的开发闭环"
+          ],
+          "visual_direction": "事故时间线+修复前后闭环",
+          "cta": "收藏这份 Agent 编码上线前检查表"
+        },
+        "twitter": {
+          "title": "100% test coverage did not prevent total data loss in an agent-built app",
+          "hook": "A useful counterexample to ‘coding is solved’: one developer shipped three local-first apps with agents, reached 100% test coverage, and still deleted all real user data during a reorder operation.",
+          "format": "8帖 Thread",
+          "outline": [
+            "case facts",
+            "failure",
+            "why tests missed it",
+            "snapshot tooling",
+            "recovery logs",
+            "human product QA",
+            "limits of the case",
+            "practical checklist"
+          ],
+          "visual_direction": "failure loop vs improved loop",
+          "cta": "Agentic coding needs product QA, not only code review."
+        },
+        "wechat": {
+          "title": "测试覆盖率 100%，数据仍被删光：一份 Agent 编码产品的真实事故复盘",
+          "hook": "衡量 Agent 编码是否可用，不能只看代码生成速度、测试通过率或重构规模。真正进入产品环境后，数据恢复、视觉一致性和用户体验判断才是更难自动化的部分。",
+          "format": "2500字案例分析",
+          "outline": [
+            "案例背景和证据",
+            "数据误删的产品失效",
+            "测试覆盖率为何不等于安全",
+            "快照与像素回归的价值",
+            "SELF-IMPROVE 反馈环",
+            "人工产品 QA 的不可替代部分",
+            "一套可复用交付流程"
+          ],
+          "visual_direction": "计划—实现—测试—快照—人工 QA—恢复闭环",
+          "cta": "附 Agent 编码产品发布门禁清单"
+        }
+      }
+    },
+    {
+      "id": "2026-08-14-gemini-flash-unit-economics",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "B",
+      "topic_lane": "model",
+      "source_signal_ids": [
+        "2026-08-14-google-gemini-37-flash"
+      ],
+      "working_title_cn": "Flash 模型的竞争已从便宜回答问题，进入低成本完成长链路任务",
+      "core_tension_cn": "更低 token 单价和更高官方基准并不等于更低任务成本；真实优势取决于成功率、重试、工具调用和人工监督。",
+      "why_now_cn": "Gemini 3.7 Flash 同时进入 API、开发工具、企业 Agent 平台和 Gemini Spark，并以介绍价争夺编码和知识工作流。",
+      "target_audience_cn": [
+        "AI 应用开发者",
+        "模型评测人员",
+        "Agent 产品经理"
+      ],
+      "evidence_boundary_cn": "性能、效率和降低人工监督均来自 Google 自报；介绍价只承诺到 2026 年底，尚无同窗口独立复现。",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "别只看Token价格：选AI模型真正该算的是‘完成一次任务多少钱’",
+          "hook": "Gemini 3.7 Flash 的价格很抢眼，但模型选型最容易犯的错，就是把 token 单价当成任务成本。",
+          "format": "7页方法卡",
+          "outline": [
+            "官方发布了什么",
+            "token 单价的误区",
+            "单位成功任务成本公式",
+            "重试与工具调用",
+            "人工监督成本",
+            "一套真实评测表"
+          ],
+          "visual_direction": "成本公式和对比表，不复刻官方跑分海报",
+          "cta": "你现在按 token 还是按成功任务评模型？"
+        },
+        "twitter": {
+          "title": "The real metric for Flash-class agents is cost per successful task",
+          "hook": "Gemini 3.7 Flash may be cheap per token. That does not tell us whether it is cheap per completed workflow.",
+          "format": "6帖 Thread",
+          "outline": [
+            "official claims",
+            "cost-per-token trap",
+            "task success denominator",
+            "retries and tool calls",
+            "human supervision",
+            "evaluation template"
+          ],
+          "visual_direction": "cost-per-success equation",
+          "cta": "Benchmark workflows, not isolated prompts."
+        },
+        "wechat": {
+          "title": "从 Token 单价到单位成功任务成本：Gemini 3.7 Flash 应该怎样评测",
+          "hook": "Flash 级模型正在从低价聊天模型变成编码和 Agent 工作流的主力候选。但如果评测仍停留在榜单和每百万 Token 价格，就会遗漏重试、工具失败与人工接管这些真正决定商业价值的变量。",
+          "format": "2000字评测方法文",
+          "outline": [
+            "Gemini 3.7 Flash 的已确认变化",
+            "为什么榜单和单价不够",
+            "单位成功任务成本模型",
+            "任务集、重试和接管率",
+            "介绍价与正式价格风险",
+            "可执行评测方案"
+          ],
+          "visual_direction": "评测矩阵和成本拆解图",
+          "cta": "提供可复制的模型路由评测字段"
+        }
+      }
+    },
+    {
+      "id": "2026-08-14-structured-steering-control-plane",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "B",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-08-14-nick-sweeting-structured-steering"
+      ],
+      "working_title_cn": "Agent 最危险的不是犯错，而是带着错误假设继续工作",
+      "core_tension_cn": "长任务中隐含假设难以被用户发现；独立 Observer 可以把它们变成控制面，但也可能增加成本、误报和敏感数据暴露。",
+      "why_now_cn": "Structured Steering PoC 已公开代码、Schema、macOS 界面和上下文注入 hook，提供了可以检验的实现，而不只是概念。",
+      "target_audience_cn": [
+        "Agent 产品经理",
+        "Coding Agent 开发者",
+        "人机协作研究者"
+      ],
+      "evidence_boundary_cn": "目前是早期 PoC，没有假设识别准确率、额外 token、干预成功率或对照评测。",
+      "source_urls": [
+        "https://github.com/pirate/codex-structured-steering"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI Agent带着错误假设跑了2小时，怎么在中途拉回来？",
+          "hook": "很多 Agent 失败不是工具不会用，而是一开始理解错了需求，之后每一步都在放大这个假设。一个开源 PoC 尝试把这些假设变成开关和滑块。",
+          "format": "7页机制拆解",
+          "outline": [
+            "错误假设如何累积",
+            "Observer 子 Agent",
+            "假设如何变成控件",
+            "不污染主历史的注入",
+            "误报与成本",
+            "适合什么任务"
+          ],
+          "visual_direction": "主 Agent / Observer / 用户控制面三栏图",
+          "cta": "你更想控制 Agent 的计划、假设还是权限？"
+        },
+        "twitter": {
+          "title": "Agents need an assumptions control plane",
+          "hook": "Many long-running agent failures start with an invisible assumption, not a bad tool call. Structured Steering turns those assumptions into editable controls outside the main conversation.",
+          "format": "6帖 Thread",
+          "outline": [
+            "failure pattern",
+            "observer architecture",
+            "structured controls",
+            "additionalContext channel",
+            "trade-offs",
+            "evaluation questions"
+          ],
+          "visual_direction": "observer-control-plane architecture",
+          "cta": "The next agent UX layer may be assumptions, not chat."
+        },
+        "wechat": {
+          "title": "让 Agent 暴露隐含假设：对话框之外，正在出现新的控制面",
+          "hook": "当 Agent 开始运行几十分钟甚至数小时，用户很难通过不断补充提示词来保持方向。比‘多问一次确认’更系统的做法，是把 Agent 的隐含假设变成独立、可编辑、可持续注入的状态。",
+          "format": "2200字架构分析",
+          "outline": [
+            "长任务为什么会偏航",
+            "Structured Steering 的实现对象",
+            "Observer 与主 Agent 的职责分离",
+            "为什么不直接写回聊天历史",
+            "准确率、成本与隐私风险",
+            "可验证的 Agent 控制面指标"
+          ],
+          "visual_direction": "架构图和指标表",
+          "cta": "附假设控制面 MVP 字段"
+        }
+      }
+    },
+    {
+      "id": "2026-08-14-agent-runtime-plugin-boundaries",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "B",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-08-14-deepseek-harness-v01"
+      ],
+      "working_title_cn": "当 Agent Runtime 里一切都变成插件，灵活性和复杂度会同时爆炸",
+      "core_tension_cn": "模型、工具、Skills、Session、Sandbox 和编排统一插件化能降低替换成本，却可能引发版本组合、权限边界和供应链风险。",
+      "why_now_cn": "DeepSeek Harness v0.1 以 MIT 许可证公开了 Everything is a plugin 的完整 Runtime 方向。",
+      "target_audience_cn": [
+        "Agent 工程师",
+        "AI 平台产品经理",
+        "开源维护者"
+      ],
+      "evidence_boundary_cn": "当前仅为 v0.1 Developer Preview，稳定性、兼容性、安全和生产表现尚未验证；它不是基础模型发布。",
+      "source_urls": [
+        "https://x.com/deepseek_ai/status/2087887408440164663"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI Agent框架把一切都做成插件，是自由还是灾难？",
+          "hook": "模型能换、工具能换、记忆能换、沙箱也能换——听起来很自由。但当所有组件都可插拔，真正难的是谁保证它们组合起来还能安全工作。",
+          "format": "6页架构科普",
+          "outline": [
+            "哪些对象被插件化",
+            "为什么开发者需要可替换",
+            "组合爆炸",
+            "权限和供应链",
+            "适合的团队阶段",
+            "选框架前的5个问题"
+          ],
+          "visual_direction": "插件积木图与风险矩阵",
+          "cta": "你更看重框架自由度还是默认可靠性？"
+        },
+        "twitter": {
+          "title": "Everything-is-a-plugin is both an agent-runtime architecture and a combinatorial-risk model",
+          "hook": "DeepSeek Harness v0.1 makes models, tools, skills, sessions, sandboxes, loops, orchestration and UI replaceable plugins. Modularity is the feature; compatibility and trust become the product problem.",
+          "format": "6帖 Thread",
+          "outline": [
+            "confirmed architecture",
+            "benefits",
+            "composition cost",
+            "permission model",
+            "supply-chain risk",
+            "production questions"
+          ],
+          "visual_direction": "plugin graph + trust boundaries",
+          "cta": "A plugin contract is incomplete without lifecycle, capability and compatibility contracts."
+        },
+        "wechat": {
+          "title": "Everything is a Plugin：Agent Runtime 的开放性，最终要由谁来买单",
+          "hook": "Agent 框架越来越像操作系统：模型、工具、记忆、沙箱和界面都希望成为可替换组件。但模块化并不会消除复杂度，它只是把复杂度从代码内部移动到契约、版本和信任边界。",
+          "format": "2000字技术产品分析",
+          "outline": [
+            "Harness v0.1 已公开什么",
+            "统一插件边界的产品价值",
+            "生命周期与能力声明",
+            "版本组合和测试矩阵",
+            "权限与供应链风险",
+            "生产级 Runtime 的必要合同"
+          ],
+          "visual_direction": "Agent Runtime 分层图与合同清单",
+          "cta": "附插件生命周期与权限字段建议"
+        }
+      }
+    },
+    {
+      "id": "2026-07-28-managed-agent-runtime-control-plane",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-07-28-google-gemini-managed-agents-hooks-budget-triggers"
+      ],
+      "working_title_cn": "生产 Agent 的控制面正在收敛：工具 Hooks、预算熔断、状态恢复和定时执行必须一起设计",
+      "core_tension_cn": "Agent 越能自主执行，越需要在同一 Runtime 中同时控制工具、预算、状态和生命周期，而不是靠提示词提醒它小心。",
+      "why_now_cn": "Google Managed Agents 已把工具前后 Hooks、Token 上限、暂停续跑、Cron Trigger 和 Sandbox 清理放进公开 API。",
+      "target_audience_cn": [
+        "Agent 产品经理",
+        "AI 平台工程师",
+        "企业自动化负责人"
+      ],
+      "evidence_boundary_cn": "接口与示例来自 Google 官方；生产效果、Hook 绕过、Sandbox 隔离和任务恢复可靠性尚无独立数据。",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "别再只给 Agent 加审批：真正的控制面至少要有这 5 层",
+          "hook": "一个 Agent 能定时运行、写文件、装包和调用网页工具后，‘遇到危险再问我’已经不够。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "托管 Agent 能做什么",
+            "工具调用前后 Hooks",
+            "预算耗尽如何暂停",
+            "为什么要保留环境续跑",
+            "Cron 与 Sandbox 生命周期",
+            "一张生产控制面清单"
+          ],
+          "visual_direction": "Hooks—预算—状态—触发—环境五层卡片",
+          "cta": "你的 Agent 现在缺哪一层？"
+        },
+        "twitter": {
+          "title": "A production agent control plane needs hooks, budgets, resumability, scheduling, and environment lifecycle",
+          "hook": "Gemini Managed Agents is a useful signal: autonomy controls are becoming runtime primitives, not prompt conventions.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "confirmed API changes",
+            "pre/post tool hooks",
+            "budget stop and resume",
+            "persistent scheduled environments",
+            "missing security evidence",
+            "control-plane checklist"
+          ],
+          "visual_direction": "runtime control-plane stack",
+          "cta": "Which control should be mandatory by default?"
+        },
+        "wechat": {
+          "title": "从工具拦截到预算续跑：生产 Agent 控制面正在形成",
+          "hook": "当 Agent 从一次性问答变成长期运行的工作进程，工具权限、预算、状态恢复、定时触发和环境销毁就必须成为统一的产品对象。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "Managed Agents 更新了什么",
+            "工具 Hook 的决策位置",
+            "预算熔断与恢复语义",
+            "Cron 任务为何需要持久环境",
+            "日志、审批和回滚缺口",
+            "生产 Agent 控制面字段建议"
+          ],
+          "visual_direction": "Agent Runtime 分层图与状态机",
+          "cta": "附生产 Agent 控制面验收表"
+        }
+      }
+    },
+    {
+      "id": "2026-07-30-browser-agent-sensitive-action-handoff",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-07-30-google-gemini-spark-chrome-auto-browse"
+      ],
+      "working_title_cn": "浏览器 Agent 的关键不是能不能自动点，而是什么时候必须把任务交还用户",
+      "core_tension_cn": "使用登录态与保存密码能显著提升任务完成率，也把支付、预订、取消和凭据授权变成不可回避的责任边界。",
+      "why_now_cn": "Gemini Spark 已公开 Chrome auto browse 工作流，并明确支付等敏感动作交还用户。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "Agentic Commerce 研究者",
+        "浏览器自动化团队"
+      ],
+      "evidence_boundary_cn": "Google 官方确认工作流和美国首发；敏感动作分类、Prompt Injection 测试、取消回滚和误操作率未披露。",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-july-2026"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI 能用你的登录态订机票了，但到付款前应该发生什么？",
+          "hook": "最值得拆解的不是自动浏览，而是 Google 明确让支付等敏感动作回到用户手里。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "它能自动做到哪一步",
+            "登录态和保存密码意味着什么",
+            "支付为什么必须交还",
+            "预订与取消的责任链",
+            "Prompt Injection 风险",
+            "敏感动作分级表"
+          ],
+          "visual_direction": "自动执行路径与红色交还节点",
+          "cta": "你认为哪些动作必须人工确认？"
+        },
+        "twitter": {
+          "title": "The key browser-agent primitive is not auto-clicking. It is sensitive-action handoff.",
+          "hook": "Gemini Spark can use logged-in accounts for web errands, but hands payments back to the user. That boundary is the product.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "confirmed workflow",
+            "credentialed browsing",
+            "payment handoff",
+            "other sensitive actions",
+            "injection and rollback gaps",
+            "a risk-tier model"
+          ],
+          "visual_direction": "action-risk ladder",
+          "cta": "Where should autonomous browsing stop?"
+        },
+        "wechat": {
+          "title": "从自动浏览到支付交还：浏览器 Agent 的最小授权合同",
+          "hook": "浏览器 Agent 一旦能使用登录态和保存密码，产品问题就从‘能不能完成任务’转向‘哪些动作可以代表用户完成’。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "Spark 的真实操作链路",
+            "登录态授权的范围",
+            "支付交还为何是关键边界",
+            "预订、取消和退款怎么办",
+            "Prompt Injection 与凭据风险",
+            "浏览器 Agent 最小授权合同"
+          ],
+          "visual_direction": "对象—动作—风险—确认矩阵",
+          "cta": "附敏感动作分级模板"
+        }
+      }
+    },
+    {
+      "id": "2026-08-12-connected-apps-transaction-layer",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-12-google-gemini-connected-apps-actions"
+      ],
+      "working_title_cn": "通用助手正在变成跨服务交易入口，但连接数量不等于可托付程度",
+      "core_tension_cn": "从会议总结到网站编辑、租车、餐厅、票务和就医预约，助手开始触达真实交易；真正的壁垒是确认、支付、取消、退款和审计。",
+      "why_now_cn": "Google 已宣布未来数周滚动开放一批 Gemini Connected Apps，动作范围跨生产力、出行、娱乐、家居和医疗。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "平台生态负责人",
+        "Agentic Commerce 从业者"
+      ],
+      "evidence_boundary_cn": "属于已宣布滚动开放，不是所有用户已上线；官方未披露逐动作确认、支付、退款、取消和日志机制。",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-services-gemini-august-2026"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Gemini 一口气接入租车、餐厅、票务和看医生：但我只关心这 6 个按钮",
+          "hook": "连接服务越来越多并不等于 Agent 更可信，关键是用户在提交、支付和取消前能看见什么。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "新接入了哪些服务",
+            "从查询到交易的变化",
+            "确认页应该显示什么",
+            "支付与退款边界",
+            "失败如何恢复",
+            "连接器验收清单"
+          ],
+          "visual_direction": "服务地图与交易漏斗",
+          "cta": "哪类服务你最不愿交给 AI？"
+        },
+        "twitter": {
+          "title": "Connected apps turn assistants into transaction routers",
+          "hook": "Gemini is moving from summarizing information to editing sites, booking services, renting cars, finding tickets, and scheduling doctors.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "announced connections",
+            "action surface",
+            "confirmation contract",
+            "payment/cancellation gaps",
+            "auditability",
+            "platform implications"
+          ],
+          "visual_direction": "assistant-to-transaction map",
+          "cta": "Connections are distribution; trust controls are the moat."
+        },
+        "wechat": {
+          "title": "从连接应用到交易编排：通用 AI 助手的下一层竞争",
+          "hook": "当助手能够跨服务执行预约和交易，连接器不再只是数据检索接口，而是承载授权、确认、责任和售后的执行层。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "Connected Apps 的动作范围",
+            "连接数量为何不是核心指标",
+            "确认与支付的产品对象",
+            "取消退款和异常恢复",
+            "平台生态与分发优势",
+            "交易型 Agent 的评测框架"
+          ],
+          "visual_direction": "跨服务交易编排架构图",
+          "cta": "附连接器风险审计字段"
+        }
+      }
+    },
+    {
+      "id": "2026-07-27-programmatic-tool-calling-governance",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "B",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-07-27-openai-agents-sdk-programmatic-tool-calling"
+      ],
+      "working_title_cn": "当模型开始写 JavaScript 编排工具，审批边界必须从单次调用升级到程序级",
+      "core_tension_cn": "程序化工具编排能减少模型往返，却让一次生成的代码串联多个动作；逐工具白名单、审批、Guardrail 和运行状态必须共同约束。",
+      "why_now_cn": "OpenAI Agents SDK 已加入 Programmatic Tool Calling，并接入 allowed_callers、approvals、sessions 与 RunState。",
+      "target_audience_cn": [
+        "Agent 工程师",
+        "安全产品经理",
+        "开发者工具团队"
+      ],
+      "evidence_boundary_cn": "官方 SDK Release Notes 证明接口存在；支持模型范围、复杂流程成功率、沙箱安全和成本未公开。",
+      "source_urls": [
+        "https://github.com/openai/openai-agents-python/releases/tag/v0.19.0"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI 不再一次调一个工具，而是直接写脚本串起来：审批该怎么做？",
+          "hook": "工具调用从一颗按钮变成一段程序后，只问‘允许这次调用吗’可能已经太晚。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "什么是程序化工具调用",
+            "为什么模型往返更少",
+            "allowed callers 的作用",
+            "审批应该放在哪",
+            "状态与回滚",
+            "程序级权限检查表"
+          ],
+          "visual_direction": "单次调用与程序编排对比",
+          "cta": "你会允许 Agent 一次编排多少个动作？"
+        },
+        "twitter": {
+          "title": "Programmatic tool calling changes the unit of approval",
+          "hook": "If a model writes JavaScript to coordinate tools, governance cannot stop at approving one function call at a time.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "SDK change",
+            "allowed callers",
+            "approval granularity",
+            "state and guardrails",
+            "sandbox gap",
+            "evaluation questions"
+          ],
+          "visual_direction": "call-level vs program-level approval",
+          "cta": "The unit of autonomy is becoming a program."
+        },
+        "wechat": {
+          "title": "模型开始编排工具程序后，Agent 的授权单位也要改变",
+          "hook": "程序化调用可以提升多工具工作流效率，但它同时把风险从一个函数调用扩展到一段可组合执行逻辑。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "Programmatic Tool Calling 机制",
+            "性能收益来自哪里",
+            "工具白名单与调用者约束",
+            "审批粒度如何变化",
+            "状态、日志和回滚",
+            "程序级治理框架"
+          ],
+          "visual_direction": "程序执行图与治理节点",
+          "cta": "附程序级审批设计问题"
+        }
+      }
+    },
+    {
+      "id": "2026-08-13-durable-agent-approval-state",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "B",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-08-13-microsoft-agent-framework-checkpoint-approval-hooks"
+      ],
+      "working_title_cn": "长任务 Agent 的审批不是一个弹窗，而是一段必须持久化的状态",
+      "core_tension_cn": "Checkpoint、恢复、函数审批和会话释放若分散在不同层，重启后可能丢失谁批准了什么；可靠 Agent 需要把它们放进统一状态机。",
+      "why_now_cn": "Microsoft Agent Framework 已把 Workflow checkpoint/resume、Approval state store、取消释放和实验 Hooks 放入同一版本。",
+      "target_audience_cn": [
+        "Agent 平台团队",
+        "企业架构师",
+        "治理产品经理"
+      ],
+      "evidence_boundary_cn": "官方 Release Notes 未给出审批角色、撤销语义、Exactly-once 恢复、状态加密和生产指标；Hooks 仍为实验功能。",
+      "source_urls": [
+        "https://github.com/microsoft/agent-framework/releases/tag/python-1.14.0"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Agent 跑到一半重启了：刚才的审批还算数吗？",
+          "hook": "很多产品把审批做成弹窗，却没有定义任务恢复后审批状态如何继承、撤销或过期。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "长任务为什么要 checkpoint",
+            "审批状态要存什么",
+            "恢复后的 Exactly-once 问题",
+            "取消如何释放资源",
+            "Hooks 能做什么",
+            "状态机字段"
+          ],
+          "visual_direction": "审批状态机和恢复分支",
+          "cta": "你遇到过恢复后重复执行吗？"
+        },
+        "twitter": {
+          "title": "Approval is durable workflow state, not a modal",
+          "hook": "Microsoft Agent Framework now puts checkpoints, resume, function-approval stores, hooks, and session release into the same runtime surface.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "release facts",
+            "durable approvals",
+            "resume semantics",
+            "cancellation",
+            "experimental hooks",
+            "open questions"
+          ],
+          "visual_direction": "durable approval state machine",
+          "cta": "Can your agent prove what remains approved after a restart?"
+        },
+        "wechat": {
+          "title": "把审批写进状态机：长任务 Agent 如何安全恢复",
+          "hook": "当 Agent 可以跨小时运行并在故障后恢复，审批必须成为可持久化、可过期、可撤销和可审计的工作流状态。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "为什么审批弹窗不够",
+            "Checkpoint 与审批的关系",
+            "恢复与重复执行",
+            "取消和资源释放",
+            "Hook 策略层",
+            "持久化审批数据模型"
+          ],
+          "visual_direction": "长任务恢复与审批状态机",
+          "cta": "附 Durable Approval Schema"
+        }
+      }
+    },
+    {
+      "id": "2026-08-13-agent-context-cost-ui",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-13-openhands-agent-canvas-context-cost-automation-controls"
+      ],
+      "working_title_cn": "Agent 产品终于开始把上下文、成本和自动化状态做成可见 UI",
+      "core_tension_cn": "上下文窗口、单次成本、子任务和自动化准备度过去藏在日志里；把它们做成用户可见控件，才可能形成可管理的 Agent 工作台。",
+      "why_now_cn": "OpenHands Agent Canvas 连续版本加入上下文用量与手动压缩、单次运行成本、Activity Log 导出、子会话和 readiness gate。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "Coding Agent 用户",
+        "Agent 工作台设计师"
+      ],
+      "evidence_boundary_cn": "Release Notes 证明功能进入版本；本地与托管版差异、压缩损失、Gate 误判和成本口径尚未实测。",
+      "source_urls": [
+        "https://github.com/OpenHands/OpenHands/releases/tag/v1.13.0"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI Agent 的成本和上下文终于不再是黑盒：这 5 个 UI 值得抄",
+          "hook": "比再加一个聊天框更重要的，是让用户看见上下文快满了、这次花了多少、任务是否准备好。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "新增了哪些控件",
+            "上下文用量表",
+            "手动压缩",
+            "成本日志",
+            "子会话和准备度 Gate",
+            "Agent 工作台信息架构"
+          ],
+          "visual_direction": "Notion 风 Agent 控制台拆解",
+          "cta": "你最需要哪个可见指标？"
+        },
+        "twitter": {
+          "title": "Agent UX is moving from chat to operational controls",
+          "hook": "OpenHands now exposes context usage, manual compaction, per-run cost, activity exports, child conversations, and issue readiness gates.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "product changes",
+            "context as a visible resource",
+            "cost transparency",
+            "subtask controls",
+            "readiness gates",
+            "UX implications"
+          ],
+          "visual_direction": "chat UI vs operations UI",
+          "cta": "The next agent interface is an operations console."
+        },
+        "wechat": {
+          "title": "对话框之外：Agent 工作台为什么必须显示上下文、成本与任务状态",
+          "hook": "Agent 产品成熟的标志不是消息气泡更多，而是把不可见的运行资源和风险转化为可理解、可操作、可追踪的界面对象。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "OpenHands 的连续更新",
+            "上下文预算的产品化",
+            "成本与 Activity Log",
+            "子会话和任务分解",
+            "Readiness Gate 的价值与误判",
+            "Agent 工作台设计清单"
+          ],
+          "visual_direction": "Agent 工作台信息架构图",
+          "cta": "附运行控制 UI 字段表"
+        }
+      }
+    },
+    {
+      "id": "2026-07-22-ai-demand-scale-supply-constraint",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "A",
+      "topic_lane": "ai_macro",
+      "source_signal_ids": [
+        "2026-07-22-alphabet-q2-ai-demand-supply-enterprise-adoption"
+      ],
+      "working_title_cn": "AI 企业采用不能只看席位数：Token 消耗、Backlog 和供给约束正在成为更真实的结构指标",
+      "core_tension_cn": "近 90% Fortune 100 的覆盖很亮眼，但真正说明产业结构的是企业 Token 深度、云 Backlog、基础设施供给与成本效率是否同步变化。",
+      "why_now_cn": "Alphabet Q2 同时披露 Cloud 增长、5140 亿美元 Backlog、220 亿 tokens/分钟和持续供给受限。",
+      "target_audience_cn": [
+        "AI 战略研究者",
+        "企业产品负责人",
+        "投资与产业观察者"
+      ],
+      "evidence_boundary_cn": "全部指标为 Alphabet 自报，口径与其他厂商不可直接横比；未披露 AI 单独收入、缓存拆分和付费活跃定义。",
+      "source_urls": [
+        "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "别再只看‘多少家公司用了AI’：这 4 个指标更接近真实采用",
+          "hook": "席位覆盖可以很高，但企业是否真正把 AI 跑进生产，要看 Token 深度、订单、供给和续用。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "为什么席位数不够",
+            "tokens/分钟",
+            "Cloud Backlog",
+            "企业使用深度",
+            "供给约束",
+            "采用指标仪表盘"
+          ],
+          "visual_direction": "企业采用四指标雷达图",
+          "cta": "你最信哪个采用指标？"
+        },
+        "twitter": {
+          "title": "Enterprise AI adoption needs depth metrics, not logo counts",
+          "hook": "Alphabet reported 22B model tokens/min, a $514B Cloud backlog, nearly 90% Fortune 100 Gemini Enterprise usage, and continued supply constraints.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "reported metrics",
+            "breadth vs depth",
+            "token intensity",
+            "backlog",
+            "supply constraints",
+            "comparability limits"
+          ],
+          "visual_direction": "adoption depth metric stack",
+          "cta": "Usage breadth is marketing; workload depth is strategy."
+        },
+        "wechat": {
+          "title": "从客户 Logo 到 Token 深度：怎样判断企业 AI 是否真的进入生产",
+          "hook": "企业采用不能只看签约数量或 Fortune 100 覆盖率。Token 消耗、订单积压、供给约束和现有客户超额使用，才更接近生产化深度。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "Alphabet Q2 的一手数据",
+            "覆盖率与深度的区别",
+            "Token 指标的局限",
+            "Backlog 与算力供给",
+            "跨厂商口径陷阱",
+            "企业 AI 采用仪表盘"
+          ],
+          "visual_direction": "企业采用指标树",
+          "cta": "附采用深度指标模板"
+        }
+      }
+    },
+    {
+      "id": "2026-08-02-eu-ai-content-transparency-workflow",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "A",
+      "topic_lane": "ai_macro",
+      "source_signal_ids": [
+        "2026-08-02-eu-ai-act-article-50-transparency-obligations"
+      ],
+      "working_title_cn": "AI 内容标识从产品自觉变成流程义务：谁负责标记、检测和发布前确认？",
+      "core_tension_cn": "欧盟透明度义务同时约束提供者和部署者，意味着水印不是模型端一个字段，而是贯穿生成、编辑、发布和审计的工作流。",
+      "why_now_cn": "AI Act 第 50 条义务已于 8 月 2 日适用，配套 Code 可作为自愿合规证明工具。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "内容平台团队",
+        "合规与品牌负责人"
+      ],
+      "evidence_boundary_cn": "Code 自愿但法定义务不自愿；具体技术阈值、执法和各成员国实践仍待后续指南与案例。",
+      "source_urls": [
+        "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI生成内容必须标识后，产品里到底要多哪几个步骤？",
+          "hook": "水印不是导出时加个角标。真正麻烦的是生成后被编辑、跨平台转发和再次加工。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "新义务覆盖谁",
+            "模型提供者做什么",
+            "内容部署者做什么",
+            "编辑后如何保留标识",
+            "深伪和文本标签",
+            "产品流程检查表"
+          ],
+          "visual_direction": "生成—编辑—发布—审计流程",
+          "cta": "你的产品在哪一步会丢失标识？"
+        },
+        "twitter": {
+          "title": "AI content transparency is becoming an end-to-end workflow obligation",
+          "hook": "EU AI Act Article 50 applies from Aug 2, 2026. Providers and deployers now need marking, detection, and labeling workflows—not just a watermark toggle.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "legal trigger",
+            "provider duties",
+            "deployer duties",
+            "deepfake/text labeling",
+            "voluntary code",
+            "implementation gaps"
+          ],
+          "visual_direction": "provider/deployer responsibility map",
+          "cta": "Transparency metadata must survive the content lifecycle."
+        },
+        "wechat": {
+          "title": "从模型水印到发布责任：EU AI Act 第 50 条如何改变 AI 内容产品",
+          "hook": "当透明度义务同时落到模型提供者与内容部署者，合规对象就从生成模型扩展到编辑器、CMS、发布平台和审计链路。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "Article 50 适用范围",
+            "Provider 与 Deployer 分工",
+            "Code 的法律位置",
+            "标记与检测机制",
+            "深伪和特定文本标签",
+            "产品落地路线图"
+          ],
+          "visual_direction": "内容生命周期与责任矩阵",
+          "cta": "附 AI 内容透明度产品清单"
+        }
+      }
+    },
+    {
+      "id": "2026-08-05-model-research-product-org-loop",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "B",
+      "topic_lane": "ai_macro",
+      "source_signal_ids": [
+        "2026-08-05-google-deepmind-leadership-model-product-control"
+      ],
+      "working_title_cn": "模型、研究、App 和开发者平台被放到同一负责人下，组织结构正在成为模型竞争的一部分",
+      "core_tension_cn": "前沿研究到产品分发的链路越短，模型能力越容易进入真实用户反馈；但研究独立性、产品节奏和战略职责也更集中。",
+      "why_now_cn": "Google 将 Gemini 模型、前沿研究、Gemini App 和开发者团队交由 Koray 统一负责，Demis 上移至 Alphabet 级 AGI 战略。",
+      "target_audience_cn": [
+        "AI 产业研究者",
+        "模型产品负责人",
+        "组织设计观察者"
+      ],
+      "evidence_boundary_cn": "公开信可确认职位与范围，不能推断调整原因、内部权力细节或未来模型成败。",
+      "source_urls": [
+        "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "为什么模型大厂开始把研究、App和开发者平台放在一个人手里？",
+          "hook": "AI 竞争已经不只是模型排行榜，组织能否把研究快速送进产品并拿回反馈，同样决定速度。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "这次组织变动是什么",
+            "四类团队为何统一",
+            "研究到产品的反馈环",
+            "集中化的优势",
+            "潜在风险",
+            "观察指标"
+          ],
+          "visual_direction": "研究—模型—App—开发者闭环",
+          "cta": "你更看好集中还是分拆？"
+        },
+        "twitter": {
+          "title": "Org design is becoming part of the model-product flywheel",
+          "hook": "Google put Gemini model development, frontier research, the Gemini app, and developer teams under one operating leader.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "confirmed changes",
+            "shorter feedback loop",
+            "distribution advantage",
+            "research trade-offs",
+            "strategic role split",
+            "what to watch"
+          ],
+          "visual_direction": "model-to-product org flywheel",
+          "cta": "The org chart can be a product architecture."
+        },
+        "wechat": {
+          "title": "组织即架构：Google 如何重组模型—研究—产品反馈环",
+          "hook": "模型公司进入产品竞争后，组织结构决定研究成果多久进入 App、开发者反馈多久返回训练与评测。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "领导层调整事实",
+            "模型与产品为何合并管理",
+            "开发者平台的反馈价值",
+            "Demis 战略职责上移",
+            "集中控制的风险",
+            "后续观察指标"
+          ],
+          "visual_direction": "组织闭环与信息流图",
+          "cta": "附模型公司组织观察框架"
+        }
+      }
+    },
+    {
+      "id": "2026-08-08-agent-building-without-users",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-08-gus-chiriboga-my-ai-agents-shipped-128-release"
+      ],
+      "working_title_cn": "AI 让构建变得太便宜后，继续做功能本身可能成为一种拖延",
+      "core_tension_cn": "Agent 可以快速生成版本、测试和治理层，却无法替代第一次真实端到端运行和陌生用户验证。",
+      "why_now_cn": "一位独立产品创始人复盘两代 Agent 产品：128 次发布无用户、442 个测试仍在首次真实运行时暴露审批与停滞问题。",
+      "target_audience_cn": [
+        "独立开发者",
+        "AI 创业者",
+        "产品经理"
+      ],
+      "evidence_boundary_cn": "这是作者自报案例，未提供公开仓库或第三方商业数据；能支持失败链路，不能证明普遍因果。",
+      "source_urls": [
+        "https://bramo.ai/blog/01-post-mortem"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI帮我发了128个版本，结果一个用户都没有",
+          "hook": "最刺痛的不是 Agent 写错代码，而是它让继续构建变得太容易，以至于你可以一直不面对用户。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "128 次发布发生了什么",
+            "自然语言审批如何失效",
+            "442 个测试为何没用",
+            "首次真实运行",
+            "过度构建陷阱",
+            "陌生用户门禁"
+          ],
+          "visual_direction": "版本数—用户数反差时间线",
+          "cta": "你的产品多久没给陌生人用了？"
+        },
+        "twitter": {
+          "title": "Agents can make building so cheap that building becomes procrastination",
+          "hook": "A founder shipped 128 releases with zero external users, then built a deterministic system with 442 passing tests that failed on its first real end-to-end run.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "case facts",
+            "approval spoofing",
+            "test illusion",
+            "real-run failures",
+            "user validation",
+            "evidence limits"
+          ],
+          "visual_direction": "build loop vs learn loop",
+          "cta": "After the first working run, the next task should be a stranger."
+        },
+        "wechat": {
+          "title": "128 次发布、0 个用户：AI 编程时代最危险的产品幻觉",
+          "hook": "当代码和版本生成成本骤降，团队更容易用‘继续完善系统’逃避真实运行和用户验证。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "两代产品的失败矩阵",
+            "自然语言规则为何不是安全边界",
+            "确定性治理为何仍失败",
+            "测试与真实运行的断层",
+            "构建成瘾",
+            "AI 产品的新用户门禁"
+          ],
+          "visual_direction": "两代失败对比矩阵",
+          "cta": "附首次真实运行门禁"
+        }
+      }
+    },
+    {
+      "id": "2026-07-31-multi-agent-collaboration-control-plane",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "B",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-07-31-maxime-beauchemin-figma-for-agents-how-airflow-s-c"
+      ],
+      "working_title_cn": "多 Agent 团队需要的可能不是更多聊天窗口，而是画布、身份、租约与完整会话审计",
+      "core_tension_cn": "Agent 数量增长后，工作分支、长期记忆、角色、权限和人类审查会成为新瓶颈；个人 Coding Agent UI 无法直接扩展为团队系统。",
+      "why_now_cn": "Maxime Beauchemin 公开展示 Agor 多人画布，并提出 identity、scoped delegation、leases 和 audit logs 的企业 Agent 基础层。",
+      "target_audience_cn": [
+        "Agent 平台产品经理",
+        "开发者工具团队",
+        "企业安全架构师"
+      ],
+      "evidence_boundary_cn": "访谈含直接引语与界面，但效率数字和团队使用为本人陈述，无独立审计。",
+      "source_urls": [
+        "https://motherduck.com/blog/figma-for-agents-airflow-creator-maxime-beauchemin/"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "公司里的 Agent 比人还多后，聊天列表为什么一定会崩？",
+          "hook": "一个人开几个 Agent 可以靠标签；团队同时跑几十个 Agent，需要的是分支画布、身份、租约和审计。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "Agor 画布长什么样",
+            "worktree 如何映射",
+            "角色与长期记忆",
+            "Okta for Agents",
+            "人类审查瓶颈",
+            "团队 Agent 控制台"
+          ],
+          "visual_direction": "多人 Agent 画布示意",
+          "cta": "你的团队会先缺身份还是审查？"
+        },
+        "twitter": {
+          "title": "Multi-agent teams need a canvas and identity plane, not a longer chat list",
+          "hook": "Agor maps worktrees to collaborative cards and frames enterprise agents around scoped delegated permissions, leases, and audit logs.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "real workflow",
+            "canvas model",
+            "identity plane",
+            "leases",
+            "review bottleneck",
+            "evidence limits"
+          ],
+          "visual_direction": "agent team control-plane diagram",
+          "cta": "The bottleneck moves from code generation to coordination."
+        },
+        "wechat": {
+          "title": "从个人 Coding Agent 到团队 Agent 画布：协作、身份和审查如何重构",
+          "hook": "当 Agent 成为团队成员，产品对象不再只是对话和代码，而是任务分支、角色、权限租约、长期记忆和完整会话证据。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "Agor 的真实使用场景",
+            "画布与 worktree",
+            "角色型 Agent",
+            "身份、委托和租约",
+            "Yap-to-Ship 瓶颈",
+            "企业 Agent 协作架构"
+          ],
+          "visual_direction": "Agent 团队协作架构图",
+          "cta": "附团队 Agent 权限字段"
+        }
+      }
+    },
+    {
+      "id": "2026-08-09-ai-fluency-evidence-assessment",
+      "status": "candidate",
+      "timeliness": "this_month",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-09-ozan-dagdeviren-things-i-learned-about-how-peopl"
+      ],
+      "working_title_cn": "企业 AI 培训最大的误区，可能是相信员工对自己能力的自评",
+      "core_tension_cn": "AI 使用能力的真实差距不仅存在于岗位之间，更存在于同一团队内部；产品应通过对话证据评估，而不是静态选择题或自我打分。",
+      "why_now_cn": "AISA 基于 1800 名用户的长对话评估，披露平均 48 分、约三分之二未达 proficient，以及明显自评偏差。",
+      "target_audience_cn": [
+        "企业学习负责人",
+        "AI 产品经理",
+        "组织发展团队"
+      ],
+      "evidence_boundary_cn": "属于产品运营自选择样本，非代表性人口研究；角色差异、有效性与公平性缺少完整统计。",
+      "source_urls": [
+        "https://news.ycombinator.com/item?id=49226913"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "1800人测完AI能力：最不会用的人，反而最容易高估自己",
+          "hook": "企业做 AI 培训前，先别问员工‘你会不会用’，因为自评和真实能力可能完全相反。",
+          "format": "7—9 页图文卡",
+          "outline": [
+            "1800 人数据",
+            "平均分与分层",
+            "自评偏差",
+            "同团队巨大差距",
+            "对话式评估机制",
+            "培训如何分层"
+          ],
+          "visual_direction": "自评—实测差距图",
+          "cta": "你会怎么证明自己真的会用 AI？"
+        },
+        "twitter": {
+          "title": "AI fluency self-assessment may be the wrong enterprise metric",
+          "hook": "In a product dataset of 1,800 long-form assessments, low scorers substantially overestimated themselves while high scorers underestimated themselves.",
+          "format": "6—8 帖 Thread",
+          "outline": [
+            "reported sample",
+            "calibration gap",
+            "within-team variance",
+            "evidence-based scoring",
+            "sample limits",
+            "product implications"
+          ],
+          "visual_direction": "self-rating vs evidence score",
+          "cta": "Measure observable behavior, not confidence."
+        },
+        "wechat": {
+          "title": "从自评到证据：企业应该怎样真正评估员工的 AI 使用能力",
+          "hook": "组织内部 AI 能力差距可能比岗位差异更大，而传统问卷最容易把信心误当能力。",
+          "format": "2000—3000 字深度文章",
+          "outline": [
+            "1800 人产品数据",
+            "自评失真",
+            "同团队能力分层",
+            "对话 Agent 与隐藏评估 Agent",
+            "证据聚合和校准",
+            "培训与权限如何分层"
+          ],
+          "visual_direction": "对话式能力评估双轨架构",
+          "cta": "附 AI Fluency 评估字段"
+        }
+      }
+    }
+  ]
+}

@@ -1,19 +1,20 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-14T09:55:43+08:00",
+  "run_at": "2026-08-14T16:05:18+08:00",
   "window": {
     "timezone": "Asia/Shanghai",
     "start": "2026-08-14T00:00:00+08:00",
-    "end": "2026-08-14T09:45:00+08:00",
-    "incremental_since": "2026-08-13T16:29:44+08:00"
+    "end": "2026-08-14T16:05:18+08:00",
+    "incremental_since": "2026-08-14T09:45:00+08:00"
   },
-  "queries": 28,
-  "raw_candidates": 40,
-  "unique_candidates": 40,
-  "editorial_shortlist": 20,
-  "previous_count": 1,
-  "new_count": 9,
-  "updated_count": 0,
+  "queries": 8,
+  "registered_sources": 107,
+  "raw_candidates": 39,
+  "unique_candidates": 34,
+  "editorial_shortlist": 2,
+  "previous_count": 10,
+  "new_count": 0,
+  "updated_count": 1,
   "total_count": 10,
   "selected": 10,
   "lane_counts": {
@@ -25,24 +26,1122 @@
   "priority_counts": {
     "P0": 5,
     "P1": 5,
-    "P2": 0
+    "P2": 0,
+    "P3": 0
   },
   "executive_model_longform": 3,
   "practitioner_statements": 2,
-  "cross_day_duplicates_removed": 1,
-  "collection_errors": 3,
+  "cross_day_duplicates_removed": 0,
+  "collection_errors": 15,
   "source_coverage": {
-    "official_model_sources": "covered for verified Google, OpenAI and DeepSeek events",
-    "personal_blogs_and_github": "covered through targeted practitioner audit",
-    "x_api": "xurl installed; no app/OAuth; only known public post pages verified",
-    "youtube_transcripts": "runtime IP blocked; no title-only promotion",
-    "chinese_closed_platforms": "partial"
+    "registered": 107,
+    "status_counts": {
+      "selected": 4,
+      "candidate_only": 1,
+      "checked_no_match": 87,
+      "access_blocked": 12,
+      "auth_required": 0,
+      "mechanical_failure": 3,
+      "not_checked": 0
+    },
+    "channel_counts": {
+      "frontier_model_official": {
+        "selected": 2,
+        "candidate_only": 0,
+        "checked_no_match": 18,
+        "access_blocked": 4,
+        "auth_required": 0,
+        "mechanical_failure": 0,
+        "not_checked": 0
+      },
+      "china_frontier_models": {
+        "selected": 1,
+        "candidate_only": 1,
+        "checked_no_match": 10,
+        "access_blocked": 0,
+        "auth_required": 0,
+        "mechanical_failure": 1,
+        "not_checked": 0
+      },
+      "head_ai_product_release_notes": {
+        "selected": 1,
+        "candidate_only": 0,
+        "checked_no_match": 14,
+        "access_blocked": 1,
+        "auth_required": 0,
+        "mechanical_failure": 0,
+        "not_checked": 0
+      },
+      "agent_runtime_and_open_source": {
+        "selected": 0,
+        "candidate_only": 0,
+        "checked_no_match": 16,
+        "access_blocked": 0,
+        "auth_required": 0,
+        "mechanical_failure": 0,
+        "not_checked": 0
+      },
+      "research_and_evaluation": {
+        "selected": 0,
+        "candidate_only": 0,
+        "checked_no_match": 10,
+        "access_blocked": 0,
+        "auth_required": 0,
+        "mechanical_failure": 0,
+        "not_checked": 0
+      },
+      "ai_macro_primary": {
+        "selected": 0,
+        "candidate_only": 0,
+        "checked_no_match": 8,
+        "access_blocked": 7,
+        "auth_required": 0,
+        "mechanical_failure": 2,
+        "not_checked": 0
+      },
+      "practitioner_and_product_leader_longform": {
+        "selected": 0,
+        "candidate_only": 0,
+        "checked_no_match": 11,
+        "access_blocked": 0,
+        "auth_required": 0,
+        "mechanical_failure": 0,
+        "not_checked": 0
+      }
+    },
+    "records": [
+      {
+        "channel": "frontier_model_official",
+        "name": "OpenAI News",
+        "type": "official_news",
+        "url": "https://openai.com/news/",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "OpenAI Research",
+        "type": "official_research",
+        "url": "https://openai.com/research/",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "OpenAI API Changelog",
+        "type": "developer_changelog",
+        "url": "https://platform.openai.com/docs/changelog",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "OpenAI Help Center Release Notes",
+        "type": "product_release_notes",
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Anthropic News",
+        "type": "official_news",
+        "url": "https://www.anthropic.com/news",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Anthropic Research",
+        "type": "official_research",
+        "url": "https://www.anthropic.com/research",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Claude Release Notes",
+        "type": "product_release_notes",
+        "url": "https://support.anthropic.com/en/articles/12138966-release-notes",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Anthropic API Release Notes",
+        "type": "developer_changelog",
+        "url": "https://docs.anthropic.com/en/release-notes/api",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Google DeepMind Blog",
+        "type": "official_research",
+        "url": "https://deepmind.google/discover/blog/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Google Innovation & AI",
+        "type": "official_news",
+        "url": "https://blog.google/innovation-and-ai/",
+        "status": "selected",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Gemini API Changelog",
+        "type": "developer_changelog",
+        "url": "https://ai.google.dev/gemini-api/docs/changelog",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Vertex AI Generative AI Release Notes",
+        "type": "cloud_release_notes",
+        "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Meta AI Blog",
+        "type": "official_research",
+        "url": "https://ai.meta.com/blog/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Meta Llama GitHub",
+        "type": "github_org",
+        "url": "https://github.com/meta-llama",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "xAI News",
+        "type": "official_news",
+        "url": "https://x.ai/news",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "xAI Docs",
+        "type": "developer_docs",
+        "url": "https://docs.x.ai/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Microsoft AI Blog",
+        "type": "official_news",
+        "url": "https://microsoft.ai/news/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Azure AI Foundry What's New",
+        "type": "cloud_release_notes",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/whats-new-azure-ai-foundry",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Amazon Science AI",
+        "type": "official_research",
+        "url": "https://www.amazon.science/tag/artificial-intelligence",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "AWS Machine Learning Blog",
+        "type": "official_technical_blog",
+        "url": "https://aws.amazon.com/blogs/machine-learning/",
+        "status": "selected",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "AWS What's New AI/ML",
+        "type": "cloud_release_notes",
+        "url": "https://aws.amazon.com/about-aws/whats-new/machine-learning/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "NVIDIA AI Developer Blog",
+        "type": "official_technical_blog",
+        "url": "https://developer.nvidia.com/blog/category/generative-ai/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "NVIDIA NeMo GitHub",
+        "type": "github_releases",
+        "url": "https://github.com/NVIDIA/NeMo",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "frontier_model_official",
+        "name": "Apple Machine Learning Research",
+        "type": "official_research",
+        "url": "https://machinelearning.apple.com/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "DeepSeek News",
+        "type": "official_site",
+        "url": "https://www.deepseek.com/",
+        "status": "selected",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "DeepSeek GitHub",
+        "type": "github_org",
+        "url": "https://github.com/deepseek-ai",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "DeepSeek Hugging Face",
+        "type": "model_hub",
+        "url": "https://huggingface.co/deepseek-ai",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "Qwen Blog",
+        "type": "official_blog",
+        "url": "https://qwenlm.github.io/blog/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "Qwen GitHub",
+        "type": "github_org",
+        "url": "https://github.com/QwenLM",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "Qwen Hugging Face",
+        "type": "model_hub",
+        "url": "https://huggingface.co/Qwen",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "Kimi Developer Docs",
+        "type": "developer_docs",
+        "url": "https://platform.moonshot.cn/docs",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "Moonshot AI GitHub",
+        "type": "github_org",
+        "url": "https://github.com/MoonshotAI",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "Zhipu AI Open Platform",
+        "type": "developer_docs",
+        "url": "https://open.bigmodel.cn/dev/api",
+        "status": "candidate_only",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "THUDM GitHub",
+        "type": "github_org",
+        "url": "https://github.com/THUDM",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "MiniMax Open Platform",
+        "type": "developer_docs",
+        "url": "https://platform.minimaxi.com/document",
+        "status": "mechanical_failure",
+        "http_code": "404"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "MiniMax GitHub",
+        "type": "github_org",
+        "url": "https://github.com/MiniMax-AI",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "china_frontier_models",
+        "name": "Baidu AI Cloud Qianfan",
+        "type": "official_product",
+        "url": "https://cloud.baidu.com/product/wenxinworkshop",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Google Workspace Updates",
+        "type": "product_release_notes",
+        "url": "https://workspaceupdates.googleblog.com/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Gemini Apps Help",
+        "type": "help_center",
+        "url": "https://support.google.com/gemini/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Microsoft 365 Roadmap",
+        "type": "product_roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Microsoft Copilot Blog",
+        "type": "official_product_blog",
+        "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "GitHub Changelog Copilot",
+        "type": "product_changelog",
+        "url": "https://github.blog/changelog/label/copilot/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "GitHub Copilot Docs",
+        "type": "product_docs",
+        "url": "https://docs.github.com/en/copilot",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Cursor Changelog",
+        "type": "product_changelog",
+        "url": "https://cursor.com/changelog",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Cursor Docs",
+        "type": "product_docs",
+        "url": "https://docs.cursor.com/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Perplexity Changelog",
+        "type": "product_changelog",
+        "url": "https://www.perplexity.ai/changelog",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Notion Releases",
+        "type": "product_changelog",
+        "url": "https://www.notion.com/releases",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Figma Release Notes",
+        "type": "product_release_notes",
+        "url": "https://help.figma.com/hc/en-us/categories/360002051613-Release-notes",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Canva Newsroom AI",
+        "type": "official_product_blog",
+        "url": "https://www.canva.com/newsroom/news/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Slack Release Notes",
+        "type": "product_release_notes",
+        "url": "https://slack.com/intl/en-gb/release-notes",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Atlassian Intelligence Updates",
+        "type": "product_release_notes",
+        "url": "https://confluence.atlassian.com/cloud/blog",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Salesforce Release Notes AI",
+        "type": "product_release_notes",
+        "url": "https://help.salesforce.com/s/articleView?id=release-notes.salesforce_release_notes.htm",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "head_ai_product_release_notes",
+        "name": "Hugging Face Blog",
+        "type": "official_technical_blog",
+        "url": "https://huggingface.co/blog",
+        "status": "selected",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "Model Context Protocol",
+        "type": "github_org",
+        "url": "https://github.com/modelcontextprotocol",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "A2A Protocol",
+        "type": "github_releases",
+        "url": "https://github.com/a2aproject/A2A",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "OpenAI Agents SDK",
+        "type": "github_releases",
+        "url": "https://github.com/openai/openai-agents-python",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "Google Agent Development Kit",
+        "type": "github_releases",
+        "url": "https://github.com/google/adk-python",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "Microsoft Agent Framework",
+        "type": "github_releases",
+        "url": "https://github.com/microsoft/agent-framework",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "AWS Strands Agents",
+        "type": "github_org",
+        "url": "https://github.com/strands-agents",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "LangGraph",
+        "type": "github_releases",
+        "url": "https://github.com/langchain-ai/langgraph",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "LlamaIndex",
+        "type": "github_releases",
+        "url": "https://github.com/run-llama/llama_index",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "CrewAI",
+        "type": "github_releases",
+        "url": "https://github.com/crewAIInc/crewAI",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "AutoGen",
+        "type": "github_releases",
+        "url": "https://github.com/microsoft/autogen",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "Browser Use",
+        "type": "github_releases",
+        "url": "https://github.com/browser-use/browser-use",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "OpenHands",
+        "type": "github_releases",
+        "url": "https://github.com/All-Hands-AI/OpenHands",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "SWE-agent",
+        "type": "github_releases",
+        "url": "https://github.com/SWE-agent/SWE-agent",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "Anthropic Cookbook",
+        "type": "github_changes",
+        "url": "https://github.com/anthropics/anthropic-cookbook",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "OpenAI Cookbook",
+        "type": "github_changes",
+        "url": "https://github.com/openai/openai-cookbook",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "agent_runtime_and_open_source",
+        "name": "Microsoft Research AutoGen Blog",
+        "type": "official_research",
+        "url": "https://www.microsoft.com/en-us/research/project/autogen/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "research_and_evaluation",
+        "name": "arXiv cs.AI",
+        "type": "paper_api",
+        "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "research_and_evaluation",
+        "name": "arXiv cs.CL",
+        "type": "paper_api",
+        "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "research_and_evaluation",
+        "name": "arXiv cs.LG",
+        "type": "paper_api",
+        "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "research_and_evaluation",
+        "name": "Hugging Face Daily Papers",
+        "type": "paper_index",
+        "url": "https://huggingface.co/papers",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "research_and_evaluation",
+        "name": "Stanford HAI",
+        "type": "research_institute",
+        "url": "https://hai.stanford.edu/news",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "research_and_evaluation",
+        "name": "METR",
+        "type": "evaluation_org",
+        "url": "https://metr.org/blog/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "research_and_evaluation",
+        "name": "Epoch AI",
+        "type": "research_org",
+        "url": "https://epoch.ai/blog",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "research_and_evaluation",
+        "name": "Artificial Analysis",
+        "type": "independent_evaluation",
+        "url": "https://artificialanalysis.ai/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "research_and_evaluation",
+        "name": "SWE-bench",
+        "type": "benchmark",
+        "url": "https://www.swebench.com/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "research_and_evaluation",
+        "name": "LMSYS Chatbot Arena",
+        "type": "benchmark",
+        "url": "https://lmarena.ai/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "OpenAI Company News",
+        "type": "company_primary",
+        "url": "https://openai.com/news/company/",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "Alphabet Investor Relations",
+        "type": "company_ir",
+        "url": "https://abc.xyz/investor/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "Microsoft Investor Relations",
+        "type": "company_ir",
+        "url": "https://www.microsoft.com/en-us/Investor",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "Meta Investor Relations",
+        "type": "company_ir",
+        "url": "https://investor.atmeta.com/",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "Amazon Investor Relations",
+        "type": "company_ir",
+        "url": "https://ir.aboutamazon.com/",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "NVIDIA Investor Relations",
+        "type": "company_ir",
+        "url": "https://investor.nvidia.com/",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "CoreWeave Investor Relations",
+        "type": "company_ir",
+        "url": "https://investors.coreweave.com/",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "SEC EDGAR",
+        "type": "regulatory_filings",
+        "url": "https://www.sec.gov/edgar/search/",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "US NIST AI",
+        "type": "regulator",
+        "url": "https://www.nist.gov/artificial-intelligence",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "US FTC Technology Blog",
+        "type": "regulator",
+        "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "EU AI Office",
+        "type": "regulator",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "European Commission AI Act",
+        "type": "regulator",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "UK CMA Digital Markets",
+        "type": "regulator",
+        "url": "https://www.gov.uk/government/organisations/competition-and-markets-authority",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "UK AI Security Institute",
+        "type": "government_research",
+        "url": "https://www.aisi.gov.uk/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "China CAC",
+        "type": "regulator",
+        "url": "https://www.cac.gov.cn/",
+        "status": "mechanical_failure",
+        "http_code": "000"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "China MIIT",
+        "type": "regulator",
+        "url": "https://www.miit.gov.cn/",
+        "status": "mechanical_failure",
+        "http_code": "000"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "IEA Data Centres and AI",
+        "type": "energy_research",
+        "url": "https://www.iea.org/topics/data-centres-and-data-transmission-networks",
+        "status": "access_blocked",
+        "http_code": "403"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "Latent Space",
+        "type": "longform_blog_podcast",
+        "url": "https://www.latent.space/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "The Pragmatic Engineer",
+        "type": "longform_blog",
+        "url": "https://newsletter.pragmaticengineer.com/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "Every",
+        "type": "longform_blog_podcast",
+        "url": "https://every.to/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "Lenny's Newsletter",
+        "type": "longform_blog_podcast",
+        "url": "https://www.lennysnewsletter.com/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "Simon Willison",
+        "type": "personal_blog",
+        "url": "https://simonwillison.net/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "Hamel Husain",
+        "type": "personal_blog",
+        "url": "https://hamel.dev/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "Chip Huyen",
+        "type": "personal_blog",
+        "url": "https://huyenchip.com/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "Ahead of AI",
+        "type": "researcher_newsletter",
+        "url": "https://magazine.sebastianraschka.com/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "Lil'Log",
+        "type": "researcher_blog",
+        "url": "https://lilianweng.github.io/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "Interconnects",
+        "type": "researcher_newsletter",
+        "url": "https://www.interconnects.ai/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "practitioner_and_product_leader_longform",
+        "name": "Import AI",
+        "type": "researcher_newsletter",
+        "url": "https://jack-clark.net/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      }
+    ],
+    "mechanical_failures": [
+      {
+        "channel": "china_frontier_models",
+        "name": "MiniMax Open Platform",
+        "type": "developer_docs",
+        "url": "https://platform.minimaxi.com/document",
+        "status": "mechanical_failure",
+        "http_code": "404"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "China CAC",
+        "type": "regulator",
+        "url": "https://www.cac.gov.cn/",
+        "status": "mechanical_failure",
+        "http_code": "000"
+      },
+      {
+        "channel": "ai_macro_primary",
+        "name": "China MIIT",
+        "type": "regulator",
+        "url": "https://www.miit.gov.cn/",
+        "status": "mechanical_failure",
+        "http_code": "000"
+      }
+    ],
+    "access_fallbacks": [
+      {
+        "source": "OpenAI News / Research / Company News",
+        "result": "direct HTTP 403; checked Google News official index and already known public OpenAI X posts; no additional official event promoted"
+      },
+      {
+        "source": "SEC EDGAR",
+        "result": "web search and official data API both blocked with 403; recorded as access_blocked, not checked_no_match"
+      },
+      {
+        "source": "China CAC / MIIT",
+        "result": "TLS connection failed; no claim of coverage"
+      }
+    ]
+  },
+  "person_source_coverage": {
+    "explicit_urls": 16,
+    "records": [
+      {
+        "channel": "personal_blogs",
+        "name": "Hamel Husain",
+        "url": "https://hamel.dev/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "personal_blogs",
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "personal_blogs",
+        "name": "Chip Huyen",
+        "url": "https://huyenchip.com/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "personal_blogs",
+        "name": "swyx / Latent Space",
+        "url": "https://www.latent.space/",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "AI Engineer",
+        "url": "https://www.youtube.com/@aiDotEngineer",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "Lenny's Podcast",
+        "url": "https://www.youtube.com/@LennysPodcast",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "Peter Yang",
+        "url": "https://www.youtube.com/@peteryangyt",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "Every / AI & I",
+        "url": "https://www.youtube.com/@everyinc",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "The Pragmatic Engineer",
+        "url": "https://www.youtube.com/@ThePragmaticEngineer",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "Odd Lots / Bloomberg Podcasts",
+        "url": "https://podcasts.apple.com/us/podcast/odd-lots/id1056200096",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "South Park Commons",
+        "url": "https://www.youtube.com/@southparkcommons",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "No Priors",
+        "url": "https://www.youtube.com/@NoPriorsPodcast",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "Y Combinator",
+        "url": "https://www.youtube.com/@ycombinator",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "Bloomberg Originals",
+        "url": "https://www.youtube.com/@business",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "Dwarkesh Patel",
+        "url": "https://www.youtube.com/@DwarkeshPatel",
+        "status": "checked_no_match",
+        "http_code": "200"
+      },
+      {
+        "channel": "longform_video_podcasts",
+        "name": "Lex Fridman",
+        "url": "https://www.youtube.com/@lexfridman",
+        "status": "checked_no_match",
+        "http_code": "200"
+      }
+    ],
+    "channel_notes": {
+      "ai_product_leaders": "not_checked: registry has people but no canonical URLs; podcast/title feeds yielded no in-window body evidence",
+      "github_primary": "covered through registered GitHub organization/release sources",
+      "model_company_leaders": "covered through official model-company sources",
+      "x_official_api": "auth_required; no OAuth credentials read or requested"
+    }
   },
   "excluded_summary": {
-    "duplicate_or_related_source_merged": 1,
-    "weak_or_conflicting_practitioner_evidence": 4,
-    "outside_window_or_old_resubmission": 8,
-    "secondary_marketing_or_low_relevance": 36
+    "duplicate_or_related_source_merged": 20,
+    "title_only_or_body_unavailable": 1,
+    "outside_window_or_old_resubmission": 2,
+    "secondary_marketing_or_low_relevance": 11
   },
-  "note": "三次定时任务失败后由主流程分批恢复；首次发布 1 条后，并行核验补出 9 条并按同日增量追加。DeepSeek 两条为昨日上一轮之后补报；Demis 的 Gemini 转帖并入模型事件。"
+  "topic_derivation": {
+    "parent_topics": 6,
+    "platform_variants": 18,
+    "statuses_preserved": true,
+    "automatic_publish_actions": 0
+  },
+  "note": "本轮 09:45 后没有新增正式事件；DeepSeek 官方价格页提供了 V4-Pro 当前价格及 8 月 16 日起峰谷价格，作为新一手证据并入既有模型事件。GLM-5.3 只有媒体标题和未同步更新的官方文档，保留为 candidate_only，不补写规格或跑分。"
 }

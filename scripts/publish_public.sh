@@ -35,7 +35,7 @@ git add \
   data/history.json data/history.js data/latest.json data/latest.js \
   config backfills \
   content-topics \
-  backfill-*.html product-leader-backfill-*.html content-topic-studio.html \
+  backfill-*.html product-leader-backfill-*.html monthly-signal-*.html content-topic-studio.html \
   scripts tests \
   "daily/$DATE/selected.json" \
   "daily/$DATE/daily-brief.md" \

@@ -1,0 +1,854 @@
+[
+  {
+    "id": "2026-07-27-openai-agents-sdk-programmatic-tool-calling",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "OpenAI Agents SDK 0.19 引入 Programmatic Tool Calling：模型用 JavaScript 编排受限工具",
+    "summary": "OpenAI Agents SDK 0.19 新增 ProgrammaticToolCallingTool，允许受支持的 Responses 模型生成 JavaScript 协调具备 allowed_callers 限制的工具；该能力接入 Runner streaming、guardrails、approvals、sessions 与 RunState，同时强化错误和诊断日志，避免暴露原始敏感载荷。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "technical_update",
+    "information_type": "agent_runtime",
+    "evidence_level": "confirmed",
+    "source": "OpenAI",
+    "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.19.0",
+    "published_at": "2026-07-27T00:00:00Z",
+    "primary_tags": [
+      "Programmatic Tool Calling",
+      "Approvals",
+      "Guardrails",
+      "RunState"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "它把多工具编排从逐次函数调用推进到受约束的程序化执行，同时保留审批、会话状态和 Guardrail 接口。",
+    "personal_relevance_cn": "可用于个人评估 Agent 长任务、工具编排、状态恢复、权限与可观测性的真实产品边界。",
+    "product_opportunity_cn": "把该机制加入 Agent Runtime 与产品工作流评测，核验成功率、恢复路径、审批和审计。",
+    "competitive_risk_cn": "若只跟踪模型发布而忽略 SDK、Runtime 和控制面更新，可能错过生产 Agent 能力边界的变化。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "该机制在真实长任务中的成功率、恢复率和人工接管成本如何？",
+      "权限、凭据、审计和失败回退边界是否经过独立验证？"
+    ],
+    "follow_up_triggers": [
+      "发布独立复现、生产指标或失败复盘",
+      "官方补充安全、权限、成本或迁移说明"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 5,
+      "ai_product_value": 3,
+      "macro_value": 2,
+      "actionability": 5
+    },
+    "report_date": "2026-07-27",
+    "event_date": "2026-07-27",
+    "canonical_url": "https://github.com/openai/openai-agents-python/releases/tag/v0.19.0",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "这是 SDK 官方 Release Notes 描述的能力，不代表所有 OpenAI 模型均支持，也未提供复杂工作流成功率、沙箱逃逸测试或生产成本；JavaScript 只应调用明确允许的工具。",
+    "related_sources": []
+  },
+  {
+    "id": "2026-08-11-openai-agents-sdk-resumable-input-sandbox-guards",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "OpenAI Agents SDK 0.20 增加可恢复输入与 Sandbox 凭据挂载确认",
+    "summary": "OpenAI Agents SDK 0.20 的 RunState.add_input() 可在恢复模型调用前持久化加入用户输入，并支持 Guardrail、持久化和序列化；Sandbox 挂载校验新增明确的凭据暴露确认，错误合约保持脱敏；本地 MCP 连接同时兼容 MCP Python SDK v1/v2。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "technical_update",
+    "information_type": "agent_runtime",
+    "evidence_level": "confirmed",
+    "source": "OpenAI",
+    "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.20.0",
+    "published_at": "2026-08-11T00:00:00Z",
+    "primary_tags": [
+      "RunState",
+      "Resume",
+      "Sandbox",
+      "MCP"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "长任务恢复需要把人工补充输入纳入持久状态，同时让高风险凭据挂载成为显式确认而不是隐含副作用。",
+    "personal_relevance_cn": "可用于个人评估 Agent 长任务、工具编排、状态恢复、权限与可观测性的真实产品边界。",
+    "product_opportunity_cn": "把该机制加入 Agent Runtime 与产品工作流评测，核验成功率、恢复路径、审批和审计。",
+    "competitive_risk_cn": "若只跟踪模型发布而忽略 SDK、Runtime 和控制面更新，可能错过生产 Agent 能力边界的变化。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "该机制在真实长任务中的成功率、恢复率和人工接管成本如何？",
+      "权限、凭据、审计和失败回退边界是否经过独立验证？"
+    ],
+    "follow_up_triggers": [
+      "发布独立复现、生产指标或失败复盘",
+      "官方补充安全、权限、成本或迁移说明"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 5,
+      "ai_product_value": 3,
+      "macro_value": 2,
+      "actionability": 5
+    },
+    "report_date": "2026-08-11",
+    "event_date": "2026-08-11",
+    "canonical_url": "https://github.com/openai/openai-agents-python/releases/tag/v0.20.0",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "官方说明同时提醒自定义 MCP HTTP 传输存在潜在破坏性迁移；未披露恢复一致性、凭据泄漏测试、跨进程故障或审批撤销表现。",
+    "related_sources": []
+  },
+  {
+    "id": "2026-07-16-google-adk-cloud-run-sandbox-mcp-agent",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "Google ADK 2.5 增加 Cloud Run Sandbox，并可把 ADK Agent 暴露为 MCP Server",
+    "summary": "Google ADK 2.5 新增 Cloud Run Sandbox 代码执行选项、to_mcp_server 接口、Agent Registry 中的 Agent/MCP Server 搜索，并为 LlmAgent 工作流节点加入严格输入 Schema 校验；GCP Skill Registry 迁移到 AgentRegistry endpoint。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "technical_update",
+    "information_type": "agent_runtime",
+    "evidence_level": "confirmed",
+    "source": "Google ADK",
+    "url": "https://github.com/google/adk-python/releases/tag/v2.5.0",
+    "published_at": "2026-07-16T00:00:00Z",
+    "primary_tags": [
+      "Cloud Run Sandbox",
+      "MCP",
+      "Agent Registry",
+      "Schema Validation"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "同一版本把受控代码执行、Agent 服务发现、MCP 暴露和输入校验连成可部署的 Agent 基础设施链路。",
+    "personal_relevance_cn": "可用于个人评估 Agent 长任务、工具编排、状态恢复、权限与可观测性的真实产品边界。",
+    "product_opportunity_cn": "把该机制加入 Agent Runtime 与产品工作流评测，核验成功率、恢复路径、审批和审计。",
+    "competitive_risk_cn": "若只跟踪模型发布而忽略 SDK、Runtime 和控制面更新，可能错过生产 Agent 能力边界的变化。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "该机制在真实长任务中的成功率、恢复率和人工接管成本如何？",
+      "权限、凭据、审计和失败回退边界是否经过独立验证？"
+    ],
+    "follow_up_triggers": [
+      "发布独立复现、生产指标或失败复盘",
+      "官方补充安全、权限、成本或迁移说明"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 5,
+      "ai_product_value": 3,
+      "macro_value": 2,
+      "actionability": 5
+    },
+    "report_date": "2026-07-16",
+    "event_date": "2026-07-16",
+    "canonical_url": "https://github.com/google/adk-python/releases/tag/v2.5.0",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "这是 SDK 能力发布，不等于 Cloud Run Sandbox 默认安全，也未披露租户隔离、出网策略、资源上限和 MCP 调用授权细节；旧 Skill Registry 用户需要迁移。",
+    "related_sources": []
+  },
+  {
+    "id": "2026-07-30-google-adk-a2a-auth-oauth-command-logs",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "Google ADK 2.6 补齐 A2A 调用身份、三方 OAuth 与命令日志",
+    "summary": "Google ADK 2.6 支持获取 Agent Card 时按调用传入认证 Header，新增 Agent Identity Auth Manager 的三方 OAuth finalize endpoint，并增加 CLI 命令日志和评测样例。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "technical_update",
+    "information_type": "agent_governance",
+    "evidence_level": "confirmed",
+    "source": "Google ADK",
+    "url": "https://github.com/google/adk-python/releases/tag/v2.6.0",
+    "published_at": "2026-07-30T00:00:00Z",
+    "primary_tags": [
+      "A2A",
+      "OAuth",
+      "Agent Identity",
+      "Command Logging"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "跨 Agent 调用要进入企业环境，身份委托、逐调用认证和操作日志比单纯协议互通更关键。",
+    "personal_relevance_cn": "可用于个人评估 Agent 长任务、工具编排、状态恢复、权限与可观测性的真实产品边界。",
+    "product_opportunity_cn": "把该机制加入 Agent Runtime 与产品工作流评测，核验成功率、恢复路径、审批和审计。",
+    "competitive_risk_cn": "若只跟踪模型发布而忽略 SDK、Runtime 和控制面更新，可能错过生产 Agent 能力边界的变化。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "该机制在真实长任务中的成功率、恢复率和人工接管成本如何？",
+      "权限、凭据、审计和失败回退边界是否经过独立验证？"
+    ],
+    "follow_up_triggers": [
+      "发布独立复现、生产指标或失败复盘",
+      "官方补充安全、权限、成本或迁移说明"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 5,
+      "ai_product_value": 3,
+      "macro_value": 2,
+      "actionability": 5
+    },
+    "report_date": "2026-07-30",
+    "event_date": "2026-07-30",
+    "canonical_url": "https://github.com/google/adk-python/releases/tag/v2.6.0",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "Release Notes 证明接口存在，但没有说明 Token 委托范围、租约、撤销、跨组织信任、日志保留和审计完整性；不能据此认定 A2A 身份治理已经成熟。",
+    "related_sources": []
+  },
+  {
+    "id": "2026-08-13-google-adk-model-capability-history-media-tools",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "Google ADK 2.7 改由模型声明能力，并完整保留并行工具结果与 Thought Signatures",
+    "summary": "Google ADK 2.7 不再仅凭模型 ID 推断能力，而由模型声明是否支持输出 Schema 与工具组合；工具响应可携带图片等媒体；对话历史会保留 Gemini 所需的 Thought Signatures、服务端工具调用片段和全部并行函数调用结果。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "technical_update",
+    "information_type": "agent_runtime",
+    "evidence_level": "confirmed",
+    "source": "Google ADK",
+    "url": "https://github.com/google/adk-python/releases/tag/v2.7.0",
+    "published_at": "2026-08-13T00:00:00Z",
+    "primary_tags": [
+      "Capability Declaration",
+      "Conversation History",
+      "Parallel Tool Calls",
+      "Multimodal Tools"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "能力协商和历史完整性直接决定多模型 Agent 是否能正确组合结构化输出、媒体工具和并行调用，而不在模型切换时静默丢失状态。",
+    "personal_relevance_cn": "可用于个人评估 Agent 长任务、工具编排、状态恢复、权限与可观测性的真实产品边界。",
+    "product_opportunity_cn": "把该机制加入 Agent Runtime 与产品工作流评测，核验成功率、恢复路径、审批和审计。",
+    "competitive_risk_cn": "若只跟踪模型发布而忽略 SDK、Runtime 和控制面更新，可能错过生产 Agent 能力边界的变化。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "该机制在真实长任务中的成功率、恢复率和人工接管成本如何？",
+      "权限、凭据、审计和失败回退边界是否经过独立验证？"
+    ],
+    "follow_up_triggers": [
+      "发布独立复现、生产指标或失败复盘",
+      "官方补充安全、权限、成本或迁移说明"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 5,
+      "ai_product_value": 3,
+      "macro_value": 2,
+      "actionability": 5
+    },
+    "report_date": "2026-08-13",
+    "event_date": "2026-08-13",
+    "canonical_url": "https://github.com/google/adk-python/releases/tag/v2.7.0",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "官方将其定位为 correctness release；未提供修复前后失败率、跨供应商一致性或长会话成本。Thought Signatures 为 Gemini 机制，不能外推到所有模型。",
+    "related_sources": []
+  },
+  {
+    "id": "2026-08-13-microsoft-agent-framework-checkpoint-approval-hooks",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "Microsoft Agent Framework 增加 Workflow checkpoint/resume、审批状态存储与执行 Hooks",
+    "summary": "Agent Framework Python 1.14 为 AG-UI Workflow 增加 checkpoint 创建与恢复；Foundry Hosting 可用 Provider 存储 Session、Checkpoint 和 Function Approval；BackgroundAgentsProvider 可安全取消并释放会话运行时状态；同时加入实验性的 AGENT-HOOKS-0.1 执行中间件。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "technical_update",
+    "information_type": "agent_governance",
+    "evidence_level": "confirmed",
+    "source": "Microsoft Agent Framework",
+    "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.14.0",
+    "published_at": "2026-08-13T00:00:00Z",
+    "primary_tags": [
+      "Checkpoint",
+      "Resume",
+      "Function Approval",
+      "Agent Hooks",
+      "Session State"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "它把长任务恢复、函数审批、运行时取消和策略 Hooks 放进同一框架层，接近生产 Agent 所需的控制面。",
+    "personal_relevance_cn": "可用于个人评估 Agent 长任务、工具编排、状态恢复、权限与可观测性的真实产品边界。",
+    "product_opportunity_cn": "把该机制加入 Agent Runtime 与产品工作流评测，核验成功率、恢复路径、审批和审计。",
+    "competitive_risk_cn": "若只跟踪模型发布而忽略 SDK、Runtime 和控制面更新，可能错过生产 Agent 能力边界的变化。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "该机制在真实长任务中的成功率、恢复率和人工接管成本如何？",
+      "权限、凭据、审计和失败回退边界是否经过独立验证？"
+    ],
+    "follow_up_triggers": [
+      "发布独立复现、生产指标或失败复盘",
+      "官方补充安全、权限、成本或迁移说明"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 5,
+      "ai_product_value": 3,
+      "macro_value": 2,
+      "actionability": 5
+    },
+    "report_date": "2026-08-13",
+    "event_date": "2026-08-13",
+    "canonical_url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.14.0",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "AGENT-HOOKS-0.1 明确为 opt-in 实验功能；Release Notes 未给出 Approval 的角色模型、撤销语义、Exactly-once 恢复、状态加密或生产可靠性数据。",
+    "related_sources": []
+  },
+  {
+    "id": "2026-08-07-nvidia-nemo-speech-3",
+    "demo": false,
+    "topic_lane": "model",
+    "title": "NVIDIA 发布 NeMo Speech 3.0：拆分语音模型仓库并加入 VoiceChat 训练模块",
+    "summary": "NeMo Speech 3.0 是仓库拆分后的首个大版本，移除约 80 万行废弃代码并聚焦 ASR、TTS、音频、说话人任务与 SpeechLM；SpeechLM2 支持 dense/MoE LLM backbone、FSDP2/HSDP/TP/CP/EP 等并行策略，并加入 Nemotron VoiceChat 的 DuplexSTT、Duplex/EAR-TTS 与联合验证/离线语音到语音推理模块。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "technical_update",
+    "information_type": "model_research",
+    "evidence_level": "confirmed",
+    "source": "NVIDIA NeMo",
+    "url": "https://github.com/NVIDIA-NeMo/Speech/releases/tag/v3.0.0",
+    "published_at": "2026-08-07T00:00:00Z",
+    "primary_tags": [
+      "SpeechLM",
+      "Duplex Voice",
+      "Nemotron VoiceChat",
+      "Distributed Training"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "实时语音 Agent 的竞争不仅是单个语音模型，还包括双工语音理解/生成、长音频训练、分布式并行和部署工具链的整合。",
+    "personal_relevance_cn": "可用于个人评估 Agent 长任务、工具编排、状态恢复、权限与可观测性的真实产品边界。",
+    "product_opportunity_cn": "把该机制加入 Agent Runtime 与产品工作流评测，核验成功率、恢复路径、审批和审计。",
+    "competitive_risk_cn": "若只跟踪模型发布而忽略 SDK、Runtime 和控制面更新，可能错过生产 Agent 能力边界的变化。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "该机制在真实长任务中的成功率、恢复率和人工接管成本如何？",
+      "权限、凭据、审计和失败回退边界是否经过独立验证？"
+    ],
+    "follow_up_triggers": [
+      "发布独立复现、生产指标或失败复盘",
+      "官方补充安全、权限、成本或迁移说明"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 5,
+      "agent_architecture_value": 4,
+      "ai_product_value": 3,
+      "macro_value": 2,
+      "actionability": 5
+    },
+    "report_date": "2026-08-07",
+    "event_date": "2026-08-07",
+    "canonical_url": "https://github.com/NVIDIA-NeMo/Speech/releases/tag/v3.0.0",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "这是训练框架和模块发布，不是完整 VoiceChat 产品 GA；Release Notes 未提供端到端延迟、中断处理、语音重叠、真实对话成功率或独立基准。迁移包含破坏性仓库拆分。",
+    "related_sources": []
+  },
+  {
+    "id": "2026-08-13-openhands-agent-canvas-context-cost-automation-controls",
+    "demo": false,
+    "topic_lane": "ai_product",
+    "title": "OpenHands Agent Canvas 增加上下文用量、手动压缩、成本日志与自动化控制",
+    "summary": "OpenHands 1.10—1.13 连续更新 Agent Canvas：加入 Automations dashboard 与 manifest 子页面、Activity Log 导出和单次运行 LLM 成本、可启动本地或云端子会话的 typed action、上下文窗口用量表与手动压缩，以及按 issue 类型判断 ready-for-dev 的准备度 Gate。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "technical_update",
+    "information_type": "agent_product",
+    "evidence_level": "confirmed",
+    "source": "OpenHands",
+    "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.13.0",
+    "published_at": "2026-08-13T00:00:00Z",
+    "primary_tags": [
+      "Agent Canvas",
+      "Context Meter",
+      "Manual Compaction",
+      "Cost Log",
+      "Automation Gate"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "这些真实产品控件把 Agent 的上下文预算、成本、自动化入口、子任务和任务准备度显式呈现，而不是隐藏在模型对话后。",
+    "personal_relevance_cn": "可用于个人评估 Agent 长任务、工具编排、状态恢复、权限与可观测性的真实产品边界。",
+    "product_opportunity_cn": "把该机制加入 Agent Runtime 与产品工作流评测，核验成功率、恢复路径、审批和审计。",
+    "competitive_risk_cn": "若只跟踪模型发布而忽略 SDK、Runtime 和控制面更新，可能错过生产 Agent 能力边界的变化。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "该机制在真实长任务中的成功率、恢复率和人工接管成本如何？",
+      "权限、凭据、审计和失败回退边界是否经过独立验证？"
+    ],
+    "follow_up_triggers": [
+      "发布独立复现、生产指标或失败复盘",
+      "官方补充安全、权限、成本或迁移说明"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 4,
+      "ai_product_value": 5,
+      "macro_value": 2,
+      "actionability": 5
+    },
+    "report_date": "2026-08-13",
+    "event_date": "2026-08-13",
+    "canonical_url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.13.0",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "本条按同一产品在一个月内的连续实质主题合并；官方 Release Notes 证明功能进入版本，但未核验托管版与本地版开放差异、Gate 误判率、压缩信息损失或成本统计口径。",
+    "related_sources": [
+      {
+        "label": "OpenHands 1.10.0",
+        "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.10.0"
+      },
+      {
+        "label": "OpenHands 1.11.0",
+        "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.11.0"
+      }
+    ]
+  },
+  {
+    "id": "2026-07-28-google-gemini-managed-agents-hooks-budget-triggers",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "Gemini Managed Agents 增加工具调用 Hooks、预算暂停恢复与定时触发",
+    "summary": "Gemini API Managed Agents 默认切换到 Gemini 3.6 Flash；开发者可在远程 Sandbox 内通过 pre_tool_execution/post_tool_execution Hooks 对工具调用执行拦截、Lint 或审计。max_total_tokens 达上限后任务以 incomplete 状态安全暂停并保留环境，可用 previous_interaction_id 增加预算继续；Scheduled Triggers 可按 Cron 复用同一 Sandbox，Environments API 可列出、检查和删除会话。",
+    "decision": "include",
+    "confidence": 96,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "official_release",
+    "information_type": "agent_governance",
+    "evidence_level": "confirmed",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+    "published_at": "2026-07-28T00:00:00-07:00",
+    "primary_tags": [
+      "Managed Agents",
+      "Hooks",
+      "Budget Control",
+      "Scheduled Triggers",
+      "Sandbox"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "这是把策略拦截、预算熔断、可恢复状态、定时自主执行和环境生命周期放入托管 Agent Runtime 的完整控制面更新。",
+    "personal_relevance_cn": "用于个人核验 Agent 的操作对象、自动执行范围、敏感动作交还、预算、权限、暂停与恢复。",
+    "product_opportunity_cn": "可将工具前后 Hooks、预算暂停恢复、登录态操作和敏感动作交还设计为 Agent 产品的显式控制面。",
+    "competitive_risk_cn": "Google 正把模型、浏览器登录态、Sandbox、连接服务和分发入口组合为完整 Agent 执行链。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "真实环境中的任务成功率、误操作率、人工接管率和单位成功任务成本如何？",
+      "权限、支付、凭据、数据保留、审计、暂停和回滚边界是什么？"
+    ],
+    "follow_up_triggers": [
+      "官方帮助中心或真实 UI 补充权限与开放范围",
+      "独立用户发布成功率、安全或失败复盘"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 5,
+      "technical_or_product_significance": 5,
+      "strategic_value": 5,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 5,
+      "ai_product_value": 5,
+      "macro_value": 3,
+      "actionability": 5
+    },
+    "report_date": "2026-07-28",
+    "event_date": "2026-07-28",
+    "canonical_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "Google 官方正文与代码示例确认接口和流程；“production-grade”及 OffDeal 案例由供应商/客户自报，未公开拒绝误判率、Hook 绕过测试、Sandbox 隔离、Cron 失败恢复或真实成本。免费层、模型和地区限制可能变化。",
+    "actual_status": "released",
+    "objects_actions_workflow": "单次 API 调用协调推理、代码执行、装包、文件管理和网页检索；工具前后执行自定义脚本，预算耗尽后保留环境并续跑，Cron 触发复用 Sandbox。",
+    "approval_or_auto_boundary": "Hook 返回 deny 时跳过工具并把原因写入模型上下文；预算上限触发安全暂停。正文没有用户级逐动作审批界面。"
+  },
+  {
+    "id": "2026-07-30-google-gemini-spark-chrome-auto-browse",
+    "demo": false,
+    "topic_lane": "ai_product",
+    "title": "Gemini Spark 接入 Chrome 登录态执行 Web errands，支付等敏感动作交还用户",
+    "summary": "Gemini Spark 的 Chrome auto browse 在用户许可后可使用已登录账户和保存密码，处理预约看房、调研航班并启动预订等网页任务；Google 声称加入 Prompt Injection 防护，并在支付等敏感动作处把任务交还用户。功能先在美国推出，同时向 160 多个新增国家的 Google AI Pro 用户扩大 Spark 访问。",
+    "decision": "include",
+    "confidence": 96,
+    "relevance_level": "P0",
+    "signal_type": "core",
+    "content_type": "official_release",
+    "information_type": "agent_product",
+    "evidence_level": "confirmed",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-july-2026/",
+    "published_at": "2026-07-30T00:00:00-07:00",
+    "primary_tags": [
+      "Chrome Auto Browse",
+      "Logged-in Accounts",
+      "Sensitive Action Handoff",
+      "Prompt Injection"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "它明确展示了消费级浏览器 Agent 的关键边界：利用登录态自动执行普通步骤，但在支付等高风险动作前停止并要求用户接管。",
+    "personal_relevance_cn": "用于个人核验 Agent 的操作对象、自动执行范围、敏感动作交还、预算、权限、暂停与恢复。",
+    "product_opportunity_cn": "可将工具前后 Hooks、预算暂停恢复、登录态操作和敏感动作交还设计为 Agent 产品的显式控制面。",
+    "competitive_risk_cn": "Google 正把模型、浏览器登录态、Sandbox、连接服务和分发入口组合为完整 Agent 执行链。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "真实环境中的任务成功率、误操作率、人工接管率和单位成功任务成本如何？",
+      "权限、支付、凭据、数据保留、审计、暂停和回滚边界是什么？"
+    ],
+    "follow_up_triggers": [
+      "官方帮助中心或真实 UI 补充权限与开放范围",
+      "独立用户发布成功率、安全或失败复盘"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 5,
+      "technical_or_product_significance": 5,
+      "strategic_value": 5,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 5,
+      "ai_product_value": 5,
+      "macro_value": 3,
+      "actionability": 5
+    },
+    "report_date": "2026-07-30",
+    "event_date": "2026-07-30",
+    "canonical_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-july-2026",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "官方页面证明发布范围和工作流，但未披露敏感动作分类、密码读取方式、Prompt Injection 测试、预订取消/回滚、误操作率或美国之外的开放时间。Google 的安全描述尚无独立验证。",
+    "actual_status": "rolling_out_us",
+    "objects_actions_workflow": "用户授权后，Spark 使用 Chrome 登录态和保存密码，执行看房预约、航班调研并启动预订。",
+    "approval_or_auto_boundary": "支付等敏感动作交还用户；正文未说明其他高风险动作、授权时长和逐站点权限。"
+  },
+  {
+    "id": "2026-08-12-google-gemini-connected-apps-actions",
+    "demo": false,
+    "topic_lane": "ai_product",
+    "title": "Gemini 扩展连接应用：从会议总结和网站编辑进入预订、租车、票务与就医预约",
+    "summary": "Google 宣布未来数周向 Gemini 滚动开放新一批 Connected Apps：Granola、Otter.ai 和 Wix 用于总结会议或编辑网站；Fever、GetYourGuide、Localiza、OpenTable（英国）和 Ticketmaster 用于体验、租车、餐厅和票务；Angi、Thumbtack 与 Zocdoc 用于家居服务和医生预约。",
+    "decision": "include",
+    "confidence": 96,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "official_release",
+    "information_type": "product_workflow",
+    "evidence_level": "confirmed",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-services-gemini-august-2026/",
+    "published_at": "2026-08-12T00:00:00-07:00",
+    "primary_tags": [
+      "Connected Apps",
+      "Booking",
+      "Website Editing",
+      "Appointments",
+      "Tool Actions"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "通用助手开始把跨服务对话转成真实世界交易与预约动作，产品竞争转向连接范围、授权、确认、支付和失败恢复。",
+    "personal_relevance_cn": "用于个人核验 Agent 的操作对象、自动执行范围、敏感动作交还、预算、权限、暂停与恢复。",
+    "product_opportunity_cn": "可将工具前后 Hooks、预算暂停恢复、登录态操作和敏感动作交还设计为 Agent 产品的显式控制面。",
+    "competitive_risk_cn": "Google 正把模型、浏览器登录态、Sandbox、连接服务和分发入口组合为完整 Agent 执行链。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "真实环境中的任务成功率、误操作率、人工接管率和单位成功任务成本如何？",
+      "权限、支付、凭据、数据保留、审计、暂停和回滚边界是什么？"
+    ],
+    "follow_up_triggers": [
+      "官方帮助中心或真实 UI 补充权限与开放范围",
+      "独立用户发布成功率、安全或失败复盘"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 5,
+      "technical_or_product_significance": 5,
+      "strategic_value": 5,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 5,
+      "ai_product_value": 5,
+      "macro_value": 3,
+      "actionability": 5
+    },
+    "report_date": "2026-08-12",
+    "event_date": "2026-08-12",
+    "canonical_url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-services-gemini-august-2026",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "正文使用“未来数周滚动开放”，因此这是已宣布但并非所有用户已实际可用；各服务地区、确认步骤、支付边界、取消退款、数据共享和操作日志均未披露，不能把营销视频当完整上线证明。",
+    "actual_status": "announced_rolling_out",
+    "objects_actions_workflow": "用户在 Gemini 中启用连接服务后，可总结会议、编辑网站、搜索/发起预订、租车、票务、家居服务和就医预约。",
+    "approval_or_auto_boundary": "官方正文没有说明哪些动作自动完成、哪些必须确认，也没有披露支付、退款、取消和审计流程。"
+  },
+  {
+    "id": "2026-07-22-alphabet-q2-ai-demand-supply-enterprise-adoption",
+    "demo": false,
+    "topic_lane": "ai_macro",
+    "title": "Alphabet Q2 披露 AI 供需与采用结构：Cloud 增长 82%、Backlog 5140 亿美元，模型 API 达 220 亿 tokens/分钟",
+    "summary": "Sundar Pichai 在 Alphabet Q2 2026 财报讲话中披露：Google Cloud 收入同比增长 82%，Backlog 达 5140 亿美元；模型 API 约处理 220 亿 tokens/分钟，上一季度为 160 亿；每月使用 Google 模型开发的开发者超过 900 万，公司仍称模型需求处于供给受限状态。近 90% 的 Fortune 100 使用 Gemini Enterprise；过去 12 个月有近 500 个 Cloud 客户各处理超过 1 万亿 tokens，超过 2000 家企业使用超过 1000 亿 tokens。",
+    "decision": "include",
+    "confidence": 96,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "executive_statement",
+    "information_type": "industry_structure",
+    "evidence_level": "primary_statement",
+    "source": "Alphabet / Google",
+    "url": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/",
+    "published_at": "2026-07-22T00:00:00Z",
+    "primary_tags": [
+      "Cloud Backlog",
+      "Token Demand",
+      "Enterprise Adoption",
+      "Supply Constraint"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "这些指标同时指向前沿模型供给约束、企业 Token 消耗规模和 Google 从芯片—模型—Agent 平台—Workspace 的全栈分发优势。",
+    "personal_relevance_cn": "用于个人判断 AI 供给、企业采用、监管义务和模型平台竞争位置的结构性变化。",
+    "product_opportunity_cn": "把采用、算力供给、监管标签和组织控制权变化转化为产品路线、合规与生态风险检查项。",
+    "competitive_risk_cn": "若只跟踪单个模型和功能，会错过算力瓶颈、企业分发、监管义务与组织控制权对产品竞争的影响。",
+    "recommended_action": "monitor",
+    "questions_to_validate": [
+      "官方指标的统计口径、持续性和可比基线是什么？",
+      "后续哪些法规、资本开支、组织或产品动作能验证该结构变化？"
+    ],
+    "follow_up_triggers": [
+      "下一季度财报、监管指南或执行案例发布",
+      "组织调整后发布新模型、平台路线或采用数据"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 5,
+      "technical_or_product_significance": 4,
+      "strategic_value": 5,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 3,
+      "ai_product_value": 4,
+      "macro_value": 5,
+      "actionability": 4
+    },
+    "report_date": "2026-07-22",
+    "event_date": "2026-07-22",
+    "canonical_url": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "这是 CEO 编辑版财报讲话和公司自报采用数据；未给出 tokens 的输入/输出拆分、重复缓存、客户付费结构、Gemini Enterprise 活跃定义、Cloud AI 单独收入或供给缺口规模，不能直接与其他厂商口径横比。",
+    "related_sources": []
+  },
+  {
+    "id": "2026-08-02-eu-ai-act-article-50-transparency-obligations",
+    "demo": false,
+    "topic_lane": "ai_macro",
+    "title": "欧盟 AI Act 第 50 条透明度义务开始适用：生成内容需标记、检测并对深伪和特定文本加标签",
+    "summary": "European Commission 官方页面确认，AI Act 第 50 条针对生成式 AI 提供者与部署者的透明度义务自 2026 年 8 月 2 日起适用，覆盖 AI 生成/操纵内容的标记与检测，以及深度伪造和特定 AI 生成文本的标签。配套自愿 Code 分为 Provider 与 Deployer 两部分；签署者可用其措施证明合规，未签署者需向不同市场监管机构逐一证明替代措施充分。到 7 月底约 190 家组织签署。",
+    "decision": "include",
+    "confidence": 96,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "regulatory",
+    "information_type": "regulation_policy",
+    "evidence_level": "confirmed",
+    "source": "European Commission",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+    "published_at": "2026-08-02T00:00:00Z",
+    "primary_tags": [
+      "EU AI Act",
+      "Article 50",
+      "AI Content Labelling",
+      "Deepfakes",
+      "C2PA"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "监管从原则进入可执行的内容标记、检测和部署者标签义务，会直接影响模型输出元数据、内容发布流程、跨平台水印和企业合规证据。",
+    "personal_relevance_cn": "用于个人判断 AI 供给、企业采用、监管义务和模型平台竞争位置的结构性变化。",
+    "product_opportunity_cn": "把采用、算力供给、监管标签和组织控制权变化转化为产品路线、合规与生态风险检查项。",
+    "competitive_risk_cn": "若只跟踪单个模型和功能，会错过算力瓶颈、企业分发、监管义务与组织控制权对产品竞争的影响。",
+    "recommended_action": "monitor",
+    "questions_to_validate": [
+      "官方指标的统计口径、持续性和可比基线是什么？",
+      "后续哪些法规、资本开支、组织或产品动作能验证该结构变化？"
+    ],
+    "follow_up_triggers": [
+      "下一季度财报、监管指南或执行案例发布",
+      "组织调整后发布新模型、平台路线或采用数据"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 5,
+      "technical_or_product_significance": 4,
+      "strategic_value": 5,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 3,
+      "ai_product_value": 4,
+      "macro_value": 5,
+      "actionability": 4
+    },
+    "report_date": "2026-08-02",
+    "event_date": "2026-08-02",
+    "canonical_url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "Code 自愿，但 Article 50 法定义务并非自愿；页面没有替代措施的完整技术阈值、执法案例或各成员国处罚实践。签署 Code 可作为合规证明工具，不等于自动免责。",
+    "related_sources": [
+      {
+        "label": "Google 签署透明度 Code 声明",
+        "url": "https://blog.google/company-news/outreach-and-initiatives/public-policy/eu-ai-act-transparency-code-of-practice/"
+      }
+    ]
+  },
+  {
+    "id": "2026-08-05-google-deepmind-leadership-model-product-control",
+    "demo": false,
+    "topic_lane": "ai_macro",
+    "title": "Google 重组 DeepMind 领导权：Koray 统管 Gemini 模型、研究、App 与开发者团队，Demis 转向 AGI 战略",
+    "summary": "Google 宣布 Demis Hassabis 转任 Google DeepMind Chair 与 Alphabet Chief Scientist，减少日常运营并聚焦 AGI 战略和 Isomorphic Labs；Koray Kavukcuoglu 升任 Google DeepMind SVP，负责 Gemini 模型开发、Frontier AI Research、Gemini App 和开发者团队。Jeff Dean 与 Sanjay Ghemawat 将成立独立公益公司，Google 作为创始投资人与 Cloud 合作方。",
+    "decision": "include",
+    "confidence": 96,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "executive_statement",
+    "information_type": "industry_structure",
+    "evidence_level": "primary_statement",
+    "source": "Google / Google DeepMind",
+    "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
+    "published_at": "2026-08-05T00:00:00Z",
+    "primary_tags": [
+      "Google DeepMind",
+      "Leadership",
+      "Gemini",
+      "AGI Strategy",
+      "Organization"
+    ],
+    "secondary_tags": [],
+    "why_it_matters_cn": "模型、研究、消费 App 和开发者入口被放到同一运营负责人之下，说明 Google 继续压缩从前沿研究到产品分发的组织链路；Demis 的职责上移到 Alphabet 级 AGI 战略。",
+    "personal_relevance_cn": "用于个人判断 AI 供给、企业采用、监管义务和模型平台竞争位置的结构性变化。",
+    "product_opportunity_cn": "把采用、算力供给、监管标签和组织控制权变化转化为产品路线、合规与生态风险检查项。",
+    "competitive_risk_cn": "若只跟踪单个模型和功能，会错过算力瓶颈、企业分发、监管义务与组织控制权对产品竞争的影响。",
+    "recommended_action": "monitor",
+    "questions_to_validate": [
+      "官方指标的统计口径、持续性和可比基线是什么？",
+      "后续哪些法规、资本开支、组织或产品动作能验证该结构变化？"
+    ],
+    "follow_up_triggers": [
+      "下一季度财报、监管指南或执行案例发布",
+      "组织调整后发布新模型、平台路线或采用数据"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 5,
+      "technical_or_product_significance": 4,
+      "strategic_value": 5,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 3,
+      "ai_product_value": 4,
+      "macro_value": 5,
+      "actionability": 4
+    },
+    "report_date": "2026-08-05",
+    "event_date": "2026-08-05",
+    "canonical_url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum",
+    "first_seen_date": "2026-08-14",
+    "last_seen_date": "2026-08-14",
+    "run_dates": [
+      "2026-08-14"
+    ],
+    "evidence_boundary": "这是公司内部信件公开版，能确认职位和汇报范围，但不能据此推断人员变动原因、产品路线成败或未来模型发布日期。页面正文未显式显示日期，本条日期由 Google Sitemap 与页面 Related Story 的 Aug 05, 2026 交叉确认。",
+    "related_sources": []
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "window": {
+    "start": "2026-07-16",
+    "end": "2026-08-14",
+    "timezone": "Asia/Shanghai",
+    "kind": "rolling_30_calendar_days_inclusive"
+  },
+  "counts": {
+    "total": 47,
+    "model": 10,
+    "agent_architecture": 21,
+    "ai_product": 12,
+    "ai_macro": 4
+  },
+  "origins": {
+    "curated_monthly_addition": 14,
+    "person_original_backfill": 13,
+    "daily_history": 20
+  },
+  "note": "产品负责人日期确认候选不自动进入正式 selected；只有满足 FILTER_RULES_AI_V1.md 正文与信息增量门槛的内容才加入。"
+}

@@ -1,7 +1,7 @@
 # AI Signal 日报｜2026-08-14
 
-**窗口：** 北京时间 2026-08-14 00:00 至 2026-08-14 09:45；并补查 8 月 13 日上一轮之后的实质更新
-**一句话结论：** 今天的增量不是单一模型发布，而是速度、推理预算、跨应用记忆、双向读写 mini-app、Runtime 插件化、跨云观测和持续学习闭环同时推进；产品判断应转向真实任务成本、权限、审计、回滚和人工接管。
+**窗口：** 北京时间 2026-08-14 00:00 至 2026-08-14 16:05；本轮增量从 09:45 起检查
+**一句话结论：** 09:45 后没有新增正式事件。DeepSeek 官方价格页补充了 V4-Pro 当前价格及 8 月 16 日起的峰谷价格，生产评测必须把时段、缓存命中和并发限制算进单位成功任务成本。
 
 ## 四主线重点
 
@@ -38,14 +38,14 @@ OpenAI 官方预览 GPT-5.6 Sol Ultrafast，宣称最高为常规模式 14 倍�
 
 ### P0｜DeepSeek-V4-Pro 补报：三级推理强度、Agent 能力升级与原生 Responses API
 
-DeepSeek 官方于昨日上一轮之后发布 V4-Pro，强调生产 Agent 能力升级；V4-Pro 与 V4-Flash 支持 low、high、max 三级 reasoning effort，分别面向简单任务、日常 Agent 工作流和复杂任务，并原生支持 OpenAI Responses API、为 Codex 提供一键配置。V4-Pro 已进入应用、网页 Expert Mode 和 API，但“production gains”没有公开具体评测、成本或延迟数据。[4]
+DeepSeek 官方于昨日上一轮之后发布 V4-Pro，强调生产 Agent 能力升级；V4-Pro 与 V4-Flash 支持 low、high、max 三级 reasoning effort，并原生支持 OpenAI Responses API、为 Codex 提供一键配置。V4-Pro 已进入应用、网页 Expert Mode 和 API。[4] 官方价格页在本轮补充了现价与 8 月 16 日起的峰谷定价：V4-Pro 当前每百万 cache-miss 输入/输出 token 为 0.435/0.87 美元；新方案的离峰价为 0.66/1.98 美元、峰值时段为 1.32/3.96 美元。[11]
 
 **为什么重要：** 模型能力、推理预算控制、API 兼容和产品入口同步变化，可直接影响 Agent 模型选型与迁移成本。
 **个人判断：** 把 low/high/max 纳入同任务成本—成功率评测，并核验 Responses API 兼容程度和 Codex 工具调用表现。
 **机会：** 可按任务复杂度动态路由推理强度，减少简单任务成本，同时保留复杂任务上限。
-**风险：** 缺少公开生产增益数据；模型名保持不变可能造成版本与可复现性追踪困难。
+**风险：** 8 月 16 日起 V4-Pro 的峰值时段输入/输出单价将明显上调。只按当前单价设计模型路由会低估生产成本；模型名保持不变也会增加版本与复现追踪难度。[11]
 **行动：** `alert`。
-**证据边界：** “production gains”未提供任务集、成功率、成本或延迟；事件发生于昨日上一轮之后，以今日 report_date 补报。[4]
+**证据边界：** “production gains”未提供任务集或成功率。新峰谷价格计划于 2026-08-16 16:00 UTC 生效，不能提前写成已执行。[4][11]
 
 ## Agent 架构｜4 条
 
@@ -146,7 +146,7 @@ Francis Irving 复盘一个月内以约 £18/月 Claude 方案制作三款本地
 
 ## 今日判断
 
-1. **模型：** 推理速度与推理预算成为独立产品参数；峰值 tokens/s 和 token 单价都必须换算为单位成功任务成本。
+1. **模型：** 推理速度、推理预算和峰谷定价都已成为独立产品参数；峰值 tokens/s 和 token 单价必须换算为单位成功任务成本。
 2. **Agent Runtime：** 模型、工具、Skills、Session、Sandbox、循环和 UI 正在被抽象成可替换对象，但插件治理和供应链风险同步上升。
 3. **上下文与记忆：** Computer History 把上下文采集扩展到跨应用电脑活动，隐私、删除、纠错和企业权限是核心边界。
 4. **AI 产品：** Sheets canvas 表明生成式界面开始直接读写业务数据，审批、审计和回滚不能滞后。
@@ -154,7 +154,7 @@ Francis Irving 复盘一个月内以约 £18/月 Claude 方案制作三款本地
 
 ## 建议行动
 
-- 本周对 Gemini 3.7 Flash、GPT-5.6 Sol Ultrafast、DeepSeek-V4-Pro 做同任务成本—成功率测试。
+- 本周对 Gemini 3.7 Flash、GPT-5.6 Sol Ultrafast、DeepSeek-V4-Pro 做同任务成本—成功率测试；V4-Pro 需分别覆盖峰值、离峰和缓存命中场景。
 - 为跨应用记忆和双向写入 mini-app 建立权限、删除、审计、回滚和人工确认清单。
 - 复现 Structured Steering、AWS AgentCore OTel 管线和机器人数据闭环的最小原型。
 - Coding Agent 验收加入真实设备/真实数据、视觉回归、恢复演练和独立产品 QA。
@@ -162,7 +162,7 @@ Francis Irving 复盘一个月内以约 £18/月 Claude 方案制作三款本地
 ## 证据边界
 
 - 10 条均来自官方正文、官方公开帖子、技术文章或作者公开工件；不以媒体标题补写正文事实。
-- 模型基准、速度、生产收益与 token 降幅多为来源方自报，需要第三方和个人任务复现。
+- 模型基准、速度、生产收益与 token 降幅多为来源方自报，需要第三方和个人任务复现；DeepSeek 价格为官方价目表，但新方案尚未生效。[11]
 - DeepSeek 两条 event_date 为 8 月 13 日，但发生于上一轮之后，report_date 为 8 月 14 日。
 - X API 尚未配置 OAuth；本轮只核验公开可访问的具体帖子页面，不声称已覆盖全部 X。
 
@@ -174,7 +174,7 @@ Francis Irving 复盘一个月内以约 £18/月 Claude 方案制作三款本地
 - [P0] Gemini 3.7 Flash：年内 0.75/3.75 美元每百万输入/输出 token，进入 API、企业平台和 Spark。[1]
 - [P0] GPT-5.6 Sol Ultrafast：OpenAI 宣称最高 14 倍、约 750 tokens/s，先向少量 API 客户开放。[2]
 - [P0] Computer History：ChatGPT 跨应用/网站记忆，Mac 端 opt-in，新增时间线与 skills。[3]
-- [P0] DeepSeek-V4-Pro：三级推理强度与原生 Responses API。[4]
+- [P0] DeepSeek-V4-Pro：三级推理强度与原生 Responses API；官方已公布 8 月 16 日起的峰谷价格。[4][11]
 - [P0] Sheets canvas：表格之上的双向读写 mini-app。[6]
 - [P1] DeepSeek Harness、AWS 跨云观测、机器人数据闭环、Structured Steering 与真实数据误删复盘。[5][7][8][9][10]
 
@@ -192,3 +192,4 @@ Francis Irving 复盘一个月内以约 £18/月 Claude 方案制作三款本地
 [8] https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop
 [9] https://github.com/pirate/codex-structured-steering
 [10] https://www.flourish.org/2026/08/personal-apps/
+[11] https://api-docs.deepseek.com/quick_start/pricing/

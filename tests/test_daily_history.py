@@ -92,6 +92,23 @@ class DailyHistoryContractTest(unittest.TestCase):
         self.assertIn(page, self.html)
         self.assertTrue((ROOT / page).exists())
 
+    def test_monthly_signal_backfill_contract(self):
+        root = ROOT / "backfills" / "2026-07-16_to_2026-08-14_all_signals"
+        rows = json.loads((root / "selected.json").read_text())
+        summary = json.loads((root / "run-summary.json").read_text())
+        coverage = json.loads((root / "source-coverage.json").read_text())
+        self.assertGreaterEqual(len(rows), 33)
+        self.assertEqual(summary["counts"]["total"], len(rows))
+        self.assertEqual(len({row["id"] for row in rows}), len(rows))
+        self.assertEqual(len({(row.get("canonical_url") or row["url"]).rstrip("/") for row in rows}), len(rows))
+        self.assertTrue(all("2026-07-16" <= (row.get("event_date") or row["published_at"])[:10] <= "2026-08-14" for row in rows))
+        self.assertTrue(all(row.get("evidence_boundary") for row in rows))
+        self.assertEqual(coverage["counts"]["registered"], 107)
+        self.assertEqual(sum(coverage["counts"][key] for key in ("selected", "candidate_only", "checked_no_match", "access_blocked", "auth_required", "mechanical_failure", "not_checked")), 107)
+        page = "monthly-signal-2026-07-16-to-2026-08-14.html"
+        self.assertIn(page, self.html)
+        self.assertTrue((ROOT / page).exists())
+
     def test_content_topic_studio_contract(self):
         date = self.history["latest_date"]
         data = json.loads((ROOT / "content-topics" / date / "topics.json").read_text())
