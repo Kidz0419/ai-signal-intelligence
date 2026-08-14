@@ -1,43 +1,48 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-14T09:45:25+08:00",
+  "run_at": "2026-08-14T09:55:43+08:00",
   "window": {
     "timezone": "Asia/Shanghai",
     "start": "2026-08-14T00:00:00+08:00",
-    "end": "2026-08-14T09:45:25+08:00",
-    "incremental_since": "2026-08-14T00:00:00+08:00"
+    "end": "2026-08-14T09:45:00+08:00",
+    "incremental_since": "2026-08-13T16:29:44+08:00"
   },
-  "queries": 10,
+  "queries": 28,
   "raw_candidates": 40,
   "unique_candidates": 40,
-  "editorial_shortlist": 4,
-  "previous_count": 0,
-  "new_count": 1,
+  "editorial_shortlist": 20,
+  "previous_count": 1,
+  "new_count": 9,
   "updated_count": 0,
-  "total_count": 1,
-  "selected": 1,
+  "total_count": 10,
+  "selected": 10,
   "lane_counts": {
-    "model": 1,
-    "agent_architecture": 0,
-    "ai_product": 0,
+    "model": 3,
+    "agent_architecture": 4,
+    "ai_product": 3,
     "ai_macro": 0
   },
-  "priority_counts": {"P0": 1, "P1": 0, "P2": 0},
-  "executive_model_longform": 1,
-  "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 0,
+  "priority_counts": {
+    "P0": 5,
+    "P1": 5,
+    "P2": 0
+  },
+  "executive_model_longform": 3,
+  "practitioner_statements": 2,
+  "cross_day_duplicates_removed": 1,
   "collection_errors": 3,
   "source_coverage": {
-    "official_model_sources": "covered; Google official RSS and full article verified",
-    "personal_blogs_and_github": "parallel targeted audit in progress at editorial cutoff",
-    "x_api": "xurl installed, but no app/OAuth configured; authenticated search unavailable",
-    "youtube_transcripts": "runtime IP previously blocked; title-only candidates not promoted",
-    "chinese_closed_platforms": "partial; WeChat/Video Accounts/login-walled sources not comprehensively accessible"
+    "official_model_sources": "covered for verified Google, OpenAI and DeepSeek events",
+    "personal_blogs_and_github": "covered through targeted practitioner audit",
+    "x_api": "xurl installed; no app/OAuth; only known public post pages verified",
+    "youtube_transcripts": "runtime IP blocked; no title-only promotion",
+    "chinese_closed_platforms": "partial"
   },
   "excluded_summary": {
-    "secondary_reports_without_same-window_primary_confirmation": 2,
-    "events_published_before_today_window": 2,
-    "ordinary_financing_marketing_or_low_relevance_items": 36
+    "duplicate_or_related_source_merged": 1,
+    "weak_or_conflicting_practitioner_evidence": 4,
+    "outside_window_or_old_resubmission": 8,
+    "secondary_marketing_or_low_relevance": 36
   },
-  "note": "00:46、04:41、08:29 三次定时任务分别因 idle timeout、idle timeout 与 connection error 失败；本轮改为短窗口分批采集并直接核验官方正文。Gemini 3.7 Flash 为截至 09:45 已确认新增。"
+  "note": "三次定时任务失败后由主流程分批恢复；首次发布 1 条后，并行核验补出 9 条并按同日增量追加。DeepSeek 两条为昨日上一轮之后补报；Demis 的 Gemini 转帖并入模型事件。"
 }
