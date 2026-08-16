@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-08-15",
+  "timezone": "Asia/Shanghai",
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。自动流程只生成 candidate，不自动发布。",
+  "scope_label_cn": "最近三天补抓 · 2026-08-15",
+  "source_scope": {
+    "type": "daily",
+    "date": "2026-08-15"
+  },
+  "topics": [
+    {
+      "id": "2026-08-15-watermark-is-not-authorship",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "model",
+      "source_signal_ids": [
+        "2026-08-15-anthropic-claude-text-watermark"
+      ],
+      "working_title_cn": "Claude 文本水印上线后，为什么仍不能证明作者是谁",
+      "core_tension_cn": "可检测的模型参与不等于作者身份、所有权或内容真实性。",
+      "why_now_cn": "头部模型开始把 EU AI Act 透明度要求写进生成路径。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "内容平台",
+        "合规与安全团队"
+      ],
+      "evidence_boundary_cn": "短文本、代码、轻度校对和完整重写会削弱检测。",
+      "source_urls": [
+        "https://www.anthropic.com/news/claude-text-watermark"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Claude 文本水印上线后，为什么仍不能证明作者是谁",
+          "hook": "水印解决的是‘模型可能参与’，不是‘谁写的’。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "暖中性色信息卡、对象—动作—控制面图",
+          "cta": "你最想先验证哪一个边界？"
+        },
+        "twitter": {
+          "title": "Claude 文本水印上线后，为什么仍不能证明作者是谁",
+          "hook": "水印解决的是‘模型可能参与’，不是‘谁写的’。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "one architecture/control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "Claude 文本水印上线后，为什么仍不能证明作者是谁",
+          "hook": "水印解决的是‘模型可能参与’，不是‘谁写的’。",
+          "format": "2000—2500字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "架构图、证据边界表、验证指标清单",
+          "cta": "文末附可复用验收清单"
+        }
+      }
+    },
+    {
+      "id": "2026-08-15-agent-runtime-reliability-contract",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-08-15-openai-agents-sdk-021",
+        "2026-08-15-claude-code-21233-runtime-controls",
+        "2026-08-15-kimi-code-0361-control-plane"
+      ],
+      "working_title_cn": "三家 Agent 工具同一天修什么：审批、恢复、资源限制与可观察性",
+      "core_tension_cn": "Agent 的竞争正在从生成能力转向状态机和控制面可靠性。",
+      "why_now_cn": "OpenAI、Anthropic、Moonshot 的正式 Release 同时暴露相似故障面。",
+      "target_audience_cn": [
+        "Agent 工程师",
+        "AI 平台产品经理",
+        "Coding Agent 用户"
+      ],
+      "evidence_boundary_cn": "版本说明不等于故障率已被生产数据证明改善。",
+      "source_urls": [
+        "https://github.com/openai/openai-agents-python/releases/tag/v0.21.0",
+        "https://github.com/anthropics/claude-code/releases/tag/v2.1.233",
+        "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai/kimi-code%400.36.1"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "三家 Agent 工具同一天修什么：审批、恢复、资源限制与可观察性",
+          "hook": "真正难的不是多跑一个 Agent，而是它被打断、要审批、超资源后还能正确回来。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "暖中性色信息卡、对象—动作—控制面图",
+          "cta": "你最想先验证哪一个边界？"
+        },
+        "twitter": {
+          "title": "三家 Agent 工具同一天修什么：审批、恢复、资源限制与可观察性",
+          "hook": "真正难的不是多跑一个 Agent，而是它被打断、要审批、超资源后还能正确回来。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "one architecture/control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "三家 Agent 工具同一天修什么：审批、恢复、资源限制与可观察性",
+          "hook": "真正难的不是多跑一个 Agent，而是它被打断、要审批、超资源后还能正确回来。",
+          "format": "2000—2500字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "架构图、证据边界表、验证指标清单",
+          "cta": "文末附可复用验收清单"
+        }
+      }
+    },
+    {
+      "id": "2026-08-15-production-agent-three-control-planes",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-08-15-aws-production-agent-patterns"
+      ],
+      "working_title_cn": "生产 Agent 的三个控制面：身份、共享状态与 Trace",
+      "core_tension_cn": "模型与工具之外，生产系统需要网络授权、跨 Agent 交接和异构模型成本追踪。",
+      "why_now_cn": "AWS 同日公开三套有代码的参考实现。",
+      "target_audience_cn": [
+        "企业架构师",
+        "Agent 平台团队",
+        "安全负责人"
+      ],
+      "evidence_boundary_cn": "案例是参考架构，不是临床生产验证或合规认证。",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/networking-and-content-delivery/zero-trust-networking-for-agentic-ai-with-amazon-vpc-lattice/"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "生产 Agent 的三个控制面：身份、共享状态与 Trace",
+          "hook": "把 Agent 接进企业数据之前，先回答谁能读、状态放哪、调用如何追踪。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "暖中性色信息卡、对象—动作—控制面图",
+          "cta": "你最想先验证哪一个边界？"
+        },
+        "twitter": {
+          "title": "生产 Agent 的三个控制面：身份、共享状态与 Trace",
+          "hook": "把 Agent 接进企业数据之前，先回答谁能读、状态放哪、调用如何追踪。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "one architecture/control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "生产 Agent 的三个控制面：身份、共享状态与 Trace",
+          "hook": "把 Agent 接进企业数据之前，先回答谁能读、状态放哪、调用如何追踪。",
+          "format": "2000—2500字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "架构图、证据边界表、验证指标清单",
+          "cta": "文末附可复用验收清单"
+        }
+      }
+    },
+    {
+      "id": "2026-08-15-copilot-model-policy",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-15-github-copilot-grok-46"
+      ],
+      "working_title_cn": "Copilot 加一个新模型，为什么企业真正要改的是策略和预算",
+      "core_tension_cn": "模型下拉框扩容会把数据政策、白名单和按量费用同时带进组织治理。",
+      "why_now_cn": "Grok 4.6 已进入 Copilot 的 IDE、CLI 和云端 Agent 入口。",
+      "target_audience_cn": [
+        "开发者平台产品经理",
+        "企业 IT",
+        "AI 成本负责人"
+      ],
+      "evidence_boundary_cn": "渐进开放且企业默认关闭，未改变任务级审批与回滚。",
+      "source_urls": [
+        "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Copilot 加一个新模型，为什么企业真正要改的是策略和预算",
+          "hook": "新模型不是多一个选项，而是多一套成本、数据与任务适配决策。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "暖中性色信息卡、对象—动作—控制面图",
+          "cta": "你最想先验证哪一个边界？"
+        },
+        "twitter": {
+          "title": "Copilot 加一个新模型，为什么企业真正要改的是策略和预算",
+          "hook": "新模型不是多一个选项，而是多一套成本、数据与任务适配决策。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "one architecture/control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "Copilot 加一个新模型，为什么企业真正要改的是策略和预算",
+          "hook": "新模型不是多一个选项，而是多一套成本、数据与任务适配决策。",
+          "format": "2000—2500字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "架构图、证据边界表、验证指标清单",
+          "cta": "文末附可复用验收清单"
+        }
+      }
+    }
+  ]
+}

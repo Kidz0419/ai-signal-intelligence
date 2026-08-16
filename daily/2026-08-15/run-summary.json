@@ -1,0 +1,46 @@
+{
+  "run_type": "three_day_recovery",
+  "run_at": "2026-08-17T03:03:00+08:00",
+  "window": {
+    "timezone": "Asia/Shanghai",
+    "start": "2026-08-14T16:30:00+08:00",
+    "end": "2026-08-17T03:03:00+08:00"
+  },
+  "raw_candidates": 14,
+  "unique_candidates": 14,
+  "editorial_shortlist": 9,
+  "previous_count": 0,
+  "new_count": 9,
+  "updated_count": 0,
+  "total_count": 9,
+  "selected": 9,
+  "lane_counts": {
+    "agent_architecture": 3,
+    "model": 2,
+    "ai_macro": 1,
+    "ai_product": 3
+  },
+  "priority_counts": {
+    "P0": 2,
+    "P1": 7,
+    "P2": 0,
+    "P3": 0
+  },
+  "decision_counts": {
+    "include": 8,
+    "watchlist": 1
+  },
+  "cross_day_duplicates_removed": 0,
+  "exclusions": [
+    "OpenAI Sitemap 中 FedRAMP、Rosalind、Sora 等为旧页面近期 lastmod，按真实发布日期排除。",
+    "HF State of Open Models 发布于北京时间 8 月 14 日 08:00，早于恢复窗口。",
+    "Anthropic 多 Agent 研究发布于 8 月 13 日，早于恢复窗口。",
+    "Codex 0.148 alpha Release 只有标签、无变更正文，不升正式卡。",
+    "Dario Amodei 的信任危机发言不以模型本身为主题，按高管边界排除。"
+  ],
+  "collection_contract": {
+    "http_2xx_is_not_checked_no_match": true,
+    "search_snippets_are_discovery_only": true,
+    "sitemap_lastmod_is_not_publication_date": true
+  }
+}

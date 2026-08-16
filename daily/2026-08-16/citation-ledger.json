@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.calcalistech.com/ctechnews/article/b1evv3aufg",
+      "title": "Anthropic 据报接近以约 70 亿美元收购 Decart，但双方明确尚未签署协议",
+      "publisher": "CTech",
+      "evidence_level": "reported",
+      "accessed": "2026-08-17"
+    },
+    {
+      "id": 2,
+      "url": "https://www.reuters.com/business/nvidia-talks-invest-3-billion-sb-energy-part-openai-data-center-deal-information-2026-08-15/",
+      "title": "NVIDIA 据报拟向 SB Energy 投资至多 30 亿美元，配套 OpenAI 俄亥俄数据中心融资",
+      "publisher": "Reuters",
+      "evidence_level": "reported",
+      "accessed": "2026-08-17"
+    }
+  ]
+}

@@ -3923,9 +3923,10 @@
     "first_seen_date": "2026-08-14",
     "last_seen_date": "2026-08-14",
     "run_dates": [
-      "2026-08-14"
+      "2026-08-14",
+      "2026-08-17"
     ],
-    "evidence_boundary": "模型上线、API 兼容和价格表来自 DeepSeek 官方；“production gains”未提供任务集或成功率。新峰谷价格计划于 2026-08-16 16:00 UTC 生效，不应提前写成已执行。",
+    "evidence_boundary": "模型上线、API 兼容和价格来自 DeepSeek 官方；production gains 未给任务集。此前公告的峰谷定价已于 2026-08-16 16:00 UTC（北京时间 8 月 17 日 00:00）进入生效时点，仍需核验线上账单与缓存口径。",
     "related_sources": [
       {
         "url": "https://x.com/deepseek_ai/status/2087864585504305397",
@@ -4136,6 +4137,69 @@
     "monthly_review_status": "baseline_evidence_present"
   },
   {
+    "id": "2026-08-15-chatgpt-aug14-product-batch",
+    "demo": false,
+    "topic_lane": "ai_product",
+    "title": "ChatGPT 8 月 14 日批次：交互测验、项目记忆切换、个性化建议与 Linux 公测",
+    "summary": "OpenAI Release Notes 的 8 月 14 日批次加入对话内交互测验、已有项目在 default/project-only memory 间切换、基于会话历史与连接工具的首页建议、Free/Go 网页手动 Think，以及 ChatGPT/Codex Linux 桌面应用公开预览。Linux 版可执行浏览器动作，但尚不能控制其他桌面应用。",
+    "decision": "include",
+    "confidence": 88,
+    "relevance_level": "P1",
+    "signal_type": "competitor",
+    "content_type": "official_release",
+    "information_type": "product_workflow",
+    "evidence_level": "confirmed",
+    "source": "OpenAI",
+    "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "published_at": "2026-08-14",
+    "primary_tags": [
+      "ChatGPT",
+      "Project Memory",
+      "Linux"
+    ],
+    "secondary_tags": [
+      "Browser Actions",
+      "Personalization"
+    ],
+    "why_it_matters_cn": "同一批次同时改变学习交互、项目上下文隔离、个性化入口和桌面 Agent 的操作范围。",
+    "personal_relevance_cn": "重点核验 shared project 固定 project-only、设置延迟、连接工具使用和 Linux 浏览器动作的权限提示。",
+    "product_opportunity_cn": "可研究项目级记忆模式切换与建议入口，但需把上下文来源、共享边界和执行范围前置展示。",
+    "competitive_risk_cn": "滚动 Release Notes 只有日期粒度；Linux 仍为 preview，且不能控制浏览器外桌面应用。",
+    "recommended_action": "alert",
+    "questions_to_validate": [
+      "该变化在真实任务中的成功率、失败模式、成本和人工接管边界是什么？",
+      "后续是否出现正式 GA、独立复现、监管细则或已签署文件？"
+    ],
+    "follow_up_triggers": [
+      "来源方发布正式版本、实测数据或状态更新",
+      "出现独立复现、已签署文件或生产采用证据"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 4,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 2,
+      "agent_architecture_value": 2,
+      "ai_product_value": 5,
+      "macro_value": 2,
+      "actionability": 4
+    },
+    "report_date": "2026-08-15",
+    "event_date": "2026-08-14",
+    "canonical_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "first_seen_date": "2026-08-15",
+    "last_seen_date": "2026-08-15",
+    "run_dates": [
+      "2026-08-15"
+    ],
+    "evidence_boundary": "官方正文确认功能与适用范围；条目仅标 August 14, 2026，无精确发布时间，文章级 updatedAt 不能当条目发布时间。",
+    "monthly_backfill_window": "2026-07-16_to_2026-08-14",
+    "monthly_origin": "daily_history",
+    "monthly_review_status": "baseline_evidence_present"
+  },
+  {
     "id": "2026-08-14-openai-computer-history",
     "demo": false,
     "topic_lane": "ai_product",
@@ -4332,6 +4396,132 @@
     "monthly_review_status": "baseline_evidence_present"
   },
   {
+    "id": "2026-08-15-kimi-code-0361-control-plane",
+    "demo": false,
+    "topic_lane": "ai_product",
+    "title": "Kimi Code 0.36.1 重做多 Agent 控制面：Swarm 独立开关、子任务状态过滤与后台 Bash 可审计",
+    "summary": "Kimi Code 0.36.1 将 Swarm 从 plan/goal 模式中拆成独立工具栏开关，重做子 Agent 卡片与状态过滤；后台 Bash 面板可按状态筛选并查看命令和输出。版本还修复第二次审批提示导致会话挂起、工具结果错序、MCP OAuth 取消后等待超时、运行中 fork 产生部分状态等问题。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "competitor",
+    "content_type": "official_release",
+    "information_type": "agent_product",
+    "evidence_level": "confirmed",
+    "source": "Moonshot AI",
+    "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai/kimi-code%400.36.1",
+    "published_at": "2026-08-14T12:53:36Z",
+    "primary_tags": [
+      "Kimi Code",
+      "Swarm",
+      "Subagent UI"
+    ],
+    "secondary_tags": [
+      "Approval",
+      "Background Bash"
+    ],
+    "why_it_matters_cn": "多 Agent 不再只是隐藏编排能力，而是出现可见的任务状态、后台命令输出和独立模式入口；同时暴露审批与历史一致性是实际故障面。",
+    "personal_relevance_cn": "应验收 Swarm 开关、子任务筛选、后台命令详情、审批恢复、长历史 fork 和失败状态是否一致。",
+    "product_opportunity_cn": "可把子 Agent、后台任务、审批和会话分叉统一为可观察、可筛选、可追溯的工作对象。",
+    "competitive_risk_cn": "大量变化集中在 Web UI 与缺陷修复；没有公开并发成功率、冲突率、成本和回滚能力。",
+    "recommended_action": "alert",
+    "questions_to_validate": [
+      "该变化在真实任务中的成功率、失败模式、成本和人工接管边界是什么？",
+      "后续是否出现正式 GA、独立复现、监管细则或已签署文件？"
+    ],
+    "follow_up_triggers": [
+      "来源方发布正式版本、实测数据或状态更新",
+      "出现独立复现、已签署文件或生产采用证据"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 4,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 2,
+      "agent_architecture_value": 2,
+      "ai_product_value": 5,
+      "macro_value": 2,
+      "actionability": 4
+    },
+    "report_date": "2026-08-15",
+    "event_date": "2026-08-14",
+    "canonical_url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai/kimi-code%400.36.1",
+    "first_seen_date": "2026-08-15",
+    "last_seen_date": "2026-08-15",
+    "run_dates": [
+      "2026-08-15"
+    ],
+    "evidence_boundary": "官方 Release 和对应 PR 可核验；这不是 Kimi 基础模型或 Agent Swarm 新发布。",
+    "monthly_backfill_window": "2026-07-16_to_2026-08-14",
+    "monthly_origin": "daily_history",
+    "monthly_review_status": "baseline_evidence_present"
+  },
+  {
+    "id": "2026-08-15-anthropic-claude-text-watermark",
+    "demo": false,
+    "topic_lane": "model",
+    "title": "Anthropic 宣布未来 Claude 模型加入文本水印：采用 SynthID-Text 变体并准备检测 API",
+    "summary": "Anthropic 宣布未来 Claude 模型生成的文本将加入 SynthID-Text 路线的水印，以履行 EU AI Act 透明度要求，并计划全球上线。水印不增加 token、不携带用户或组织身份；未来将提供检测 API。短文本、事实性段落、轻度校对和代码中的可检测信号较弱，完整重写可以移除水印。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P0",
+    "signal_type": "regulation",
+    "content_type": "official_release",
+    "information_type": "model_safety",
+    "evidence_level": "confirmed",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/claude-text-watermark",
+    "published_at": "2026-08-14",
+    "primary_tags": [
+      "Claude",
+      "Text Watermark",
+      "SynthID-Text"
+    ],
+    "secondary_tags": [
+      "EU AI Act",
+      "C2PA"
+    ],
+    "why_it_matters_cn": "模型输出溯源从研究机制进入头部模型默认生成路径，并直接受 EU AI Act 驱动；检测能力和误用边界会影响内容产品、合规与用户解释。",
+    "personal_relevance_cn": "后续应测试不同长度、改写比例、翻译和代码输出的检测召回与误报，不能把水印检测当作者身份判定。",
+    "product_opportunity_cn": "内容系统可把水印概率、C2PA 凭证和来源说明组合成分层溯源，而非二元 AI 检测。",
+    "competitive_risk_cn": "水印只说明 Claude 可能参与，不证明作者、所有权或具体用户；重写和短文本会降低检测能力。",
+    "recommended_action": "alert",
+    "questions_to_validate": [
+      "该变化在真实任务中的成功率、失败模式、成本和人工接管边界是什么？",
+      "后续是否出现正式 GA、独立复现、监管细则或已签署文件？"
+    ],
+    "follow_up_triggers": [
+      "来源方发布正式版本、实测数据或状态更新",
+      "出现独立复现、已签署文件或生产采用证据"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 4,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 5,
+      "agent_architecture_value": 2,
+      "ai_product_value": 2,
+      "macro_value": 2,
+      "actionability": 4
+    },
+    "report_date": "2026-08-15",
+    "event_date": "2026-08-14",
+    "canonical_url": "https://www.anthropic.com/news/claude-text-watermark",
+    "first_seen_date": "2026-08-15",
+    "last_seen_date": "2026-08-15",
+    "run_dates": [
+      "2026-08-15"
+    ],
+    "evidence_boundary": "发布日期来自官方页面日期；页面未给精确时区。质量无影响来自 Anthropic 内测及其引用研究，仍需独立检验。",
+    "monthly_backfill_window": "2026-07-16_to_2026-08-14",
+    "monthly_origin": "daily_history",
+    "monthly_review_status": "baseline_evidence_present"
+  },
+  {
     "id": "2026-08-14-google-gemini-37-flash",
     "demo": false,
     "topic_lane": "model",
@@ -4394,6 +4584,68 @@
       "2026-08-14"
     ],
     "evidence_boundary": "能力基准、减少人工监督和安全改善来自 Google 自报，尚无同窗口独立复现；介绍价仅承诺至 2026 年底。",
+    "monthly_backfill_window": "2026-07-16_to_2026-08-14",
+    "monthly_origin": "daily_history",
+    "monthly_review_status": "baseline_evidence_present"
+  },
+  {
+    "id": "2026-08-15-google-heir-private-inference",
+    "demo": false,
+    "topic_lane": "model",
+    "title": "Google 开源 HEIR 编译器：把预训练模型转换为同态加密推理，并公开四类示例源码",
+    "summary": "Google 展示 HEIR（Homomorphic Encryption Intermediate Representation）开源编译器，可把在明文输入上运行的预训练模型转换为处理加密输入的推理程序。官方公开推荐、信用卡欺诈检测、加密流量异常检测和热词检测四类示例及源码，当前单线程 CPU 可运行，并与多家同态加密硬件团队合作。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "research",
+    "content_type": "technical_update",
+    "information_type": "model_deployment",
+    "evidence_level": "confirmed",
+    "source": "Google",
+    "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+    "published_at": "2026-08-14",
+    "primary_tags": [
+      "HEIR",
+      "Homomorphic Encryption",
+      "Private Inference"
+    ],
+    "secondary_tags": [
+      "Open Source"
+    ],
+    "why_it_matters_cn": "它把私有 AI 从只能本地推理或可信硬件扩展到纯密码学保护的云端计算路径，可能改变医疗、金融和跨机构模型部署边界。",
+    "personal_relevance_cn": "重点核验四个示例的真实模型规模、延迟、吞吐、密文膨胀和单位请求成本。",
+    "product_opportunity_cn": "可将高敏字段的加密推理作为混合架构的一层，而不是要求所有工作负载一次性迁移。",
+    "competitive_risk_cn": "同态加密仍有显著成本；官方尚未公布硬件加速后的生产延迟，所谓一键转换是愿景而非当前通用能力。",
+    "recommended_action": "alert",
+    "questions_to_validate": [
+      "该变化在真实任务中的成功率、失败模式、成本和人工接管边界是什么？",
+      "后续是否出现正式 GA、独立复现、监管细则或已签署文件？"
+    ],
+    "follow_up_triggers": [
+      "来源方发布正式版本、实测数据或状态更新",
+      "出现独立复现、已签署文件或生产采用证据"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 4,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 5,
+      "agent_architecture_value": 2,
+      "ai_product_value": 2,
+      "macro_value": 2,
+      "actionability": 4
+    },
+    "report_date": "2026-08-15",
+    "event_date": "2026-08-14",
+    "canonical_url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption",
+    "first_seen_date": "2026-08-15",
+    "last_seen_date": "2026-08-15",
+    "run_dates": [
+      "2026-08-15"
+    ],
+    "evidence_boundary": "官方确认开源编译器、合作方、四个示例和源码；未宣称已经普遍生产可用。",
     "monthly_backfill_window": "2026-07-16_to_2026-08-14",
     "monthly_origin": "daily_history",
     "monthly_review_status": "baseline_evidence_present"

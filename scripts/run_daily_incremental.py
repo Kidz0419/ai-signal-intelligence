@@ -18,12 +18,13 @@ import ssl
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
+from urllib.parse import urlparse
 from xml.etree import ElementTree as ET
 from zoneinfo import ZoneInfo
 
@@ -162,7 +163,7 @@ class ProbeResult:
         }
 
 
-def xml_items_from_feed(url: str, limit: int = 8) -> list[ProbeItem]:
+def xml_items_from_feed(url: str, limit: int = 40) -> list[ProbeItem]:
     _status, text, _final_url = request_text(url, use_range=False)
     root = ET.fromstring(text.encode("utf-8"))
 
@@ -192,6 +193,58 @@ def xml_items_from_feed(url: str, limit: int = 8) -> list[ProbeItem]:
     return out
 
 
+def xml_items_from_sitemap(url: str, limit: int = 120) -> list[ProbeItem]:
+    """Return lastmod candidates; lastmod is never publication evidence."""
+    _status, text, _final_url = request_text(url, use_range=False)
+    root = ET.fromstring(text.encode("utf-8"))
+
+    def local(tag: str) -> str:
+        return tag.split("}")[-1]
+
+    if local(root.tag) == "sitemapindex":
+        children = []
+        for node in root:
+            loc = next(("".join(c.itertext()).strip() for c in node if local(c.tag) == "loc"), "")
+            if loc:
+                children.append(loc)
+        out: list[ProbeItem] = []
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            futures = [pool.submit(xml_items_from_sitemap, child, limit) for child in children[:50]]
+            for fut in as_completed(futures):
+                try:
+                    out.extend(fut.result())
+                except Exception:
+                    continue
+        return sorted(out, key=lambda item: item.published_at, reverse=True)[:limit]
+
+    out = []
+    for node in root:
+        if local(node.tag) != "url":
+            continue
+        vals = {local(c.tag): "".join(c.itertext()).strip() for c in node}
+        raw = vals.get("lastmod", "")
+        if not raw:
+            continue
+        try:
+            dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=UTC)
+        except ValueError:
+            continue
+        loc = vals.get("loc", "")
+        parsed = urlparse(loc)
+        path = parsed.path.lower()
+        host = parsed.netloc.lower()
+        if host.endswith("openai.com") and not path.startswith("/index/"):
+            continue
+        if host.endswith("anthropic.com") and not path.startswith((
+            "/news/", "/research/", "/engineering/"
+        )):
+            continue
+        out.append(ProbeItem(loc, loc, iso_utc(dt)))
+    return sorted(out, key=lambda item: item.published_at, reverse=True)[:limit]
+
+
 def recent_only(items: list[ProbeItem], cutoff_utc: datetime) -> list[ProbeItem]:
     out = []
     for item in items:
@@ -205,10 +258,11 @@ def recent_only(items: list[ProbeItem], cutoff_utc: datetime) -> list[ProbeItem]
 
 def run_probe(name: str, adapter: str, url: str, cutoff_utc: datetime) -> ProbeResult:
     try:
-        items = xml_items_from_feed(url)
+        items = xml_items_from_sitemap(url) if adapter == "sitemap_lastmod" else xml_items_from_feed(url)
         recent = recent_only(items, cutoff_utc)
         status = "candidate_only" if recent else "checked_no_match"
-        return ProbeResult(name, adapter, url, status, len(items), recent)
+        note = "lastmod is discovery-only; verify datePublished/body before selection" if adapter == "sitemap_lastmod" else ""
+        return ProbeResult(name, adapter, url, status, len(items), recent, note)
     except HTTPError as e:
         if e.code in (401, 403):
             return ProbeResult(name, adapter, url, "access_blocked", 0, [], f"HTTP {e.code}")
@@ -229,7 +283,7 @@ def build_brief(date: str, run_at: datetime, previous_count: int, total_count: i
     return f"""# AI Signal 日报｜{date}
 
 **窗口：** 北京时间 {date} 00:00 至 {run_at.strftime('%Y-%m-%d %H:%M')}  
-**一句话结论：** 本轮完成 111 个主注册信源的连通性审计，并对 8 个 RSS/Atom 通道执行日期解析；代表性探针没有发现满足 FILTER_RULES_AI_V1.md 的高质量正式新增信号，因此今日增量维持 0 条，不为数量降标。
+**一句话结论：** 本轮完成 {sum(source_counts.values())} 个主注册信源的连通性审计，并对 {len(probe_results)} 个 Feed、Release 与 Sitemap 通道执行增量发现；候选只进入待核验池，不由机械脚本自动升级为正式 Signal。
 
 ## 四主线重点
 
@@ -294,7 +348,7 @@ def build_brief(date: str, run_at: datetime, previous_count: int, total_count: i
 
 ## 飞书短版
 
-**一句话结论：** 本轮完成 111 个注册源连通性审计和 8 个日期解析探针；代表性探针没有高质量正式新增，日报和选题都维持 0。  
+**一句话结论：** 本轮完成 {sum(source_counts.values())} 个注册源连通性审计和 {len(probe_results)} 个增量发现探针；候选等待正文与发布日期核验。  
 **判断：** 不为数量降标，继续等同日后续窗口。  
 **覆盖：** not_checked {source_counts.get('not_checked', 0)}，access_blocked {blocked}，mechanical_failure {mech}；日期解析探针 checked_no_match {sum(p.status == 'checked_no_match' for p in probe_results)}。  
 **结果：** previous_count={previous_count}，new_count=0，updated_count=0，total_count={total_count}。
@@ -344,11 +398,17 @@ def main() -> None:
     signal_registry = json.loads((root / "config" / "signal-source-registry.json").read_text())
     person_registry = json.loads((root / "config" / "person-source-registry.json").read_text())
 
-    start = datetime(run_at.year, run_at.month, run_at.day, 0, 0, 0, tzinfo=TZ)
+    # Rolling recovery window: if the gateway is down for several days, the
+    # next successful run still discovers missed entries instead of looking
+    # only at the current calendar day.
+    start = run_at - timedelta(hours=80)
     cutoff_utc = start.astimezone(UTC)
 
     existing_rows = load_json(day_dir / "selected.json", [])
     existing_topics = load_json(day_dir.parent.parent / "content-topics" / date / "topics.json", build_empty_topics(date))
+    existing_citations = load_json(day_dir / "citations.json", None)
+    existing_ledger = load_json(day_dir / "citation-ledger.json", None)
+    existing_brief = (day_dir / "daily-brief.md").read_text() if (day_dir / "daily-brief.md").exists() else None
     previous_count = len(existing_rows)
 
     sources = []
@@ -395,14 +455,61 @@ def main() -> None:
     probes = [
         ("Google Innovation & AI RSS", "rss", "https://blog.google/innovation-and-ai/rss/"),
         ("Google Products & Platforms RSS", "rss", "https://blog.google/products-and-platforms/rss/"),
+        ("Google Security RSS", "rss", "https://blog.google/security/rss/"),
         ("AWS ML Blog RSS", "rss", "https://aws.amazon.com/blogs/machine-learning/feed/"),
+        ("AWS Architecture RSS", "rss", "https://aws.amazon.com/blogs/architecture/feed/"),
+        ("AWS Security RSS", "rss", "https://aws.amazon.com/blogs/security/feed/"),
+        ("AWS Storage RSS", "rss", "https://aws.amazon.com/blogs/storage/feed/"),
+        ("AWS Database RSS", "rss", "https://aws.amazon.com/blogs/database/feed/"),
+        ("AWS Public Sector RSS", "rss", "https://aws.amazon.com/blogs/publicsector/feed/"),
+        ("AWS Networking RSS", "rss", "https://aws.amazon.com/blogs/networking-and-content-delivery/feed/"),
         ("GitHub Copilot Changelog feed", "rss", "https://github.blog/changelog/label/copilot/feed/"),
-        ("OpenAI Agents SDK releases", "atom", "https://github.com/openai/openai-agents-python/releases.atom"),
-        ("Google ADK releases", "atom", "https://github.com/google/adk-python/releases.atom"),
-        ("Microsoft Agent Framework releases", "atom", "https://github.com/microsoft/agent-framework/releases.atom"),
+        ("Hugging Face Blog", "rss", "https://huggingface.co/blog/feed.xml"),
         ("Simon Willison atom", "atom", "https://simonwillison.net/atom/everything/"),
+        ("OpenAI sitemap", "sitemap_lastmod", "https://openai.com/sitemap.xml"),
+        ("Anthropic sitemap", "sitemap_lastmod", "https://www.anthropic.com/sitemap.xml"),
+        ("Google Blog sitemap", "sitemap_lastmod", "https://blog.google/en-us/sitemap.xml"),
     ]
-    probe_results = [run_probe(name, adapter, url, cutoff_utc) for name, adapter, url in probes]
+
+    # Every concrete GitHub repository in the registry gets a Releases Atom
+    # adapter. Organization landing pages are deliberately skipped.
+    for channel in signal_registry["channels"]:
+        for src in channel.get("sources", []) + channel.get("additional_sources", []):
+            parsed = urlparse(src["url"])
+            parts = [p for p in parsed.path.split("/") if p]
+            if parsed.netloc.lower() == "github.com" and len(parts) == 2:
+                repo_url = f"https://github.com/{parts[0]}/{parts[1]}"
+                probes.append((f"{src['name']} releases", "atom", repo_url + "/releases.atom"))
+
+    # High-signal product repos not represented as concrete registry repos.
+    for name, repo in (
+        ("OpenAI Codex", "openai/codex"),
+        ("Claude Code", "anthropics/claude-code"),
+        ("Kimi Code", "MoonshotAI/kimi-code"),
+    ):
+        probes.append((f"{name} releases", "atom", f"https://github.com/{repo}/releases.atom"))
+
+    deduped = []
+    seen_probe_urls = set()
+    for spec in probes:
+        if spec[2] in seen_probe_urls:
+            continue
+        seen_probe_urls.add(spec[2])
+        deduped.append(spec)
+    probes = deduped
+    probe_results = []
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        future_to_spec = {
+            pool.submit(run_probe, name, adapter, url, cutoff_utc): (name, url)
+            for name, adapter, url in probes
+        }
+        for fut in as_completed(future_to_spec):
+            try:
+                probe_results.append(fut.result())
+            except Exception as exc:  # noqa: BLE001
+                name, url = future_to_spec[fut]
+                probe_results.append(ProbeResult(name, "unknown", url, "mechanical_failure", 0, [], str(exc)[:200]))
+    probe_results.sort(key=lambda p: p.name.lower())
     raw_candidates = sum(len(p.recent_items) for p in probe_results)
     unique_candidates = len({item.url for p in probe_results for item in p.recent_items})
 
@@ -418,9 +525,84 @@ def main() -> None:
     priority_counts = {k: sum(row.get("relevance_level") == k for row in selected_rows) for k in ("P0", "P1", "P2", "P3")}
 
     save_json(day_dir / "selected.json", selected_rows)
-    save_json(day_dir / "citations.json", [])
-    save_json(day_dir / "citation-ledger.json", build_empty_ledger())
-    (day_dir / "daily-brief.md").write_text(build_brief(date, run_at, previous_count, total_count, status_counts, probe_results))
+    # Never erase a richer editorial artifact on a later mechanical run.
+    if existing_citations is None:
+        save_json(day_dir / "citations.json", [])
+    if existing_ledger is None:
+        save_json(day_dir / "citation-ledger.json", build_empty_ledger())
+    if existing_brief is None:
+        (day_dir / "daily-brief.md").write_text(build_brief(date, run_at, previous_count, total_count, status_counts, probe_results))
+
+    existing_discovery = load_json(day_dir / "discovery-candidates.json", {"candidates": []})
+    state_path = root / ".cache" / "discovery-state.json"
+    state_payload = load_json(state_path, {"timestamps": {}})
+    seen_timestamps = state_payload.get("timestamps", {})
+    if not seen_timestamps:
+        # Migration path: the first upgraded run may already have written a
+        # candidate queue before the persistent cursor existed.
+        seen_timestamps = {
+            f"{item.get('adapter', 'unknown')}|{item.get('url', '')}": item.get("published_or_lastmod_at", "")
+            for item in existing_discovery.get("candidates", [])
+            if item.get("url")
+        }
+
+    discovered_this_run = []
+    for probe in probe_results:
+        for item in probe.recent_items:
+            candidate = {
+                "source_name": probe.name,
+                "adapter": probe.adapter,
+                "source_url": probe.source_url,
+                "title": item.title,
+                "url": item.url,
+                "published_or_lastmod_at": item.published_at,
+                "evidence_boundary": (
+                    "sitemap lastmod only; verify article datePublished and body"
+                    if probe.adapter == "sitemap_lastmod"
+                    else "feed/release timestamp; body and inclusion still require editorial verification"
+                ),
+            }
+            state_key = f"{probe.adapter}|{item.url}"
+            if seen_timestamps.get(state_key) != item.published_at:
+                discovered_this_run.append(candidate)
+            seen_timestamps[state_key] = item.published_at
+
+    def keep_queued_candidate(item: dict[str, Any]) -> bool:
+        if item.get("adapter") != "sitemap_lastmod":
+            return True
+        parsed = urlparse(item.get("url", ""))
+        path = parsed.path.lower()
+        host = parsed.netloc.lower()
+        if host.endswith("openai.com"):
+            return path.startswith("/index/")
+        if host.endswith("anthropic.com"):
+            return path.startswith(("/news/", "/research/", "/engineering/"))
+        return True
+
+    queued_by_key = {
+        (item.get("url"), item.get("published_or_lastmod_at")): item
+        for item in existing_discovery.get("candidates", [])
+        if keep_queued_candidate(item)
+    }
+    for item in discovered_this_run:
+        queued_by_key[(item["url"], item["published_or_lastmod_at"])] = item
+    discovery_candidates = list(queued_by_key.values())
+    discovery_candidates.sort(key=lambda x: (x["published_or_lastmod_at"], x["url"]), reverse=True)
+    save_json(state_path, {"schema_version": 1, "timestamps": seen_timestamps})
+    save_json(day_dir / "discovery-candidates.json", {
+        "schema_version": 1,
+        "generated_at": iso_cn(run_at),
+        "window": {"start": iso_cn(start), "end": iso_cn(run_at), "timezone": "Asia/Shanghai"},
+        "candidate_count": len(discovery_candidates),
+        "new_in_run_count": len(discovered_this_run),
+        "new_candidates": discovered_this_run,
+        "candidates": discovery_candidates,
+        "contract": {
+            "candidate_is_not_signal": True,
+            "sitemap_lastmod_is_not_publication_date": True,
+            "search_or_feed_title_requires_body_verification": True,
+        },
+    })
 
     topics_path = root / "content-topics" / date / "topics.json"
     if topics_path.exists():
@@ -455,7 +637,8 @@ def main() -> None:
         "previous_count": previous_count,
         "new_count": 0,
         "updated_count": 0,
-        "excluded_count": raw_candidates,
+        "excluded_count": 0,
+        "unreviewed_candidate_count": raw_candidates,
         "total_count": total_count,
         "selected": total_count,
         "lane_counts": lane_counts,
@@ -480,7 +663,7 @@ def main() -> None:
             "platform_variants": len(topics_payload.get("topics", [])) * 3,
         },
         "notes": [
-            "No new official signal met the inclusion bar in the eight date-parsed representative probes.",
+            f"{raw_candidates} discovery candidates were found across {len(probe_results)} adapters; they remain unreviewed until publication date and body verification.",
             "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
             "Static pages were not promoted as fresh based on collected_at alone.",
             "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match.",

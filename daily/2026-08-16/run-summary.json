@@ -6,26 +6,31 @@
     "start": "2026-08-14T16:30:00+08:00",
     "end": "2026-08-17T03:03:00+08:00"
   },
-  "raw_candidates": 2,
-  "unique_candidates": 2,
-  "editorial_shortlist": 0,
+  "raw_candidates": 5,
+  "unique_candidates": 5,
+  "editorial_shortlist": 2,
   "previous_count": 0,
-  "new_count": 0,
-  "updated_count": 1,
-  "total_count": 0,
-  "selected": 0,
-  "lane_counts": {},
+  "new_count": 2,
+  "updated_count": 0,
+  "total_count": 2,
+  "selected": 2,
+  "lane_counts": {
+    "ai_macro": 2
+  },
   "priority_counts": {
     "P0": 0,
     "P1": 0,
-    "P2": 0,
+    "P2": 2,
     "P3": 0
   },
-  "decision_counts": {},
+  "decision_counts": {
+    "watchlist": 2
+  },
   "cross_day_duplicates_removed": 0,
   "exclusions": [
-    "截至补抓完成时，没有新增唯一正式事件；DeepSeek V4-Pro 峰谷定价生效按同一事件更新 8 月 14 日原卡，不重复建卡。",
-    "Codex alpha Release 仅版本标签、无正式变更说明。"
+    "Qwen 30 亿下载里程碑只有受阻媒体页面，缺少可访问的一手口径和统计定义，延后核验。",
+    "NVIDIA 开发者论坛的个人量化帖子不是 NVIDIA 官方产品发布。",
+    "普通融资、泛 AI 观点和内容农场转载全部排除。"
   ],
   "collection_contract": {
     "http_2xx_is_not_checked_no_match": true,

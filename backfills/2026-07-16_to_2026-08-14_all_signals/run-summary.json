@@ -6,16 +6,16 @@
     "kind": "rolling_30_calendar_days_inclusive"
   },
   "counts": {
-    "total": 70,
-    "model": 16,
+    "total": 74,
+    "model": 18,
     "agent_architecture": 25,
-    "ai_product": 19,
+    "ai_product": 21,
     "ai_macro": 10
   },
   "origins": {
     "curated_monthly_addition": 39,
     "person_original_backfill": 13,
-    "daily_history": 18
+    "daily_history": 22
   },
   "note": "产品负责人日期确认候选不自动进入正式 selected；只有满足 FILTER_RULES_AI_V1.md 正文与信息增量门槛的内容才加入。"
 }

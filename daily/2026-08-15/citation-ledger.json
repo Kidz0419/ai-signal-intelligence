@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.21.0",
+      "title": "OpenAI Agents SDK v0.21：加入无供应商请求的确定性测试，并加固中断快照、递归审批与 MCP 生命周期",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-17"
+    },
+    {
+      "id": 2,
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
+      "title": "Anthropic 宣布未来 Claude 模型加入文本水印：采用 SynthID-Text 变体并准备检测 API",
+      "publisher": "Anthropic",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-17"
+    },
+    {
+      "id": 3,
+      "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/zero-trust-networking-for-agentic-ai-with-amazon-vpc-lattice/",
+      "title": "AWS 连续公开三套生产 Agent 架构：网络层最小权限、共享文件交接与跨模型可观测",
+      "publisher": "AWS",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-17"
+    },
+    {
+      "id": 4,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.233",
+      "title": "Claude Code v2.1.233 加固企业 Runtime：用户身份透传、Bash 内存上限与权限等待恢复",
+      "publisher": "Anthropic",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-17"
+    },
+    {
+      "id": 5,
+      "url": "https://www.cnbc.com/2026/08/15/us-to-tell-allies-they-must-pick-sides-in-ai-race-with-china-reuters.html",
+      "title": "美国据报拟要求 35 个 AI 合作伙伴在 Pax Silica 与中国框架之间选边",
+      "publisher": "Reuters via CNBC",
+      "evidence_level": "reported",
+      "accessed": "2026-08-17"
+    },
+    {
+      "id": 6,
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "title": "ChatGPT 8 月 14 日批次：交互测验、项目记忆切换、个性化建议与 Linux 公测",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-17"
+    },
+    {
+      "id": 7,
+      "url": "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/",
+      "title": "GitHub Copilot 引入 Grok 4.6：覆盖 IDE、CLI 与云端 Agent，企业默认关闭并按量计费",
+      "publisher": "GitHub",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-17"
+    },
+    {
+      "id": 8,
+      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai/kimi-code%400.36.1",
+      "title": "Kimi Code 0.36.1 重做多 Agent 控制面：Swarm 独立开关、子任务状态过滤与后台 Bash 可审计",
+      "publisher": "Moonshot AI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-17"
+    },
+    {
+      "id": 9,
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "title": "Google 开源 HEIR 编译器：把预训练模型转换为同态加密推理，并公开四类示例源码",
+      "publisher": "Google",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-17"
+    }
+  ]
+}

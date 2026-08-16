@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-08-16",
+  "timezone": "Asia/Shanghai",
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。自动流程只生成 candidate，不自动发布。",
+  "scope_label_cn": "最近三天补抓 · 2026-08-16",
+  "source_scope": {
+    "type": "daily",
+    "date": "2026-08-16"
+  },
+  "topics": [
+    {
+      "id": "2026-08-16-ai-infrastructure-capital-radar",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_macro",
+      "source_signal_ids": [
+        "2026-08-16-anthropic-decart-acquisition-talks",
+        "2026-08-16-nvidia-sb-energy-openai-ohio-talks"
+      ],
+      "working_title_cn": "模型公司的下一场竞争：收购推理技术，还是把算力融资绑定到芯片与能源",
+      "core_tension_cn": "两项都还未签署，却共同显示模型竞争正在向推理效率、能源和资本结构外溢。",
+      "why_now_cn": "Anthropic–Decart 与 NVIDIA–SB Energy/OpenAI 谈判在同一周末进入公开报道。",
+      "target_audience_cn": [
+        "AI 产业研究者",
+        "模型产品负责人",
+        "基础设施投资者"
+      ],
+      "evidence_boundary_cn": "两项均为 reported radar，不得写成已完成交易。",
+      "source_urls": [
+        "https://www.calcalistech.com/ctechnews/article/b1evv3aufg",
+        "https://www.reuters.com/business/nvidia-talks-invest-3-billion-sb-energy-part-openai-data-center-deal-information-2026-08-15/"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "模型公司的下一场竞争：收购推理技术，还是把算力融资绑定到芯片与能源",
+          "hook": "前沿模型的护城河正在从参数扩展到推理效率、能源和信用支持。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "暖中性色信息卡、对象—动作—控制面图",
+          "cta": "你最想先验证哪一个边界？"
+        },
+        "twitter": {
+          "title": "模型公司的下一场竞争：收购推理技术，还是把算力融资绑定到芯片与能源",
+          "hook": "前沿模型的护城河正在从参数扩展到推理效率、能源和信用支持。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "one architecture/control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "模型公司的下一场竞争：收购推理技术，还是把算力融资绑定到芯片与能源",
+          "hook": "前沿模型的护城河正在从参数扩展到推理效率、能源和信用支持。",
+          "format": "2000—2500字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与工作流",
+            "为什么现在重要",
+            "失败与证据边界",
+            "产品/架构判断",
+            "下一步验证指标"
+          ],
+          "visual_direction": "架构图、证据边界表、验证指标清单",
+          "cta": "文末附可复用验收清单"
+        }
+      }
+    }
+  ]
+}

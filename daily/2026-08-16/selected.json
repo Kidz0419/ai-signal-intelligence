@@ -1,0 +1,122 @@
+[
+  {
+    "id": "2026-08-16-anthropic-decart-acquisition-talks",
+    "demo": false,
+    "topic_lane": "ai_macro",
+    "title": "Anthropic 据报接近以约 70 亿美元收购 Decart，但双方明确尚未签署协议",
+    "summary": "Calcalist/CTech 报道 Anthropic 与以色列 AI 初创 Decart 已交换高级协议草案，创始人与主要投资者 Sequoia 倾向 Anthropic；潜在估值约 70 亿美元，多数对价预计为 Anthropic 股票。报道同时明确协议尚未签署，最快可能下月完成，Google、SpaceX 等仍可能介入。",
+    "decision": "watchlist",
+    "confidence": 80,
+    "relevance_level": "P2",
+    "signal_type": "strategic_radar",
+    "content_type": "media_report",
+    "information_type": "industry_structure",
+    "evidence_level": "reported",
+    "source": "CTech",
+    "url": "https://www.calcalistech.com/ctechnews/article/b1evv3aufg",
+    "published_at": "2026-08-16T12:21:42+08:00",
+    "primary_tags": [
+      "Anthropic",
+      "Decart",
+      "M&A"
+    ],
+    "secondary_tags": [
+      "Inference Efficiency",
+      "Israel"
+    ],
+    "why_it_matters_cn": "若完成，这将是 Anthropic 迄今最大收购之一，并可能把推理效率和实时视频能力、以色列研发中心及模型公司算力经济性合并到同一战略。",
+    "personal_relevance_cn": "跟踪签署文件、最终价格、技术整合、团队留任和 Anthropic 以色列研发中心，而不是提前判断交易已完成。",
+    "product_opportunity_cn": "可研究模型公司通过收购推理优化与实时生成能力来降低单位推理成本的路径。",
+    "competitive_risk_cn": "交易可能变更或失败；报道中的收入、IPO 和技术性能包含二手信息，不能当官方财务或性能数据。",
+    "recommended_action": "track",
+    "questions_to_validate": [
+      "该变化在真实任务中的成功率、失败模式、成本和人工接管边界是什么？",
+      "后续是否出现正式 GA、独立复现、监管细则或已签署文件？"
+    ],
+    "follow_up_triggers": [
+      "来源方发布正式版本、实测数据或状态更新",
+      "出现独立复现、已签署文件或生产采用证据"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 5,
+      "source_quality": 4,
+      "model_value": 2,
+      "agent_architecture_value": 2,
+      "ai_product_value": 2,
+      "macro_value": 5,
+      "actionability": 4
+    },
+    "report_date": "2026-08-16",
+    "event_date": "2026-08-16",
+    "canonical_url": "https://www.calcalistech.com/ctechnews/article/b1evv3aufg",
+    "first_seen_date": "2026-08-16",
+    "last_seen_date": "2026-08-16",
+    "run_dates": [
+      "2026-08-16"
+    ],
+    "evidence_boundary": "CTech 明确称仍在高级谈判且无协议签署；因此仅列 strategic radar。"
+  },
+  {
+    "id": "2026-08-16-nvidia-sb-energy-openai-ohio-talks",
+    "demo": false,
+    "topic_lane": "ai_macro",
+    "title": "NVIDIA 据报拟向 SB Energy 投资至多 30 亿美元，配套 OpenAI 俄亥俄数据中心融资",
+    "summary": "Reuters 报道 NVIDIA 正讨论向 SB Energy 投资至多 30 亿美元，作为 NVIDIA、OpenAI 与 SB Energy 围绕俄亥俄数据中心园区谈判的一部分；相关方案据报涉及约 1000 亿美元信用支持。该投资与融资安排仍处谈判阶段，尚无公司正式签署公告。",
+    "decision": "watchlist",
+    "confidence": 76,
+    "relevance_level": "P2",
+    "signal_type": "strategic_radar",
+    "content_type": "media_report",
+    "information_type": "compute_infrastructure",
+    "evidence_level": "reported",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/business/nvidia-talks-invest-3-billion-sb-energy-part-openai-data-center-deal-information-2026-08-15/",
+    "published_at": "2026-08-16T04:16:56+08:00",
+    "primary_tags": [
+      "NVIDIA",
+      "SB Energy",
+      "OpenAI"
+    ],
+    "secondary_tags": [
+      "Data Center",
+      "Credit Support"
+    ],
+    "why_it_matters_cn": "若落地，芯片供应商将进一步以股权和信用支持绑定模型公司、电力与数据中心资产，重塑算力扩张的资本结构和风险分配。",
+    "personal_relevance_cn": "跟踪正式协议、园区容量、能源结构、信用担保方、建设节点和实际 GPU 采购。",
+    "product_opportunity_cn": "建立算力项目的芯片—能源—土地—融资关系图，识别模型公司资本开支外部化方式。",
+    "competitive_risk_cn": "核心数字来自媒体消息源；投资、信用支持和项目范围都可能变化，不能写成已完成交易。",
+    "recommended_action": "track",
+    "questions_to_validate": [
+      "该变化在真实任务中的成功率、失败模式、成本和人工接管边界是什么？",
+      "后续是否出现正式 GA、独立复现、监管细则或已签署文件？"
+    ],
+    "follow_up_triggers": [
+      "来源方发布正式版本、实测数据或状态更新",
+      "出现独立复现、已签署文件或生产采用证据"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 5,
+      "source_quality": 4,
+      "model_value": 2,
+      "agent_architecture_value": 2,
+      "ai_product_value": 2,
+      "macro_value": 5,
+      "actionability": 4
+    },
+    "report_date": "2026-08-16",
+    "event_date": "2026-08-15",
+    "canonical_url": "https://www.reuters.com/business/nvidia-talks-invest-3-billion-sb-energy-part-openai-data-center-deal-information-2026-08-15/",
+    "first_seen_date": "2026-08-16",
+    "last_seen_date": "2026-08-16",
+    "run_dates": [
+      "2026-08-16"
+    ],
+    "evidence_boundary": "Reuters 正文当前受访问验证限制；标题和多家转载可确认谈判口径，但无一手签署材料，故仅列 radar。"
+  }
+]

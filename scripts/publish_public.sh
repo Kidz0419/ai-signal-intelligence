@@ -50,11 +50,7 @@ git add \
   content-topics \
   backfill-*.html product-leader-backfill-*.html monthly-signal-*.html content-topic-studio.html monthly-content-topic-studio-*.html \
   scripts tests \
-  "daily/$DATE/selected.json" \
-  "daily/$DATE/daily-brief.md" \
-  "daily/$DATE/citations.json" \
-  "daily/$DATE/citation-ledger.json" \
-  "daily/$DATE/run-summary.json"
+  daily
 
 if git diff --cached --quiet; then
   echo "public source already current for $DATE"
