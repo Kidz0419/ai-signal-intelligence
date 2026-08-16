@@ -409,6 +409,7 @@ def main() -> None:
     existing_citations = load_json(day_dir / "citations.json", None)
     existing_ledger = load_json(day_dir / "citation-ledger.json", None)
     existing_brief = (day_dir / "daily-brief.md").read_text() if (day_dir / "daily-brief.md").exists() else None
+    existing_run_summary = load_json(day_dir / "run-summary.json", None)
     previous_count = len(existing_rows)
 
     sources = []
@@ -669,7 +670,9 @@ def main() -> None:
             "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match.",
         ],
     }
-    save_json(day_dir / "run-summary.json", run_summary)
+    save_json(day_dir / "collection-run-summary.json", run_summary)
+    if existing_run_summary is None or existing_run_summary.get("run_type") == "daily_four_lane_incremental":
+        save_json(day_dir / "run-summary.json", run_summary)
     print(json.dumps({"date": date, "selected": total_count, "topics": len(topics_payload.get("topics", [])), "registered_sources": len(sources), "raw_candidates": raw_candidates}, ensure_ascii=False))
 
 
