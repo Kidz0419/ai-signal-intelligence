@@ -1,6 +1,6 @@
 # AI Signal 日报｜2026-08-17
 
-**窗口：** 北京时间 2026-08-17 00:00 至 2026-08-17 02:04  
+**窗口：** 北京时间 2026-08-17 00:00 至 2026-08-17 02:10  
 **一句话结论：** 本轮完成 111 个主注册信源的连通性审计，并对 8 个 RSS/Atom 通道执行日期解析；代表性探针没有发现满足 FILTER_RULES_AI_V1.md 的高质量正式新增信号，因此今日增量维持 0 条，不为数量降标。
 
 ## 四主线重点
@@ -49,7 +49,7 @@
 
 ## 覆盖与缺口
 
-- 主注册信源连通性状态：not_checked 92（仅可访问、未解析内容变化）、access_blocked 12、mechanical_failure 7。
+- 主注册信源连通性状态：not_checked 101（仅可访问、未解析内容变化）、access_blocked 7、mechanical_failure 3。
 - 日期解析探针状态：checked_no_match 8、candidate_only 0。
 - OpenAI News / Research 等普通抓取仍可能返回 403；本轮如实记录为 access_blocked，没有把 403 写成无内容。
 - X 官方 API 仍未配置 OAuth；只使用公开网页与非 X 替代源，不声称完成闭源或登录墙覆盖。
@@ -75,5 +75,5 @@
 
 **一句话结论：** 本轮完成 111 个注册源连通性审计和 8 个日期解析探针；代表性探针没有高质量正式新增，日报和选题都维持 0。  
 **判断：** 不为数量降标，继续等同日后续窗口。  
-**覆盖：** not_checked 92，access_blocked 12，mechanical_failure 7；日期解析探针 checked_no_match 8。  
+**覆盖：** not_checked 101，access_blocked 7，mechanical_failure 3；日期解析探针 checked_no_match 8。  
 **结果：** previous_count=0，new_count=0，updated_count=0，total_count=0。
