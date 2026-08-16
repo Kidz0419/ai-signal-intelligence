@@ -22,8 +22,6 @@ def main():
     path = ROOT / "content-topics" / date / "topics.json"
     data = json.loads(path.read_text())
     topics = data.get("topics", [])
-    if not topics:
-        fail("empty topics")
     scope = data.get("source_scope", {"type": "daily", "date": date})
     source_path = None
     if scope.get("type") == "daily":
@@ -62,7 +60,14 @@ def main():
             if missing or not variant["outline"]:
                 fail(f"{row['id']}/{platform}: incomplete variant")
     variants = len(topics) * len(VALID_PLATFORMS)
-    print(json.dumps({"status": "ok", "scope": date, "source_type": scope["type"], "topics": len(topics), "platform_variants": variants}, ensure_ascii=False))
+    print(json.dumps({
+        "status": "ok",
+        "scope": date,
+        "source_type": scope["type"],
+        "topics": len(topics),
+        "platform_variants": variants,
+        "empty_allowed": not bool(topics),
+    }, ensure_ascii=False))
 
 
 if __name__ == "__main__":

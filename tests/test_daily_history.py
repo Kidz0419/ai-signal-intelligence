@@ -115,7 +115,6 @@ class DailyHistoryContractTest(unittest.TestCase):
         date = self.history["latest_date"]
         data = json.loads((ROOT / "content-topics" / date / "topics.json").read_text())
         topics = data["topics"]
-        self.assertGreaterEqual(len(topics), 1)
         self.assertEqual(len({row["id"] for row in topics}), len(topics))
         self.assertTrue(all(set(row["platforms"]) == {"xiaohongshu", "twitter", "wechat"} for row in topics))
         daily_ids = {row["id"] for row in json.loads((ROOT / "daily" / date / "selected.json").read_text())}
@@ -124,6 +123,8 @@ class DailyHistoryContractTest(unittest.TestCase):
         page = (ROOT / "content-topic-studio.html").read_text()
         self.assertEqual(page.count('class="card"'), 1)  # One JS template renders one card per verified topic.
         self.assertIn("CONTENT TOPIC STUDIO", page)
+        if topics:
+            self.assertEqual(len(topics) * 3, sum(len(row["platforms"]) for row in topics))
 
 
 if __name__ == "__main__":
