@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-17T12:12:31+08:00",
+  "run_at": "2026-08-17T16:00:03+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-14T04:12:31+08:00",
-    "end": "2026-08-17T12:12:31+08:00",
+    "start": "2026-08-14T08:00:03+08:00",
+    "end": "2026-08-17T16:00:03+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 171,
-  "unique_candidates": 136,
+  "raw_candidates": 157,
+  "unique_candidates": 122,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 171,
+  "unreviewed_candidate_count": 157,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,7 +35,7 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 11,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 3,
-      "not_checked": 101
+      "mechanical_failure": 4,
+      "not_checked": 100
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -63,8 +63,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 13
+        "mechanical_failure": 2,
+        "not_checked": 12
       },
       "head_ai_product_release_notes": {
         "selected": 0,
@@ -420,10 +420,9 @@
         "name": "Baidu AI Cloud Qianfan",
         "type": "official_product",
         "url": "https://cloud.baidu.com/product/wenxinworkshop",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://cloud.baidu.com/product-s/qianfan_home",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "china_frontier_models",
@@ -549,7 +548,7 @@
         "type": "official_research",
         "url": "https://www.amazon.science/tag/artificial-intelligence",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "202",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1110,7 +1109,7 @@
         "type": "evaluation_org",
         "url": "https://metr.org/blog/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1216,11 +1215,6 @@
           "title": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
           "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
           "published_at": "2026-08-14T17:26:28Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/riemann-zeta",
-          "url": "https://www.anthropic.com/research/riemann-zeta",
-          "published_at": "2026-08-13T23:32:23Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1333,15 +1327,9 @@
       "name": "AWS Security RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/security/feed/",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "AWS Certificate Manager will discontinue email validation to prove domain validation for certificates",
-          "url": "https://aws.amazon.com/blogs/security/aws-certificate-manager-will-discontinue-email-validation-to-prove-domain-validation-for-certificates/",
-          "published_at": "2026-08-13T21:23:00Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1385,11 +1373,6 @@
           "title": "v2.1.233",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.233",
           "published_at": "2026-08-14T22:20:57Z"
-        },
-        {
-          "title": "v2.1.232",
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.232",
-          "published_at": "2026-08-13T23:29:59Z"
         }
       ],
       "note": ""
@@ -1433,15 +1416,9 @@
       "name": "Google Agent Development Kit releases",
       "adapter": "atom",
       "source_url": "https://github.com/google/adk-python/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "v2.7.0",
-          "url": "https://github.com/google/adk-python/releases/tag/v2.7.0",
-          "published_at": "2026-08-13T22:18:29Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1455,41 +1432,6 @@
           "title": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
           "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
           "published_at": "2026-08-15T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/authors/lisa-gevelber/",
-          "url": "https://blog.google/authors/lisa-gevelber/",
-          "published_at": "2026-08-14T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/authors/tulsee-doshi/",
-          "url": "https://blog.google/authors/tulsee-doshi/",
-          "published_at": "2026-08-14T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/outreach-and-initiatives/grow-with-google/",
-          "url": "https://blog.google/company-news/outreach-and-initiatives/grow-with-google/",
-          "published_at": "2026-08-14T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/platforms/google-tv/",
-          "url": "https://blog.google/products-and-platforms/platforms/google-tv/",
-          "published_at": "2026-08-14T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/devices/pixel/pixel-11-features/",
-          "url": "https://blog.google/products-and-platforms/devices/pixel/pixel-11-features/",
-          "published_at": "2026-08-14T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/workspace/",
-          "url": "https://blog.google/products-and-platforms/products/workspace/",
-          "published_at": "2026-08-14T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/google-health/",
-          "url": "https://blog.google/products-and-platforms/products/google-health/",
-          "published_at": "2026-08-14T00:00:00Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1531,15 +1473,9 @@
       "name": "Hugging Face Blog",
       "adapter": "rss",
       "source_url": "https://huggingface.co/blog/feed.xml",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 40,
-      "recent_items": [
-        {
-          "title": "State of Open Models: Summer 2026 Observations",
-          "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
-          "published_at": "2026-08-14T00:00:00Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1669,11 +1605,6 @@
           "title": "0.148.0-alpha.14",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.14",
           "published_at": "2026-08-14T01:40:58Z"
-        },
-        {
-          "title": "0.148.0-alpha.13",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.13",
-          "published_at": "2026-08-13T22:40:28Z"
         }
       ],
       "note": ""
@@ -2342,11 +2273,6 @@
           "title": "Don't classify. Hallucinate!",
           "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
           "published_at": "2026-08-14T21:54:35Z"
-        },
-        {
-          "title": "sqlite-utils 4.2.1",
-          "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
-          "published_at": "2026-08-13T23:53:47Z"
         }
       ],
       "note": ""
@@ -2366,7 +2292,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "171 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "157 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
