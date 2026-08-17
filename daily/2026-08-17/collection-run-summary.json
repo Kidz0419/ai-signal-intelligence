@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-17T08:00:10+08:00",
+  "run_at": "2026-08-17T12:12:31+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-14T00:00:10+08:00",
-    "end": "2026-08-17T08:00:10+08:00",
+    "start": "2026-08-14T04:12:31+08:00",
+    "end": "2026-08-17T12:12:31+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 176,
-  "unique_candidates": 141,
+  "raw_candidates": 171,
+  "unique_candidates": 136,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 176,
+  "unreviewed_candidate_count": 171,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,7 +35,7 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 11,
+  "collection_errors": 10,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 4,
-      "not_checked": 100
+      "mechanical_failure": 3,
+      "not_checked": 101
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 9
+        "mechanical_failure": 0,
+        "not_checked": 10
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -1071,9 +1071,9 @@
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
@@ -1092,7 +1092,6 @@
         "url": "https://huggingface.co/papers",
         "status": "not_checked",
         "http_code": "200",
-        "final_url": "https://huggingface.co/papers/date/2026-08-14",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1286,11 +1285,6 @@
           "title": "Building agentic workflows with SageMaker AI and Bedrock AgentCore",
           "url": "https://aws.amazon.com/blogs/machine-learning/building-agentic-workflows-with-sagemaker-ai-and-bedrock-agentcore/",
           "published_at": "2026-08-14T15:58:44Z"
-        },
-        {
-          "title": "Monitor on-premises and multi-cloud AI agents with AgentCore Observability",
-          "url": "https://aws.amazon.com/blogs/machine-learning/monitor-on-premises-and-multi-cloud-ai-agents-with-agentcore-observability/",
-          "published_at": "2026-08-13T16:02:10Z"
         }
       ],
       "note": ""
@@ -1306,11 +1300,6 @@
           "title": "Zero-trust networking for agentic AI with Amazon VPC Lattice",
           "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/zero-trust-networking-for-agentic-ai-with-amazon-vpc-lattice/",
           "published_at": "2026-08-14T20:29:21Z"
-        },
-        {
-          "title": "Introducing the next-generation AWS VPN Client with CLI support and admin controls",
-          "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-the-next-generation-aws-vpn-client-with-cli-support-and-admin-controls/",
-          "published_at": "2026-08-13T18:02:45Z"
         }
       ],
       "note": ""
@@ -1518,15 +1507,9 @@
       "name": "Google Products & Platforms RSS",
       "adapter": "rss",
       "source_url": "https://blog.google/products-and-platforms/rss/",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "Bring your spreadsheet data to life with Sheets canvas",
-          "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
-          "published_at": "2026-08-13T16:45:00Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1555,11 +1538,6 @@
           "title": "State of Open Models: Summer 2026 Observations",
           "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
           "published_at": "2026-08-14T00:00:00Z"
-        },
-        {
-          "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
-          "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
-          "published_at": "2026-08-13T17:16:04Z"
         }
       ],
       "note": ""
@@ -2336,6 +2314,11 @@
       "checked_items": 30,
       "recent_items": [
         {
+          "title": "Markdown SVG upgrades",
+          "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+          "published_at": "2026-08-16T23:59:37Z"
+        },
+        {
           "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
           "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
           "published_at": "2026-08-16T22:00:39Z"
@@ -2364,16 +2347,6 @@
           "title": "sqlite-utils 4.2.1",
           "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
           "published_at": "2026-08-13T23:53:47Z"
-        },
-        {
-          "title": "sqlite-utils 4.2",
-          "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils/",
-          "published_at": "2026-08-13T20:11:29Z"
-        },
-        {
-          "title": "llm-gemini 0.33",
-          "url": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
-          "published_at": "2026-08-13T19:37:34Z"
         }
       ],
       "note": ""
@@ -2393,7 +2366,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "176 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "171 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
