@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-17T04:00:06+08:00",
+  "run_at": "2026-08-17T08:00:10+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-13T20:00:06+08:00",
-    "end": "2026-08-17T04:00:06+08:00",
+    "start": "2026-08-14T00:00:10+08:00",
+    "end": "2026-08-17T08:00:10+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 183,
-  "unique_candidates": 148,
+  "raw_candidates": 176,
+  "unique_candidates": 141,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 183,
+  "unreviewed_candidate_count": 176,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,7 +35,7 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 11,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 3,
-      "not_checked": 101
+      "mechanical_failure": 4,
+      "not_checked": 100
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 10
+        "mechanical_failure": 1,
+        "not_checked": 9
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -265,7 +265,7 @@
         "type": "company_ir",
         "url": "https://abc.xyz/investor/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1071,9 +1071,9 @@
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "research_and_evaluation",
@@ -1246,16 +1246,6 @@
           "title": "Serverless vehicle tracking at scale: Bosch L.OS on AWS",
           "url": "https://aws.amazon.com/blogs/architecture/serverless-vehicle-tracking-at-scale-bosch-l-os-on-aws/",
           "published_at": "2026-08-14T10:02:13Z"
-        },
-        {
-          "title": "Track generative AI costs with Amazon Bedrock inference profiles",
-          "url": "https://aws.amazon.com/blogs/architecture/track-generative-ai-costs-with-amazon-bedrock-inference-profiles/",
-          "published_at": "2026-08-13T15:59:39Z"
-        },
-        {
-          "title": "Recovery strategies to meet data residency requirements",
-          "url": "https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/",
-          "published_at": "2026-08-13T14:05:39Z"
         }
       ],
       "note": ""
@@ -1301,21 +1291,6 @@
           "title": "Monitor on-premises and multi-cloud AI agents with AgentCore Observability",
           "url": "https://aws.amazon.com/blogs/machine-learning/monitor-on-premises-and-multi-cloud-ai-agents-with-agentcore-observability/",
           "published_at": "2026-08-13T16:02:10Z"
-        },
-        {
-          "title": "Automate legacy web applications with Amazon Bedrock AgentCore Browser Tool",
-          "url": "https://aws.amazon.com/blogs/machine-learning/automate-legacy-web-applications-with-amazon-bedrock-agentcore-browser-tool/",
-          "published_at": "2026-08-13T15:56:07Z"
-        },
-        {
-          "title": "Accelerating M&A due diligence with Amazon Bedrock AgentCore",
-          "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-ma-due-diligence-with-amazon-bedrock-agentcore/",
-          "published_at": "2026-08-13T15:52:44Z"
-        },
-        {
-          "title": "Amazon Quick for Microsoft 365: Agentic AI where you work",
-          "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-microsoft-365-agentic-ai-where-you-work/",
-          "published_at": "2026-08-13T15:48:15Z"
         }
       ],
       "note": ""
@@ -1391,11 +1366,6 @@
           "title": "Orchestrating multi-agent AI architectures with Amazon S3 Files",
           "url": "https://aws.amazon.com/blogs/storage/orchestrating-multi-agent-ai-architectures-with-amazon-s3-files/",
           "published_at": "2026-08-14T10:51:15Z"
-        },
-        {
-          "title": "How WeatherBug reduced storage costs by 80% using Amazon S3 Storage Lens and Kiro CLI",
-          "url": "https://aws.amazon.com/blogs/storage/how-weatherbug-reduced-storage-costs-by-80-using-amazon-s3-storage-lens-and-kiro-cli/",
-          "published_at": "2026-08-13T14:39:19Z"
         }
       ],
       "note": ""
@@ -1466,11 +1436,6 @@
           "title": "GitHub Copilot weekly releases — August 10",
           "url": "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10",
           "published_at": "2026-08-14T03:15:56Z"
-        },
-        {
-          "title": "Gemini 3.7 Flash is now available in GitHub Copilot",
-          "url": "https://github.blog/changelog/2026-08-13-gemini-3-7-flash-is-now-available-in-github-copilot",
-          "published_at": "2026-08-13T14:00:53Z"
         }
       ],
       "note": ""
@@ -1560,16 +1525,6 @@
           "title": "Bring your spreadsheet data to life with Sheets canvas",
           "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
           "published_at": "2026-08-13T16:45:00Z"
-        },
-        {
-          "title": "Stay present while taking pictures with Magic Capture on Pixel 11.",
-          "url": "https://blog.google/products-and-platforms/devices/pixel/pixel-11-magic-capture/",
-          "published_at": "2026-08-13T16:00:00Z"
-        },
-        {
-          "title": "Get updates while your Pixel 11 Pro is face down with HiLight.",
-          "url": "https://blog.google/products-and-platforms/devices/pixel/pixel-11-pro-hilight/",
-          "published_at": "2026-08-13T16:00:00Z"
         }
       ],
       "note": ""
@@ -1683,6 +1638,11 @@
       "checked_items": 10,
       "recent_items": [
         {
+          "title": "v0.21.1",
+          "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.21.1",
+          "published_at": "2026-08-16T22:28:55Z"
+        },
+        {
           "title": "v0.21.0",
           "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.21.0",
           "published_at": "2026-08-15T02:49:37Z"
@@ -1757,6 +1717,11 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
+          "url": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
+          "published_at": "2026-08-16T21:09:09.801000Z"
+        },
+        {
           "title": "https://openai.com/index/builders-guide-to-gpt-5-6/",
           "url": "https://openai.com/index/builders-guide-to-gpt-5-6/",
           "published_at": "2026-08-16T18:52:02.007000Z"
@@ -1770,11 +1735,6 @@
           "title": "https://openai.com/index/zapier/",
           "url": "https://openai.com/index/zapier/",
           "published_at": "2026-08-16T15:04:15.590000Z"
-        },
-        {
-          "title": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
-          "url": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
-          "published_at": "2026-08-16T13:25:04.679000Z"
         },
         {
           "title": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
@@ -2376,6 +2336,11 @@
       "checked_items": 30,
       "recent_items": [
         {
+          "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+          "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+          "published_at": "2026-08-16T22:00:39Z"
+        },
+        {
           "title": "Quoting Dario Amodei",
           "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
           "published_at": "2026-08-16T15:05:36Z"
@@ -2428,7 +2393,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "183 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "176 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
