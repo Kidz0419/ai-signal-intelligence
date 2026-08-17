@@ -1,7 +1,17 @@
 window.DAILY_HISTORY = {
   "schema_version": 1,
-  "latest_date": "2026-08-17",
+  "latest_date": "2026-08-18",
   "days": [
+    {
+      "date": "2026-08-18",
+      "signal_ids": [],
+      "counts": {
+        "total": 0,
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      }
+    },
     {
       "date": "2026-08-17",
       "signal_ids": [],
