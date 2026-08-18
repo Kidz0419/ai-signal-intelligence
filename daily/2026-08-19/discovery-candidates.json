@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-19T00:00:25+08:00",
+  "window": {
+    "start": "2026-08-15T16:00:25+08:00",
+    "end": "2026-08-19T00:00:25+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "candidate_count": 10,
+  "new_in_run_count": 10,
+  "new_candidates": [
+    {
+      "source_name": "Microsoft Agent Framework releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/microsoft/agent-framework/releases.atom",
+      "title": "dotnet-1.18.0",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.18.0",
+      "published_or_lastmod_at": "2026-08-18T14:30:58Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.148.0-alpha.22",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.22",
+      "published_or_lastmod_at": "2026-08-18T13:40:10Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/browsecomp/",
+      "url": "https://openai.com/index/browsecomp/",
+      "published_or_lastmod_at": "2026-08-18T15:56:02.198000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "published_or_lastmod_at": "2026-08-18T15:54:29.422000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-for-teens/",
+      "url": "https://openai.com/index/chatgpt-for-teens/",
+      "published_or_lastmod_at": "2026-08-18T15:54:06.246000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/the-defenders-window/",
+      "url": "https://openai.com/index/the-defenders-window/",
+      "published_or_lastmod_at": "2026-08-18T15:52:19.641000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/openai-appoints-retired-us-army-general/",
+      "url": "https://openai.com/index/openai-appoints-retired-us-army-general/",
+      "published_or_lastmod_at": "2026-08-18T13:35:55.132000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/put-ai-to-work-for-your-product-team/",
+      "url": "https://openai.com/index/put-ai-to-work-for-your-product-team/",
+      "published_or_lastmod_at": "2026-08-18T13:35:48.131000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/empowering-defenders-through-our-cybersecurity-grant-program/",
+      "url": "https://openai.com/index/empowering-defenders-through-our-cybersecurity-grant-program/",
+      "published_or_lastmod_at": "2026-08-18T13:35:43.134000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/builders-guide-to-gpt-5-6/",
+      "url": "https://openai.com/index/builders-guide-to-gpt-5-6/",
+      "published_or_lastmod_at": "2026-08-18T12:20:01.632000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    }
+  ],
+  "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/browsecomp/",
+      "url": "https://openai.com/index/browsecomp/",
+      "published_or_lastmod_at": "2026-08-18T15:56:02.198000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "published_or_lastmod_at": "2026-08-18T15:54:29.422000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-for-teens/",
+      "url": "https://openai.com/index/chatgpt-for-teens/",
+      "published_or_lastmod_at": "2026-08-18T15:54:06.246000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/the-defenders-window/",
+      "url": "https://openai.com/index/the-defenders-window/",
+      "published_or_lastmod_at": "2026-08-18T15:52:19.641000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Microsoft Agent Framework releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/microsoft/agent-framework/releases.atom",
+      "title": "dotnet-1.18.0",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.18.0",
+      "published_or_lastmod_at": "2026-08-18T14:30:58Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.148.0-alpha.22",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.22",
+      "published_or_lastmod_at": "2026-08-18T13:40:10Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/openai-appoints-retired-us-army-general/",
+      "url": "https://openai.com/index/openai-appoints-retired-us-army-general/",
+      "published_or_lastmod_at": "2026-08-18T13:35:55.132000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/put-ai-to-work-for-your-product-team/",
+      "url": "https://openai.com/index/put-ai-to-work-for-your-product-team/",
+      "published_or_lastmod_at": "2026-08-18T13:35:48.131000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/empowering-defenders-through-our-cybersecurity-grant-program/",
+      "url": "https://openai.com/index/empowering-defenders-through-our-cybersecurity-grant-program/",
+      "published_or_lastmod_at": "2026-08-18T13:35:43.134000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/builders-guide-to-gpt-5-6/",
+      "url": "https://openai.com/index/builders-guide-to-gpt-5-6/",
+      "published_or_lastmod_at": "2026-08-18T12:20:01.632000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    }
+  ],
+  "contract": {
+    "candidate_is_not_signal": true,
+    "sitemap_lastmod_is_not_publication_date": true,
+    "search_or_feed_title_requires_body_verification": true
+  }
+}
