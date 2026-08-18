@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-18T16:00:37+08:00",
+  "run_at": "2026-08-18T20:00:11+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-15T08:00:37+08:00",
-    "end": "2026-08-18T16:00:37+08:00",
+    "start": "2026-08-15T12:00:11+08:00",
+    "end": "2026-08-18T20:00:11+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 82,
-  "unique_candidates": 66,
+  "raw_candidates": 86,
+  "unique_candidates": 68,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 82,
+  "unreviewed_candidate_count": 86,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,7 +35,7 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 12,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 3,
-      "not_checked": 101
+      "mechanical_failure": 5,
+      "not_checked": 99
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -63,8 +63,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 13
+        "mechanical_failure": 3,
+        "not_checked": 11
       },
       "head_ai_product_release_notes": {
         "selected": 0,
@@ -420,10 +420,9 @@
         "name": "Baidu AI Cloud Qianfan",
         "type": "official_product",
         "url": "https://cloud.baidu.com/product/wenxinworkshop",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://cloud.baidu.com/product-s/qianfan_home",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "china_frontier_models",
@@ -457,10 +456,9 @@
         "name": "Kimi Developer Docs",
         "type": "developer_docs",
         "url": "https://platform.moonshot.cn/docs",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://platform.kimi.com/docs/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "china_frontier_models",
@@ -550,7 +548,7 @@
         "type": "official_research",
         "url": "https://www.amazon.science/tag/artificial-intelligence",
         "status": "not_checked",
-        "http_code": "202",
+        "http_code": "200",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1229,9 +1227,15 @@
       "name": "AWS Architecture RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
-      "status": "checked_no_match",
+      "status": "candidate_only",
       "checked_items": 20,
-      "recent_items": [],
+      "recent_items": [
+        {
+          "title": "Consistency is the new latency: AI at the data layer",
+          "url": "https://aws.amazon.com/blogs/architecture/consistency-is-the-new-latency-ai-at-the-data-layer/",
+          "published_at": "2026-08-18T11:13:20Z"
+        }
+      ],
       "note": ""
     },
     {
@@ -1403,6 +1407,11 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/",
+          "published_at": "2026-08-18T00:00:00Z"
+        },
+        {
           "title": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
           "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
           "published_at": "2026-08-17T00:00:00Z"
@@ -1414,9 +1423,15 @@
       "name": "Google Innovation & AI RSS",
       "adapter": "rss",
       "source_url": "https://blog.google/innovation-and-ai/rss/",
-      "status": "checked_no_match",
+      "status": "candidate_only",
       "checked_items": 20,
-      "recent_items": [],
+      "recent_items": [
+        {
+          "title": "Operation Blue Skies: Reducing aviation climate impact with AI",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/",
+          "published_at": "2026-08-18T09:00:00Z"
+        }
+      ],
       "note": ""
     },
     {
@@ -1462,9 +1477,15 @@
       "name": "Kimi Code releases",
       "adapter": "atom",
       "source_url": "https://github.com/MoonshotAI/kimi-code/releases.atom",
-      "status": "checked_no_match",
+      "status": "candidate_only",
       "checked_items": 10,
-      "recent_items": [],
+      "recent_items": [
+        {
+          "title": "@moonshot-ai/kimi-code@0.37.0",
+          "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.37.0",
+          "published_at": "2026-08-18T11:30:31Z"
+        }
+      ],
       "note": ""
     },
     {
@@ -1523,11 +1544,6 @@
           "title": "v0.21.1",
           "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.21.1",
           "published_at": "2026-08-16T22:28:55Z"
-        },
-        {
-          "title": "v0.21.0",
-          "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.21.0",
-          "published_at": "2026-08-15T02:49:37Z"
         }
       ],
       "note": ""
@@ -1553,11 +1569,6 @@
           "title": "0.148.0-alpha.20",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.20",
           "published_at": "2026-08-16T00:25:20Z"
-        },
-        {
-          "title": "0.148.0-alpha.19",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.19",
-          "published_at": "2026-08-15T02:24:11Z"
         }
       ],
       "note": ""
@@ -1579,49 +1590,69 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/safetykit/",
-          "url": "https://openai.com/index/safetykit/",
-          "published_at": "2026-08-18T07:54:02.863000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "published_at": "2026-08-18T07:45:04.940000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "published_at": "2026-08-18T07:45:04.940000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "published_at": "2026-08-18T07:44:17.969000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "published_at": "2026-08-18T07:44:17.969000Z"
+          "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
+          "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
+          "published_at": "2026-08-18T12:00:39.884000Z"
         },
         {
           "title": "https://openai.com/index/the-defenders-window/",
           "url": "https://openai.com/index/the-defenders-window/",
-          "published_at": "2026-08-18T07:34:44.317000Z"
+          "published_at": "2026-08-18T11:58:32.278000Z"
         },
         {
-          "title": "https://openai.com/index/ten-advances-in-mathematics/",
-          "url": "https://openai.com/index/ten-advances-in-mathematics/",
-          "published_at": "2026-08-18T07:34:25.210000Z"
+          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "published_at": "2026-08-18T11:49:37.682000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "published_at": "2026-08-18T11:49:37.682000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-for-teens/",
+          "url": "https://openai.com/index/chatgpt-for-teens/",
+          "published_at": "2026-08-18T11:46:05.803000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-for-teens/",
+          "url": "https://openai.com/index/chatgpt-for-teens/",
+          "published_at": "2026-08-18T11:46:05.803000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "published_at": "2026-08-18T11:44:33.102000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "published_at": "2026-08-18T11:44:33.102000Z"
         },
         {
           "title": "https://openai.com/index/healthbench/",
           "url": "https://openai.com/index/healthbench/",
-          "published_at": "2026-08-18T07:27:02.635000Z"
+          "published_at": "2026-08-18T11:26:03.364000Z"
         },
         {
-          "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
-          "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
-          "published_at": "2026-08-18T07:14:01.661000Z"
+          "title": "https://openai.com/index/safetykit/",
+          "url": "https://openai.com/index/safetykit/",
+          "published_at": "2026-08-18T11:23:47.331000Z"
+        },
+        {
+          "title": "https://openai.com/index/ten-advances-in-mathematics/",
+          "url": "https://openai.com/index/ten-advances-in-mathematics/",
+          "published_at": "2026-08-18T11:15:12.170000Z"
+        },
+        {
+          "title": "https://openai.com/index/partnering-with-codeai/",
+          "url": "https://openai.com/index/partnering-with-codeai/",
+          "published_at": "2026-08-18T11:01:35.541000Z"
+        },
+        {
+          "title": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
+          "url": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
+          "published_at": "2026-08-18T10:01:05.987000Z"
         },
         {
           "title": "https://openai.com/index/chatgpt-for-academic-researchers/",
@@ -1707,11 +1738,6 @@
           "title": "https://openai.com/index/ai-clinical-copilot-penda-health/",
           "url": "https://openai.com/index/ai-clinical-copilot-penda-health/",
           "published_at": "2026-08-17T22:02:12.468000Z"
-        },
-        {
-          "title": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
-          "url": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
-          "published_at": "2026-08-17T21:53:03.785000Z"
         },
         {
           "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
@@ -1892,11 +1918,6 @@
           "title": "CORS Chat",
           "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
           "published_at": "2026-08-15T14:49:54Z"
-        },
-        {
-          "title": "Northern Gannet",
-          "url": "https://simonwillison.net/2026/Aug/15/sighting-391300422/",
-          "published_at": "2026-08-15T03:22:00Z"
         }
       ],
       "note": ""
@@ -1916,7 +1937,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "82 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "86 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."

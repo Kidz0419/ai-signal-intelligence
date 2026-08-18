@@ -1,48 +1,57 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-18T16:00:37+08:00",
+  "generated_at": "2026-08-18T20:00:11+08:00",
   "window": {
-    "start": "2026-08-15T08:00:37+08:00",
-    "end": "2026-08-18T16:00:37+08:00",
+    "start": "2026-08-15T12:00:11+08:00",
+    "end": "2026-08-18T20:00:11+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 61,
-  "new_in_run_count": 9,
+  "candidate_count": 75,
+  "new_in_run_count": 14,
   "new_candidates": [
     {
-      "source_name": "OpenAI Codex releases",
+      "source_name": "AWS Architecture RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
+      "title": "Consistency is the new latency: AI at the data layer",
+      "url": "https://aws.amazon.com/blogs/architecture/consistency-is-the-new-latency-ai-at-the-data-layer/",
+      "published_or_lastmod_at": "2026-08-18T11:13:20Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/",
+      "published_or_lastmod_at": "2026-08-18T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Innovation & AI RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/innovation-and-ai/rss/",
+      "title": "Operation Blue Skies: Reducing aviation climate impact with AI",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/",
+      "published_or_lastmod_at": "2026-08-18T09:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Kimi Code releases",
       "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "python-v0.147.0",
-      "url": "https://github.com/openai/codex/releases/tag/python-v0.147.0",
-      "published_or_lastmod_at": "2026-08-18T06:08:40Z",
+      "source_url": "https://github.com/MoonshotAI/kimi-code/releases.atom",
+      "title": "@moonshot-ai/kimi-code@0.37.0",
+      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.37.0",
+      "published_or_lastmod_at": "2026-08-18T11:30:31Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/safetykit/",
-      "url": "https://openai.com/index/safetykit/",
-      "published_or_lastmod_at": "2026-08-18T07:54:02.863000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-      "published_or_lastmod_at": "2026-08-18T07:45:04.940000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/openai-joins-ports-pike-project/",
-      "url": "https://openai.com/index/openai-joins-ports-pike-project/",
-      "published_or_lastmod_at": "2026-08-18T07:44:17.969000Z",
+      "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
+      "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
+      "published_or_lastmod_at": "2026-08-18T12:00:39.884000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -51,16 +60,34 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/the-defenders-window/",
       "url": "https://openai.com/index/the-defenders-window/",
-      "published_or_lastmod_at": "2026-08-18T07:34:44.317000Z",
+      "published_or_lastmod_at": "2026-08-18T11:58:32.278000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/ten-advances-in-mathematics/",
-      "url": "https://openai.com/index/ten-advances-in-mathematics/",
-      "published_or_lastmod_at": "2026-08-18T07:34:25.210000Z",
+      "title": "https://openai.com/index/openai-joins-ports-pike-project/",
+      "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+      "published_or_lastmod_at": "2026-08-18T11:49:37.682000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-for-teens/",
+      "url": "https://openai.com/index/chatgpt-for-teens/",
+      "published_or_lastmod_at": "2026-08-18T11:46:05.803000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "published_or_lastmod_at": "2026-08-18T11:44:33.102000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -69,29 +96,164 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/healthbench/",
       "url": "https://openai.com/index/healthbench/",
-      "published_or_lastmod_at": "2026-08-18T07:27:02.635000Z",
+      "published_or_lastmod_at": "2026-08-18T11:26:03.364000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/safetykit/",
+      "url": "https://openai.com/index/safetykit/",
+      "published_or_lastmod_at": "2026-08-18T11:23:47.331000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/ten-advances-in-mathematics/",
+      "url": "https://openai.com/index/ten-advances-in-mathematics/",
+      "published_or_lastmod_at": "2026-08-18T11:15:12.170000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/partnering-with-codeai/",
+      "url": "https://openai.com/index/partnering-with-codeai/",
+      "published_or_lastmod_at": "2026-08-18T11:01:35.541000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
+      "url": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
+      "published_or_lastmod_at": "2026-08-18T10:01:05.987000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    }
+  ],
+  "candidates": [
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
       "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
-      "published_or_lastmod_at": "2026-08-18T07:14:01.661000Z",
+      "published_or_lastmod_at": "2026-08-18T12:00:39.884000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-for-academic-researchers/",
-      "url": "https://openai.com/index/chatgpt-for-academic-researchers/",
-      "published_or_lastmod_at": "2026-08-18T07:04:24.101000Z",
+      "title": "https://openai.com/index/the-defenders-window/",
+      "url": "https://openai.com/index/the-defenders-window/",
+      "published_or_lastmod_at": "2026-08-18T11:58:32.278000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    }
-  ],
-  "candidates": [
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/openai-joins-ports-pike-project/",
+      "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+      "published_or_lastmod_at": "2026-08-18T11:49:37.682000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-for-teens/",
+      "url": "https://openai.com/index/chatgpt-for-teens/",
+      "published_or_lastmod_at": "2026-08-18T11:46:05.803000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "published_or_lastmod_at": "2026-08-18T11:44:33.102000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Kimi Code releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/MoonshotAI/kimi-code/releases.atom",
+      "title": "@moonshot-ai/kimi-code@0.37.0",
+      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.37.0",
+      "published_or_lastmod_at": "2026-08-18T11:30:31Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/healthbench/",
+      "url": "https://openai.com/index/healthbench/",
+      "published_or_lastmod_at": "2026-08-18T11:26:03.364000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/safetykit/",
+      "url": "https://openai.com/index/safetykit/",
+      "published_or_lastmod_at": "2026-08-18T11:23:47.331000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/ten-advances-in-mathematics/",
+      "url": "https://openai.com/index/ten-advances-in-mathematics/",
+      "published_or_lastmod_at": "2026-08-18T11:15:12.170000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "AWS Architecture RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
+      "title": "Consistency is the new latency: AI at the data layer",
+      "url": "https://aws.amazon.com/blogs/architecture/consistency-is-the-new-latency-ai-at-the-data-layer/",
+      "published_or_lastmod_at": "2026-08-18T11:13:20Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/partnering-with-codeai/",
+      "url": "https://openai.com/index/partnering-with-codeai/",
+      "published_or_lastmod_at": "2026-08-18T11:01:35.541000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
+      "url": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
+      "published_or_lastmod_at": "2026-08-18T10:01:05.987000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Innovation & AI RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/innovation-and-ai/rss/",
+      "title": "Operation Blue Skies: Reducing aviation climate impact with AI",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/",
+      "published_or_lastmod_at": "2026-08-18T09:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
@@ -234,6 +396,15 @@
       "title": "https://openai.com/index/builders-guide-to-gpt-5-6/",
       "url": "https://openai.com/index/builders-guide-to-gpt-5-6/",
       "published_or_lastmod_at": "2026-08-18T00:52:02.039000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/",
+      "published_or_lastmod_at": "2026-08-18T00:00:00Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
