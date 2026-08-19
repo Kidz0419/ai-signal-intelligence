@@ -1,12 +1,12 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-19T16:00:42+08:00",
+  "run_at": "2026-08-19T20:00:11+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-16T08:00:42+08:00",
-    "end": "2026-08-19T16:00:42+08:00",
+    "start": "2026-08-16T12:00:11+08:00",
+    "end": "2026-08-19T20:00:11+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
@@ -35,7 +35,7 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 11,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 3,
-      "not_checked": 101
+      "mechanical_failure": 4,
+      "not_checked": 100
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -63,8 +63,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 13
+        "mechanical_failure": 2,
+        "not_checked": 12
       },
       "head_ai_product_release_notes": {
         "selected": 0,
@@ -457,10 +457,9 @@
         "name": "Kimi Developer Docs",
         "type": "developer_docs",
         "url": "https://platform.moonshot.cn/docs",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://platform.kimi.com/docs/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "china_frontier_models",
@@ -1101,7 +1100,7 @@
         "url": "https://lmarena.ai/",
         "status": "not_checked",
         "http_code": "200",
-        "final_url": "https://arena.ai/",
+        "final_url": "https://arena.ai/agent",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1649,7 +1648,7 @@
         {
           "title": "dotnet-1.18.0",
           "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.18.0",
-          "published_at": "2026-08-18T14:30:58Z"
+          "published_at": "2026-08-19T10:16:24Z"
         }
       ],
       "note": ""
@@ -1695,6 +1694,11 @@
       "checked_items": 10,
       "recent_items": [
         {
+          "title": "rust-v0.149.0-alpha.2",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.2",
+          "published_at": "2026-08-19T09:07:48Z"
+        },
+        {
           "title": "0.149.0-alpha.1",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.1",
           "published_at": "2026-08-19T00:57:19Z"
@@ -1723,11 +1727,6 @@
           "title": "0.148.0-alpha.21",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.21",
           "published_at": "2026-08-17T19:30:26Z"
-        },
-        {
-          "title": "0.148.0-alpha.20",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.20",
-          "published_at": "2026-08-16T00:25:20Z"
         }
       ],
       "note": ""
@@ -1751,82 +1750,102 @@
         {
           "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
           "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "published_at": "2026-08-19T08:01:11.137000Z"
+          "published_at": "2026-08-19T11:54:01.163000Z"
         },
         {
           "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
           "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "published_at": "2026-08-19T08:01:11.137000Z"
+          "published_at": "2026-08-19T11:54:01.163000Z"
         },
         {
-          "title": "https://openai.com/index/nvidia/chatgpt-work/",
-          "url": "https://openai.com/index/nvidia/chatgpt-work/",
-          "published_at": "2026-08-19T07:57:32.113000Z"
+          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "published_at": "2026-08-19T11:43:11.972000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "published_at": "2026-08-19T11:43:11.972000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "published_at": "2026-08-19T11:41:12.110000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "published_at": "2026-08-19T11:41:12.110000Z"
         },
         {
           "title": "https://openai.com/index/chatgpt-for-teachers/",
           "url": "https://openai.com/index/chatgpt-for-teachers/",
-          "published_at": "2026-08-19T07:49:08.607000Z"
+          "published_at": "2026-08-19T11:37:03.693000Z"
         },
         {
-          "title": "https://openai.com/index/safetykit/",
-          "url": "https://openai.com/index/safetykit/",
-          "published_at": "2026-08-19T07:44:03.576000Z"
+          "title": "https://openai.com/index/nvidia/chatgpt-work/",
+          "url": "https://openai.com/index/nvidia/chatgpt-work/",
+          "published_at": "2026-08-19T11:37:02.364000Z"
         },
         {
-          "title": "https://openai.com/index/healthbench/",
-          "url": "https://openai.com/index/healthbench/",
-          "published_at": "2026-08-19T07:37:01.842000Z"
+          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "published_at": "2026-08-19T11:36:32.883000Z"
+        },
+        {
+          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "published_at": "2026-08-19T11:36:32.883000Z"
+        },
+        {
+          "title": "https://openai.com/index/ten-advances-in-mathematics/",
+          "url": "https://openai.com/index/ten-advances-in-mathematics/",
+          "published_at": "2026-08-19T11:28:19.229000Z"
         },
         {
           "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
           "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
-          "published_at": "2026-08-19T07:33:09.214000Z"
+          "published_at": "2026-08-19T11:27:44.955000Z"
         },
         {
-          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "published_at": "2026-08-19T07:28:42.692000Z"
+          "title": "https://openai.com/index/healthbench/",
+          "url": "https://openai.com/index/healthbench/",
+          "published_at": "2026-08-19T11:23:02.896000Z"
         },
         {
-          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "published_at": "2026-08-19T07:28:42.692000Z"
+          "title": "https://openai.com/index/safetykit/",
+          "url": "https://openai.com/index/safetykit/",
+          "published_at": "2026-08-19T11:14:44.959000Z"
         },
         {
-          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "published_at": "2026-08-19T07:21:20.224000Z"
-        },
-        {
-          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "published_at": "2026-08-19T07:21:20.224000Z"
+          "title": "https://openai.com/index/partnering-with-codeai/",
+          "url": "https://openai.com/index/partnering-with-codeai/",
+          "published_at": "2026-08-19T11:01:57.888000Z"
         },
         {
           "title": "https://openai.com/index/the-defenders-window/",
           "url": "https://openai.com/index/the-defenders-window/",
-          "published_at": "2026-08-19T06:44:17.357000Z"
+          "published_at": "2026-08-19T10:49:17.897000Z"
+        },
+        {
+          "title": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work/",
+          "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work/",
+          "published_at": "2026-08-19T09:33:02.170000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "published_at": "2026-08-19T09:03:39.564000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "published_at": "2026-08-19T09:03:39.564000Z"
         },
         {
           "title": "https://openai.com/index/building-abundant-intelligence/",
           "url": "https://openai.com/index/building-abundant-intelligence/",
           "published_at": "2026-08-19T06:32:07.330000Z"
-        },
-        {
-          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-          "published_at": "2026-08-19T05:04:57.034000Z"
-        },
-        {
-          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-          "published_at": "2026-08-19T05:04:57.034000Z"
-        },
-        {
-          "title": "https://openai.com/index/ten-advances-in-mathematics/",
-          "url": "https://openai.com/index/ten-advances-in-mathematics/",
-          "published_at": "2026-08-19T04:11:50.101000Z"
         },
         {
           "title": "https://openai.com/index/browsecomp/",
@@ -2079,11 +2098,6 @@
           "published_at": "2026-08-19T00:16:19.488000Z"
         },
         {
-          "title": "https://openai.com/index/partnering-with-codeai/",
-          "url": "https://openai.com/index/partnering-with-codeai/",
-          "published_at": "2026-08-19T00:13:45.012000Z"
-        },
-        {
           "title": "https://openai.com/index/nubank/",
           "url": "https://openai.com/index/nubank/",
           "published_at": "2026-08-19T00:10:02.556000Z"
@@ -2097,16 +2111,6 @@
           "title": "https://openai.com/index/introducing-data-residency-in-asia/",
           "url": "https://openai.com/index/introducing-data-residency-in-asia/",
           "published_at": "2026-08-18T23:15:06.169000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "published_at": "2026-08-18T21:59:36.065000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "published_at": "2026-08-18T21:59:36.065000Z"
         },
         {
           "title": "https://openai.com/index/gpt-5-lowers-protein-synthesis-cost/",
@@ -2342,11 +2346,6 @@
           "title": "https://openai.com/index/openai-scholars-2020-final-projects/",
           "url": "https://openai.com/index/openai-scholars-2020-final-projects/",
           "published_at": "2026-08-18T21:43:04.388000Z"
-        },
-        {
-          "title": "https://openai.com/index/the-power-of-continuous-learning/",
-          "url": "https://openai.com/index/the-power-of-continuous-learning/",
-          "published_at": "2026-08-18T21:43:04.189000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
