@@ -1,17 +1,17 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-19T12:00:11+08:00",
+  "run_at": "2026-08-19T16:00:42+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-16T04:00:11+08:00",
-    "end": "2026-08-19T12:00:11+08:00",
+    "start": "2026-08-16T08:00:42+08:00",
+    "end": "2026-08-19T16:00:42+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
   "raw_candidates": 182,
-  "unique_candidates": 166,
+  "unique_candidates": 165,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
@@ -477,8 +477,7 @@
         "type": "developer_docs",
         "url": "https://platform.minimaxi.com/document",
         "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "http_code": "404"
       },
       {
         "channel": "china_frontier_models",
@@ -1750,69 +1749,99 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/ten-advances-in-mathematics/",
-          "url": "https://openai.com/index/ten-advances-in-mathematics/",
-          "published_at": "2026-08-19T03:56:50.284000Z"
-        },
-        {
-          "title": "https://openai.com/index/chatgpt-for-teachers/",
-          "url": "https://openai.com/index/chatgpt-for-teachers/",
-          "published_at": "2026-08-19T03:55:02.588000Z"
-        },
-        {
-          "title": "https://openai.com/index/the-defenders-window/",
-          "url": "https://openai.com/index/the-defenders-window/",
-          "published_at": "2026-08-19T03:54:39.252000Z"
+          "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+          "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+          "published_at": "2026-08-19T08:01:11.137000Z"
         },
         {
           "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
           "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "published_at": "2026-08-19T03:40:04.562000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "published_at": "2026-08-19T03:40:04.562000Z"
-        },
-        {
-          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "published_at": "2026-08-19T03:23:54.864000Z"
-        },
-        {
-          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "published_at": "2026-08-19T03:23:54.864000Z"
-        },
-        {
-          "title": "https://openai.com/index/healthbench/",
-          "url": "https://openai.com/index/healthbench/",
-          "published_at": "2026-08-19T03:17:01.795000Z"
-        },
-        {
-          "title": "https://openai.com/index/safetykit/",
-          "url": "https://openai.com/index/safetykit/",
-          "published_at": "2026-08-19T02:06:25.054000Z"
-        },
-        {
-          "title": "https://openai.com/index/browsecomp/",
-          "url": "https://openai.com/index/browsecomp/",
-          "published_at": "2026-08-19T01:24:02.853000Z"
-        },
-        {
-          "title": "https://openai.com/index/browsecomp/",
-          "url": "https://openai.com/index/browsecomp/",
-          "published_at": "2026-08-19T01:24:02.853000Z"
-        },
-        {
-          "title": "https://openai.com/index/browsecomp/",
-          "url": "https://openai.com/index/browsecomp/",
-          "published_at": "2026-08-19T01:24:02.853000Z"
+          "published_at": "2026-08-19T08:01:11.137000Z"
         },
         {
           "title": "https://openai.com/index/nvidia/chatgpt-work/",
           "url": "https://openai.com/index/nvidia/chatgpt-work/",
-          "published_at": "2026-08-19T01:15:02.275000Z"
+          "published_at": "2026-08-19T07:57:32.113000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-for-teachers/",
+          "url": "https://openai.com/index/chatgpt-for-teachers/",
+          "published_at": "2026-08-19T07:49:08.607000Z"
+        },
+        {
+          "title": "https://openai.com/index/safetykit/",
+          "url": "https://openai.com/index/safetykit/",
+          "published_at": "2026-08-19T07:44:03.576000Z"
+        },
+        {
+          "title": "https://openai.com/index/healthbench/",
+          "url": "https://openai.com/index/healthbench/",
+          "published_at": "2026-08-19T07:37:01.842000Z"
+        },
+        {
+          "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
+          "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
+          "published_at": "2026-08-19T07:33:09.214000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "published_at": "2026-08-19T07:28:42.692000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "published_at": "2026-08-19T07:28:42.692000Z"
+        },
+        {
+          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "published_at": "2026-08-19T07:21:20.224000Z"
+        },
+        {
+          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "published_at": "2026-08-19T07:21:20.224000Z"
+        },
+        {
+          "title": "https://openai.com/index/the-defenders-window/",
+          "url": "https://openai.com/index/the-defenders-window/",
+          "published_at": "2026-08-19T06:44:17.357000Z"
+        },
+        {
+          "title": "https://openai.com/index/building-abundant-intelligence/",
+          "url": "https://openai.com/index/building-abundant-intelligence/",
+          "published_at": "2026-08-19T06:32:07.330000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "published_at": "2026-08-19T05:04:57.034000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "published_at": "2026-08-19T05:04:57.034000Z"
+        },
+        {
+          "title": "https://openai.com/index/ten-advances-in-mathematics/",
+          "url": "https://openai.com/index/ten-advances-in-mathematics/",
+          "published_at": "2026-08-19T04:11:50.101000Z"
+        },
+        {
+          "title": "https://openai.com/index/browsecomp/",
+          "url": "https://openai.com/index/browsecomp/",
+          "published_at": "2026-08-19T01:24:02.853000Z"
+        },
+        {
+          "title": "https://openai.com/index/browsecomp/",
+          "url": "https://openai.com/index/browsecomp/",
+          "published_at": "2026-08-19T01:24:02.853000Z"
+        },
+        {
+          "title": "https://openai.com/index/browsecomp/",
+          "url": "https://openai.com/index/browsecomp/",
+          "published_at": "2026-08-19T01:24:02.853000Z"
         },
         {
           "title": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
@@ -2060,21 +2089,6 @@
           "published_at": "2026-08-19T00:10:02.556000Z"
         },
         {
-          "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
-          "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
-          "published_at": "2026-08-18T23:56:51.082000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "published_at": "2026-08-18T23:49:23.967000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
-          "published_at": "2026-08-18T23:49:23.967000Z"
-        },
-        {
           "title": "https://openai.com/index/next-phase-of-microsoft-partnership/",
           "url": "https://openai.com/index/next-phase-of-microsoft-partnership/",
           "published_at": "2026-08-18T23:17:09.278000Z"
@@ -2290,13 +2304,13 @@
           "published_at": "2026-08-18T21:43:04.770000Z"
         },
         {
-          "title": "https://openai.com/index/special-projects/",
-          "url": "https://openai.com/index/special-projects/",
+          "title": "https://openai.com/index/openai-summer-fellows-2018/",
+          "url": "https://openai.com/index/openai-summer-fellows-2018/",
           "published_at": "2026-08-18T21:43:04.761000Z"
         },
         {
-          "title": "https://openai.com/index/openai-summer-fellows-2018/",
-          "url": "https://openai.com/index/openai-summer-fellows-2018/",
+          "title": "https://openai.com/index/special-projects/",
+          "url": "https://openai.com/index/special-projects/",
           "published_at": "2026-08-18T21:43:04.761000Z"
         },
         {
@@ -2333,21 +2347,6 @@
           "title": "https://openai.com/index/the-power-of-continuous-learning/",
           "url": "https://openai.com/index/the-power-of-continuous-learning/",
           "published_at": "2026-08-18T21:43:04.189000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-openai-japan/",
-          "url": "https://openai.com/index/introducing-openai-japan/",
-          "published_at": "2026-08-18T21:43:04.137000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-lp/",
-          "url": "https://openai.com/index/openai-lp/",
-          "published_at": "2026-08-18T21:43:04.135000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-welcomes-cfo-cpo/",
-          "url": "https://openai.com/index/openai-welcomes-cfo-cpo/",
-          "published_at": "2026-08-18T21:43:04.035000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
