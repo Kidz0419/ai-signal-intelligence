@@ -271,7 +271,7 @@ def run_probe(name: str, adapter: str, url: str, cutoff_utc: datetime) -> ProbeR
         return ProbeResult(name, adapter, url, "mechanical_failure", 0, [], f"{type(e).__name__}: {e}")
 
 
-def build_brief(date: str, run_at: datetime, previous_count: int, total_count: int, source_counts: Counter, probe_results: list[ProbeResult]) -> str:
+def build_brief(date: str, start: datetime, run_at: datetime, previous_count: int, total_count: int, source_counts: Counter, probe_results: list[ProbeResult]) -> str:
     blocked = source_counts.get("access_blocked", 0)
     mech = source_counts.get("mechanical_failure", 0)
     checked = source_counts.get("checked_no_match", 0)
@@ -282,7 +282,7 @@ def build_brief(date: str, run_at: datetime, previous_count: int, total_count: i
     ) or "- 本轮未运行代表性 feed/release 探针。"
     return f"""# AI Signal 日报｜{date}
 
-**窗口：** 北京时间 {date} 00:00 至 {run_at.strftime('%Y-%m-%d %H:%M')}  
+**窗口：** 北京时间 {start.strftime('%Y-%m-%d %H:%M')} 至 {run_at.strftime('%Y-%m-%d %H:%M')}  
 **一句话结论：** 本轮完成 {sum(source_counts.values())} 个主注册信源的连通性审计，并对 {len(probe_results)} 个 Feed、Release 与 Sitemap 通道执行增量发现；候选只进入待核验池，不由机械脚本自动升级为正式 Signal。
 
 ## 四主线重点
@@ -532,7 +532,7 @@ def main() -> None:
     if existing_ledger is None:
         save_json(day_dir / "citation-ledger.json", build_empty_ledger())
     if existing_brief is None:
-        (day_dir / "daily-brief.md").write_text(build_brief(date, run_at, previous_count, total_count, status_counts, probe_results))
+        (day_dir / "daily-brief.md").write_text(build_brief(date, start, run_at, previous_count, total_count, status_counts, probe_results))
 
     existing_discovery = load_json(day_dir / "discovery-candidates.json", {"candidates": []})
     state_path = root / ".cache" / "discovery-state.json"
