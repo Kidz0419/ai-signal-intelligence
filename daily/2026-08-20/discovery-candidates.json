@@ -1,102 +1,57 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-20T08:11:46+08:00",
+  "generated_at": "2026-08-20T16:00:10+08:00",
   "window": {
-    "start": "2026-08-17T00:11:46+08:00",
-    "end": "2026-08-20T08:11:46+08:00",
+    "start": "2026-08-17T08:00:10+08:00",
+    "end": "2026-08-20T16:00:10+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 83,
-  "new_in_run_count": 29,
+  "candidate_count": 98,
+  "new_in_run_count": 15,
   "new_candidates": [
     {
-      "source_name": "AWS Database RSS",
+      "source_name": "AWS Architecture RSS",
       "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/database/feed/",
-      "title": "Understand memory management in Amazon RDS for PostgreSQL to avoid out of memory",
-      "url": "https://aws.amazon.com/blogs/database/understand-memory-management-in-amazon-rds-for-postgresql-to-avoid-out-of-memory/",
-      "published_or_lastmod_at": "2026-08-19T22:21:10Z",
+      "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
+      "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 1",
+      "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-1/",
+      "published_or_lastmod_at": "2026-08-20T00:32:52Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "AWS ML Blog RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "title": "Domain and publish date filters for Web Search on AgentCore",
-      "url": "https://aws.amazon.com/blogs/machine-learning/domain-and-publish-date-filters-for-web-search-on-agentcore/",
-      "published_or_lastmod_at": "2026-08-19T22:13:20Z",
+      "source_name": "Claude Code releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
+      "title": "v2.1.237",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
+      "published_or_lastmod_at": "2026-08-20T00:54:41Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "AWS ML Blog RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "title": "Automate Document Processing with Quick Automate and the IDP Accelerator",
-      "url": "https://aws.amazon.com/blogs/machine-learning/automate-document-processing-with-quick-automate-and-the-idp-accelerator/",
-      "published_or_lastmod_at": "2026-08-19T22:09:56Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "AWS ML Blog RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "title": "Asynchronous patterns for calling Amazon Bedrock AgentCore agents in serverless pipelines",
-      "url": "https://aws.amazon.com/blogs/machine-learning/asynchronous-patterns-for-calling-amazon-bedrock-agentcore-agents-in-serverless-pipelines/",
-      "published_or_lastmod_at": "2026-08-19T22:06:09Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "AWS ML Blog RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "title": "How Fanatics Betting and Gaming built a multi-agent customer support system",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-fanatics-betting-and-gaming-built-a-multi-agent-customer-support-system/",
-      "published_or_lastmod_at": "2026-08-19T20:40:45Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "AWS ML Blog RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "title": "KnowledgeForge: mining gold from the ITSM ticket graveyard",
-      "url": "https://aws.amazon.com/blogs/machine-learning/knowledgeforge-mining-gold-from-the-itsm-ticket-graveyard/",
-      "published_or_lastmod_at": "2026-08-19T20:36:50Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "AWS Public Sector RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "title": "Digital Earth Africa and AWS are making satellite data work for Africa",
-      "url": "https://aws.amazon.com/blogs/publicsector/digital-earth-africa-and-aws-are-making-satellite-data-work-for-africa/",
-      "published_or_lastmod_at": "2026-08-19T23:13:25Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "AWS Public Sector RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "title": "Building machine-readable FedRAMP 20x evidence on AWS",
-      "url": "https://aws.amazon.com/blogs/publicsector/building-machine-readable-fedramp-20x-evidence-on-aws/",
-      "published_or_lastmod_at": "2026-08-19T22:29:40Z",
+      "source_name": "CrewAI releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/crewAIInc/crewAI/releases.atom",
+      "title": "1.15.17",
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.17",
+      "published_or_lastmod_at": "2026-08-20T00:27:23Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI Codex releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.149.0-alpha.2",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.2",
-      "published_or_lastmod_at": "2026-08-19T22:40:22Z",
+      "title": "0.149.0-alpha.3",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.3",
+      "published_or_lastmod_at": "2026-08-20T02:30:56Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-      "published_or_lastmod_at": "2026-08-20T00:11:04.307000Z",
+      "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "published_or_lastmod_at": "2026-08-20T07:55:03.458000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -105,7 +60,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
       "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-      "published_or_lastmod_at": "2026-08-20T00:00:45.483000Z",
+      "published_or_lastmod_at": "2026-08-20T06:54:47.607000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -114,70 +69,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/replit/",
       "url": "https://openai.com/index/replit/",
-      "published_or_lastmod_at": "2026-08-19T23:52:34.903000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-6/",
-      "url": "https://openai.com/index/gpt-5-6/",
-      "published_or_lastmod_at": "2026-08-19T23:52:28.787000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/builders-guide-to-gpt-5-6/",
-      "url": "https://openai.com/index/builders-guide-to-gpt-5-6/",
-      "published_or_lastmod_at": "2026-08-19T23:52:14.496000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/a-scorecard-for-the-ai-age/",
-      "url": "https://openai.com/index/a-scorecard-for-the-ai-age/",
-      "published_or_lastmod_at": "2026-08-19T23:42:11.153000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/nvidia/chatgpt-work/",
-      "url": "https://openai.com/index/nvidia/chatgpt-work/",
-      "published_or_lastmod_at": "2026-08-19T23:38:02.456000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-      "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-      "published_or_lastmod_at": "2026-08-19T23:01:29.615000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-for-teachers/",
-      "url": "https://openai.com/index/chatgpt-for-teachers/",
-      "published_or_lastmod_at": "2026-08-19T22:57:01.975000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/openai-campus-network-student-club-interest-form/",
-      "url": "https://openai.com/index/openai-campus-network-student-club-interest-form/",
-      "published_or_lastmod_at": "2026-08-19T22:55:45.398000Z",
+      "published_or_lastmod_at": "2026-08-20T06:34:05.553000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -186,92 +78,209 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/blue-j/",
       "url": "https://openai.com/index/blue-j/",
-      "published_or_lastmod_at": "2026-08-19T22:54:49.764000Z",
+      "published_or_lastmod_at": "2026-08-20T06:30:05.559000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/",
-      "url": "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/",
-      "published_or_lastmod_at": "2026-08-19T22:54:37.465000Z",
+      "title": "https://openai.com/index/chatgpt-for-teachers/",
+      "url": "https://openai.com/index/chatgpt-for-teachers/",
+      "published_or_lastmod_at": "2026-08-20T05:35:03.093000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/devday-2026/",
-      "url": "https://openai.com/index/devday-2026/",
-      "published_or_lastmod_at": "2026-08-19T22:31:24.048000Z",
+      "title": "https://openai.com/index/nvidia/chatgpt-work/",
+      "url": "https://openai.com/index/nvidia/chatgpt-work/",
+      "published_or_lastmod_at": "2026-08-20T05:29:10.301000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/the-defenders-window/",
-      "url": "https://openai.com/index/the-defenders-window/",
-      "published_or_lastmod_at": "2026-08-19T22:20:16.901000Z",
+      "title": "https://openai.com/index/introducing-the-codex-app/",
+      "url": "https://openai.com/index/introducing-the-codex-app/",
+      "published_or_lastmod_at": "2026-08-20T03:24:33.727000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-      "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-      "published_or_lastmod_at": "2026-08-19T22:01:03.750000Z",
+      "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+      "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+      "published_or_lastmod_at": "2026-08-20T01:28:28.437000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/openai-joins-ports-pike-project/",
-      "url": "https://openai.com/index/openai-joins-ports-pike-project/",
-      "published_or_lastmod_at": "2026-08-19T21:56:04.608000Z",
+      "title": "https://openai.com/index/gpt-5-6/",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "published_or_lastmod_at": "2026-08-20T01:16:30.597000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/safetykit/",
-      "url": "https://openai.com/index/safetykit/",
-      "published_or_lastmod_at": "2026-08-19T21:50:02.544000Z",
+      "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "published_or_lastmod_at": "2026-08-20T00:22:32.103000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
-      "url": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
-      "published_or_lastmod_at": "2026-08-19T23:16:00Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "Quoting Jeremy Morrell",
-      "url": "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
-      "published_or_lastmod_at": "2026-08-19T22:56:31Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "Conceptual integrity and counting lines of code",
-      "url": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
-      "published_or_lastmod_at": "2026-08-19T22:46:07Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/partnering-with-codeai/",
+      "url": "https://openai.com/index/partnering-with-codeai/",
+      "published_or_lastmod_at": "2026-08-20T00:19:58.016000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "published_or_lastmod_at": "2026-08-20T07:55:03.458000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "published_or_lastmod_at": "2026-08-20T06:54:47.607000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/replit/",
+      "url": "https://openai.com/index/replit/",
+      "published_or_lastmod_at": "2026-08-20T06:34:05.553000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/blue-j/",
+      "url": "https://openai.com/index/blue-j/",
+      "published_or_lastmod_at": "2026-08-20T06:30:05.559000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-for-teachers/",
+      "url": "https://openai.com/index/chatgpt-for-teachers/",
+      "published_or_lastmod_at": "2026-08-20T05:35:03.093000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/nvidia/chatgpt-work/",
+      "url": "https://openai.com/index/nvidia/chatgpt-work/",
+      "published_or_lastmod_at": "2026-08-20T05:29:10.301000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-the-codex-app/",
+      "url": "https://openai.com/index/introducing-the-codex-app/",
+      "published_or_lastmod_at": "2026-08-20T03:24:33.727000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.149.0-alpha.3",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.3",
+      "published_or_lastmod_at": "2026-08-20T02:30:56Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+      "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+      "published_or_lastmod_at": "2026-08-20T01:28:28.437000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-6/",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "published_or_lastmod_at": "2026-08-20T01:16:30.597000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Claude Code releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
+      "title": "v2.1.237",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
+      "published_or_lastmod_at": "2026-08-20T00:54:41Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Architecture RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
+      "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 1",
+      "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-1/",
+      "published_or_lastmod_at": "2026-08-20T00:32:52Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "CrewAI releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/crewAIInc/crewAI/releases.atom",
+      "title": "1.15.17",
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.17",
+      "published_or_lastmod_at": "2026-08-20T00:27:23Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "published_or_lastmod_at": "2026-08-20T00:22:32.103000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/partnering-with-codeai/",
+      "url": "https://openai.com/index/partnering-with-codeai/",
+      "published_or_lastmod_at": "2026-08-20T00:19:58.016000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",

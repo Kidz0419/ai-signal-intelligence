@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-20T08:11:46+08:00",
+  "run_at": "2026-08-20T16:00:10+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-17T00:11:46+08:00",
-    "end": "2026-08-20T08:11:46+08:00",
+    "start": "2026-08-17T08:00:10+08:00",
+    "end": "2026-08-20T16:00:10+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 208,
+  "raw_candidates": 207,
   "unique_candidates": 182,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 208,
+  "unreviewed_candidate_count": 207,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -338,7 +338,7 @@
         "type": "company_ir",
         "url": "https://investor.atmeta.com/",
         "status": "not_checked",
-        "http_code": "206",
+        "http_code": "200",
         "final_url": "https://investor.atmeta.com/home/default.aspx",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
@@ -1111,7 +1111,7 @@
         "type": "evaluation_org",
         "url": "https://metr.org/blog/",
         "status": "not_checked",
-        "http_code": "206",
+        "http_code": "200",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1227,6 +1227,11 @@
       "status": "candidate_only",
       "checked_items": 20,
       "recent_items": [
+        {
+          "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 1",
+          "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-1/",
+          "published_at": "2026-08-20T00:32:52Z"
+        },
         {
           "title": "How Clario technology detects PHI/PII in DICOM images using Amazon Bedrock",
           "url": "https://aws.amazon.com/blogs/architecture/how-clario-automates-phi-pii-detection-in-dicom-images-using-amazon-bedrock/",
@@ -1448,15 +1453,9 @@
       "name": "Browser Use releases",
       "adapter": "atom",
       "source_url": "https://github.com/browser-use/browser-use/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "0.13.8",
-          "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.8",
-          "published_at": "2026-08-16T18:48:54Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1466,6 +1465,11 @@
       "status": "candidate_only",
       "checked_items": 10,
       "recent_items": [
+        {
+          "title": "v2.1.237",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
+          "published_at": "2026-08-20T00:54:41Z"
+        },
         {
           "title": "v2.1.236",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
@@ -1488,9 +1492,15 @@
       "name": "CrewAI releases",
       "adapter": "atom",
       "source_url": "https://github.com/crewAIInc/crewAI/releases.atom",
-      "status": "checked_no_match",
+      "status": "candidate_only",
       "checked_items": 10,
-      "recent_items": [],
+      "recent_items": [
+        {
+          "title": "1.15.17",
+          "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.17",
+          "published_at": "2026-08-20T00:27:23Z"
+        }
+      ],
       "note": ""
     },
     {
@@ -1594,11 +1604,6 @@
           "title": "https://blog.google/products-and-platforms/products/chrome/gemini-in-chrome-android-auto-browse/",
           "url": "https://blog.google/products-and-platforms/products/chrome/gemini-in-chrome-android-auto-browse/",
           "published_at": "2026-08-18T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
-          "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
-          "published_at": "2026-08-17T00:00:00Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1801,11 +1806,6 @@
           "title": "v0.22.0",
           "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.22.0",
           "published_at": "2026-08-19T13:44:38Z"
-        },
-        {
-          "title": "v0.21.1",
-          "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.21.1",
-          "published_at": "2026-08-16T22:28:55Z"
         }
       ],
       "note": ""
@@ -1817,6 +1817,11 @@
       "status": "candidate_only",
       "checked_items": 10,
       "recent_items": [
+        {
+          "title": "0.149.0-alpha.3",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.3",
+          "published_at": "2026-08-20T02:30:56Z"
+        },
         {
           "title": "0.149.0-alpha.2",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.2",
@@ -1872,39 +1877,84 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "published_at": "2026-08-20T00:11:04.307000Z"
+          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "published_at": "2026-08-20T07:55:03.458000Z"
         },
         {
-          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "published_at": "2026-08-20T00:11:04.307000Z"
-        },
-        {
-          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "published_at": "2026-08-20T00:00:45.483000Z"
+          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "published_at": "2026-08-20T07:55:03.458000Z"
         },
         {
           "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
           "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "published_at": "2026-08-20T00:00:45.483000Z"
+          "published_at": "2026-08-20T06:54:47.607000Z"
+        },
+        {
+          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "published_at": "2026-08-20T06:54:47.607000Z"
         },
         {
           "title": "https://openai.com/index/replit/",
           "url": "https://openai.com/index/replit/",
-          "published_at": "2026-08-19T23:52:34.903000Z"
+          "published_at": "2026-08-20T06:34:05.553000Z"
+        },
+        {
+          "title": "https://openai.com/index/blue-j/",
+          "url": "https://openai.com/index/blue-j/",
+          "published_at": "2026-08-20T06:30:05.559000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-for-teachers/",
+          "url": "https://openai.com/index/chatgpt-for-teachers/",
+          "published_at": "2026-08-20T05:35:03.093000Z"
+        },
+        {
+          "title": "https://openai.com/index/nvidia/chatgpt-work/",
+          "url": "https://openai.com/index/nvidia/chatgpt-work/",
+          "published_at": "2026-08-20T05:29:10.301000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-the-codex-app/",
+          "url": "https://openai.com/index/introducing-the-codex-app/",
+          "published_at": "2026-08-20T03:24:33.727000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+          "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+          "published_at": "2026-08-20T01:28:28.437000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+          "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+          "published_at": "2026-08-20T01:28:28.437000Z"
         },
         {
           "title": "https://openai.com/index/gpt-5-6/",
           "url": "https://openai.com/index/gpt-5-6/",
-          "published_at": "2026-08-19T23:52:28.787000Z"
+          "published_at": "2026-08-20T01:16:30.597000Z"
         },
         {
           "title": "https://openai.com/index/gpt-5-6/",
           "url": "https://openai.com/index/gpt-5-6/",
-          "published_at": "2026-08-19T23:52:28.787000Z"
+          "published_at": "2026-08-20T01:16:30.597000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "published_at": "2026-08-20T00:22:32.103000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "published_at": "2026-08-20T00:22:32.103000Z"
+        },
+        {
+          "title": "https://openai.com/index/partnering-with-codeai/",
+          "url": "https://openai.com/index/partnering-with-codeai/",
+          "published_at": "2026-08-20T00:19:58.016000Z"
         },
         {
           "title": "https://openai.com/index/builders-guide-to-gpt-5-6/",
@@ -1917,34 +1967,9 @@
           "published_at": "2026-08-19T23:42:11.153000Z"
         },
         {
-          "title": "https://openai.com/index/nvidia/chatgpt-work/",
-          "url": "https://openai.com/index/nvidia/chatgpt-work/",
-          "published_at": "2026-08-19T23:38:02.456000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "published_at": "2026-08-19T23:01:29.615000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "published_at": "2026-08-19T23:01:29.615000Z"
-        },
-        {
-          "title": "https://openai.com/index/chatgpt-for-teachers/",
-          "url": "https://openai.com/index/chatgpt-for-teachers/",
-          "published_at": "2026-08-19T22:57:01.975000Z"
-        },
-        {
           "title": "https://openai.com/index/openai-campus-network-student-club-interest-form/",
           "url": "https://openai.com/index/openai-campus-network-student-club-interest-form/",
           "published_at": "2026-08-19T22:55:45.398000Z"
-        },
-        {
-          "title": "https://openai.com/index/blue-j/",
-          "url": "https://openai.com/index/blue-j/",
-          "published_at": "2026-08-19T22:54:49.764000Z"
         },
         {
           "title": "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/",
@@ -1987,16 +2012,6 @@
           "published_at": "2026-08-19T21:50:02.544000Z"
         },
         {
-          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "published_at": "2026-08-19T19:36:11.826000Z"
-        },
-        {
-          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "published_at": "2026-08-19T19:36:11.826000Z"
-        },
-        {
           "title": "https://openai.com/index/unive/",
           "url": "https://openai.com/index/unive/",
           "published_at": "2026-08-19T19:35:26.018000Z"
@@ -2015,11 +2030,6 @@
           "title": "https://openai.com/index/virgin-atlantic/chatgpt-work/",
           "url": "https://openai.com/index/virgin-atlantic/chatgpt-work/",
           "published_at": "2026-08-19T17:29:50.199000Z"
-        },
-        {
-          "title": "https://openai.com/index/partnering-with-codeai/",
-          "url": "https://openai.com/index/partnering-with-codeai/",
-          "published_at": "2026-08-19T17:18:20.607000Z"
         },
         {
           "title": "https://openai.com/index/codex-for-almost-everything/",
@@ -2465,11 +2475,6 @@
           "title": "https://openai.com/index/will-hurd-joins/",
           "url": "https://openai.com/index/will-hurd-joins/",
           "published_at": "2026-08-18T21:43:05.624000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-acquires-global-illumination/",
-          "url": "https://openai.com/index/openai-acquires-global-illumination/",
-          "published_at": "2026-08-18T21:43:05.571000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2525,16 +2530,6 @@
           "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
           "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
           "published_at": "2026-08-17T15:21:29Z"
-        },
-        {
-          "title": "Markdown SVG upgrades",
-          "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
-          "published_at": "2026-08-16T23:59:37Z"
-        },
-        {
-          "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
-          "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-          "published_at": "2026-08-16T22:00:39Z"
         }
       ],
       "note": ""
@@ -2554,7 +2549,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "208 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "207 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
