@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-21T00:00:16+08:00",
+  "run_at": "2026-08-21T04:00:34+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-17T16:00:16+08:00",
-    "end": "2026-08-21T00:00:16+08:00",
+    "start": "2026-08-17T20:00:34+08:00",
+    "end": "2026-08-21T04:00:34+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 212,
-  "unique_candidates": 187,
+  "raw_candidates": 224,
+  "unique_candidates": 198,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 212,
+  "unreviewed_candidate_count": 224,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,27 +35,27 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 11,
+  "collection_errors": 10,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 6,
+      "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 5,
-      "not_checked": 100
+      "mechanical_failure": 3,
+      "not_checked": 101
     },
     "channel_counts": {
       "frontier_model_official": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 2,
+        "access_blocked": 3,
         "auth_required": 0,
         "mechanical_failure": 0,
-        "not_checked": 25
+        "not_checked": 24
       },
       "china_frontier_models": {
         "selected": 0,
@@ -108,8 +108,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 9
+        "mechanical_failure": 0,
+        "not_checked": 11
       }
     },
     "records": [
@@ -550,7 +550,7 @@
         "type": "official_research",
         "url": "https://www.amazon.science/tag/artificial-intelligence",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "202",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -754,9 +754,9 @@
         "name": "OpenAI News",
         "type": "official_news",
         "url": "https://openai.com/news/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "access_blocked",
+        "http_code": "403",
+        "note": "curl 403; registry fallback requires browser or official article/index alternative, so this is not treated as no match."
       },
       {
         "channel": "frontier_model_official",
@@ -1000,9 +1000,9 @@
         "name": "Latent Space",
         "type": "longform_blog_podcast",
         "url": "https://www.latent.space/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
@@ -1036,9 +1036,9 @@
         "name": "The Pragmatic Engineer",
         "type": "longform_blog",
         "url": "https://newsletter.pragmaticengineer.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
@@ -1102,7 +1102,7 @@
         "url": "https://lmarena.ai/",
         "status": "not_checked",
         "http_code": "200",
-        "final_url": "https://arena.ai/agent",
+        "final_url": "https://arena.ai/",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1308,6 +1308,26 @@
       "checked_items": 20,
       "recent_items": [
         {
+          "title": "Authoring Dogwood policies from natural language in Amazon Bedrock AgentCore",
+          "url": "https://aws.amazon.com/blogs/machine-learning/authoring-dogwood-policies-from-natural-language-in-amazon-bedrock-agentcore/",
+          "published_at": "2026-08-20T16:31:28Z"
+        },
+        {
+          "title": "Scaling agentic AI: Enterprise patterns without vendor lock-in",
+          "url": "https://aws.amazon.com/blogs/machine-learning/scaling-agentic-ai-enterprise-patterns-without-vendor-lock-in/",
+          "published_at": "2026-08-20T16:24:12Z"
+        },
+        {
+          "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
+          "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore/",
+          "published_at": "2026-08-20T16:11:18Z"
+        },
+        {
+          "title": "AWS vector solutions: Build agentic AI where your data lives",
+          "url": "https://aws.amazon.com/blogs/machine-learning/aws-vector-solutions-build-agentic-ai-where-your-data-lives/",
+          "published_at": "2026-08-20T16:06:06Z"
+        },
+        {
           "title": "Build intelligent security for healthcare APIs with Amazon Bedrock",
           "url": "https://aws.amazon.com/blogs/machine-learning/build-intelligent-security-for-healthcare-apis-with-amazon-bedrock/",
           "published_at": "2026-08-20T15:20:03Z"
@@ -1417,6 +1437,11 @@
       "checked_items": 20,
       "recent_items": [
         {
+          "title": "AWS Network Firewall now supports rule hit count",
+          "url": "https://aws.amazon.com/blogs/security/aws-network-firewall-now-supports-rule-hit-count/",
+          "published_at": "2026-08-20T18:40:20Z"
+        },
+        {
           "title": "Propagate user authorization context in AI agents with Amazon Bedrock AgentCore",
           "url": "https://aws.amazon.com/blogs/security/propagate-user-authorization-context-in-ai-agents-with-amazon-bedrock-agentcore/",
           "published_at": "2026-08-19T17:24:15Z"
@@ -1446,6 +1471,11 @@
       "status": "candidate_only",
       "checked_items": 20,
       "recent_items": [
+        {
+          "title": "How Nearmap built continental-scale aerial search using Amazon S3 Vectors",
+          "url": "https://aws.amazon.com/blogs/storage/how-nearmap-built-continental-scale-aerial-search-using-amazon-s3-vectors/",
+          "published_at": "2026-08-20T18:26:28Z"
+        },
         {
           "title": "Transfer Amazon S3 data from commercial AWS Regions to AWS European Sovereign Cloud using AWS DataSync Enhanced mode",
           "url": "https://aws.amazon.com/blogs/storage/transfer-amazon-s3-data-from-aws-commercial-regions-to-aws-european-sovereign-cloud-using-aws-datasync-enhanced-mode/",
@@ -1556,8 +1586,33 @@
           "published_at": "2026-08-20T00:00:00Z"
         },
         {
+          "title": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads/",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads/",
+          "published_at": "2026-08-20T00:00:00Z"
+        },
+        {
+          "title": "https://blog.google/company-news/inside-google/message-ceo/stanford-commencement-speech-2026/",
+          "url": "https://blog.google/company-news/inside-google/message-ceo/stanford-commencement-speech-2026/",
+          "published_at": "2026-08-20T00:00:00Z"
+        },
+        {
+          "title": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/putting-educators-at-the-center-of-ai-learning/",
+          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/putting-educators-at-the-center-of-ai-learning/",
+          "published_at": "2026-08-20T00:00:00Z"
+        },
+        {
+          "title": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/united-parks-of-america/",
+          "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/united-parks-of-america/",
+          "published_at": "2026-08-20T00:00:00Z"
+        },
+        {
           "title": "https://blog.google/company-news/outreach-and-initiatives/sustainability/new-water-stewardship-commitments/",
           "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/new-water-stewardship-commitments/",
+          "published_at": "2026-08-20T00:00:00Z"
+        },
+        {
+          "title": "https://blog.google/products-and-platforms/products/search/personalize-search-discover-news/",
+          "url": "https://blog.google/products-and-platforms/products/search/personalize-search-discover-news/",
           "published_at": "2026-08-20T00:00:00Z"
         },
         {
@@ -1651,6 +1706,11 @@
       "checked_items": 20,
       "recent_items": [
         {
+          "title": "Personalize the content you see on Search, Discover, and News",
+          "url": "https://blog.google/products-and-platforms/products/search/personalize-search-discover-news/",
+          "published_at": "2026-08-20T16:00:00Z"
+        },
+        {
           "title": "5 new ways to level up your learning with Search",
           "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
           "published_at": "2026-08-19T19:00:00Z"
@@ -1695,9 +1755,9 @@
       "checked_items": 40,
       "recent_items": [
         {
-          "title": "LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distillation",
-          "url": "https://huggingface.co/blog/LiquidAI/qad",
-          "published_at": "2026-08-19T13:48:49Z"
+          "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+          "published_at": "2026-08-20T16:52:57Z"
         },
         {
           "title": "How Much Memory Does Your Agent Actually Need?",
@@ -1833,6 +1893,16 @@
       "checked_items": 10,
       "recent_items": [
         {
+          "title": "rust-v0.149.0-alpha.8",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.8",
+          "published_at": "2026-08-20T19:50:36Z"
+        },
+        {
+          "title": "0.149.0-alpha.7",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.7",
+          "published_at": "2026-08-20T18:32:25Z"
+        },
+        {
           "title": "rust-v0.149.0-alpha.6",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.6",
           "published_at": "2026-08-20T14:49:36Z"
@@ -1871,16 +1941,6 @@
           "title": "0.148.0-alpha.23",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.23",
           "published_at": "2026-08-18T21:26:38Z"
-        },
-        {
-          "title": "0.148.0-alpha.22",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.22",
-          "published_at": "2026-08-18T13:40:10Z"
-        },
-        {
-          "title": "python-v0.147.0",
-          "url": "https://github.com/openai/codex/releases/tag/python-v0.147.0",
-          "published_at": "2026-08-18T06:08:40Z"
         }
       ],
       "note": ""
@@ -1902,26 +1962,141 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "published_at": "2026-08-20T19:58:40.004000Z"
+        },
+        {
+          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "published_at": "2026-08-20T19:58:40.004000Z"
+        },
+        {
+          "title": "https://openai.com/index/replit/",
+          "url": "https://openai.com/index/replit/",
+          "published_at": "2026-08-20T19:53:37.842000Z"
+        },
+        {
+          "title": "https://openai.com/index/nvidia/chatgpt-work/",
+          "url": "https://openai.com/index/nvidia/chatgpt-work/",
+          "published_at": "2026-08-20T19:51:07.281000Z"
+        },
+        {
+          "title": "https://openai.com/index/stampli/",
+          "url": "https://openai.com/index/stampli/",
+          "published_at": "2026-08-20T19:49:01.487000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-ai-futures/",
+          "url": "https://openai.com/index/introducing-ai-futures/",
+          "published_at": "2026-08-20T19:40:37.833000Z"
+        },
+        {
+          "title": "https://openai.com/index/blue-j/",
+          "url": "https://openai.com/index/blue-j/",
+          "published_at": "2026-08-20T19:17:38.607000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+          "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+          "published_at": "2026-08-20T19:17:03.143000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+          "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+          "published_at": "2026-08-20T19:17:03.143000Z"
+        },
+        {
+          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "published_at": "2026-08-20T18:36:34.941000Z"
+        },
+        {
+          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "published_at": "2026-08-20T18:36:34.941000Z"
+        },
+        {
+          "title": "https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models/",
+          "url": "https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models/",
+          "published_at": "2026-08-20T18:34:16.820000Z"
+        },
+        {
+          "title": "https://openai.com/index/glow/",
+          "url": "https://openai.com/index/glow/",
+          "published_at": "2026-08-20T18:34:16.729000Z"
+        },
+        {
+          "title": "https://openai.com/index/solving-rubiks-cube/",
+          "url": "https://openai.com/index/solving-rubiks-cube/",
+          "published_at": "2026-08-20T18:34:14.968000Z"
+        },
+        {
+          "title": "https://openai.com/index/ingredients-for-robotics-research/",
+          "url": "https://openai.com/index/ingredients-for-robotics-research/",
+          "published_at": "2026-08-20T18:34:13.242000Z"
+        },
+        {
+          "title": "https://openai.com/index/learning-dexterity/",
+          "url": "https://openai.com/index/learning-dexterity/",
+          "published_at": "2026-08-20T18:34:13.100000Z"
+        },
+        {
+          "title": "https://openai.com/index/learning-montezumas-revenge-from-a-single-demonstration/",
+          "url": "https://openai.com/index/learning-montezumas-revenge-from-a-single-demonstration/",
+          "published_at": "2026-08-20T18:34:12.245000Z"
+        },
+        {
+          "title": "https://openai.com/index/emergent-tool-use/",
+          "url": "https://openai.com/index/emergent-tool-use/",
+          "published_at": "2026-08-20T18:34:12.145000Z"
+        },
+        {
+          "title": "https://openai.com/index/dota-2/",
+          "url": "https://openai.com/index/dota-2/",
+          "published_at": "2026-08-20T18:34:10.736000Z"
+        },
+        {
+          "title": "https://openai.com/index/more-on-dota-2/",
+          "url": "https://openai.com/index/more-on-dota-2/",
+          "published_at": "2026-08-20T18:34:10.683000Z"
+        },
+        {
+          "title": "https://openai.com/index/debate/",
+          "url": "https://openai.com/index/debate/",
+          "published_at": "2026-08-20T18:34:10.683000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-five/",
+          "url": "https://openai.com/index/openai-five/",
+          "published_at": "2026-08-20T18:34:10.639000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-five-benchmark-results/",
+          "url": "https://openai.com/index/openai-five-benchmark-results/",
+          "published_at": "2026-08-20T18:34:10.573000Z"
+        },
+        {
+          "title": "https://openai.com/index/neural-mmo/",
+          "url": "https://openai.com/index/neural-mmo/",
+          "published_at": "2026-08-20T18:34:10.449000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-five-defeats-dota-2-world-champions/",
+          "url": "https://openai.com/index/openai-five-defeats-dota-2-world-champions/",
+          "published_at": "2026-08-20T18:34:10.403000Z"
+        },
+        {
+          "title": "https://openai.com/index/dota-2-with-large-scale-deep-reinforcement-learning/",
+          "url": "https://openai.com/index/dota-2-with-large-scale-deep-reinforcement-learning/",
+          "published_at": "2026-08-20T18:34:10.350000Z"
+        },
+        {
           "title": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
           "url": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
           "published_at": "2026-08-20T15:43:41.619000Z"
         },
         {
-          "title": "https://openai.com/index/replit/",
-          "url": "https://openai.com/index/replit/",
-          "published_at": "2026-08-20T15:39:38.784000Z"
-        },
-        {
-          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "published_at": "2026-08-20T15:36:01.467000Z"
-        },
-        {
-          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "published_at": "2026-08-20T15:36:01.467000Z"
-        },
-        {
           "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
           "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
           "published_at": "2026-08-20T15:34:12.820000Z"
@@ -1930,26 +2105,6 @@
           "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
           "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
           "published_at": "2026-08-20T15:34:12.820000Z"
-        },
-        {
-          "title": "https://openai.com/index/stampli/",
-          "url": "https://openai.com/index/stampli/",
-          "published_at": "2026-08-20T15:33:42.320000Z"
-        },
-        {
-          "title": "https://openai.com/index/nvidia/chatgpt-work/",
-          "url": "https://openai.com/index/nvidia/chatgpt-work/",
-          "published_at": "2026-08-20T15:28:34.491000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "published_at": "2026-08-20T15:17:07.316000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
-          "published_at": "2026-08-20T15:17:07.316000Z"
         },
         {
           "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
@@ -1987,16 +2142,6 @@
           "published_at": "2026-08-20T13:31:27.331000Z"
         },
         {
-          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "published_at": "2026-08-20T13:29:51.164000Z"
-        },
-        {
-          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "published_at": "2026-08-20T13:29:51.164000Z"
-        },
-        {
           "title": "https://openai.com/index/the-defenders-window/",
           "url": "https://openai.com/index/the-defenders-window/",
           "published_at": "2026-08-20T13:08:15.181000Z"
@@ -2005,11 +2150,6 @@
           "title": "https://openai.com/index/ten-advances-in-mathematics/",
           "url": "https://openai.com/index/ten-advances-in-mathematics/",
           "published_at": "2026-08-20T13:07:49.811000Z"
-        },
-        {
-          "title": "https://openai.com/index/blue-j/",
-          "url": "https://openai.com/index/blue-j/",
-          "published_at": "2026-08-20T11:49:11.450000Z"
         },
         {
           "title": "https://openai.com/index/hsp-gruppe/",
@@ -2167,16 +2307,6 @@
           "published_at": "2026-08-19T00:31:12.800000Z"
         },
         {
-          "title": "https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models/",
-          "url": "https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models/",
-          "published_at": "2026-08-19T00:21:37.155000Z"
-        },
-        {
-          "title": "https://openai.com/index/glow/",
-          "url": "https://openai.com/index/glow/",
-          "published_at": "2026-08-19T00:21:36.968000Z"
-        },
-        {
           "title": "https://openai.com/index/block-sparse-gpu-kernels/",
           "url": "https://openai.com/index/block-sparse-gpu-kernels/",
           "published_at": "2026-08-19T00:21:34.184000Z"
@@ -2185,16 +2315,6 @@
           "title": "https://openai.com/index/discovering-types-for-entity-disambiguation/",
           "url": "https://openai.com/index/discovering-types-for-entity-disambiguation/",
           "published_at": "2026-08-19T00:21:34.100000Z"
-        },
-        {
-          "title": "https://openai.com/index/solving-rubiks-cube/",
-          "url": "https://openai.com/index/solving-rubiks-cube/",
-          "published_at": "2026-08-19T00:21:34.099000Z"
-        },
-        {
-          "title": "https://openai.com/index/ingredients-for-robotics-research/",
-          "url": "https://openai.com/index/ingredients-for-robotics-research/",
-          "published_at": "2026-08-19T00:21:33.940000Z"
         },
         {
           "title": "https://openai.com/index/hierarchical-text-conditional-image-generation-with-clip-latents/",
@@ -2210,61 +2330,6 @@
           "title": "https://openai.com/index/clip/",
           "url": "https://openai.com/index/clip/",
           "published_at": "2026-08-19T00:21:33.783000Z"
-        },
-        {
-          "title": "https://openai.com/index/learning-dexterity/",
-          "url": "https://openai.com/index/learning-dexterity/",
-          "published_at": "2026-08-19T00:21:33.389000Z"
-        },
-        {
-          "title": "https://openai.com/index/dota-2/",
-          "url": "https://openai.com/index/dota-2/",
-          "published_at": "2026-08-19T00:21:29.492000Z"
-        },
-        {
-          "title": "https://openai.com/index/more-on-dota-2/",
-          "url": "https://openai.com/index/more-on-dota-2/",
-          "published_at": "2026-08-19T00:21:29.453000Z"
-        },
-        {
-          "title": "https://openai.com/index/debate/",
-          "url": "https://openai.com/index/debate/",
-          "published_at": "2026-08-19T00:21:29.343000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-five/",
-          "url": "https://openai.com/index/openai-five/",
-          "published_at": "2026-08-19T00:21:29.294000Z"
-        },
-        {
-          "title": "https://openai.com/index/learning-montezumas-revenge-from-a-single-demonstration/",
-          "url": "https://openai.com/index/learning-montezumas-revenge-from-a-single-demonstration/",
-          "published_at": "2026-08-19T00:21:29.284000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-five-benchmark-results/",
-          "url": "https://openai.com/index/openai-five-benchmark-results/",
-          "published_at": "2026-08-19T00:21:29.187000Z"
-        },
-        {
-          "title": "https://openai.com/index/neural-mmo/",
-          "url": "https://openai.com/index/neural-mmo/",
-          "published_at": "2026-08-19T00:21:29.046000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-five-defeats-dota-2-world-champions/",
-          "url": "https://openai.com/index/openai-five-defeats-dota-2-world-champions/",
-          "published_at": "2026-08-19T00:21:29.021000Z"
-        },
-        {
-          "title": "https://openai.com/index/emergent-tool-use/",
-          "url": "https://openai.com/index/emergent-tool-use/",
-          "published_at": "2026-08-19T00:21:28.890000Z"
-        },
-        {
-          "title": "https://openai.com/index/dota-2-with-large-scale-deep-reinforcement-learning/",
-          "url": "https://openai.com/index/dota-2-with-large-scale-deep-reinforcement-learning/",
-          "published_at": "2026-08-19T00:21:28.847000Z"
         },
         {
           "title": "https://openai.com/index/whisper/",
@@ -2495,11 +2560,6 @@
           "title": "https://openai.com/index/organizational-update/",
           "url": "https://openai.com/index/organizational-update/",
           "published_at": "2026-08-18T21:43:05.732000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-announces-leadership-transition/",
-          "url": "https://openai.com/index/openai-announces-leadership-transition/",
-          "published_at": "2026-08-18T21:43:05.708000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2574,7 +2634,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "212 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "224 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
