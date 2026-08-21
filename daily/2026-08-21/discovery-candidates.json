@@ -1,66 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-21T16:00:21+08:00",
+  "generated_at": "2026-08-21T20:12:47+08:00",
   "window": {
-    "start": "2026-08-18T08:00:21+08:00",
-    "end": "2026-08-21T16:00:21+08:00",
+    "start": "2026-08-18T12:12:47+08:00",
+    "end": "2026-08-21T20:12:47+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 106,
-  "new_in_run_count": 22,
+  "candidate_count": 114,
+  "new_in_run_count": 8,
   "new_candidates": [
     {
-      "source_name": "Claude Code releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
-      "title": "v2.1.238",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.238",
-      "published_or_lastmod_at": "2026-08-20T20:33:51Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.150.0-alpha.2",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.150.0-alpha.2",
-      "published_or_lastmod_at": "2026-08-21T04:26:31Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.149.0-alpha.7.1",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.7.1",
-      "published_or_lastmod_at": "2026-08-21T05:25:00Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.149.0-alpha.4.1",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.4.1",
-      "published_or_lastmod_at": "2026-08-21T02:31:36Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.150.0-alpha.1",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.150.0-alpha.1",
-      "published_or_lastmod_at": "2026-08-20T22:09:25Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.149.0",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0",
-      "published_or_lastmod_at": "2026-08-20T21:06:13Z",
+      "source_name": "AWS Architecture RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
+      "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 2",
+      "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-2/",
+      "published_or_lastmod_at": "2026-08-21T10:01:18Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
@@ -69,79 +24,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-ai-futures/",
       "url": "https://openai.com/index/introducing-ai-futures/",
-      "published_or_lastmod_at": "2026-08-21T07:59:56.095000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/how-countries-can-end-the-capability-overhang/",
-      "url": "https://openai.com/index/how-countries-can-end-the-capability-overhang/",
-      "published_or_lastmod_at": "2026-08-21T07:55:54.270000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/understanding-ai-and-learning-outcomes/",
-      "url": "https://openai.com/index/understanding-ai-and-learning-outcomes/",
-      "published_or_lastmod_at": "2026-08-21T07:55:53.452000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/equipping-workers-with-insights-about-compensation/",
-      "url": "https://openai.com/index/equipping-workers-with-insights-about-compensation/",
-      "published_or_lastmod_at": "2026-08-21T07:55:53.277000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-      "published_or_lastmod_at": "2026-08-21T07:27:11.202000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-for-excel/",
-      "url": "https://openai.com/index/chatgpt-for-excel/",
-      "published_or_lastmod_at": "2026-08-21T07:14:44.052000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-      "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-      "published_or_lastmod_at": "2026-08-21T07:09:06.919000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/replit/",
-      "url": "https://openai.com/index/replit/",
-      "published_or_lastmod_at": "2026-08-21T05:34:36.124000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/blue-j/",
-      "url": "https://openai.com/index/blue-j/",
-      "published_or_lastmod_at": "2026-08-21T05:31:32.970000Z",
+      "published_or_lastmod_at": "2026-08-21T12:10:03.061000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -150,65 +33,128 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/stampli/",
       "url": "https://openai.com/index/stampli/",
-      "published_or_lastmod_at": "2026-08-21T02:16:38.415000Z",
+      "published_or_lastmod_at": "2026-08-21T12:05:44.597000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
-      "url": "https://openai.com/index/dali-rajic-chief-revenue-officer/",
-      "published_or_lastmod_at": "2026-08-21T00:27:05.050000Z",
+      "title": "https://openai.com/index/how-countries-can-end-the-capability-overhang/",
+      "url": "https://openai.com/index/how-countries-can-end-the-capability-overhang/",
+      "published_or_lastmod_at": "2026-08-21T11:40:40.002000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/morgan-stanley/",
-      "url": "https://openai.com/index/morgan-stanley/",
-      "published_or_lastmod_at": "2026-08-20T22:22:03.889000Z",
+      "title": "https://openai.com/index/understanding-ai-and-learning-outcomes/",
+      "url": "https://openai.com/index/understanding-ai-and-learning-outcomes/",
+      "published_or_lastmod_at": "2026-08-21T11:40:39.397000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/zalando/",
-      "url": "https://openai.com/index/zalando/",
-      "published_or_lastmod_at": "2026-08-20T22:21:40.738000Z",
+      "title": "https://openai.com/index/equipping-workers-with-insights-about-compensation/",
+      "url": "https://openai.com/index/equipping-workers-with-insights-about-compensation/",
+      "published_or_lastmod_at": "2026-08-21T11:40:39.054000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/creating-new-simulations-black-holes/",
-      "url": "https://openai.com/index/creating-new-simulations-black-holes/",
-      "published_or_lastmod_at": "2026-08-20T21:06:26.524000Z",
+      "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "published_or_lastmod_at": "2026-08-21T10:56:29.479000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chip-ganassi-racing/",
-      "url": "https://openai.com/index/chip-ganassi-racing/",
-      "published_or_lastmod_at": "2026-08-20T21:06:14.921000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/nvidia/chatgpt-work/",
-      "url": "https://openai.com/index/nvidia/chatgpt-work/",
-      "published_or_lastmod_at": "2026-08-20T20:27:02.553000Z",
+      "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "published_or_lastmod_at": "2026-08-21T08:57:41.181000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-ai-futures/",
+      "url": "https://openai.com/index/introducing-ai-futures/",
+      "published_or_lastmod_at": "2026-08-21T12:10:03.061000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/stampli/",
+      "url": "https://openai.com/index/stampli/",
+      "published_or_lastmod_at": "2026-08-21T12:05:44.597000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/how-countries-can-end-the-capability-overhang/",
+      "url": "https://openai.com/index/how-countries-can-end-the-capability-overhang/",
+      "published_or_lastmod_at": "2026-08-21T11:40:40.002000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/understanding-ai-and-learning-outcomes/",
+      "url": "https://openai.com/index/understanding-ai-and-learning-outcomes/",
+      "published_or_lastmod_at": "2026-08-21T11:40:39.397000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/equipping-workers-with-insights-about-compensation/",
+      "url": "https://openai.com/index/equipping-workers-with-insights-about-compensation/",
+      "published_or_lastmod_at": "2026-08-21T11:40:39.054000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "published_or_lastmod_at": "2026-08-21T10:56:29.479000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "AWS Architecture RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
+      "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 2",
+      "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-2/",
+      "published_or_lastmod_at": "2026-08-21T10:01:18Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "published_or_lastmod_at": "2026-08-21T08:57:41.181000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
