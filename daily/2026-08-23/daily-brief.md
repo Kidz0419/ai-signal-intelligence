@@ -1,7 +1,7 @@
 # AI Signal 日报｜2026-08-23
 
-**窗口：** 北京时间 2026-08-19 16:07 至 2026-08-23 00:07  
-**一句话结论：** 本轮完成 111 个主注册信源的连通性审计，并对 34 个 Feed、Release 与 Sitemap 通道执行增量发现；候选只进入待核验池，不由机械脚本自动升级为正式 Signal。
+**窗口：** 北京时间 2026-08-19 20:16 至 2026-08-23 04:16  
+**一句话结论：** 本轮滚动发现 7 个跨轮新增候选，并完成正文级抽查；结果仍为 0 条正式 Signal。原因很直接：两条 GitHub Release 只有轻量更新说明，一条实践者发布是常规工具版本说明，4 条 OpenAI `/index/` 页面在本机连续返回 403，无法把 sitemap `lastmod` 当成发布日期或正文证据。
 
 ## 四主线重点
 
@@ -18,11 +18,11 @@
 
 ## Agent 架构｜0 条
 
-代表性 GitHub Releases / Atom 与技术 feed 巡检后，没有发现落在今日窗口内、并能支撑正式架构卡片的新版本或新工件。
+人工复核了 Claude Code `v2.1.240`、OpenAI Codex `0.149.0-alpha.7.2` 和 Simon Willison 的 `llm 0.33`。Claude Code 的官方 Release 只有“Bug fixes and reliability improvements”；Codex 这条 alpha Release 只有版本号本身，没有可支撑独立架构卡片的正文增量；`llm 0.33` 虽然有清楚的更新点，但属于个人工具版本说明，未达到会改变主流 Agent 架构决策的正式门槛。
 
 ## AI 产品｜0 条
 
-产品 Changelog/Help Center/官方博客的代表性巡检没有发现今日窗口内且证据足够的新工作流、权限边界或真实 UI 变化。
+对 OpenAI sitemap 新冒出的 `our-approach-to-age-prediction`、`stampli`、`blue-j`、`chatgpt-for-excel` 做了正文 fallback，当前运行环境下 4 条链接都持续返回 403。因为拿不到正文和 `datePublished`，这些页面只能留在 discovery/candidate 阶段，不能把 sitemap `lastmod` 当成已上线产品信号。
 
 ## AI 宏观｜0 条
 
@@ -75,22 +75,22 @@
 
 ## 覆盖与缺口
 
-- 主注册信源连通性状态：not_checked 0（仅可访问、未解析内容变化）、access_blocked 0、mechanical_failure 111。
-- 日期解析探针状态：checked_no_match 11、candidate_only 20。
-- OpenAI News / Research 等普通抓取仍可能返回 403；本轮如实记录为 access_blocked，没有把 403 写成无内容。
-- X 官方 API 仍未配置 OAuth；只使用公开网页与非 X 替代源，不声称完成闭源或登录墙覆盖。
+- 主注册信源连通性状态：not_checked 101、access_blocked 7、mechanical_failure 3；这三类都不能解释为“无新增”。
+- 代表性日期解析探针状态：checked_no_match 11、candidate_only 20；其中真正的跨轮新增只看 `new_in_run_count=7`，不是滚动窗口里的 `raw_candidates_in_rolling_window=187`。
+- 本轮已对 7 个新增候选逐条做正文级复核：3 条可打开的一手页面未达到正式门槛，4 条 OpenAI 正文被 403 阻断并保留为 candidate/access_blocked 语义，不降格写成 checked_no_match。
+- topics 保持 0，未从非正式候选自动派生内容选题。
 
 ## 今日判断
 
-1. 早晨窗口天然偏静默，尤其是需要欧美官方正文或产品变更的主线。
-2. 代表性 feed/release 巡检没有给出足够强的新证据，因此维持高阈值比凑日报更重要。
-3. 本轮主要价值在于确认“没有正式新增”并同步覆盖状态，而不是重复昨日事件。
+1. 这不是“全网没事发生”，而是“本轮新冒出的 7 个候选里，没有一个完成内容级核验后还能跨过正式门槛”。
+2. Claude Code 和 Codex 这两条 Release 都太轻；Simon Willison 这篇也更像工具更新日志，不足以单独拉起正式 Signal。
+3. OpenAI `/index/` 新页面值得继续盯，但在拿到正文和发布日期之前，只能停留在候选层。
 
 ## 建议行动
 
-- 继续等待同日后续窗口；如果欧美官方源在北京时间白天/晚间发布正式材料，再进入同日合并。
-- 对 access_blocked 的关键站点优先准备浏览器或官方 API 替代路径，避免把封锁误判成静默。
-- 保持 topics 候选池为空，不自动制造选题。
+- 下一轮优先重试这 4 条 OpenAI 页面，继续找官方正文或可验证的 Help Center / announcement 替代入口。
+- 继续盯同类高频 Release，但除非出现审批、执行边界、日志、回滚、评测或真实工作流变化，否则不要按版本号灌日报。
+- 保持 topics 候选池为空，不为静默日制造内容。
 
 ## 证据边界
 
@@ -99,7 +99,7 @@
 
 ## 飞书短版
 
-**一句话结论：** 本轮完成 111 个注册源连通性审计和 34 个增量发现探针；候选等待正文与发布日期核验。  
-**判断：** 不为数量降标，继续等同日后续窗口。  
-**覆盖：** not_checked 0，access_blocked 0，mechanical_failure 111；日期解析探针 checked_no_match 11。  
+**一句话结论：** 本轮核完 7 个跨轮新增候选，正式 Signal 仍为 0。  
+**判断：** 2 条 GitHub Release 太轻，1 条 Simon Willison 工具更新不足以入选，4 条 OpenAI 新页面被 403 挡住，不能拿 sitemap `lastmod` 直接入库。  
+**覆盖：** source connectivity 为 not_checked 101 / access_blocked 7 / mechanical_failure 3；代表性日期探针为 checked_no_match 11 / candidate_only 20。  
 **结果：** previous_count=0，new_count=0，updated_count=0，total_count=0。
