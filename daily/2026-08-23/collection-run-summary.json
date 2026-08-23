@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-23T08:09:38+08:00",
+  "run_at": "2026-08-23T12:12:19+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-20T00:09:38+08:00",
-    "end": "2026-08-23T08:09:38+08:00",
+    "start": "2026-08-20T04:12:19+08:00",
+    "end": "2026-08-23T12:12:19+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 184,
-  "unique_candidates": 155,
+  "raw_candidates": 142,
+  "unique_candidates": 118,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 184,
+  "unreviewed_candidate_count": 142,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,17 +35,17 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 11,
+  "collection_errors": 10,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 7,
+      "access_blocked": 6,
       "auth_required": 0,
       "mechanical_failure": 4,
-      "not_checked": 100
+      "not_checked": 101
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -97,10 +97,10 @@
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 3,
+        "access_blocked": 2,
         "auth_required": 0,
         "mechanical_failure": 2,
-        "not_checked": 12
+        "not_checked": 13
       },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
@@ -367,8 +367,10 @@
         "name": "OpenAI Company News",
         "type": "company_primary",
         "url": "https://openai.com/news/company/",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://openai.com/news/company-announcements/",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
@@ -459,7 +461,7 @@
         "url": "https://platform.moonshot.cn/docs",
         "status": "mechanical_failure",
         "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "china_frontier_models",
@@ -476,7 +478,7 @@
         "type": "developer_docs",
         "url": "https://platform.minimaxi.com/document",
         "status": "mechanical_failure",
-        "http_code": "500"
+        "http_code": "404"
       },
       {
         "channel": "china_frontier_models",
@@ -1223,146 +1225,28 @@
       "name": "AWS Architecture RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "Build a unified AI agent architecture with DynamoDB and Bedrock",
-          "url": "https://aws.amazon.com/blogs/architecture/build-a-unified-ai-agent-architecture-with-dynamodb-and-bedrock/",
-          "published_at": "2026-08-21T18:19:23Z"
-        },
-        {
-          "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 2",
-          "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-2/",
-          "published_at": "2026-08-21T10:01:18Z"
-        },
-        {
-          "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 1",
-          "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-1/",
-          "published_at": "2026-08-20T00:32:52Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "IncompleteRead: IncompleteRead(32731 bytes read)"
     },
     {
       "name": "AWS Database RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/database/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "Migrate multilingual full-text search from SQL Server to PostgreSQL",
-          "url": "https://aws.amazon.com/blogs/database/migrate-multilingual-full-text-search-from-sql-server-to-postgresql/",
-          "published_at": "2026-08-20T20:34:44Z"
-        },
-        {
-          "title": "Understand memory management in Amazon RDS for PostgreSQL to avoid out of memory",
-          "url": "https://aws.amazon.com/blogs/database/understand-memory-management-in-amazon-rds-for-postgresql-to-avoid-out-of-memory/",
-          "published_at": "2026-08-19T22:21:10Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "RemoteDisconnected: Remote end closed connection without response"
     },
     {
       "name": "AWS ML Blog RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "Agentic Data Operations Platform (ADOP): Data engineering into hours",
-          "url": "https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours/",
-          "published_at": "2026-08-21T17:06:17Z"
-        },
-        {
-          "title": "Govern AI agent tool access with Amazon Bedrock AgentCore Gateway",
-          "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway/",
-          "published_at": "2026-08-21T17:02:35Z"
-        },
-        {
-          "title": "Reduce RAG costs on Amazon Bedrock with query-aware compression",
-          "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/",
-          "published_at": "2026-08-21T16:59:15Z"
-        },
-        {
-          "title": "Accelerating aircraft IFEC diagnostics with agentic AI on AWS",
-          "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-aircraft-ifec-diagnostics-with-agentic-ai-on-aws/",
-          "published_at": "2026-08-21T16:57:01Z"
-        },
-        {
-          "title": "Introducing cross-Region inference for OpenAI GPT-5.6 models on Amazon Bedrock",
-          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock/",
-          "published_at": "2026-08-20T21:46:03Z"
-        },
-        {
-          "title": "Build a no-code ML workflow with Snowflake, Amazon SageMaker Canvas and Amazon Quick – Part 1: Setting up your Snowflake environment",
-          "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-1-setting-up-your-snowflake-environment/",
-          "published_at": "2026-08-20T21:23:38Z"
-        },
-        {
-          "title": "Build a no-code ML workflow with Snowflake, Amazon SageMaker Canvas and Amazon Quick – Part 2: Data preparation and model building with Amazon SageMaker Canvas",
-          "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-2-data-preparation-and-model-building-with-amazon-sagemaker-canvas/",
-          "published_at": "2026-08-20T21:23:29Z"
-        },
-        {
-          "title": "Build a no-code ML workflow with Snowflake, Amazon SageMaker Canvas and Amazon Quick – Part 3: Visualizing insights with Amazon Quick Sight",
-          "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-3-visualizing-insights-with-amazon-quick-sight/",
-          "published_at": "2026-08-20T21:23:23Z"
-        },
-        {
-          "title": "Authoring Dogwood policies from natural language in Amazon Bedrock AgentCore",
-          "url": "https://aws.amazon.com/blogs/machine-learning/authoring-dogwood-policies-from-natural-language-in-amazon-bedrock-agentcore/",
-          "published_at": "2026-08-20T16:31:28Z"
-        },
-        {
-          "title": "Scaling agentic AI: Enterprise patterns without vendor lock-in",
-          "url": "https://aws.amazon.com/blogs/machine-learning/scaling-agentic-ai-enterprise-patterns-without-vendor-lock-in/",
-          "published_at": "2026-08-20T16:24:12Z"
-        },
-        {
-          "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
-          "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore/",
-          "published_at": "2026-08-20T16:11:18Z"
-        },
-        {
-          "title": "AWS vector solutions: Build agentic AI where your data lives",
-          "url": "https://aws.amazon.com/blogs/machine-learning/aws-vector-solutions-build-agentic-ai-where-your-data-lives/",
-          "published_at": "2026-08-20T16:06:06Z"
-        },
-        {
-          "title": "Build intelligent security for healthcare APIs with Amazon Bedrock",
-          "url": "https://aws.amazon.com/blogs/machine-learning/build-intelligent-security-for-healthcare-apis-with-amazon-bedrock/",
-          "published_at": "2026-08-20T15:20:03Z"
-        },
-        {
-          "title": "Domain and publish date filters for Web Search on AgentCore",
-          "url": "https://aws.amazon.com/blogs/machine-learning/domain-and-publish-date-filters-for-web-search-on-agentcore/",
-          "published_at": "2026-08-19T22:13:20Z"
-        },
-        {
-          "title": "Automate Document Processing with Quick Automate and the IDP Accelerator",
-          "url": "https://aws.amazon.com/blogs/machine-learning/automate-document-processing-with-quick-automate-and-the-idp-accelerator/",
-          "published_at": "2026-08-19T22:09:56Z"
-        },
-        {
-          "title": "Asynchronous patterns for calling Amazon Bedrock AgentCore agents in serverless pipelines",
-          "url": "https://aws.amazon.com/blogs/machine-learning/asynchronous-patterns-for-calling-amazon-bedrock-agentcore-agents-in-serverless-pipelines/",
-          "published_at": "2026-08-19T22:06:09Z"
-        },
-        {
-          "title": "How Fanatics Betting and Gaming built a multi-agent customer support system",
-          "url": "https://aws.amazon.com/blogs/machine-learning/how-fanatics-betting-and-gaming-built-a-multi-agent-customer-support-system/",
-          "published_at": "2026-08-19T20:40:45Z"
-        },
-        {
-          "title": "KnowledgeForge: mining gold from the ITSM ticket graveyard",
-          "url": "https://aws.amazon.com/blogs/machine-learning/knowledgeforge-mining-gold-from-the-itsm-ticket-graveyard/",
-          "published_at": "2026-08-19T20:36:50Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "IncompleteRead: IncompleteRead(105802 bytes read)"
     },
     {
       "name": "AWS Networking RSS",
@@ -1408,36 +1292,19 @@
       "name": "AWS Security RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/security/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "AWS Network Firewall now supports rule hit count",
-          "url": "https://aws.amazon.com/blogs/security/aws-network-firewall-now-supports-rule-hit-count/",
-          "published_at": "2026-08-20T18:40:20Z"
-        },
-        {
-          "title": "Propagate user authorization context in AI agents with Amazon Bedrock AgentCore",
-          "url": "https://aws.amazon.com/blogs/security/propagate-user-authorization-context-in-ai-agents-with-amazon-bedrock-agentcore/",
-          "published_at": "2026-08-19T17:24:15Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "IncompleteRead: IncompleteRead(0 bytes read)"
     },
     {
       "name": "AWS Storage RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/storage/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "How Nearmap built continental-scale aerial search using Amazon S3 Vectors",
-          "url": "https://aws.amazon.com/blogs/storage/how-nearmap-built-continental-scale-aerial-search-using-amazon-s3-vectors/",
-          "published_at": "2026-08-20T18:26:28Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "IncompleteRead: IncompleteRead(81262 bytes read)"
     },
     {
       "name": "Browser Use releases",
@@ -1455,6 +1322,11 @@
       "status": "candidate_only",
       "checked_items": 10,
       "recent_items": [
+        {
+          "title": "v2.1.241",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.241",
+          "published_at": "2026-08-23T00:52:16Z"
+        },
         {
           "title": "v2.1.240",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.240",
@@ -1474,11 +1346,6 @@
           "title": "v2.1.237",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
           "published_at": "2026-08-20T00:54:41Z"
-        },
-        {
-          "title": "v2.1.236",
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
-          "published_at": "2026-08-19T20:02:05Z"
         }
       ],
       "note": ""
@@ -1611,10 +1478,10 @@
       "name": "Google Innovation & AI RSS",
       "adapter": "rss",
       "source_url": "https://blog.google/innovation-and-ai/rss/",
-      "status": "checked_no_match",
-      "checked_items": 20,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "IncompleteRead: IncompleteRead(8192 bytes read, 24133 more expected)"
     },
     {
       "name": "Google Products & Platforms RSS",
@@ -1637,21 +1504,6 @@
           "title": "Personalize the content you see on Search, Discover, and News",
           "url": "https://blog.google/products-and-platforms/products/search/personalize-search-discover-news/",
           "published_at": "2026-08-20T16:00:00Z"
-        },
-        {
-          "title": "5 new ways to level up your learning with Search",
-          "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
-          "published_at": "2026-08-19T19:00:00Z"
-        },
-        {
-          "title": "Start the semester with one year of Gemini, on us",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/",
-          "published_at": "2026-08-19T19:00:00Z"
-        },
-        {
-          "title": "Back to School 2026",
-          "url": "https://blog.google/products-and-platforms/products/education/back-to-school-2026/",
-          "published_at": "2026-08-19T19:00:00Z"
         }
       ],
       "note": ""
@@ -1660,10 +1512,10 @@
       "name": "Google Security RSS",
       "adapter": "rss",
       "source_url": "https://blog.google/security/rss/",
-      "status": "checked_no_match",
-      "checked_items": 20,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "IncompleteRead: IncompleteRead(26073 bytes read, 1857 more expected)"
     },
     {
       "name": "Hugging Face Blog",
@@ -1704,30 +1556,18 @@
       "name": "LangGraph releases",
       "adapter": "atom",
       "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "langgraph-sdk==0.4.3",
-          "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.3",
-          "published_at": "2026-08-19T18:05:32Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
       "name": "LlamaIndex releases",
       "adapter": "atom",
       "source_url": "https://github.com/run-llama/llama_index/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "v0.14.24",
-          "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.24",
-          "published_at": "2026-08-19T18:48:01Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1854,14 +1694,39 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/blue-j/",
-          "url": "https://openai.com/index/blue-j/",
-          "published_at": "2026-08-22T22:31:06.147000Z"
+          "title": "https://openai.com/index/previewing-ultrafast/",
+          "url": "https://openai.com/index/previewing-ultrafast/",
+          "published_at": "2026-08-23T04:18:02.189000Z"
+        },
+        {
+          "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+          "published_at": "2026-08-23T03:41:02.872000Z"
+        },
+        {
+          "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+          "published_at": "2026-08-23T03:41:02.872000Z"
+        },
+        {
+          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "published_at": "2026-08-23T01:28:03.291000Z"
+        },
+        {
+          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+          "published_at": "2026-08-23T01:28:03.291000Z"
         },
         {
           "title": "https://openai.com/index/stampli/",
           "url": "https://openai.com/index/stampli/",
-          "published_at": "2026-08-22T20:23:08.308000Z"
+          "published_at": "2026-08-23T01:25:12.360000Z"
+        },
+        {
+          "title": "https://openai.com/index/blue-j/",
+          "url": "https://openai.com/index/blue-j/",
+          "published_at": "2026-08-22T22:31:06.147000Z"
         },
         {
           "title": "https://openai.com/index/our-approach-to-age-prediction/",
@@ -2037,16 +1902,6 @@
           "title": "https://openai.com/index/codex-collaborator-creative-team/",
           "url": "https://openai.com/index/codex-collaborator-creative-team/",
           "published_at": "2026-08-21T19:36:23.625000Z"
-        },
-        {
-          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "published_at": "2026-08-21T19:16:04.094000Z"
-        },
-        {
-          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "published_at": "2026-08-21T19:16:04.094000Z"
         },
         {
           "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
@@ -2257,76 +2112,6 @@
           "title": "https://openai.com/index/devday-2026/",
           "url": "https://openai.com/index/devday-2026/",
           "published_at": "2026-08-19T22:31:24.048000Z"
-        },
-        {
-          "title": "https://openai.com/index/unive/",
-          "url": "https://openai.com/index/unive/",
-          "published_at": "2026-08-19T19:35:26.018000Z"
-        },
-        {
-          "title": "https://openai.com/index/previewing-ultrafast/",
-          "url": "https://openai.com/index/previewing-ultrafast/",
-          "published_at": "2026-08-19T19:30:07.996000Z"
-        },
-        {
-          "title": "https://openai.com/index/healthbench/",
-          "url": "https://openai.com/index/healthbench/",
-          "published_at": "2026-08-19T17:54:04.875000Z"
-        },
-        {
-          "title": "https://openai.com/index/virgin-atlantic/chatgpt-work/",
-          "url": "https://openai.com/index/virgin-atlantic/chatgpt-work/",
-          "published_at": "2026-08-19T17:29:50.199000Z"
-        },
-        {
-          "title": "https://openai.com/index/codex-for-almost-everything/",
-          "url": "https://openai.com/index/codex-for-almost-everything/",
-          "published_at": "2026-08-19T16:45:36.365000Z"
-        },
-        {
-          "title": "https://openai.com/index/codex-flexible-pricing-for-teams/",
-          "url": "https://openai.com/index/codex-flexible-pricing-for-teams/",
-          "published_at": "2026-08-19T16:45:36.209000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
-          "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
-          "published_at": "2026-08-19T16:45:35.184000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
-          "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
-          "published_at": "2026-08-19T16:45:35.184000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
-          "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
-          "published_at": "2026-08-19T16:45:35.184000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-5-3-codex/",
-          "url": "https://openai.com/index/introducing-gpt-5-3-codex/",
-          "published_at": "2026-08-19T16:45:34.775000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-5-3-codex/",
-          "url": "https://openai.com/index/introducing-gpt-5-3-codex/",
-          "published_at": "2026-08-19T16:45:34.775000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-5-3-codex/",
-          "url": "https://openai.com/index/introducing-gpt-5-3-codex/",
-          "published_at": "2026-08-19T16:45:34.775000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
-          "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
-          "published_at": "2026-08-19T16:28:05.579000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
-          "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
-          "published_at": "2026-08-19T16:28:05.579000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2431,7 +2216,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "184 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "142 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."

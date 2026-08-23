@@ -1,30 +1,48 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T08:09:38+08:00",
+  "generated_at": "2026-08-23T12:12:19+08:00",
   "window": {
-    "start": "2026-08-20T00:09:38+08:00",
-    "end": "2026-08-23T08:09:38+08:00",
+    "start": "2026-08-20T04:12:19+08:00",
+    "end": "2026-08-23T12:12:19+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 22,
-  "new_in_run_count": 4,
+  "candidate_count": 27,
+  "new_in_run_count": 5,
   "new_candidates": [
     {
-      "source_name": "OpenAI Codex releases",
+      "source_name": "Claude Code releases",
       "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.150.0-alpha.7",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.150.0-alpha.7",
-      "published_or_lastmod_at": "2026-08-22T21:29:43Z",
+      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
+      "title": "v2.1.241",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.241",
+      "published_or_lastmod_at": "2026-08-23T00:52:16Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/blue-j/",
-      "url": "https://openai.com/index/blue-j/",
-      "published_or_lastmod_at": "2026-08-22T22:31:06.147000Z",
+      "title": "https://openai.com/index/previewing-ultrafast/",
+      "url": "https://openai.com/index/previewing-ultrafast/",
+      "published_or_lastmod_at": "2026-08-23T04:18:02.189000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+      "published_or_lastmod_at": "2026-08-23T03:41:02.872000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "published_or_lastmod_at": "2026-08-23T01:28:03.291000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -33,20 +51,56 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/stampli/",
       "url": "https://openai.com/index/stampli/",
-      "published_or_lastmod_at": "2026-08-22T20:23:08.308000Z",
+      "published_or_lastmod_at": "2026-08-23T01:25:12.360000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "Quoting Linus Torvalds",
-      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
-      "published_or_lastmod_at": "2026-08-22T21:04:26Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/previewing-ultrafast/",
+      "url": "https://openai.com/index/previewing-ultrafast/",
+      "published_or_lastmod_at": "2026-08-23T04:18:02.189000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+      "published_or_lastmod_at": "2026-08-23T03:41:02.872000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "published_or_lastmod_at": "2026-08-23T01:28:03.291000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/stampli/",
+      "url": "https://openai.com/index/stampli/",
+      "published_or_lastmod_at": "2026-08-23T01:25:12.360000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Claude Code releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
+      "title": "v2.1.241",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.241",
+      "published_or_lastmod_at": "2026-08-23T00:52:16Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
