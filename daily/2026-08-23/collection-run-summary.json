@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-23T12:12:19+08:00",
+  "run_at": "2026-08-23T16:07:57+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-20T04:12:19+08:00",
-    "end": "2026-08-23T12:12:19+08:00",
+    "start": "2026-08-20T08:07:57+08:00",
+    "end": "2026-08-23T16:07:57+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 142,
-  "unique_candidates": 118,
+  "raw_candidates": 143,
+  "unique_candidates": 120,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 142,
+  "unreviewed_candidate_count": 143,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,17 +35,17 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 17,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 6,
+      "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 4,
-      "not_checked": 101
+      "mechanical_failure": 10,
+      "not_checked": 94
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -54,8 +54,8 @@
         "checked_no_match": 0,
         "access_blocked": 3,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 24
+        "mechanical_failure": 2,
+        "not_checked": 22
       },
       "china_frontier_models": {
         "selected": 0,
@@ -81,8 +81,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 16
+        "mechanical_failure": 1,
+        "not_checked": 15
       },
       "research_and_evaluation": {
         "selected": 0,
@@ -90,17 +90,17 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 10
+        "mechanical_failure": 2,
+        "not_checked": 8
       },
       "ai_macro_primary": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 2,
+        "access_blocked": 3,
         "auth_required": 0,
         "mechanical_failure": 2,
-        "not_checked": 13
+        "not_checked": 12
       },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
@@ -108,8 +108,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 11
+        "mechanical_failure": 1,
+        "not_checked": 10
       }
     },
     "records": [
@@ -255,9 +255,9 @@
         "name": "SWE-agent",
         "type": "github_releases",
         "url": "https://github.com/SWE-agent/SWE-agent",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
@@ -367,10 +367,8 @@
         "name": "OpenAI Company News",
         "type": "company_primary",
         "url": "https://openai.com/news/company/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://openai.com/news/company-announcements/",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "ai_macro_primary",
@@ -432,9 +430,9 @@
         "name": "DeepSeek GitHub",
         "type": "github_org",
         "url": "https://github.com/deepseek-ai",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "china_frontier_models",
@@ -459,9 +457,10 @@
         "name": "Kimi Developer Docs",
         "type": "developer_docs",
         "url": "https://platform.moonshot.cn/docs",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://platform.kimi.com/docs/overview",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -478,7 +477,7 @@
         "type": "developer_docs",
         "url": "https://platform.minimaxi.com/document",
         "status": "mechanical_failure",
-        "http_code": "404"
+        "http_code": "500"
       },
       {
         "channel": "china_frontier_models",
@@ -567,10 +566,9 @@
         "name": "Anthropic API Release Notes",
         "type": "developer_changelog",
         "url": "https://docs.anthropic.com/en/release-notes/api",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://platform.claude.com/docs/en/release-notes/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
@@ -671,9 +669,9 @@
         "name": "Meta AI Blog",
         "type": "official_research",
         "url": "https://ai.meta.com/blog/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "frontier_model_official",
@@ -973,9 +971,9 @@
         "name": "Hamel Husain",
         "type": "personal_blog",
         "url": "https://hamel.dev/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
@@ -1101,10 +1099,9 @@
         "name": "LMSYS Chatbot Arena",
         "type": "benchmark",
         "url": "https://lmarena.ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://arena.ai/",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "IncompleteRead",
+        "note": "IncompleteRead(314680 bytes read)"
       },
       {
         "channel": "research_and_evaluation",
@@ -1112,7 +1109,7 @@
         "type": "evaluation_org",
         "url": "https://metr.org/blog/",
         "status": "not_checked",
-        "http_code": "206",
+        "http_code": "200",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1120,9 +1117,9 @@
         "name": "Stanford HAI",
         "type": "research_institute",
         "url": "https://hai.stanford.edu/news",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "research_and_evaluation",
@@ -1225,28 +1222,116 @@
       "name": "AWS Architecture RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "IncompleteRead: IncompleteRead(32731 bytes read)"
+      "status": "candidate_only",
+      "checked_items": 20,
+      "recent_items": [
+        {
+          "title": "Build a unified AI agent architecture with DynamoDB and Bedrock",
+          "url": "https://aws.amazon.com/blogs/architecture/build-a-unified-ai-agent-architecture-with-dynamodb-and-bedrock/",
+          "published_at": "2026-08-21T18:19:23Z"
+        },
+        {
+          "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 2",
+          "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-2/",
+          "published_at": "2026-08-21T10:01:18Z"
+        },
+        {
+          "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 1",
+          "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-1/",
+          "published_at": "2026-08-20T00:32:52Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "AWS Database RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/database/feed/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "RemoteDisconnected: Remote end closed connection without response"
+      "status": "candidate_only",
+      "checked_items": 20,
+      "recent_items": [
+        {
+          "title": "Migrate multilingual full-text search from SQL Server to PostgreSQL",
+          "url": "https://aws.amazon.com/blogs/database/migrate-multilingual-full-text-search-from-sql-server-to-postgresql/",
+          "published_at": "2026-08-20T20:34:44Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "AWS ML Blog RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "IncompleteRead: IncompleteRead(105802 bytes read)"
+      "status": "candidate_only",
+      "checked_items": 20,
+      "recent_items": [
+        {
+          "title": "Agentic Data Operations Platform (ADOP): Data engineering into hours",
+          "url": "https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours/",
+          "published_at": "2026-08-21T17:06:17Z"
+        },
+        {
+          "title": "Govern AI agent tool access with Amazon Bedrock AgentCore Gateway",
+          "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway/",
+          "published_at": "2026-08-21T17:02:35Z"
+        },
+        {
+          "title": "Reduce RAG costs on Amazon Bedrock with query-aware compression",
+          "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/",
+          "published_at": "2026-08-21T16:59:15Z"
+        },
+        {
+          "title": "Accelerating aircraft IFEC diagnostics with agentic AI on AWS",
+          "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-aircraft-ifec-diagnostics-with-agentic-ai-on-aws/",
+          "published_at": "2026-08-21T16:57:01Z"
+        },
+        {
+          "title": "Introducing cross-Region inference for OpenAI GPT-5.6 models on Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock/",
+          "published_at": "2026-08-20T21:46:03Z"
+        },
+        {
+          "title": "Build a no-code ML workflow with Snowflake, Amazon SageMaker Canvas and Amazon Quick – Part 1: Setting up your Snowflake environment",
+          "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-1-setting-up-your-snowflake-environment/",
+          "published_at": "2026-08-20T21:23:38Z"
+        },
+        {
+          "title": "Build a no-code ML workflow with Snowflake, Amazon SageMaker Canvas and Amazon Quick – Part 2: Data preparation and model building with Amazon SageMaker Canvas",
+          "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-2-data-preparation-and-model-building-with-amazon-sagemaker-canvas/",
+          "published_at": "2026-08-20T21:23:29Z"
+        },
+        {
+          "title": "Build a no-code ML workflow with Snowflake, Amazon SageMaker Canvas and Amazon Quick – Part 3: Visualizing insights with Amazon Quick Sight",
+          "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-3-visualizing-insights-with-amazon-quick-sight/",
+          "published_at": "2026-08-20T21:23:23Z"
+        },
+        {
+          "title": "Authoring Dogwood policies from natural language in Amazon Bedrock AgentCore",
+          "url": "https://aws.amazon.com/blogs/machine-learning/authoring-dogwood-policies-from-natural-language-in-amazon-bedrock-agentcore/",
+          "published_at": "2026-08-20T16:31:28Z"
+        },
+        {
+          "title": "Scaling agentic AI: Enterprise patterns without vendor lock-in",
+          "url": "https://aws.amazon.com/blogs/machine-learning/scaling-agentic-ai-enterprise-patterns-without-vendor-lock-in/",
+          "published_at": "2026-08-20T16:24:12Z"
+        },
+        {
+          "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
+          "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore/",
+          "published_at": "2026-08-20T16:11:18Z"
+        },
+        {
+          "title": "AWS vector solutions: Build agentic AI where your data lives",
+          "url": "https://aws.amazon.com/blogs/machine-learning/aws-vector-solutions-build-agentic-ai-where-your-data-lives/",
+          "published_at": "2026-08-20T16:06:06Z"
+        },
+        {
+          "title": "Build intelligent security for healthcare APIs with Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/build-intelligent-security-for-healthcare-apis-with-amazon-bedrock/",
+          "published_at": "2026-08-20T15:20:03Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "AWS Networking RSS",
@@ -1274,16 +1359,6 @@
           "title": "State of Kansas modernizes mainframe file transfer using AWS Transfer Family",
           "url": "https://aws.amazon.com/blogs/publicsector/state-of-kansas-modernizes-mainframe-file-transfer-using-aws-transfer-family/",
           "published_at": "2026-08-21T19:16:21Z"
-        },
-        {
-          "title": "Digital Earth Africa and AWS are making satellite data work for Africa",
-          "url": "https://aws.amazon.com/blogs/publicsector/digital-earth-africa-and-aws-are-making-satellite-data-work-for-africa/",
-          "published_at": "2026-08-19T23:13:25Z"
-        },
-        {
-          "title": "Building machine-readable FedRAMP 20x evidence on AWS",
-          "url": "https://aws.amazon.com/blogs/publicsector/building-machine-readable-fedramp-20x-evidence-on-aws/",
-          "published_at": "2026-08-19T22:29:40Z"
         }
       ],
       "note": ""
@@ -1292,19 +1367,31 @@
       "name": "AWS Security RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/security/feed/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "IncompleteRead: IncompleteRead(0 bytes read)"
+      "status": "candidate_only",
+      "checked_items": 20,
+      "recent_items": [
+        {
+          "title": "AWS Network Firewall now supports rule hit count",
+          "url": "https://aws.amazon.com/blogs/security/aws-network-firewall-now-supports-rule-hit-count/",
+          "published_at": "2026-08-20T18:40:20Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "AWS Storage RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/storage/feed/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "IncompleteRead: IncompleteRead(81262 bytes read)"
+      "status": "candidate_only",
+      "checked_items": 20,
+      "recent_items": [
+        {
+          "title": "How Nearmap built continental-scale aerial search using Amazon S3 Vectors",
+          "url": "https://aws.amazon.com/blogs/storage/how-nearmap-built-continental-scale-aerial-search-using-amazon-s3-vectors/",
+          "published_at": "2026-08-20T18:26:28Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "Browser Use releases",
@@ -1430,46 +1517,6 @@
           "title": "https://blog.google/products-and-platforms/devices/pixel/american-sign-language-sign-to-text-pixel-11/",
           "url": "https://blog.google/products-and-platforms/devices/pixel/american-sign-language-sign-to-text-pixel-11/",
           "published_at": "2026-08-21T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/",
-          "url": "https://blog.google/",
-          "published_at": "2026-08-20T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/inside-google/message-ceo/stanford-commencement-speech-2026/",
-          "url": "https://blog.google/company-news/inside-google/message-ceo/stanford-commencement-speech-2026/",
-          "published_at": "2026-08-20T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/putting-educators-at-the-center-of-ai-learning/",
-          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/putting-educators-at-the-center-of-ai-learning/",
-          "published_at": "2026-08-20T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/united-parks-of-america/",
-          "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/united-parks-of-america/",
-          "published_at": "2026-08-20T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/outreach-and-initiatives/sustainability/new-water-stewardship-commitments/",
-          "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/new-water-stewardship-commitments/",
-          "published_at": "2026-08-20T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/search/personalize-search-discover-news/",
-          "url": "https://blog.google/products-and-platforms/products/search/personalize-search-discover-news/",
-          "published_at": "2026-08-20T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products/ads-commerce/",
-          "url": "https://blog.google/products/ads-commerce/",
-          "published_at": "2026-08-20T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products/ads-commerce/ai-max-testing-planning-tools/",
-          "url": "https://blog.google/products/ads-commerce/ai-max-testing-planning-tools/",
-          "published_at": "2026-08-20T00:00:00Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1478,10 +1525,10 @@
       "name": "Google Innovation & AI RSS",
       "adapter": "rss",
       "source_url": "https://blog.google/innovation-and-ai/rss/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
+      "status": "checked_no_match",
+      "checked_items": 20,
       "recent_items": [],
-      "note": "IncompleteRead: IncompleteRead(8192 bytes read, 24133 more expected)"
+      "note": ""
     },
     {
       "name": "Google Products & Platforms RSS",
@@ -1512,10 +1559,10 @@
       "name": "Google Security RSS",
       "adapter": "rss",
       "source_url": "https://blog.google/security/rss/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
+      "status": "checked_no_match",
+      "checked_items": 20,
       "recent_items": [],
-      "note": "IncompleteRead: IncompleteRead(26073 bytes read, 1857 more expected)"
+      "note": ""
     },
     {
       "name": "Hugging Face Blog",
@@ -1694,19 +1741,39 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/our-approach-to-age-prediction/",
+          "url": "https://openai.com/index/our-approach-to-age-prediction/",
+          "published_at": "2026-08-23T07:33:56.634000Z"
+        },
+        {
+          "title": "https://openai.com/index/our-approach-to-age-prediction/",
+          "url": "https://openai.com/index/our-approach-to-age-prediction/",
+          "published_at": "2026-08-23T07:33:56.634000Z"
+        },
+        {
+          "title": "https://openai.com/index/asana/",
+          "url": "https://openai.com/index/asana/",
+          "published_at": "2026-08-23T06:38:42.982000Z"
+        },
+        {
+          "title": "https://openai.com/index/nvidia/chatgpt-work/",
+          "url": "https://openai.com/index/nvidia/chatgpt-work/",
+          "published_at": "2026-08-23T05:00:13.994000Z"
+        },
+        {
+          "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+          "published_at": "2026-08-23T04:45:03.156000Z"
+        },
+        {
+          "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+          "published_at": "2026-08-23T04:45:03.156000Z"
+        },
+        {
           "title": "https://openai.com/index/previewing-ultrafast/",
           "url": "https://openai.com/index/previewing-ultrafast/",
           "published_at": "2026-08-23T04:18:02.189000Z"
-        },
-        {
-          "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-          "published_at": "2026-08-23T03:41:02.872000Z"
-        },
-        {
-          "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-          "published_at": "2026-08-23T03:41:02.872000Z"
         },
         {
           "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
@@ -1729,16 +1796,6 @@
           "published_at": "2026-08-22T22:31:06.147000Z"
         },
         {
-          "title": "https://openai.com/index/our-approach-to-age-prediction/",
-          "url": "https://openai.com/index/our-approach-to-age-prediction/",
-          "published_at": "2026-08-22T19:49:32.699000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-approach-to-age-prediction/",
-          "url": "https://openai.com/index/our-approach-to-age-prediction/",
-          "published_at": "2026-08-22T19:49:32.699000Z"
-        },
-        {
           "title": "https://openai.com/index/chatgpt-for-excel/",
           "url": "https://openai.com/index/chatgpt-for-excel/",
           "published_at": "2026-08-22T16:09:24.310000Z"
@@ -1752,11 +1809,6 @@
           "title": "https://openai.com/index/openai-joins-ports-pike-project/",
           "url": "https://openai.com/index/openai-joins-ports-pike-project/",
           "published_at": "2026-08-22T15:36:20.141000Z"
-        },
-        {
-          "title": "https://openai.com/index/asana/",
-          "url": "https://openai.com/index/asana/",
-          "published_at": "2026-08-22T14:14:48.660000Z"
         },
         {
           "title": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands/",
@@ -1979,11 +2031,6 @@
           "published_at": "2026-08-20T21:06:14.921000Z"
         },
         {
-          "title": "https://openai.com/index/nvidia/chatgpt-work/",
-          "url": "https://openai.com/index/nvidia/chatgpt-work/",
-          "published_at": "2026-08-20T20:27:02.553000Z"
-        },
-        {
           "title": "https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models/",
           "url": "https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models/",
           "published_at": "2026-08-20T18:34:16.820000Z"
@@ -2087,31 +2134,6 @@
           "title": "https://openai.com/index/introducing-the-codex-app/",
           "url": "https://openai.com/index/introducing-the-codex-app/",
           "published_at": "2026-08-20T03:24:33.727000Z"
-        },
-        {
-          "title": "https://openai.com/index/builders-guide-to-gpt-5-6/",
-          "url": "https://openai.com/index/builders-guide-to-gpt-5-6/",
-          "published_at": "2026-08-19T23:52:14.496000Z"
-        },
-        {
-          "title": "https://openai.com/index/a-scorecard-for-the-ai-age/",
-          "url": "https://openai.com/index/a-scorecard-for-the-ai-age/",
-          "published_at": "2026-08-19T23:42:11.153000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-campus-network-student-club-interest-form/",
-          "url": "https://openai.com/index/openai-campus-network-student-club-interest-form/",
-          "published_at": "2026-08-19T22:55:45.398000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/",
-          "url": "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/",
-          "published_at": "2026-08-19T22:54:37.465000Z"
-        },
-        {
-          "title": "https://openai.com/index/devday-2026/",
-          "url": "https://openai.com/index/devday-2026/",
-          "published_at": "2026-08-19T22:31:24.048000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2182,21 +2204,6 @@
           "title": "A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView",
           "url": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
           "published_at": "2026-08-20T15:37:00Z"
-        },
-        {
-          "title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
-          "url": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
-          "published_at": "2026-08-19T23:16:00Z"
-        },
-        {
-          "title": "Quoting Jeremy Morrell",
-          "url": "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
-          "published_at": "2026-08-19T22:56:31Z"
-        },
-        {
-          "title": "Conceptual integrity and counting lines of code",
-          "url": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
-          "published_at": "2026-08-19T22:46:07Z"
         }
       ],
       "note": ""
@@ -2216,7 +2223,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "142 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "143 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
