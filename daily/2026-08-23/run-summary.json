@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-23T04:16:13+08:00",
+  "run_at": "2026-08-23T08:09:38+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-19T20:16:13+08:00",
-    "end": "2026-08-23T04:16:13+08:00",
+    "start": "2026-08-20T00:09:38+08:00",
+    "end": "2026-08-23T08:09:38+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 187,
-  "unique_candidates": 158,
+  "raw_candidates": 184,
+  "unique_candidates": 155,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 187,
+  "unreviewed_candidate_count": 184,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,7 +35,7 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 11,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 3,
-      "not_checked": 101
+      "mechanical_failure": 4,
+      "not_checked": 100
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -63,8 +63,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 13
+        "mechanical_failure": 2,
+        "not_checked": 12
       },
       "head_ai_product_release_notes": {
         "selected": 0,
@@ -302,7 +302,7 @@
         "type": "company_ir",
         "url": "https://investors.coreweave.com/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "final_url": "https://investors.coreweave.com/overview/default.aspx",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
@@ -338,7 +338,7 @@
         "type": "company_ir",
         "url": "https://investor.atmeta.com/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "final_url": "https://investor.atmeta.com/home/default.aspx",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
@@ -457,10 +457,9 @@
         "name": "Kimi Developer Docs",
         "type": "developer_docs",
         "url": "https://platform.moonshot.cn/docs",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://platform.kimi.com/docs/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "china_frontier_models",
@@ -1111,7 +1110,7 @@
         "type": "evaluation_org",
         "url": "https://metr.org/blog/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1241,16 +1240,6 @@
           "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 1",
           "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-1/",
           "published_at": "2026-08-20T00:32:52Z"
-        },
-        {
-          "title": "How Clario technology detects PHI/PII in DICOM images using Amazon Bedrock",
-          "url": "https://aws.amazon.com/blogs/architecture/how-clario-automates-phi-pii-detection-in-dicom-images-using-amazon-bedrock/",
-          "published_at": "2026-08-19T14:29:31Z"
-        },
-        {
-          "title": "AI-powered clinical trial eligibility and safety using Amazon Bedrock AgentCore",
-          "url": "https://aws.amazon.com/blogs/architecture/ai-agents-for-clinical-trial-screening/",
-          "published_at": "2026-08-19T13:11:51Z"
         }
       ],
       "note": ""
@@ -1783,15 +1772,9 @@
       "name": "OpenAI Agents SDK releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/openai-agents-python/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "v0.22.0",
-          "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.22.0",
-          "published_at": "2026-08-19T13:44:38Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1801,6 +1784,11 @@
       "status": "candidate_only",
       "checked_items": 10,
       "recent_items": [
+        {
+          "title": "0.150.0-alpha.7",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.150.0-alpha.7",
+          "published_at": "2026-08-22T21:29:43Z"
+        },
         {
           "title": "0.149.0-alpha.7.2",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.7.2",
@@ -1845,11 +1833,6 @@
           "title": "0.150.0-alpha.1",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.150.0-alpha.1",
           "published_at": "2026-08-20T22:09:25Z"
-        },
-        {
-          "title": "0.149.0",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0",
-          "published_at": "2026-08-20T21:06:13Z"
         }
       ],
       "note": ""
@@ -1871,24 +1854,24 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/our-approach-to-age-prediction/",
-          "url": "https://openai.com/index/our-approach-to-age-prediction/",
-          "published_at": "2026-08-22T19:49:32.699000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-approach-to-age-prediction/",
-          "url": "https://openai.com/index/our-approach-to-age-prediction/",
-          "published_at": "2026-08-22T19:49:32.699000Z"
+          "title": "https://openai.com/index/blue-j/",
+          "url": "https://openai.com/index/blue-j/",
+          "published_at": "2026-08-22T22:31:06.147000Z"
         },
         {
           "title": "https://openai.com/index/stampli/",
           "url": "https://openai.com/index/stampli/",
-          "published_at": "2026-08-22T17:49:06.035000Z"
+          "published_at": "2026-08-22T20:23:08.308000Z"
         },
         {
-          "title": "https://openai.com/index/blue-j/",
-          "url": "https://openai.com/index/blue-j/",
-          "published_at": "2026-08-22T17:48:13.891000Z"
+          "title": "https://openai.com/index/our-approach-to-age-prediction/",
+          "url": "https://openai.com/index/our-approach-to-age-prediction/",
+          "published_at": "2026-08-22T19:49:32.699000Z"
+        },
+        {
+          "title": "https://openai.com/index/our-approach-to-age-prediction/",
+          "url": "https://openai.com/index/our-approach-to-age-prediction/",
+          "published_at": "2026-08-22T19:49:32.699000Z"
         },
         {
           "title": "https://openai.com/index/chatgpt-for-excel/",
@@ -2344,11 +2327,6 @@
           "title": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
           "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
           "published_at": "2026-08-19T16:28:05.579000Z"
-        },
-        {
-          "title": "https://openai.com/index/zapier/",
-          "url": "https://openai.com/index/zapier/",
-          "published_at": "2026-08-19T15:53:37.752000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2375,6 +2353,11 @@
       "status": "candidate_only",
       "checked_items": 30,
       "recent_items": [
+        {
+          "title": "Quoting Linus Torvalds",
+          "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+          "published_at": "2026-08-22T21:04:26Z"
+        },
         {
           "title": "llm 0.33",
           "url": "https://simonwillison.net/2026/Aug/22/llm/",
@@ -2448,7 +2431,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "187 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "184 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."

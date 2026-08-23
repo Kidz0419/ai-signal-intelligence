@@ -1,39 +1,30 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T04:16:13+08:00",
+  "generated_at": "2026-08-23T08:09:38+08:00",
   "window": {
-    "start": "2026-08-19T20:16:13+08:00",
-    "end": "2026-08-23T04:16:13+08:00",
+    "start": "2026-08-20T00:09:38+08:00",
+    "end": "2026-08-23T08:09:38+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 18,
-  "new_in_run_count": 7,
+  "candidate_count": 22,
+  "new_in_run_count": 4,
   "new_candidates": [
-    {
-      "source_name": "Claude Code releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
-      "title": "v2.1.240",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.240",
-      "published_or_lastmod_at": "2026-08-22T14:45:30Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
     {
       "source_name": "OpenAI Codex releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.149.0-alpha.7.2",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.7.2",
-      "published_or_lastmod_at": "2026-08-22T19:52:02Z",
+      "title": "0.150.0-alpha.7",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.150.0-alpha.7",
+      "published_or_lastmod_at": "2026-08-22T21:29:43Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/our-approach-to-age-prediction/",
-      "url": "https://openai.com/index/our-approach-to-age-prediction/",
-      "published_or_lastmod_at": "2026-08-22T19:49:32.699000Z",
+      "title": "https://openai.com/index/blue-j/",
+      "url": "https://openai.com/index/blue-j/",
+      "published_or_lastmod_at": "2026-08-22T22:31:06.147000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -42,38 +33,56 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/stampli/",
       "url": "https://openai.com/index/stampli/",
-      "published_or_lastmod_at": "2026-08-22T17:49:06.035000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/blue-j/",
-      "url": "https://openai.com/index/blue-j/",
-      "published_or_lastmod_at": "2026-08-22T17:48:13.891000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-for-excel/",
-      "url": "https://openai.com/index/chatgpt-for-excel/",
-      "published_or_lastmod_at": "2026-08-22T16:09:24.310000Z",
+      "published_or_lastmod_at": "2026-08-22T20:23:08.308000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "Simon Willison atom",
       "adapter": "atom",
       "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "llm 0.33",
-      "url": "https://simonwillison.net/2026/Aug/22/llm/",
-      "published_or_lastmod_at": "2026-08-22T17:01:16Z",
+      "title": "Quoting Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+      "published_or_lastmod_at": "2026-08-22T21:04:26Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/blue-j/",
+      "url": "https://openai.com/index/blue-j/",
+      "published_or_lastmod_at": "2026-08-22T22:31:06.147000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.150.0-alpha.7",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.150.0-alpha.7",
+      "published_or_lastmod_at": "2026-08-22T21:29:43Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Quoting Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+      "published_or_lastmod_at": "2026-08-22T21:04:26Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/stampli/",
+      "url": "https://openai.com/index/stampli/",
+      "published_or_lastmod_at": "2026-08-22T20:23:08.308000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
     {
       "source_name": "OpenAI Codex releases",
       "adapter": "atom",
