@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-24T04:14:57+08:00",
+  "run_at": "2026-08-24T08:08:15+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-20T20:14:57+08:00",
-    "end": "2026-08-24T04:14:57+08:00",
+    "start": "2026-08-21T00:08:15+08:00",
+    "end": "2026-08-24T08:08:15+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 143,
-  "unique_candidates": 119,
+  "raw_candidates": 134,
+  "unique_candidates": 111,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 143,
+  "unreviewed_candidate_count": 134,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,7 +35,7 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 13,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 3,
-      "not_checked": 101
+      "mechanical_failure": 6,
+      "not_checked": 98
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -63,8 +63,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 13
+        "mechanical_failure": 2,
+        "not_checked": 12
       },
       "head_ai_product_release_notes": {
         "selected": 0,
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 10
+        "mechanical_failure": 2,
+        "not_checked": 8
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -302,7 +302,7 @@
         "type": "company_ir",
         "url": "https://investors.coreweave.com/",
         "status": "not_checked",
-        "http_code": "206",
+        "http_code": "200",
         "final_url": "https://investors.coreweave.com/overview/default.aspx",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
@@ -420,10 +420,9 @@
         "name": "Baidu AI Cloud Qianfan",
         "type": "official_product",
         "url": "https://cloud.baidu.com/product/wenxinworkshop",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://cloud.baidu.com/product-s/qianfan_home",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "RemoteDisconnected",
+        "note": "Remote end closed connection without response"
       },
       {
         "channel": "china_frontier_models",
@@ -1062,18 +1061,18 @@
         "name": "arXiv cs.CL",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "RemoteDisconnected",
+        "note": "Remote end closed connection without response"
       },
       {
         "channel": "research_and_evaluation",
@@ -1111,7 +1110,7 @@
         "type": "evaluation_org",
         "url": "https://metr.org/blog/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1200,15 +1199,9 @@
       "name": "Anthropic sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://www.anthropic.com/sitemap.xml",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 120,
-      "recent_items": [
-        {
-          "title": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
-          "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
-          "published_at": "2026-08-20T14:45:23Z"
-        }
-      ],
+      "recent_items": [],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
     },
     {
@@ -1316,16 +1309,6 @@
           "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
           "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore/",
           "published_at": "2026-08-20T16:11:18Z"
-        },
-        {
-          "title": "AWS vector solutions: Build agentic AI where your data lives",
-          "url": "https://aws.amazon.com/blogs/machine-learning/aws-vector-solutions-build-agentic-ai-where-your-data-lives/",
-          "published_at": "2026-08-20T16:06:06Z"
-        },
-        {
-          "title": "Build intelligent security for healthcare APIs with Amazon Bedrock",
-          "url": "https://aws.amazon.com/blogs/machine-learning/build-intelligent-security-for-healthcare-apis-with-amazon-bedrock/",
-          "published_at": "2026-08-20T15:20:03Z"
         }
       ],
       "note": ""
@@ -1542,11 +1525,6 @@
           "title": "Tap to pay with Google Pay is coming to Walmart.",
           "url": "https://blog.google/products-and-platforms/platforms/google-pay/tap-to-pay-google-pay-walmart/",
           "published_at": "2026-08-21T14:00:00Z"
-        },
-        {
-          "title": "Personalize the content you see on Search, Discover, and News",
-          "url": "https://blog.google/products-and-platforms/products/search/personalize-search-discover-news/",
-          "published_at": "2026-08-20T16:00:00Z"
         }
       ],
       "note": ""
@@ -1584,15 +1562,9 @@
       "name": "Kimi Code releases",
       "adapter": "atom",
       "source_url": "https://github.com/MoonshotAI/kimi-code/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "@moonshot-ai/kimi-code@0.38.0",
-          "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.38.0",
-          "published_at": "2026-08-20T13:19:56Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1668,6 +1640,21 @@
       "checked_items": 10,
       "recent_items": [
         {
+          "title": "rust-v0.149.1",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.1",
+          "published_at": "2026-08-23T23:38:04Z"
+        },
+        {
+          "title": "0.149.0-alpha.4.3",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.4.3",
+          "published_at": "2026-08-23T23:32:53Z"
+        },
+        {
+          "title": "rust-v0.149.0-alpha.4.2",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.4.2",
+          "published_at": "2026-08-23T21:53:42Z"
+        },
+        {
           "title": "0.150.0-alpha.7",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.150.0-alpha.7",
           "published_at": "2026-08-22T21:29:43Z"
@@ -1701,21 +1688,6 @@
           "title": "0.150.0-alpha.2",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.150.0-alpha.2",
           "published_at": "2026-08-21T04:26:31Z"
-        },
-        {
-          "title": "0.149.0-alpha.7.1",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.7.1",
-          "published_at": "2026-08-21T05:25:00Z"
-        },
-        {
-          "title": "0.149.0-alpha.4.1",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.4.1",
-          "published_at": "2026-08-21T02:31:36Z"
-        },
-        {
-          "title": "0.150.0-alpha.1",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.150.0-alpha.1",
-          "published_at": "2026-08-20T22:09:25Z"
         }
       ],
       "note": ""
@@ -1737,6 +1709,11 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/asana/",
+          "url": "https://openai.com/index/asana/",
+          "published_at": "2026-08-23T23:27:40.595000Z"
+        },
+        {
           "title": "https://openai.com/index/stampli/",
           "url": "https://openai.com/index/stampli/",
           "published_at": "2026-08-23T19:27:16.801000Z"
@@ -1745,11 +1722,6 @@
           "title": "https://openai.com/index/replit/",
           "url": "https://openai.com/index/replit/",
           "published_at": "2026-08-23T18:37:02.108000Z"
-        },
-        {
-          "title": "https://openai.com/index/asana/",
-          "url": "https://openai.com/index/asana/",
-          "published_at": "2026-08-23T18:34:21.839000Z"
         },
         {
           "title": "https://openai.com/index/our-approach-to-age-prediction/",
@@ -2110,26 +2082,6 @@
           "title": "https://openai.com/index/dota-2-with-large-scale-deep-reinforcement-learning/",
           "url": "https://openai.com/index/dota-2-with-large-scale-deep-reinforcement-learning/",
           "published_at": "2026-08-20T18:34:10.350000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "published_at": "2026-08-20T15:34:12.820000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "published_at": "2026-08-20T15:34:12.820000Z"
-        },
-        {
-          "title": "https://openai.com/index/chatgpt-for-teachers/",
-          "url": "https://openai.com/index/chatgpt-for-teachers/",
-          "published_at": "2026-08-20T14:27:03.186000Z"
-        },
-        {
-          "title": "https://openai.com/index/safetykit/",
-          "url": "https://openai.com/index/safetykit/",
-          "published_at": "2026-08-20T13:31:27.331000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2156,6 +2108,11 @@
       "status": "candidate_only",
       "checked_items": 30,
       "recent_items": [
+        {
+          "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+          "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+          "published_at": "2026-08-23T20:24:52Z"
+        },
         {
           "title": "Quoting Drew Breunig",
           "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
@@ -2200,11 +2157,6 @@
           "title": "ChatGPT search now uses the site:operator at scale",
           "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
           "published_at": "2026-08-20T23:57:32Z"
-        },
-        {
-          "title": "A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView",
-          "url": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
-          "published_at": "2026-08-20T15:37:00Z"
         }
       ],
       "note": ""
@@ -2224,7 +2176,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "143 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "134 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."

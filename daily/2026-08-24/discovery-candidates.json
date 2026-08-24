@@ -1,49 +1,40 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-24T04:14:57+08:00",
+  "generated_at": "2026-08-24T08:08:15+08:00",
   "window": {
-    "start": "2026-08-20T20:14:57+08:00",
-    "end": "2026-08-24T04:14:57+08:00",
+    "start": "2026-08-21T00:08:15+08:00",
+    "end": "2026-08-24T08:08:15+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 13,
-  "new_in_run_count": 9,
+  "candidate_count": 18,
+  "new_in_run_count": 5,
   "new_candidates": [
     {
-      "source_name": "AWS Public Sector RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "title": "Building resilient government workflows with AWS Lambda durable functions",
-      "url": "https://aws.amazon.com/blogs/publicsector/building-resilient-government-workflows-with-aws-lambda-durable-functions/",
-      "published_or_lastmod_at": "2026-08-23T19:00:50Z",
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "rust-v0.149.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.1",
+      "published_or_lastmod_at": "2026-08-23T23:38:04Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "AWS Public Sector RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "title": "Agentic AI Where Connectivity Is Scarce: MedZen Health in Cameroon",
-      "url": "https://aws.amazon.com/blogs/publicsector/agentic-ai-where-connectivity-is-scarce-medzen-health-in-cameroon/",
-      "published_or_lastmod_at": "2026-08-23T18:59:45Z",
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.149.0-alpha.4.3",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.4.3",
+      "published_or_lastmod_at": "2026-08-23T23:32:53Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/stampli/",
-      "url": "https://openai.com/index/stampli/",
-      "published_or_lastmod_at": "2026-08-23T19:27:16.801000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/replit/",
-      "url": "https://openai.com/index/replit/",
-      "published_or_lastmod_at": "2026-08-23T18:37:02.108000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "rust-v0.149.0-alpha.4.2",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.4.2",
+      "published_or_lastmod_at": "2026-08-23T21:53:42Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI sitemap",
@@ -51,47 +42,65 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/asana/",
       "url": "https://openai.com/index/asana/",
-      "published_or_lastmod_at": "2026-08-23T18:34:21.839000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/our-approach-to-age-prediction/",
-      "url": "https://openai.com/index/our-approach-to-age-prediction/",
-      "published_or_lastmod_at": "2026-08-23T18:19:52.891000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-      "published_or_lastmod_at": "2026-08-23T17:57:02.752000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/our-approach-to-the-model-spec/",
-      "url": "https://openai.com/index/our-approach-to-the-model-spec/",
-      "published_or_lastmod_at": "2026-08-23T14:46:12.196000Z",
+      "published_or_lastmod_at": "2026-08-23T23:27:40.595000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "Simon Willison atom",
       "adapter": "atom",
       "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "Quoting Drew Breunig",
-      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
-      "published_or_lastmod_at": "2026-08-23T19:55:30Z",
+      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "published_or_lastmod_at": "2026-08-23T20:24:52Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "rust-v0.149.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.1",
+      "published_or_lastmod_at": "2026-08-23T23:38:04Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.149.0-alpha.4.3",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.4.3",
+      "published_or_lastmod_at": "2026-08-23T23:32:53Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/asana/",
+      "url": "https://openai.com/index/asana/",
+      "published_or_lastmod_at": "2026-08-23T23:27:40.595000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "rust-v0.149.0-alpha.4.2",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.149.0-alpha.4.2",
+      "published_or_lastmod_at": "2026-08-23T21:53:42Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "published_or_lastmod_at": "2026-08-23T20:24:52Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
     {
       "source_name": "Simon Willison atom",
       "adapter": "atom",
