@@ -2,11 +2,81 @@
   "schema_version": 1,
   "report_date": "2026-08-26",
   "timezone": "Asia/Shanghai",
-  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。",
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。自动流程只生成 candidate，不自动发布。",
   "scope_label_cn": "当日增量 · 2026-08-26",
   "source_scope": {
     "type": "daily",
     "date": "2026-08-26"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-08-26-copilot-customize-tab-control-plane",
+      "status": "candidate",
+      "timeliness": "today",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-26-github-copilot-customize-tab-ga"
+      ],
+      "working_title_cn": "Copilot 把 MCP、plugins、skills、canvases 收进一个入口后，Agent 产品下一步该怎么做控制面？",
+      "core_tension_cn": "协议接入早就不是重点，真正的竞争开始转向扩展发现、默认入口、权限提示和团队治理。",
+      "why_now_cn": "GitHub 官方刚把 Copilot app 的 Customize tab 正式 GA，说明扩展生态开始从技术能力变成产品分发层。",
+      "target_audience_cn": [
+        "AI 产品负责人",
+        "Agent 平台设计者",
+        "开发者工具团队"
+      ],
+      "evidence_boundary_cn": "当前确认的是 GitHub 官方 Changelog 所写的统一入口与浏览方式；管理员权限、审计日志和企业 rollout 细节仍待后续文档或真实 UI 证明。",
+      "source_urls": [
+        "https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available/"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Copilot 把 MCP 和插件收进一个入口后，Agent 产品要开始补控制面了",
+          "hook": "真正的变化不是多了一个 Tab，而是扩展生态开始被当成产品入口来管理。",
+          "format": "7页图文卡",
+          "outline": [
+            "GitHub 这次到底上线了什么",
+            "为什么这不是单个小功能",
+            "MCP、plugins、skills、canvases 为什么会被收口",
+            "对 Agent 产品控制面的真实影响",
+            "管理员和团队治理还缺什么",
+            "可复用的产品检查清单"
+          ],
+          "visual_direction": "深色控制台风格卡片，入口-扩展-治理三层结构图",
+          "cta": "如果你在做 Agent 产品，你最先补哪一层？"
+        },
+        "twitter": {
+          "title": "Copilot just turned customizations into a product control plane",
+          "hook": "The interesting part is not one more tab. It's that MCP servers, plugins, skills, and canvases now live behind one discovery and workflow surface.",
+          "format": "6帖 Thread",
+          "outline": [
+            "What actually shipped",
+            "Why this matters beyond UI",
+            "How MCP moves from protocol to distribution",
+            "What product teams should copy",
+            "What still needs proof",
+            "Questions for enterprise rollout"
+          ],
+          "visual_direction": "single control-plane diagram",
+          "cta": "What would you want to see in the admin layer?"
+        },
+        "wechat": {
+          "title": "Copilot 把扩展统一收口后，Agent 产品竞争开始从协议层转向控制面",
+          "hook": "GitHub 这次最值得看的，不是又加了几个扩展，而是它开始定义扩展怎么被发现、启用和纳入团队工作流。",
+          "format": "1800—2200字深度文章",
+          "outline": [
+            "发生了什么",
+            "为什么统一入口比新增能力更重要",
+            "MCP 从接线协议变成产品分发层",
+            "权限提示、默认启用和团队治理的难点",
+            "哪些地方还不能脑补",
+            "给 Agent 产品团队的验收清单"
+          ],
+          "visual_direction": "控制面结构图、边界说明表、产品验收清单",
+          "cta": "文末附一份可直接拿去过评审的检查表"
+        }
+      }
+    }
+  ]
 }
