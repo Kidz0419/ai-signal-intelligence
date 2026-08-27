@@ -38,45 +38,45 @@
 
 ## 代表性探针结果
 
-- A2A Protocol releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- Anthropic Cookbook releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- Anthropic sitemap：mechanical_failure，检查 0 条最近 feed/release 项。
-- AutoGen releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- AWS Architecture RSS：mechanical_failure，检查 0 条最近 feed/release 项。
-- AWS Database RSS：mechanical_failure，检查 0 条最近 feed/release 项。
-- AWS ML Blog RSS：mechanical_failure，检查 0 条最近 feed/release 项。
-- AWS Networking RSS：mechanical_failure，检查 0 条最近 feed/release 项。
-- AWS Public Sector RSS：mechanical_failure，检查 0 条最近 feed/release 项。
-- AWS Security RSS：mechanical_failure，检查 0 条最近 feed/release 项。
-- AWS Storage RSS：mechanical_failure，检查 0 条最近 feed/release 项。
-- Browser Use releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- Claude Code releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- CrewAI releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- GitHub Copilot Changelog feed：mechanical_failure，检查 0 条最近 feed/release 项。
-- Google Agent Development Kit releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- Google Blog sitemap：mechanical_failure，检查 0 条最近 feed/release 项。
-- Google Innovation & AI RSS：mechanical_failure，检查 0 条最近 feed/release 项。
-- Google Products & Platforms RSS：mechanical_failure，检查 0 条最近 feed/release 项。
-- Google Security RSS：mechanical_failure，检查 0 条最近 feed/release 项。
-- Hugging Face Blog：mechanical_failure，检查 0 条最近 feed/release 项。
-- Kimi Code releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- LangGraph releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- LlamaIndex releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- Microsoft Agent Framework releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- Moonshot AI Kimi GitHub releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- NVIDIA NeMo GitHub releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- OpenAI Agents SDK releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- OpenAI Codex releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- OpenAI Cookbook releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- OpenAI sitemap：mechanical_failure，检查 0 条最近 feed/release 项。
-- OpenHands releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- Simon Willison atom：mechanical_failure，检查 0 条最近 feed/release 项。
-- SWE-agent releases：mechanical_failure，检查 0 条最近 feed/release 项。
+- A2A Protocol releases：checked_no_match，检查 0 条最近 feed/release 项。
+- Anthropic Cookbook releases：checked_no_match，检查 0 条最近 feed/release 项。
+- Anthropic sitemap：candidate_only，检查 57 条最近 feed/release 项。
+- AutoGen releases：checked_no_match，检查 0 条最近 feed/release 项。
+- AWS Architecture RSS：candidate_only，检查 3 条最近 feed/release 项。
+- AWS Database RSS：candidate_only，检查 3 条最近 feed/release 项。
+- AWS ML Blog RSS：candidate_only，检查 14 条最近 feed/release 项。
+- AWS Networking RSS：candidate_only，检查 3 条最近 feed/release 项。
+- AWS Public Sector RSS：candidate_only，检查 2 条最近 feed/release 项。
+- AWS Security RSS：candidate_only，检查 3 条最近 feed/release 项。
+- AWS Storage RSS：candidate_only，检查 1 条最近 feed/release 项。
+- Browser Use releases：checked_no_match，检查 0 条最近 feed/release 项。
+- Claude Code releases：candidate_only，检查 4 条最近 feed/release 项。
+- CrewAI releases：checked_no_match，检查 0 条最近 feed/release 项。
+- GitHub Copilot Changelog feed：candidate_only，检查 3 条最近 feed/release 项。
+- Google Agent Development Kit releases：candidate_only，检查 1 条最近 feed/release 项。
+- Google Blog sitemap：candidate_only，检查 24 条最近 feed/release 项。
+- Google Innovation & AI RSS：checked_no_match，检查 0 条最近 feed/release 项。
+- Google Products & Platforms RSS：candidate_only，检查 4 条最近 feed/release 项。
+- Google Security RSS：checked_no_match，检查 0 条最近 feed/release 项。
+- Hugging Face Blog：candidate_only，检查 4 条最近 feed/release 项。
+- Kimi Code releases：checked_no_match，检查 0 条最近 feed/release 项。
+- LangGraph releases：checked_no_match，检查 0 条最近 feed/release 项。
+- LlamaIndex releases：checked_no_match，检查 0 条最近 feed/release 项。
+- Microsoft Agent Framework releases：checked_no_match，检查 0 条最近 feed/release 项。
+- Moonshot AI Kimi GitHub releases：checked_no_match，检查 0 条最近 feed/release 项。
+- NVIDIA NeMo GitHub releases：checked_no_match，检查 0 条最近 feed/release 项。
+- OpenAI Agents SDK releases：checked_no_match，检查 0 条最近 feed/release 项。
+- OpenAI Codex releases：candidate_only，检查 10 条最近 feed/release 项。
+- OpenAI Cookbook releases：checked_no_match，检查 0 条最近 feed/release 项。
+- OpenAI sitemap：candidate_only，检查 120 条最近 feed/release 项。
+- OpenHands releases：checked_no_match，检查 0 条最近 feed/release 项。
+- Simon Willison atom：candidate_only，检查 6 条最近 feed/release 项。
+- SWE-agent releases：checked_no_match，检查 0 条最近 feed/release 项。
 
 ## 覆盖与缺口
 
-- 主注册信源连通性状态：not_checked 0（仅可访问、未解析内容变化）、access_blocked 0、mechanical_failure 111。
-- 日期解析探针状态：checked_no_match 0、candidate_only 0。
+- 主注册信源连通性状态：not_checked 100（仅可访问、未解析内容变化）、access_blocked 7、mechanical_failure 4。
+- 日期解析探针状态：checked_no_match 17、candidate_only 17。
 - OpenAI News / Research 等普通抓取仍可能返回 403；本轮如实记录为 access_blocked，没有把 403 写成无内容。
 - X 官方 API 仍未配置 OAuth；只使用公开网页与非 X 替代源，不声称完成闭源或登录墙覆盖。
 
