@@ -1,5 +1,38 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "title": "Anthropic 开放 Model Hardware Standard 研究预览，把 AI agent 接到实验室和制造设备",
+      "publisher": "Anthropic",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-28"
+    },
+    {
+      "id": 2,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
+      "title": "Claude Code v2.1.248 加入 restricted mode、跨会话消息和服务器托管设置诊断",
+      "publisher": "Anthropic",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-28"
+    },
+    {
+      "id": 3,
+      "url": "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities",
+      "title": "GitHub Copilot code review 扩到 bot PR、大型 PR，并要求用户给出 comment resolution reason",
+      "publisher": "GitHub",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-28"
+    },
+    {
+      "id": 4,
+      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai/kimi-code%400.39.0",
+      "title": "Kimi Code 0.39.0 加入实验性 Remote Control，并让 subagent 可继承调用者会话快照",
+      "publisher": "MoonshotAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-08-28"
+    }
+  ]
 }
