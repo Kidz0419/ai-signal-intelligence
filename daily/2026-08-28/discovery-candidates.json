@@ -1,111 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T12:41:20+08:00",
+  "generated_at": "2026-08-28T16:00:09+08:00",
   "window": {
-    "start": "2026-08-25T04:41:20+08:00",
-    "end": "2026-08-28T12:41:20+08:00",
+    "start": "2026-08-25T08:00:09+08:00",
+    "end": "2026-08-28T16:00:09+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 128,
-  "new_in_run_count": 24,
+  "candidate_count": 134,
+  "new_in_run_count": 6,
   "new_candidates": [
     {
-      "source_name": "Anthropic sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://www.anthropic.com/sitemap.xml",
-      "title": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-      "published_or_lastmod_at": "2026-08-28T02:15:31Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "AWS Public Sector RSS",
+      "source_name": "AWS ML Blog RSS",
       "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "title": "What HCLS security teams can do this quarter to close the execution gap",
-      "url": "https://aws.amazon.com/blogs/publicsector/what-hcls-security-teams-can-do-this-quarter-to-close-the-execution-gap/",
-      "published_or_lastmod_at": "2026-08-27T22:50:01Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "AWS Public Sector RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "title": "Modernizing state, local digital government services with AWS and Presidio",
-      "url": "https://aws.amazon.com/blogs/publicsector/modernizing-state-local-digital-government-services-with-aws-and-presidio/",
-      "published_or_lastmod_at": "2026-08-27T22:44:51Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Claude Code releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
-      "title": "v2.1.250",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.250",
-      "published_or_lastmod_at": "2026-08-28T00:49:16Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Claude Code releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
-      "title": "v2.1.248",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
-      "published_or_lastmod_at": "2026-08-27T22:12:20Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "GitHub Copilot Changelog feed",
-      "adapter": "rss",
-      "source_url": "https://github.blog/changelog/label/copilot/feed/",
-      "title": "Copilot code review: Resolution reasons and expanded capabilities",
-      "url": "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities",
-      "published_or_lastmod_at": "2026-08-27T22:46:04Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Google Agent Development Kit releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/google/adk-python/releases.atom",
-      "title": "v1.39.1",
-      "url": "https://github.com/google/adk-python/releases/tag/v1.39.1",
-      "published_or_lastmod_at": "2026-08-27T21:56:28Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Kimi Code releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/MoonshotAI/kimi-code/releases.atom",
-      "title": "@moonshot-ai/kimi-code@0.39.0",
-      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.39.0",
-      "published_or_lastmod_at": "2026-08-27T11:43:41Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Microsoft Agent Framework releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/microsoft/agent-framework/releases.atom",
-      "title": "python-1.16.0",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.16.0",
-      "published_or_lastmod_at": "2026-08-28T00:53:20Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.151.0-alpha.8",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.8",
-      "published_or_lastmod_at": "2026-08-28T04:45:32Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.151.0-alpha.7",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.7",
-      "published_or_lastmod_at": "2026-08-27T22:18:38Z",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "title": "Build agentic creative workflows with Amazon Quick and fal",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-creative-workflows-with-amazon-quick-and-fal/",
+      "published_or_lastmod_at": "2026-08-27T23:04:22Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
@@ -114,16 +24,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
       "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
-      "published_or_lastmod_at": "2026-08-28T05:31:20.405000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-      "published_or_lastmod_at": "2026-08-28T05:21:07.535000Z",
+      "published_or_lastmod_at": "2026-08-28T08:01:01.327000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -132,16 +33,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/learning-never-stops/",
       "url": "https://openai.com/index/learning-never-stops/",
-      "published_or_lastmod_at": "2026-08-28T05:17:33.802000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-codex/",
-      "url": "https://openai.com/index/introducing-codex/",
-      "published_or_lastmod_at": "2026-08-28T04:58:00.714000Z",
+      "published_or_lastmod_at": "2026-08-28T07:29:19.341000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -150,80 +42,26 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-intelligence-age/",
       "url": "https://openai.com/index/introducing-intelligence-age/",
-      "published_or_lastmod_at": "2026-08-28T03:13:36.643000Z",
+      "published_or_lastmod_at": "2026-08-28T07:09:16.557000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/loveholidays/",
-      "url": "https://openai.com/index/loveholidays/",
-      "published_or_lastmod_at": "2026-08-28T02:03:39.854000Z",
+      "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "published_or_lastmod_at": "2026-08-28T07:05:27.472000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-      "published_or_lastmod_at": "2026-08-28T00:23:01.616000Z",
+      "title": "https://openai.com/index/introducing-codex/",
+      "url": "https://openai.com/index/introducing-codex/",
+      "published_or_lastmod_at": "2026-08-28T06:30:06.890000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-safe-completions/",
-      "url": "https://openai.com/index/gpt-5-safe-completions/",
-      "published_or_lastmod_at": "2026-08-27T22:10:33.870000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-      "published_or_lastmod_at": "2026-08-27T21:53:20.918000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/jalapeno-first-results/",
-      "url": "https://openai.com/index/jalapeno-first-results/",
-      "published_or_lastmod_at": "2026-08-27T21:39:15.031000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
-      "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
-      "published_or_lastmod_at": "2026-08-27T21:39:14.954000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
-      "url": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
-      "published_or_lastmod_at": "2026-08-27T21:32:02.144000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "Breaking Claude Code Opus 5 Auto Mode",
-      "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
-      "published_or_lastmod_at": "2026-08-27T22:50:25Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],
   "candidates": [
@@ -233,6 +71,51 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
       "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+      "published_or_lastmod_at": "2026-08-28T08:01:01.327000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/learning-never-stops/",
+      "url": "https://openai.com/index/learning-never-stops/",
+      "published_or_lastmod_at": "2026-08-28T07:29:19.341000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-intelligence-age/",
+      "url": "https://openai.com/index/introducing-intelligence-age/",
+      "published_or_lastmod_at": "2026-08-28T07:09:16.557000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "published_or_lastmod_at": "2026-08-28T07:05:27.472000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-codex/",
+      "url": "https://openai.com/index/introducing-codex/",
+      "published_or_lastmod_at": "2026-08-28T06:30:06.890000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
       "published_or_lastmod_at": "2026-08-28T05:31:20.405000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
@@ -325,6 +208,15 @@
       "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
       "published_or_lastmod_at": "2026-08-28T00:23:01.616000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "AWS ML Blog RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "title": "Build agentic creative workflows with Amazon Quick and fal",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-creative-workflows-with-amazon-quick-and-fal/",
+      "published_or_lastmod_at": "2026-08-27T23:04:22Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "Simon Willison atom",

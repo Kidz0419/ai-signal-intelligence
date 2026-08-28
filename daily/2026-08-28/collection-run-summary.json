@@ -1,61 +1,61 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-28T12:41:20+08:00",
+  "run_at": "2026-08-28T16:00:09+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-25T04:41:20+08:00",
-    "end": "2026-08-28T12:41:20+08:00",
+    "start": "2026-08-25T08:00:09+08:00",
+    "end": "2026-08-28T16:00:09+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 283,
-  "unique_candidates": 242,
+  "raw_candidates": 289,
+  "unique_candidates": 250,
   "editorial_shortlist": 0,
-  "previous_count": 0,
+  "previous_count": 4,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 283,
-  "total_count": 0,
-  "selected": 0,
+  "unreviewed_candidate_count": 289,
+  "total_count": 4,
+  "selected": 4,
   "lane_counts": {
     "model": 0,
-    "agent_architecture": 0,
-    "ai_product": 0,
+    "agent_architecture": 3,
+    "ai_product": 1,
     "ai_macro": 0
   },
   "priority_counts": {
     "P0": 0,
-    "P1": 0,
-    "P2": 0,
+    "P1": 3,
+    "P2": 1,
     "P3": 0
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 97,
+  "collection_errors": 12,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 2,
+      "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 95,
-      "not_checked": 14
+      "mechanical_failure": 5,
+      "not_checked": 99
     },
     "channel_counts": {
       "frontier_model_official": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 2,
+        "access_blocked": 3,
         "auth_required": 0,
-        "mechanical_failure": 12,
-        "not_checked": 13
+        "mechanical_failure": 0,
+        "not_checked": 24
       },
       "china_frontier_models": {
         "selected": 0,
@@ -63,17 +63,17 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 13,
-        "not_checked": 1
+        "mechanical_failure": 1,
+        "not_checked": 13
       },
       "head_ai_product_release_notes": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 0,
+        "access_blocked": 1,
         "auth_required": 0,
-        "mechanical_failure": 16,
-        "not_checked": 0
+        "mechanical_failure": 0,
+        "not_checked": 15
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -81,8 +81,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 16,
-        "not_checked": 0
+        "mechanical_failure": 0,
+        "not_checked": 16
       },
       "research_and_evaluation": {
         "selected": 0,
@@ -90,17 +90,17 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 10,
-        "not_checked": 0
+        "mechanical_failure": 2,
+        "not_checked": 8
       },
       "ai_macro_primary": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 0,
+        "access_blocked": 3,
         "auth_required": 0,
-        "mechanical_failure": 17,
-        "not_checked": 0
+        "mechanical_failure": 2,
+        "not_checked": 12
       },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
@@ -108,8 +108,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 11,
-        "not_checked": 0
+        "mechanical_failure": 0,
+        "not_checked": 11
       }
     },
     "records": [
@@ -118,162 +118,165 @@
         "name": "A2A Protocol",
         "type": "github_releases",
         "url": "https://github.com/a2aproject/A2A",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Anthropic Cookbook",
         "type": "github_changes",
         "url": "https://github.com/anthropics/anthropic-cookbook",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://github.com/anthropics/claude-cookbooks",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "AutoGen",
         "type": "github_releases",
         "url": "https://github.com/microsoft/autogen",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "AWS Strands Agents",
         "type": "github_org",
         "url": "https://github.com/strands-agents",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Browser Use",
         "type": "github_releases",
         "url": "https://github.com/browser-use/browser-use",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "CrewAI",
         "type": "github_releases",
         "url": "https://github.com/crewAIInc/crewAI",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Google Agent Development Kit",
         "type": "github_releases",
         "url": "https://github.com/google/adk-python",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "LangGraph",
         "type": "github_releases",
         "url": "https://github.com/langchain-ai/langgraph",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "LlamaIndex",
         "type": "github_releases",
         "url": "https://github.com/run-llama/llama_index",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Microsoft Agent Framework",
         "type": "github_releases",
         "url": "https://github.com/microsoft/agent-framework",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Microsoft Research AutoGen Blog",
         "type": "official_research",
         "url": "https://www.microsoft.com/en-us/research/project/autogen/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Model Context Protocol",
         "type": "github_org",
         "url": "https://github.com/modelcontextprotocol",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "OpenAI Agents SDK",
         "type": "github_releases",
         "url": "https://github.com/openai/openai-agents-python",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "OpenAI Cookbook",
         "type": "github_changes",
         "url": "https://github.com/openai/openai-cookbook",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "OpenHands",
         "type": "github_releases",
         "url": "https://github.com/All-Hands-AI/OpenHands",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://github.com/OpenHands/OpenHands",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "SWE-agent",
         "type": "github_releases",
         "url": "https://github.com/SWE-agent/SWE-agent",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "Alphabet Investor Relations",
         "type": "company_ir",
         "url": "https://abc.xyz/investor/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "Amazon Investor Relations",
         "type": "company_ir",
         "url": "https://ir.aboutamazon.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://ir.aboutamazon.com/overview/default.aspx",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
@@ -298,171 +301,175 @@
         "name": "CoreWeave Investor Relations",
         "type": "company_ir",
         "url": "https://investors.coreweave.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://investors.coreweave.com/overview/default.aspx",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "EU AI Office",
         "type": "regulator",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "European Commission AI Act",
         "type": "regulator",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "IEA Data Centres and AI",
         "type": "energy_research",
         "url": "https://www.iea.org/topics/data-centres-and-data-transmission-networks",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "ai_macro_primary",
         "name": "Meta Investor Relations",
         "type": "company_ir",
         "url": "https://investor.atmeta.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://investor.atmeta.com/home/default.aspx",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "Microsoft Investor Relations",
         "type": "company_ir",
         "url": "https://www.microsoft.com/en-us/Investor",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://www.microsoft.com/en-us/investor/default",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "NVIDIA Investor Relations",
         "type": "company_ir",
         "url": "https://investor.nvidia.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://investor.nvidia.com/home/default.aspx",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "OpenAI Company News",
         "type": "company_primary",
         "url": "https://openai.com/news/company/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "ai_macro_primary",
         "name": "SEC EDGAR",
         "type": "regulatory_filings",
         "url": "https://www.sec.gov/edgar/search/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "access_blocked",
+        "http_code": "403",
+        "note": "Public endpoint requires official API or compliant User-Agent flow; plain fetch is not treated as no match."
       },
       {
         "channel": "ai_macro_primary",
         "name": "UK AI Security Institute",
         "type": "government_research",
         "url": "https://www.aisi.gov.uk/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "UK CMA Digital Markets",
         "type": "regulator",
         "url": "https://www.gov.uk/government/organisations/competition-and-markets-authority",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "US FTC Technology Blog",
         "type": "regulator",
         "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "US NIST AI",
         "type": "regulator",
         "url": "https://www.nist.gov/artificial-intelligence",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
         "name": "Baidu AI Cloud Qianfan",
         "type": "official_product",
         "url": "https://cloud.baidu.com/product/wenxinworkshop",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://cloud.baidu.com/product-s/qianfan_home",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
         "name": "DeepSeek GitHub",
         "type": "github_org",
         "url": "https://github.com/deepseek-ai",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
         "name": "DeepSeek Hugging Face",
         "type": "model_hub",
         "url": "https://huggingface.co/deepseek-ai",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
         "name": "DeepSeek News",
         "type": "official_site",
         "url": "https://www.deepseek.com/",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
         "name": "Kimi Developer Docs",
         "type": "developer_docs",
         "url": "https://platform.moonshot.cn/docs",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://platform.kimi.com/docs/overview",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
         "name": "MiniMax GitHub",
         "type": "github_org",
         "url": "https://github.com/MiniMax-AI",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -470,26 +477,25 @@
         "type": "developer_docs",
         "url": "https://platform.minimaxi.com/document",
         "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "http_code": "404"
       },
       {
         "channel": "china_frontier_models",
         "name": "Moonshot AI GitHub",
         "type": "github_org",
         "url": "https://github.com/MoonshotAI",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
         "name": "Moonshot AI Kimi GitHub",
         "type": "official_github",
         "url": "https://github.com/MoonshotAI/Kimi-K3",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -505,36 +511,37 @@
         "name": "Qwen GitHub",
         "type": "github_org",
         "url": "https://github.com/QwenLM",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
         "name": "Qwen Hugging Face",
         "type": "model_hub",
         "url": "https://huggingface.co/Qwen",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
         "name": "THUDM GitHub",
         "type": "github_org",
         "url": "https://github.com/THUDM",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
         "name": "Zhipu AI Open Platform",
         "type": "developer_docs",
         "url": "https://open.bigmodel.cn/dev/api",
-        "status": "mechanical_failure",
-        "http_code": "RemoteDisconnected",
-        "note": "Remote end closed connection without response"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://docs.bigmodel.cn/cn/guide/start/introduction",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -559,9 +566,10 @@
         "name": "Anthropic API Release Notes",
         "type": "developer_changelog",
         "url": "https://docs.anthropic.com/en/release-notes/api",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -577,9 +585,9 @@
         "name": "Anthropic Research",
         "type": "official_research",
         "url": "https://www.anthropic.com/research",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -604,18 +612,20 @@
         "name": "AWS What's New AI/ML",
         "type": "cloud_release_notes",
         "url": "https://aws.amazon.com/about-aws/whats-new/machine-learning/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://aws.amazon.com/about-aws/",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Azure AI Foundry What's New",
         "type": "cloud_release_notes",
         "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/whats-new-azure-ai-foundry",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/whats-new-foundry",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -641,27 +651,28 @@
         "name": "Google DeepMind Blog",
         "type": "official_research",
         "url": "https://deepmind.google/discover/blog/",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://deepmind.google/blog/",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Google Innovation & AI",
         "type": "official_news",
         "url": "https://blog.google/innovation-and-ai/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Meta AI Blog",
         "type": "official_research",
         "url": "https://ai.meta.com/blog/",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -677,18 +688,19 @@
         "name": "Meta Newsroom AI",
         "type": "official_newsroom",
         "url": "https://about.fb.com/news/tag/ai/",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Microsoft AI Blog",
         "type": "official_news",
         "url": "https://microsoft.ai/news/",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://microsoft.ai/blog/",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -714,9 +726,9 @@
         "name": "NVIDIA Newsroom",
         "type": "official_newsroom",
         "url": "https://nvidianews.nvidia.com/",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -741,9 +753,9 @@
         "name": "OpenAI News",
         "type": "official_news",
         "url": "https://openai.com/news/",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "access_blocked",
+        "http_code": "403",
+        "note": "curl 403; registry fallback requires browser or official article/index alternative, so this is not treated as no match."
       },
       {
         "channel": "frontier_model_official",
@@ -758,9 +770,10 @@
         "name": "Vertex AI Generative AI Release Notes",
         "type": "cloud_release_notes",
         "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -786,261 +799,263 @@
         "name": "Atlassian Intelligence Updates",
         "type": "product_release_notes",
         "url": "https://confluence.atlassian.com/cloud/blog",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Canva Newsroom AI",
         "type": "official_product_blog",
         "url": "https://www.canva.com/newsroom/news/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Cursor Changelog",
         "type": "product_changelog",
         "url": "https://cursor.com/changelog",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Cursor Docs",
         "type": "product_docs",
         "url": "https://docs.cursor.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://cursor.com/docs",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Figma Release Notes",
         "type": "product_release_notes",
         "url": "https://help.figma.com/hc/en-us/categories/360002051613-Release-notes",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Gemini Apps Help",
         "type": "help_center",
         "url": "https://support.google.com/gemini/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "GitHub Changelog Copilot",
         "type": "product_changelog",
         "url": "https://github.blog/changelog/label/copilot/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "GitHub Copilot Docs",
         "type": "product_docs",
         "url": "https://docs.github.com/en/copilot",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Google Workspace Updates",
         "type": "product_release_notes",
         "url": "https://workspaceupdates.googleblog.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Hugging Face Blog",
         "type": "official_technical_blog",
         "url": "https://huggingface.co/blog",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Microsoft 365 Roadmap",
         "type": "product_roadmap",
         "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Microsoft Copilot Blog",
         "type": "official_product_blog",
         "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Notion Releases",
         "type": "product_changelog",
         "url": "https://www.notion.com/releases",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Perplexity Changelog",
         "type": "product_changelog",
         "url": "https://www.perplexity.ai/changelog",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Salesforce Release Notes AI",
         "type": "product_release_notes",
         "url": "https://help.salesforce.com/s/articleView?id=release-notes.salesforce_release_notes.htm",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://help.salesforce.com/s/articleView?language=en_US&id=release-notes.salesforce_release_notes.htm",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Slack Release Notes",
         "type": "product_release_notes",
         "url": "https://slack.com/intl/en-gb/release-notes",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://slack.com/intl/en-gb/release-notes/mac",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Ahead of AI",
         "type": "researcher_newsletter",
         "url": "https://magazine.sebastianraschka.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Chip Huyen",
         "type": "personal_blog",
         "url": "https://huyenchip.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Every",
         "type": "longform_blog_podcast",
         "url": "https://every.to/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Hamel Husain",
         "type": "personal_blog",
         "url": "https://hamel.dev/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Import AI",
         "type": "researcher_newsletter",
         "url": "https://jack-clark.net/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Interconnects",
         "type": "researcher_newsletter",
         "url": "https://www.interconnects.ai/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Latent Space",
         "type": "longform_blog_podcast",
         "url": "https://www.latent.space/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Lenny's Newsletter",
         "type": "longform_blog_podcast",
         "url": "https://www.lennysnewsletter.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Lil'Log",
         "type": "researcher_blog",
         "url": "https://lilianweng.github.io/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Simon Willison",
         "type": "personal_blog",
         "url": "https://simonwillison.net/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "The Pragmatic Engineer",
         "type": "longform_blog",
         "url": "https://newsletter.pragmaticengineer.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "Artificial Analysis",
         "type": "independent_evaluation",
         "url": "https://artificialanalysis.ai/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.AI",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
@@ -1048,8 +1063,8 @@
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
         "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "http_code": "429",
+        "note": "rate limited"
       },
       {
         "channel": "research_and_evaluation",
@@ -1057,62 +1072,64 @@
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
         "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "research_and_evaluation",
         "name": "Epoch AI",
         "type": "research_org",
         "url": "https://epoch.ai/blog",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://epoch.ai/latest",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "Hugging Face Daily Papers",
         "type": "paper_index",
         "url": "https://huggingface.co/papers",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "LMSYS Chatbot Arena",
         "type": "benchmark",
         "url": "https://lmarena.ai/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://arena.ai/",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "METR",
         "type": "evaluation_org",
         "url": "https://metr.org/blog/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "Stanford HAI",
         "type": "research_institute",
         "url": "https://hai.stanford.edu/news",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "SWE-bench",
         "type": "benchmark",
         "url": "https://www.swebench.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       }
     ]
   },
@@ -1586,19 +1603,96 @@
       "name": "AWS Database RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/database/feed/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+      "status": "candidate_only",
+      "checked_items": 20,
+      "recent_items": [
+        {
+          "title": "CORTO’s billion-scale legal semantic search with Aurora PostgreSQL pgvector",
+          "url": "https://aws.amazon.com/blogs/database/cortos-billion-scale-legal-semantic-search-with-aurora-postgresql-pgvector/",
+          "published_at": "2026-08-26T16:40:00Z"
+        },
+        {
+          "title": "How Channel Corporation modernized their architecture with Amazon DynamoDB, Part 3: User and Badge",
+          "url": "https://aws.amazon.com/blogs/database/how-channel-corporation-modernized-their-architecture-with-amazon-dynamodb-part-3-user-and-badge/",
+          "published_at": "2026-08-25T18:39:51Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "AWS ML Blog RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+      "status": "candidate_only",
+      "checked_items": 20,
+      "recent_items": [
+        {
+          "title": "Build agentic creative workflows with Amazon Quick and fal",
+          "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-creative-workflows-with-amazon-quick-and-fal/",
+          "published_at": "2026-08-27T23:04:22Z"
+        },
+        {
+          "title": "Introducing OpenAI models on Amazon Bedrock for in-country inferencing in India",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-openai-models-on-amazon-bedrock-for-in-country-inferencing-in-india/",
+          "published_at": "2026-08-27T18:36:08Z"
+        },
+        {
+          "title": "Deepgram deepens Amazon SageMaker AI observability with Enhanced Metrics",
+          "url": "https://aws.amazon.com/blogs/machine-learning/deepgram-deepens-amazon-sagemaker-ai-observability-with-enhanced-metrics/",
+          "published_at": "2026-08-27T16:11:27Z"
+        },
+        {
+          "title": "Reduce ASR inference costs by 75% with NVIDIA MPS on Amazon EC2",
+          "url": "https://aws.amazon.com/blogs/machine-learning/reduce-asr-inference-costs-by-75-with-nvidia-mps-on-amazon-ec2/",
+          "published_at": "2026-08-27T16:05:10Z"
+        },
+        {
+          "title": "Evaluate any agent framework with Amazon Bedrock AgentCore Evaluations",
+          "url": "https://aws.amazon.com/blogs/machine-learning/evaluate-any-agent-framework-with-amazon-bedrock-agentcore-evaluations/",
+          "published_at": "2026-08-26T19:13:35Z"
+        },
+        {
+          "title": "How GoDaddy transformed its analytics with Amazon Quick",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-godaddy-transformed-its-analytics-with-amazon-quick/",
+          "published_at": "2026-08-26T16:51:53Z"
+        },
+        {
+          "title": "Natera’s intelligent appointment scheduling with Amazon Bedrock AgentCore",
+          "url": "https://aws.amazon.com/blogs/machine-learning/nateras-intelligent-appointment-scheduling-with-amazon-bedrock-agentcore/",
+          "published_at": "2026-08-26T16:36:35Z"
+        },
+        {
+          "title": "Bring your own model with Amazon SageMaker AI: Script mode in SDK v3",
+          "url": "https://aws.amazon.com/blogs/machine-learning/bring-your-own-model-with-amazon-sagemaker-ai-script-mode-in-sdk-v3/",
+          "published_at": "2026-08-26T16:31:32Z"
+        },
+        {
+          "title": "Preparing data for supervised fine-tuning Part 2: Advanced data strategies",
+          "url": "https://aws.amazon.com/blogs/machine-learning/preparing-data-for-supervised-fine-tuning-part-2-advanced-data-strategies/",
+          "published_at": "2026-08-26T16:24:05Z"
+        },
+        {
+          "title": "Preparing data for supervised fine-tuning Part 1: Formatting and quality",
+          "url": "https://aws.amazon.com/blogs/machine-learning/preparing-data-for-supervised-fine-tuning-part-1-formatting-and-quality/",
+          "published_at": "2026-08-26T16:24:02Z"
+        },
+        {
+          "title": "Connect Amazon Bedrock AgentCore to cross-account knowledge bases",
+          "url": "https://aws.amazon.com/blogs/machine-learning/connect-amazon-bedrock-agentcore-to-cross-account-knowledge-bases/",
+          "published_at": "2026-08-26T15:48:10Z"
+        },
+        {
+          "title": "Agentic observability with Amazon OpenSearch Service MCP Apps",
+          "url": "https://aws.amazon.com/blogs/machine-learning/agentic-observability-with-amazon-opensearch-service-mcp-apps/",
+          "published_at": "2026-08-25T19:00:09Z"
+        },
+        {
+          "title": "Governed reports with Amazon Quick Desktop and Amazon FSx for NetApp ONTAP",
+          "url": "https://aws.amazon.com/blogs/machine-learning/governed-reports-with-amazon-quick-desktop-and-amazon-fsx-for-netapp-ontap/",
+          "published_at": "2026-08-25T16:35:01Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "AWS Networking RSS",
@@ -1699,10 +1793,10 @@
       "name": "Browser Use releases",
       "adapter": "atom",
       "source_url": "https://github.com/browser-use/browser-use/releases.atom",
-      "status": "mechanical_failure",
-      "checked_items": 0,
+      "status": "checked_no_match",
+      "checked_items": 10,
       "recent_items": [],
-      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+      "note": ""
     },
     {
       "name": "Claude Code releases",
@@ -1735,11 +1829,6 @@
           "title": "v2.1.245",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.245",
           "published_at": "2026-08-25T05:13:24Z"
-        },
-        {
-          "title": "v2.1.243",
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.243",
-          "published_at": "2026-08-24T23:40:18Z"
         }
       ],
       "note": ""
@@ -1960,41 +2049,6 @@
           "title": "https://blog.google/products-and-platforms/products/education/back-to-school-2026/",
           "url": "https://blog.google/products-and-platforms/products/education/back-to-school-2026/",
           "published_at": "2026-08-26T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/products/gemini-app/enable-intelligent-dictation-macos/",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-app/enable-intelligent-dictation-macos/",
-          "published_at": "2026-08-25T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/technology/developers-tools/winning-entries-gemma-4-good-challenge/",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/winning-entries-gemma-4-good-challenge/",
-          "published_at": "2026-08-25T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/outreach-and-initiatives/grow-with-google/free-ai-training-delaware/",
-          "url": "https://blog.google/company-news/outreach-and-initiatives/grow-with-google/free-ai-training-delaware/",
-          "published_at": "2026-08-25T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/platforms/google-play/google-play-gamescom-takeover-rewards/",
-          "url": "https://blog.google/products-and-platforms/platforms/google-play/google-play-gamescom-takeover-rewards/",
-          "published_at": "2026-08-25T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/devices/pixel/buy-pixel-11-phones-pixel-5-watch/",
-          "url": "https://blog.google/products-and-platforms/devices/pixel/buy-pixel-11-phones-pixel-5-watch/",
-          "published_at": "2026-08-25T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
-          "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
-          "published_at": "2026-08-25T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/education/florida-state-university-notebooklm/",
-          "url": "https://blog.google/products-and-platforms/products/education/florida-state-university-notebooklm/",
-          "published_at": "2026-08-25T00:00:00Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2078,11 +2132,6 @@
           "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
           "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
           "published_at": "2026-08-25T11:39:24Z"
-        },
-        {
-          "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
-          "url": "https://huggingface.co/blog/gradio-workflow-guide",
-          "published_at": "2026-08-25T00:00:00Z"
         }
       ],
       "note": ""
@@ -2247,32 +2296,32 @@
         {
           "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
           "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
-          "published_at": "2026-08-28T05:31:20.405000Z"
-        },
-        {
-          "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-          "published_at": "2026-08-28T05:21:07.535000Z"
+          "published_at": "2026-08-28T08:01:01.327000Z"
         },
         {
           "title": "https://openai.com/index/learning-never-stops/",
           "url": "https://openai.com/index/learning-never-stops/",
-          "published_at": "2026-08-28T05:17:33.802000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-codex/",
-          "url": "https://openai.com/index/introducing-codex/",
-          "published_at": "2026-08-28T04:58:00.714000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-codex/",
-          "url": "https://openai.com/index/introducing-codex/",
-          "published_at": "2026-08-28T04:58:00.714000Z"
+          "published_at": "2026-08-28T07:29:19.341000Z"
         },
         {
           "title": "https://openai.com/index/introducing-intelligence-age/",
           "url": "https://openai.com/index/introducing-intelligence-age/",
-          "published_at": "2026-08-28T03:13:36.643000Z"
+          "published_at": "2026-08-28T07:09:16.557000Z"
+        },
+        {
+          "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+          "published_at": "2026-08-28T07:05:27.472000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-codex/",
+          "url": "https://openai.com/index/introducing-codex/",
+          "published_at": "2026-08-28T06:30:06.890000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-codex/",
+          "url": "https://openai.com/index/introducing-codex/",
+          "published_at": "2026-08-28T06:30:06.890000Z"
         },
         {
           "title": "https://openai.com/index/loveholidays/",
@@ -2903,11 +2952,11 @@
     }
   ],
   "content_topics": {
-    "topic_count": 0,
-    "platform_variants": 0
+    "topic_count": 3,
+    "platform_variants": 9
   },
   "notes": [
-    "283 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "289 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
