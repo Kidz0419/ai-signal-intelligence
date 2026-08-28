@@ -1,93 +1,84 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-29T00:31:12+08:00",
+  "generated_at": "2026-08-29T04:22:45+08:00",
   "window": {
-    "start": "2026-08-25T16:31:12+08:00",
-    "end": "2026-08-29T00:31:12+08:00",
+    "start": "2026-08-25T20:22:45+08:00",
+    "end": "2026-08-29T04:22:45+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 17,
-  "new_in_run_count": 17,
+  "candidate_count": 31,
+  "new_in_run_count": 14,
   "new_candidates": [
     {
-      "source_name": "Anthropic sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://www.anthropic.com/sitemap.xml",
-      "title": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
-      "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
-      "published_or_lastmod_at": "2026-08-28T17:02:17Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "Anthropic sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://www.anthropic.com/sitemap.xml",
-      "title": "https://www.anthropic.com/news/claude-for-teachers",
-      "url": "https://www.anthropic.com/news/claude-for-teachers",
-      "published_or_lastmod_at": "2026-08-28T15:01:10Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
       "source_name": "AWS ML Blog RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "title": "How Decathlon runs demand forecasting at scale with Chronos-2",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-decathlon-runs-demand-forecasting-at-scale-with-chronos-2/",
-      "published_or_lastmod_at": "2026-08-28T16:22:30Z",
+      "title": "Batch write and discover records in Amazon SageMaker Feature Store",
+      "url": "https://aws.amazon.com/blogs/machine-learning/batch-write-and-discover-records-in-amazon-sagemaker-feature-store/",
+      "published_or_lastmod_at": "2026-08-28T19:31:05Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "AWS ML Blog RSS",
+      "source_name": "AWS Security RSS",
       "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "title": "Spreading the load: How Salesforce met Multi-AZ HA with SageMaker Inference Components",
-      "url": "https://aws.amazon.com/blogs/machine-learning/spreading-the-load-how-salesforce-met-multi-az-ha-with-sagemaker-inference-components/",
-      "published_or_lastmod_at": "2026-08-28T16:20:40Z",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Extend your data perimeter to the AWS Management Console with Private Access",
+      "url": "https://aws.amazon.com/blogs/security/extend-your-data-perimeter-to-the-aws-management-console-with-private-access/",
+      "published_or_lastmod_at": "2026-08-28T18:53:57Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "Claude Code releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
-      "title": "v2.1.251",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
-      "published_or_lastmod_at": "2026-08-28T18:19:32Z",
+      "source_name": "AWS Storage RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/storage/feed/",
+      "title": "Detect stalled Amazon S3 live replication to prevent unexpected storage costs",
+      "url": "https://aws.amazon.com/blogs/storage/detect-stalled-amazon-s3-live-replication-to-prevent-unexpected-storage-costs/",
+      "published_or_lastmod_at": "2026-08-28T19:12:07Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "Google Blog sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://blog.google/en-us/sitemap.xml",
-      "title": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/",
+      "source_name": "GitHub Copilot Changelog feed",
+      "adapter": "rss",
+      "source_url": "https://github.blog/changelog/label/copilot/feed/",
+      "title": "GitHub Copilot in Visual Studio — August update",
+      "url": "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2",
+      "published_or_lastmod_at": "2026-08-28T20:24:20Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "GitHub Copilot Changelog feed",
+      "adapter": "rss",
+      "source_url": "https://github.blog/changelog/label/copilot/feed/",
+      "title": "GitHub Copilot weekly releases — August 24",
+      "url": "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24",
+      "published_or_lastmod_at": "2026-08-28T20:13:22Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Hugging Face Blog",
+      "adapter": "rss",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
       "published_or_lastmod_at": "2026-08-28T00:00:00Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "Kimi Code releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/MoonshotAI/kimi-code/releases.atom",
-      "title": "@moonshot-ai/kimi-code@0.39.1",
-      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.39.1",
-      "published_or_lastmod_at": "2026-08-28T10:07:08Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI Codex releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.151.0-alpha.10",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.10",
-      "published_or_lastmod_at": "2026-08-28T17:02:53Z",
+      "title": "0.151.0-alpha.11",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.11",
+      "published_or_lastmod_at": "2026-08-28T21:32:06Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI Codex releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.151.0-alpha.9",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.9",
-      "published_or_lastmod_at": "2026-08-28T15:35:48Z",
+      "title": "0.151.0-alpha.7.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.7.1",
+      "published_or_lastmod_at": "2026-08-28T20:22:14Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
@@ -96,7 +87,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
       "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-      "published_or_lastmod_at": "2026-08-28T18:54:01.422000Z",
+      "published_or_lastmod_at": "2026-08-28T21:51:28.204000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -105,34 +96,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/learning-never-stops/",
       "url": "https://openai.com/index/learning-never-stops/",
-      "published_or_lastmod_at": "2026-08-28T18:38:14.516000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-codex/",
-      "url": "https://openai.com/index/introducing-codex/",
-      "published_or_lastmod_at": "2026-08-28T17:54:40.655000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-6-in-kiro/",
-      "url": "https://openai.com/index/gpt-5-6-in-kiro/",
-      "published_or_lastmod_at": "2026-08-28T17:42:32.538000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/nvidia/chatgpt-work/",
-      "url": "https://openai.com/index/nvidia/chatgpt-work/",
-      "published_or_lastmod_at": "2026-08-28T17:27:40.641000Z",
+      "published_or_lastmod_at": "2026-08-28T20:51:53.363000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -141,16 +105,25 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
       "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-      "published_or_lastmod_at": "2026-08-28T16:09:03.066000Z",
+      "published_or_lastmod_at": "2026-08-28T20:12:07.082000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/the-defenders-window/",
-      "url": "https://openai.com/index/the-defenders-window/",
-      "published_or_lastmod_at": "2026-08-28T12:09:08.107000Z",
+      "title": "https://openai.com/index/gpt-5-safe-completions/",
+      "url": "https://openai.com/index/gpt-5-safe-completions/",
+      "published_or_lastmod_at": "2026-08-28T20:11:42.616000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-admin-plugin/",
+      "url": "https://openai.com/index/introducing-admin-plugin/",
+      "published_or_lastmod_at": "2026-08-28T19:39:10.209000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -159,7 +132,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/loveholidays/",
       "url": "https://openai.com/index/loveholidays/",
-      "published_or_lastmod_at": "2026-08-28T11:48:30.968000Z",
+      "published_or_lastmod_at": "2026-08-28T19:00:35.733000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     }
   ],
@@ -170,8 +143,125 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
       "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "published_or_lastmod_at": "2026-08-28T21:51:28.204000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.151.0-alpha.11",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.11",
+      "published_or_lastmod_at": "2026-08-28T21:32:06Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/learning-never-stops/",
+      "url": "https://openai.com/index/learning-never-stops/",
+      "published_or_lastmod_at": "2026-08-28T20:51:53.363000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "GitHub Copilot Changelog feed",
+      "adapter": "rss",
+      "source_url": "https://github.blog/changelog/label/copilot/feed/",
+      "title": "GitHub Copilot in Visual Studio — August update",
+      "url": "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2",
+      "published_or_lastmod_at": "2026-08-28T20:24:20Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.151.0-alpha.7.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.7.1",
+      "published_or_lastmod_at": "2026-08-28T20:22:14Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "GitHub Copilot Changelog feed",
+      "adapter": "rss",
+      "source_url": "https://github.blog/changelog/label/copilot/feed/",
+      "title": "GitHub Copilot weekly releases — August 24",
+      "url": "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24",
+      "published_or_lastmod_at": "2026-08-28T20:13:22Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "published_or_lastmod_at": "2026-08-28T20:12:07.082000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-safe-completions/",
+      "url": "https://openai.com/index/gpt-5-safe-completions/",
+      "published_or_lastmod_at": "2026-08-28T20:11:42.616000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-admin-plugin/",
+      "url": "https://openai.com/index/introducing-admin-plugin/",
+      "published_or_lastmod_at": "2026-08-28T19:39:10.209000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "AWS ML Blog RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "title": "Batch write and discover records in Amazon SageMaker Feature Store",
+      "url": "https://aws.amazon.com/blogs/machine-learning/batch-write-and-discover-records-in-amazon-sagemaker-feature-store/",
+      "published_or_lastmod_at": "2026-08-28T19:31:05Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Storage RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/storage/feed/",
+      "title": "Detect stalled Amazon S3 live replication to prevent unexpected storage costs",
+      "url": "https://aws.amazon.com/blogs/storage/detect-stalled-amazon-s3-live-replication-to-prevent-unexpected-storage-costs/",
+      "published_or_lastmod_at": "2026-08-28T19:12:07Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/loveholidays/",
+      "url": "https://openai.com/index/loveholidays/",
+      "published_or_lastmod_at": "2026-08-28T19:00:35.733000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
       "published_or_lastmod_at": "2026-08-28T18:54:01.422000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "AWS Security RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Extend your data perimeter to the AWS Management Console with Private Access",
+      "url": "https://aws.amazon.com/blogs/security/extend-your-data-perimeter-to-the-aws-management-console-with-private-access/",
+      "published_or_lastmod_at": "2026-08-28T18:53:57Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI sitemap",
@@ -306,6 +396,15 @@
       "title": "@moonshot-ai/kimi-code@0.39.1",
       "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.39.1",
       "published_or_lastmod_at": "2026-08-28T10:07:08Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Hugging Face Blog",
+      "adapter": "rss",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+      "published_or_lastmod_at": "2026-08-28T00:00:00Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
