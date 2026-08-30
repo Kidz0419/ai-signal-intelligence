@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-31T00:00:18+08:00",
+  "run_at": "2026-08-31T04:00:47+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-27T16:00:18+08:00",
-    "end": "2026-08-31T00:00:18+08:00",
+    "start": "2026-08-27T20:00:47+08:00",
+    "end": "2026-08-31T04:00:47+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 131,
-  "unique_candidates": 112,
+  "raw_candidates": 130,
+  "unique_candidates": 111,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 131,
+  "unreviewed_candidate_count": 130,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -358,7 +358,7 @@
         "type": "company_ir",
         "url": "https://investor.nvidia.com/",
         "status": "not_checked",
-        "http_code": "206",
+        "http_code": "200",
         "final_url": "https://investor.nvidia.com/home/default.aspx",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
@@ -1650,11 +1650,6 @@
           "title": "@moonshot-ai/kimi-code@0.39.1",
           "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.39.1",
           "published_at": "2026-08-28T10:07:08Z"
-        },
-        {
-          "title": "@moonshot-ai/kimi-code@0.39.0",
-          "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.39.0",
-          "published_at": "2026-08-27T11:43:41Z"
         }
       ],
       "note": ""
@@ -1802,6 +1797,11 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+          "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+          "published_at": "2026-08-30T17:59:23.517000Z"
+        },
+        {
           "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
           "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
           "published_at": "2026-08-30T15:36:11.519000Z"
@@ -1815,11 +1815,6 @@
           "title": "https://openai.com/index/learning-never-stops/",
           "url": "https://openai.com/index/learning-never-stops/",
           "published_at": "2026-08-30T15:06:13.614000Z"
-        },
-        {
-          "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
-          "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
-          "published_at": "2026-08-30T15:05:57.754000Z"
         },
         {
           "title": "https://openai.com/index/introducing-admin-plugin/",
@@ -2164,7 +2159,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "131 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "130 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
