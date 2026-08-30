@@ -1,21 +1,230 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-30T12:00:01+08:00",
+  "generated_at": "2026-08-30T16:00:18+08:00",
   "window": {
-    "start": "2026-08-27T04:00:01+08:00",
-    "end": "2026-08-30T12:00:01+08:00",
+    "start": "2026-08-27T08:00:18+08:00",
+    "end": "2026-08-30T16:00:18+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 19,
-  "new_in_run_count": 2,
+  "candidate_count": 32,
+  "new_in_run_count": 13,
   "new_candidates": [
     {
       "source_name": "Google Blog sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://blog.google/en-us/sitemap.xml",
-      "title": "https://blog.google/company-news/inside-google/company-announcements/celebrating-250-years-of-america-from-its-history-to-its-future/",
-      "url": "https://blog.google/company-news/inside-google/company-announcements/celebrating-250-years-of-america-from-its-history-to-its-future/",
+      "title": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
+      "url": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
       "published_or_lastmod_at": "2026-08-30T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Products & Platforms RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/products-and-platforms/rss/",
+      "title": "How the GNIS Lake Ontario/Lake America name change in the U.S. will appear in Maps",
+      "url": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
+      "published_or_lastmod_at": "2026-08-29T04:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "published_or_lastmod_at": "2026-08-30T08:01:43.520000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/unlocking-self-improvement-gpt-red/",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red/",
+      "published_or_lastmod_at": "2026-08-30T08:01:35.750000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/our-approach-to-the-model-spec/",
+      "url": "https://openai.com/index/our-approach-to-the-model-spec/",
+      "published_or_lastmod_at": "2026-08-30T08:01:25.982000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+      "published_or_lastmod_at": "2026-08-30T08:01:19.269000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-life-sci-bench/",
+      "url": "https://openai.com/index/introducing-life-sci-bench/",
+      "published_or_lastmod_at": "2026-08-30T08:01:16.291000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/instruction-hierarchy-challenge/",
+      "url": "https://openai.com/index/instruction-hierarchy-challenge/",
+      "published_or_lastmod_at": "2026-08-30T08:00:44.205000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gdpval/",
+      "url": "https://openai.com/index/gdpval/",
+      "published_or_lastmod_at": "2026-08-30T07:56:54.736000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-4o-system-card/",
+      "url": "https://openai.com/index/gpt-4o-system-card/",
+      "published_or_lastmod_at": "2026-08-30T07:53:47.531000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/emergent-misalignment/",
+      "url": "https://openai.com/index/emergent-misalignment/",
+      "published_or_lastmod_at": "2026-08-30T07:52:14.301000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/openai-o1-system-card/",
+      "url": "https://openai.com/index/openai-o1-system-card/",
+      "published_or_lastmod_at": "2026-08-30T07:51:42.580000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "published_or_lastmod_at": "2026-08-30T06:31:43.952000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    }
+  ],
+  "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "published_or_lastmod_at": "2026-08-30T08:01:43.520000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/unlocking-self-improvement-gpt-red/",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red/",
+      "published_or_lastmod_at": "2026-08-30T08:01:35.750000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/our-approach-to-the-model-spec/",
+      "url": "https://openai.com/index/our-approach-to-the-model-spec/",
+      "published_or_lastmod_at": "2026-08-30T08:01:25.982000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+      "published_or_lastmod_at": "2026-08-30T08:01:19.269000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-life-sci-bench/",
+      "url": "https://openai.com/index/introducing-life-sci-bench/",
+      "published_or_lastmod_at": "2026-08-30T08:01:16.291000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/instruction-hierarchy-challenge/",
+      "url": "https://openai.com/index/instruction-hierarchy-challenge/",
+      "published_or_lastmod_at": "2026-08-30T08:00:44.205000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gdpval/",
+      "url": "https://openai.com/index/gdpval/",
+      "published_or_lastmod_at": "2026-08-30T07:56:54.736000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-4o-system-card/",
+      "url": "https://openai.com/index/gpt-4o-system-card/",
+      "published_or_lastmod_at": "2026-08-30T07:53:47.531000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/emergent-misalignment/",
+      "url": "https://openai.com/index/emergent-misalignment/",
+      "published_or_lastmod_at": "2026-08-30T07:52:14.301000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/openai-o1-system-card/",
+      "url": "https://openai.com/index/openai-o1-system-card/",
+      "published_or_lastmod_at": "2026-08-30T07:51:42.580000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "published_or_lastmod_at": "2026-08-30T06:31:43.952000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -26,16 +235,14 @@
       "url": "https://openai.com/index/nvidia/chatgpt-work/",
       "published_or_lastmod_at": "2026-08-30T03:16:43.529000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    }
-  ],
-  "candidates": [
+    },
     {
-      "source_name": "OpenAI sitemap",
+      "source_name": "Google Blog sitemap",
       "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/nvidia/chatgpt-work/",
-      "url": "https://openai.com/index/nvidia/chatgpt-work/",
-      "published_or_lastmod_at": "2026-08-30T03:16:43.529000Z",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
+      "url": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
+      "published_or_lastmod_at": "2026-08-30T00:00:00Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -198,6 +405,15 @@
       "title": "0.151.0",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0",
       "published_or_lastmod_at": "2026-08-29T09:57:02Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Products & Platforms RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/products-and-platforms/rss/",
+      "title": "How the GNIS Lake Ontario/Lake America name change in the U.S. will appear in Maps",
+      "url": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
+      "published_or_lastmod_at": "2026-08-29T04:00:00Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],

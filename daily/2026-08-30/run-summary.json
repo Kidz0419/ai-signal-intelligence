@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-30T12:00:01+08:00",
+  "run_at": "2026-08-30T16:00:18+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-27T04:00:01+08:00",
-    "end": "2026-08-30T12:00:01+08:00",
+    "start": "2026-08-27T08:00:18+08:00",
+    "end": "2026-08-30T16:00:18+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 138,
-  "unique_candidates": 124,
+  "raw_candidates": 113,
+  "unique_candidates": 100,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 138,
+  "unreviewed_candidate_count": 113,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,27 +35,27 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 15,
+  "collection_errors": 16,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 6,
+      "access_blocked": 7,
       "auth_required": 0,
       "mechanical_failure": 9,
-      "not_checked": 96
+      "not_checked": 95
     },
     "channel_counts": {
       "frontier_model_official": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 2,
+        "access_blocked": 3,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 25
+        "mechanical_failure": 1,
+        "not_checked": 23
       },
       "china_frontier_models": {
         "selected": 0,
@@ -63,8 +63,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 3,
-        "not_checked": 11
+        "mechanical_failure": 2,
+        "not_checked": 12
       },
       "head_ai_product_release_notes": {
         "selected": 0,
@@ -72,8 +72,8 @@
         "checked_no_match": 0,
         "access_blocked": 1,
         "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 13
+        "mechanical_failure": 3,
+        "not_checked": 12
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -99,8 +99,8 @@
         "checked_no_match": 0,
         "access_blocked": 3,
         "auth_required": 0,
-        "mechanical_failure": 3,
-        "not_checked": 11
+        "mechanical_failure": 2,
+        "not_checked": 12
       },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
@@ -393,9 +393,9 @@
         "name": "UK CMA Digital Markets",
         "type": "regulator",
         "url": "https://www.gov.uk/government/organisations/competition-and-markets-authority",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
@@ -420,9 +420,10 @@
         "name": "Baidu AI Cloud Qianfan",
         "type": "official_product",
         "url": "https://cloud.baidu.com/product/wenxinworkshop",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://cloud.baidu.com/product-s/qianfan_home",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -620,10 +621,9 @@
         "name": "Azure AI Foundry What's New",
         "type": "cloud_release_notes",
         "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/whats-new-azure-ai-foundry",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/whats-new-foundry",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "frontier_model_official",
@@ -760,9 +760,8 @@
         "name": "OpenAI Research",
         "type": "official_research",
         "url": "https://openai.com/research/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "frontier_model_official",
@@ -834,9 +833,9 @@
         "name": "Figma Release Notes",
         "type": "product_release_notes",
         "url": "https://help.figma.com/hc/en-us/categories/360002051613-Release-notes",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -1300,46 +1299,6 @@
           "title": "https://www.anthropic.com/news/claude-science-ai-workbench",
           "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
           "published_at": "2026-08-27T15:08:16Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/claude-plays-robotics",
-          "url": "https://www.anthropic.com/research/claude-plays-robotics",
-          "published_at": "2026-08-26T21:22:31Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-signs-pledge-to-americas-youth-investing-in-ai-education",
-          "url": "https://www.anthropic.com/news/anthropic-signs-pledge-to-americas-youth-investing-in-ai-education",
-          "published_at": "2026-08-26T21:03:43Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/nuclear-safeguards-for-ai",
-          "url": "https://www.anthropic.com/research/nuclear-safeguards-for-ai",
-          "published_at": "2026-08-26T20:55:42Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/usage-policy-update",
-          "url": "https://www.anthropic.com/news/usage-policy-update",
-          "published_at": "2026-08-26T20:54:44Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/persona-vectors",
-          "url": "https://www.anthropic.com/research/persona-vectors",
-          "published_at": "2026-08-26T20:53:12Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/lawrence-livermore-national-laboratory-expands-claude-for-enterprise-to-empower-scientists-and",
-          "url": "https://www.anthropic.com/news/lawrence-livermore-national-laboratory-expands-claude-for-enterprise-to-empower-scientists-and",
-          "published_at": "2026-08-26T20:52:11Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
-          "url": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
-          "published_at": "2026-08-26T20:47:13Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/constitutional-classifiers",
-          "url": "https://www.anthropic.com/research/constitutional-classifiers",
-          "published_at": "2026-08-26T20:45:34Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1520,11 +1479,6 @@
           "title": "v2.1.248",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
           "published_at": "2026-08-27T22:12:20Z"
-        },
-        {
-          "title": "v2.1.247",
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.247",
-          "published_at": "2026-08-26T23:06:39Z"
         }
       ],
       "note": ""
@@ -1575,11 +1529,6 @@
           "title": "Enterprise-managed settings now support autoUpdate for plugin marketplaces",
           "url": "https://github.blog/changelog/2026-08-26-enterprise-managed-settings-now-support-autoupdate-for-plugin-marketplaces",
           "published_at": "2026-08-27T01:52:19Z"
-        },
-        {
-          "title": "Global model policy generally available",
-          "url": "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available",
-          "published_at": "2026-08-26T22:08:38Z"
         }
       ],
       "note": ""
@@ -1595,11 +1544,6 @@
           "title": "v1.39.1",
           "url": "https://github.com/google/adk-python/releases/tag/v1.39.1",
           "published_at": "2026-08-27T21:56:28Z"
-        },
-        {
-          "title": "v2.8.0",
-          "url": "https://github.com/google/adk-python/releases/tag/v2.8.0",
-          "published_at": "2026-08-26T23:25:15Z"
         }
       ],
       "note": ""
@@ -1617,79 +1561,14 @@
           "published_at": "2026-08-30T00:00:00Z"
         },
         {
+          "title": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
+          "url": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
+          "published_at": "2026-08-30T00:00:00Z"
+        },
+        {
           "title": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/",
           "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/",
           "published_at": "2026-08-28T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/",
-          "url": "https://blog.google/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/products/gemini-notebook/expert-intelligence-leading-sources/",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/expert-intelligence-leading-sources/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-creative-controls-google-flow/",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-creative-controls-google-flow/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/devices/fitbit/fitbit-air-special-edition-pokemon-sleep/",
-          "url": "https://blog.google/products-and-platforms/devices/fitbit/fitbit-air-special-edition-pokemon-sleep/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/chrome/enhanced-autofill/",
-          "url": "https://blog.google/products-and-platforms/products/chrome/enhanced-autofill/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/chrome/autofill-improvements/",
-          "url": "https://blog.google/products-and-platforms/products/chrome/autofill-improvements/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
-          "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/education/khan-academy-back-to-school/",
-          "url": "https://blog.google/products-and-platforms/products/education/khan-academy-back-to-school/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products/ads-commerce/",
-          "url": "https://blog.google/products/ads-commerce/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products/ads-commerce/demand-gen-drop-august-2026/",
-          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-august-2026/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/security/",
-          "url": "https://blog.google/security/",
-          "published_at": "2026-08-27T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/security/new-android-network-security-protections/",
-          "url": "https://blog.google/security/new-android-network-security-protections/",
-          "published_at": "2026-08-27T00:00:00Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1711,6 +1590,11 @@
       "checked_items": 20,
       "recent_items": [
         {
+          "title": "How the GNIS Lake Ontario/Lake America name change in the U.S. will appear in Maps",
+          "url": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
+          "published_at": "2026-08-29T04:00:00Z"
+        },
+        {
           "title": "3 new ways to plan and book travel in Search",
           "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
           "published_at": "2026-08-27T16:00:00Z"
@@ -1724,11 +1608,6 @@
           "title": "Our Fitbit Air Special Edition Pokémon Sleep is here",
           "url": "https://blog.google/products-and-platforms/devices/fitbit/fitbit-air-special-edition-pokemon-sleep/",
           "published_at": "2026-08-27T13:00:00Z"
-        },
-        {
-          "title": "7 ways to kick-start back to school using Gemini in Workspace",
-          "url": "https://blog.google/products-and-platforms/products/workspace/gemini-google-workspace-back-to-school/",
-          "published_at": "2026-08-26T20:30:00Z"
         }
       ],
       "note": ""
@@ -1920,9 +1799,89 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/nvidia/chatgpt-work/",
-          "url": "https://openai.com/index/nvidia/chatgpt-work/",
-          "published_at": "2026-08-30T03:16:43.529000Z"
+          "title": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+          "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+          "published_at": "2026-08-30T08:01:43.520000Z"
+        },
+        {
+          "title": "https://openai.com/index/unlocking-self-improvement-gpt-red/",
+          "url": "https://openai.com/index/unlocking-self-improvement-gpt-red/",
+          "published_at": "2026-08-30T08:01:35.750000Z"
+        },
+        {
+          "title": "https://openai.com/index/unlocking-self-improvement-gpt-red/",
+          "url": "https://openai.com/index/unlocking-self-improvement-gpt-red/",
+          "published_at": "2026-08-30T08:01:35.750000Z"
+        },
+        {
+          "title": "https://openai.com/index/our-approach-to-the-model-spec/",
+          "url": "https://openai.com/index/our-approach-to-the-model-spec/",
+          "published_at": "2026-08-30T08:01:25.982000Z"
+        },
+        {
+          "title": "https://openai.com/index/our-approach-to-the-model-spec/",
+          "url": "https://openai.com/index/our-approach-to-the-model-spec/",
+          "published_at": "2026-08-30T08:01:25.982000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+          "url": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+          "published_at": "2026-08-30T08:01:19.269000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+          "url": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+          "published_at": "2026-08-30T08:01:19.269000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-life-sci-bench/",
+          "url": "https://openai.com/index/introducing-life-sci-bench/",
+          "published_at": "2026-08-30T08:01:16.291000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-life-sci-bench/",
+          "url": "https://openai.com/index/introducing-life-sci-bench/",
+          "published_at": "2026-08-30T08:01:16.291000Z"
+        },
+        {
+          "title": "https://openai.com/index/instruction-hierarchy-challenge/",
+          "url": "https://openai.com/index/instruction-hierarchy-challenge/",
+          "published_at": "2026-08-30T08:00:44.205000Z"
+        },
+        {
+          "title": "https://openai.com/index/instruction-hierarchy-challenge/",
+          "url": "https://openai.com/index/instruction-hierarchy-challenge/",
+          "published_at": "2026-08-30T08:00:44.205000Z"
+        },
+        {
+          "title": "https://openai.com/index/gdpval/",
+          "url": "https://openai.com/index/gdpval/",
+          "published_at": "2026-08-30T07:56:54.736000Z"
+        },
+        {
+          "title": "https://openai.com/index/gdpval/",
+          "url": "https://openai.com/index/gdpval/",
+          "published_at": "2026-08-30T07:56:54.736000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-4o-system-card/",
+          "url": "https://openai.com/index/gpt-4o-system-card/",
+          "published_at": "2026-08-30T07:53:47.531000Z"
+        },
+        {
+          "title": "https://openai.com/index/emergent-misalignment/",
+          "url": "https://openai.com/index/emergent-misalignment/",
+          "published_at": "2026-08-30T07:52:14.301000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-o1-system-card/",
+          "url": "https://openai.com/index/openai-o1-system-card/",
+          "published_at": "2026-08-30T07:51:42.580000Z"
+        },
+        {
+          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "published_at": "2026-08-30T06:31:43.952000Z"
         },
         {
           "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
@@ -1930,39 +1889,14 @@
           "published_at": "2026-08-29T20:05:07.088000Z"
         },
         {
-          "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-          "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-          "published_at": "2026-08-29T17:59:48.271000Z"
-        },
-        {
           "title": "https://openai.com/index/jalapeno-first-results/",
           "url": "https://openai.com/index/jalapeno-first-results/",
           "published_at": "2026-08-29T17:24:24.741000Z"
         },
         {
-          "title": "https://openai.com/index/jalapeno-first-results/",
-          "url": "https://openai.com/index/jalapeno-first-results/",
-          "published_at": "2026-08-29T17:24:24.741000Z"
-        },
-        {
-          "title": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
-          "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
-          "published_at": "2026-08-29T17:24:22.434000Z"
-        },
-        {
           "title": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
           "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
           "published_at": "2026-08-29T17:16:31.844000Z"
-        },
-        {
-          "title": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
-          "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
-          "published_at": "2026-08-29T17:16:31.844000Z"
-        },
-        {
-          "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
-          "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
-          "published_at": "2026-08-29T16:52:04.838000Z"
         },
         {
           "title": "https://openai.com/index/introducing-intelligence-age/",
@@ -1985,16 +1919,6 @@
           "published_at": "2026-08-29T15:18:09.684000Z"
         },
         {
-          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "published_at": "2026-08-29T15:18:09.684000Z"
-        },
-        {
-          "title": "https://openai.com/index/loveholidays/",
-          "url": "https://openai.com/index/loveholidays/",
-          "published_at": "2026-08-29T13:11:11.622000Z"
-        },
-        {
           "title": "https://openai.com/index/learning-never-stops/",
           "url": "https://openai.com/index/learning-never-stops/",
           "published_at": "2026-08-29T10:56:39.484000Z"
@@ -2013,26 +1937,6 @@
           "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
           "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
           "published_at": "2026-08-29T01:58:44.124000Z"
-        },
-        {
-          "title": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
-          "published_at": "2026-08-29T01:58:44.124000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "published_at": "2026-08-29T01:44:47.079000Z"
-        },
-        {
-          "title": "https://openai.com/index/how-enterprises-put-ai-to-work/",
-          "url": "https://openai.com/index/how-enterprises-put-ai-to-work/",
-          "published_at": "2026-08-28T23:24:04.869000Z"
-        },
-        {
-          "title": "https://openai.com/index/expanding-our-presence-in-brazil/",
-          "url": "https://openai.com/index/expanding-our-presence-in-brazil/",
-          "published_at": "2026-08-28T21:04:25.310000Z"
         },
         {
           "title": "https://openai.com/index/gpt-5-safe-completions/",
@@ -2075,11 +1979,6 @@
           "published_at": "2026-08-28T17:42:32.538000Z"
         },
         {
-          "title": "https://openai.com/index/partnering-with-codeai/",
-          "url": "https://openai.com/index/partnering-with-codeai/",
-          "published_at": "2026-08-28T15:43:20.661000Z"
-        },
-        {
           "title": "https://openai.com/index/the-defenders-window/",
           "url": "https://openai.com/index/the-defenders-window/",
           "published_at": "2026-08-28T12:09:08.107000Z"
@@ -2100,11 +1999,6 @@
           "published_at": "2026-08-27T21:32:02.144000Z"
         },
         {
-          "title": "https://openai.com/index/stampli/",
-          "url": "https://openai.com/index/stampli/",
-          "published_at": "2026-08-27T18:49:18.363000Z"
-        },
-        {
           "title": "https://openai.com/index/health-in-chatgpt/",
           "url": "https://openai.com/index/health-in-chatgpt/",
           "published_at": "2026-08-27T18:28:10.446000Z"
@@ -2118,21 +2012,6 @@
           "title": "https://openai.com/index/codex-for-every-role-tool-workflow/",
           "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
           "published_at": "2026-08-27T15:48:40.181000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-approach-to-age-prediction/",
-          "url": "https://openai.com/index/our-approach-to-age-prediction/",
-          "published_at": "2026-08-26T22:49:20.829000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-approach-to-age-prediction/",
-          "url": "https://openai.com/index/our-approach-to-age-prediction/",
-          "published_at": "2026-08-26T22:49:20.829000Z"
-        },
-        {
-          "title": "https://openai.com/index/asana/",
-          "url": "https://openai.com/index/asana/",
-          "published_at": "2026-08-26T20:45:01.745000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2173,11 +2052,6 @@
           "title": "Breaking Claude Code Opus 5 Auto Mode",
           "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
           "published_at": "2026-08-27T22:50:25Z"
-        },
-        {
-          "title": "Qwen3.8-Flash-Next",
-          "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
-          "published_at": "2026-08-26T23:52:58Z"
         }
       ],
       "note": ""
@@ -2197,7 +2071,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "138 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "113 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
