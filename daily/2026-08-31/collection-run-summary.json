@@ -1,61 +1,61 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-31T12:00:15+08:00",
+  "run_at": "2026-08-31T16:00:10+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-28T04:00:15+08:00",
-    "end": "2026-08-31T12:00:15+08:00",
+    "start": "2026-08-28T08:00:10+08:00",
+    "end": "2026-08-31T16:00:10+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 103,
-  "unique_candidates": 84,
+  "raw_candidates": 89,
+  "unique_candidates": 70,
   "editorial_shortlist": 0,
-  "previous_count": 0,
+  "previous_count": 1,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 103,
-  "total_count": 0,
-  "selected": 0,
+  "unreviewed_candidate_count": 89,
+  "total_count": 1,
+  "selected": 1,
   "lane_counts": {
     "model": 0,
     "agent_architecture": 0,
-    "ai_product": 0,
+    "ai_product": 1,
     "ai_macro": 0
   },
   "priority_counts": {
     "P0": 0,
-    "P1": 0,
+    "P1": 1,
     "P2": 0,
     "P3": 0
   },
   "executive_model_longform": 0,
-  "practitioner_statements": 0,
+  "practitioner_statements": 1,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 9,
+  "collection_errors": 10,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 6,
+      "access_blocked": 7,
       "auth_required": 0,
       "mechanical_failure": 3,
-      "not_checked": 102
+      "not_checked": 101
     },
     "channel_counts": {
       "frontier_model_official": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 2,
+        "access_blocked": 3,
         "auth_required": 0,
         "mechanical_failure": 0,
-        "not_checked": 25
+        "not_checked": 24
       },
       "china_frontier_models": {
         "selected": 0,
@@ -477,7 +477,7 @@
         "type": "developer_docs",
         "url": "https://platform.minimaxi.com/document",
         "status": "mechanical_failure",
-        "http_code": "404"
+        "http_code": "500"
       },
       {
         "channel": "china_frontier_models",
@@ -745,9 +745,8 @@
         "name": "OpenAI Help Center Release Notes",
         "type": "product_release_notes",
         "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "frontier_model_official",
@@ -1274,11 +1273,6 @@
           "title": "Spreading the load: How Salesforce met Multi-AZ HA with SageMaker Inference Components",
           "url": "https://aws.amazon.com/blogs/machine-learning/spreading-the-load-how-salesforce-met-multi-az-ha-with-sagemaker-inference-components/",
           "published_at": "2026-08-28T16:20:40Z"
-        },
-        {
-          "title": "Build agentic creative workflows with Amazon Quick and fal",
-          "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-creative-workflows-with-amazon-quick-and-fal/",
-          "published_at": "2026-08-27T23:04:22Z"
         }
       ],
       "note": ""
@@ -1287,45 +1281,19 @@
       "name": "AWS Networking RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/networking-and-content-delivery/feed/",
-      "status": "checked_no_match",
-      "checked_items": 20,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "AWS Public Sector RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "AI Model Choice is now a Mission Advantage: Multiple AI models available in AWS GovCloud (US)",
-          "url": "https://aws.amazon.com/blogs/publicsector/ai-model-choice-is-now-a-mission-advantage-multiple-ai-models-available-in-aws-govcloud-us/",
-          "published_at": "2026-08-30T14:10:12Z"
-        },
-        {
-          "title": "What HCLS security teams can do this quarter to close the execution gap",
-          "url": "https://aws.amazon.com/blogs/publicsector/what-hcls-security-teams-can-do-this-quarter-to-close-the-execution-gap/",
-          "published_at": "2026-08-27T22:50:01Z"
-        },
-        {
-          "title": "Modernizing state, local digital government services with AWS and Presidio",
-          "url": "https://aws.amazon.com/blogs/publicsector/modernizing-state-local-digital-government-services-with-aws-and-presidio/",
-          "published_at": "2026-08-27T22:44:51Z"
-        },
-        {
-          "title": "How ITHAKA built an on-demand PDF remediation pipeline on AWS",
-          "url": "https://aws.amazon.com/blogs/publicsector/how-ithaka-built-an-on-demand-pdf-remediation-pipeline-on-aws/",
-          "published_at": "2026-08-27T20:21:35Z"
-        },
-        {
-          "title": "How HOT uses open source on AWS to power humanitarian AI",
-          "url": "https://aws.amazon.com/blogs/publicsector/how-hot-uses-open-source-on-aws-to-power-humanitarian-ai/",
-          "published_at": "2026-08-27T20:18:29Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "AWS Security RSS",
@@ -1382,11 +1350,6 @@
           "title": "v2.1.250",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.250",
           "published_at": "2026-08-28T00:49:16Z"
-        },
-        {
-          "title": "v2.1.248",
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
-          "published_at": "2026-08-27T22:12:20Z"
         }
       ],
       "note": ""
@@ -1421,11 +1384,6 @@
           "title": "Upcoming changes to GitHub Copilot policies and billing",
           "url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing",
           "published_at": "2026-08-28T11:37:19Z"
-        },
-        {
-          "title": "Copilot code review: Resolution reasons and expanded capabilities",
-          "url": "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities",
-          "published_at": "2026-08-27T22:46:04Z"
         }
       ],
       "note": ""
@@ -1434,15 +1392,9 @@
       "name": "Google Agent Development Kit releases",
       "adapter": "atom",
       "source_url": "https://github.com/google/adk-python/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "v1.39.1",
-          "url": "https://github.com/google/adk-python/releases/tag/v1.39.1",
-          "published_at": "2026-08-27T21:56:28Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1461,11 +1413,6 @@
           "title": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
           "url": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
           "published_at": "2026-08-30T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/",
-          "published_at": "2026-08-28T00:00:00Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1507,15 +1454,9 @@
       "name": "Hugging Face Blog",
       "adapter": "rss",
       "source_url": "https://huggingface.co/blog/feed.xml",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 40,
-      "recent_items": [
-        {
-          "title": "The Open ASR Leaderboard Adds Its First Global South Language",
-          "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
-          "published_at": "2026-08-28T00:00:00Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1537,15 +1478,9 @@
       "name": "LangGraph releases",
       "adapter": "atom",
       "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "langgraph-sdk==0.4.4",
-          "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.4",
-          "published_at": "2026-08-27T21:25:36Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1676,14 +1611,59 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/learning-never-stops/",
-          "url": "https://openai.com/index/learning-never-stops/",
-          "published_at": "2026-08-31T03:25:43.424000Z"
+          "title": "https://openai.com/index/jalapeno-first-results/",
+          "url": "https://openai.com/index/jalapeno-first-results/",
+          "published_at": "2026-08-31T07:43:20.984000Z"
+        },
+        {
+          "title": "https://openai.com/index/jalapeno-first-results/",
+          "url": "https://openai.com/index/jalapeno-first-results/",
+          "published_at": "2026-08-31T07:43:20.984000Z"
+        },
+        {
+          "title": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
+          "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
+          "published_at": "2026-08-31T07:43:18.617000Z"
+        },
+        {
+          "title": "https://openai.com/index/diagnose-rare-childhood-diseases/",
+          "url": "https://openai.com/index/diagnose-rare-childhood-diseases/",
+          "published_at": "2026-08-31T07:33:01.730000Z"
         },
         {
           "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
           "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-          "published_at": "2026-08-31T02:46:31.023000Z"
+          "published_at": "2026-08-31T07:27:19.378000Z"
+        },
+        {
+          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+          "published_at": "2026-08-31T07:18:03.397000Z"
+        },
+        {
+          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+          "published_at": "2026-08-31T07:18:03.397000Z"
+        },
+        {
+          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+          "published_at": "2026-08-31T07:18:03.397000Z"
+        },
+        {
+          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+          "published_at": "2026-08-31T07:18:03.397000Z"
+        },
+        {
+          "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+          "published_at": "2026-08-31T04:56:03.853000Z"
+        },
+        {
+          "title": "https://openai.com/index/learning-never-stops/",
+          "url": "https://openai.com/index/learning-never-stops/",
+          "published_at": "2026-08-31T03:25:43.424000Z"
         },
         {
           "title": "https://openai.com/index/replit/",
@@ -1719,11 +1699,6 @@
           "title": "https://openai.com/index/blue-j/",
           "url": "https://openai.com/index/blue-j/",
           "published_at": "2026-08-30T15:03:10.235000Z"
-        },
-        {
-          "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-          "published_at": "2026-08-30T15:02:58.606000Z"
         },
         {
           "title": "https://openai.com/index/our-approach-to-the-model-spec/",
@@ -1826,21 +1801,6 @@
           "published_at": "2026-08-30T03:16:43.529000Z"
         },
         {
-          "title": "https://openai.com/index/jalapeno-first-results/",
-          "url": "https://openai.com/index/jalapeno-first-results/",
-          "published_at": "2026-08-29T17:24:24.741000Z"
-        },
-        {
-          "title": "https://openai.com/index/jalapeno-first-results/",
-          "url": "https://openai.com/index/jalapeno-first-results/",
-          "published_at": "2026-08-29T17:24:24.741000Z"
-        },
-        {
-          "title": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
-          "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
-          "published_at": "2026-08-29T17:24:22.434000Z"
-        },
-        {
           "title": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
           "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
           "published_at": "2026-08-29T17:16:31.844000Z"
@@ -1849,26 +1809,6 @@
           "title": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
           "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
           "published_at": "2026-08-29T17:16:31.844000Z"
-        },
-        {
-          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "published_at": "2026-08-29T15:18:09.684000Z"
-        },
-        {
-          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "published_at": "2026-08-29T15:18:09.684000Z"
-        },
-        {
-          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "published_at": "2026-08-29T15:18:09.684000Z"
-        },
-        {
-          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "published_at": "2026-08-29T15:18:09.684000Z"
         },
         {
           "title": "https://openai.com/index/introducing-gpt-rosalind/",
@@ -1954,16 +1894,6 @@
           "title": "https://openai.com/index/previewing-ultrafast/",
           "url": "https://openai.com/index/previewing-ultrafast/",
           "published_at": "2026-08-28T10:25:07.929000Z"
-        },
-        {
-          "title": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-          "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-          "published_at": "2026-08-27T21:53:20.918000Z"
-        },
-        {
-          "title": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
-          "url": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
-          "published_at": "2026-08-27T21:32:02.144000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1998,11 +1928,6 @@
           "title": "Just a rumour of a bug is enough to find a security exploit these days",
           "url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
           "published_at": "2026-08-28T22:12:02Z"
-        },
-        {
-          "title": "Breaking Claude Code Opus 5 Auto Mode",
-          "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
-          "published_at": "2026-08-27T22:50:25Z"
         }
       ],
       "note": ""
@@ -2018,11 +1943,11 @@
     }
   ],
   "content_topics": {
-    "topic_count": 0,
-    "platform_variants": 0
+    "topic_count": 1,
+    "platform_variants": 3
   },
   "notes": [
-    "103 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "89 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."

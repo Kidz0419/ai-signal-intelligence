@@ -1,39 +1,39 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T12:00:15+08:00",
+  "generated_at": "2026-08-31T16:00:10+08:00",
   "window": {
-    "start": "2026-08-28T04:00:15+08:00",
-    "end": "2026-08-31T12:00:15+08:00",
+    "start": "2026-08-28T08:00:10+08:00",
+    "end": "2026-08-31T16:00:10+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 20,
-  "new_in_run_count": 7,
+  "candidate_count": 26,
+  "new_in_run_count": 6,
   "new_candidates": [
     {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.152.0-alpha.6",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.6",
-      "published_or_lastmod_at": "2026-08-31T02:15:59Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.152.0-alpha.5",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.5",
-      "published_or_lastmod_at": "2026-08-31T01:14:34Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/jalapeno-first-results/",
+      "url": "https://openai.com/index/jalapeno-first-results/",
+      "published_or_lastmod_at": "2026-08-31T07:43:20.984000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/learning-never-stops/",
-      "url": "https://openai.com/index/learning-never-stops/",
-      "published_or_lastmod_at": "2026-08-31T03:25:43.424000Z",
+      "title": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
+      "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
+      "published_or_lastmod_at": "2026-08-31T07:43:18.617000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/diagnose-rare-childhood-diseases/",
+      "url": "https://openai.com/index/diagnose-rare-childhood-diseases/",
+      "published_or_lastmod_at": "2026-08-31T07:33:01.730000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -42,38 +42,83 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
       "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-      "published_or_lastmod_at": "2026-08-31T02:46:31.023000Z",
+      "published_or_lastmod_at": "2026-08-31T07:27:19.378000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/replit/",
-      "url": "https://openai.com/index/replit/",
-      "published_or_lastmod_at": "2026-08-31T01:51:34.454000Z",
+      "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "published_or_lastmod_at": "2026-08-31T07:18:03.397000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
-      "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
-      "published_or_lastmod_at": "2026-08-31T01:26:36.297000Z",
+      "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "published_or_lastmod_at": "2026-08-31T04:56:03.853000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "Understanding ChatGPT Work",
-      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
-      "published_or_lastmod_at": "2026-08-30T23:59:47Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/jalapeno-first-results/",
+      "url": "https://openai.com/index/jalapeno-first-results/",
+      "published_or_lastmod_at": "2026-08-31T07:43:20.984000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
+      "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence/",
+      "published_or_lastmod_at": "2026-08-31T07:43:18.617000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/diagnose-rare-childhood-diseases/",
+      "url": "https://openai.com/index/diagnose-rare-childhood-diseases/",
+      "published_or_lastmod_at": "2026-08-31T07:33:01.730000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
+      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
+      "published_or_lastmod_at": "2026-08-31T07:27:19.378000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "published_or_lastmod_at": "2026-08-31T07:18:03.397000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "published_or_lastmod_at": "2026-08-31T04:56:03.853000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
