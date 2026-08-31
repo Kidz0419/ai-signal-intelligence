@@ -4,11 +4,13 @@ window.DAILY_HISTORY = {
   "days": [
     {
       "date": "2026-08-31",
-      "signal_ids": [],
+      "signal_ids": [
+        "2026-08-31-simon-willison-chatgpt-work-boundaries"
+      ],
       "counts": {
-        "total": 0,
+        "total": 1,
         "P0": 0,
-        "P1": 0,
+        "P1": 1,
         "P2": 0
       }
     },
@@ -247,6 +249,76 @@ window.DAILY_HISTORY = {
     }
   ],
   "signals": [
+    {
+      "id": "2026-08-31-simon-willison-chatgpt-work-boundaries",
+      "demo": false,
+      "topic_lane": "ai_product",
+      "title": "Simon Willison：ChatGPT Work 已形成云端与本地两种执行面，浏览器接管和持久文件系统把工作流边界拉开",
+      "summary": "Simon Willison 基于实际使用把 ChatGPT Work 拆成云端 Work Cloud 与桌面 Work Local 两种执行面，并逐项验证了联网代码执行、完整 headless Chrome、登录接管、跨会话持久文件系统、ChatGPT Sites、sub-agents 与定时自动化等能力边界；他同时指出 Work 目前只向 20 美元/月及以上订阅开放，并把 prompt injection 防护列为仍待 OpenAI 解释的关键风险。",
+      "decision": "include",
+      "confidence": 93,
+      "relevance_level": "P1",
+      "signal_type": "research",
+      "content_type": "practitioner_statement",
+      "information_type": "practitioner_insight",
+      "evidence_level": "primary_statement",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "published_at": "2026-08-30T23:59:47Z",
+      "primary_tags": [
+        "ChatGPT Work",
+        "Work Cloud",
+        "Work Local"
+      ],
+      "secondary_tags": [
+        "Browser Takeover",
+        "Persistent Filesystem",
+        "Sub-agents"
+      ],
+      "why_it_matters_cn": "这篇值钱的地方，不是又一篇 ChatGPT 体验文，而是把 Work 到底多了哪些可执行能力拆成了产品对象、动作和边界。",
+      "personal_relevance_cn": "如果在看团队级 agent 工作台，这篇最该盯的是联网代码执行、浏览器接管、跨会话文件系统、子代理和定时自动化如何组合成真正可交付的工作流。",
+      "product_opportunity_cn": "可以反向整理自己的验收清单：哪些任务需要浏览器接管和 2FA 交还，哪些能力必须保留持久状态，哪些自动化要有通知、审批和可追溯日志。",
+      "competitive_risk_cn": "这是一位独立研究者的实测拆解，不等于 OpenAI 已给出正式管理员文档、全面 rollout 范围或完整的安全/审计说明；尤其 prompt injection 防护、日志和回滚边界仍不清楚。",
+      "recommended_action": "investigate",
+      "questions_to_validate": [
+        "联网代码执行和 headless Chrome 的默认域名限制、日志保留和审批触发条件是什么？",
+        "跨会话持久文件系统、sub-agent 和定时自动化之间，是否有更正式的权限、通知或回滚设计？",
+        "OpenAI 是否会公开 Work / Codex 的 prompt injection 防护、管理员控制和团队审计材料？"
+      ],
+      "follow_up_triggers": [
+        "OpenAI 发布 ChatGPT Work / Codex 的帮助中心、管理员文档或真实 UI 说明",
+        "出现关于联网执行、浏览器接管、子代理或定时任务的官方安全与审计细节",
+        "更多一线用户或开发者对 Work 的任务成功率、误操作和治理边界给出复盘"
+      ],
+      "scores": {
+        "topic_relevance": 5,
+        "novelty": 4,
+        "technical_or_product_significance": 4,
+        "strategic_value": 4,
+        "source_quality": 5,
+        "model_value": 1,
+        "agent_architecture_value": 4,
+        "ai_product_value": 5,
+        "macro_value": 1,
+        "actionability": 4
+      },
+      "report_date": "2026-08-31",
+      "event_date": "2026-08-31",
+      "canonical_url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+      "first_seen_date": "2026-08-31",
+      "last_seen_date": "2026-08-31",
+      "run_dates": [
+        "2026-08-31"
+      ],
+      "speaker_name": "Simon Willison",
+      "speaker_role": "独立研究者、开发者工具作者、长期进行 AI 产品与模型实测的写作者",
+      "speaker_type": "independent_researcher",
+      "statement_topic": "ChatGPT Work 的真实产品边界、执行面与安全疑问",
+      "original_source_url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "new_information": "把 ChatGPT Work 拆成 Work Cloud / Work Local 两个执行面，并逐项给出联网代码执行、浏览器接管、持久文件系统、Sites、sub-agents 和定时自动化的实测边界。",
+      "evidence_artifact": "公开长文、产品截图、浏览器执行示例、登录接管说明，以及作者让 Work 构建的 223 个工具清单站点。",
+      "evidence_boundary": "这是基于公开实测与截图的一手观察，不是 OpenAI 官方帮助中心或管理员文档；开放范围、默认限制、日志、审批、暂停和回滚细节仍待官方材料确认。"
+    },
     {
       "id": "2026-08-28-anthropic-model-hardware-standard-preview",
       "demo": false,

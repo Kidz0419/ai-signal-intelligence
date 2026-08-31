@@ -2,11 +2,82 @@
   "schema_version": 1,
   "report_date": "2026-08-31",
   "timezone": "Asia/Shanghai",
-  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。",
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。自动流程只生成 candidate，不自动发布。",
   "scope_label_cn": "当日增量 · 2026-08-31",
   "source_scope": {
     "type": "daily",
     "date": "2026-08-31"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-08-31-chatgpt-work-execution-surface",
+      "status": "candidate",
+      "timeliness": "today",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-31-simon-willison-chatgpt-work-boundaries"
+      ],
+      "working_title_cn": "ChatGPT Work 真正变强的，不是换了个名字，而是把浏览器、联网代码执行、持久文件系统和子代理收成了一套工作台",
+      "core_tension_cn": "很多人把 ChatGPT Work 当成改名版 Codex，但一线实测显示，它已经在把浏览器、代码执行、持久状态和定时自动化收进同一执行面。",
+      "why_now_cn": "Simon Willison 的实测把 Work Cloud / Work Local、浏览器接管、联网执行、Sites、sub-agents 和定时自动化拆成了可讨论的产品边界。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "Agent 工作流设计者",
+        "开发者工具团队"
+      ],
+      "evidence_boundary_cn": "当前依据是 Simon Willison 的公开实测、截图与工具清单站点，不是 OpenAI 官方管理员文档；权限、日志、暂停和回滚细节仍待官方确认。",
+      "source_urls": [
+        "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "ChatGPT Work 真正厉害的，不是写得更快，是开始像一套工作台",
+          "hook": "浏览器接管、联网代码执行、持久文件系统、sub-agents 全收进来后，ChatGPT Work 已经不只是聊天窗。",
+          "format": "7页图文卡",
+          "outline": [
+            "Simon 实测到底看到了什么",
+            "Work Cloud 和 Work Local 有什么差别",
+            "浏览器接管和 2FA 交还为什么关键",
+            "联网代码执行加持久文件系统意味着什么",
+            "sub-agents 和定时任务把什么工作流串起来",
+            "哪些安全边界今天还没答案",
+            "给做 agent 产品的验收清单"
+          ],
+          "visual_direction": "工作台结构图 + 边界清单",
+          "cta": "如果你在做 agent 产品，你最先补哪一个边界？"
+        },
+        "twitter": {
+          "title": "ChatGPT Work looks less like a chat window and more like a real workbench now",
+          "hook": "Simon Willison's hands-on teardown suggests the key shift is not wording. It's browser takeover, internet-connected code execution, persistent state, sub-agents, and scheduled runs in one surface.",
+          "format": "6帖 Thread",
+          "outline": [
+            "What Simon actually verified",
+            "Work Cloud vs Work Local",
+            "Why browser takeover matters",
+            "Why persistent state and sub-agents matter",
+            "What safety and audit details are still missing",
+            "What product teams should test next"
+          ],
+          "visual_direction": "single execution-surface diagram",
+          "cta": "Which missing control would block you from using this at work?"
+        },
+        "wechat": {
+          "title": "ChatGPT Work 开始长成工作台之后，Agent 产品真正要补的是哪些边界",
+          "hook": "这篇最该写的，不是又一个 ChatGPT 体验贴，而是浏览器接管、联网执行、持久状态和子代理为什么会一起决定下一代 agent 工作流。",
+          "format": "1800—2200字深度文章",
+          "outline": [
+            "Simon 的实测到底证明了什么",
+            "Work Cloud 和 Work Local 分别代表什么执行面",
+            "浏览器接管、联网执行、持久文件系统各自改变了什么",
+            "sub-agents 与定时任务为什么让它更像工作台",
+            "今天还不能确认的安全、日志和回滚边界",
+            "给 AI 产品团队的一份验收表"
+          ],
+          "visual_direction": "执行面结构图、边界说明表、验收清单",
+          "cta": "文末附一份可直接拿去做竞品拆解的检查表"
+        }
+      }
+    }
+  ]
 }

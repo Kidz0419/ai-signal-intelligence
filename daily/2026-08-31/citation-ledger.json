@@ -1,5 +1,30 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "title": "Understanding ChatGPT Work",
+      "accessed": "2026-08-31"
+    },
+    {
+      "id": 2,
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News RSS",
+      "accessed": "2026-08-31"
+    },
+    {
+      "id": 3,
+      "url": "https://api.github.com/repos/openai/codex/releases/tags/rust-v0.152.0-alpha.5",
+      "title": "openai/codex release rust-v0.152.0-alpha.5",
+      "accessed": "2026-08-31"
+    },
+    {
+      "id": 4,
+      "url": "https://api.github.com/repos/openai/codex/releases/tags/rust-v0.152.0-alpha.6",
+      "title": "openai/codex release rust-v0.152.0-alpha.6",
+      "accessed": "2026-08-31"
+    }
+  ]
 }
