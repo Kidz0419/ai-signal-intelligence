@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-31T08:00:24+08:00",
+  "run_at": "2026-08-31T12:00:15+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-28T00:00:24+08:00",
-    "end": "2026-08-31T08:00:24+08:00",
+    "start": "2026-08-28T04:00:15+08:00",
+    "end": "2026-08-31T12:00:15+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 108,
-  "unique_candidates": 89,
+  "raw_candidates": 103,
+  "unique_candidates": 84,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 108,
+  "unreviewed_candidate_count": 103,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,27 +35,27 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 13,
+  "collection_errors": 9,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 8,
+      "access_blocked": 6,
       "auth_required": 0,
-      "mechanical_failure": 5,
-      "not_checked": 98
+      "mechanical_failure": 3,
+      "not_checked": 102
     },
     "channel_counts": {
       "frontier_model_official": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 3,
+        "access_blocked": 2,
         "auth_required": 0,
         "mechanical_failure": 0,
-        "not_checked": 24
+        "not_checked": 25
       },
       "china_frontier_models": {
         "selected": 0,
@@ -70,10 +70,10 @@
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 2,
+        "access_blocked": 1,
         "auth_required": 0,
         "mechanical_failure": 0,
-        "not_checked": 14
+        "not_checked": 15
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 8
+        "mechanical_failure": 0,
+        "not_checked": 10
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -477,7 +477,7 @@
         "type": "developer_docs",
         "url": "https://platform.minimaxi.com/document",
         "status": "mechanical_failure",
-        "http_code": "500"
+        "http_code": "404"
       },
       {
         "channel": "china_frontier_models",
@@ -549,7 +549,7 @@
         "type": "official_research",
         "url": "https://www.amazon.science/tag/artificial-intelligence",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "202",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -745,8 +745,9 @@
         "name": "OpenAI Help Center Release Notes",
         "type": "product_release_notes",
         "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -899,8 +900,9 @@
         "name": "Microsoft Copilot Blog",
         "type": "official_product_blog",
         "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -1061,18 +1063,18 @@
         "name": "arXiv cs.CL",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
@@ -1091,7 +1093,6 @@
         "url": "https://huggingface.co/papers",
         "status": "not_checked",
         "http_code": "200",
-        "final_url": "https://huggingface.co/papers/date/2026-08-28",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -1278,21 +1279,6 @@
           "title": "Build agentic creative workflows with Amazon Quick and fal",
           "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-creative-workflows-with-amazon-quick-and-fal/",
           "published_at": "2026-08-27T23:04:22Z"
-        },
-        {
-          "title": "Introducing OpenAI models on Amazon Bedrock for in-country inferencing in India",
-          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-openai-models-on-amazon-bedrock-for-in-country-inferencing-in-india/",
-          "published_at": "2026-08-27T18:36:08Z"
-        },
-        {
-          "title": "Deepgram deepens Amazon SageMaker AI observability with Enhanced Metrics",
-          "url": "https://aws.amazon.com/blogs/machine-learning/deepgram-deepens-amazon-sagemaker-ai-observability-with-enhanced-metrics/",
-          "published_at": "2026-08-27T16:11:27Z"
-        },
-        {
-          "title": "Reduce ASR inference costs by 75% with NVIDIA MPS on Amazon EC2",
-          "url": "https://aws.amazon.com/blogs/machine-learning/reduce-asr-inference-costs-by-75-with-nvidia-mps-on-amazon-ec2/",
-          "published_at": "2026-08-27T16:05:10Z"
         }
       ],
       "note": ""
@@ -1352,11 +1338,6 @@
           "title": "Extend your data perimeter to the AWS Management Console with Private Access",
           "url": "https://aws.amazon.com/blogs/security/extend-your-data-perimeter-to-the-aws-management-console-with-private-access/",
           "published_at": "2026-08-28T18:53:57Z"
-        },
-        {
-          "title": "Extend Amazon Bedrock Guardrails to Tool Interactions Using the Strands Agents SDK",
-          "url": "https://aws.amazon.com/blogs/security/extend-amazon-bedrock-guardrails-to-tool-interactions-using-the-strands-agents-sdk/",
-          "published_at": "2026-08-27T16:20:05Z"
         }
       ],
       "note": ""
@@ -1414,15 +1395,9 @@
       "name": "CrewAI releases",
       "adapter": "atom",
       "source_url": "https://github.com/crewAIInc/crewAI/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "1.15.18",
-          "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.18",
-          "published_at": "2026-08-27T18:07:19Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1562,10 +1537,16 @@
       "name": "LangGraph releases",
       "adapter": "atom",
       "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+      "status": "candidate_only",
+      "checked_items": 10,
+      "recent_items": [
+        {
+          "title": "langgraph-sdk==0.4.4",
+          "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.4",
+          "published_at": "2026-08-27T21:25:36Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "LlamaIndex releases",
@@ -1580,10 +1561,16 @@
       "name": "Microsoft Agent Framework releases",
       "adapter": "atom",
       "source_url": "https://github.com/microsoft/agent-framework/releases.atom",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+      "status": "candidate_only",
+      "checked_items": 10,
+      "recent_items": [
+        {
+          "title": "python-1.16.0",
+          "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.16.0",
+          "published_at": "2026-08-28T00:53:20Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "Moonshot AI Kimi GitHub releases",
@@ -1598,10 +1585,10 @@
       "name": "NVIDIA NeMo GitHub releases",
       "adapter": "atom",
       "source_url": "https://github.com/NVIDIA/NeMo/releases.atom",
-      "status": "mechanical_failure",
-      "checked_items": 0,
+      "status": "checked_no_match",
+      "checked_items": 10,
       "recent_items": [],
-      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+      "note": ""
     },
     {
       "name": "OpenAI Agents SDK releases",
@@ -1619,6 +1606,16 @@
       "status": "candidate_only",
       "checked_items": 10,
       "recent_items": [
+        {
+          "title": "0.152.0-alpha.6",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.6",
+          "published_at": "2026-08-31T02:15:59Z"
+        },
+        {
+          "title": "0.152.0-alpha.5",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.5",
+          "published_at": "2026-08-31T01:14:34Z"
+        },
         {
           "title": "0.152.0-alpha.4",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.4",
@@ -1658,16 +1655,6 @@
           "title": "0.151.0-alpha.11",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.11",
           "published_at": "2026-08-28T21:32:06Z"
-        },
-        {
-          "title": "0.151.0-alpha.10",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.10",
-          "published_at": "2026-08-28T17:02:53Z"
-        },
-        {
-          "title": "0.151.0-alpha.9",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0-alpha.9",
-          "published_at": "2026-08-28T15:35:48Z"
         }
       ],
       "note": ""
@@ -1689,9 +1676,24 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/learning-never-stops/",
+          "url": "https://openai.com/index/learning-never-stops/",
+          "published_at": "2026-08-31T03:25:43.424000Z"
+        },
+        {
           "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
           "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-          "published_at": "2026-08-30T23:47:11.049000Z"
+          "published_at": "2026-08-31T02:46:31.023000Z"
+        },
+        {
+          "title": "https://openai.com/index/replit/",
+          "url": "https://openai.com/index/replit/",
+          "published_at": "2026-08-31T01:51:34.454000Z"
+        },
+        {
+          "title": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
+          "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age/",
+          "published_at": "2026-08-31T01:26:36.297000Z"
         },
         {
           "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
@@ -1702,11 +1704,6 @@
           "title": "https://openai.com/index/introducing-intelligence-age/",
           "url": "https://openai.com/index/introducing-intelligence-age/",
           "published_at": "2026-08-30T15:06:50.278000Z"
-        },
-        {
-          "title": "https://openai.com/index/learning-never-stops/",
-          "url": "https://openai.com/index/learning-never-stops/",
-          "published_at": "2026-08-30T15:06:13.614000Z"
         },
         {
           "title": "https://openai.com/index/introducing-admin-plugin/",
@@ -1727,11 +1724,6 @@
           "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
           "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
           "published_at": "2026-08-30T15:02:58.606000Z"
-        },
-        {
-          "title": "https://openai.com/index/replit/",
-          "url": "https://openai.com/index/replit/",
-          "published_at": "2026-08-30T09:58:06.026000Z"
         },
         {
           "title": "https://openai.com/index/our-approach-to-the-model-spec/",
@@ -1972,21 +1964,6 @@
           "title": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
           "url": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
           "published_at": "2026-08-27T21:32:02.144000Z"
-        },
-        {
-          "title": "https://openai.com/index/stampli/",
-          "url": "https://openai.com/index/stampli/",
-          "published_at": "2026-08-27T18:49:18.363000Z"
-        },
-        {
-          "title": "https://openai.com/index/health-in-chatgpt/",
-          "url": "https://openai.com/index/health-in-chatgpt/",
-          "published_at": "2026-08-27T18:28:10.446000Z"
-        },
-        {
-          "title": "https://openai.com/index/strengthening-democratic-oversight-in-national-security/",
-          "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security/",
-          "published_at": "2026-08-27T18:01:02.629000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1995,15 +1972,9 @@
       "name": "OpenHands releases",
       "adapter": "atom",
       "source_url": "https://github.com/All-Hands-AI/OpenHands/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "v1.16.0",
-          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.16.0",
-          "published_at": "2026-08-27T18:23:52Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -2013,6 +1984,11 @@
       "status": "candidate_only",
       "checked_items": 30,
       "recent_items": [
+        {
+          "title": "Understanding ChatGPT Work",
+          "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+          "published_at": "2026-08-30T23:59:47Z"
+        },
         {
           "title": "Introducing Hy4 Preview",
           "url": "https://simonwillison.net/2026/Aug/29/hy4/",
@@ -2046,7 +2022,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "108 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "103 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
