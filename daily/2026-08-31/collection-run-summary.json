@@ -1,17 +1,17 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-31T16:00:10+08:00",
+  "run_at": "2026-08-31T21:03:05+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-28T08:00:10+08:00",
-    "end": "2026-08-31T16:00:10+08:00",
+    "start": "2026-08-28T13:03:05+08:00",
+    "end": "2026-08-31T21:03:05+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
   "raw_candidates": 89,
-  "unique_candidates": 70,
+  "unique_candidates": 69,
   "editorial_shortlist": 0,
   "previous_count": 1,
   "new_count": 0,
@@ -35,27 +35,27 @@
   "executive_model_longform": 0,
   "practitioner_statements": 1,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 111,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 7,
+      "access_blocked": 0,
       "auth_required": 0,
-      "mechanical_failure": 3,
-      "not_checked": 101
+      "mechanical_failure": 111,
+      "not_checked": 0
     },
     "channel_counts": {
       "frontier_model_official": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 3,
+        "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 24
+        "mechanical_failure": 27,
+        "not_checked": 0
       },
       "china_frontier_models": {
         "selected": 0,
@@ -63,17 +63,17 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 13
+        "mechanical_failure": 14,
+        "not_checked": 0
       },
       "head_ai_product_release_notes": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 1,
+        "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 15
+        "mechanical_failure": 16,
+        "not_checked": 0
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -81,8 +81,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 16
+        "mechanical_failure": 16,
+        "not_checked": 0
       },
       "research_and_evaluation": {
         "selected": 0,
@@ -90,17 +90,17 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 10
+        "mechanical_failure": 10,
+        "not_checked": 0
       },
       "ai_macro_primary": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 3,
+        "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 12
+        "mechanical_failure": 17,
+        "not_checked": 0
       },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
@@ -108,8 +108,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 11
+        "mechanical_failure": 11,
+        "not_checked": 0
       }
     },
     "records": [
@@ -118,165 +118,162 @@
         "name": "A2A Protocol",
         "type": "github_releases",
         "url": "https://github.com/a2aproject/A2A",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Anthropic Cookbook",
         "type": "github_changes",
         "url": "https://github.com/anthropics/anthropic-cookbook",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://github.com/anthropics/claude-cookbooks",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "AutoGen",
         "type": "github_releases",
         "url": "https://github.com/microsoft/autogen",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "AWS Strands Agents",
         "type": "github_org",
         "url": "https://github.com/strands-agents",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Browser Use",
         "type": "github_releases",
         "url": "https://github.com/browser-use/browser-use",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "CrewAI",
         "type": "github_releases",
         "url": "https://github.com/crewAIInc/crewAI",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Google Agent Development Kit",
         "type": "github_releases",
         "url": "https://github.com/google/adk-python",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "LangGraph",
         "type": "github_releases",
         "url": "https://github.com/langchain-ai/langgraph",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "LlamaIndex",
         "type": "github_releases",
         "url": "https://github.com/run-llama/llama_index",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Microsoft Agent Framework",
         "type": "github_releases",
         "url": "https://github.com/microsoft/agent-framework",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Microsoft Research AutoGen Blog",
         "type": "official_research",
         "url": "https://www.microsoft.com/en-us/research/project/autogen/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "Model Context Protocol",
         "type": "github_org",
         "url": "https://github.com/modelcontextprotocol",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "OpenAI Agents SDK",
         "type": "github_releases",
         "url": "https://github.com/openai/openai-agents-python",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "OpenAI Cookbook",
         "type": "github_changes",
         "url": "https://github.com/openai/openai-cookbook",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "OpenHands",
         "type": "github_releases",
         "url": "https://github.com/All-Hands-AI/OpenHands",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://github.com/OpenHands/OpenHands",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "agent_runtime_and_open_source",
         "name": "SWE-agent",
         "type": "github_releases",
         "url": "https://github.com/SWE-agent/SWE-agent",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "ai_macro_primary",
         "name": "Alphabet Investor Relations",
         "type": "company_ir",
         "url": "https://abc.xyz/investor/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "ai_macro_primary",
         "name": "Amazon Investor Relations",
         "type": "company_ir",
         "url": "https://ir.aboutamazon.com/",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://ir.aboutamazon.com/overview/default.aspx",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
@@ -301,175 +298,171 @@
         "name": "CoreWeave Investor Relations",
         "type": "company_ir",
         "url": "https://investors.coreweave.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://investors.coreweave.com/overview/default.aspx",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
         "name": "EU AI Office",
         "type": "regulator",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
         "name": "European Commission AI Act",
         "type": "regulator",
         "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
         "name": "IEA Data Centres and AI",
         "type": "energy_research",
         "url": "https://www.iea.org/topics/data-centres-and-data-transmission-networks",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
         "name": "Meta Investor Relations",
         "type": "company_ir",
         "url": "https://investor.atmeta.com/",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://investor.atmeta.com/home/default.aspx",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "ai_macro_primary",
         "name": "Microsoft Investor Relations",
         "type": "company_ir",
         "url": "https://www.microsoft.com/en-us/Investor",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://www.microsoft.com/en-us/investor/default",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "ai_macro_primary",
         "name": "NVIDIA Investor Relations",
         "type": "company_ir",
         "url": "https://investor.nvidia.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://investor.nvidia.com/home/default.aspx",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "ai_macro_primary",
         "name": "OpenAI Company News",
         "type": "company_primary",
         "url": "https://openai.com/news/company/",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "ai_macro_primary",
         "name": "SEC EDGAR",
         "type": "regulatory_filings",
         "url": "https://www.sec.gov/edgar/search/",
-        "status": "access_blocked",
-        "http_code": "403",
-        "note": "Public endpoint requires official API or compliant User-Agent flow; plain fetch is not treated as no match."
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
         "name": "UK AI Security Institute",
         "type": "government_research",
         "url": "https://www.aisi.gov.uk/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
         "name": "UK CMA Digital Markets",
         "type": "regulator",
         "url": "https://www.gov.uk/government/organisations/competition-and-markets-authority",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
         "name": "US FTC Technology Blog",
         "type": "regulator",
         "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
         "name": "US NIST AI",
         "type": "regulator",
         "url": "https://www.nist.gov/artificial-intelligence",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "china_frontier_models",
         "name": "Baidu AI Cloud Qianfan",
         "type": "official_product",
         "url": "https://cloud.baidu.com/product/wenxinworkshop",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://cloud.baidu.com/product-s/qianfan_home",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "china_frontier_models",
         "name": "DeepSeek GitHub",
         "type": "github_org",
         "url": "https://github.com/deepseek-ai",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "china_frontier_models",
         "name": "DeepSeek Hugging Face",
         "type": "model_hub",
         "url": "https://huggingface.co/deepseek-ai",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "china_frontier_models",
         "name": "DeepSeek News",
         "type": "official_site",
         "url": "https://www.deepseek.com/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "china_frontier_models",
         "name": "Kimi Developer Docs",
         "type": "developer_docs",
         "url": "https://platform.moonshot.cn/docs",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://platform.kimi.com/docs/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "china_frontier_models",
         "name": "MiniMax GitHub",
         "type": "github_org",
         "url": "https://github.com/MiniMax-AI",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "china_frontier_models",
@@ -477,659 +470,647 @@
         "type": "developer_docs",
         "url": "https://platform.minimaxi.com/document",
         "status": "mechanical_failure",
-        "http_code": "500"
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "china_frontier_models",
         "name": "Moonshot AI GitHub",
         "type": "github_org",
         "url": "https://github.com/MoonshotAI",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "china_frontier_models",
         "name": "Moonshot AI Kimi GitHub",
         "type": "official_github",
         "url": "https://github.com/MoonshotAI/Kimi-K3",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "china_frontier_models",
         "name": "Qwen Blog",
         "type": "official_blog",
         "url": "https://qwenlm.github.io/blog/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "china_frontier_models",
         "name": "Qwen GitHub",
         "type": "github_org",
         "url": "https://github.com/QwenLM",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "china_frontier_models",
         "name": "Qwen Hugging Face",
         "type": "model_hub",
         "url": "https://huggingface.co/Qwen",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "china_frontier_models",
         "name": "THUDM GitHub",
         "type": "github_org",
         "url": "https://github.com/THUDM",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "china_frontier_models",
         "name": "Zhipu AI Open Platform",
         "type": "developer_docs",
         "url": "https://open.bigmodel.cn/dev/api",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://docs.bigmodel.cn/cn/guide/start/introduction",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Amazon Science AI",
         "type": "official_research",
         "url": "https://www.amazon.science/tag/artificial-intelligence",
-        "status": "not_checked",
-        "http_code": "202",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "AMD Newsroom",
         "type": "official_newsroom",
         "url": "https://newsroom.amd.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Anthropic API Release Notes",
         "type": "developer_changelog",
         "url": "https://docs.anthropic.com/en/release-notes/api",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://platform.claude.com/docs/en/release-notes/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Anthropic News",
         "type": "official_news",
         "url": "https://www.anthropic.com/news",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Anthropic Research",
         "type": "official_research",
         "url": "https://www.anthropic.com/research",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Apple Machine Learning Research",
         "type": "official_research",
         "url": "https://machinelearning.apple.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "AWS Machine Learning Blog",
         "type": "official_technical_blog",
         "url": "https://aws.amazon.com/blogs/machine-learning/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "AWS What's New AI/ML",
         "type": "cloud_release_notes",
         "url": "https://aws.amazon.com/about-aws/whats-new/machine-learning/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://aws.amazon.com/about-aws/",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Azure AI Foundry What's New",
         "type": "cloud_release_notes",
         "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/whats-new-azure-ai-foundry",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/whats-new-foundry",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Claude Release Notes",
         "type": "product_release_notes",
         "url": "https://support.anthropic.com/en/articles/12138966-release-notes",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://support.claude.com/en/articles/12138966-release-notes",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Gemini API Changelog",
         "type": "developer_changelog",
         "url": "https://ai.google.dev/gemini-api/docs/changelog",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Google DeepMind Blog",
         "type": "official_research",
         "url": "https://deepmind.google/discover/blog/",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://deepmind.google/blog/",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Google Innovation & AI",
         "type": "official_news",
         "url": "https://blog.google/innovation-and-ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Meta AI Blog",
         "type": "official_research",
         "url": "https://ai.meta.com/blog/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Meta Llama GitHub",
         "type": "github_org",
         "url": "https://github.com/meta-llama",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Meta Newsroom AI",
         "type": "official_newsroom",
         "url": "https://about.fb.com/news/tag/ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "Microsoft AI Blog",
         "type": "official_news",
         "url": "https://microsoft.ai/news/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://microsoft.ai/blog/",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "NVIDIA AI Developer Blog",
         "type": "official_technical_blog",
         "url": "https://developer.nvidia.com/blog/category/generative-ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "NVIDIA NeMo GitHub",
         "type": "github_releases",
         "url": "https://github.com/NVIDIA/NeMo",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://github.com/NVIDIA-NeMo/Speech",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "NVIDIA Newsroom",
         "type": "official_newsroom",
         "url": "https://nvidianews.nvidia.com/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI API Changelog",
         "type": "developer_changelog",
         "url": "https://platform.openai.com/docs/changelog",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://developers.openai.com/api/docs/changelog",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI Help Center Release Notes",
         "type": "product_release_notes",
         "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI News",
         "type": "official_news",
         "url": "https://openai.com/news/",
-        "status": "access_blocked",
-        "http_code": "403",
-        "note": "curl 403; registry fallback requires browser or official article/index alternative, so this is not treated as no match."
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI Research",
         "type": "official_research",
         "url": "https://openai.com/research/",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Vertex AI Generative AI Release Notes",
         "type": "cloud_release_notes",
         "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "frontier_model_official",
         "name": "xAI Docs",
         "type": "developer_docs",
         "url": "https://docs.x.ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://docs.x.ai/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "xAI News",
         "type": "official_news",
         "url": "https://x.ai/news",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Atlassian Intelligence Updates",
         "type": "product_release_notes",
         "url": "https://confluence.atlassian.com/cloud/blog",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Canva Newsroom AI",
         "type": "official_product_blog",
         "url": "https://www.canva.com/newsroom/news/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Cursor Changelog",
         "type": "product_changelog",
         "url": "https://cursor.com/changelog",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Cursor Docs",
         "type": "product_docs",
         "url": "https://docs.cursor.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://cursor.com/docs",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Figma Release Notes",
         "type": "product_release_notes",
         "url": "https://help.figma.com/hc/en-us/categories/360002051613-Release-notes",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Gemini Apps Help",
         "type": "help_center",
         "url": "https://support.google.com/gemini/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "GitHub Changelog Copilot",
         "type": "product_changelog",
         "url": "https://github.blog/changelog/label/copilot/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "GitHub Copilot Docs",
         "type": "product_docs",
         "url": "https://docs.github.com/en/copilot",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Google Workspace Updates",
         "type": "product_release_notes",
         "url": "https://workspaceupdates.googleblog.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Hugging Face Blog",
         "type": "official_technical_blog",
         "url": "https://huggingface.co/blog",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Microsoft 365 Roadmap",
         "type": "product_roadmap",
         "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Microsoft Copilot Blog",
         "type": "official_product_blog",
         "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Notion Releases",
         "type": "product_changelog",
         "url": "https://www.notion.com/releases",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Perplexity Changelog",
         "type": "product_changelog",
         "url": "https://www.perplexity.ai/changelog",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Salesforce Release Notes AI",
         "type": "product_release_notes",
         "url": "https://help.salesforce.com/s/articleView?id=release-notes.salesforce_release_notes.htm",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://help.salesforce.com/s/articleView?language=en_US&id=release-notes.salesforce_release_notes.htm",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Slack Release Notes",
         "type": "product_release_notes",
         "url": "https://slack.com/intl/en-gb/release-notes",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://slack.com/intl/en-gb/release-notes/mac",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Ahead of AI",
         "type": "researcher_newsletter",
         "url": "https://magazine.sebastianraschka.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Chip Huyen",
         "type": "personal_blog",
         "url": "https://huyenchip.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Every",
         "type": "longform_blog_podcast",
         "url": "https://every.to/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Hamel Husain",
         "type": "personal_blog",
         "url": "https://hamel.dev/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Import AI",
         "type": "researcher_newsletter",
         "url": "https://jack-clark.net/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Interconnects",
         "type": "researcher_newsletter",
         "url": "https://www.interconnects.ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Latent Space",
         "type": "longform_blog_podcast",
         "url": "https://www.latent.space/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Lenny's Newsletter",
         "type": "longform_blog_podcast",
         "url": "https://www.lennysnewsletter.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Lil'Log",
         "type": "researcher_blog",
         "url": "https://lilianweng.github.io/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Simon Willison",
         "type": "personal_blog",
         "url": "https://simonwillison.net/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "The Pragmatic Engineer",
         "type": "longform_blog",
         "url": "https://newsletter.pragmaticengineer.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "research_and_evaluation",
         "name": "Artificial Analysis",
         "type": "independent_evaluation",
         "url": "https://artificialanalysis.ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.AI",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.AI",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.CL",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "research_and_evaluation",
         "name": "Epoch AI",
         "type": "research_org",
         "url": "https://epoch.ai/blog",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://epoch.ai/latest",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "research_and_evaluation",
         "name": "Hugging Face Daily Papers",
         "type": "paper_index",
         "url": "https://huggingface.co/papers",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "research_and_evaluation",
         "name": "LMSYS Chatbot Arena",
         "type": "benchmark",
         "url": "https://lmarena.ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://arena.ai/",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "research_and_evaluation",
         "name": "METR",
         "type": "evaluation_org",
         "url": "https://metr.org/blog/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       },
       {
         "channel": "research_and_evaluation",
         "name": "Stanford HAI",
         "type": "research_institute",
         "url": "https://hai.stanford.edu/news",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "research_and_evaluation",
         "name": "SWE-bench",
         "type": "benchmark",
         "url": "https://www.swebench.com/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[Errno 54] Connection reset by peer"
       }
     ]
   },
@@ -1138,14 +1119,14 @@
     "records": [
       {
         "channel": "personal_blogs",
-        "status": "not_checked",
+        "status": "mechanical_failure",
         "checked": 4,
         "registered": 4,
         "note": ""
       },
       {
         "channel": "longform_video_podcasts",
-        "status": "not_checked",
+        "status": "mechanical_failure",
         "checked": 4,
         "registered": 12,
         "note": "YouTube transcript API currently blocks this runtime IP; browser-rendered title, date, description and chapters are usable for discovery, but claims requiring transcript detail remain watchlist until body evidence is available. Apple Podcasts 元数据可核验节目日期和节目方说明，但不能冒充逐字稿。"
@@ -1181,10 +1162,10 @@
       "name": "A2A Protocol releases",
       "adapter": "atom",
       "source_url": "https://github.com/a2aproject/A2A/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "TimeoutError: The read operation timed out"
     },
     {
       "name": "Anthropic Cookbook releases",
@@ -1281,19 +1262,25 @@
       "name": "AWS Networking RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/networking-and-content-delivery/feed/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
+      "status": "checked_no_match",
+      "checked_items": 20,
       "recent_items": [],
-      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+      "note": ""
     },
     {
       "name": "AWS Public Sector RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+      "status": "candidate_only",
+      "checked_items": 20,
+      "recent_items": [
+        {
+          "title": "AI Model Choice is now a Mission Advantage: Multiple AI models available in AWS GovCloud (US)",
+          "url": "https://aws.amazon.com/blogs/publicsector/ai-model-choice-is-now-a-mission-advantage-multiple-ai-models-available-in-aws-govcloud-us/",
+          "published_at": "2026-08-30T14:10:12Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "AWS Security RSS",
@@ -1345,11 +1332,6 @@
           "title": "v2.1.251",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
           "published_at": "2026-08-28T18:19:32Z"
-        },
-        {
-          "title": "v2.1.250",
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.250",
-          "published_at": "2026-08-28T00:49:16Z"
         }
       ],
       "note": ""
@@ -1392,10 +1374,10 @@
       "name": "Google Agent Development Kit releases",
       "adapter": "atom",
       "source_url": "https://github.com/google/adk-python/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "TimeoutError: The read operation timed out"
     },
     {
       "name": "Google Blog sitemap",
@@ -1496,15 +1478,9 @@
       "name": "Microsoft Agent Framework releases",
       "adapter": "atom",
       "source_url": "https://github.com/microsoft/agent-framework/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "python-1.16.0",
-          "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.16.0",
-          "published_at": "2026-08-28T00:53:20Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -1520,19 +1496,19 @@
       "name": "NVIDIA NeMo GitHub releases",
       "adapter": "atom",
       "source_url": "https://github.com/NVIDIA/NeMo/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "OpenAI Agents SDK releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/openai-agents-python/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "OpenAI Codex releases",
@@ -1611,6 +1587,66 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
+          "url": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
+          "published_at": "2026-08-31T13:39:03.147000Z"
+        },
+        {
+          "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
+          "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
+          "published_at": "2026-08-31T13:08:39.140000Z"
+        },
+        {
+          "title": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+          "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+          "published_at": "2026-08-31T13:03:31.184000Z"
+        },
+        {
+          "title": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+          "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+          "published_at": "2026-08-31T13:03:31.184000Z"
+        },
+        {
+          "title": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+          "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+          "published_at": "2026-08-31T13:01:17.831000Z"
+        },
+        {
+          "title": "https://openai.com/index/learning-never-stops/",
+          "url": "https://openai.com/index/learning-never-stops/",
+          "published_at": "2026-08-31T12:59:32.688000Z"
+        },
+        {
+          "title": "https://openai.com/index/expanding-our-presence-in-brazil/",
+          "url": "https://openai.com/index/expanding-our-presence-in-brazil/",
+          "published_at": "2026-08-31T12:55:37.211000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-admin-plugin/",
+          "url": "https://openai.com/index/introducing-admin-plugin/",
+          "published_at": "2026-08-31T12:36:53.286000Z"
+        },
+        {
+          "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+          "published_at": "2026-08-31T11:10:00.753000Z"
+        },
+        {
+          "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+          "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+          "published_at": "2026-08-31T10:40:50.467000Z"
+        },
+        {
+          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "published_at": "2026-08-31T08:38:20.264000Z"
+        },
+        {
+          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "published_at": "2026-08-31T08:38:20.264000Z"
+        },
+        {
           "title": "https://openai.com/index/jalapeno-first-results/",
           "url": "https://openai.com/index/jalapeno-first-results/",
           "published_at": "2026-08-31T07:43:20.984000Z"
@@ -1631,11 +1667,6 @@
           "published_at": "2026-08-31T07:33:01.730000Z"
         },
         {
-          "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-          "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-          "published_at": "2026-08-31T07:27:19.378000Z"
-        },
-        {
           "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
           "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
           "published_at": "2026-08-31T07:18:03.397000Z"
@@ -1654,16 +1685,6 @@
           "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
           "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
           "published_at": "2026-08-31T07:18:03.397000Z"
-        },
-        {
-          "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-          "published_at": "2026-08-31T04:56:03.853000Z"
-        },
-        {
-          "title": "https://openai.com/index/learning-never-stops/",
-          "url": "https://openai.com/index/learning-never-stops/",
-          "published_at": "2026-08-31T03:25:43.424000Z"
         },
         {
           "title": "https://openai.com/index/replit/",
@@ -1676,29 +1697,9 @@
           "published_at": "2026-08-31T01:26:36.297000Z"
         },
         {
-          "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
-          "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
-          "published_at": "2026-08-30T17:59:23.517000Z"
-        },
-        {
           "title": "https://openai.com/index/introducing-intelligence-age/",
           "url": "https://openai.com/index/introducing-intelligence-age/",
           "published_at": "2026-08-30T15:06:50.278000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-admin-plugin/",
-          "url": "https://openai.com/index/introducing-admin-plugin/",
-          "published_at": "2026-08-30T15:05:22.720000Z"
-        },
-        {
-          "title": "https://openai.com/index/loveholidays/",
-          "url": "https://openai.com/index/loveholidays/",
-          "published_at": "2026-08-30T15:04:27.647000Z"
-        },
-        {
-          "title": "https://openai.com/index/blue-j/",
-          "url": "https://openai.com/index/blue-j/",
-          "published_at": "2026-08-30T15:03:10.235000Z"
         },
         {
           "title": "https://openai.com/index/our-approach-to-the-model-spec/",
@@ -1786,21 +1787,6 @@
           "published_at": "2026-08-30T07:51:42.580000Z"
         },
         {
-          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "published_at": "2026-08-30T06:31:43.952000Z"
-        },
-        {
-          "title": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
-          "published_at": "2026-08-30T06:31:43.952000Z"
-        },
-        {
-          "title": "https://openai.com/index/nvidia/chatgpt-work/",
-          "url": "https://openai.com/index/nvidia/chatgpt-work/",
-          "published_at": "2026-08-30T03:16:43.529000Z"
-        },
-        {
           "title": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
           "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
           "published_at": "2026-08-29T17:16:31.844000Z"
@@ -1839,11 +1825,6 @@
           "title": "https://openai.com/index/how-enterprises-put-ai-to-work/",
           "url": "https://openai.com/index/how-enterprises-put-ai-to-work/",
           "published_at": "2026-08-28T23:24:04.869000Z"
-        },
-        {
-          "title": "https://openai.com/index/expanding-our-presence-in-brazil/",
-          "url": "https://openai.com/index/expanding-our-presence-in-brazil/",
-          "published_at": "2026-08-28T21:04:25.310000Z"
         },
         {
           "title": "https://openai.com/index/gpt-5-safe-completions/",
