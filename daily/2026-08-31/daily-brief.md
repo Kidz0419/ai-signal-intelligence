@@ -1,13 +1,13 @@
 # AI Signal 日报｜2026-08-31
 
-**窗口：** 北京时间 2026-08-31 00:00 至 2026-08-31 12:27  
-**一句话结论：** 今天不是 0 条。Simon Willison 的一手实测把 ChatGPT Work 拆成云端 Work Cloud 和桌面 Work Local，两者在联网代码执行、浏览器接管、持久文件系统、Sites、sub-agents 和定时自动化上的边界终于有了可复述的产品画像。[1]
+**窗口：** 北京时间 2026-08-31 00:00 至 2026-08-31 16:08  
+**一句话结论：** 今天正式信号还是 1 条。Simon Willison 的一手实测把 ChatGPT Work 拆成云端 Work Cloud 和桌面 Work Local，两者在联网代码执行、浏览器接管、持久文件系统、Sites、sub-agents 和定时自动化上的边界终于有了可复述的产品画像。[1]
 
 ## 四主线重点
 
 | 主线 | 数量 | 今日重点 |
 |---|---:|---|
-| 模型 | 0 | OpenAI sitemap 命中的 4 个页面都不是今天首发 |
+| 模型 | 0 | OpenAI sitemap 晚到的 6 个页面都被官方 RSS 回填成旧文 |
 | Agent 架构 | 0 | Codex 两个同日 alpha prerelease 都没有足够正文增量 |
 | AI 产品 | 1 | Simon Willison 对 ChatGPT Work 的一手实测达到正式门槛 |
 | AI 宏观 | 0 | 没有进入 8 月 31 日日桶的结构性新增事件 |
@@ -24,7 +24,7 @@ Simon Willison 基于实际使用把 ChatGPT Work 拆成云端 Work Cloud 和桌
 
 ## 模型｜0 条
 
-OpenAI sitemap 命中的四个页面都不是 8 月 31 日的新发布。官方 RSS 显示，`learning-never-stops`、`supporting-next-generation-ai-startups-thailand`、`replit` 和 `new-policy-ideas-for-the-intelligence-age` 的首发时间分别是 8 月 26 日、8 月 28 日、8 月 19 日和 8 月 17 日 GMT。今天看到的是旧页面 lastmod 变化，不是净新增事件。[2]
+今天 16:00 后新冒出的 6 个 OpenAI sitemap 命中页，经官方 RSS 回填首发时间后，分别落在 6 月 18 日、8 月 25 日、8 月 25 日、8 月 26 日、8 月 26 日和 8 月 28 日 GMT。也就是说，这一批都不是 8 月 31 日的新发布，只是旧页面 lastmod 又变了，不重算成今天净新增。[2]
 
 ## Agent 架构｜0 条
 
@@ -44,14 +44,14 @@ Simon 这篇达到正式门槛，不是因为作者名气，而是因为它给�
 
 ## 排除与延后
 
-- OpenAI 四篇 sitemap 候选已用官方 RSS 回填真实发布日期，均早于今天窗口，不作为 8 月 31 日净新增。[2]
+- 晚到的 6 个 OpenAI sitemap 候选已用官方 RSS 回填真实发布日期，全部早于今天窗口，不作为 8 月 31 日净新增。[2]
 - OpenAI Codex alpha.5 / alpha.6 都是同日 prerelease，但 Release 正文空，先不升正式卡。[3][4]
 - 今天只从正式 Signal 派生 1 个 content topic candidate，不用弱素材硬凑选题。
 
 ## 证据边界
 
 - 今日正式卡来自独立研究者的一手实测，不等于 OpenAI 官方管理员文档或全面 rollout 说明。[1]
-- OpenAI 官方 RSS 解决了发布日期，不解决“是否发生实质更新”问题；没有跨运行内容 hash 时，不把旧页面 lastmod 当成新事件。[2]
+- OpenAI 官方 RSS 解决了发布日期问题；而这 6 个 sitemap 命中页都早于今天窗口，所以这轮不拿它们补写新的产品细节。[2]
 - Codex prerelease 确实存在，但 release notes 过薄，不用数量凑正式卡。[3][4]
 
 ## 飞书短版

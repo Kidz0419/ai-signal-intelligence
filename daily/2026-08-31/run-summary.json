@@ -1,26 +1,26 @@
 {
   "run_type": "daily_four_lane_incremental_manual_review",
-  "run_at": "2026-08-31T12:27:45+08:00",
+  "run_at": "2026-08-31T16:08:00+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
     "start": "2026-08-31T00:00:00+08:00",
-    "end": "2026-08-31T12:27:45+08:00",
+    "end": "2026-08-31T16:08:00+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 103,
-  "unique_candidates": 84,
-  "candidate_queue_count": 20,
-  "new_in_run_count": 7,
-  "reviewed_new_candidates": 7,
-  "editorial_shortlist": 1,
-  "previous_count": 0,
-  "new_count": 1,
+  "raw_candidates": 89,
+  "unique_candidates": 70,
+  "candidate_queue_count": 26,
+  "new_in_run_count": 6,
+  "reviewed_new_candidates": 6,
+  "editorial_shortlist": 0,
+  "previous_count": 1,
+  "new_count": 0,
   "updated_count": 0,
   "excluded_count": 6,
-  "unreviewed_candidate_count": 13,
+  "unreviewed_candidate_count": 20,
   "total_count": 1,
   "selected": 1,
   "lane_counts": {
@@ -43,7 +43,7 @@
   "practitioner_statements": 1,
   "cross_day_duplicates_removed": 0,
   "source_status_counts": {
-    "selected": 1,
+    "selected": 0,
     "candidate_only": 0,
     "checked_no_match": 6,
     "access_blocked": 0,
@@ -52,10 +52,10 @@
     "not_checked": 0
   },
   "review_notes": [
-    "Promoted Simon Willison's Understanding ChatGPT Work after body-level review; kept it as a practitioner statement rather than an official product release.",
-    "Resolved four OpenAI sitemap hits through official OpenAI RSS: learning-never-stops (2026-08-26), supporting-next-generation-ai-startups-thailand (2026-08-28), replit (2026-08-19), and new-policy-ideas-for-the-intelligence-age (2026-08-17) are older publications, so today's sitemap lastmod changes were not treated as net-new events.",
-    "Reviewed OpenAI Codex prereleases 0.152.0-alpha.5 and 0.152.0-alpha.6 through the GitHub release API; both were same-day prereleases with empty release-note bodies, so they were not promoted.",
-    "Rebuilt selected/history/latest/topic artifacts and scheduled public publish verification for the 2026-08-31 day bucket."
+    "Kept Simon Willison's Understanding ChatGPT Work as the only formal 2026-08-31 signal after rechecking the late-afternoon candidate batch; no new same-day signal cleared the body-level gate.",
+    "Resolved all six new OpenAI sitemap hits through the official OpenAI RSS: jalapeno-first-results (2026-08-25), the-full-stack-behind-abundant-intelligence (2026-08-25), diagnose-rare-childhood-diseases (2026-06-18), supporting-next-generation-ai-startups-thailand (2026-08-28), hugging-face-incident-and-the-road-ahead (2026-08-26), and bringing-chatgpt-for-teachers-to-more-us-school-districts (2026-08-26) are older publications, so today's sitemap lastmod changes were not treated as net-new events.",
+    "Direct article fetches for those OpenAI index pages still returned Cloudflare 403, but the official RSS was enough to move all six outside the 2026-08-31 editorial window.",
+    "Preserved the existing ChatGPT Work practitioner card, citations, history, and topic candidate; this run produced no new selected or updated records."
   ],
   "collection_contract": {
     "raw_candidates_in_rolling_window_is_not_increment": true,
