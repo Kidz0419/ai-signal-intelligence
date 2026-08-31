@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-08-31T04:00:47+08:00",
+  "run_at": "2026-08-31T08:00:24+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-27T20:00:47+08:00",
-    "end": "2026-08-31T04:00:47+08:00",
+    "start": "2026-08-28T00:00:24+08:00",
+    "end": "2026-08-31T08:00:24+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 130,
-  "unique_candidates": 111,
+  "raw_candidates": 108,
+  "unique_candidates": 89,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 130,
+  "unreviewed_candidate_count": 108,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,17 +35,17 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 13,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 7,
+      "access_blocked": 8,
       "auth_required": 0,
-      "mechanical_failure": 3,
-      "not_checked": 101
+      "mechanical_failure": 5,
+      "not_checked": 98
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -70,10 +70,10 @@
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 1,
+        "access_blocked": 2,
         "auth_required": 0,
         "mechanical_failure": 0,
-        "not_checked": 15
+        "not_checked": 14
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 10
+        "mechanical_failure": 2,
+        "not_checked": 8
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -477,7 +477,7 @@
         "type": "developer_docs",
         "url": "https://platform.minimaxi.com/document",
         "status": "mechanical_failure",
-        "http_code": "404"
+        "http_code": "500"
       },
       {
         "channel": "china_frontier_models",
@@ -899,9 +899,8 @@
         "name": "Microsoft Copilot Blog",
         "type": "official_product_blog",
         "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -1062,18 +1061,18 @@
         "name": "arXiv cs.CL",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "research_and_evaluation",
@@ -1222,86 +1221,6 @@
           "title": "https://www.anthropic.com/news/expanding-support-for-scientists",
           "url": "https://www.anthropic.com/news/expanding-support-for-scientists",
           "published_at": "2026-08-28T10:42:34Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/multiagent-systems",
-          "url": "https://www.anthropic.com/research/multiagent-systems",
-          "published_at": "2026-08-27T15:38:32Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/ai-for-science-program",
-          "url": "https://www.anthropic.com/news/ai-for-science-program",
-          "published_at": "2026-08-27T15:14:27Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/advancing-claude-for-education",
-          "url": "https://www.anthropic.com/news/advancing-claude-for-education",
-          "published_at": "2026-08-27T15:13:58Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-for-life-sciences",
-          "url": "https://www.anthropic.com/news/claude-for-life-sciences",
-          "published_at": "2026-08-27T15:13:34Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-education-pilots",
-          "url": "https://www.anthropic.com/news/anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-education-pilots",
-          "published_at": "2026-08-27T15:13:17Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/healthcare-life-sciences",
-          "url": "https://www.anthropic.com/news/healthcare-life-sciences",
-          "published_at": "2026-08-27T15:12:44Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/accelerating-scientific-research",
-          "url": "https://www.anthropic.com/news/accelerating-scientific-research",
-          "published_at": "2026-08-27T15:12:10Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-teach-for-all",
-          "url": "https://www.anthropic.com/news/anthropic-teach-for-all",
-          "published_at": "2026-08-27T15:12:05Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/rwandan-government-partnership-ai-education",
-          "url": "https://www.anthropic.com/news/rwandan-government-partnership-ai-education",
-          "published_at": "2026-08-27T15:11:25Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
-          "url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
-          "published_at": "2026-08-27T15:10:45Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-codepath-partnership",
-          "url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
-          "published_at": "2026-08-27T15:10:26Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-rwanda-mou",
-          "url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
-          "published_at": "2026-08-27T15:09:47Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-for-small-business",
-          "url": "https://www.anthropic.com/news/claude-for-small-business",
-          "published_at": "2026-08-27T15:09:24Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/gates-foundation-partnership",
-          "url": "https://www.anthropic.com/news/gates-foundation-partnership",
-          "published_at": "2026-08-27T15:08:52Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-corps",
-          "url": "https://www.anthropic.com/news/claude-corps",
-          "published_at": "2026-08-27T15:08:34Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-science-ai-workbench",
-          "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
-          "published_at": "2026-08-27T15:08:16Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1596,21 +1515,6 @@
           "title": "How the GNIS Lake Ontario/Lake America name change in the U.S. will appear in Maps",
           "url": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
           "published_at": "2026-08-29T04:00:00Z"
-        },
-        {
-          "title": "3 new ways to plan and book travel in Search",
-          "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
-          "published_at": "2026-08-27T16:00:00Z"
-        },
-        {
-          "title": "Partnering with Khan Academy on building AI tools for classrooms",
-          "url": "https://blog.google/products-and-platforms/products/education/khan-academy-back-to-school/",
-          "published_at": "2026-08-27T16:00:00Z"
-        },
-        {
-          "title": "Our Fitbit Air Special Edition Pokémon Sleep is here",
-          "url": "https://blog.google/products-and-platforms/devices/fitbit/fitbit-air-special-edition-pokemon-sleep/",
-          "published_at": "2026-08-27T13:00:00Z"
         }
       ],
       "note": ""
@@ -1658,16 +1562,10 @@
       "name": "LangGraph releases",
       "adapter": "atom",
       "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "status": "candidate_only",
-      "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "langgraph-sdk==0.4.4",
-          "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.4",
-          "published_at": "2026-08-27T21:25:36Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "LlamaIndex releases",
@@ -1682,16 +1580,10 @@
       "name": "Microsoft Agent Framework releases",
       "adapter": "atom",
       "source_url": "https://github.com/microsoft/agent-framework/releases.atom",
-      "status": "candidate_only",
-      "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "python-1.16.0",
-          "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.16.0",
-          "published_at": "2026-08-28T00:53:20Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "Moonshot AI Kimi GitHub releases",
@@ -1706,10 +1598,10 @@
       "name": "NVIDIA NeMo GitHub releases",
       "adapter": "atom",
       "source_url": "https://github.com/NVIDIA/NeMo/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "OpenAI Agents SDK releases",
@@ -1797,14 +1689,14 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
+          "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
+          "published_at": "2026-08-30T23:47:11.049000Z"
+        },
+        {
           "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
           "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
           "published_at": "2026-08-30T17:59:23.517000Z"
-        },
-        {
-          "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-          "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-          "published_at": "2026-08-30T15:36:11.519000Z"
         },
         {
           "title": "https://openai.com/index/introducing-intelligence-age/",
@@ -2095,11 +1987,6 @@
           "title": "https://openai.com/index/strengthening-democratic-oversight-in-national-security/",
           "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security/",
           "published_at": "2026-08-27T18:01:02.629000Z"
-        },
-        {
-          "title": "https://openai.com/index/codex-for-every-role-tool-workflow/",
-          "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
-          "published_at": "2026-08-27T15:48:40.181000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2159,7 +2046,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "130 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "108 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
