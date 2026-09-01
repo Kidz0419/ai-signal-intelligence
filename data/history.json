@@ -7,12 +7,13 @@
       "signal_ids": [
         "2026-08-31-anthropic-real-time-eval-blocking-and-rl-pause",
         "2026-09-01-openai-codex-01520-runtime-controls",
+        "2026-09-01-google-antigravity-teamwork-runtime-contract",
         "2026-08-31-openai-chatgpt-ads-self-serve-expansion"
       ],
       "counts": {
-        "total": 3,
+        "total": 4,
         "P0": 0,
-        "P1": 2,
+        "P1": 3,
         "P2": 1
       }
     },
@@ -406,6 +407,79 @@
         {
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.1",
           "type": "same_day_followup_release"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-01-google-antigravity-teamwork-runtime-contract",
+      "demo": false,
+      "topic_lane": "agent_architecture",
+      "title": "Google 把 Antigravity Teamwork 写成正式运行时合同：模式自动选路、四道验证门、两阶段执行",
+      "summary": "Google 这轮通过官方 Blog 短文、Antigravity 长文和 docs 把 Teamwork 更新公开成了正式合同：`/teamwork-preview` 已向付费计划开放，可在 Iterative Coding、Distributed Coding、Long Proof、Self-Verification 和 Document Review 等模式间自动选路；运行时角色被拆成 Sentinel、Project Orchestrator、Explorers、Workers，以及 Critic、Challenger、Auditor、Success Auditor 四道独立验证门，并采用先做 scoping interview、再自治执行的两阶段流程。",
+      "decision": "include",
+      "confidence": 94,
+      "relevance_level": "P1",
+      "signal_type": "core",
+      "content_type": "technical_update",
+      "information_type": "agent_architecture",
+      "evidence_level": "confirmed",
+      "source": "Google",
+      "url": "https://antigravity.google/blog/teamwork-when-ai-becomes-a-research-partner",
+      "published_at": "2026-08-31T22:00:00Z",
+      "primary_tags": [
+        "Google Antigravity",
+        "Teamwork",
+        "Multi-agent Orchestration"
+      ],
+      "secondary_tags": [
+        "Verification Gates",
+        "Two-phase Workflow",
+        "/teamwork-preview"
+      ],
+      "why_it_matters_cn": "很多多 agent 产品还停留在角色图和 demo。Google 这次把模式选择、任务移交、独立验证和人类验收节点写成了能复述的控制面。",
+      "personal_relevance_cn": "如果在看多 agent 运行时，最该拆的是 pattern 选择、文件与工作目录隔离、谁做 adversarial verification，以及阶段交接时怎样防上下文劣化。",
+      "product_opportunity_cn": "可以把 scoping interview、pattern selector、对抗验证门、专属工作目录和 milestone 继任交接做成自己的 agent execution contract 最小集。",
+      "competitive_risk_cn": "Google 给出了角色、模式和结果，但没有公开默认并发、token 与时延成本、管理员审计、回滚机制或失败率。",
+      "recommended_action": "investigate",
+      "questions_to_validate": [
+        "pattern selector 根据什么信号决定走哪种 Teamwork 模式，以及中途何时扩缩并行 agent 数量？",
+        "日志、失败恢复、人工接管和最终 Success Auditor 的结果，今天能以什么形式暴露给管理员或团队？",
+        "数小时到数天的长任务在不同模式下，实际 token、时延和成功率曲线会是什么样？"
+      ],
+      "follow_up_triggers": [
+        "Antigravity 发布更正式的 API、管理员、审计或 GA 文档",
+        "Google 或第三方公开 Teamwork 的成本、成功率、失败复盘或真实团队案例",
+        "官方给出更多可复用 pattern、配额、并发和工作区治理细节"
+      ],
+      "scores": {
+        "topic_relevance": 5,
+        "novelty": 4,
+        "technical_or_product_significance": 5,
+        "strategic_value": 4,
+        "source_quality": 5,
+        "model_value": 2,
+        "agent_architecture_value": 5,
+        "ai_product_value": 3,
+        "macro_value": 1,
+        "actionability": 4
+      },
+      "report_date": "2026-09-01",
+      "event_date": "2026-09-01",
+      "canonical_url": "https://antigravity.google/blog/teamwork-when-ai-becomes-a-research-partner",
+      "first_seen_date": "2026-09-01",
+      "last_seen_date": "2026-09-01",
+      "run_dates": [
+        "2026-09-01"
+      ],
+      "evidence_boundary": "Google Blog 短文、Antigravity 长文和 docs 可确认 `/teamwork-preview`、pattern 自动选路、分层角色、对抗验证门和两阶段流程；数学与工程结果、71% TCSBench 等仍主要是 Google 自报，未公开默认并发、成本、审计导出或失败率。",
+      "related_sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/antigravity-teamwork-multi-agent/",
+          "type": "official_shortpost"
+        },
+        {
+          "url": "https://antigravity.google/docs/teamwork",
+          "type": "official_docs"
         }
       ]
     },

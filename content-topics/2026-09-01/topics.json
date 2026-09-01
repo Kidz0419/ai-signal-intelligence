@@ -150,6 +150,76 @@
       }
     },
     {
+      "id": "2026-09-01-google-teamwork-runtime-contract",
+      "status": "candidate",
+      "timeliness": "today",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-01-google-antigravity-teamwork-runtime-contract"
+      ],
+      "working_title_cn": "Google 这次真正公开的，不是多 agent 又赢了几个题，而是它终于把多 agent 怎么被管起来讲清楚了",
+      "core_tension_cn": "大多数多 agent 产品只给角色图，很少讲谁来选模式、谁做反向验证、谁来接最后那道验收。Google 这次把这些运行时边界写进了公开材料。",
+      "why_now_cn": "Antigravity 的 Teamwork 现在以 `/teamwork-preview` 对付费计划开放，并公开了 pattern 自动选路、分层角色、四道验证门和两阶段执行流程。",
+      "target_audience_cn": [
+        "Agent 平台团队",
+        "开发者工具产品经理",
+        "多 agent runtime 工程师"
+      ],
+      "evidence_boundary_cn": "依据 Google 官方 Blog、Antigravity 长文与 docs；已确认 preview、模式与验证角色，数学和工程成绩仍主要是 Google 自报。",
+      "source_urls": [
+        "https://antigravity.google/blog/teamwork-when-ai-becomes-a-research-partner"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Google 这次最值钱的，不是多 agent 又赢了，而是它终于把多 agent 怎么被管起来讲清楚了",
+          "hook": "模式谁来选、失败谁来挑刺、最后谁来验收，这些才是多 agent 能不能进真实团队环境的分水岭。",
+          "format": "7页图文卡",
+          "outline": [
+            "Google 这次到底公开了什么",
+            "为什么 pattern selector 比角色图更重要",
+            "四道验证门各自解决什么问题",
+            "两阶段流程为什么能减少反复打断",
+            "工作目录隔离和交接链路意味着什么",
+            "哪些结果今天仍是官方自报",
+            "做多 agent 平台该抄哪张清单"
+          ],
+          "visual_direction": "运行时控制面结构图 + 验证门流程图",
+          "cta": "如果你在做多 agent，最先补哪一道验证门？"
+        },
+        "twitter": {
+          "title": "Google's Teamwork update is interesting for the control plane, not the brag slide",
+          "hook": "Pattern selection, adversarial verification, phase handoffs, and workspace isolation are the real story here.",
+          "format": "6帖 Thread",
+          "outline": [
+            "What Google actually made explicit",
+            "Why pattern-based orchestration matters",
+            "Why verification gates matter",
+            "Why two-phase execution matters",
+            "What remains unknown",
+            "What builders should copy next"
+          ],
+          "visual_direction": "control-plane map",
+          "cta": "Which missing admin or audit control would still block production use?"
+        },
+        "wechat": {
+          "title": "Google 把多 agent 从 demo 讲到了运行时合同，这件事为什么比又赢了几个 benchmark 更重要",
+          "hook": "真正值得拆的，不是多 agent 又能解几道题，而是 Google 终于把模式选择、验证门、工作区隔离和最终验收节点写成了公开合同。",
+          "format": "1800—2200字深度文章",
+          "outline": [
+            "Google 这次到底确认了什么",
+            "为什么多 agent 不能只看角色图",
+            "pattern selector 和验证门意味着什么",
+            "两阶段流程和工作区隔离如何影响真实交付",
+            "今天还不能确认的成本、并发和审计边界",
+            "给团队的一份多 agent 控制面检查表"
+          ],
+          "visual_direction": "控制面结构图、流程表、检查清单",
+          "cta": "文末附一张可直接拿去做多 agent 选型的检查表"
+        }
+      }
+    },
+    {
       "id": "2026-09-01-chatgpt-ads-distribution-flywheel",
       "status": "candidate",
       "timeliness": "this_week",

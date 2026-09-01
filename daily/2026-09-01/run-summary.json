@@ -1,49 +1,49 @@
 {
   "run_type": "daily_four_lane_incremental_manual_review",
-  "run_at": "2026-09-01T13:22:11+08:00",
+  "run_at": "2026-09-01T16:15:37+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
     "start": "2026-09-01T00:00:00+08:00",
-    "end": "2026-09-01T13:22:11+08:00",
-    "incremental_since": null
+    "end": "2026-09-01T16:15:37+08:00",
+    "incremental_since": "2026-09-01T16:00:04+08:00"
   },
   "registered_sources": 111,
-  "raw_candidates": 121,
-  "unique_candidates": 110,
-  "candidate_queue_count": 177,
-  "new_in_run_count": 80,
-  "reviewed_new_candidates": 80,
-  "editorial_shortlist": 3,
-  "previous_count": 0,
-  "new_count": 3,
+  "raw_candidates": 157,
+  "unique_candidates": 117,
+  "candidate_queue_count": 255,
+  "new_in_run_count": 78,
+  "reviewed_new_candidates": 78,
+  "editorial_shortlist": 1,
+  "previous_count": 3,
+  "new_count": 1,
   "updated_count": 0,
   "excluded_count": 77,
-  "unreviewed_candidate_count": 97,
-  "total_count": 3,
-  "selected": 3,
+  "unreviewed_candidate_count": 177,
+  "total_count": 4,
+  "selected": 4,
   "lane_counts": {
     "model": 0,
-    "agent_architecture": 2,
+    "agent_architecture": 3,
     "ai_product": 1,
     "ai_macro": 0
   },
   "priority_counts": {
     "P0": 0,
-    "P1": 2,
+    "P1": 3,
     "P2": 1,
     "P3": 0
   },
   "decision_counts": {
-    "include": 3,
+    "include": 4,
     "watchlist": 0
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
   "source_status_counts": {
-    "selected": 3,
+    "selected": 1,
     "candidate_only": 0,
     "checked_no_match": 77,
     "access_blocked": 0,
@@ -52,11 +52,11 @@
     "not_checked": 0
   },
   "review_notes": [
-    "Reviewed all 80 new candidates without reopening the older 97-item queue. The 71 OpenAI sitemap hits were first mapped to OpenAI News RSS publication dates before any editorial decision.",
-    "Promoted Anthropic's 2026-08-31 post after direct body fetch confirmed a pre-tool-call classifier, human escalation, paused high-risk RL environments, and environment recertification.",
-    "Promoted Codex 0.152.0 after the GitHub Release API confirmed concrete runtime controls. Same-day prereleases remained version stubs, so they stayed related sources rather than standalone cards.",
-    "Promoted OpenAI's ChatGPT Ads expansion as a catch-up product signal after the official RSS confirmed a 2026-08-31 publication date and the public text mirror exposed the body-level claims about regional self-serve purchase and free-tier monetization.",
-    "AWS Database and Networking posts were out of scope; the AWS AgentCore + Amazon Quick article was a deployment tutorial on top of existing services and did not clear the formal signal threshold."
+    "Reviewed only the 78 true new candidates from the latest baseline cycle and did not reopen the older queue items.",
+    "Mapped all 73 OpenAI sitemap hits through the official OpenAI News RSS before judging relevance; every matched item except the already-selected ChatGPT Ads catch-up resolved to an older publication date outside the 2026-09-01 Asia/Shanghai day window.",
+    "Promoted Google Antigravity Teamwork after the Google Blog short post, the Antigravity announcement, and the Teamwork docs jointly confirmed /teamwork-preview availability, pattern-based orchestration, independent verification gates, and the two-phase execution flow.",
+    "Left Codex 0.153.0-alpha.2 out because the prerelease body remained a version stub with no new body-level runtime detail beyond the already-selected 0.152.0 release.",
+    "Left the AWS Public Sector Army R&D post and the two Simon Willison atom items out of formal selected: the AWS post is a single custom deployment case rather than a newly reusable control plane, and the Simon items did not add enough new AI product or architecture detail for the formal feed."
   ],
   "collection_contract": {
     "raw_candidates_in_rolling_window_is_not_increment": true,
