@@ -2,11 +2,220 @@
   "schema_version": 1,
   "report_date": "2026-09-01",
   "timezone": "Asia/Shanghai",
-  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。",
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。自动流程只生成 candidate，不自动发布。",
   "scope_label_cn": "当日增量 · 2026-09-01",
   "source_scope": {
     "type": "daily",
     "date": "2026-09-01"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-01-anthropic-tool-call-guardrail",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-08-31-anthropic-real-time-eval-blocking-and-rl-pause"
+      ],
+      "working_title_cn": "Anthropic 把高风险 agent 控制点前移了：先拦 tool call，再让人接管",
+      "core_tension_cn": "很多团队还在事后翻日志，Anthropic 已经把异常检测前移到 tool call 之前，并把高风险 RL 环境停下来重做复认证。",
+      "why_now_cn": "官方第一次把实时分类器、人工告警、环境暂停和重新认证写成一整套明确流程。",
+      "target_audience_cn": [
+        "Agent 平台团队",
+        "AI 安全与治理负责人",
+        "开发者工具产品经理"
+      ],
+      "evidence_boundary_cn": "依据 Anthropic 8 月 31 日博文；已确认有实时拦截、暂停与复认证，但误报率、覆盖率和实现细节未公开。",
+      "source_urls": [
+        "https://www.anthropic.com/news/improving-alignment-security-efforts"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Anthropic 这次最值钱的，不是发了篇安全文，而是把 agent 真正的刹车点讲出来了",
+          "hook": "先判断、先拦住、再叫人，这比事后看日志更像真正能上线的 agent 控制面。",
+          "format": "7页图文卡",
+          "outline": [
+            "Anthropic 到底公布了什么控制点",
+            "为什么 tool call 前拦截比事后复盘重要",
+            "高风险 RL 环境为什么要暂停重审",
+            "人工告警和接管意味着什么",
+            "哪些数据今天还没公开",
+            "这套机制能不能迁移到通用 agent",
+            "给团队的治理检查表"
+          ],
+          "visual_direction": "运行时控制链路图 + 风险分级表",
+          "cta": "如果是你来做，哪一个控制点会先补？"
+        },
+        "twitter": {
+          "title": "Anthropic just moved the key control point forward: block before the tool call, not after the log review",
+          "hook": "The interesting part is not the safety tone. It's the concrete runtime pattern: pre-tool-call classifier, human escalation, and RL environment recertification.",
+          "format": "6帖 Thread",
+          "outline": [
+            "What Anthropic explicitly deployed",
+            "Why pre-tool-call blocking matters",
+            "Why RL environment recertification matters",
+            "What this implies for agent control planes",
+            "What remains unknown",
+            "What teams should test next"
+          ],
+          "visual_direction": "single runtime control diagram",
+          "cta": "Which missing metric would you need before trusting this in production?"
+        },
+        "wechat": {
+          "title": "Anthropic 把 agent 的真正刹车点往前挪了一步，这对运行时治理意味着什么",
+          "hook": "这次值得写的不是‘又一篇安全表态’，而是 Anthropic 终于把实时阻断、人工接管和环境复认证做成了可复述的控制面。",
+          "format": "1800—2200字深度文章",
+          "outline": [
+            "Anthropic 这篇文章到底确认了什么",
+            "为什么 tool call 前拦截是关键分水岭",
+            "高风险 RL 环境暂停与复认证说明了什么",
+            "这套机制对通用 agent 平台的启发",
+            "今天还不能确认的误报率与覆盖率",
+            "给产品与架构团队的治理清单"
+          ],
+          "visual_direction": "控制面结构图、流程说明表、检查清单",
+          "cta": "文末附一份可直接拿去做 agent 治理盘点的清单"
+        }
+      }
+    },
+    {
+      "id": "2026-09-01-codex-runtime-control-plane",
+      "status": "candidate",
+      "timeliness": "today",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-01-openai-codex-01520-runtime-controls"
+      ],
+      "working_title_cn": "真正能拉开 coding agent 差距的，不是模型名，而是 MCP 工具上限、超长任务和审批状态能不能活过恢复",
+      "core_tension_cn": "很多人还在拿 coding agent 比模型和 UI，但真正决定能不能进团队环境的，是工具输出上限、长任务 deadline、认证续期和审批状态保留。",
+      "why_now_cn": "Codex 0.152.0 正式把 per-tool output_token_limit、超过 1 小时的 shell timeout 和 approval persistence 写进了 release notes。",
+      "target_audience_cn": [
+        "Coding agent 产品经理",
+        "开发者工具团队",
+        "Agent runtime 工程师"
+      ],
+      "evidence_boundary_cn": "依据 Codex 0.152.0 官方 GitHub Release API；已确认功能点，但默认策略、审计导出和管理员控制仍待后续文档补齐。",
+      "source_urls": [
+        "https://github.com/openai/codex/releases/tag/rust-v0.152.0"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "别再只比 coding agent 会不会写代码了，真正决定能不能上线的是这 4 个控制点",
+          "hook": "MCP 工具输出、长任务超时、认证续期、审批状态保留，这些看起来不性感，但决定它能不能进团队环境。",
+          "format": "7页图文卡",
+          "outline": [
+            "Codex 0.152.0 到底加了什么",
+            "为什么 output token limit 很关键",
+            "为什么 >1 小时 timeout 是长任务分水岭",
+            "credential refresh 为什么是实战问题",
+            "approval persistence 为什么比 UI 更重要",
+            "这套控制面对团队意味着什么",
+            "做竞品时要怎么验"
+          ],
+          "visual_direction": "coding agent 控制面地图",
+          "cta": "如果你在做 coding agent，你最先补哪一个控制点？"
+        },
+        "twitter": {
+          "title": "The real coding-agent gap is not model branding. It's control-plane depth.",
+          "hook": "Codex 0.152.0 is interesting because it formalizes per-tool output caps, >1h shell deadlines, credential refresh visibility, and approval-state persistence.",
+          "format": "6帖 Thread",
+          "outline": [
+            "What changed in 0.152.0",
+            "Why output caps matter",
+            "Why long-run deadlines matter",
+            "Why approval persistence matters",
+            "Why this is more than UI polish",
+            "What teams should benchmark next"
+          ],
+          "visual_direction": "control-plane checklist",
+          "cta": "What missing admin control would still block deployment?"
+        },
+        "wechat": {
+          "title": "Coding agent 真正的分水岭，不在模型宣传页，而在运行时控制面",
+          "hook": "这版 Codex 值得写的地方，不是又一个版本号，而是它把工具上限、长任务、认证续期和审批状态保留这些真实痛点明明白白写出来了。",
+          "format": "1800—2200字深度文章",
+          "outline": [
+            "Codex 0.152.0 到底公布了哪些控制项",
+            "为什么 per-tool output token limit 很重要",
+            "为什么长任务 timeout 是企业场景门槛",
+            "approval persistence 对审计和恢复意味着什么",
+            "这些点如何变成 control plane 最小集",
+            "给团队做 coding agent 选型的一份清单"
+          ],
+          "visual_direction": "控制项表格 + 选型清单",
+          "cta": "文末附一张可直接拿去做 coding agent 选型的对照表"
+        }
+      }
+    },
+    {
+      "id": "2026-09-01-chatgpt-ads-distribution-flywheel",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "B",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-08-31-openai-chatgpt-ads-self-serve-expansion"
+      ],
+      "working_title_cn": "ChatGPT 广告开始像一个全球自助分发系统了，这会怎么改写 AI 产品的免费层",
+      "core_tension_cn": "一旦广告主能自助购买、免费层又靠广告供养，对话入口就不只是产品界面，而是新的流量与商业化系统。",
+      "why_now_cn": "OpenAI 把 ChatGPT Ads 的自助购买扩到印度、欧洲、中东和北非，并把广告支持 free tier 明确写成商业路径。",
+      "target_audience_cn": [
+        "AI 产品负责人",
+        "增长与商业化团队",
+        "搜索与对话产品从业者"
+      ],
+      "evidence_boundary_cn": "首发日期依据 OpenAI 官方 RSS，正文主要细节通过公开文本镜像读取；收入 run rate、广告主数量和周活规模仍属 OpenAI 自报。",
+      "source_urls": [
+        "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "ChatGPT 广告最值得怕的，不是多一个广告位，而是它开始像一个自助分发系统",
+          "hook": "当广告交易入口、聊天入口和免费用户规模绑在一起后，AI 产品的获客和收费逻辑会被一起改写。",
+          "format": "6页图文卡",
+          "outline": [
+            "OpenAI 这次具体放开了什么",
+            "为什么 Ads Manager 自助购买是关键",
+            "广告支持 free tier 会怎么改用户入口",
+            "这对 AI 产品分发意味着什么",
+            "哪些数字今天仍是官方自报",
+            "做产品的人下一步该盯什么"
+          ],
+          "visual_direction": "分发飞轮图 + 商业模式对照",
+          "cta": "你觉得 AI 产品的免费层最后会不会都被广告重写？"
+        },
+        "twitter": {
+          "title": "ChatGPT Ads is starting to look like a global self-serve distribution system",
+          "hook": "The interesting shift is not just more ads. It's ads manager access across more regions plus a clearer statement that ads help fund the free tier.",
+          "format": "5帖 Thread",
+          "outline": [
+            "What OpenAI actually expanded",
+            "Why self-serve matters",
+            "Why free-tier monetization matters",
+            "What this means for AI product distribution",
+            "What remains unverified"
+          ],
+          "visual_direction": "distribution flywheel sketch",
+          "cta": "What changes first when conversation interfaces become ad-funded at scale?"
+        },
+        "wechat": {
+          "title": "当 ChatGPT 广告开始走向全球自助购买，AI 产品的免费层会被怎么改写",
+          "hook": "值得讨论的不是‘OpenAI 又做广告了’，而是聊天入口、广告交易入口和免费用户规模正在被收进同一个分发飞轮。",
+          "format": "1800—2200字深度文章",
+          "outline": [
+            "这次 ChatGPT Ads 扩张到底确认了什么",
+            "为什么自助购买比地区扩张更重要",
+            "广告支持 free tier 会怎样改变用户入口",
+            "这对其他 AI 产品和搜索产品意味着什么",
+            "哪些数字仍只是 OpenAI 自报",
+            "后续应该跟哪些后台与政策细节"
+          ],
+          "visual_direction": "分发结构图、商业模式表、竞争判断框",
+          "cta": "文末附一个观察对话式广告产品的跟踪指标表"
+        }
+      }
+    }
+  ]
 }

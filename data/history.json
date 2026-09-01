@@ -4,12 +4,16 @@
   "days": [
     {
       "date": "2026-09-01",
-      "signal_ids": [],
+      "signal_ids": [
+        "2026-08-31-anthropic-real-time-eval-blocking-and-rl-pause",
+        "2026-09-01-openai-codex-01520-runtime-controls",
+        "2026-08-31-openai-chatgpt-ads-self-serve-expansion"
+      ],
       "counts": {
-        "total": 0,
+        "total": 3,
         "P0": 0,
-        "P1": 0,
-        "P2": 0
+        "P1": 2,
+        "P2": 1
       }
     },
     {
@@ -259,6 +263,225 @@
     }
   ],
   "signals": [
+    {
+      "id": "2026-08-31-anthropic-real-time-eval-blocking-and-rl-pause",
+      "demo": false,
+      "topic_lane": "agent_architecture",
+      "title": "Anthropic 公布评测防线升级：实时拦截越界或联网、暂停高风险 RL 环境并重做复认证",
+      "summary": "Anthropic 在 8 月 31 日博文中披露，已上线实时分类器，在模型试图探测或逃逸测试环境、或意外获得互联网访问时直接阻断工具调用并提醒人工；同时高风险 RL 环境曾暂停数周，恢复前要求环境按统一规范重建并重新认证。",
+      "decision": "include",
+      "confidence": 95,
+      "relevance_level": "P1",
+      "signal_type": "core",
+      "content_type": "technical_update",
+      "information_type": "agent_governance",
+      "evidence_level": "confirmed",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "published_at": "2026-08-31",
+      "primary_tags": [
+        "Anthropic",
+        "Runtime Monitoring",
+        "RL Environment Governance"
+      ],
+      "secondary_tags": [
+        "Sandbox Escape",
+        "Human Escalation",
+        "Environment Recertification"
+      ],
+      "why_it_matters_cn": "这不是泛安全表态，而是把 agent 评测与训练运行时的实时阻断、人类接管和环境复认证公开成了明确控制面。",
+      "personal_relevance_cn": "做 agent 系统时最值得对照的是：哪些动作能在 tool call 前被拦住，哪些环境必须暂停复审，以及谁在收到告警后接管。",
+      "product_opportunity_cn": "可以把 classifier-before-tool-call、环境分级、人工复核和训练环境认证拆成自己的运行时治理清单。",
+      "competitive_risk_cn": "Anthropic 确认了已部署措施，但没有公开误报率、拦截覆盖率、跨环境复用成本或第三方评测结果。",
+      "recommended_action": "investigate",
+      "questions_to_validate": [
+        "实时分类器对哪些动作做 pre-tool-call 阻断，误报和漏报如何衡量？",
+        "高风险 RL 环境的分级标准、暂停条件和重新认证流程会不会进一步公开？",
+        "外部评测伙伴的 best practices 会不会变成更正式的 SDK、策略模板或审计要求？"
+      ],
+      "follow_up_triggers": [
+        "Anthropic 发布更细的监控架构、评测接口或告警与审计材料",
+        "高风险 RL 环境恢复范围或分类器能力发生变化",
+        "第三方评测方披露按这些 best practices 改造后的复盘"
+      ],
+      "scores": {
+        "topic_relevance": 5,
+        "novelty": 4,
+        "technical_or_product_significance": 5,
+        "strategic_value": 4,
+        "source_quality": 5,
+        "model_value": 3,
+        "agent_architecture_value": 5,
+        "ai_product_value": 2,
+        "macro_value": 1,
+        "actionability": 4
+      },
+      "report_date": "2026-09-01",
+      "event_date": "2026-08-31",
+      "canonical_url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "first_seen_date": "2026-09-01",
+      "last_seen_date": "2026-09-01",
+      "run_dates": [
+        "2026-09-01"
+      ],
+      "evidence_boundary": "官方正文确认实时分类器、暂停与复认证，但没有公开模型成功逃逸率、误报率、分类器实现细节或长期运行数据。",
+      "related_sources": [
+        {
+          "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+          "type": "previous_incident_context"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-01-openai-codex-01520-runtime-controls",
+      "demo": false,
+      "topic_lane": "agent_architecture",
+      "title": "OpenAI Codex 0.152.0 把 MCP 工具 token 上限、超长 shell 超时和审批状态保留抬到正式版",
+      "summary": "OpenAI Codex 0.152.0 正式版 release notes 新增每个 MCP 工具的 output_token_limit、thread/shellCommand 超时可超过 1 小时、credential refresh 进度提示，以及 automatic approval review 在历史压缩后继续保留用户指令、答案与授权；同版还让 MCP server 名称支持包式命名，并拒绝不受信任 backend URL 重定向。",
+      "decision": "include",
+      "confidence": 93,
+      "relevance_level": "P1",
+      "signal_type": "core",
+      "content_type": "technical_update",
+      "information_type": "agent_runtime",
+      "evidence_level": "confirmed",
+      "source": "OpenAI",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0",
+      "published_at": "2026-09-01T01:58:32Z",
+      "primary_tags": [
+        "Codex",
+        "MCP",
+        "Long-running Sessions"
+      ],
+      "secondary_tags": [
+        "output_token_limit",
+        "Approval Persistence",
+        "Backend URL Hardening"
+      ],
+      "why_it_matters_cn": "这版值钱的不是编辑器小修小补，而是把长任务、MCP 工具输出、认证续期和审批上下文这些真实运行时问题公开成了可配置控制项。",
+      "personal_relevance_cn": "如果要比较 coding agent 运行时，最该看的是 per-tool 输出上限、超长命令 deadline、授权续期和审批记录在会话恢复后还能不能保持。",
+      "product_opportunity_cn": "可以把 MCP 工具级 token cap、长任务 deadline 和审批上下文保留做成自己的 agent control plane 最小集。",
+      "competitive_risk_cn": "官方 release notes 给出了控制项，但没有公开这些设置在真实团队中的默认值、成功率、审计导出或权限模型。",
+      "recommended_action": "investigate",
+      "questions_to_validate": [
+        "output_token_limit 对工具调用截断后的失败恢复和重试策略是什么？",
+        "超过 1 小时的 thread 或 shellCommand 与暂停、恢复、成本控制之间如何配合？",
+        "automatic approval review 保留下来的授权信息，后续会不会进入更正式的审计或管理员配置面？"
+      ],
+      "follow_up_triggers": [
+        "后续 release 公布更细的 MCP 权限、日志或管理员控制",
+        "出现对长任务 timeout、approval persistence 或 backend hardening 的真实使用复盘",
+        "Codex 帮助中心或文档补充这些控制项的默认策略"
+      ],
+      "scores": {
+        "topic_relevance": 5,
+        "novelty": 4,
+        "technical_or_product_significance": 4,
+        "strategic_value": 4,
+        "source_quality": 5,
+        "model_value": 1,
+        "agent_architecture_value": 5,
+        "ai_product_value": 4,
+        "macro_value": 1,
+        "actionability": 5
+      },
+      "report_date": "2026-09-01",
+      "event_date": "2026-09-01",
+      "canonical_url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0",
+      "first_seen_date": "2026-09-01",
+      "last_seen_date": "2026-09-01",
+      "run_dates": [
+        "2026-09-01"
+      ],
+      "evidence_boundary": "正式 Release 清单确认了功能点，但同日 prerelease 后续版本说明仍极薄；尚无官方帮助中心或真实 UI 解释这些控制项在团队环境中的默认策略和审计出口。",
+      "related_sources": [
+        {
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.7",
+          "type": "same_day_followup_release"
+        },
+        {
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.7.2",
+          "type": "same_day_followup_release"
+        },
+        {
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.1",
+          "type": "same_day_followup_release"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-31-openai-chatgpt-ads-self-serve-expansion",
+      "demo": false,
+      "topic_lane": "ai_product",
+      "title": "OpenAI 把 ChatGPT Ads 推到更多自助区域，并把广告写成 free tier 扩张的核心收入柱",
+      "summary": "OpenAI 官方 RSS 显示 A milestone in expanding access to AI 首发于 8 月 31 日；正文称 ChatGPT Ads 已达到 10 亿美元 annualized revenue run rate，并从当日开始允许广告主通过 Ads Manager 在印度、欧洲、中东和北非直接购买广告，把广告支持 free tier 明确写成长期商业模式的一部分。",
+      "decision": "include",
+      "confidence": 90,
+      "relevance_level": "P2",
+      "signal_type": "strategic_radar",
+      "content_type": "official_release",
+      "information_type": "company_strategy",
+      "evidence_level": "confirmed",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+      "published_at": "2026-08-31T04:00:00Z",
+      "primary_tags": [
+        "ChatGPT Ads",
+        "Ads Manager",
+        "Free Tier Monetization"
+      ],
+      "secondary_tags": [
+        "India",
+        "Europe",
+        "MENA"
+      ],
+      "why_it_matters_cn": "这不只是广告覆盖扩大。OpenAI 正在把聊天入口、广告交易入口和免费用户规模绑成一套分发飞轮，对竞品的流量和商业模式都有压力。",
+      "personal_relevance_cn": "如果在看 AI 产品分发，最该盯的是广告是否变成默认获客层、哪些地区开始走自助购买，以及 free tier 的体验会被广告怎样重塑。",
+      "product_opportunity_cn": "可对照研究搜索或对话产品里广告插入位置、用户控制开关、商家投放入口和归因口径怎么设计。",
+      "competitive_risk_cn": "收入规模和广告主数量都来自 OpenAI 官方自报，页面没有给出独立审计、广告负反馈率或不同国家 rollout 的更细限制。",
+      "recommended_action": "monitor",
+      "questions_to_validate": [
+        "Ads Manager 的 targeting、brand safety 和 conversion attribution 会不会进一步公开？",
+        "广告支持 free tier 后，用户设置、隐私开关和广告频率边界如何定义？",
+        "更多地区 rollout 后，对开发者 API、企业产品和流量分发策略会不会一起调整？"
+      ],
+      "follow_up_triggers": [
+        "OpenAI 发布 Ads Manager 文档、brand safety 规则或投放后台截图",
+        "欧洲、印度或 MENA 广告主的实际使用体验与转化数据开始外流",
+        "竞争对手对对话式广告或免费层商业模式作出回应"
+      ],
+      "scores": {
+        "topic_relevance": 4,
+        "novelty": 4,
+        "technical_or_product_significance": 2,
+        "strategic_value": 5,
+        "source_quality": 4,
+        "model_value": 1,
+        "agent_architecture_value": 1,
+        "ai_product_value": 4,
+        "macro_value": 4,
+        "actionability": 3
+      },
+      "report_date": "2026-09-01",
+      "event_date": "2026-08-31",
+      "canonical_url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+      "first_seen_date": "2026-09-01",
+      "last_seen_date": "2026-09-01",
+      "run_dates": [
+        "2026-09-01"
+      ],
+      "evidence_boundary": "OpenAI News RSS 可确认首发日期，正文可通过公开文本镜像读取主要表述；广告收入 run rate、广告主数量和 10 亿周活均为官方自报，尚无独立审计或投放后台公开说明。",
+      "related_sources": [
+        {
+          "url": "https://openai.com/index/testing-ads-in-chatgpt/",
+          "type": "previous_release_context"
+        },
+        {
+          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "type": "previous_release_context"
+        }
+      ]
+    },
     {
       "id": "2026-08-31-simon-willison-chatgpt-work-boundaries",
       "demo": false,

@@ -1,5 +1,30 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "title": "Improving our alignment and security practices",
+      "accessed": "2026-09-01"
+    },
+    {
+      "id": 2,
+      "url": "https://api.github.com/repos/openai/codex/releases/tags/rust-v0.152.0",
+      "title": "openai/codex release rust-v0.152.0",
+      "accessed": "2026-09-01"
+    },
+    {
+      "id": 3,
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News RSS",
+      "accessed": "2026-09-01"
+    },
+    {
+      "id": 4,
+      "url": "https://r.jina.ai/http://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+      "title": "A milestone in expanding access to AI",
+      "accessed": "2026-09-01"
+    }
+  ]
 }
