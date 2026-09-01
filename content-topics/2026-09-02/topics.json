@@ -8,5 +8,420 @@
     "type": "daily",
     "date": "2026-09-02"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-02-mcp-stateless-migration-checklist",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-01-aws-mcp-stateless-migration-contract"
+      ],
+      "working_title_cn": "MCP 无状态之后，哪些基础设施真的可以删，哪些现在还不能动",
+      "core_tension_cn": "协议变无状态不等于应用天然无状态，删基础设施太早会把旧客户端直接打断。",
+      "why_now_cn": "AWS 把 sticky session、session store、MRTR、trace 和 legacy lane 的迁移顺序讲成了可执行清单。",
+      "target_audience_cn": [
+        "Agent 平台团队",
+        "基础设施工程师",
+        "MCP 工具开发者"
+      ],
+      "evidence_boundary_cn": "这是一份官方迁移指南，不是所有现网 MCP 服务器已经安全迁完的证明。",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/architecture/mcp-went-stateless-is-your-aws-mcp-server-deployment-well-architected"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "MCP 无状态之后，哪些基础设施真的可以删，哪些现在还不能动",
+          "hook": "别只记住‘MCP 变无状态了’，更关键的是你还剩多少旧客户端，以及什么时候才能真的拆掉 session 基建。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—控制面流程图，少量术语，结论先行",
+          "cta": "你会先验收哪一个边界？"
+        },
+        "twitter": {
+          "title": "MCP 无状态之后，哪些基础设施真的可以删，哪些现在还不能动",
+          "hook": "别只记住‘MCP 变无状态了’，更关键的是你还剩多少旧客户端，以及什么时候才能真的拆掉 session 基建。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one architecture or workflow diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "MCP 无状态之后，哪些基础设施真的可以删，哪些现在还不能动",
+          "hook": "别只记住‘MCP 变无状态了’，更关键的是你还剩多少旧客户端，以及什么时候才能真的拆掉 session 基建。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
+      "id": "2026-09-02-dms-agent-human-review-boundary",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-09-01-aws-dms-agent-review-boundary"
+      ],
+      "working_title_cn": "AI 迁移工具最容易偷换的一件事：语法过关，不等于迁移已经正确",
+      "core_tension_cn": "团队容易把 agent 自动跑完流程误读成代码语义已经没问题。",
+      "why_now_cn": "AWS DMS 这篇把 deterministic rule、AI-assisted conversion、assessment report 和 CRITICAL action item 的人审边界都写清楚了。",
+      "target_audience_cn": [
+        "数据库迁移负责人",
+        "企业架构师",
+        "AI 产品经理"
+      ],
+      "evidence_boundary_cn": "官方正文确认工作流和 review gate，但没有把 AI 生成代码描述成语义等价保证。",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/database/sql-server-to-aurora-postgresql-conversion-with-ai-agents-for-aws-dms"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI 迁移工具最容易偷换的一件事：语法过关，不等于迁移已经正确",
+          "hook": "真正该设计的不是‘一键迁移’，而是 assessment export、人审队列、回归测试和 apply gate。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—控制面流程图，少量术语，结论先行",
+          "cta": "你会先验收哪一个边界？"
+        },
+        "twitter": {
+          "title": "AI 迁移工具最容易偷换的一件事：语法过关，不等于迁移已经正确",
+          "hook": "真正该设计的不是‘一键迁移’，而是 assessment export、人审队列、回归测试和 apply gate。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one architecture or workflow diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "AI 迁移工具最容易偷换的一件事：语法过关，不等于迁移已经正确",
+          "hook": "真正该设计的不是‘一键迁移’，而是 assessment export、人审队列、回归测试和 apply gate。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
+      "id": "2026-09-02-agent-payments-hard-gates",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-01-aws-agentcore-payments-trust-gate"
+      ],
+      "working_title_cn": "当 agent 真开始花钱，最重要的不是钱包，而是那道不能被模型绕过的硬门",
+      "core_tension_cn": "给 agent 钱包很容易，真正难的是额度、密钥、风险和审计谁来控制。",
+      "why_now_cn": "t54 案例把 trust score、session cap、credential isolation、audit trail 和 fail-closed gate 全部写到了正文里。",
+      "target_audience_cn": [
+        "Agent 产品负责人",
+        "风控团队",
+        "支付与平台工程师"
+      ],
+      "evidence_boundary_cn": "规模和效果数字主要来自 AWS / t54 自报，不是独立审计。",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/machine-learning/how-t54-built-a-trust-layer-with-amazon-bedrock-agentcore-payments"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "当 agent 真开始花钱，最重要的不是钱包，而是那道不能被模型绕过",
+          "hook": "别把 agent 支付理解成 API 调用加钱包地址，关键是信任判断必须先发生，且模型不能覆写。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—控制面流程图，少量术语，结论先行",
+          "cta": "你会先验收哪一个边界？"
+        },
+        "twitter": {
+          "title": "当 agent 真开始花钱，最重要的不是钱包，而是那道不能被模型绕过的硬门",
+          "hook": "别把 agent 支付理解成 API 调用加钱包地址，关键是信任判断必须先发生，且模型不能覆写。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one architecture or workflow diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "当 agent 真开始花钱，最重要的不是钱包，而是那道不能被模型绕过的硬门",
+          "hook": "别把 agent 支付理解成 API 调用加钱包地址，关键是信任判断必须先发生，且模型不能覆写。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
+      "id": "2026-09-02-webgpu-kernel-contracts",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "model",
+      "source_signal_ids": [
+        "2026-09-01-huggingface-webgpu-kernel-contracts"
+      ],
+      "working_title_cn": "浏览器本地 AI 的关键变化，可能不在模型，而在底层 kernel contract 开始独立出来",
+      "core_tension_cn": "大家都在聊 local AI 模型和量化，真正难复用的却常常是底层算子实现和跨设备证据。",
+      "why_now_cn": "Hugging Face 把 207 个 WebGPU kernels、manifest、correctness cases 和 Fleet 一起公开了。",
+      "target_audience_cn": [
+        "WebAI 开发者",
+        "前端工程师",
+        "模型部署工程师"
+      ],
+      "evidence_boundary_cn": "性能对比主要是官方 op-level 基准，不能直接当成完整模型端到端时延承诺。",
+      "source_urls": [
+        "https://huggingface.co/blog/webgpu-kernels"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "浏览器本地 AI 的关键变化，可能不在模型，而在底层 kernel ",
+          "hook": "这次真正新鲜的不是‘浏览器也能跑 AI’，而是底层 kernel 开始拥有可版本化、可 benchmark、可验证的公共接口。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—控制面流程图，少量术语，结论先行",
+          "cta": "你会先验收哪一个边界？"
+        },
+        "twitter": {
+          "title": "浏览器本地 AI 的关键变化，可能不在模型，而在底层 kernel contract 开始独立出来",
+          "hook": "这次真正新鲜的不是‘浏览器也能跑 AI’，而是底层 kernel 开始拥有可版本化、可 benchmark、可验证的公共接口。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one architecture or workflow diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "浏览器本地 AI 的关键变化，可能不在模型，而在底层 kernel contract 开始独立出来",
+          "hook": "这次真正新鲜的不是‘浏览器也能跑 AI’，而是底层 kernel 开始拥有可版本化、可 benchmark、可验证的公共接口。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
+      "id": "2026-09-02-copilot-billing-owner-policy",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-09-01-github-copilot-billing-org-model-access"
+      ],
+      "working_title_cn": "多组织 AI 产品迟早会遇到的问题：模型权限到底听谁的，用户还是付费组织",
+      "core_tension_cn": "一个用户挂在多个组织上时，feature entitlement、结算归属和政策来源常常会互相打架。",
+      "why_now_cn": "GitHub 直接把 Copilot 的模型访问规则改成只认付费组织。",
+      "target_audience_cn": [
+        "企业 AI 产品经理",
+        "IT 管理员",
+        "平台治理团队"
+      ],
+      "evidence_boundary_cn": "改动范围很具体，只影响多组织 seat 场景，不代表 Copilot 自动执行权限扩大。",
+      "source_urls": [
+        "https://github.blog/changelog/2026-08-31-copilot-model-access-update-for-github-team-plans"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "多组织 AI 产品迟早会遇到的问题：模型权限到底听谁的，用户还是付费",
+          "hook": "模型下拉框背后，真正难的是 policy source of truth 和 billing owner 到底怎么绑定。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—控制面流程图，少量术语，结论先行",
+          "cta": "你会先验收哪一个边界？"
+        },
+        "twitter": {
+          "title": "多组织 AI 产品迟早会遇到的问题：模型权限到底听谁的，用户还是付费组织",
+          "hook": "模型下拉框背后，真正难的是 policy source of truth 和 billing owner 到底怎么绑定。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one architecture or workflow diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "多组织 AI 产品迟早会遇到的问题：模型权限到底听谁的，用户还是付费组织",
+          "hook": "模型下拉框背后，真正难的是 policy source of truth 和 billing owner 到底怎么绑定。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
+      "id": "2026-09-02-public-sector-ai-shared-foundation",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_macro",
+      "source_signal_ids": [
+        "2026-08-31-openai-polimill-japan-public-ai-infrastructure"
+      ],
+      "working_title_cn": "日本公共部门 AI 的下一步，也许不是更多聊天机器人，而是共享知识底座和统一工作台",
+      "core_tension_cn": "公共部门 AI 若只停在单点问答，很难形成跨机构的长期产品壁垒。",
+      "why_now_cn": "Polimill 案例给出了 1,050 个自治体、55 万名公职人员的采用规模，并把跨自治体知识底座写成了核心结构。",
+      "target_audience_cn": [
+        "行业研究者",
+        "政务产品团队",
+        "企业战略负责人"
+      ],
+      "evidence_boundary_cn": "覆盖规模和成效来自官方表述；Qommons ONE 与 super agent 仍是 roadmap。",
+      "source_urls": [
+        "https://openai.com/index/polimill"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "日本公共部门 AI 的下一步，也许不是更多聊天机器人，而是共享知识底",
+          "hook": "真正值得盯的不是‘政府也在用 AI’，而是公共部门 vertical AI 正在长成共享知识底座加组织控模的产品形态。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—控制面流程图，少量术语，结论先行",
+          "cta": "你会先验收哪一个边界？"
+        },
+        "twitter": {
+          "title": "日本公共部门 AI 的下一步，也许不是更多聊天机器人，而是共享知识底座和统一工作台",
+          "hook": "真正值得盯的不是‘政府也在用 AI’，而是公共部门 vertical AI 正在长成共享知识底座加组织控模的产品形态。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one architecture or workflow diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "日本公共部门 AI 的下一步，也许不是更多聊天机器人，而是共享知识底座和统一工作台",
+          "hook": "真正值得盯的不是‘政府也在用 AI’，而是公共部门 vertical AI 正在长成共享知识底座加组织控模的产品形态。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    }
+  ]
 }

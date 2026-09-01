@@ -1,105 +1,96 @@
 # AI Signal 日报｜2026-09-02
 
-**窗口：** 北京时间 2026-08-29 16:00 至 2026-09-02 00:00  
-**一句话结论：** 本轮完成 111 个主注册信源的连通性审计，并对 34 个 Feed、Release 与 Sitemap 通道执行增量发现；候选只进入待核验池，不由机械脚本自动升级为正式 Signal。
+**窗口：** 北京时间 2026-09-02 00:00 至 2026-09-02 00:21   
+**一句话结论：** 00:00 的基线循环先把今天写成了 0 条，但对 98 个真新增候选补做正文核验后，正式补入 6 条：AWS 拿出 3 篇能直接抄到控制面的正文，Hugging Face 把浏览器本地推理拆成可版本化 kernel 层，GitHub Copilot 收紧多组织模型权限，OpenAI / Polimill 则给出一个不小的日本公共部门 AI 落地样本。[1][2][3][4][5][6][7]
 
 ## 四主线重点
 
 | 主线 | 数量 | 今日重点 |
 |---|---:|---|
-| 模型 | 0 | 无达到正式入选门槛的新增事件 |
-| Agent 架构 | 0 | 无达到正式入选门槛的新增事件 |
-| AI 产品 | 0 | 无达到正式入选门槛的新增事件 |
-| AI 宏观 | 0 | 无达到正式入选门槛的新增事件 |
+| 模型 | 1 | Hugging Face 把 WebGPU kernel 做成独立 contract + Fleet 证据层 |
+| Agent 架构 | 2 | AWS 把 MCP 无状态迁移和 agent 支付 trust gate 都讲成了控制面 |
+| AI 产品 | 2 | DMS agent 的人审边界被写清，Copilot 把模型权限绑回付费组织 |
+| AI 宏观 | 1 | Polimill 公共部门 AI 覆盖面已到约 1,050 个自治体、55 万名公职人员 |
 
-## 模型｜0 条
+## 模型｜1 条
 
-本窗口没有发现同时满足“官方或原始证据明确、发生在当日窗口内、且对模型能力/价格/部署边界形成实质变化”的新增事件。
+### Hugging Face：浏览器推理开始有自己的“底层合同”了
 
-## Agent 架构｜0 条
+Hugging Face 发布 `@huggingface/kernels`，把 207 个 WebGPU kernels 作为独立、可版本化的 Hub 对象公开，每个 kernel 都带 manifest、correctness cases、bench cases 和 WGSL 模板；同时上线 Fleet，在浏览器里收集跨设备 benchmark 和正确性证据。[5]
 
-代表性 GitHub Releases / Atom 与技术 feed 巡检后，没有发现落在今日窗口内、并能支撑正式架构卡片的新版本或新工件。
+**为什么重要：** 这不是又一个 local AI 演示页。更实在的变化是，WebAI 的底层算子终于能被单独检查、版本化和复现，而不是全都闷在 runtime 黑盒里。
 
-## AI 产品｜0 条
+## Agent 架构｜2 条
 
-产品 Changelog/Help Center/官方博客的代表性巡检没有发现今日窗口内且证据足够的新工作流、权限边界或真实 UI 变化。
+### AWS：MCP 无状态之后，哪些旧基础设施真的可以删
 
-## AI 宏观｜0 条
+AWS 把 MCP 2026-07-28 版落到了部署细节：`initialize` 握手和 `Mcp-Session-Id` header 被拿掉，请求可以直接从 tool call 开始，任何实例都能响应；但只要还服务旧客户端，sticky session 和 session store 就不能提前拆。[1]
 
-本窗口没有发现同时满足“结构发生变化、受影响者明确、存在后续可验证指标”的宏观事件。
+**为什么重要：** 很多团队现在最缺的不是“知道 MCP 变了”，而是知道该先记录什么流量、什么时候退遗留 lane、哪些会话基础设施终于能安全下线。
+
+### AWS / t54：先过信任门，再让 agent 付钱
+
+AWS 的 t54 案例把 agent 支付的硬边界写得很明确：x402-secure 先对 endpoint 和地址做实时评分，AgentCore payments 再负责 session spending limit、credential isolation 和结算；如果评分不过线或 URL 不匹配，付款直接在代码层被挡住，模型本身不能覆写。[3]
+
+**为什么重要：** 这条真正有用的地方在于，它把“agent 会花真钱”拆成了可检查的控制点，而不是把风控继续留给 prompt 或人工抽查。
+
+## AI 产品｜2 条
+
+### AWS DMS：AI agent 能编排迁移，但不会替你背语义正确性
+
+AWS DMS Schema Conversion 这篇正文展示了一条清晰的 agent 工作流：导入元数据、启动转换、等待完成、导出 assessment report、解释 CRITICAL action items；当 deterministic rule engine 兜不住时，生成式步骤只保证 PL/pgSQL 语法能过，语义正确性和最终上线责任仍然留给人审和功能测试。[2]
+
+**为什么重要：** 这类边界越早写清楚，越不容易把“自动化很多步骤”误读成“迁移已经可直接上线”。
+
+### GitHub Copilot：多组织用户现在只认付费组织的模型策略
+
+GitHub 更新了 Copilot 的模型访问规则：如果用户同时在多个组织里持有 seat，模型可用性现在只由 `Usage billed to` 对应的付费组织决定；此前只要任一组织开了某个模型，用户就能用。纯 enterprise 来源的访问不受这次变化影响。[4]
+
+**为什么重要：** 这不是花哨新功能，但它把模型选择、组织治理和结算归属绑成了一件事。企业里的“能不能选这个模型”以后会更像预算和 policy 的结果。
+
+## AI 宏观｜1 条
+
+### OpenAI / Polimill：日本公共部门 AI 已经不是小试点了
+
+OpenAI News RSS 可确认，这篇 Polimill 客户案例首发于 8 月 31 日。正文称 QommonsAI 已覆盖日本约 1,050 个自治体和约 55 万名公职人员，当前场景包括议会答辩、公共服务、社保福利和法律检索；文中提到的 Qommons ONE 和 super agent 仍是 2026 年秋季 rollout 计划，不当作已上线事实。[6][7]
+
+**为什么重要：** 这条值得记住，是因为它已经开始长成“共享知识底座 + 组织控模 + 专业工作流”的公共部门产品形态，而不是普通聊天工具试点。
 
 ## 模型大厂高管模型长文 / 访谈｜0 条
 
-本轮没有发现进入正式日报的模型负责人高价值原创长内容更新。
+本轮没有新增满足模型主题边界和信息增量门槛的高管长文。
 
 ## AI 一线实践者观点｜0 条
 
-本轮没有发现带新数据、真实案例、失败复盘、技术解释或原创框架的一手实践者内容达到正式入选门槛。
+本轮没有新的实践者原创内容进入正式日报。
 
-## 代表性探针结果
+## 排除与延后
 
-- A2A Protocol releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Anthropic Cookbook releases：checked_no_match，检查 0 条最近 feed/release 项。
-- Anthropic sitemap：candidate_only，检查 120 条最近 feed/release 项。
-- AutoGen releases：checked_no_match，检查 10 条最近 feed/release 项。
-- AWS Architecture RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Database RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS ML Blog RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Networking RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Public Sector RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Security RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Storage RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- Browser Use releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Claude Code releases：candidate_only，检查 10 条最近 feed/release 项。
-- CrewAI releases：checked_no_match，检查 10 条最近 feed/release 项。
-- GitHub Copilot Changelog feed：candidate_only，检查 10 条最近 feed/release 项。
-- Google Agent Development Kit releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Google Blog sitemap：candidate_only，检查 120 条最近 feed/release 项。
-- Google Innovation & AI RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- Google Products & Platforms RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- Google Security RSS：candidate_only，检查 20 条最近 feed/release 项。
-- Hugging Face Blog：candidate_only，检查 40 条最近 feed/release 项。
-- Kimi Code releases：checked_no_match，检查 10 条最近 feed/release 项。
-- LangGraph releases：checked_no_match，检查 10 条最近 feed/release 项。
-- LlamaIndex releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Microsoft Agent Framework releases：candidate_only，检查 10 条最近 feed/release 项。
-- Moonshot AI Kimi GitHub releases：checked_no_match，检查 0 条最近 feed/release 项。
-- NVIDIA NeMo GitHub releases：checked_no_match，检查 10 条最近 feed/release 项。
-- OpenAI Agents SDK releases：checked_no_match，检查 10 条最近 feed/release 项。
-- OpenAI Codex releases：candidate_only，检查 10 条最近 feed/release 项。
-- OpenAI Cookbook releases：checked_no_match，检查 0 条最近 feed/release 项。
-- OpenAI sitemap：candidate_only，检查 120 条最近 feed/release 项。
-- OpenHands releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Simon Willison atom：candidate_only，检查 30 条最近 feed/release 项。
-- SWE-agent releases：checked_no_match，检查 10 条最近 feed/release 项。
-
-## 覆盖与缺口
-
-- 主注册信源连通性状态：not_checked 99（仅可访问、未解析内容变化）、access_blocked 9、mechanical_failure 3。
-- 日期解析探针状态：checked_no_match 18、candidate_only 16。
-- OpenAI News / Research 等普通抓取仍可能返回 403；本轮如实记录为 access_blocked，没有把 403 写成无内容。
-- X 官方 API 仍未配置 OAuth；只使用公开网页与非 X 替代源，不声称完成闭源或登录墙覆盖。
-
-## 今日判断
-
-1. 早晨窗口天然偏静默，尤其是需要欧美官方正文或产品变更的主线。
-2. 代表性 feed/release 巡检没有给出足够强的新证据，因此维持高阈值比凑日报更重要。
-3. 本轮主要价值在于确认“没有正式新增”并同步覆盖状态，而不是重复昨日事件。
-
-## 建议行动
-
-- 继续等待同日后续窗口；如果欧美官方源在北京时间白天/晚间发布正式材料，再进入同日合并。
-- 对 access_blocked 的关键站点优先准备浏览器或官方 API 替代路径，避免把封锁误判成静默。
-- 保持 topics 候选池为空，不自动制造选题。
+- 83 个 OpenAI sitemap 命中先全部用官方 RSS 回填首发时间；其中 81 个是更早旧文，1 个是昨天已收录的 ChatGPT Ads，只有 Polimill 还保留为本轮可评正文。[6]
+- Anthropic 那篇 `improving-alignment-security-efforts` 还是昨天同一条 canonical URL，没有看到足够开新卡的正文级增量。
+- Google Security 这组是 Android 网络与数字身份安全，不进本 feed 的模型、agent、AI 产品或 AI 宏观正式范围。
+- AWS hybrid cloud、ZS、Boomi、Wickr 和 Simon Willison 这些候选各有信息量，但今天没有一条同时满足正式范围与信息增量门槛。
 
 ## 证据边界
 
-- 本轮没有正式入选事件，因此没有外部事实卡片和引用账本条目。
-- 结论仅表示“在本次有界代表性巡检中未见达到门槛的新增正式信号”，不代表全网没有任何 AI 动态。
+- AWS 这三条都来自官方正文，能确认对象、动作和控制面，但 t54 的交易规模、以及 DMS / MCP 迁移后的真实成功率与成本曲线仍主要缺少独立验证。[1][2][3]
+- Hugging Face 的性能数字主要是 Apple M4 上的 op-level 对比，并明确排除了加载、编译、上传和回传开销；不要直接把它读成完整模型端到端时延承诺。[5]
+- Copilot 这次改动只影响多组织 seat 场景；GitHub 没有把它描述成更广泛的自动执行权限升级。[4]
+- Polimill 的覆盖规模和开发提速来自 OpenAI / Polimill 官方表述，Qommons ONE 仍是计划而不是已上线能力。[6][7]
 
 ## 飞书短版
 
-**一句话结论：** 本轮完成 111 个注册源连通性审计和 34 个增量发现探针；候选等待正文与发布日期核验。  
-**判断：** 不为数量降标，继续等同日后续窗口。  
-**覆盖：** not_checked 99，access_blocked 9，mechanical_failure 3；日期解析探针 checked_no_match 18。  
-**结果：** previous_count=0，new_count=0，updated_count=0，total_count=0。
+**一句话结论：** 今天不是 0 条。对 98 个真新增候选补做正文核验后，正式补入 6 条，其中最值得看的三条都在 AWS：MCP 无状态迁移、DMS 迁移 agent 的人审边界、以及 AgentCore payments 的 trust gate。  
+**组织判断：** 真正有价值的不是又多了几个新页面，而是控制面有没有写清楚，哪里必须停下来让人决定，哪里能被硬规则挡住。  
+**建议动作：** 把 legacy lane sunset、AI 迁移 apply gate、agent 支付 risk gate、billing-owner entitlement 和 browser inference kernel contract 这五个点加入后续评估清单。  
+**结果：** previous_count=0，new_count=6，updated_count=0，total_count=6。
+
+## Sources
+
+[1] https://aws.amazon.com/blogs/architecture/mcp-went-stateless-is-your-aws-mcp-server-deployment-well-architected
+[2] https://aws.amazon.com/blogs/database/sql-server-to-aurora-postgresql-conversion-with-ai-agents-for-aws-dms
+[3] https://aws.amazon.com/blogs/machine-learning/how-t54-built-a-trust-layer-with-amazon-bedrock-agentcore-payments
+[4] https://github.blog/changelog/2026-08-31-copilot-model-access-update-for-github-team-plans
+[5] https://huggingface.co/blog/webgpu-kernels
+[6] https://openai.com/news/rss.xml
+[7] https://r.jina.ai/http://openai.com/index/polimill/

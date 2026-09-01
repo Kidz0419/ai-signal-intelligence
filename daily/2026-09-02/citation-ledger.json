@@ -1,5 +1,62 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "title": "AWS 把 MCP 迁移要点写实了：无状态核心能删 sticky session，但旧客户端没退干净前别提前拆",
+      "url": "https://aws.amazon.com/blogs/architecture/mcp-went-stateless-is-your-aws-mcp-server-deployment-well-architected",
+      "publisher": "AWS",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-02T00:21:46+08:00"
+    },
+    {
+      "id": 2,
+      "title": "AWS 把 DMS Schema Conversion 的 agent 边界讲清楚了：AI 能编排迁移，但语法过关不等于语义正确",
+      "url": "https://aws.amazon.com/blogs/database/sql-server-to-aurora-postgresql-conversion-with-ai-agents-for-aws-dms",
+      "publisher": "AWS",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-02T00:21:46+08:00"
+    },
+    {
+      "id": 3,
+      "title": "t54 用 AgentCore payments 把 agent 支付拆成硬门：信任评分先过，钱才会动",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-t54-built-a-trust-layer-with-amazon-bedrock-agentcore-payments",
+      "publisher": "AWS",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-02T00:21:46+08:00"
+    },
+    {
+      "id": 4,
+      "title": "GitHub Copilot 改了多组织 seat 的模型权限：现在只认付费组织，不再取已启用组织并集",
+      "url": "https://github.blog/changelog/2026-08-31-copilot-model-access-update-for-github-team-plans",
+      "publisher": "GitHub",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-02T00:21:46+08:00"
+    },
+    {
+      "id": 5,
+      "title": "Hugging Face 把浏览器推理底层单元拆成 207 个可版本化 WebGPU kernels，还顺手做了跨设备证据层",
+      "url": "https://huggingface.co/blog/webgpu-kernels",
+      "publisher": "Hugging Face",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-02T00:21:46+08:00"
+    },
+    {
+      "id": 6,
+      "title": "OpenAI News RSS",
+      "url": "https://openai.com/news/rss.xml",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-02T00:21:46+08:00"
+    },
+    {
+      "id": 7,
+      "title": "OpenAI / Polimill 给出一个不小的公共部门 AI 落地样本：约 1,050 个自治体、55 万名公职人员在用 QommonsAI",
+      "url": "https://r.jina.ai/http://openai.com/index/polimill/",
+      "publisher": "OpenAI / r.jina.ai text mirror",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-02T00:21:46+08:00"
+    }
+  ]
 }
