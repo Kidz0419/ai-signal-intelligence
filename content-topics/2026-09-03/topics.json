@@ -148,6 +148,75 @@
       }
     },
     {
+      "id": "2026-09-03-frontier-model-enterprise-control-plane",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-09-01-anthropic-enterprise-frontier-safeguards"
+      ],
+      "working_title_cn": "高风险模型要进企业，先被产品化的可能不是模型能力，而是日志归属、密钥和人工复核边界",
+      "core_tension_cn": "很多人把安全理解成 policy text，但 regulated 行业真正买单的是谁持有数据、谁看告警、谁能追责。",
+      "why_now_cn": "Anthropic 发布 Enterprise Frontier Safeguards，把日志留在客户云、密钥和人工复核权交给客户侧，并计划分阶段 rollout。",
+      "target_audience_cn": [
+        "企业 AI 平台负责人",
+        "安全 / 合规团队",
+        "垂直 AI 产品经理"
+      ],
+      "evidence_boundary_cn": "这是官方发布的 phased rollout 方案，不是全面现货，也没有独立误报率或运维成本数据。",
+      "source_urls": [
+        "https://www.anthropic.com/news/enterprise-frontier-safeguards"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "高风险模型要进企业，先被产品化的可能不是模型能力，而是日志归属、密钥",
+          "hook": "frontier 模型进 regulated workflow，接下来拼的不只是能力，更是谁先把日志归属、密钥控制和人工复核做成可采购的控制面。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—权限边界图，少量术语，结论先行",
+          "cta": "你最想先验证哪条控制边界？"
+        },
+        "twitter": {
+          "title": "高风险模型要进企业，先被产品化的可能不是模型能力，而是日志归属、密钥和人工复核边界",
+          "hook": "frontier 模型进 regulated workflow，接下来拼的不只是能力，更是谁先把日志归属、密钥控制和人工复核做成可采购的控制面。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one workflow or control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "高风险模型要进企业，先被产品化的可能不是模型能力，而是日志归属、密钥和人工复核边界",
+          "hook": "frontier 模型进 regulated workflow，接下来拼的不只是能力，更是谁先把日志归属、密钥控制和人工复核做成可采购的控制面。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
       "id": "2026-09-03-healthcare-ai-needs-real-context",
       "status": "candidate",
       "timeliness": "this_week",

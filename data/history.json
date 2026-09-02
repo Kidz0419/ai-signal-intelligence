@@ -7,13 +7,14 @@
       "signal_ids": [
         "2026-09-01-openai-astra-critical-cyber-threshold",
         "2026-09-02-google-gemini-38-flash-cyber-fairwind",
+        "2026-09-01-anthropic-enterprise-frontier-safeguards",
         "2026-09-01-openai-chatgpt-healthcare-ehr-connectors",
         "2026-09-02-aws-strands-dynamodb-durable-storage"
       ],
       "counts": {
-        "total": 4,
+        "total": 5,
         "P0": 2,
-        "P1": 1,
+        "P1": 2,
         "P2": 1
       }
     },
@@ -438,6 +439,69 @@
           "type": "access_program"
         }
       ]
+    },
+    {
+      "id": "2026-09-01-anthropic-enterprise-frontier-safeguards",
+      "demo": false,
+      "topic_lane": "ai_product",
+      "title": "Anthropic 把 frontier 模型企业化交付拆成单独控制面：日志留在客户云里，检测继续跑，人工复核回到客户自己手上",
+      "summary": "Anthropic 9 月 1 日公布 Enterprise Frontier Safeguards（EFS）。官方写明，监测所需的 activity data 可以留在客户自有云账户中，由客户自己控制存储、加密密钥、访问策略和审计日志；自动监测发现 serious misuse 后，flag 会直接发给客户团队处理，不需要 Anthropic 员工人工复核。Anthropic 还说，这套控制不改变 model behavior、API pricing 或 rate limits，并将于今年秋季稍晚分阶段 rollout 到 Claude Code、Claude Enterprise、Claude Platform 及其云伙伴渠道。",
+      "decision": "include",
+      "confidence": 91,
+      "relevance_level": "P1",
+      "signal_type": "strategic_radar",
+      "content_type": "official_release",
+      "information_type": "enterprise_adoption",
+      "evidence_level": "primary_statement",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "published_at": "2026-09-01T00:00:00Z",
+      "primary_tags": [
+        "Anthropic",
+        "Enterprise Frontier Safeguards",
+        "Customer-owned Storage"
+      ],
+      "secondary_tags": [
+        "Zero Data Retention",
+        "Customer-managed Keys",
+        "No Anthropic Human Review"
+      ],
+      "why_it_matters_cn": "真正的信号不是又多了一个安全承诺页，而是 frontier model 的企业交付开始多出一层独立 control plane：谁持有日志、谁握着密钥、谁看告警，正在成为能不能进 regulated workflow 的产品能力。",
+      "personal_relevance_cn": "如果你在看高风险 agent / model 的企业落地，这条最值得拆的是：数据留在客户云、厂商继续跑自动检测、人工复核权交还客户，这种三段式会不会成为 regulated 行业拿到 frontier model 的默认接入方式。",
+      "product_opportunity_cn": "可以围绕 customer-owned telemetry、customer-managed keys、flag routing、审计导出和分阶段 access program，设计高风险 AI 的企业控制面。",
+      "competitive_risk_cn": "EFS 目前还是 Anthropic 的官方方案说明和 phased rollout 计划，不是广泛现货能力；检测效果、误报率和客户侧运维负担也还没有独立结果。",
+      "recommended_action": "investigate",
+      "questions_to_validate": [
+        "客户侧持有日志和密钥后，Anthropic 的自动检测到底运行在什么边界内，能看到哪些字段、保留多久？",
+        "这套控制先支持哪些 Claude / cloud partner 路径，哪些 API 或 tool workflow 仍不在覆盖范围？",
+        "一旦进入广泛 rollout，企业需要自己承担多少 storage、egress、审计和 false-positive 处置成本？"
+      ],
+      "follow_up_triggers": [
+        "Anthropic 披露更具体的 access policy、上线范围或控制台 / 审计字段",
+        "出现客户或云伙伴对 EFS 的部署细节、误报率或运营负担复盘",
+        "Anthropic 把 EFS 从 phased rollout 推到更广泛可用，或扩展到更多高风险工作流"
+      ],
+      "scores": {
+        "topic_relevance": 5,
+        "novelty": 4,
+        "technical_or_product_significance": 5,
+        "strategic_value": 5,
+        "source_quality": 5,
+        "model_value": 2,
+        "agent_architecture_value": 3,
+        "ai_product_value": 5,
+        "macro_value": 2,
+        "actionability": 4
+      },
+      "report_date": "2026-09-03",
+      "event_date": "2026-09-01",
+      "canonical_url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "first_seen_date": "2026-09-03",
+      "last_seen_date": "2026-09-03",
+      "run_dates": [
+        "2026-09-03"
+      ],
+      "evidence_boundary": "Anthropic 官方页面能确认发布日期是 Sep 1, 2026，以及 customer-owned storage、customer-managed keys、direct flag routing、no Anthropic human review 和 phased rollout later this fall。不能把它写成已全面 GA，也不能把自动监测效果写成独立验证结论。"
     },
     {
       "id": "2026-09-01-openai-chatgpt-healthcare-ehr-connectors",

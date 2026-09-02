@@ -1,7 +1,7 @@
 # AI Signal 日报｜2026-09-03
 
-**窗口：** 北京时间 2026-09-03 00:00 至 2026-09-03 00:01  
-**一句话结论：** 这轮不是 0 条。对 92 个真新增候选补做正文核验后，正式补入 4 条：两条是昨晚漏后补证的 OpenAI catch-up，两条是 9 月 2 日深夜刚出现的一手更新。
+**窗口：** 发现窗口北京时间 2026-08-30 20:00 至 2026-09-03 04:00；本轮只核验 100 个真新增候选，不重扫 225 条滚动发现池。  
+**一句话结论：** 这轮不是 0 条。对 100 个真新增候选补做正文核验后，日内正式 signal 从 4 条增到 5 条：新增补进的是 Anthropic 的 Enterprise Frontier Safeguards，今天的主轴更清楚了，高风险模型的企业化竞争正在同时往受限 access、客户侧控制面和真实工作流接入三条线走。[8]
 
 ## 四主线重点
 
@@ -9,7 +9,7 @@
 |---|---:|---|
 | 模型 | 2 | OpenAI 把 Astra 划进 Critical 阈值；Google 发布 Gemini 3.8 Flash / Flash Cyber + Fairwind |
 | Agent 架构 | 1 | AWS 把 Strands 的持久存储 contract 真正写到运行面 |
-| AI 产品 | 1 | OpenAI 把 ChatGPT for Healthcare 接进 Epic 与官方医疗数据源 |
+| AI 产品 | 2 | Anthropic 把高风险企业控制面产品化；OpenAI 把 ChatGPT for Healthcare 接进 Epic 与官方医疗数据源 |
 | AI 宏观 | 0 | 无达到正式入选门槛的新增结构事件 |
 
 ## 模型｜2 条
@@ -34,7 +34,13 @@ AWS 新发的 `strands-dynamodb-storage`，把 Strands 的 storage contract 落�
 
 **为什么重要：** 很多 agent 框架都说自己有 memory，真正难的是把状态和留痕放进一套能在无状态计算环境里跑得住的 contract。
 
-## AI 产品｜1 条
+## AI 产品｜2 条
+
+### Anthropic：frontier 模型企业化，开始把日志归属和人工复核拆开
+
+Anthropic 9 月 1 日发布 Enterprise Frontier Safeguards（EFS）。正文写明，用于监测的 activity data 可以放在客户自有云账户里，由客户自己控制存储、密钥、访问策略和审计日志；检测到 serious misuse 的 flag 直接发给客户团队处理，不需要 Anthropic 员工人工复核。Anthropic 还说，这套控制不改变 model behavior、API pricing 或 rate limits，并将于今年秋季稍晚分阶段 rollout。[8]
+
+**为什么重要：** 这条真正的信号不是“更安全”这四个字，而是 frontier model 的企业交付开始多出一层独立控制面：谁持有日志、谁握着密钥、谁看告警，正在决定它能不能真的进 regulated workflow。
 
 ### OpenAI：医疗工作流开始贴着授权病历和官方数据源跑
 
@@ -58,15 +64,16 @@ OpenAI 为 ChatGPT for Healthcare 新增 Epic EHR integration，并推出 Health
 
 - Astra 这条目前仍是 OpenAI 的官方自我判定：能确认阈值结论、开发延后和受限发售路径，不能写成第三方已经独立复现，更不能写成全面开放。[1][2]
 - Gemini 3.8 Flash 的 GA 与公开定价可确认，但 Flash Cyber 的性能、patch 效果和 Fairwind 覆盖规模仍主要来自 Google 或合作方表述，而且 Flash Cyber 不是面向所有开发者的广泛 GA。[3][4][5]
+- Anthropic 这条能确认发布日期、customer-owned storage、customer-managed keys、direct flag routing 和 no Anthropic human review，但它现在仍是 phased rollout 方案，不能写成已全面 GA，也不能把自动监测效果写成独立验证结论。[8]
 - ChatGPT for Healthcare 这条能确认 Epic 连接、9 个官方数据源和两种工作流形态；99.1% safe 与 93% 以上 accuracy 仍属于 OpenAI 官方医生评测，不是独立临床验证。[1][6]
 - AWS 这条能确认 storage contract、S3 offload、TTL 和租户前缀，但它仍是 DynamoDB 路线，不是跨云通用答案，也没有给出大规模独立成本对比。[7]
 
 ## 飞书短版
 
-**一句话结论：** 这轮不是 0 条，补进了 4 条正式 signal。最重的两条在模型层：OpenAI 先把 Astra 划进 critical 线，再谈受限放量；Google 则把 Gemini 3.8 Flash 的 GA 和 Flash Cyber 的 Fairwind 分发一起推了出来。  
-**组织判断：** 这轮最值得盯的，不只是模型更强，而是谁开始把高风险能力放进受限通道，谁又把行业工作流直接接到了真实上下文源上。  
-**建议动作：** 把 high-risk model gating、defender-only access、行业数据连接、EHR embedded workflow 和 agent durable storage contract 一起加进后续评估清单。  
-**结果：** previous_count=0，new_count=4，updated_count=0，total_count=4。
+**一句话结论：** 这轮不是 0 条，日内正式 signal 从 4 条增到 5 条；新增最值得补记的是 Anthropic 把 frontier model 的企业安全交付单独产品化。  
+**组织判断：** 今天最值得盯的，不只是模型更强，而是谁开始把高风险能力放进受限 access、把日志和人工复核权尽量留在客户侧，以及谁先把行业工作流真正接上真实上下文源。  
+**建议动作：** 把 high-risk model gating、customer-owned telemetry、customer-managed keys、EHR embedded workflow 和 agent durable storage contract 一起加进后续评估清单。  
+**结果：** previous_count=4，new_count=1，updated_count=0，total_count=5。
 
 ## Sources
 
@@ -77,3 +84,4 @@ OpenAI 为 ChatGPT for Healthcare 新增 Epic EHR integration，并推出 Health
 [5] https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/
 [6] https://r.jina.ai/http://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/
 [7] https://aws.amazon.com/blogs/database/introducing-strands-dynamodb-storage-durable-agent-storage-for-the-strands-agents-sdk/
+[8] https://www.anthropic.com/news/enterprise-frontier-safeguards

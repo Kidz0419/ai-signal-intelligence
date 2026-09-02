@@ -11,8 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATE = "2026-09-03"
 TZ = ZoneInfo("Asia/Shanghai")
 RUN_AT = datetime.now(TZ).replace(microsecond=0)
-DISCOVERY_CUTOFF = datetime.fromisoformat("2026-09-03T00:01:55+08:00")
-INCREMENTAL_SINCE = "2026-09-02T16:18:15+08:00"
+DISCOVERY_CUTOFF = datetime.fromisoformat("2026-09-03T04:00:19+08:00")
+INCREMENTAL_SINCE = None
 
 SCORE_KEYS = [
     "topic_relevance",
@@ -222,6 +222,39 @@ rows = [
         ],
     ),
     row(
+        id="2026-09-01-anthropic-enterprise-frontier-safeguards",
+        lane="ai_product",
+        title="Anthropic 把 frontier 模型企业化交付拆成单独控制面：日志留在客户云里，检测继续跑，人工复核回到客户自己手上",
+        summary="Anthropic 9 月 1 日公布 Enterprise Frontier Safeguards（EFS）。官方写明，监测所需的 activity data 可以留在客户自有云账户中，由客户自己控制存储、加密密钥、访问策略和审计日志；自动监测发现 serious misuse 后，flag 会直接发给客户团队处理，不需要 Anthropic 员工人工复核。Anthropic 还说，这套控制不改变 model behavior、API pricing 或 rate limits，并将于今年秋季稍晚分阶段 rollout 到 Claude Code、Claude Enterprise、Claude Platform 及其云伙伴渠道。",
+        priority="P1",
+        signal_type="strategic_radar",
+        content_type="official_release",
+        information_type="enterprise_adoption",
+        evidence_level="primary_statement",
+        source="Anthropic",
+        url="https://www.anthropic.com/news/enterprise-frontier-safeguards",
+        published_at="2026-09-01T00:00:00Z",
+        why="真正的信号不是又多了一个安全承诺页，而是 frontier model 的企业交付开始多出一层独立 control plane：谁持有日志、谁握着密钥、谁看告警，正在成为能不能进 regulated workflow 的产品能力。",
+        personal="如果你在看高风险 agent / model 的企业落地，这条最值得拆的是：数据留在客户云、厂商继续跑自动检测、人工复核权交还客户，这种三段式会不会成为 regulated 行业拿到 frontier model 的默认接入方式。",
+        opportunity="可以围绕 customer-owned telemetry、customer-managed keys、flag routing、审计导出和分阶段 access program，设计高风险 AI 的企业控制面。",
+        risk="EFS 目前还是 Anthropic 的官方方案说明和 phased rollout 计划，不是广泛现货能力；检测效果、误报率和客户侧运维负担也还没有独立结果。",
+        boundary="Anthropic 官方页面能确认发布日期是 Sep 1, 2026，以及 customer-owned storage、customer-managed keys、direct flag routing、no Anthropic human review 和 phased rollout later this fall。不能把它写成已全面 GA，也不能把自动监测效果写成独立验证结论。",
+        confidence=91,
+        primary_tags=["Anthropic", "Enterprise Frontier Safeguards", "Customer-owned Storage"],
+        secondary_tags=["Zero Data Retention", "Customer-managed Keys", "No Anthropic Human Review"],
+        questions=[
+            "客户侧持有日志和密钥后，Anthropic 的自动检测到底运行在什么边界内，能看到哪些字段、保留多久？",
+            "这套控制先支持哪些 Claude / cloud partner 路径，哪些 API 或 tool workflow 仍不在覆盖范围？",
+            "一旦进入广泛 rollout，企业需要自己承担多少 storage、egress、审计和 false-positive 处置成本？",
+        ],
+        triggers=[
+            "Anthropic 披露更具体的 access policy、上线范围或控制台 / 审计字段",
+            "出现客户或云伙伴对 EFS 的部署细节、误报率或运营负担复盘",
+            "Anthropic 把 EFS 从 phased rollout 推到更广泛可用，或扩展到更多高风险工作流",
+        ],
+        score_kwargs={"novelty": 4, "significance": 5, "strategic": 5, "source_quality": 5, "actionability": 4, "model": 2, "agent_architecture": 3, "ai_product": 5, "macro": 2},
+    ),
+    row(
         id="2026-09-02-aws-strands-dynamodb-durable-storage",
         lane="agent_architecture",
         title="AWS 给 Strands Agents 补了一个持久存储后端：会话快照、长期记忆和 transcript 可以落在同一张 DynamoDB 表",
@@ -266,14 +299,15 @@ ledger_sources = [
     {"id": 5, "title": "Fairwind Program", "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/", "publisher": "Google", "evidence_level": "confirmed", "accessed": iso(RUN_AT)},
     {"id": 6, "title": next(r["title"] for r in rows if r["id"] == "2026-09-01-openai-chatgpt-healthcare-ehr-connectors"), "url": "https://r.jina.ai/http://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/", "publisher": "OpenAI / r.jina.ai text mirror", "evidence_level": "confirmed", "accessed": iso(RUN_AT)},
     {"id": 7, "title": next(r["title"] for r in rows if r["id"] == "2026-09-02-aws-strands-dynamodb-durable-storage"), "url": "https://aws.amazon.com/blogs/database/introducing-strands-dynamodb-storage-durable-agent-storage-for-the-strands-agents-sdk/", "publisher": "AWS", "evidence_level": "confirmed", "accessed": iso(RUN_AT)},
+    {"id": 8, "title": next(r["title"] for r in rows if r["id"] == "2026-09-01-anthropic-enterprise-frontier-safeguards"), "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards", "publisher": "Anthropic", "evidence_level": "primary_statement", "accessed": iso(RUN_AT)},
 ]
 
 citations = [{"id": item["id"], "url": item["url"]} for item in ledger_sources]
 
 brief = f'''# AI Signal 日报｜{DATE}
 
-**窗口：** 北京时间 2026-09-03 00:00 至 {DISCOVERY_CUTOFF.strftime("%Y-%m-%d %H:%M")}  
-**一句话结论：** 这轮不是 0 条。对 92 个真新增候选补做正文核验后，正式补入 4 条：两条是昨晚漏后补证的 OpenAI catch-up，两条是 9 月 2 日深夜刚出现的一手更新。
+**窗口：** 发现窗口北京时间 2026-08-30 20:00 至 {DISCOVERY_CUTOFF.strftime("%Y-%m-%d %H:%M")}；本轮只核验 100 个真新增候选，不重扫 225 条滚动发现池。  
+**一句话结论：** 这轮不是 0 条。对 100 个真新增候选补做正文核验后，日内正式 signal 从 4 条增到 5 条：新增补进的是 Anthropic 的 Enterprise Frontier Safeguards，今天的主轴更清楚了，高风险模型的企业化竞争正在同时往受限 access、客户侧控制面和真实工作流接入三条线走。[8]
 
 ## 四主线重点
 
@@ -281,7 +315,7 @@ brief = f'''# AI Signal 日报｜{DATE}
 |---|---:|---|
 | 模型 | 2 | OpenAI 把 Astra 划进 Critical 阈值；Google 发布 Gemini 3.8 Flash / Flash Cyber + Fairwind |
 | Agent 架构 | 1 | AWS 把 Strands 的持久存储 contract 真正写到运行面 |
-| AI 产品 | 1 | OpenAI 把 ChatGPT for Healthcare 接进 Epic 与官方医疗数据源 |
+| AI 产品 | 2 | Anthropic 把高风险企业控制面产品化；OpenAI 把 ChatGPT for Healthcare 接进 Epic 与官方医疗数据源 |
 | AI 宏观 | 0 | 无达到正式入选门槛的新增结构事件 |
 
 ## 模型｜2 条
@@ -306,7 +340,13 @@ AWS 新发的 `strands-dynamodb-storage`，把 Strands 的 storage contract 落�
 
 **为什么重要：** 很多 agent 框架都说自己有 memory，真正难的是把状态和留痕放进一套能在无状态计算环境里跑得住的 contract。
 
-## AI 产品｜1 条
+## AI 产品｜2 条
+
+### Anthropic：frontier 模型企业化，开始把日志归属和人工复核拆开
+
+Anthropic 9 月 1 日发布 Enterprise Frontier Safeguards（EFS）。正文写明，用于监测的 activity data 可以放在客户自有云账户里，由客户自己控制存储、密钥、访问策略和审计日志；检测到 serious misuse 的 flag 直接发给客户团队处理，不需要 Anthropic 员工人工复核。Anthropic 还说，这套控制不改变 model behavior、API pricing 或 rate limits，并将于今年秋季稍晚分阶段 rollout。[8]
+
+**为什么重要：** 这条真正的信号不是“更安全”这四个字，而是 frontier model 的企业交付开始多出一层独立控制面：谁持有日志、谁握着密钥、谁看告警，正在决定它能不能真的进 regulated workflow。
 
 ### OpenAI：医疗工作流开始贴着授权病历和官方数据源跑
 
@@ -330,15 +370,16 @@ OpenAI 为 ChatGPT for Healthcare 新增 Epic EHR integration，并推出 Health
 
 - Astra 这条目前仍是 OpenAI 的官方自我判定：能确认阈值结论、开发延后和受限发售路径，不能写成第三方已经独立复现，更不能写成全面开放。[1][2]
 - Gemini 3.8 Flash 的 GA 与公开定价可确认，但 Flash Cyber 的性能、patch 效果和 Fairwind 覆盖规模仍主要来自 Google 或合作方表述，而且 Flash Cyber 不是面向所有开发者的广泛 GA。[3][4][5]
+- Anthropic 这条能确认发布日期、customer-owned storage、customer-managed keys、direct flag routing 和 no Anthropic human review，但它现在仍是 phased rollout 方案，不能写成已全面 GA，也不能把自动监测效果写成独立验证结论。[8]
 - ChatGPT for Healthcare 这条能确认 Epic 连接、9 个官方数据源和两种工作流形态；99.1% safe 与 93% 以上 accuracy 仍属于 OpenAI 官方医生评测，不是独立临床验证。[1][6]
 - AWS 这条能确认 storage contract、S3 offload、TTL 和租户前缀，但它仍是 DynamoDB 路线，不是跨云通用答案，也没有给出大规模独立成本对比。[7]
 
 ## 飞书短版
 
-**一句话结论：** 这轮不是 0 条，补进了 4 条正式 signal。最重的两条在模型层：OpenAI 先把 Astra 划进 critical 线，再谈受限放量；Google 则把 Gemini 3.8 Flash 的 GA 和 Flash Cyber 的 Fairwind 分发一起推了出来。  
-**组织判断：** 这轮最值得盯的，不只是模型更强，而是谁开始把高风险能力放进受限通道，谁又把行业工作流直接接到了真实上下文源上。  
-**建议动作：** 把 high-risk model gating、defender-only access、行业数据连接、EHR embedded workflow 和 agent durable storage contract 一起加进后续评估清单。  
-**结果：** previous_count=0，new_count=4，updated_count=0，total_count=4。
+**一句话结论：** 这轮不是 0 条，日内正式 signal 从 4 条增到 5 条；新增最值得补记的是 Anthropic 把 frontier model 的企业安全交付单独产品化。  
+**组织判断：** 今天最值得盯的，不只是模型更强，而是谁开始把高风险能力放进受限 access、把日志和人工复核权尽量留在客户侧，以及谁先把行业工作流真正接上真实上下文源。  
+**建议动作：** 把 high-risk model gating、customer-owned telemetry、customer-managed keys、EHR embedded workflow 和 agent durable storage contract 一起加进后续评估清单。  
+**结果：** previous_count=4，new_count=1，updated_count=0，total_count=5。
 
 ## Sources
 
@@ -349,6 +390,7 @@ OpenAI 为 ChatGPT for Healthcare 新增 Epic EHR integration，并推出 Health
 [5] https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/
 [6] https://r.jina.ai/http://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/
 [7] https://aws.amazon.com/blogs/database/introducing-strands-dynamodb-storage-durable-agent-storage-for-the-strands-agents-sdk/
+[8] https://www.anthropic.com/news/enterprise-frontier-safeguards
 '''
 
 base_outline = [
@@ -432,6 +474,18 @@ topics = [
         angle="真正值得看的是，谁开始把公开模型、受限 access 和自动补丁 harness 打包成一套发行策略。",
     ),
     topic(
+        id="2026-09-03-frontier-model-enterprise-control-plane",
+        lane="ai_product",
+        signal_ids=["2026-09-01-anthropic-enterprise-frontier-safeguards"],
+        title="高风险模型要进企业，先被产品化的可能不是模型能力，而是日志归属、密钥和人工复核边界",
+        tension="很多人把安全理解成 policy text，但 regulated 行业真正买单的是谁持有数据、谁看告警、谁能追责。",
+        why_now="Anthropic 发布 Enterprise Frontier Safeguards，把日志留在客户云、密钥和人工复核权交给客户侧，并计划分阶段 rollout。",
+        boundary="这是官方发布的 phased rollout 方案，不是全面现货，也没有独立误报率或运维成本数据。",
+        urls=["https://www.anthropic.com/news/enterprise-frontier-safeguards"],
+        audience=["企业 AI 平台负责人", "安全 / 合规团队", "垂直 AI 产品经理"],
+        angle="frontier 模型进 regulated workflow，接下来拼的不只是能力，更是谁先把日志归属、密钥控制和人工复核做成可采购的控制面。",
+    ),
+    topic(
         id="2026-09-03-healthcare-ai-needs-real-context",
         lane="ai_product",
         signal_ids=["2026-09-01-openai-chatgpt-healthcare-ehr-connectors"],
@@ -479,24 +533,24 @@ run_summary = {
     "scheduler_outcome": "success",
     "window": {
         "timezone": "Asia/Shanghai",
-        "start": "2026-09-03T00:00:00+08:00",
+        "start": "2026-08-30T20:00:19+08:00",
         "end": iso(DISCOVERY_CUTOFF),
         "incremental_since": INCREMENTAL_SINCE,
     },
     "registered_sources": 111,
-    "raw_candidates": 210,
-    "unique_candidates": 165,
-    "candidate_queue_count": 92,
-    "new_in_run_count": 92,
-    "reviewed_new_candidates": 92,
-    "editorial_shortlist": 6,
-    "previous_count": 0,
-    "new_count": 4,
+    "raw_candidates": 225,
+    "unique_candidates": 183,
+    "candidate_queue_count": 192,
+    "new_in_run_count": 100,
+    "reviewed_new_candidates": 100,
+    "editorial_shortlist": 8,
+    "previous_count": 4,
+    "new_count": 1,
     "updated_count": 0,
-    "excluded_count": 88,
+    "excluded_count": 99,
     "unreviewed_candidate_count": 0,
-    "total_count": 4,
-    "selected": 4,
+    "total_count": 5,
+    "selected": 5,
     "lane_counts": {
         "model": lane_counts.get("model", 0),
         "agent_architecture": lane_counts.get("agent_architecture", 0),
@@ -509,20 +563,20 @@ run_summary = {
     "practitioner_statements": 0,
     "cross_day_duplicates_removed": 0,
     "source_status_counts": {
-        "selected": 4,
+        "selected": 5,
         "candidate_only": 0,
-        "checked_no_match": 88,
+        "checked_no_match": 95,
         "access_blocked": 0,
         "auth_required": 0,
         "mechanical_failure": 0,
         "not_checked": 0,
     },
     "review_notes": [
-        "Reviewed only the 92 true new candidates from the 2026-09-03 00:01 baseline cycle and did not rescan the 210-item rolling discovery pool.",
-        "Mapped 78 OpenAI sitemap hits through the official OpenAI News RSS before freshness judgment. 75 resolved to older publication dates or already-covered URLs; only three late-discovered pages merited full body review, and only Astra plus the healthcare EHR integration cleared the formal bar.",
-        "Used public text-mirror fallback for OpenAI pages that still block direct body retrieval from this environment. Sitemap lastmod values and HTTP reachability were never promoted as publication evidence.",
-        "Promoted four signals after body review: OpenAI Astra critical-threshold gating, OpenAI healthcare EHR integration, Google Gemini 3.8 Flash / Flash Cyber with Fairwind gating, and AWS Strands durable storage for agent state.",
-        "Left Anthropic worker retraining out because the page resolves to an Aug 12 publication date; left Kimi Code 0.40.1 and Codex 0.153.0-alpha.6 out because the release notes were too thin; left Google MrBeast, West Virginia energy, and OpenAI AI-native workflows out because they were off-scope or below the formal signal threshold.",
+        "Reviewed only the 100 true new candidates from the 2026-09-03 04:00 baseline cycle and did not rescan the 225-item rolling discovery pool.",
+        "Mapped all 84 OpenAI sitemap hits through the official OpenAI News RSS before freshness judgment. 81 resolved to older publication dates or already-covered URLs; only three pages had Sep 1+ publication dates, and only Astra plus the healthcare EHR integration cleared the formal bar. The AI-native-company-workflows post stayed out as enterprise marketing with limited net-new operational detail.",
+        "Verified Anthropic Enterprise Frontier Safeguards from the browser-rendered official page after sitemap discovery. The page date is Sep 1, 2026, and the body adds concrete control-plane detail: customer-owned storage, customer-managed keys, direct flag routing, no Anthropic human review, and phased rollout. That moved it from discovery-only to a formal signal.",
+        "Reviewed the remaining AWS, GitHub Copilot, Google products blog, and Simon Willison candidates at body level. Copilot default-model management, AWS support/dashboard case studies, AgentCore documentation automation, Google payments/books/ads items, and Simon’s llm-gemini wrapper stayed out because they were config tweaks, customer case studies, off-scope non-AI product news, opinion/framework pieces, or secondary wrappers rather than primary high-value signals.",
+        "Used official feeds, browser-rendered pages, and public text-mirror fallback together. Sitemap lastmod values and bare HTTP reachability were never promoted as publication evidence.",
     ],
     "collection_contract": {
         "raw_candidates_in_rolling_window_is_not_increment": True,

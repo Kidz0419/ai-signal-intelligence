@@ -1,62 +1,62 @@
 {
   "run_type": "daily_four_lane_incremental_manual_review",
-  "run_at": "2026-09-03T00:26:47+08:00",
+  "run_at": "2026-09-03T04:16:37+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-03T00:00:00+08:00",
-    "end": "2026-09-03T00:01:55+08:00",
-    "incremental_since": "2026-09-02T16:18:15+08:00"
+    "start": "2026-08-30T20:00:19+08:00",
+    "end": "2026-09-03T04:00:19+08:00",
+    "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 210,
-  "unique_candidates": 165,
-  "candidate_queue_count": 92,
-  "new_in_run_count": 92,
-  "reviewed_new_candidates": 92,
-  "editorial_shortlist": 6,
-  "previous_count": 0,
-  "new_count": 4,
+  "raw_candidates": 225,
+  "unique_candidates": 183,
+  "candidate_queue_count": 192,
+  "new_in_run_count": 100,
+  "reviewed_new_candidates": 100,
+  "editorial_shortlist": 8,
+  "previous_count": 4,
+  "new_count": 1,
   "updated_count": 0,
-  "excluded_count": 88,
+  "excluded_count": 99,
   "unreviewed_candidate_count": 0,
-  "total_count": 4,
-  "selected": 4,
+  "total_count": 5,
+  "selected": 5,
   "lane_counts": {
     "model": 2,
     "agent_architecture": 1,
-    "ai_product": 1,
+    "ai_product": 2,
     "ai_macro": 0
   },
   "priority_counts": {
     "P0": 2,
-    "P1": 1,
+    "P1": 2,
     "P2": 1,
     "P3": 0
   },
   "decision_counts": {
-    "include": 4,
+    "include": 5,
     "watchlist": 0
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
   "source_status_counts": {
-    "selected": 4,
+    "selected": 5,
     "candidate_only": 0,
-    "checked_no_match": 88,
+    "checked_no_match": 95,
     "access_blocked": 0,
     "auth_required": 0,
     "mechanical_failure": 0,
     "not_checked": 0
   },
   "review_notes": [
-    "Reviewed only the 92 true new candidates from the 2026-09-03 00:01 baseline cycle and did not rescan the 210-item rolling discovery pool.",
-    "Mapped 78 OpenAI sitemap hits through the official OpenAI News RSS before freshness judgment. 75 resolved to older publication dates or already-covered URLs; only three late-discovered pages merited full body review, and only Astra plus the healthcare EHR integration cleared the formal bar.",
-    "Used public text-mirror fallback for OpenAI pages that still block direct body retrieval from this environment. Sitemap lastmod values and HTTP reachability were never promoted as publication evidence.",
-    "Promoted four signals after body review: OpenAI Astra critical-threshold gating, OpenAI healthcare EHR integration, Google Gemini 3.8 Flash / Flash Cyber with Fairwind gating, and AWS Strands durable storage for agent state.",
-    "Left Anthropic worker retraining out because the page resolves to an Aug 12 publication date; left Kimi Code 0.40.1 and Codex 0.153.0-alpha.6 out because the release notes were too thin; left Google MrBeast, West Virginia energy, and OpenAI AI-native workflows out because they were off-scope or below the formal signal threshold."
+    "Reviewed only the 100 true new candidates from the 2026-09-03 04:00 baseline cycle and did not rescan the 225-item rolling discovery pool.",
+    "Mapped all 84 OpenAI sitemap hits through the official OpenAI News RSS before freshness judgment. 81 resolved to older publication dates or already-covered URLs; only three pages had Sep 1+ publication dates, and only Astra plus the healthcare EHR integration cleared the formal bar. The AI-native-company-workflows post stayed out as enterprise marketing with limited net-new operational detail.",
+    "Verified Anthropic Enterprise Frontier Safeguards from the browser-rendered official page after sitemap discovery. The page date is Sep 1, 2026, and the body adds concrete control-plane detail: customer-owned storage, customer-managed keys, direct flag routing, no Anthropic human review, and phased rollout. That moved it from discovery-only to a formal signal.",
+    "Reviewed the remaining AWS, GitHub Copilot, Google products blog, and Simon Willison candidates at body level. Copilot default-model management, AWS support/dashboard case studies, AgentCore documentation automation, Google payments/books/ads items, and Simon’s llm-gemini wrapper stayed out because they were config tweaks, customer case studies, off-scope non-AI product news, opinion/framework pieces, or secondary wrappers rather than primary high-value signals.",
+    "Used official feeds, browser-rendered pages, and public text-mirror fallback together. Sitemap lastmod values and bare HTTP reachability were never promoted as publication evidence."
   ],
   "collection_contract": {
     "raw_candidates_in_rolling_window_is_not_increment": true,
