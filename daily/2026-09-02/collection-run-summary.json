@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-02T08:00:36+08:00",
+  "run_at": "2026-09-02T16:00:02+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-30T00:00:36+08:00",
-    "end": "2026-09-02T08:00:36+08:00",
+    "start": "2026-08-30T08:00:02+08:00",
+    "end": "2026-09-02T16:00:02+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 198,
-  "unique_candidates": 159,
+  "raw_candidates": 200,
+  "unique_candidates": 161,
   "editorial_shortlist": 0,
   "previous_count": 6,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 198,
+  "unreviewed_candidate_count": 200,
   "total_count": 6,
   "selected": 6,
   "lane_counts": {
@@ -35,7 +35,7 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 13,
+  "collection_errors": 12,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 9,
       "auth_required": 0,
-      "mechanical_failure": 4,
-      "not_checked": 98
+      "mechanical_failure": 3,
+      "not_checked": 99
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 9
+        "mechanical_failure": 0,
+        "not_checked": 10
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -1069,9 +1069,9 @@
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
@@ -1502,6 +1502,11 @@
           "published_at": "2026-08-31T21:58:46Z"
         },
         {
+          "title": "Selected GitHub Copilot models deprecated",
+          "url": "https://github.blog/changelog/2026-08-31-selected-github-copilot-models-deprecated",
+          "published_at": "2026-08-31T21:21:40Z"
+        },
+        {
           "title": "GitHub Copilot in VS Code, August 2026 releases",
           "url": "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases",
           "published_at": "2026-08-31T08:39:54Z"
@@ -1589,16 +1594,6 @@
           "title": "https://blog.google/products-and-platforms/products/search/new-controls-website-owners/",
           "url": "https://blog.google/products-and-platforms/products/search/new-controls-website-owners/",
           "published_at": "2026-08-31T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/inside-google/company-announcements/celebrating-250-years-of-america-from-its-history-to-its-future/",
-          "url": "https://blog.google/company-news/inside-google/company-announcements/celebrating-250-years-of-america-from-its-history-to-its-future/",
-          "published_at": "2026-08-30T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
-          "url": "https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/",
-          "published_at": "2026-08-30T00:00:00Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1677,9 +1672,15 @@
       "name": "Kimi Code releases",
       "adapter": "atom",
       "source_url": "https://github.com/MoonshotAI/kimi-code/releases.atom",
-      "status": "checked_no_match",
+      "status": "candidate_only",
       "checked_items": 10,
-      "recent_items": [],
+      "recent_items": [
+        {
+          "title": "@moonshot-ai/kimi-code@0.40.0",
+          "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.40.0",
+          "published_at": "2026-09-02T06:12:55Z"
+        }
+      ],
       "note": ""
     },
     {
@@ -1750,6 +1751,11 @@
       "checked_items": 10,
       "recent_items": [
         {
+          "title": "0.153.0-alpha.5",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.5",
+          "published_at": "2026-09-02T03:08:30Z"
+        },
+        {
           "title": "0.153.0-alpha.4",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.4",
           "published_at": "2026-09-01T21:05:41Z"
@@ -1793,11 +1799,6 @@
           "title": "0.152.0-alpha.7",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.7",
           "published_at": "2026-08-31T16:21:30Z"
-        },
-        {
-          "title": "0.152.0-alpha.6",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.6",
-          "published_at": "2026-08-31T02:15:59Z"
         }
       ],
       "note": ""
@@ -1819,604 +1820,604 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-          "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-          "published_at": "2026-09-01T23:58:01.048000Z"
-        },
-        {
-          "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-          "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-          "published_at": "2026-09-01T23:57:09.821000Z"
+          "title": "https://openai.com/index/chip-ganassi-racing/",
+          "url": "https://openai.com/index/chip-ganassi-racing/",
+          "published_at": "2026-09-02T07:45:23.813000Z"
         },
         {
           "title": "https://openai.com/index/stampli/",
           "url": "https://openai.com/index/stampli/",
-          "published_at": "2026-09-01T23:53:32.237000Z"
-        },
-        {
-          "title": "https://openai.com/index/path-to-astra/",
-          "url": "https://openai.com/index/path-to-astra/",
-          "published_at": "2026-09-01T23:53:03.323000Z"
-        },
-        {
-          "title": "https://openai.com/index/path-to-astra/",
-          "url": "https://openai.com/index/path-to-astra/",
-          "published_at": "2026-09-01T23:53:03.323000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-admin-plugin/",
-          "url": "https://openai.com/index/introducing-admin-plugin/",
-          "published_at": "2026-09-01T23:50:16.412000Z"
-        },
-        {
-          "title": "https://openai.com/index/polimill/",
-          "url": "https://openai.com/index/polimill/",
-          "published_at": "2026-09-01T23:40:45.500000Z"
-        },
-        {
-          "title": "https://openai.com/index/devday-2026/",
-          "url": "https://openai.com/index/devday-2026/",
-          "published_at": "2026-09-01T23:40:40.221000Z"
+          "published_at": "2026-09-02T07:43:54.930000Z"
         },
         {
           "title": "https://openai.com/index/introducing-b2b-signals/",
           "url": "https://openai.com/index/introducing-b2b-signals/",
-          "published_at": "2026-09-01T23:39:17.447000Z"
+          "published_at": "2026-09-02T07:38:20.270000Z"
         },
         {
           "title": "https://openai.com/index/introducing-b2b-signals/",
           "url": "https://openai.com/index/introducing-b2b-signals/",
-          "published_at": "2026-09-01T23:39:17.447000Z"
-        },
-        {
-          "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-          "published_at": "2026-09-01T23:37:34.522000Z"
-        },
-        {
-          "title": "https://openai.com/index/ai-native-company-workflows/",
-          "url": "https://openai.com/index/ai-native-company-workflows/",
-          "published_at": "2026-09-01T23:23:30.106000Z"
+          "published_at": "2026-09-02T07:38:20.270000Z"
         },
         {
           "title": "https://openai.com/index/how-enterprises-put-ai-to-work/",
           "url": "https://openai.com/index/how-enterprises-put-ai-to-work/",
-          "published_at": "2026-09-01T22:50:02.220000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "published_at": "2026-09-01T21:23:11.769000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-chatgpt-atlas/",
-          "url": "https://openai.com/index/introducing-chatgpt-atlas/",
-          "published_at": "2026-09-01T21:22:35.201000Z"
-        },
-        {
-          "title": "https://openai.com/index/sora-2/",
-          "url": "https://openai.com/index/sora-2/",
-          "published_at": "2026-09-01T21:21:55.956000Z"
-        },
-        {
-          "title": "https://openai.com/index/sora-2/",
-          "url": "https://openai.com/index/sora-2/",
-          "published_at": "2026-09-01T21:21:55.956000Z"
-        },
-        {
-          "title": "https://openai.com/index/sora-2/",
-          "url": "https://openai.com/index/sora-2/",
-          "published_at": "2026-09-01T21:21:55.956000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-chatgpt-team/",
-          "url": "https://openai.com/index/introducing-chatgpt-team/",
-          "published_at": "2026-09-01T21:20:54.485000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpts/",
-          "url": "https://openai.com/index/introducing-gpts/",
-          "published_at": "2026-09-01T21:20:53.969000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
-          "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
-          "published_at": "2026-09-01T21:20:53.732000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
-          "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
-          "published_at": "2026-09-01T21:20:53.732000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
-          "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
-          "published_at": "2026-09-01T21:20:53.732000Z"
-        },
-        {
-          "title": "https://openai.com/index/more-enterprise-grade-features-for-api-customers/",
-          "url": "https://openai.com/index/more-enterprise-grade-features-for-api-customers/",
-          "published_at": "2026-09-01T21:20:53.723000Z"
-        },
-        {
-          "title": "https://openai.com/index/dall-e-now-available-without-waitlist/",
-          "url": "https://openai.com/index/dall-e-now-available-without-waitlist/",
-          "published_at": "2026-09-01T21:20:53.358000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-parental-controls/",
-          "url": "https://openai.com/index/introducing-parental-controls/",
-          "published_at": "2026-09-01T21:20:53.159000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-parental-controls/",
-          "url": "https://openai.com/index/introducing-parental-controls/",
-          "published_at": "2026-09-01T21:20:53.159000Z"
-        },
-        {
-          "title": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
-          "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
-          "published_at": "2026-09-01T21:20:52.440000Z"
-        },
-        {
-          "title": "https://openai.com/index/optimizing-chatgpt/",
-          "url": "https://openai.com/index/optimizing-chatgpt/",
-          "published_at": "2026-09-01T21:20:51.813000Z"
-        },
-        {
-          "title": "https://openai.com/index/optimizing-chatgpt/",
-          "url": "https://openai.com/index/optimizing-chatgpt/",
-          "published_at": "2026-09-01T21:20:51.813000Z"
-        },
-        {
-          "title": "https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/",
-          "url": "https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/",
-          "published_at": "2026-09-01T21:20:51.791000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-canvas/",
-          "url": "https://openai.com/index/introducing-canvas/",
-          "published_at": "2026-09-01T21:20:51.374000Z"
-        },
-        {
-          "title": "https://openai.com/index/new-and-improved-content-moderation-tooling/",
-          "url": "https://openai.com/index/new-and-improved-content-moderation-tooling/",
-          "published_at": "2026-09-01T21:20:50.883000Z"
-        },
-        {
-          "title": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
-          "url": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
-          "published_at": "2026-09-01T21:20:50.804000Z"
-        },
-        {
-          "title": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
-          "url": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
-          "published_at": "2026-09-01T21:20:50.804000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-5-instant/",
-          "url": "https://openai.com/index/gpt-5-5-instant/",
-          "published_at": "2026-09-01T21:20:50.272000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-5-instant/",
-          "url": "https://openai.com/index/gpt-5-5-instant/",
-          "published_at": "2026-09-01T21:20:50.272000Z"
-        },
-        {
-          "title": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/",
-          "url": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/",
-          "published_at": "2026-09-01T21:20:49.897000Z"
-        },
-        {
-          "title": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
-          "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
-          "published_at": "2026-09-01T21:20:49.536000Z"
-        },
-        {
-          "title": "https://openai.com/index/new-and-improved-embedding-model/",
-          "url": "https://openai.com/index/new-and-improved-embedding-model/",
-          "published_at": "2026-09-01T21:20:47.958000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-openai-presence/",
-          "url": "https://openai.com/index/introducing-openai-presence/",
-          "published_at": "2026-09-01T21:20:47.814000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-openai-presence/",
-          "url": "https://openai.com/index/introducing-openai-presence/",
-          "published_at": "2026-09-01T21:20:47.814000Z"
-        },
-        {
-          "title": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
-          "url": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
-          "published_at": "2026-09-01T21:20:47.687000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
-          "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
-          "published_at": "2026-09-01T21:20:47.202000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
-          "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
-          "published_at": "2026-09-01T21:20:47.202000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-data-residency-in-asia/",
-          "url": "https://openai.com/index/introducing-data-residency-in-asia/",
-          "published_at": "2026-09-01T21:20:46.587000Z"
-        },
-        {
-          "title": "https://openai.com/index/testing-ads-in-chatgpt/",
-          "url": "https://openai.com/index/testing-ads-in-chatgpt/",
-          "published_at": "2026-09-01T21:20:45.906000Z"
-        },
-        {
-          "title": "https://openai.com/index/testing-ads-in-chatgpt/",
-          "url": "https://openai.com/index/testing-ads-in-chatgpt/",
-          "published_at": "2026-09-01T21:20:45.906000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-chatgpt-health/",
-          "url": "https://openai.com/index/introducing-chatgpt-health/",
-          "published_at": "2026-09-01T21:20:45.633000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-chatgpt-health/",
-          "url": "https://openai.com/index/introducing-chatgpt-health/",
-          "published_at": "2026-09-01T21:20:45.633000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-4-api-general-availability/",
-          "url": "https://openai.com/index/gpt-4-api-general-availability/",
-          "published_at": "2026-09-01T21:20:44.878000Z"
-        },
-        {
-          "title": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
-          "url": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
-          "published_at": "2026-09-01T21:20:43.591000Z"
-        },
-        {
-          "title": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
-          "url": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
-          "published_at": "2026-09-01T21:20:43.591000Z"
-        },
-        {
-          "title": "https://openai.com/index/sora-feed-philosophy/",
-          "url": "https://openai.com/index/sora-feed-philosophy/",
-          "published_at": "2026-09-01T21:20:42.946000Z"
-        },
-        {
-          "title": "https://openai.com/index/sora-feed-philosophy/",
-          "url": "https://openai.com/index/sora-feed-philosophy/",
-          "published_at": "2026-09-01T21:20:42.946000Z"
-        },
-        {
-          "title": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
-          "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
-          "published_at": "2026-09-01T21:20:42.944000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-on-aws/",
-          "url": "https://openai.com/index/openai-on-aws/",
-          "published_at": "2026-09-01T21:20:42.489000Z"
+          "published_at": "2026-09-02T07:24:05.302000Z"
         },
         {
           "title": "https://openai.com/index/personal-finance-chatgpt/",
           "url": "https://openai.com/index/personal-finance-chatgpt/",
-          "published_at": "2026-09-01T21:20:42.296000Z"
-        },
-        {
-          "title": "https://openai.com/index/new-tools-for-chatgpt-enterprise/",
-          "url": "https://openai.com/index/new-tools-for-chatgpt-enterprise/",
-          "published_at": "2026-09-01T21:20:41.980000Z"
+          "published_at": "2026-09-02T07:19:17.021000Z"
         },
         {
           "title": "https://openai.com/index/work-with-codex-from-anywhere/",
           "url": "https://openai.com/index/work-with-codex-from-anywhere/",
-          "published_at": "2026-09-01T21:20:41.944000Z"
+          "published_at": "2026-09-02T07:19:16.056000Z"
+        },
+        {
+          "title": "https://openai.com/index/sora-feed-philosophy/",
+          "url": "https://openai.com/index/sora-feed-philosophy/",
+          "published_at": "2026-09-02T07:19:15.821000Z"
+        },
+        {
+          "title": "https://openai.com/index/sora-feed-philosophy/",
+          "url": "https://openai.com/index/sora-feed-philosophy/",
+          "published_at": "2026-09-02T07:19:15.821000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-on-aws/",
+          "url": "https://openai.com/index/openai-on-aws/",
+          "published_at": "2026-09-02T07:19:15.593000Z"
+        },
+        {
+          "title": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
+          "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
+          "published_at": "2026-09-02T07:19:15.592000Z"
+        },
+        {
+          "title": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
+          "url": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
+          "published_at": "2026-09-02T07:19:15.267000Z"
         },
         {
           "title": "https://openai.com/index/introducing-chatgpt-agent/",
           "url": "https://openai.com/index/introducing-chatgpt-agent/",
-          "published_at": "2026-09-01T21:20:41.737000Z"
+          "published_at": "2026-09-02T07:19:15.238000Z"
         },
         {
           "title": "https://openai.com/index/introducing-chatgpt-agent/",
           "url": "https://openai.com/index/introducing-chatgpt-agent/",
-          "published_at": "2026-09-01T21:20:41.737000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-chatgpt-edu/",
-          "url": "https://openai.com/index/introducing-chatgpt-edu/",
-          "published_at": "2026-09-01T21:20:41.582000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-prism/",
-          "url": "https://openai.com/index/introducing-prism/",
-          "published_at": "2026-09-01T21:20:41.301000Z"
-        },
-        {
-          "title": "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
-          "url": "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
-          "published_at": "2026-09-01T21:20:41.236000Z"
+          "published_at": "2026-09-02T07:19:15.238000Z"
         },
         {
           "title": "https://openai.com/index/introducing-data-residency-in-europe/",
           "url": "https://openai.com/index/introducing-data-residency-in-europe/",
-          "published_at": "2026-09-01T21:20:41.133000Z"
+          "published_at": "2026-09-02T07:19:14.908000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-5-instant/",
+          "url": "https://openai.com/index/gpt-5-5-instant/",
+          "published_at": "2026-09-02T07:19:14.666000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-5-instant/",
+          "url": "https://openai.com/index/gpt-5-5-instant/",
+          "published_at": "2026-09-02T07:19:14.666000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+          "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+          "published_at": "2026-09-02T07:19:14.652000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+          "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+          "published_at": "2026-09-02T07:19:14.652000Z"
         },
         {
           "title": "https://openai.com/index/codex-security-now-in-research-preview/",
           "url": "https://openai.com/index/codex-security-now-in-research-preview/",
-          "published_at": "2026-09-01T21:20:40.956000Z"
+          "published_at": "2026-09-02T07:19:14.343000Z"
         },
         {
           "title": "https://openai.com/index/codex-security-now-in-research-preview/",
           "url": "https://openai.com/index/codex-security-now-in-research-preview/",
-          "published_at": "2026-09-01T21:20:40.956000Z"
+          "published_at": "2026-09-02T07:19:14.343000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-whatsapp-transition/",
+          "url": "https://openai.com/index/chatgpt-whatsapp-transition/",
+          "published_at": "2026-09-02T07:19:14.267000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-whatsapp-transition/",
+          "url": "https://openai.com/index/chatgpt-whatsapp-transition/",
+          "published_at": "2026-09-02T07:19:14.267000Z"
         },
         {
           "title": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
           "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
-          "published_at": "2026-09-01T21:20:40.953000Z"
+          "published_at": "2026-09-02T07:19:14.037000Z"
         },
         {
           "title": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
           "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
-          "published_at": "2026-09-01T21:20:40.953000Z"
+          "published_at": "2026-09-02T07:19:14.037000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-prism/",
+          "url": "https://openai.com/index/introducing-prism/",
+          "published_at": "2026-09-02T07:19:13.737000Z"
+        },
+        {
+          "title": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
+          "url": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
+          "published_at": "2026-09-02T07:19:13.568000Z"
+        },
+        {
+          "title": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
+          "url": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
+          "published_at": "2026-09-02T07:19:13.568000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-5-4/",
+          "url": "https://openai.com/index/introducing-gpt-5-4/",
+          "published_at": "2026-09-02T07:19:13.422000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-5-4/",
+          "url": "https://openai.com/index/introducing-gpt-5-4/",
+          "published_at": "2026-09-02T07:19:13.422000Z"
+        },
+        {
+          "title": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/",
+          "url": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/",
+          "published_at": "2026-09-02T07:19:13.309000Z"
+        },
+        {
+          "title": "https://openai.com/index/dall-e-now-available-without-waitlist/",
+          "url": "https://openai.com/index/dall-e-now-available-without-waitlist/",
+          "published_at": "2026-09-02T07:19:13.005000Z"
+        },
+        {
+          "title": "https://openai.com/index/new-tools-for-chatgpt-enterprise/",
+          "url": "https://openai.com/index/new-tools-for-chatgpt-enterprise/",
+          "published_at": "2026-09-02T07:19:12.646000Z"
+        },
+        {
+          "title": "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
+          "url": "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
+          "published_at": "2026-09-02T07:19:12.640000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-chatgpt-edu/",
+          "url": "https://openai.com/index/introducing-chatgpt-edu/",
+          "published_at": "2026-09-02T07:19:12.638000Z"
+        },
+        {
+          "title": "https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/",
+          "url": "https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/",
+          "published_at": "2026-09-02T07:19:12.190000Z"
         },
         {
           "title": "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
           "url": "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
-          "published_at": "2026-09-01T21:20:40.880000Z"
+          "published_at": "2026-09-02T07:19:11.970000Z"
         },
         {
-          "title": "https://openai.com/index/chatgpt-whatsapp-transition/",
-          "url": "https://openai.com/index/chatgpt-whatsapp-transition/",
-          "published_at": "2026-09-01T21:20:40.861000Z"
-        },
-        {
-          "title": "https://openai.com/index/chatgpt-whatsapp-transition/",
-          "url": "https://openai.com/index/chatgpt-whatsapp-transition/",
-          "published_at": "2026-09-01T21:20:40.861000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-5-4/",
-          "url": "https://openai.com/index/introducing-gpt-5-4/",
-          "published_at": "2026-09-01T21:20:40.625000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-5-4/",
-          "url": "https://openai.com/index/introducing-gpt-5-4/",
-          "published_at": "2026-09-01T21:20:40.625000Z"
-        },
-        {
-          "title": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
-          "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
-          "published_at": "2026-09-01T21:20:40.374000Z"
-        },
-        {
-          "title": "https://openai.com/index/helping-people-when-they-need-it-most/",
-          "url": "https://openai.com/index/helping-people-when-they-need-it-most/",
-          "published_at": "2026-09-01T21:20:40.028000Z"
-        },
-        {
-          "title": "https://openai.com/index/helping-people-when-they-need-it-most/",
-          "url": "https://openai.com/index/helping-people-when-they-need-it-most/",
-          "published_at": "2026-09-01T21:20:40.028000Z"
+          "title": "https://openai.com/index/new-and-improved-embedding-model/",
+          "url": "https://openai.com/index/new-and-improved-embedding-model/",
+          "published_at": "2026-09-02T07:19:11.886000Z"
         },
         {
           "title": "https://openai.com/index/introducing-openai-for-nonprofits/",
           "url": "https://openai.com/index/introducing-openai-for-nonprofits/",
-          "published_at": "2026-09-01T21:20:39.994000Z"
-        },
-        {
-          "title": "https://openai.com/index/how-the-voices-for-chatgpt-were-chosen/",
-          "url": "https://openai.com/index/how-the-voices-for-chatgpt-were-chosen/",
-          "published_at": "2026-09-01T21:20:39.989000Z"
+          "published_at": "2026-09-02T07:19:11.811000Z"
         },
         {
           "title": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
           "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
-          "published_at": "2026-09-01T21:20:39.636000Z"
+          "published_at": "2026-09-02T07:19:11.762000Z"
+        },
+        {
+          "title": "https://openai.com/index/how-the-voices-for-chatgpt-were-chosen/",
+          "url": "https://openai.com/index/how-the-voices-for-chatgpt-were-chosen/",
+          "published_at": "2026-09-02T07:19:11.468000Z"
         },
         {
           "title": "https://openai.com/index/developers-can-now-submit-apps-to-chatgpt/",
           "url": "https://openai.com/index/developers-can-now-submit-apps-to-chatgpt/",
-          "published_at": "2026-09-01T21:20:39.635000Z"
+          "published_at": "2026-09-02T07:19:11.461000Z"
         },
         {
           "title": "https://openai.com/index/developers-can-now-submit-apps-to-chatgpt/",
           "url": "https://openai.com/index/developers-can-now-submit-apps-to-chatgpt/",
-          "published_at": "2026-09-01T21:20:39.635000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
-          "url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
-          "published_at": "2026-09-01T21:20:39.255000Z"
-        },
-        {
-          "title": "https://openai.com/index/new-chatgpt-images-is-here/",
-          "url": "https://openai.com/index/new-chatgpt-images-is-here/",
-          "published_at": "2026-09-01T21:20:39.253000Z"
-        },
-        {
-          "title": "https://openai.com/index/new-chatgpt-images-is-here/",
-          "url": "https://openai.com/index/new-chatgpt-images-is-here/",
-          "published_at": "2026-09-01T21:20:39.253000Z"
+          "published_at": "2026-09-02T07:19:11.461000Z"
         },
         {
           "title": "https://openai.com/index/improvements-to-data-analysis-in-chatgpt/",
           "url": "https://openai.com/index/improvements-to-data-analysis-in-chatgpt/",
-          "published_at": "2026-09-01T21:20:39.211000Z"
+          "published_at": "2026-09-02T07:19:11.032000Z"
         },
         {
-          "title": "https://openai.com/index/chatgpt-memory-dreaming/",
-          "url": "https://openai.com/index/chatgpt-memory-dreaming/",
-          "published_at": "2026-09-01T21:20:39.018000Z"
+          "title": "https://openai.com/index/more-enterprise-grade-features-for-api-customers/",
+          "url": "https://openai.com/index/more-enterprise-grade-features-for-api-customers/",
+          "published_at": "2026-09-02T07:19:10.957000Z"
         },
         {
-          "title": "https://openai.com/index/chatgpt-memory-dreaming/",
-          "url": "https://openai.com/index/chatgpt-memory-dreaming/",
-          "published_at": "2026-09-01T21:20:39.018000Z"
+          "title": "https://openai.com/index/introducing-chatgpt-team/",
+          "url": "https://openai.com/index/introducing-chatgpt-team/",
+          "published_at": "2026-09-02T07:19:10.901000Z"
         },
         {
-          "title": "https://openai.com/index/chatgpt-memory-dreaming/",
-          "url": "https://openai.com/index/chatgpt-memory-dreaming/",
-          "published_at": "2026-09-01T21:20:39.018000Z"
+          "title": "https://openai.com/index/introducing-gpts/",
+          "url": "https://openai.com/index/introducing-gpts/",
+          "published_at": "2026-09-02T07:19:10.793000Z"
         },
         {
-          "title": "https://openai.com/index/gpt-5-1/",
-          "url": "https://openai.com/index/gpt-5-1/",
-          "published_at": "2026-09-01T21:20:38.898000Z"
+          "title": "https://openai.com/index/introducing-parental-controls/",
+          "url": "https://openai.com/index/introducing-parental-controls/",
+          "published_at": "2026-09-02T07:19:10.648000Z"
         },
         {
-          "title": "https://openai.com/index/gpt-5-1/",
-          "url": "https://openai.com/index/gpt-5-1/",
-          "published_at": "2026-09-01T21:20:38.898000Z"
+          "title": "https://openai.com/index/introducing-parental-controls/",
+          "url": "https://openai.com/index/introducing-parental-controls/",
+          "published_at": "2026-09-02T07:19:10.648000Z"
         },
         {
-          "title": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
-          "url": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
-          "published_at": "2026-09-01T21:20:38.567000Z"
+          "title": "https://openai.com/index/introducing-canvas/",
+          "url": "https://openai.com/index/introducing-canvas/",
+          "published_at": "2026-09-02T07:19:10.320000Z"
         },
         {
-          "title": "https://openai.com/index/openai-and-journalism/",
-          "url": "https://openai.com/index/openai-and-journalism/",
-          "published_at": "2026-09-01T21:20:38.530000Z"
+          "title": "https://openai.com/index/new-and-improved-content-moderation-tooling/",
+          "url": "https://openai.com/index/new-and-improved-content-moderation-tooling/",
+          "published_at": "2026-09-02T07:19:09.977000Z"
         },
         {
-          "title": "https://openai.com/index/introducing-openai-partner-network/",
-          "url": "https://openai.com/index/introducing-openai-partner-network/",
-          "published_at": "2026-09-01T21:20:38.453000Z"
+          "title": "https://openai.com/index/helping-people-when-they-need-it-most/",
+          "url": "https://openai.com/index/helping-people-when-they-need-it-most/",
+          "published_at": "2026-09-02T07:19:09.857000Z"
         },
         {
-          "title": "https://openai.com/index/sora-is-here/",
-          "url": "https://openai.com/index/sora-is-here/",
-          "published_at": "2026-09-01T21:20:38.411000Z"
+          "title": "https://openai.com/index/helping-people-when-they-need-it-most/",
+          "url": "https://openai.com/index/helping-people-when-they-need-it-most/",
+          "published_at": "2026-09-02T07:19:09.857000Z"
+        },
+        {
+          "title": "https://openai.com/index/new-chatgpt-images-is-here/",
+          "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+          "published_at": "2026-09-02T07:19:09.853000Z"
+        },
+        {
+          "title": "https://openai.com/index/new-chatgpt-images-is-here/",
+          "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+          "published_at": "2026-09-02T07:19:09.853000Z"
         },
         {
           "title": "https://openai.com/index/introducing-improvements-to-the-fine-tuning-api-and-expanding-our-custom-models-program/",
           "url": "https://openai.com/index/introducing-improvements-to-the-fine-tuning-api-and-expanding-our-custom-models-program/",
-          "published_at": "2026-09-01T21:20:38.206000Z"
+          "published_at": "2026-09-02T07:19:09.513000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+          "url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+          "published_at": "2026-09-02T07:19:09.482000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+          "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+          "published_at": "2026-09-02T07:19:09.414000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+          "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+          "published_at": "2026-09-02T07:19:09.414000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+          "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+          "published_at": "2026-09-02T07:19:09.414000Z"
+        },
+        {
+          "title": "https://openai.com/index/sora-is-here/",
+          "url": "https://openai.com/index/sora-is-here/",
+          "published_at": "2026-09-02T07:19:08.856000Z"
         },
         {
           "title": "https://openai.com/index/searchgpt-prototype/",
           "url": "https://openai.com/index/searchgpt-prototype/",
-          "published_at": "2026-09-01T21:20:38.069000Z"
+          "published_at": "2026-09-02T07:19:08.837000Z"
         },
         {
-          "title": "https://openai.com/index/health-in-chatgpt/",
-          "url": "https://openai.com/index/health-in-chatgpt/",
-          "published_at": "2026-09-01T21:20:38.036000Z"
+          "title": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "published_at": "2026-09-02T07:19:08.646000Z"
         },
         {
-          "title": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
-          "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
-          "published_at": "2026-09-01T21:20:37.663000Z"
+          "title": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "published_at": "2026-09-02T07:19:08.646000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "published_at": "2026-09-02T07:19:08.646000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-4-api-general-availability/",
+          "url": "https://openai.com/index/gpt-4-api-general-availability/",
+          "published_at": "2026-09-02T07:19:08.636000Z"
+        },
+        {
+          "title": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+          "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+          "published_at": "2026-09-02T07:19:08.293000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+          "url": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+          "published_at": "2026-09-02T07:19:07.743000Z"
+        },
+        {
+          "title": "https://openai.com/index/openai-and-journalism/",
+          "url": "https://openai.com/index/openai-and-journalism/",
+          "published_at": "2026-09-02T07:19:07.703000Z"
         },
         {
           "title": "https://openai.com/index/introducing-company-knowledge/",
           "url": "https://openai.com/index/introducing-company-knowledge/",
-          "published_at": "2026-09-01T21:20:37.629000Z"
+          "published_at": "2026-09-02T07:19:07.414000Z"
         },
         {
-          "title": "https://openai.com/index/introducing-gpt-live/",
-          "url": "https://openai.com/index/introducing-gpt-live/",
-          "published_at": "2026-09-01T21:20:37.351000Z"
+          "title": "https://openai.com/index/introducing-openai-partner-network/",
+          "url": "https://openai.com/index/introducing-openai-partner-network/",
+          "published_at": "2026-09-02T07:19:07.394000Z"
         },
         {
-          "title": "https://openai.com/index/introducing-gpt-live/",
-          "url": "https://openai.com/index/introducing-gpt-live/",
-          "published_at": "2026-09-01T21:20:37.351000Z"
-        },
-        {
-          "title": "https://openai.com/index/building-towards-age-prediction/",
-          "url": "https://openai.com/index/building-towards-age-prediction/",
-          "published_at": "2026-09-01T21:20:37.077000Z"
-        },
-        {
-          "title": "https://openai.com/index/building-towards-age-prediction/",
-          "url": "https://openai.com/index/building-towards-age-prediction/",
-          "published_at": "2026-09-01T21:20:37.077000Z"
-        },
-        {
-          "title": "https://openai.com/index/previewing-gpt-5-6-sol/",
-          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
-          "published_at": "2026-09-01T21:20:36.935000Z"
-        },
-        {
-          "title": "https://openai.com/index/previewing-gpt-5-6-sol/",
-          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
-          "published_at": "2026-09-01T21:20:36.935000Z"
+          "title": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
+          "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
+          "published_at": "2026-09-02T07:19:07.384000Z"
         },
         {
           "title": "https://openai.com/index/introducing-chatgpt-pulse/",
           "url": "https://openai.com/index/introducing-chatgpt-pulse/",
-          "published_at": "2026-09-01T21:20:36.806000Z"
+          "published_at": "2026-09-02T07:19:07.299000Z"
+        },
+        {
+          "title": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "published_at": "2026-09-02T07:19:06.870000Z"
+        },
+        {
+          "title": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "published_at": "2026-09-02T07:19:06.870000Z"
+        },
+        {
+          "title": "https://openai.com/index/optimizing-chatgpt/",
+          "url": "https://openai.com/index/optimizing-chatgpt/",
+          "published_at": "2026-09-02T07:19:06.735000Z"
+        },
+        {
+          "title": "https://openai.com/index/optimizing-chatgpt/",
+          "url": "https://openai.com/index/optimizing-chatgpt/",
+          "published_at": "2026-09-02T07:19:06.735000Z"
+        },
+        {
+          "title": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
+          "url": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
+          "published_at": "2026-09-02T07:19:06.719000Z"
+        },
+        {
+          "title": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
+          "url": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
+          "published_at": "2026-09-02T07:19:06.719000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-chatgpt-health/",
+          "url": "https://openai.com/index/introducing-chatgpt-health/",
+          "published_at": "2026-09-02T07:19:06.311000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-chatgpt-health/",
+          "url": "https://openai.com/index/introducing-chatgpt-health/",
+          "published_at": "2026-09-02T07:19:06.311000Z"
+        },
+        {
+          "title": "https://openai.com/index/building-towards-age-prediction/",
+          "url": "https://openai.com/index/building-towards-age-prediction/",
+          "published_at": "2026-09-02T07:19:06.293000Z"
+        },
+        {
+          "title": "https://openai.com/index/building-towards-age-prediction/",
+          "url": "https://openai.com/index/building-towards-age-prediction/",
+          "published_at": "2026-09-02T07:19:06.293000Z"
+        },
+        {
+          "title": "https://openai.com/index/health-in-chatgpt/",
+          "url": "https://openai.com/index/health-in-chatgpt/",
+          "published_at": "2026-09-02T07:19:06.227000Z"
+        },
+        {
+          "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+          "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+          "published_at": "2026-09-02T07:19:06.171000Z"
+        },
+        {
+          "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+          "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+          "published_at": "2026-09-02T07:19:06.171000Z"
+        },
+        {
+          "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+          "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+          "published_at": "2026-09-02T07:19:06.171000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-live/",
+          "url": "https://openai.com/index/introducing-gpt-live/",
+          "published_at": "2026-09-02T07:19:05.758000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-live/",
+          "url": "https://openai.com/index/introducing-gpt-live/",
+          "published_at": "2026-09-02T07:19:05.758000Z"
+        },
+        {
+          "title": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+          "published_at": "2026-09-02T07:19:05.628000Z"
+        },
+        {
+          "title": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+          "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+          "published_at": "2026-09-02T07:19:05.555000Z"
+        },
+        {
+          "title": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+          "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+          "published_at": "2026-09-02T07:19:05.503000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+          "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+          "published_at": "2026-09-02T07:19:05.474000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+          "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+          "published_at": "2026-09-02T07:19:05.474000Z"
+        },
+        {
+          "title": "https://openai.com/index/testing-ads-in-chatgpt/",
+          "url": "https://openai.com/index/testing-ads-in-chatgpt/",
+          "published_at": "2026-09-02T07:19:05.047000Z"
+        },
+        {
+          "title": "https://openai.com/index/testing-ads-in-chatgpt/",
+          "url": "https://openai.com/index/testing-ads-in-chatgpt/",
+          "published_at": "2026-09-02T07:19:05.047000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-openai-presence/",
+          "url": "https://openai.com/index/introducing-openai-presence/",
+          "published_at": "2026-09-02T07:19:05.035000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-openai-presence/",
+          "url": "https://openai.com/index/introducing-openai-presence/",
+          "published_at": "2026-09-02T07:19:05.035000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-chatgpt-atlas/",
+          "url": "https://openai.com/index/introducing-chatgpt-atlas/",
+          "published_at": "2026-09-02T07:19:04.442000Z"
         },
         {
           "title": "https://openai.com/index/introducing-gpt-5-5/",
           "url": "https://openai.com/index/introducing-gpt-5-5/",
-          "published_at": "2026-09-01T21:20:36.659000Z"
+          "published_at": "2026-09-02T07:19:04.438000Z"
         },
         {
           "title": "https://openai.com/index/introducing-gpt-5-5/",
           "url": "https://openai.com/index/introducing-gpt-5-5/",
-          "published_at": "2026-09-01T21:20:36.659000Z"
+          "published_at": "2026-09-02T07:19:04.438000Z"
         },
         {
-          "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "published_at": "2026-09-01T21:20:36.601000Z"
-        },
-        {
-          "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "published_at": "2026-09-01T21:20:36.601000Z"
-        },
-        {
-          "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "published_at": "2026-09-01T21:20:36.601000Z"
+          "title": "https://openai.com/index/introducing-data-residency-in-asia/",
+          "url": "https://openai.com/index/introducing-data-residency-in-asia/",
+          "published_at": "2026-09-02T07:19:03.888000Z"
         },
         {
           "title": "https://openai.com/index/chatgpt-for-teachers/",
           "url": "https://openai.com/index/chatgpt-for-teachers/",
-          "published_at": "2026-09-01T21:20:36.203000Z"
+          "published_at": "2026-09-02T07:19:03.886000Z"
         },
         {
-          "title": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
-          "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
-          "published_at": "2026-09-01T21:20:36.098000Z"
+          "title": "https://openai.com/index/sora-2/",
+          "url": "https://openai.com/index/sora-2/",
+          "published_at": "2026-09-02T07:19:03.853000Z"
         },
         {
-          "title": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
-          "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
-          "published_at": "2026-09-01T21:20:36.098000Z"
+          "title": "https://openai.com/index/sora-2/",
+          "url": "https://openai.com/index/sora-2/",
+          "published_at": "2026-09-02T07:19:03.853000Z"
         },
         {
-          "title": "https://openai.com/index/gpt-5-6/",
-          "url": "https://openai.com/index/gpt-5-6/",
-          "published_at": "2026-09-01T21:20:35.754000Z"
+          "title": "https://openai.com/index/sora-2/",
+          "url": "https://openai.com/index/sora-2/",
+          "published_at": "2026-09-02T07:19:03.853000Z"
         },
         {
-          "title": "https://openai.com/index/gpt-5-6/",
-          "url": "https://openai.com/index/gpt-5-6/",
-          "published_at": "2026-09-01T21:20:35.754000Z"
-        },
-        {
-          "title": "https://openai.com/index/premium-seats-chatgpt-business/",
-          "url": "https://openai.com/index/premium-seats-chatgpt-business/",
-          "published_at": "2026-09-01T21:20:35.559000Z"
+          "title": "https://openai.com/index/gpt-5-1-for-developers/",
+          "url": "https://openai.com/index/gpt-5-1-for-developers/",
+          "published_at": "2026-09-02T07:19:03.806000Z"
         },
         {
           "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
           "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-          "published_at": "2026-09-01T21:20:35.242000Z"
+          "published_at": "2026-09-02T07:19:03.608000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "published_at": "2026-09-02T07:19:03.608000Z"
+        },
+        {
+          "title": "https://openai.com/index/premium-seats-chatgpt-business/",
+          "url": "https://openai.com/index/premium-seats-chatgpt-business/",
+          "published_at": "2026-09-02T07:19:03.546000Z"
+        },
+        {
+          "title": "https://openai.com/index/learn-teach-chatgpt-work-codex/",
+          "url": "https://openai.com/index/learn-teach-chatgpt-work-codex/",
+          "published_at": "2026-09-02T07:19:03.449000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-6/",
+          "url": "https://openai.com/index/gpt-5-6/",
+          "published_at": "2026-09-02T07:19:03.357000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-6/",
+          "url": "https://openai.com/index/gpt-5-6/",
+          "published_at": "2026-09-02T07:19:03.357000Z"
+        },
+        {
+          "title": "https://openai.com/index/previewing-ultrafast/",
+          "url": "https://openai.com/index/previewing-ultrafast/",
+          "published_at": "2026-09-02T07:19:03.055000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "published_at": "2026-09-02T07:19:02.677000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+          "published_at": "2026-09-02T07:19:02.677000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-6-in-kiro/",
+          "url": "https://openai.com/index/gpt-5-6-in-kiro/",
+          "published_at": "2026-09-02T07:19:01.562000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+          "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+          "published_at": "2026-09-02T07:19:01.537000Z"
+        },
+        {
+          "title": "https://openai.com/index/learning-never-stops/",
+          "url": "https://openai.com/index/learning-never-stops/",
+          "published_at": "2026-09-02T07:19:01.249000Z"
+        },
+        {
+          "title": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+          "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+          "published_at": "2026-09-02T07:19:00.805000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2438,6 +2439,11 @@
       "checked_items": 30,
       "recent_items": [
         {
+          "title": "Quoting Rick Brewster",
+          "url": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+          "published_at": "2026-09-02T05:50:57Z"
+        },
+        {
           "title": "Claude Fable 5.1 made me a really nice animated pelican",
           "url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
           "published_at": "2026-09-01T23:57:28Z"
@@ -2448,9 +2454,19 @@
           "published_at": "2026-09-01T19:03:01Z"
         },
         {
+          "title": "GeoJSON Map Viewer",
+          "url": "https://simonwillison.net/2026/Sep/1/geojson/",
+          "published_at": "2026-09-01T18:05:45Z"
+        },
+        {
           "title": "Quoting Tarn Adams",
           "url": "https://simonwillison.net/2026/Sep/1/tarn-adams/",
           "published_at": "2026-09-01T17:01:11Z"
+        },
+        {
+          "title": "datasette-mcp 0.2",
+          "url": "https://simonwillison.net/2026/Sep/1/datasette-mcp/",
+          "published_at": "2026-09-01T15:30:12Z"
         },
         {
           "title": "Python 3.15.0 candidate 2 is here!",
@@ -2471,11 +2487,6 @@
           "title": "Understanding ChatGPT Work",
           "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
           "published_at": "2026-08-30T23:59:47Z"
-        },
-        {
-          "title": "Introducing Hy4 Preview",
-          "url": "https://simonwillison.net/2026/Aug/29/hy4/",
-          "published_at": "2026-08-29T23:53:13Z"
         }
       ],
       "note": ""
@@ -2495,7 +2506,7 @@
     "platform_variants": 18
   },
   "notes": [
-    "198 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "200 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."

@@ -1,120 +1,48 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-02T08:00:36+08:00",
+  "generated_at": "2026-09-02T16:00:02+08:00",
   "window": {
-    "start": "2026-08-30T00:00:36+08:00",
-    "end": "2026-09-02T08:00:36+08:00",
+    "start": "2026-08-30T08:00:02+08:00",
+    "end": "2026-09-02T16:00:02+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 305,
-  "new_in_run_count": 96,
+  "candidate_count": 396,
+  "new_in_run_count": 91,
   "new_candidates": [
     {
-      "source_name": "AWS Public Sector RSS",
+      "source_name": "GitHub Copilot Changelog feed",
       "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "title": "AWS expands its Defending Digital Campaigns offering for the 2026 election cycle",
-      "url": "https://aws.amazon.com/blogs/publicsector/aws-expands-its-defending-digital-campaigns-offering-for-the-2026-election-cycle/",
-      "published_or_lastmod_at": "2026-09-01T21:53:19Z",
+      "source_url": "https://github.blog/changelog/label/copilot/feed/",
+      "title": "Selected GitHub Copilot models deprecated",
+      "url": "https://github.blog/changelog/2026-08-31-selected-github-copilot-models-deprecated",
+      "published_or_lastmod_at": "2026-08-31T21:21:40Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "Claude Code releases",
+      "source_name": "Kimi Code releases",
       "adapter": "atom",
-      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
-      "title": "v2.1.258",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.258",
-      "published_or_lastmod_at": "2026-09-01T22:33:20Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "GitHub Copilot Changelog feed",
-      "adapter": "rss",
-      "source_url": "https://github.blog/changelog/label/copilot/feed/",
-      "title": "Set an expiration date for individual user budgets",
-      "url": "https://github.blog/changelog/2026-09-01-set-an-expiration-date-for-individual-user-budgets",
-      "published_or_lastmod_at": "2026-09-01T20:23:13Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "GitHub Copilot Changelog feed",
-      "adapter": "rss",
-      "source_url": "https://github.blog/changelog/label/copilot/feed/",
-      "title": "Claude Fable 5.1 is generally available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot",
-      "published_or_lastmod_at": "2026-09-01T14:29:23Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Google Blog sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://blog.google/en-us/sitemap.xml",
-      "title": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
-      "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
-      "published_or_lastmod_at": "2026-09-01T00:00:00Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "Google Blog sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://blog.google/en-us/sitemap.xml",
-      "title": "https://blog.google/security/staying-one-step-ahead-strengthening-androids-lead-in-scam-protection/",
-      "url": "https://blog.google/security/staying-one-step-ahead-strengthening-androids-lead-in-scam-protection/",
-      "published_or_lastmod_at": "2026-09-01T00:00:00Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "Google Blog sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://blog.google/en-us/sitemap.xml",
-      "title": "https://blog.google/security/android-ai-security-eu-dma/",
-      "url": "https://blog.google/security/android-ai-security-eu-dma/",
-      "published_or_lastmod_at": "2026-09-01T00:00:00Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "Hugging Face Blog",
-      "adapter": "rss",
-      "source_url": "https://huggingface.co/blog/feed.xml",
-      "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
-      "url": "https://huggingface.co/blog/allenai/benchmirt",
-      "published_or_lastmod_at": "2026-09-01T21:39:07Z",
+      "source_url": "https://github.com/MoonshotAI/kimi-code/releases.atom",
+      "title": "@moonshot-ai/kimi-code@0.40.0",
+      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.40.0",
+      "published_or_lastmod_at": "2026-09-02T06:12:55Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI Codex releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.153.0-alpha.4",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.4",
-      "published_or_lastmod_at": "2026-09-01T21:05:41Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.152.1",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.1",
-      "published_or_lastmod_at": "2026-09-01T22:34:23Z",
+      "title": "0.153.0-alpha.5",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.5",
+      "published_or_lastmod_at": "2026-09-02T03:08:30Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-      "published_or_lastmod_at": "2026-09-01T23:58:01.048000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-      "published_or_lastmod_at": "2026-09-01T23:57:09.821000Z",
+      "title": "https://openai.com/index/chip-ganassi-racing/",
+      "url": "https://openai.com/index/chip-ganassi-racing/",
+      "published_or_lastmod_at": "2026-09-02T07:45:23.813000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -123,43 +51,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/stampli/",
       "url": "https://openai.com/index/stampli/",
-      "published_or_lastmod_at": "2026-09-01T23:53:32.237000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/path-to-astra/",
-      "url": "https://openai.com/index/path-to-astra/",
-      "published_or_lastmod_at": "2026-09-01T23:53:03.323000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-admin-plugin/",
-      "url": "https://openai.com/index/introducing-admin-plugin/",
-      "published_or_lastmod_at": "2026-09-01T23:50:16.412000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/polimill/",
-      "url": "https://openai.com/index/polimill/",
-      "published_or_lastmod_at": "2026-09-01T23:40:45.500000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/devday-2026/",
-      "url": "https://openai.com/index/devday-2026/",
-      "published_or_lastmod_at": "2026-09-01T23:40:40.221000Z",
+      "published_or_lastmod_at": "2026-09-02T07:43:54.930000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -168,25 +60,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-b2b-signals/",
       "url": "https://openai.com/index/introducing-b2b-signals/",
-      "published_or_lastmod_at": "2026-09-01T23:39:17.447000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-      "published_or_lastmod_at": "2026-09-01T23:37:34.522000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/ai-native-company-workflows/",
-      "url": "https://openai.com/index/ai-native-company-workflows/",
-      "published_or_lastmod_at": "2026-09-01T23:23:30.106000Z",
+      "published_or_lastmod_at": "2026-09-02T07:38:20.270000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -195,277 +69,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/how-enterprises-put-ai-to-work/",
       "url": "https://openai.com/index/how-enterprises-put-ai-to-work/",
-      "published_or_lastmod_at": "2026-09-01T22:50:02.220000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-      "published_or_lastmod_at": "2026-09-01T21:23:11.769000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-chatgpt-atlas/",
-      "url": "https://openai.com/index/introducing-chatgpt-atlas/",
-      "published_or_lastmod_at": "2026-09-01T21:22:35.201000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/sora-2/",
-      "url": "https://openai.com/index/sora-2/",
-      "published_or_lastmod_at": "2026-09-01T21:21:55.956000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-chatgpt-team/",
-      "url": "https://openai.com/index/introducing-chatgpt-team/",
-      "published_or_lastmod_at": "2026-09-01T21:20:54.485000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-gpts/",
-      "url": "https://openai.com/index/introducing-gpts/",
-      "published_or_lastmod_at": "2026-09-01T21:20:53.969000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
-      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
-      "published_or_lastmod_at": "2026-09-01T21:20:53.732000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/more-enterprise-grade-features-for-api-customers/",
-      "url": "https://openai.com/index/more-enterprise-grade-features-for-api-customers/",
-      "published_or_lastmod_at": "2026-09-01T21:20:53.723000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/dall-e-now-available-without-waitlist/",
-      "url": "https://openai.com/index/dall-e-now-available-without-waitlist/",
-      "published_or_lastmod_at": "2026-09-01T21:20:53.358000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-parental-controls/",
-      "url": "https://openai.com/index/introducing-parental-controls/",
-      "published_or_lastmod_at": "2026-09-01T21:20:53.159000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
-      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:52.440000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/optimizing-chatgpt/",
-      "url": "https://openai.com/index/optimizing-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:51.813000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/",
-      "url": "https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/",
-      "published_or_lastmod_at": "2026-09-01T21:20:51.791000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-canvas/",
-      "url": "https://openai.com/index/introducing-canvas/",
-      "published_or_lastmod_at": "2026-09-01T21:20:51.374000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/new-and-improved-content-moderation-tooling/",
-      "url": "https://openai.com/index/new-and-improved-content-moderation-tooling/",
-      "published_or_lastmod_at": "2026-09-01T21:20:50.883000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
-      "url": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
-      "published_or_lastmod_at": "2026-09-01T21:20:50.804000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-5-instant/",
-      "url": "https://openai.com/index/gpt-5-5-instant/",
-      "published_or_lastmod_at": "2026-09-01T21:20:50.272000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/",
-      "url": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:49.897000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
-      "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
-      "published_or_lastmod_at": "2026-09-01T21:20:49.536000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/new-and-improved-embedding-model/",
-      "url": "https://openai.com/index/new-and-improved-embedding-model/",
-      "published_or_lastmod_at": "2026-09-01T21:20:47.958000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-openai-presence/",
-      "url": "https://openai.com/index/introducing-openai-presence/",
-      "published_or_lastmod_at": "2026-09-01T21:20:47.814000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
-      "url": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
-      "published_or_lastmod_at": "2026-09-01T21:20:47.687000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
-      "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:47.202000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-data-residency-in-asia/",
-      "url": "https://openai.com/index/introducing-data-residency-in-asia/",
-      "published_or_lastmod_at": "2026-09-01T21:20:46.587000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/testing-ads-in-chatgpt/",
-      "url": "https://openai.com/index/testing-ads-in-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:45.906000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-chatgpt-health/",
-      "url": "https://openai.com/index/introducing-chatgpt-health/",
-      "published_or_lastmod_at": "2026-09-01T21:20:45.633000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-4-api-general-availability/",
-      "url": "https://openai.com/index/gpt-4-api-general-availability/",
-      "published_or_lastmod_at": "2026-09-01T21:20:44.878000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
-      "url": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
-      "published_or_lastmod_at": "2026-09-01T21:20:43.591000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/sora-feed-philosophy/",
-      "url": "https://openai.com/index/sora-feed-philosophy/",
-      "published_or_lastmod_at": "2026-09-01T21:20:42.946000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
-      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
-      "published_or_lastmod_at": "2026-09-01T21:20:42.944000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/openai-on-aws/",
-      "url": "https://openai.com/index/openai-on-aws/",
-      "published_or_lastmod_at": "2026-09-01T21:20:42.489000Z",
+      "published_or_lastmod_at": "2026-09-02T07:24:05.302000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -474,16 +78,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/personal-finance-chatgpt/",
       "url": "https://openai.com/index/personal-finance-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:42.296000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/new-tools-for-chatgpt-enterprise/",
-      "url": "https://openai.com/index/new-tools-for-chatgpt-enterprise/",
-      "published_or_lastmod_at": "2026-09-01T21:20:41.980000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:17.021000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -492,7 +87,43 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/work-with-codex-from-anywhere/",
       "url": "https://openai.com/index/work-with-codex-from-anywhere/",
-      "published_or_lastmod_at": "2026-09-01T21:20:41.944000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:16.056000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/sora-feed-philosophy/",
+      "url": "https://openai.com/index/sora-feed-philosophy/",
+      "published_or_lastmod_at": "2026-09-02T07:19:15.821000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/openai-on-aws/",
+      "url": "https://openai.com/index/openai-on-aws/",
+      "published_or_lastmod_at": "2026-09-02T07:19:15.593000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
+      "published_or_lastmod_at": "2026-09-02T07:19:15.592000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
+      "url": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
+      "published_or_lastmod_at": "2026-09-02T07:19:15.267000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -501,34 +132,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-chatgpt-agent/",
       "url": "https://openai.com/index/introducing-chatgpt-agent/",
-      "published_or_lastmod_at": "2026-09-01T21:20:41.737000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-chatgpt-edu/",
-      "url": "https://openai.com/index/introducing-chatgpt-edu/",
-      "published_or_lastmod_at": "2026-09-01T21:20:41.582000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-prism/",
-      "url": "https://openai.com/index/introducing-prism/",
-      "published_or_lastmod_at": "2026-09-01T21:20:41.301000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
-      "url": "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:41.236000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:15.238000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -537,7 +141,25 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-data-residency-in-europe/",
       "url": "https://openai.com/index/introducing-data-residency-in-europe/",
-      "published_or_lastmod_at": "2026-09-01T21:20:41.133000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.908000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-5-instant/",
+      "url": "https://openai.com/index/gpt-5-5-instant/",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.666000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+      "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.652000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -546,25 +168,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/codex-security-now-in-research-preview/",
       "url": "https://openai.com/index/codex-security-now-in-research-preview/",
-      "published_or_lastmod_at": "2026-09-01T21:20:40.956000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
-      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
-      "published_or_lastmod_at": "2026-09-01T21:20:40.953000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
-      "url": "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
-      "published_or_lastmod_at": "2026-09-01T21:20:40.880000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.343000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -573,7 +177,34 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/chatgpt-whatsapp-transition/",
       "url": "https://openai.com/index/chatgpt-whatsapp-transition/",
-      "published_or_lastmod_at": "2026-09-01T21:20:40.861000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.267000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.037000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-prism/",
+      "url": "https://openai.com/index/introducing-prism/",
+      "published_or_lastmod_at": "2026-09-02T07:19:13.737000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
+      "url": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
+      "published_or_lastmod_at": "2026-09-02T07:19:13.568000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -582,25 +213,79 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-gpt-5-4/",
       "url": "https://openai.com/index/introducing-gpt-5-4/",
-      "published_or_lastmod_at": "2026-09-01T21:20:40.625000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:13.422000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
-      "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:40.374000Z",
+      "title": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/",
+      "url": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:13.309000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/helping-people-when-they-need-it-most/",
-      "url": "https://openai.com/index/helping-people-when-they-need-it-most/",
-      "published_or_lastmod_at": "2026-09-01T21:20:40.028000Z",
+      "title": "https://openai.com/index/dall-e-now-available-without-waitlist/",
+      "url": "https://openai.com/index/dall-e-now-available-without-waitlist/",
+      "published_or_lastmod_at": "2026-09-02T07:19:13.005000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/new-tools-for-chatgpt-enterprise/",
+      "url": "https://openai.com/index/new-tools-for-chatgpt-enterprise/",
+      "published_or_lastmod_at": "2026-09-02T07:19:12.646000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
+      "url": "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:12.640000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-edu/",
+      "url": "https://openai.com/index/introducing-chatgpt-edu/",
+      "published_or_lastmod_at": "2026-09-02T07:19:12.638000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/",
+      "url": "https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/",
+      "published_or_lastmod_at": "2026-09-02T07:19:12.190000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
+      "url": "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.970000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/new-and-improved-embedding-model/",
+      "url": "https://openai.com/index/new-and-improved-embedding-model/",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.886000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -609,16 +294,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-openai-for-nonprofits/",
       "url": "https://openai.com/index/introducing-openai-for-nonprofits/",
-      "published_or_lastmod_at": "2026-09-01T21:20:39.994000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/how-the-voices-for-chatgpt-were-chosen/",
-      "url": "https://openai.com/index/how-the-voices-for-chatgpt-were-chosen/",
-      "published_or_lastmod_at": "2026-09-01T21:20:39.989000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.811000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -627,7 +303,16 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
       "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
-      "published_or_lastmod_at": "2026-09-01T21:20:39.636000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.762000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/how-the-voices-for-chatgpt-were-chosen/",
+      "url": "https://openai.com/index/how-the-voices-for-chatgpt-were-chosen/",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.468000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -636,25 +321,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/developers-can-now-submit-apps-to-chatgpt/",
       "url": "https://openai.com/index/developers-can-now-submit-apps-to-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:39.635000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
-      "url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
-      "published_or_lastmod_at": "2026-09-01T21:20:39.255000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/new-chatgpt-images-is-here/",
-      "url": "https://openai.com/index/new-chatgpt-images-is-here/",
-      "published_or_lastmod_at": "2026-09-01T21:20:39.253000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.461000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -663,61 +330,79 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/improvements-to-data-analysis-in-chatgpt/",
       "url": "https://openai.com/index/improvements-to-data-analysis-in-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:39.211000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.032000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-memory-dreaming/",
-      "url": "https://openai.com/index/chatgpt-memory-dreaming/",
-      "published_or_lastmod_at": "2026-09-01T21:20:39.018000Z",
+      "title": "https://openai.com/index/more-enterprise-grade-features-for-api-customers/",
+      "url": "https://openai.com/index/more-enterprise-grade-features-for-api-customers/",
+      "published_or_lastmod_at": "2026-09-02T07:19:10.957000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-1/",
-      "url": "https://openai.com/index/gpt-5-1/",
-      "published_or_lastmod_at": "2026-09-01T21:20:38.898000Z",
+      "title": "https://openai.com/index/introducing-chatgpt-team/",
+      "url": "https://openai.com/index/introducing-chatgpt-team/",
+      "published_or_lastmod_at": "2026-09-02T07:19:10.901000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
-      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
-      "published_or_lastmod_at": "2026-09-01T21:20:38.567000Z",
+      "title": "https://openai.com/index/introducing-gpts/",
+      "url": "https://openai.com/index/introducing-gpts/",
+      "published_or_lastmod_at": "2026-09-02T07:19:10.793000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/openai-and-journalism/",
-      "url": "https://openai.com/index/openai-and-journalism/",
-      "published_or_lastmod_at": "2026-09-01T21:20:38.530000Z",
+      "title": "https://openai.com/index/introducing-parental-controls/",
+      "url": "https://openai.com/index/introducing-parental-controls/",
+      "published_or_lastmod_at": "2026-09-02T07:19:10.648000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-openai-partner-network/",
-      "url": "https://openai.com/index/introducing-openai-partner-network/",
-      "published_or_lastmod_at": "2026-09-01T21:20:38.453000Z",
+      "title": "https://openai.com/index/introducing-canvas/",
+      "url": "https://openai.com/index/introducing-canvas/",
+      "published_or_lastmod_at": "2026-09-02T07:19:10.320000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/sora-is-here/",
-      "url": "https://openai.com/index/sora-is-here/",
-      "published_or_lastmod_at": "2026-09-01T21:20:38.411000Z",
+      "title": "https://openai.com/index/new-and-improved-content-moderation-tooling/",
+      "url": "https://openai.com/index/new-and-improved-content-moderation-tooling/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.977000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/helping-people-when-they-need-it-most/",
+      "url": "https://openai.com/index/helping-people-when-they-need-it-most/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.857000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/new-chatgpt-images-is-here/",
+      "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.853000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -726,7 +411,34 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-improvements-to-the-fine-tuning-api-and-expanding-our-custom-models-program/",
       "url": "https://openai.com/index/introducing-improvements-to-the-fine-tuning-api-and-expanding-our-custom-models-program/",
-      "published_or_lastmod_at": "2026-09-01T21:20:38.206000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.513000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+      "url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.482000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.414000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/sora-is-here/",
+      "url": "https://openai.com/index/sora-is-here/",
+      "published_or_lastmod_at": "2026-09-02T07:19:08.856000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -735,25 +447,52 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/searchgpt-prototype/",
       "url": "https://openai.com/index/searchgpt-prototype/",
-      "published_or_lastmod_at": "2026-09-01T21:20:38.069000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:08.837000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/health-in-chatgpt/",
-      "url": "https://openai.com/index/health-in-chatgpt/",
-      "published_or_lastmod_at": "2026-09-01T21:20:38.036000Z",
+      "title": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "published_or_lastmod_at": "2026-09-02T07:19:08.646000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
-      "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
-      "published_or_lastmod_at": "2026-09-01T21:20:37.663000Z",
+      "title": "https://openai.com/index/gpt-4-api-general-availability/",
+      "url": "https://openai.com/index/gpt-4-api-general-availability/",
+      "published_or_lastmod_at": "2026-09-02T07:19:08.636000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+      "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:08.293000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.743000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/openai-and-journalism/",
+      "url": "https://openai.com/index/openai-and-journalism/",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.703000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -762,34 +501,25 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-company-knowledge/",
       "url": "https://openai.com/index/introducing-company-knowledge/",
-      "published_or_lastmod_at": "2026-09-01T21:20:37.629000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.414000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-gpt-live/",
-      "url": "https://openai.com/index/introducing-gpt-live/",
-      "published_or_lastmod_at": "2026-09-01T21:20:37.351000Z",
+      "title": "https://openai.com/index/introducing-openai-partner-network/",
+      "url": "https://openai.com/index/introducing-openai-partner-network/",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.394000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/building-towards-age-prediction/",
-      "url": "https://openai.com/index/building-towards-age-prediction/",
-      "published_or_lastmod_at": "2026-09-01T21:20:37.077000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/previewing-gpt-5-6-sol/",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
-      "published_or_lastmod_at": "2026-09-01T21:20:36.935000Z",
+      "title": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
+      "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.384000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -798,16 +528,61 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-chatgpt-pulse/",
       "url": "https://openai.com/index/introducing-chatgpt-pulse/",
-      "published_or_lastmod_at": "2026-09-01T21:20:36.806000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.299000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-gpt-5-5/",
-      "url": "https://openai.com/index/introducing-gpt-5-5/",
-      "published_or_lastmod_at": "2026-09-01T21:20:36.659000Z",
+      "title": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.870000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/optimizing-chatgpt/",
+      "url": "https://openai.com/index/optimizing-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.735000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
+      "url": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.719000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-health/",
+      "url": "https://openai.com/index/introducing-chatgpt-health/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.311000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/building-towards-age-prediction/",
+      "url": "https://openai.com/index/building-towards-age-prediction/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.293000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/health-in-chatgpt/",
+      "url": "https://openai.com/index/health-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.227000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -816,16 +591,43 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
       "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-      "published_or_lastmod_at": "2026-09-01T21:20:36.601000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.171000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-for-teachers/",
-      "url": "https://openai.com/index/chatgpt-for-teachers/",
-      "published_or_lastmod_at": "2026-09-01T21:20:36.203000Z",
+      "title": "https://openai.com/index/introducing-gpt-live/",
+      "url": "https://openai.com/index/introducing-gpt-live/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.758000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.628000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+      "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.555000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.503000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -834,25 +636,79 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
       "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
-      "published_or_lastmod_at": "2026-09-01T21:20:36.098000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.474000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-6/",
-      "url": "https://openai.com/index/gpt-5-6/",
-      "published_or_lastmod_at": "2026-09-01T21:20:35.754000Z",
+      "title": "https://openai.com/index/testing-ads-in-chatgpt/",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.047000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/premium-seats-chatgpt-business/",
-      "url": "https://openai.com/index/premium-seats-chatgpt-business/",
-      "published_or_lastmod_at": "2026-09-01T21:20:35.559000Z",
+      "title": "https://openai.com/index/introducing-openai-presence/",
+      "url": "https://openai.com/index/introducing-openai-presence/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.035000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-atlas/",
+      "url": "https://openai.com/index/introducing-chatgpt-atlas/",
+      "published_or_lastmod_at": "2026-09-02T07:19:04.442000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-5-5/",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "published_or_lastmod_at": "2026-09-02T07:19:04.438000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-data-residency-in-asia/",
+      "url": "https://openai.com/index/introducing-data-residency-in-asia/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.888000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-for-teachers/",
+      "url": "https://openai.com/index/chatgpt-for-teachers/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.886000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/sora-2/",
+      "url": "https://openai.com/index/sora-2/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.853000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-1-for-developers/",
+      "url": "https://openai.com/index/gpt-5-1-for-developers/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.806000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -861,20 +717,911 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
       "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-      "published_or_lastmod_at": "2026-09-01T21:20:35.242000Z",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.608000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/premium-seats-chatgpt-business/",
+      "url": "https://openai.com/index/premium-seats-chatgpt-business/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.546000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/learn-teach-chatgpt-work-codex/",
+      "url": "https://openai.com/index/learn-teach-chatgpt-work-codex/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.449000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-6/",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.357000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/previewing-ultrafast/",
+      "url": "https://openai.com/index/previewing-ultrafast/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.055000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "published_or_lastmod_at": "2026-09-02T07:19:02.677000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-6-in-kiro/",
+      "url": "https://openai.com/index/gpt-5-6-in-kiro/",
+      "published_or_lastmod_at": "2026-09-02T07:19:01.562000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "published_or_lastmod_at": "2026-09-02T07:19:01.537000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/learning-never-stops/",
+      "url": "https://openai.com/index/learning-never-stops/",
+      "published_or_lastmod_at": "2026-09-02T07:19:01.249000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+      "published_or_lastmod_at": "2026-09-02T07:19:00.805000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "Simon Willison atom",
       "adapter": "atom",
       "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "Claude Fable 5.1 made me a really nice animated pelican",
-      "url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
-      "published_or_lastmod_at": "2026-09-01T23:57:28Z",
+      "title": "Quoting Rick Brewster",
+      "url": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+      "published_or_lastmod_at": "2026-09-02T05:50:57Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "GeoJSON Map Viewer",
+      "url": "https://simonwillison.net/2026/Sep/1/geojson/",
+      "published_or_lastmod_at": "2026-09-01T18:05:45Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "datasette-mcp 0.2",
+      "url": "https://simonwillison.net/2026/Sep/1/datasette-mcp/",
+      "published_or_lastmod_at": "2026-09-01T15:30:12Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chip-ganassi-racing/",
+      "url": "https://openai.com/index/chip-ganassi-racing/",
+      "published_or_lastmod_at": "2026-09-02T07:45:23.813000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/stampli/",
+      "url": "https://openai.com/index/stampli/",
+      "published_or_lastmod_at": "2026-09-02T07:43:54.930000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-b2b-signals/",
+      "url": "https://openai.com/index/introducing-b2b-signals/",
+      "published_or_lastmod_at": "2026-09-02T07:38:20.270000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/how-enterprises-put-ai-to-work/",
+      "url": "https://openai.com/index/how-enterprises-put-ai-to-work/",
+      "published_or_lastmod_at": "2026-09-02T07:24:05.302000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/personal-finance-chatgpt/",
+      "url": "https://openai.com/index/personal-finance-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:17.021000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/work-with-codex-from-anywhere/",
+      "url": "https://openai.com/index/work-with-codex-from-anywhere/",
+      "published_or_lastmod_at": "2026-09-02T07:19:16.056000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/sora-feed-philosophy/",
+      "url": "https://openai.com/index/sora-feed-philosophy/",
+      "published_or_lastmod_at": "2026-09-02T07:19:15.821000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/openai-on-aws/",
+      "url": "https://openai.com/index/openai-on-aws/",
+      "published_or_lastmod_at": "2026-09-02T07:19:15.593000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
+      "published_or_lastmod_at": "2026-09-02T07:19:15.592000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
+      "url": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
+      "published_or_lastmod_at": "2026-09-02T07:19:15.267000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-agent/",
+      "url": "https://openai.com/index/introducing-chatgpt-agent/",
+      "published_or_lastmod_at": "2026-09-02T07:19:15.238000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-data-residency-in-europe/",
+      "url": "https://openai.com/index/introducing-data-residency-in-europe/",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.908000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-5-instant/",
+      "url": "https://openai.com/index/gpt-5-5-instant/",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.666000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+      "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.652000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/codex-security-now-in-research-preview/",
+      "url": "https://openai.com/index/codex-security-now-in-research-preview/",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.343000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-whatsapp-transition/",
+      "url": "https://openai.com/index/chatgpt-whatsapp-transition/",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.267000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "published_or_lastmod_at": "2026-09-02T07:19:14.037000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-prism/",
+      "url": "https://openai.com/index/introducing-prism/",
+      "published_or_lastmod_at": "2026-09-02T07:19:13.737000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
+      "url": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
+      "published_or_lastmod_at": "2026-09-02T07:19:13.568000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-5-4/",
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "published_or_lastmod_at": "2026-09-02T07:19:13.422000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/",
+      "url": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:13.309000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/dall-e-now-available-without-waitlist/",
+      "url": "https://openai.com/index/dall-e-now-available-without-waitlist/",
+      "published_or_lastmod_at": "2026-09-02T07:19:13.005000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/new-tools-for-chatgpt-enterprise/",
+      "url": "https://openai.com/index/new-tools-for-chatgpt-enterprise/",
+      "published_or_lastmod_at": "2026-09-02T07:19:12.646000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
+      "url": "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:12.640000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-edu/",
+      "url": "https://openai.com/index/introducing-chatgpt-edu/",
+      "published_or_lastmod_at": "2026-09-02T07:19:12.638000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/",
+      "url": "https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/",
+      "published_or_lastmod_at": "2026-09-02T07:19:12.190000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
+      "url": "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.970000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/new-and-improved-embedding-model/",
+      "url": "https://openai.com/index/new-and-improved-embedding-model/",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.886000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-openai-for-nonprofits/",
+      "url": "https://openai.com/index/introducing-openai-for-nonprofits/",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.811000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.762000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/how-the-voices-for-chatgpt-were-chosen/",
+      "url": "https://openai.com/index/how-the-voices-for-chatgpt-were-chosen/",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.468000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/developers-can-now-submit-apps-to-chatgpt/",
+      "url": "https://openai.com/index/developers-can-now-submit-apps-to-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.461000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/improvements-to-data-analysis-in-chatgpt/",
+      "url": "https://openai.com/index/improvements-to-data-analysis-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:11.032000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/more-enterprise-grade-features-for-api-customers/",
+      "url": "https://openai.com/index/more-enterprise-grade-features-for-api-customers/",
+      "published_or_lastmod_at": "2026-09-02T07:19:10.957000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-team/",
+      "url": "https://openai.com/index/introducing-chatgpt-team/",
+      "published_or_lastmod_at": "2026-09-02T07:19:10.901000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpts/",
+      "url": "https://openai.com/index/introducing-gpts/",
+      "published_or_lastmod_at": "2026-09-02T07:19:10.793000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-parental-controls/",
+      "url": "https://openai.com/index/introducing-parental-controls/",
+      "published_or_lastmod_at": "2026-09-02T07:19:10.648000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-canvas/",
+      "url": "https://openai.com/index/introducing-canvas/",
+      "published_or_lastmod_at": "2026-09-02T07:19:10.320000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/new-and-improved-content-moderation-tooling/",
+      "url": "https://openai.com/index/new-and-improved-content-moderation-tooling/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.977000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/helping-people-when-they-need-it-most/",
+      "url": "https://openai.com/index/helping-people-when-they-need-it-most/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.857000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/new-chatgpt-images-is-here/",
+      "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.853000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-improvements-to-the-fine-tuning-api-and-expanding-our-custom-models-program/",
+      "url": "https://openai.com/index/introducing-improvements-to-the-fine-tuning-api-and-expanding-our-custom-models-program/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.513000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+      "url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.482000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+      "published_or_lastmod_at": "2026-09-02T07:19:09.414000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/sora-is-here/",
+      "url": "https://openai.com/index/sora-is-here/",
+      "published_or_lastmod_at": "2026-09-02T07:19:08.856000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/searchgpt-prototype/",
+      "url": "https://openai.com/index/searchgpt-prototype/",
+      "published_or_lastmod_at": "2026-09-02T07:19:08.837000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "published_or_lastmod_at": "2026-09-02T07:19:08.646000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-4-api-general-availability/",
+      "url": "https://openai.com/index/gpt-4-api-general-availability/",
+      "published_or_lastmod_at": "2026-09-02T07:19:08.636000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+      "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:08.293000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.743000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/openai-and-journalism/",
+      "url": "https://openai.com/index/openai-and-journalism/",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.703000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-company-knowledge/",
+      "url": "https://openai.com/index/introducing-company-knowledge/",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.414000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-openai-partner-network/",
+      "url": "https://openai.com/index/introducing-openai-partner-network/",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.394000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
+      "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.384000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-pulse/",
+      "url": "https://openai.com/index/introducing-chatgpt-pulse/",
+      "published_or_lastmod_at": "2026-09-02T07:19:07.299000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.870000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/optimizing-chatgpt/",
+      "url": "https://openai.com/index/optimizing-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.735000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
+      "url": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.719000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-health/",
+      "url": "https://openai.com/index/introducing-chatgpt-health/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.311000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/building-towards-age-prediction/",
+      "url": "https://openai.com/index/building-towards-age-prediction/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.293000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/health-in-chatgpt/",
+      "url": "https://openai.com/index/health-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.227000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+      "published_or_lastmod_at": "2026-09-02T07:19:06.171000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-live/",
+      "url": "https://openai.com/index/introducing-gpt-live/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.758000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.628000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+      "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.555000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.503000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.474000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/testing-ads-in-chatgpt/",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.047000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-openai-presence/",
+      "url": "https://openai.com/index/introducing-openai-presence/",
+      "published_or_lastmod_at": "2026-09-02T07:19:05.035000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-chatgpt-atlas/",
+      "url": "https://openai.com/index/introducing-chatgpt-atlas/",
+      "published_or_lastmod_at": "2026-09-02T07:19:04.442000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-5-5/",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "published_or_lastmod_at": "2026-09-02T07:19:04.438000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-data-residency-in-asia/",
+      "url": "https://openai.com/index/introducing-data-residency-in-asia/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.888000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-for-teachers/",
+      "url": "https://openai.com/index/chatgpt-for-teachers/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.886000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/sora-2/",
+      "url": "https://openai.com/index/sora-2/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.853000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-1-for-developers/",
+      "url": "https://openai.com/index/gpt-5-1-for-developers/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.806000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+      "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.608000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/premium-seats-chatgpt-business/",
+      "url": "https://openai.com/index/premium-seats-chatgpt-business/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.546000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/learn-teach-chatgpt-work-codex/",
+      "url": "https://openai.com/index/learn-teach-chatgpt-work-codex/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.449000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-6/",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.357000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/previewing-ultrafast/",
+      "url": "https://openai.com/index/previewing-ultrafast/",
+      "published_or_lastmod_at": "2026-09-02T07:19:03.055000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "published_or_lastmod_at": "2026-09-02T07:19:02.677000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-5-6-in-kiro/",
+      "url": "https://openai.com/index/gpt-5-6-in-kiro/",
+      "published_or_lastmod_at": "2026-09-02T07:19:01.562000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "published_or_lastmod_at": "2026-09-02T07:19:01.537000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/learning-never-stops/",
+      "url": "https://openai.com/index/learning-never-stops/",
+      "published_or_lastmod_at": "2026-09-02T07:19:01.249000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+      "published_or_lastmod_at": "2026-09-02T07:19:00.805000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Kimi Code releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/MoonshotAI/kimi-code/releases.atom",
+      "title": "@moonshot-ai/kimi-code@0.40.0",
+      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.40.0",
+      "published_or_lastmod_at": "2026-09-02T06:12:55Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Quoting Rick Brewster",
+      "url": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+      "published_or_lastmod_at": "2026-09-02T05:50:57Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.153.0-alpha.5",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.5",
+      "published_or_lastmod_at": "2026-09-02T03:08:30Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
@@ -2568,6 +3315,15 @@
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "GeoJSON Map Viewer",
+      "url": "https://simonwillison.net/2026/Sep/1/geojson/",
+      "published_or_lastmod_at": "2026-09-01T18:05:45Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
       "source_name": "Anthropic sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://www.anthropic.com/sitemap.xml",
@@ -2710,6 +3466,15 @@
       "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
       "published_or_lastmod_at": "2026-09-01T15:42:34.082000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "datasette-mcp 0.2",
+      "url": "https://simonwillison.net/2026/Sep/1/datasette-mcp/",
+      "published_or_lastmod_at": "2026-09-01T15:30:12Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "AWS Database RSS",
@@ -3618,6 +4383,15 @@
       "title": "Copilot model access update for GitHub Team plans",
       "url": "https://github.blog/changelog/2026-08-31-copilot-model-access-update-for-github-team-plans",
       "published_or_lastmod_at": "2026-08-31T21:58:46Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "GitHub Copilot Changelog feed",
+      "adapter": "rss",
+      "source_url": "https://github.blog/changelog/label/copilot/feed/",
+      "title": "Selected GitHub Copilot models deprecated",
+      "url": "https://github.blog/changelog/2026-08-31-selected-github-copilot-models-deprecated",
+      "published_or_lastmod_at": "2026-08-31T21:21:40Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],
