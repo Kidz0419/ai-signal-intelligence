@@ -264,6 +264,69 @@
     ]
   },
   {
+    "id": "2026-09-02-kimi-code-0400-safety-plugin-control-plane",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "Kimi Code 0.40 把默认多模型、插件市场和危险命令 hard gate 一起推到了控制面",
+    "summary": "Kimi Code 0.40 把几个原本分散的控制点一起推到前台：subagent model pool `[secondary_model]` 在所有 launch mode 默认开启；Web Settings 新增 Plugins panel，可浏览、安装、启用、停用和删除插件；Auto mode 默认阻断 `shutdown`、`reboot`、`rm -rf` 等危险 shell 命令，Manual / YOLO 模式也会先询问；同版还让 Tower workers 继承 base checkout 未提交变更、记录死亡 agent，并新增 `kimi session list`。",
+    "decision": "include",
+    "confidence": 90,
+    "relevance_level": "P2",
+    "signal_type": "competitor",
+    "content_type": "technical_update",
+    "information_type": "agent_governance",
+    "evidence_level": "confirmed",
+    "source": "MoonshotAI",
+    "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.40.0",
+    "published_at": "2026-09-02T05:59:00Z",
+    "primary_tags": [
+      "Kimi Code",
+      "Dangerous Command Guard",
+      "Plugin Marketplace"
+    ],
+    "secondary_tags": [
+      "secondary_model",
+      "Tower Mode",
+      "Session Audit"
+    ],
+    "why_it_matters_cn": "coding agent 一旦同时拥有 shell、插件、subagent 和多工作区执行面，真正重要的就不是再多一个模型，而是默认模型编排、扩展分发和危险动作 hard gate 有没有进入同一套控制面。",
+    "personal_relevance_cn": "如果在做 coding agent / agent IDE，最该对照的是默认多模型策略、插件市场的安装边界、危险命令 fail-closed 规则，以及 Tower / fork 这种并行执行状态怎么暴露给人。",
+    "product_opportunity_cn": "可以把 plugin entitlement、dangerous-command policy、subagent pool defaults、worker-death resume hints 和 session list audit 做成团队级 coding agent 的基础能力。",
+    "competitive_risk_cn": "官方 release notes 能确认这些开关和界面，但还没有给出管理员级策略、插件信任模型、误拦截率，或危险命令 guard 在真实任务里的 override 审计。",
+    "recommended_action": "monitor",
+    "questions_to_validate": [
+      "dangerous_command_guard 后续会不会覆盖 `curl | sh`、破坏性 git、容器删除和权限升级这类高风险组合动作？",
+      "Plugins panel 背后是否会公开权限作用域、来源信任或签名审核模型？",
+      "secondary_model 默认开启后，成本、日志和审批表面会不会同步进入更正式的团队控制面？"
+    ],
+    "follow_up_triggers": [
+      "Moonshot 发布更详细的插件市场、危险命令 guard 或管理员策略文档",
+      "出现关于 guard 误拦截、override 审计或 Tower 恢复体验的真实使用复盘",
+      "Plugins panel 暴露更明确的权限作用域、审核或来源信任机制"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 4,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 1,
+      "agent_architecture_value": 5,
+      "ai_product_value": 4,
+      "macro_value": 1,
+      "actionability": 4
+    },
+    "report_date": "2026-09-02",
+    "event_date": "2026-09-02",
+    "canonical_url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.40.0",
+    "first_seen_date": "2026-09-02",
+    "last_seen_date": "2026-09-02",
+    "run_dates": [
+      "2026-09-02"
+    ],
+    "evidence_boundary": "官方 Release 清单能确认 default secondary model pool、Plugins panel、dangerous command guard、Tower 恢复细节和 CLI session listing；还没有公开团队管理员策略、插件信任模型、override 审计或生产采用数据。"
+  },
+  {
     "id": "2026-08-31-openai-polimill-japan-public-ai-infrastructure",
     "demo": false,
     "topic_lane": "ai_macro",
@@ -336,8 +399,8 @@
     "id": "2026-09-01-github-copilot-billing-org-model-access",
     "demo": false,
     "topic_lane": "ai_product",
-    "title": "GitHub Copilot 改了多组织 seat 的模型权限：现在只认付费组织，不再取已启用组织并集",
-    "summary": "GitHub 8 月 31 日的官方 Changelog 更新了一个很具体但很实际的 Copilot 规则：如果用户同时在多个组织里持有 Copilot seat，模型可用性现在只由 ‘Usage billed to’ 对应的付费组织决定；此前只要任一组织开了某个模型，用户就能用。若访问完全来自 enterprise 或其组织，这次规则不受影响。",
+    "title": "GitHub Copilot 开始把模型治理收回到组织控制面：多组织 seat 只认付费组织，旧模型也按名单退场",
+    "summary": "GitHub 8 月 31 日连发两条官方 Changelog，把 Copilot 的模型可用性收得更像企业策略：多组织 seat 用户的模型访问现在只由 `Usage billed to` 对应的付费组织决定，不再取已启用组织并集；另一条更新又宣布 Gemini 3.1 Pro、Claude Opus 4.5/4.6、Claude Sonnet 4.5/4.6 和 Raptor Mini 自 9 月 1 日起在大多数 Copilot 体验里弃用，管理员需要通过 model policies 启用替代模型。",
     "decision": "include",
     "confidence": 89,
     "relevance_level": "P2",
@@ -350,28 +413,28 @@
     "published_at": "2026-08-31T14:58:46-07:00",
     "primary_tags": [
       "GitHub Copilot",
-      "Model Access",
-      "Billing Governance"
+      "Model Governance",
+      "Billing Owner"
     ],
     "secondary_tags": [
-      "Multi-org Seats",
-      "Usage billed to",
-      "Policy"
+      "Model Deprecation",
+      "Model Policies",
+      "Multi-org Seats"
     ],
-    "why_it_matters_cn": "这类改动看起来不像大功能，但它把模型策略、组织治理和结算归属绑到一起了。以后企业里‘能不能选这个模型’更像预算和 policy 的结果，不只是个人偏好。",
-    "personal_relevance_cn": "如果在做多组织 AI 产品，最好早点把 feature entitlement、billing owner 和 policy source of truth 统一起来，不然后面一定会出现权限和结算对不上的坑。",
-    "product_opportunity_cn": "可把 billing owner 驱动的模型白名单、跨组织 seat 归属可视化和审计解释做成企业 AI 产品的基础能力。",
-    "competitive_risk_cn": "这次改动只影响一类多组织 seat 场景；官方正文没有给出管理员 UI、批量迁移工具或对现有审计报表的影响。",
+    "why_it_matters_cn": "这已经不是单点功能更新，而是 GitHub 把模型选择的 source of truth 明确绑回付费主体、组织策略和官方弃用节奏。企业里的“能不能选这个模型”会越来越像预算、policy 和生命周期管理的交集。",
+    "personal_relevance_cn": "如果在做多组织 AI 产品，最好把 billing owner、policy source、model lifecycle 和迁移解释一起设计，不然模型下拉框很快就会和结算、合规与用户预期打架。",
+    "product_opportunity_cn": "可把 billing-owner 驱动的模型白名单、弃用预警、替代模型推荐和迁移审计做成企业 AI 产品的基础能力。",
+    "competitive_risk_cn": "这两条更新都来自官方 Changelog，能确认规则和弃用名单；但 GitHub 还没有给出更完整的管理员迁移 UI、历史审计影响或策略冲突时的回退逻辑。",
     "recommended_action": "monitor",
     "questions_to_validate": [
-      "管理员能否更直观看到 seat 的 billing owner、模型白名单和用户最终生效权限？",
-      "跨组织 seat 切换或付费归属调整时，历史审计和可用模型是否会出现短暂不一致？",
-      "这套归属逻辑会不会扩展到 code review、cloud agent 或更多执行型 Copilot 能力？"
+      "管理员能否在同一处看到 seat 的 billing owner、弃用窗口、替代模型和用户最终生效权限？",
+      "跨组织 seat 切换或付费归属调整时，历史审计、模型可用性和替代建议是否会短暂不一致？",
+      "billing owner + model deprecation 这套治理逻辑会不会继续扩展到 code review、cloud agent 或更多执行型 Copilot 能力？"
     ],
     "follow_up_triggers": [
-      "GitHub 补充管理员 UI、文档或审计报表截图",
-      "更多 Copilot 能力开始显式绑定 billing owner 与 policy source",
-      "企业用户公开多组织 seat 的迁移或治理复盘"
+      "GitHub 补充管理员 UI、迁移文档或审计报表截图",
+      "更多 Copilot 能力开始显式绑定 billing owner、policy source 和 model lifecycle",
+      "企业用户公开多组织 seat、模型弃用和替代迁移的治理复盘"
     ],
     "scores": {
       "topic_relevance": 5,
@@ -393,6 +456,12 @@
     "run_dates": [
       "2026-09-02"
     ],
-    "evidence_boundary": "官方正文确认了新旧规则差异和适用范围；没有额外披露模型策略冲突时的回退逻辑，也没有把这项规则描述成更广泛的自动执行权限升级。"
+    "evidence_boundary": "官方 Changelog 能确认多组织 seat 的生效策略、受影响范围，以及一批 Copilot 模型自 9 月 1 日起在大多数体验里退场；GitHub 还没有公开更完整的管理员迁移 UI、历史审计影响或策略冲突时的回退逻辑。",
+    "related_sources": [
+      {
+        "url": "https://github.blog/changelog/2026-08-31-selected-github-copilot-models-deprecated",
+        "type": "same_day_model_deprecation"
+      }
+    ]
   }
 ]

@@ -217,6 +217,75 @@
       }
     },
     {
+      "id": "2026-09-02-coding-agent-hard-gates-and-plugin-control",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-02-kimi-code-0400-safety-plugin-control-plane"
+      ],
+      "working_title_cn": "当 coding agent 真能跑 shell 和插件，默认安全门就不能再只是实验开关",
+      "core_tension_cn": "能力越像操作系统，真正难的越不是再接一个模型，而是哪些动作默认能做，哪些动作必须先拦。",
+      "why_now_cn": "Kimi Code 0.40 把 secondary model pool 默认开启、Plugins 面板拉进设置页，并让 dangerous command guard 成为 Auto mode 默认规则。",
+      "target_audience_cn": [
+        "Coding agent 产品负责人",
+        "开发者工具工程师",
+        "安全 / 平台团队"
+      ],
+      "evidence_boundary_cn": "官方 release 能确认配置和 UI 变化，但没有管理员级审计或插件信任模型细节。",
+      "source_urls": [
+        "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.40.0"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "当 coding agent 真能跑 shell 和插件，默认安全门",
+          "hook": "别只看新功能数量，真正的分水岭是默认多模型、插件分发和危险命令 hard gate 是否进了同一套控制面。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—控制面流程图，少量术语，结论先行",
+          "cta": "你会先验收哪一个边界？"
+        },
+        "twitter": {
+          "title": "当 coding agent 真能跑 shell 和插件，默认安全门就不能再只是实验开关",
+          "hook": "别只看新功能数量，真正的分水岭是默认多模型、插件分发和危险命令 hard gate 是否进了同一套控制面。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one architecture or workflow diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "当 coding agent 真能跑 shell 和插件，默认安全门就不能再只是实验开关",
+          "hook": "别只看新功能数量，真正的分水岭是默认多模型、插件分发和危险命令 hard gate 是否进了同一套控制面。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
       "id": "2026-09-02-webgpu-kernel-contracts",
       "status": "candidate",
       "timeliness": "this_week",
@@ -294,22 +363,22 @@
       "source_signal_ids": [
         "2026-09-01-github-copilot-billing-org-model-access"
       ],
-      "working_title_cn": "多组织 AI 产品迟早会遇到的问题：模型权限到底听谁的，用户还是付费组织",
-      "core_tension_cn": "一个用户挂在多个组织上时，feature entitlement、结算归属和政策来源常常会互相打架。",
-      "why_now_cn": "GitHub 直接把 Copilot 的模型访问规则改成只认付费组织。",
+      "working_title_cn": "多组织 AI 产品迟早会遇到的问题：模型权限、付费归属和弃用节奏到底听谁的",
+      "core_tension_cn": "一个用户挂在多个组织上时，feature entitlement、结算归属、policy source 和 model lifecycle 常常会互相打架。",
+      "why_now_cn": "GitHub 把 Copilot 的模型访问改成只认付费组织，同时又按官方名单弃用一批旧模型。",
       "target_audience_cn": [
         "企业 AI 产品经理",
         "IT 管理员",
         "平台治理团队"
       ],
-      "evidence_boundary_cn": "改动范围很具体，只影响多组织 seat 场景，不代表 Copilot 自动执行权限扩大。",
+      "evidence_boundary_cn": "改动范围仍聚焦多组织 seat 与模型生命周期，不代表 Copilot 自动执行权限扩大。",
       "source_urls": [
         "https://github.blog/changelog/2026-08-31-copilot-model-access-update-for-github-team-plans"
       ],
       "platforms": {
         "xiaohongshu": {
-          "title": "多组织 AI 产品迟早会遇到的问题：模型权限到底听谁的，用户还是付费",
-          "hook": "模型下拉框背后，真正难的是 policy source of truth 和 billing owner 到底怎么绑定。",
+          "title": "多组织 AI 产品迟早会遇到的问题：模型权限、付费归属和弃用节奏到底",
+          "hook": "模型下拉框背后，真正难的是 billing owner、policy source 和 deprecation lifecycle 到底怎么绑定。",
           "format": "7页图文卡",
           "outline": [
             "已确认发生了什么",
@@ -323,8 +392,8 @@
           "cta": "你会先验收哪一个边界？"
         },
         "twitter": {
-          "title": "多组织 AI 产品迟早会遇到的问题：模型权限到底听谁的，用户还是付费组织",
-          "hook": "模型下拉框背后，真正难的是 policy source of truth 和 billing owner 到底怎么绑定。",
+          "title": "多组织 AI 产品迟早会遇到的问题：模型权限、付费归属和弃用节奏到底听谁的",
+          "hook": "模型下拉框背后，真正难的是 billing owner、policy source 和 deprecation lifecycle 到底怎么绑定。",
           "format": "7帖 Thread",
           "outline": [
             "已确认发生了什么",
@@ -338,8 +407,8 @@
           "cta": "What would you test first?"
         },
         "wechat": {
-          "title": "多组织 AI 产品迟早会遇到的问题：模型权限到底听谁的，用户还是付费组织",
-          "hook": "模型下拉框背后，真正难的是 policy source of truth 和 billing owner 到底怎么绑定。",
+          "title": "多组织 AI 产品迟早会遇到的问题：模型权限、付费归属和弃用节奏到底听谁的",
+          "hook": "模型下拉框背后，真正难的是 billing owner、policy source 和 deprecation lifecycle 到底怎么绑定。",
           "format": "1800—2400字深度文章",
           "outline": [
             "已确认发生了什么",

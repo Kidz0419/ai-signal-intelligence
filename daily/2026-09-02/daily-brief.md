@@ -1,15 +1,15 @@
 # AI Signal 日报｜2026-09-02
 
-**窗口：** 北京时间 2026-09-02 00:00 至 2026-09-02 00:21   
-**一句话结论：** 00:00 的基线循环先把今天写成了 0 条，但对 98 个真新增候选补做正文核验后，正式补入 6 条：AWS 拿出 3 篇能直接抄到控制面的正文，Hugging Face 把浏览器本地推理拆成可版本化 kernel 层，GitHub Copilot 收紧多组织模型权限，OpenAI / Polimill 则给出一个不小的日本公共部门 AI 落地样本。[1][2][3][4][5][6][7]
+**窗口：** 北京时间 2026-09-02 00:00 至 2026-09-02 16:00  
+**一句话结论：** 到 16:00 截止，今天的正式信号从 6 条变成 7 条。91 个真新增候选里，只有 Kimi Code 0.40 新增进正式范围；GitHub Copilot 的“模型弃用名单”则并入今早那张模型治理卡，其余增量没有越过正式门槛。[1][2][3][4][5][6][7][8][9]
 
 ## 四主线重点
 
 | 主线 | 数量 | 今日重点 |
 |---|---:|---|
 | 模型 | 1 | Hugging Face 把 WebGPU kernel 做成独立 contract + Fleet 证据层 |
-| Agent 架构 | 2 | AWS 把 MCP 无状态迁移和 agent 支付 trust gate 都讲成了控制面 |
-| AI 产品 | 2 | DMS agent 的人审边界被写清，Copilot 把模型权限绑回付费组织 |
+| Agent 架构 | 3 | AWS 把 MCP 迁移和 agent 支付写成控制面，Kimi 把默认多模型与危险命令硬门推到前台 |
+| AI 产品 | 2 | DMS agent 的人审边界被写清，Copilot 把模型权限与弃用节奏一起绑回组织治理 |
 | AI 宏观 | 1 | Polimill 公共部门 AI 覆盖面已到约 1,050 个自治体、55 万名公职人员 |
 
 ## 模型｜1 条
@@ -20,7 +20,7 @@ Hugging Face 发布 `@huggingface/kernels`，把 207 个 WebGPU kernels 作为�
 
 **为什么重要：** 这不是又一个 local AI 演示页。更实在的变化是，WebAI 的底层算子终于能被单独检查、版本化和复现，而不是全都闷在 runtime 黑盒里。
 
-## Agent 架构｜2 条
+## Agent 架构｜3 条
 
 ### AWS：MCP 无状态之后，哪些旧基础设施真的可以删
 
@@ -34,6 +34,12 @@ AWS 的 t54 案例把 agent 支付的硬边界写得很明确：x402-secure 先�
 
 **为什么重要：** 这条真正有用的地方在于，它把“agent 会花真钱”拆成了可检查的控制点，而不是把风控继续留给 prompt 或人工抽查。
 
+### Kimi Code 0.40：默认多模型、插件市场和危险命令 hard gate 一起进入控制面
+
+Kimi Code 0.40 的官方 release notes 把三件原本容易散落在实验角落里的东西推到了默认路径：subagent model pool `[secondary_model]` 变成所有 launch mode 的默认设置；Web Settings 新增 Plugins panel，可浏览市场并安装、启用、停用和删除插件；Auto mode 默认阻断 `shutdown`、`reboot` 和 `rm -rf` 这类危险 shell 命令，Manual / YOLO 模式也会先询问。[9]
+
+**为什么重要：** 这类改动值钱的地方，不是界面更热闹，而是 coding agent 的扩展面、默认模型编排和自动执行风险开始一起进入可配置控制面。
+
 ## AI 产品｜2 条
 
 ### AWS DMS：AI agent 能编排迁移，但不会替你背语义正确性
@@ -42,11 +48,11 @@ AWS DMS Schema Conversion 这篇正文展示了一条清晰的 agent 工作流�
 
 **为什么重要：** 这类边界越早写清楚，越不容易把“自动化很多步骤”误读成“迁移已经可直接上线”。
 
-### GitHub Copilot：多组织用户现在只认付费组织的模型策略
+### GitHub Copilot：模型访问开始更明确地听命于付费组织和官方弃用名单
 
-GitHub 更新了 Copilot 的模型访问规则：如果用户同时在多个组织里持有 seat，模型可用性现在只由 `Usage billed to` 对应的付费组织决定；此前只要任一组织开了某个模型，用户就能用。纯 enterprise 来源的访问不受这次变化影响。[4]
+GitHub 8 月 31 日连发两条 Copilot Changelog：多组织 seat 的模型可用性现在只认 `Usage billed to` 对应的付费组织，不再取已启用组织并集；同时 Gemini 3.1 Pro、Claude Opus 4.5/4.6、Claude Sonnet 4.5/4.6 和 Raptor Mini 在大多数 Copilot 体验中自 9 月 1 日起弃用，管理员需要通过 model policies 启用替代模型。[4][8]
 
-**为什么重要：** 这不是花哨新功能，但它把模型选择、组织治理和结算归属绑成了一件事。企业里的“能不能选这个模型”以后会更像预算和 policy 的结果。
+**为什么重要：** 这不是花哨新功能，但它把模型选择、组织治理和结算归属进一步绑成了一件事。企业里的“能不能选这个模型”会越来越像预算、policy 和生命周期管理的结果。
 
 ## AI 宏观｜1 条
 
@@ -66,24 +72,24 @@ OpenAI News RSS 可确认，这篇 Polimill 客户案例首发于 8 月 31 日�
 
 ## 排除与延后
 
-- 83 个 OpenAI sitemap 命中先全部用官方 RSS 回填首发时间；其中 81 个是更早旧文，1 个是昨天已收录的 ChatGPT Ads，只有 Polimill 还保留为本轮可评正文。[6]
-- Anthropic 那篇 `improving-alignment-security-efforts` 还是昨天同一条 canonical URL，没有看到足够开新卡的正文级增量。
-- Google Security 这组是 Android 网络与数字身份安全，不进本 feed 的模型、agent、AI 产品或 AI 宏观正式范围。
-- AWS hybrid cloud、ZS、Boomi、Wickr 和 Simon Willison 这些候选各有信息量，但今天没有一条同时满足正式范围与信息增量门槛。
+- 85 个 OpenAI sitemap 命中先全部用官方 RSS 回填首发时间；除昨天已收录的 ChatGPT Ads 外，其余都没有形成新的当日正式信号。[6]
+- OpenAI Codex 0.153.0-alpha.5 有正式 tag，但 release notes 过薄，暂时不足以开出新的正式卡片。
+- Simon Willison 这轮的三条增量里，`datasette-mcp 0.2` 太轻，`GeoJSON Map Viewer` 偏工具随手作，`Rick Brewster` 则是二手引述，都没有越过今天的正式门槛。
 
 ## 证据边界
 
 - AWS 这三条都来自官方正文，能确认对象、动作和控制面，但 t54 的交易规模、以及 DMS / MCP 迁移后的真实成功率与成本曲线仍主要缺少独立验证。[1][2][3]
 - Hugging Face 的性能数字主要是 Apple M4 上的 op-level 对比，并明确排除了加载、编译、上传和回传开销；不要直接把它读成完整模型端到端时延承诺。[5]
-- Copilot 这次改动只影响多组织 seat 场景；GitHub 没有把它描述成更广泛的自动执行权限升级。[4]
+- Copilot 这两条更新能确认规则和弃用名单，但 GitHub 还没有公开更完整的管理员迁移 UI、历史审计影响或策略冲突时的回退逻辑。[4][8]
+- Kimi Code 0.40 的 release notes 能确认默认多模型、Plugins panel 和危险命令 guard 的存在，但还没有给出插件信任模型、团队管理员策略或 override 审计。[9]
 - Polimill 的覆盖规模和开发提速来自 OpenAI / Polimill 官方表述，Qommons ONE 仍是计划而不是已上线能力。[6][7]
 
 ## 飞书短版
 
-**一句话结论：** 今天不是 0 条。对 98 个真新增候选补做正文核验后，正式补入 6 条，其中最值得看的三条都在 AWS：MCP 无状态迁移、DMS 迁移 agent 的人审边界、以及 AgentCore payments 的 trust gate。  
-**组织判断：** 真正有价值的不是又多了几个新页面，而是控制面有没有写清楚，哪里必须停下来让人决定，哪里能被硬规则挡住。  
-**建议动作：** 把 legacy lane sunset、AI 迁移 apply gate、agent 支付 risk gate、billing-owner entitlement 和 browser inference kernel contract 这五个点加入后续评估清单。  
-**结果：** previous_count=0，new_count=6，updated_count=0，total_count=6。
+**一句话结论：** 到 16:00 截止，今天的正式信号从 6 条变成 7 条。91 个真新增候选里，只有 Kimi Code 0.40 新增进正式范围；Copilot 的模型弃用公告则并入了今早那张治理卡。  
+**组织判断：** 这轮最值得记的，不是又多了几个页面，而是控制面继续往默认路径里走：谁能选模型、谁能装插件、什么命令模型绝对不能直接执行。  
+**建议动作：** 把 legacy lane sunset、AI 迁移 apply gate、agent 支付 risk gate、billing-owner + deprecation policy，以及 coding agent dangerous-command guard 一起加入后续评估清单。  
+**结果：** previous_count=6，new_count=1，updated_count=1，total_count=7。
 
 ## Sources
 
@@ -94,3 +100,5 @@ OpenAI News RSS 可确认，这篇 Polimill 客户案例首发于 8 月 31 日�
 [5] https://huggingface.co/blog/webgpu-kernels
 [6] https://openai.com/news/rss.xml
 [7] https://r.jina.ai/http://openai.com/index/polimill/
+[8] https://github.blog/changelog/2026-08-31-selected-github-copilot-models-deprecated
+[9] https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.40.0

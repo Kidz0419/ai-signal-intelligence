@@ -8,7 +8,7 @@
       "url": "https://aws.amazon.com/blogs/architecture/mcp-went-stateless-is-your-aws-mcp-server-deployment-well-architected",
       "publisher": "AWS",
       "evidence_level": "confirmed",
-      "accessed": "2026-09-02T00:21:46+08:00"
+      "accessed": "2026-09-02T16:18:15+08:00"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "url": "https://aws.amazon.com/blogs/database/sql-server-to-aurora-postgresql-conversion-with-ai-agents-for-aws-dms",
       "publisher": "AWS",
       "evidence_level": "confirmed",
-      "accessed": "2026-09-02T00:21:46+08:00"
+      "accessed": "2026-09-02T16:18:15+08:00"
     },
     {
       "id": 3,
@@ -24,15 +24,15 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/how-t54-built-a-trust-layer-with-amazon-bedrock-agentcore-payments",
       "publisher": "AWS",
       "evidence_level": "confirmed",
-      "accessed": "2026-09-02T00:21:46+08:00"
+      "accessed": "2026-09-02T16:18:15+08:00"
     },
     {
       "id": 4,
-      "title": "GitHub Copilot 改了多组织 seat 的模型权限：现在只认付费组织，不再取已启用组织并集",
+      "title": "GitHub Copilot 开始把模型治理收回到组织控制面：多组织 seat 只认付费组织，旧模型也按名单退场",
       "url": "https://github.blog/changelog/2026-08-31-copilot-model-access-update-for-github-team-plans",
       "publisher": "GitHub",
       "evidence_level": "confirmed",
-      "accessed": "2026-09-02T00:21:46+08:00"
+      "accessed": "2026-09-02T16:18:15+08:00"
     },
     {
       "id": 5,
@@ -40,7 +40,7 @@
       "url": "https://huggingface.co/blog/webgpu-kernels",
       "publisher": "Hugging Face",
       "evidence_level": "confirmed",
-      "accessed": "2026-09-02T00:21:46+08:00"
+      "accessed": "2026-09-02T16:18:15+08:00"
     },
     {
       "id": 6,
@@ -48,7 +48,7 @@
       "url": "https://openai.com/news/rss.xml",
       "publisher": "OpenAI",
       "evidence_level": "confirmed",
-      "accessed": "2026-09-02T00:21:46+08:00"
+      "accessed": "2026-09-02T16:18:15+08:00"
     },
     {
       "id": 7,
@@ -56,7 +56,23 @@
       "url": "https://r.jina.ai/http://openai.com/index/polimill/",
       "publisher": "OpenAI / r.jina.ai text mirror",
       "evidence_level": "confirmed",
-      "accessed": "2026-09-02T00:21:46+08:00"
+      "accessed": "2026-09-02T16:18:15+08:00"
+    },
+    {
+      "id": 8,
+      "title": "Selected GitHub Copilot models deprecated",
+      "url": "https://github.blog/changelog/2026-08-31-selected-github-copilot-models-deprecated",
+      "publisher": "GitHub",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-02T16:18:15+08:00"
+    },
+    {
+      "id": 9,
+      "title": "Kimi Code 0.40 把默认多模型、插件市场和危险命令 hard gate 一起推到了控制面",
+      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.40.0",
+      "publisher": "MoonshotAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-02T16:18:15+08:00"
     }
   ]
 }

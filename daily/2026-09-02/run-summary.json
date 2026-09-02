@@ -1,62 +1,62 @@
 {
   "run_type": "daily_four_lane_incremental_manual_review",
-  "run_at": "2026-09-02T00:21:46+08:00",
+  "run_at": "2026-09-02T16:18:15+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
     "start": "2026-09-02T00:00:00+08:00",
-    "end": "2026-09-02T00:21:46+08:00",
-    "incremental_since": "2026-09-02T00:00:27+08:00"
+    "end": "2026-09-02T16:00:02+08:00",
+    "incremental_since": "2026-09-02T00:21:46+08:00"
   },
   "registered_sources": 111,
-  "raw_candidates": 170,
-  "unique_candidates": 132,
-  "candidate_queue_count": 98,
-  "new_in_run_count": 98,
-  "reviewed_new_candidates": 98,
-  "editorial_shortlist": 6,
-  "previous_count": 0,
-  "new_count": 6,
-  "updated_count": 0,
-  "excluded_count": 92,
+  "raw_candidates": 200,
+  "unique_candidates": 161,
+  "candidate_queue_count": 396,
+  "new_in_run_count": 91,
+  "reviewed_new_candidates": 91,
+  "editorial_shortlist": 2,
+  "previous_count": 6,
+  "new_count": 1,
+  "updated_count": 1,
+  "excluded_count": 88,
   "unreviewed_candidate_count": 0,
-  "total_count": 6,
-  "selected": 6,
+  "total_count": 7,
+  "selected": 7,
   "lane_counts": {
     "model": 1,
-    "agent_architecture": 2,
+    "agent_architecture": 3,
     "ai_product": 2,
     "ai_macro": 1
   },
   "priority_counts": {
     "P0": 0,
     "P1": 3,
-    "P2": 3,
+    "P2": 4,
     "P3": 0
   },
   "decision_counts": {
-    "include": 6,
+    "include": 7,
     "watchlist": 0
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
   "source_status_counts": {
-    "selected": 6,
-    "candidate_only": 0,
-    "checked_no_match": 92,
+    "selected": 2,
+    "candidate_only": 1,
+    "checked_no_match": 88,
     "access_blocked": 0,
     "auth_required": 0,
     "mechanical_failure": 0,
     "not_checked": 0
   },
   "review_notes": [
-    "Reviewed only the 98 true new candidates from the 2026-09-02 00:00 baseline cycle and did not reopen the older queue.",
-    "Mapped all 83 OpenAI sitemap hits through the official OpenAI News RSS before judging freshness. 81 resolved to older publication dates, one mapped to the already-selected ChatGPT Ads event from 2026-09-01, and only Polimill remained as a current reviewable body.",
-    "Used direct first-party pages where available and a public text-mirror fallback for OpenAI pages that still returned 403 from this environment. Sitemap lastmod values and HTTP reachability were never promoted as publication evidence.",
-    "Promoted six signals after body review: three AWS workflow/control-plane pieces, one Hugging Face browser inference infrastructure update, one GitHub Copilot governance update, and one OpenAI/Polimill public-sector adoption catch-up.",
-    "Left Anthropic duplicate coverage, Google Security items, AWS hybrid cloud / Wickr / ZS / Boomi, and Simon Willison's Python item out because they were already represented, off-scope, or below the formal signal threshold."
+    "Reviewed only the 91 true new candidates from the 2026-09-02 16:00 baseline cycle and did not reopen the 396-item carry-forward queue.",
+    "Mapped 85 OpenAI sitemap hits through the official OpenAI News RSS before judging freshness. Aside from the already-covered ChatGPT Ads URL, the remaining hits resolved to older publication dates or failed to clear the formal bar, so sitemap lastmod was never promoted as publication evidence.",
+    "Read the GitHub Copilot deprecation changelog at the body level and merged it into the already-selected same-day Copilot governance event instead of opening a second near-duplicate card.",
+    "Promoted one new signal after body review: Kimi Code 0.40, because the release moved default multi-model behavior, plugin distribution, and dangerous-command hard gates into the visible control plane.",
+    "Left OpenAI Codex 0.153.0-alpha.5 and Simon Willison's three new posts out because the prerelease notes were too thin, the content was secondary, or the information delta stayed below the formal threshold."
   ],
   "collection_contract": {
     "raw_candidates_in_rolling_window_is_not_increment": true,
