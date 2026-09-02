@@ -1,5 +1,62 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "title": "OpenAI News RSS",
+      "url": "https://openai.com/news/rss.xml",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-03T00:26:47+08:00"
+    },
+    {
+      "id": 2,
+      "title": "OpenAI 首次把 Astra 划进 Critical 网络安全阈值，并把最强能力先锁进小范围防守通道",
+      "url": "https://r.jina.ai/http://openai.com/index/path-to-astra/",
+      "publisher": "OpenAI / r.jina.ai text mirror",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-03T00:26:47+08:00"
+    },
+    {
+      "id": 3,
+      "title": "Gemini API changelog",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "publisher": "Google",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-03T00:26:47+08:00"
+    },
+    {
+      "id": 4,
+      "title": "Google 把 Gemini 3.8 Flash / Flash Cyber 一起推上台面：主力模型 GA，最强 cyber 能力只走 Fairwind",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "publisher": "Google",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-03T00:26:47+08:00"
+    },
+    {
+      "id": 5,
+      "title": "Fairwind Program",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+      "publisher": "Google",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-03T00:26:47+08:00"
+    },
+    {
+      "id": 6,
+      "title": "OpenAI 把 ChatGPT for Healthcare 接到 Epic 和 9 个官方医疗数据源，医疗问答开始贴着授权病历跑",
+      "url": "https://r.jina.ai/http://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
+      "publisher": "OpenAI / r.jina.ai text mirror",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-03T00:26:47+08:00"
+    },
+    {
+      "id": 7,
+      "title": "AWS 给 Strands Agents 补了一个持久存储后端：会话快照、长期记忆和 transcript 可以落在同一张 DynamoDB 表",
+      "url": "https://aws.amazon.com/blogs/database/introducing-strands-dynamodb-storage-durable-agent-storage-for-the-strands-agents-sdk/",
+      "publisher": "AWS",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-03T00:26:47+08:00"
+    }
+  ]
 }

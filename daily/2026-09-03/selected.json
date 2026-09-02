@@ -1,1 +1,276 @@
-[]
+[
+  {
+    "id": "2026-09-01-openai-astra-critical-cyber-threshold",
+    "demo": false,
+    "topic_lane": "model",
+    "title": "OpenAI 首次把 Astra 划进 Critical 网络安全阈值，并把最强能力先锁进小范围防守通道",
+    "summary": "OpenAI 9 月 1 日的官方更新说，Astra 已达到 Preparedness Framework 的 Critical cybersecurity capability threshold：在合适工具和访问条件下，它能自己发现未知漏洞并构造针对加固系统的利用链。OpenAI 同时披露，为了补强滥用防护和未授权行动防护，团队推迟了 Astra 的部分开发与发布；最强网络安全能力会先给一小组测试者，之后再通过 Daybreak Blue 扩大到防守场景。",
+    "decision": "include",
+    "confidence": 92,
+    "relevance_level": "P0",
+    "signal_type": "strategic_radar",
+    "content_type": "official_release",
+    "information_type": "model_capability",
+    "evidence_level": "primary_statement",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/path-to-astra",
+    "published_at": "2026-09-01T13:00:00Z",
+    "primary_tags": [
+      "OpenAI",
+      "Astra",
+      "Cybersecurity Threshold"
+    ],
+    "secondary_tags": [
+      "Preparedness Framework",
+      "Daybreak Blue",
+      "Staged Access"
+    ],
+    "why_it_matters_cn": "这不是普通 benchmark 更新。真正的信号是模型能力、发布节奏和访问控制一起变了：一旦厂商自己认定跨过 critical 线，先改的往往不是 UI，而是训练暂停、门控发布和 defender-only 通道。",
+    "personal_relevance_cn": "如果你在看 frontier model 风险和商业化节奏，这条最值得拆的是：阈值判定靠什么证据、哪些能力先不进默认面、Daybreak Blue 这类受限通道会不会成为高风险模型的标准发售路径。",
+    "product_opportunity_cn": "可以把高风险能力的 staged access、组织级审计、用途限制和 defender program，当成模型产品化的一层基础控制面。",
+    "competitive_risk_cn": "目前能确认的是 OpenAI 的官方自我判定、延后开发/发布和受限访问计划；系统卡、外部复现和真实攻击或防守效果还没公开。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "OpenAI 会在系统卡里披露多少外部基准、真实漏洞链和防护失效率，而不是只给结论？",
+      "Astra 的默认配置和 Daybreak Blue 之间到底隔着哪些工具权限、网络权限和用途限制？",
+      "这种先卡住高风险能力、再走受限通道放量的模式，会不会成为下一批 frontier cyber 模型的默认发售方式？"
+    ],
+    "follow_up_triggers": [
+      "OpenAI 发布 Astra system card、Preparedness 补充说明或外部评测结果",
+      "Daybreak Blue 开始公开接入对象、审计字段或用量限制",
+      "出现关于 Astra 漏洞发现、误报或滥用拦截效果的第三方复盘"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 5,
+      "technical_or_product_significance": 5,
+      "strategic_value": 5,
+      "source_quality": 4,
+      "model_value": 5,
+      "agent_architecture_value": 2,
+      "ai_product_value": 1,
+      "macro_value": 3,
+      "actionability": 4
+    },
+    "report_date": "2026-09-03",
+    "event_date": "2026-09-01",
+    "canonical_url": "https://openai.com/index/path-to-astra",
+    "first_seen_date": "2026-09-03",
+    "last_seen_date": "2026-09-03",
+    "run_dates": [
+      "2026-09-03"
+    ],
+    "evidence_boundary": "首发时间来自 OpenAI News RSS；正文来自公开文本镜像。页面确认的是 OpenAI 对 Astra 能力阈值、开发延后和受限发布路径的官方表述，不等于独立第三方已经复现这些能力，也不能把“soon”写成正式全面发布。",
+    "related_sources": [
+      {
+        "url": "https://openai.com/news/rss.xml",
+        "type": "official_rss_date"
+      }
+    ]
+  },
+  {
+    "id": "2026-09-02-google-gemini-38-flash-cyber-fairwind",
+    "demo": false,
+    "topic_lane": "model",
+    "title": "Google 把 Gemini 3.8 Flash / Flash Cyber 一起推上台面：主力模型 GA，最强 cyber 能力只走 Fairwind",
+    "summary": "Gemini API Changelog 已把 `gemini-3.8-flash` 标成 GA，定位是 long-horizon software engineering、autonomous agents 和 complex enterprise workflows。Google 同日的模型正文则把 3.8 Flash 定在 3.7 Flash 的同价位：每百万 input tokens 0.75 美元、output tokens 3.75 美元；同时发布 3.8 Flash Cyber，并通过 Fairwind Program + CodeMender 向受信防守方提供漏洞发现、验证和自动补丁能力。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P0",
+    "signal_type": "core",
+    "content_type": "official_release",
+    "information_type": "model_release",
+    "evidence_level": "confirmed",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+    "published_at": "2026-09-02T15:00:00Z",
+    "primary_tags": [
+      "Google",
+      "Gemini 3.8 Flash",
+      "Fairwind"
+    ],
+    "secondary_tags": [
+      "Gemini 3.8 Flash Cyber",
+      "CodeMender",
+      "Cyber Defense"
+    ],
+    "why_it_matters_cn": "这次有意思的不是单一 benchmark 分数，而是 Google 把一个更强的 Flash 主力模型做成 GA，同时把最敏感的 cyber 能力装进受限项目和修复 harness 里。价格、分发和安全门是一套一起上的。",
+    "personal_relevance_cn": "如果你在做 agent、coding 或 security 产品，这条值得对照的是：同一基础模型怎么拆成公开 GA 面和 defender-only 面，哪些工作流会直接被 CodeMender 这类 harness 吸走。",
+    "product_opportunity_cn": "可以围绕低成本 frontier coding model、受限安全能力接入、补丁验证链路和 trusted-access onboarding 设计产品。",
+    "competitive_risk_cn": "性能、patch recall 和 Fairwind 参与规模都来自 Google 或合作方自报；3.8 Flash Cyber 也不是面向所有开发者的广泛 GA。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "3.8 Flash 的真实单位任务成本，和 3.7 Flash 以及更高价 frontier 模型相比会差多少？",
+      "Fairwind 的接入门槛、日志审计和输出限制，会不会成为企业拿到高风险模型能力的标配流程？",
+      "CodeMender + Flash Cyber 的补丁验证链，能不能扩展到更多 CI、安全平台和企业内部代码库？"
+    ],
+    "follow_up_triggers": [
+      "Google 发布更多 3.8 Flash 生产定价、配额或外部基准复盘",
+      "Fairwind 披露更明确的 access policy、审计能力或 partner case study",
+      "更多第三方公开比较 Flash Cyber 的漏洞发现、误报和 patch 质量"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 5,
+      "technical_or_product_significance": 5,
+      "strategic_value": 5,
+      "source_quality": 5,
+      "model_value": 5,
+      "agent_architecture_value": 3,
+      "ai_product_value": 2,
+      "macro_value": 2,
+      "actionability": 4
+    },
+    "report_date": "2026-09-03",
+    "event_date": "2026-09-02",
+    "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+    "first_seen_date": "2026-09-03",
+    "last_seen_date": "2026-09-03",
+    "run_dates": [
+      "2026-09-03"
+    ],
+    "evidence_boundary": "Gemini API changelog 能确认 3.8 Flash GA；Google Blog 与 Fairwind 页面能确认价格、Cyber 定位、CodeMender 集成和受限访问计划。外部基准与大规模实战效果仍主要依赖官方或合作方叙述。",
+    "related_sources": [
+      {
+        "url": "https://ai.google.dev/gemini-api/docs/changelog",
+        "type": "api_changelog"
+      },
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+        "type": "access_program"
+      }
+    ]
+  },
+  {
+    "id": "2026-09-01-openai-chatgpt-healthcare-ehr-connectors",
+    "demo": false,
+    "topic_lane": "ai_product",
+    "title": "OpenAI 把 ChatGPT for Healthcare 接到 Epic 和 9 个官方医疗数据源，医疗问答开始贴着授权病历跑",
+    "summary": "OpenAI 9 月 1 日的官方更新为 ChatGPT for Healthcare 新增 Epic EHR integration，并推出 Healthcare Public Data plugin，把 ClinicalTrials.gov、CMS Coverage、RxNorm、DailyMed 和 PubMed 等 9 个官方来源带进同一工作区。页面还写明两种落点：在 ChatGPT 内拉取授权病历上下文，或把 ChatGPT 直接嵌进 EHR workflow；官方医生评测给出 4,363 次打分中 99.1% safe，以及 5 个连接数据源上 93% 以上“good or better” accuracy。",
+    "decision": "include",
+    "confidence": 90,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "official_release",
+    "information_type": "product_workflow",
+    "evidence_level": "confirmed",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+    "published_at": "2026-09-01T12:00:00Z",
+    "primary_tags": [
+      "OpenAI",
+      "ChatGPT for Healthcare",
+      "Epic"
+    ],
+    "secondary_tags": [
+      "EHR Integration",
+      "Healthcare Public Data",
+      "Clinical Workflow"
+    ],
+    "why_it_matters_cn": "真正的新点不是又多一个医疗场景页，而是 ChatGPT 开始直接贴着授权 EHR 和可枚举的官方数据源工作，临床前置准备、药物核对和 trial 查询从开放问答走向受控工作流。",
+    "personal_relevance_cn": "如果你在做垂直 AI 产品，这条值得学的是：先把高价值上下文源接进来，再把引用、病历回链和 workflow embedding 做完整；这比单纯调高模型分数更像真正落地。",
+    "product_opportunity_cn": "可以围绕受权数据接入、source-backed answer、chart back-links、EHR embedded workflow 和领域评测，构建行业 AI 产品。",
+    "competitive_risk_cn": "安全率和准确率来自 OpenAI 的官方医生打分，不是独立临床试验，也不等同于自动诊疗许可。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "授权病历回链、引用展示和审计导出，在真实部署里会做到什么粒度？",
+      "这套连接能力会先停留在回答层，还是继续扩展到更深的 order、handoff 或 care-ops workflow？",
+      "当公开医疗数据和本地 EHR 信息冲突时，产品会怎样暴露来源、版本和人工复核节点？"
+    ],
+    "follow_up_triggers": [
+      "OpenAI 公布更多医院或 payer 的真实部署、管理员控制面或 UI 细节",
+      "Epic 集成开始出现更具体的上线范围、权限模型或合规材料",
+      "第三方披露 connected EHR workflow 的安全性、准确率或使用复盘"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 5,
+      "strategic_value": 4,
+      "source_quality": 4,
+      "model_value": 2,
+      "agent_architecture_value": 2,
+      "ai_product_value": 5,
+      "macro_value": 1,
+      "actionability": 5
+    },
+    "report_date": "2026-09-03",
+    "event_date": "2026-09-01",
+    "canonical_url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+    "first_seen_date": "2026-09-03",
+    "last_seen_date": "2026-09-03",
+    "run_dates": [
+      "2026-09-03"
+    ],
+    "evidence_boundary": "首发时间来自 OpenAI News RSS；正文来自公开文本镜像。页面能确认 Epic 连接、Healthcare Public Data plugin、9 个官方来源和两种工作流形态；评测数字属于官方自报，不能写成独立临床验证。",
+    "related_sources": [
+      {
+        "url": "https://openai.com/news/rss.xml",
+        "type": "official_rss_date"
+      }
+    ]
+  },
+  {
+    "id": "2026-09-02-aws-strands-dynamodb-durable-storage",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "AWS 给 Strands Agents 补了一个持久存储后端：会话快照、长期记忆和 transcript 可以落在同一张 DynamoDB 表",
+    "summary": "AWS 9 月 2 日发布 `strands-dynamodb-storage`，把 Strands 的 Storage contract 落成单表 DynamoDB 后端：session snapshot、memory、context offload 和 transcript 共用同一套 `write / read / delete / list` 接口。正文还给出几项真正影响运行面的细节：大于 400KB 的值可选 S3 offload，可选 gzip、TTL 和 multi-tenant prefix，并明确 backend 不自动创建表，基础设施权限与加密策略由使用方自己控制。",
+    "decision": "include",
+    "confidence": 88,
+    "relevance_level": "P2",
+    "signal_type": "research",
+    "content_type": "technical_update",
+    "information_type": "agent_runtime",
+    "evidence_level": "confirmed",
+    "source": "AWS",
+    "url": "https://aws.amazon.com/blogs/database/introducing-strands-dynamodb-storage-durable-agent-storage-for-the-strands-agents-sdk/",
+    "published_at": "2026-09-02T08:48:06-07:00",
+    "primary_tags": [
+      "AWS",
+      "Strands Agents",
+      "DynamoDB"
+    ],
+    "secondary_tags": [
+      "Durable Storage",
+      "TTL",
+      "S3 Offload"
+    ],
+    "why_it_matters_cn": "很多 agent 框架嘴上都有 memory，真正难的是把 session、long-term memory 和 transcript 放进一套明确 contract，且能在无状态 compute 上跑得住。这个后端把这层运维现实写出来了。",
+    "personal_relevance_cn": "如果你在做长任务或多租户 agent，最该对照的是单表 key 设计、超大 payload offload、TTL 清理和谁来管建表与权限，不是只看“支持 memory”这几个字。",
+    "product_opportunity_cn": "可以把 durable storage contract、租户隔离、归档策略和大对象 offload，做成 agent runtime 的标准能力。",
+    "competitive_risk_cn": "这还是 AWS / DynamoDB 路线，不是跨云抽象的通用答案；性能和成本曲线也没有给出大规模独立对比。",
+    "recommended_action": "monitor",
+    "questions_to_validate": [
+      "这个 storage contract 在高并发长任务下会不会暴露新的一致性、压缩和 offload 读取瓶颈？",
+      "多租户前缀和 TTL 策略，能不能直接满足团队级审计、保留期和删除要求？",
+      "Strands 之后会不会把向量检索、回放审计或更细粒度的 state policy 也收进同一 contract？"
+    ],
+    "follow_up_triggers": [
+      "AWS 或 Strands 团队发布更多生产性能、成本或故障恢复细节",
+      "出现围绕 durable storage、tenant isolation 或 transcript retention 的真实部署复盘",
+      "Strands 补充更多官方存储后端或管理控制面能力"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 4,
+      "strategic_value": 3,
+      "source_quality": 5,
+      "model_value": 1,
+      "agent_architecture_value": 5,
+      "ai_product_value": 2,
+      "macro_value": 1,
+      "actionability": 4
+    },
+    "report_date": "2026-09-03",
+    "event_date": "2026-09-02",
+    "canonical_url": "https://aws.amazon.com/blogs/database/introducing-strands-dynamodb-storage-durable-agent-storage-for-the-strands-agents-sdk/",
+    "first_seen_date": "2026-09-03",
+    "last_seen_date": "2026-09-03",
+    "run_dates": [
+      "2026-09-03"
+    ],
+    "evidence_boundary": "官方正文能确认 package 发布、接口映射、S3 offload、TTL、租户前缀和权限边界；不能把它写成 Strands 默认托管存储或通用 vector memory 标准。"
+  }
+]

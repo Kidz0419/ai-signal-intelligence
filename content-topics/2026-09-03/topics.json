@@ -8,5 +8,282 @@
     "type": "daily",
     "date": "2026-09-03"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-03-high-risk-model-gating-astra",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "model",
+      "source_signal_ids": [
+        "2026-09-01-openai-astra-critical-cyber-threshold"
+      ],
+      "working_title_cn": "当模型真的跨过 critical 线，先变化的往往不是功能，而是权限、隔离和发售路径",
+      "core_tension_cn": "大家容易盯着模型更强了，却忽略了高风险能力一旦跨线，真正难的是谁能拿到、怎么审计、何时放量。",
+      "why_now_cn": "OpenAI 把 Astra 划进 Critical 网络安全阈值，并把最强能力先锁进小范围测试与 Daybreak Blue 通道。",
+      "target_audience_cn": [
+        "模型产品负责人",
+        "安全团队",
+        "AI 策略研究者"
+      ],
+      "evidence_boundary_cn": "这仍是 OpenAI 官方自我判定，不是第三方独立复现，也不是全面开放。",
+      "source_urls": [
+        "https://openai.com/index/path-to-astra"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "当模型真的跨过 critical 线，先变化的往往不是功能，而是权限",
+          "hook": "别只看模型更强了。更关键的是，高风险能力以后可能先以受限 access program 的形式卖给你。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—权限边界图，少量术语，结论先行",
+          "cta": "你最想先验证哪条控制边界？"
+        },
+        "twitter": {
+          "title": "当模型真的跨过 critical 线，先变化的往往不是功能，而是权限、隔离和发售路径",
+          "hook": "别只看模型更强了。更关键的是，高风险能力以后可能先以受限 access program 的形式卖给你。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one workflow or control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "当模型真的跨过 critical 线，先变化的往往不是功能，而是权限、隔离和发售路径",
+          "hook": "别只看模型更强了。更关键的是，高风险能力以后可能先以受限 access program 的形式卖给你。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
+      "id": "2026-09-03-gemini38-public-ga-vs-fairwind",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "model",
+      "source_signal_ids": [
+        "2026-09-02-google-gemini-38-flash-cyber-fairwind"
+      ],
+      "working_title_cn": "Google 这次发的不是单一模型，而是“公开主力 Flash + 受限 cyber access”组合",
+      "core_tension_cn": "同一基础模型能力越强，公开 GA 面和受限高风险面往往会越分裂。",
+      "why_now_cn": "Gemini 3.8 Flash 已 GA，同日的 Flash Cyber 则被装进 Fairwind 和 CodeMender，走 defender-only 路线。",
+      "target_audience_cn": [
+        "Agent / coding 产品团队",
+        "安全平台团队",
+        "开发者工具从业者"
+      ],
+      "evidence_boundary_cn": "性能与 partner 覆盖规模仍主要来自 Google 或合作方叙述，Flash Cyber 也不是广泛 GA。",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Google 这次发的不是单一模型，而是“公开主力 Flash + ",
+          "hook": "真正值得看的是，谁开始把公开模型、受限 access 和自动补丁 harness 打包成一套发行策略。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—权限边界图，少量术语，结论先行",
+          "cta": "你最想先验证哪条控制边界？"
+        },
+        "twitter": {
+          "title": "Google 这次发的不是单一模型，而是“公开主力 Flash + 受限 cyber access”组合",
+          "hook": "真正值得看的是，谁开始把公开模型、受限 access 和自动补丁 harness 打包成一套发行策略。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one workflow or control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "Google 这次发的不是单一模型，而是“公开主力 Flash + 受限 cyber access”组合",
+          "hook": "真正值得看的是，谁开始把公开模型、受限 access 和自动补丁 harness 打包成一套发行策略。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
+      "id": "2026-09-03-healthcare-ai-needs-real-context",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-09-01-openai-chatgpt-healthcare-ehr-connectors"
+      ],
+      "working_title_cn": "医疗 AI 真正的门槛，不是回答更像医生，而是能不能贴着授权病历和官方数据源工作",
+      "core_tension_cn": "没有真实上下文源和回链，再好的模型也容易停在演示层。",
+      "why_now_cn": "OpenAI 把 ChatGPT for Healthcare 接进 Epic 和 9 个官方医疗来源，还支持嵌入 EHR workflow。",
+      "target_audience_cn": [
+        "垂直 AI 产品经理",
+        "医疗信息化团队",
+        "行业研究者"
+      ],
+      "evidence_boundary_cn": "页面里的安全率和准确率属于官方医生评测，不是独立临床验证。",
+      "source_urls": [
+        "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "医疗 AI 真正的门槛，不是回答更像医生，而是能不能贴着授权病历和官",
+          "hook": "真正该学的不是模型分数，而是上下文接入、回链、workflow embedding 和审计边界怎么一起落地。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—权限边界图，少量术语，结论先行",
+          "cta": "你最想先验证哪条控制边界？"
+        },
+        "twitter": {
+          "title": "医疗 AI 真正的门槛，不是回答更像医生，而是能不能贴着授权病历和官方数据源工作",
+          "hook": "真正该学的不是模型分数，而是上下文接入、回链、workflow embedding 和审计边界怎么一起落地。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one workflow or control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "医疗 AI 真正的门槛，不是回答更像医生，而是能不能贴着授权病历和官方数据源工作",
+          "hook": "真正该学的不是模型分数，而是上下文接入、回链、workflow embedding 和审计边界怎么一起落地。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
+      "id": "2026-09-03-agent-durable-storage-contract",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "B",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-02-aws-strands-dynamodb-durable-storage"
+      ],
+      "working_title_cn": "Agent memory 进入基础设施期：session、memory 和 transcript 开始被收进同一套存储 contract",
+      "core_tension_cn": "大家都说 agent 需要 memory，但很少有人把大对象、TTL、多租户和权限边界真正讲清。",
+      "why_now_cn": "AWS 给 Strands Agents 发了 DynamoDB 持久存储后端，把 offload、TTL 和租户隔离写进了正文。",
+      "target_audience_cn": [
+        "Agent runtime 工程师",
+        "平台团队",
+        "多租户应用开发者"
+      ],
+      "evidence_boundary_cn": "这是 DynamoDB 路线，不是跨云通用标准，也没有给出独立的大规模成本对比。",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/database/introducing-strands-dynamodb-storage-durable-agent-storage-for-the-strands-agents-sdk/"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Agent memory 进入基础设施期：session、memor",
+          "hook": "别再只写“支持 memory”了。真正难的是把状态、留痕和大对象 offload 放进一套跑得住的 runtime contract。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—权限边界图，少量术语，结论先行",
+          "cta": "你最想先验证哪条控制边界？"
+        },
+        "twitter": {
+          "title": "Agent memory 进入基础设施期：session、memory 和 transcript 开始被收进同一套存储 contract",
+          "hook": "别再只写“支持 memory”了。真正难的是把状态、留痕和大对象 offload 放进一套跑得住的 runtime contract。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one workflow or control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "Agent memory 进入基础设施期：session、memory 和 transcript 开始被收进同一套存储 contract",
+          "hook": "别再只写“支持 memory”了。真正难的是把状态、留痕和大对象 offload 放进一套跑得住的 runtime contract。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    }
+  ]
 }
