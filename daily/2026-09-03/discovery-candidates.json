@@ -1,84 +1,39 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-03T12:16:54+08:00",
+  "generated_at": "2026-09-03T16:00:19+08:00",
   "window": {
-    "start": "2026-08-31T04:16:54+08:00",
-    "end": "2026-09-03T12:16:54+08:00",
+    "start": "2026-08-31T08:00:19+08:00",
+    "end": "2026-09-03T16:00:19+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 240,
-  "new_in_run_count": 14,
+  "candidate_count": 249,
+  "new_in_run_count": 9,
   "new_candidates": [
     {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.153.0",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0",
-      "published_or_lastmod_at": "2026-09-03T01:39:03Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.153.0-alpha.5.1",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.5.1",
-      "published_or_lastmod_at": "2026-09-03T00:44:38Z",
+      "source_name": "Hugging Face Blog",
+      "adapter": "rss",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+      "url": "https://huggingface.co/blog/train-to-paint-with-code",
+      "published_or_lastmod_at": "2026-09-03T00:00:00Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-      "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-      "published_or_lastmod_at": "2026-09-03T03:53:38.764000Z",
+      "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+      "published_or_lastmod_at": "2026-09-03T07:47:21.474000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
-      "published_or_lastmod_at": "2026-09-03T03:21:32.555000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/stampli/",
-      "url": "https://openai.com/index/stampli/",
-      "published_or_lastmod_at": "2026-09-03T03:14:47.440000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-      "published_or_lastmod_at": "2026-09-03T02:53:37.312000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-      "published_or_lastmod_at": "2026-09-03T02:34:05.401000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-      "published_or_lastmod_at": "2026-09-03T02:07:00.245000Z",
+      "title": "https://openai.com/index/polimill/",
+      "url": "https://openai.com/index/polimill/",
+      "published_or_lastmod_at": "2026-09-03T07:33:32.252000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -87,34 +42,25 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
       "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-      "published_or_lastmod_at": "2026-09-03T01:58:01.718000Z",
+      "published_or_lastmod_at": "2026-09-03T07:13:01.014000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/path-to-astra/",
-      "url": "https://openai.com/index/path-to-astra/",
-      "published_or_lastmod_at": "2026-09-03T01:50:12.995000Z",
+      "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+      "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+      "published_or_lastmod_at": "2026-09-03T06:46:24.569000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/loveholidays/",
-      "url": "https://openai.com/index/loveholidays/",
-      "published_or_lastmod_at": "2026-09-03T01:36:11.223000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-admin-plugin/",
-      "url": "https://openai.com/index/introducing-admin-plugin/",
-      "published_or_lastmod_at": "2026-09-03T01:07:29.982000Z",
+      "title": "https://openai.com/index/introducing-b2b-signals/",
+      "url": "https://openai.com/index/introducing-b2b-signals/",
+      "published_or_lastmod_at": "2026-09-03T06:46:09.088000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -123,16 +69,25 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/ai-native-company-workflows/",
       "url": "https://openai.com/index/ai-native-company-workflows/",
-      "published_or_lastmod_at": "2026-09-03T01:01:08.735000Z",
+      "published_or_lastmod_at": "2026-09-03T06:42:28.273000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/how-enterprises-put-ai-to-work/",
-      "url": "https://openai.com/index/how-enterprises-put-ai-to-work/",
-      "published_or_lastmod_at": "2026-09-03T00:17:33.910000Z",
+      "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+      "published_or_lastmod_at": "2026-09-03T06:26:31.930000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "published_or_lastmod_at": "2026-09-03T05:51:04.342000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     }
   ],
@@ -141,6 +96,78 @@
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+      "published_or_lastmod_at": "2026-09-03T07:47:21.474000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/polimill/",
+      "url": "https://openai.com/index/polimill/",
+      "published_or_lastmod_at": "2026-09-03T07:33:32.252000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
+      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
+      "published_or_lastmod_at": "2026-09-03T07:13:01.014000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+      "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+      "published_or_lastmod_at": "2026-09-03T06:46:24.569000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/introducing-b2b-signals/",
+      "url": "https://openai.com/index/introducing-b2b-signals/",
+      "published_or_lastmod_at": "2026-09-03T06:46:09.088000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/ai-native-company-workflows/",
+      "url": "https://openai.com/index/ai-native-company-workflows/",
+      "published_or_lastmod_at": "2026-09-03T06:42:28.273000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+      "published_or_lastmod_at": "2026-09-03T06:26:31.930000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts/",
+      "published_or_lastmod_at": "2026-09-03T05:51:04.342000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
       "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
       "published_or_lastmod_at": "2026-09-03T03:53:38.764000Z",
@@ -262,6 +289,15 @@
       "url": "https://openai.com/index/how-enterprises-put-ai-to-work/",
       "published_or_lastmod_at": "2026-09-03T00:17:33.910000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Hugging Face Blog",
+      "adapter": "rss",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+      "url": "https://huggingface.co/blog/train-to-paint-with-code",
+      "published_or_lastmod_at": "2026-09-03T00:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "OpenAI Codex releases",
