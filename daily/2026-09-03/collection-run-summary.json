@@ -1,41 +1,41 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-03T04:00:19+08:00",
+  "run_at": "2026-09-03T08:00:01+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-30T20:00:19+08:00",
-    "end": "2026-09-03T04:00:19+08:00",
+    "start": "2026-08-31T00:00:01+08:00",
+    "end": "2026-09-03T08:00:01+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 225,
-  "unique_candidates": 183,
+  "raw_candidates": 229,
+  "unique_candidates": 193,
   "editorial_shortlist": 0,
-  "previous_count": 4,
+  "previous_count": 5,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 225,
-  "total_count": 4,
-  "selected": 4,
+  "unreviewed_candidate_count": 229,
+  "total_count": 5,
+  "selected": 5,
   "lane_counts": {
     "model": 2,
     "agent_architecture": 1,
-    "ai_product": 1,
+    "ai_product": 2,
     "ai_macro": 0
   },
   "priority_counts": {
     "P0": 2,
-    "P1": 1,
+    "P1": 2,
     "P2": 1,
     "P3": 0
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 12,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 3,
-      "not_checked": 101
+      "mechanical_failure": 5,
+      "not_checked": 99
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 10
+        "mechanical_failure": 2,
+        "not_checked": 8
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -265,7 +265,7 @@
         "type": "company_ir",
         "url": "https://abc.xyz/investor/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -358,7 +358,7 @@
         "type": "company_ir",
         "url": "https://investor.nvidia.com/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "final_url": "https://investor.nvidia.com/home/default.aspx",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
@@ -1062,18 +1062,18 @@
         "name": "arXiv cs.CL",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "research_and_evaluation",
@@ -1292,6 +1292,11 @@
       "checked_items": 20,
       "recent_items": [
         {
+          "title": "Accessing OpenAI models on Amazon Bedrock from Australia with global cross-Region inference",
+          "url": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-5-6-models-on-amazon-bedrock-from-australia-with-global-cross-region-inference/",
+          "published_at": "2026-09-02T21:22:05Z"
+        },
+        {
           "title": "Modernizing and scaling support operations with generative AI on AWS",
           "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-and-scaling-support-operations-with-generative-ai-on-aws/",
           "published_at": "2026-09-02T18:26:35Z"
@@ -1382,6 +1387,11 @@
       "checked_items": 20,
       "recent_items": [
         {
+          "title": "Reduce Traffic Interruptions with Gateway Load Balancer TCP Reset",
+          "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/reduce-traffic-interruptions-with-gateway-load-balancer-tcp-reset/",
+          "published_at": "2026-09-02T21:16:40Z"
+        },
+        {
           "title": "Implementing encryption in transit across connectivity patterns with VPC Encryption Controls",
           "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/implementing-encryption-in-transit-across-connectivity-patterns-with-vpc-encryption-controls/",
           "published_at": "2026-08-31T22:43:25Z"
@@ -1430,11 +1440,6 @@
           "title": "Army R&D team uses agentic engineering to build secure, compliant code",
           "url": "https://aws.amazon.com/blogs/publicsector/army-rd-team-uses-agentic-engineering/",
           "published_at": "2026-08-31T20:36:31Z"
-        },
-        {
-          "title": "AI Model choice brings Mission Advantage to AWS GovCloud (US) customers",
-          "url": "https://aws.amazon.com/blogs/publicsector/ai-model-choice-is-now-a-mission-advantage-multiple-ai-models-available-in-aws-govcloud-us/",
-          "published_at": "2026-08-30T14:10:12Z"
         }
       ],
       "note": ""
@@ -1446,6 +1451,11 @@
       "status": "candidate_only",
       "checked_items": 20,
       "recent_items": [
+        {
+          "title": "Managing identity source transition for AWS IAM Identity Center",
+          "url": "https://aws.amazon.com/blogs/security/managing-identity-source-transition-for-aws-iam-identity-center/",
+          "published_at": "2026-09-02T20:36:31Z"
+        },
         {
           "title": "Agentic security: Detection and response at machine speed",
           "url": "https://aws.amazon.com/blogs/security/agentic-security-detection-and-response-at-machine-speed/",
@@ -1490,6 +1500,11 @@
       "checked_items": 10,
       "recent_items": [
         {
+          "title": "v2.1.259",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.259",
+          "published_at": "2026-09-02T22:33:51Z"
+        },
+        {
           "title": "v2.1.258",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.258",
           "published_at": "2026-09-01T22:33:20Z"
@@ -1527,6 +1542,11 @@
           "title": "Enterprise-managed settings support any default model",
           "url": "https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model",
           "published_at": "2026-09-02T18:51:12Z"
+        },
+        {
+          "title": "Content exclusions generally available in Copilot app and CLI",
+          "url": "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli",
+          "published_at": "2026-09-02T18:14:23Z"
         },
         {
           "title": "Set an expiration date for individual user budgets",
@@ -1873,6 +1893,11 @@
           "published_at": "2026-09-02T11:29:21Z"
         },
         {
+          "title": "rust-v0.153.0-alpha.5.1",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.5.1",
+          "published_at": "2026-09-02T23:51:46Z"
+        },
+        {
           "title": "0.153.0-alpha.5",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.5",
           "published_at": "2026-09-02T03:08:30Z"
@@ -1911,11 +1936,6 @@
           "title": "0.152.0-alpha.7.2",
           "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.7.2",
           "published_at": "2026-09-01T00:33:37Z"
-        },
-        {
-          "title": "rust-v0.152.0-alpha.7.1",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.7.1",
-          "published_at": "2026-08-31T23:07:50Z"
         }
       ],
       "note": ""
@@ -1937,54 +1957,169 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/sora-vallee-duhamel/",
+          "url": "https://openai.com/index/sora-vallee-duhamel/",
+          "published_at": "2026-09-02T23:45:01.610000Z"
+        },
+        {
+          "title": "https://openai.com/index/sora-vallee-duhamel/",
+          "url": "https://openai.com/index/sora-vallee-duhamel/",
+          "published_at": "2026-09-02T23:45:01.610000Z"
+        },
+        {
+          "title": "https://openai.com/index/small-business-stories/",
+          "url": "https://openai.com/index/small-business-stories/",
+          "published_at": "2026-09-02T23:45:01.448000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-cursor/",
+          "url": "https://openai.com/index/gpt-5-cursor/",
+          "published_at": "2026-09-02T23:45:01.270000Z"
+        },
+        {
+          "title": "https://openai.com/index/o1-coding/",
+          "url": "https://openai.com/index/o1-coding/",
+          "published_at": "2026-09-02T23:45:00.804000Z"
+        },
+        {
+          "title": "https://openai.com/index/navigating-health-questions/",
+          "url": "https://openai.com/index/navigating-health-questions/",
+          "published_at": "2026-09-02T23:44:59.487000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-medical-research/",
+          "url": "https://openai.com/index/gpt-5-medical-research/",
+          "published_at": "2026-09-02T23:44:59.482000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-first-look/",
+          "url": "https://openai.com/index/gpt-5-first-look/",
+          "published_at": "2026-09-02T23:44:59.454000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-amgen/",
+          "url": "https://openai.com/index/gpt-5-amgen/",
+          "published_at": "2026-09-02T23:44:59.453000Z"
+        },
+        {
+          "title": "https://openai.com/index/fishing-for-first-timers/",
+          "url": "https://openai.com/index/fishing-for-first-timers/",
+          "published_at": "2026-09-02T23:44:59.189000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-coding-design/",
+          "url": "https://openai.com/index/gpt-5-coding-design/",
+          "published_at": "2026-09-02T23:44:59.034000Z"
+        },
+        {
+          "title": "https://openai.com/index/ten-tiny-canvases/",
+          "url": "https://openai.com/index/ten-tiny-canvases/",
+          "published_at": "2026-09-02T23:44:58.652000Z"
+        },
+        {
+          "title": "https://openai.com/index/my-dog-the-math-tutor/",
+          "url": "https://openai.com/index/my-dog-the-math-tutor/",
+          "published_at": "2026-09-02T23:44:58.571000Z"
+        },
+        {
+          "title": "https://openai.com/index/gpt-5-creative-writing/",
+          "url": "https://openai.com/index/gpt-5-creative-writing/",
+          "published_at": "2026-09-02T23:44:58.490000Z"
+        },
+        {
+          "title": "https://openai.com/index/the-met-museum/",
+          "url": "https://openai.com/index/the-met-museum/",
+          "published_at": "2026-09-02T23:44:58.337000Z"
+        },
+        {
+          "title": "https://openai.com/index/cycling-across-antarctica/",
+          "url": "https://openai.com/index/cycling-across-antarctica/",
+          "published_at": "2026-09-02T23:44:57.689000Z"
+        },
+        {
+          "title": "https://openai.com/index/creating-new-simulations-black-holes/",
+          "url": "https://openai.com/index/creating-new-simulations-black-holes/",
+          "published_at": "2026-09-02T23:44:57.574000Z"
+        },
+        {
+          "title": "https://openai.com/index/chip-ganassi-racing/",
+          "url": "https://openai.com/index/chip-ganassi-racing/",
+          "published_at": "2026-09-02T23:44:44.237000Z"
+        },
+        {
           "title": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
           "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-          "published_at": "2026-09-02T19:58:01.443000Z"
+          "published_at": "2026-09-02T23:26:00.942000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-b2b-signals/",
+          "url": "https://openai.com/index/introducing-b2b-signals/",
+          "published_at": "2026-09-02T23:25:27.746000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-b2b-signals/",
+          "url": "https://openai.com/index/introducing-b2b-signals/",
+          "published_at": "2026-09-02T23:25:27.746000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "published_at": "2026-09-02T23:25:26.444000Z"
+        },
+        {
+          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+          "published_at": "2026-09-02T23:25:26.444000Z"
+        },
+        {
+          "title": "https://openai.com/index/atv-big-air-tour/",
+          "url": "https://openai.com/index/atv-big-air-tour/",
+          "published_at": "2026-09-02T22:54:36.023000Z"
+        },
+        {
+          "title": "https://openai.com/index/how-enterprises-put-ai-to-work/",
+          "url": "https://openai.com/index/how-enterprises-put-ai-to-work/",
+          "published_at": "2026-09-02T22:38:19Z"
+        },
+        {
+          "title": "https://openai.com/index/stampli/",
+          "url": "https://openai.com/index/stampli/",
+          "published_at": "2026-09-02T21:37:05.578000Z"
+        },
+        {
+          "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+          "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+          "published_at": "2026-09-02T21:29:22.682000Z"
+        },
+        {
+          "title": "https://openai.com/index/the-defenders-window/",
+          "url": "https://openai.com/index/the-defenders-window/",
+          "published_at": "2026-09-02T20:58:03.343000Z"
+        },
+        {
+          "title": "https://openai.com/index/ten-advances-in-mathematics/",
+          "url": "https://openai.com/index/ten-advances-in-mathematics/",
+          "published_at": "2026-09-02T20:57:34.290000Z"
+        },
+        {
+          "title": "https://openai.com/index/gilbert-tobin/",
+          "url": "https://openai.com/index/gilbert-tobin/",
+          "published_at": "2026-09-02T20:51:22.345000Z"
+        },
+        {
+          "title": "https://openai.com/index/path-to-astra/",
+          "url": "https://openai.com/index/path-to-astra/",
+          "published_at": "2026-09-02T20:51:02.300000Z"
+        },
+        {
+          "title": "https://openai.com/index/path-to-astra/",
+          "url": "https://openai.com/index/path-to-astra/",
+          "published_at": "2026-09-02T20:51:02.300000Z"
         },
         {
           "title": "https://openai.com/index/polimill/",
           "url": "https://openai.com/index/polimill/",
           "published_at": "2026-09-02T19:55:08.296000Z"
-        },
-        {
-          "title": "https://openai.com/index/stampli/",
-          "url": "https://openai.com/index/stampli/",
-          "published_at": "2026-09-02T19:40:41.394000Z"
-        },
-        {
-          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-          "published_at": "2026-09-02T19:36:08.880000Z"
-        },
-        {
-          "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-          "published_at": "2026-09-02T19:36:08.880000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-b2b-signals/",
-          "url": "https://openai.com/index/introducing-b2b-signals/",
-          "published_at": "2026-09-02T19:31:57.650000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-b2b-signals/",
-          "url": "https://openai.com/index/introducing-b2b-signals/",
-          "published_at": "2026-09-02T19:31:57.650000Z"
-        },
-        {
-          "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-          "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-          "published_at": "2026-09-02T19:30:28.695000Z"
-        },
-        {
-          "title": "https://openai.com/index/path-to-astra/",
-          "url": "https://openai.com/index/path-to-astra/",
-          "published_at": "2026-09-02T19:11:25.229000Z"
-        },
-        {
-          "title": "https://openai.com/index/path-to-astra/",
-          "url": "https://openai.com/index/path-to-astra/",
-          "published_at": "2026-09-02T19:11:25.229000Z"
         },
         {
           "title": "https://openai.com/index/ai-native-company-workflows/",
@@ -2420,121 +2555,6 @@
           "title": "https://openai.com/index/building-towards-age-prediction/",
           "url": "https://openai.com/index/building-towards-age-prediction/",
           "published_at": "2026-09-02T19:00:12.936000Z"
-        },
-        {
-          "title": "https://openai.com/index/building-towards-age-prediction/",
-          "url": "https://openai.com/index/building-towards-age-prediction/",
-          "published_at": "2026-09-02T19:00:12.936000Z"
-        },
-        {
-          "title": "https://openai.com/index/health-in-chatgpt/",
-          "url": "https://openai.com/index/health-in-chatgpt/",
-          "published_at": "2026-09-02T19:00:12.927000Z"
-        },
-        {
-          "title": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
-          "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
-          "published_at": "2026-09-02T19:00:12.630000Z"
-        },
-        {
-          "title": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
-          "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws/",
-          "published_at": "2026-09-02T19:00:12.146000Z"
-        },
-        {
-          "title": "https://openai.com/index/testing-ads-in-chatgpt/",
-          "url": "https://openai.com/index/testing-ads-in-chatgpt/",
-          "published_at": "2026-09-02T19:00:12.043000Z"
-        },
-        {
-          "title": "https://openai.com/index/testing-ads-in-chatgpt/",
-          "url": "https://openai.com/index/testing-ads-in-chatgpt/",
-          "published_at": "2026-09-02T19:00:12.043000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-openai-presence/",
-          "url": "https://openai.com/index/introducing-openai-presence/",
-          "published_at": "2026-09-02T19:00:11.871000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-openai-presence/",
-          "url": "https://openai.com/index/introducing-openai-presence/",
-          "published_at": "2026-09-02T19:00:11.871000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-live/",
-          "url": "https://openai.com/index/introducing-gpt-live/",
-          "published_at": "2026-09-02T19:00:11.869000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-live/",
-          "url": "https://openai.com/index/introducing-gpt-live/",
-          "published_at": "2026-09-02T19:00:11.869000Z"
-        },
-        {
-          "title": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-          "published_at": "2026-09-02T19:00:11.751000Z"
-        },
-        {
-          "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "published_at": "2026-09-02T19:00:11.682000Z"
-        },
-        {
-          "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "published_at": "2026-09-02T19:00:11.682000Z"
-        },
-        {
-          "title": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
-          "published_at": "2026-09-02T19:00:11.682000Z"
-        },
-        {
-          "title": "https://openai.com/index/codex-for-every-role-tool-workflow/",
-          "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
-          "published_at": "2026-09-02T19:00:11.382000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-data-residency-in-asia/",
-          "url": "https://openai.com/index/introducing-data-residency-in-asia/",
-          "published_at": "2026-09-02T19:00:11.182000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-6/",
-          "url": "https://openai.com/index/gpt-5-6/",
-          "published_at": "2026-09-02T19:00:11.172000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-6/",
-          "url": "https://openai.com/index/gpt-5-6/",
-          "published_at": "2026-09-02T19:00:11.172000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-chatgpt-atlas/",
-          "url": "https://openai.com/index/introducing-chatgpt-atlas/",
-          "published_at": "2026-09-02T19:00:10.933000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-1-for-developers/",
-          "url": "https://openai.com/index/gpt-5-1-for-developers/",
-          "published_at": "2026-09-02T19:00:10.772000Z"
-        },
-        {
-          "title": "https://openai.com/index/previewing-ultrafast/",
-          "url": "https://openai.com/index/previewing-ultrafast/",
-          "published_at": "2026-09-02T19:00:10.543000Z"
-        },
-        {
-          "title": "https://openai.com/index/chatgpt-for-teachers/",
-          "url": "https://openai.com/index/chatgpt-for-teachers/",
-          "published_at": "2026-09-02T19:00:10.542000Z"
-        },
-        {
-          "title": "https://openai.com/index/premium-seats-chatgpt-business/",
-          "url": "https://openai.com/index/premium-seats-chatgpt-business/",
-          "published_at": "2026-09-02T19:00:10.344000Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -2629,11 +2649,11 @@
     }
   ],
   "content_topics": {
-    "topic_count": 4,
-    "platform_variants": 12
+    "topic_count": 5,
+    "platform_variants": 15
   },
   "notes": [
-    "225 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "229 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
