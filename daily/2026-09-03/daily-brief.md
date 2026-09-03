@@ -1,16 +1,16 @@
 # AI Signal 日报｜2026-09-03
 
-**窗口：** 发现窗口北京时间 2026-08-30 20:00 至 2026-09-03 04:00；本轮只核验 100 个真新增候选，不重扫 225 条滚动发现池。  
-**一句话结论：** 这轮不是 0 条。对 100 个真新增候选补做正文核验后，日内正式 signal 从 4 条增到 5 条：新增补进的是 Anthropic 的 Enterprise Frontier Safeguards，今天的主轴更清楚了，高风险模型的企业化竞争正在同时往受限 access、客户侧控制面和真实工作流接入三条线走。[8]
+**窗口：** 发现窗口北京时间 2026-08-31 04:16 至 2026-09-03 12:16；本轮只核验 14 个真新增候选，不重扫 240 条待审队列。  
+**一句话结论：** 这轮又补进 1 条正式 signal，日内总数从 5 条增到 6 条。新增最值得盯的是 OpenAI Codex 0.153.0：比起界面小修，这次更关键的是插件分发、审批路径、Guardian 留痕和实验性上下文管理一起被拉进了可见控制面。[9]
 
 ## 四主线重点
 
 | 主线 | 数量 | 今日重点 |
 |---|---:|---|
 | 模型 | 2 | OpenAI 把 Astra 划进 Critical 阈值；Google 发布 Gemini 3.8 Flash / Flash Cyber + Fairwind |
-| Agent 架构 | 1 | AWS 把 Strands 的持久存储 contract 真正写到运行面 |
+| Agent 架构 | 2 | Codex 把插件市场、审批和上下文预算拉进控制面；AWS 把 Strands 的持久存储 contract 真写到运行面 |
 | AI 产品 | 2 | Anthropic 把高风险企业控制面产品化；OpenAI 把 ChatGPT for Healthcare 接进 Epic 与官方医疗数据源 |
-| AI 宏观 | 0 | 无达到正式入选门槛的新增结构事件 |
+| AI 宏观 | 0 | 本轮没有新增正式结构事件 |
 
 ## 模型｜2 条
 
@@ -26,7 +26,13 @@ Gemini API changelog 已把 `gemini-3.8-flash` 标成 GA。Google 同日正文�
 
 **为什么重要：** 这次不是单纯换个更强的 Flash 版本。Google 把公开主力模型、受限 cyber 能力和自动补丁 harness 一起推到了台前。
 
-## Agent 架构｜1 条
+## Agent 架构｜2 条
+
+### OpenAI：Codex 开始把插件、审批和上下文预算放进同一层控制面
+
+OpenAI 发布 Codex 0.153.0。稳定版 release notes 写明，plugin CLI 已能从 remote marketplaces 列出、安装和移除插件；Full Access 会跳过 confirmation-only 动作的 Guardian review，User approval 模式则跳过后台 Guardian scoring 和 prewarming，但敏感动作检查与用户输入请求仍保留。正文还确认 Guardian review history 可跨 compaction、restart 和用户 fork 保留，MCP tool approvals 开始按所选 app account 隔离，并新增默认关闭的 experimental context management，可为符合条件的 Codex backend 会话打开 token-budget context、history notes 和 `new_context` 工具。[9]
+
+**为什么重要：** 真正该看的是 Codex 的 control plane 开始从单点 patch 变成一组连动配置：插件来源、审批模式、历史留痕、账号作用域和上下文预算一起上桌了。
 
 ### AWS：Strands 的 memory 不再只是一层抽象
 
@@ -64,16 +70,17 @@ OpenAI 为 ChatGPT for Healthcare 新增 Epic EHR integration，并推出 Health
 
 - Astra 这条目前仍是 OpenAI 的官方自我判定：能确认阈值结论、开发延后和受限发售路径，不能写成第三方已经独立复现，更不能写成全面开放。[1][2]
 - Gemini 3.8 Flash 的 GA 与公开定价可确认，但 Flash Cyber 的性能、patch 效果和 Fairwind 覆盖规模仍主要来自 Google 或合作方表述，而且 Flash Cyber 不是面向所有开发者的广泛 GA。[3][4][5]
+- Codex 0.153.0 能确认 remote marketplace plugin CLI、Guardian 模式分流、review history 持久化、account-scoped MCP approvals 和默认关闭的 experimental context management；它还不能证明这些控制项的默认团队策略、最终审计面或长任务成功率已经改善。[9]
 - Anthropic 这条能确认发布日期、customer-owned storage、customer-managed keys、direct flag routing 和 no Anthropic human review，但它现在仍是 phased rollout 方案，不能写成已全面 GA，也不能把自动监测效果写成独立验证结论。[8]
 - ChatGPT for Healthcare 这条能确认 Epic 连接、9 个官方数据源和两种工作流形态；99.1% safe 与 93% 以上 accuracy 仍属于 OpenAI 官方医生评测，不是独立临床验证。[1][6]
 - AWS 这条能确认 storage contract、S3 offload、TTL 和租户前缀，但它仍是 DynamoDB 路线，不是跨云通用答案，也没有给出大规模独立成本对比。[7]
 
 ## 飞书短版
 
-**一句话结论：** 这轮不是 0 条，日内正式 signal 从 4 条增到 5 条；新增最值得补记的是 Anthropic 把 frontier model 的企业安全交付单独产品化。  
-**组织判断：** 今天最值得盯的，不只是模型更强，而是谁开始把高风险能力放进受限 access、把日志和人工复核权尽量留在客户侧，以及谁先把行业工作流真正接上真实上下文源。  
-**建议动作：** 把 high-risk model gating、customer-owned telemetry、customer-managed keys、EHR embedded workflow 和 agent durable storage contract 一起加进后续评估清单。  
-**结果：** previous_count=4，new_count=1，updated_count=0，total_count=5。
+**一句话结论：** 这轮多 1 条，日内正式 signal 从 5 条增到 6 条；新增最值得补记的是 Codex 0.153.0 把 plugin marketplace、approval mode 和 context management 一起拖进了 visible control plane。  
+**组织判断：** 今天更清楚的一条线是，frontier model 和 coding agent 都在把权限、审批、日志、上下文预算这些原本藏在实现里的东西，慢慢做成显式控制面。  
+**建议动作：** 把 high-risk model gating、customer-owned telemetry、customer-managed keys、EHR embedded workflow、plugin source policy 和 agent durable storage contract 一起加进后续评估清单。  
+**结果：** previous_count=5，new_count=1，updated_count=0，total_count=6。
 
 ## Sources
 
@@ -85,3 +92,4 @@ OpenAI 为 ChatGPT for Healthcare 新增 Epic EHR integration，并推出 Health
 [6] https://r.jina.ai/http://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/
 [7] https://aws.amazon.com/blogs/database/introducing-strands-dynamodb-storage-durable-agent-storage-for-the-strands-agents-sdk/
 [8] https://www.anthropic.com/news/enterprise-frontier-safeguards
+[9] https://github.com/openai/codex/releases/tag/rust-v0.153.0

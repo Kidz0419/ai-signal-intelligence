@@ -1,62 +1,68 @@
 {
   "run_type": "daily_four_lane_incremental_manual_review",
-  "run_at": "2026-09-03T04:16:37+08:00",
+  "run_at": "2026-09-03T12:33:57+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-08-30T20:00:19+08:00",
-    "end": "2026-09-03T04:00:19+08:00",
+    "start": "2026-08-31T04:16:54+08:00",
+    "end": "2026-09-03T12:16:54+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 225,
-  "unique_candidates": 183,
-  "candidate_queue_count": 192,
-  "new_in_run_count": 100,
-  "reviewed_new_candidates": 100,
-  "editorial_shortlist": 8,
-  "previous_count": 4,
+  "raw_candidates": 229,
+  "unique_candidates": 195,
+  "candidate_queue_count": 240,
+  "new_in_run_count": 14,
+  "reviewed_new_candidates": 14,
+  "editorial_shortlist": 5,
+  "previous_count": 5,
   "new_count": 1,
   "updated_count": 0,
-  "excluded_count": 99,
+  "excluded_count": 13,
   "unreviewed_candidate_count": 0,
-  "total_count": 5,
-  "selected": 5,
+  "total_count": 6,
+  "selected": 6,
   "lane_counts": {
     "model": 2,
-    "agent_architecture": 1,
+    "agent_architecture": 2,
     "ai_product": 2,
     "ai_macro": 0
   },
   "priority_counts": {
     "P0": 2,
-    "P1": 2,
+    "P1": 3,
     "P2": 1,
     "P3": 0
   },
   "decision_counts": {
-    "include": 5,
+    "include": 6,
     "watchlist": 0
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
   "source_status_counts": {
-    "selected": 5,
+    "selected": 1,
     "candidate_only": 0,
-    "checked_no_match": 95,
+    "checked_no_match": 13,
     "access_blocked": 0,
     "auth_required": 0,
     "mechanical_failure": 0,
     "not_checked": 0
   },
+  "review_breakdown": {
+    "selected": 1,
+    "outside_editorial_window": 8,
+    "already_selected_same_day": 2,
+    "below_formal_bar": 3
+  },
   "review_notes": [
-    "Reviewed only the 100 true new candidates from the 2026-09-03 04:00 baseline cycle and did not rescan the 225-item rolling discovery pool.",
-    "Mapped all 84 OpenAI sitemap hits through the official OpenAI News RSS before freshness judgment. 81 resolved to older publication dates or already-covered URLs; only three pages had Sep 1+ publication dates, and only Astra plus the healthcare EHR integration cleared the formal bar. The AI-native-company-workflows post stayed out as enterprise marketing with limited net-new operational detail.",
-    "Verified Anthropic Enterprise Frontier Safeguards from the browser-rendered official page after sitemap discovery. The page date is Sep 1, 2026, and the body adds concrete control-plane detail: customer-owned storage, customer-managed keys, direct flag routing, no Anthropic human review, and phased rollout. That moved it from discovery-only to a formal signal.",
-    "Reviewed the remaining AWS, GitHub Copilot, Google products blog, and Simon Willison candidates at body level. Copilot default-model management, AWS support/dashboard case studies, AgentCore documentation automation, Google payments/books/ads items, and Simon’s llm-gemini wrapper stayed out because they were config tweaks, customer case studies, off-scope non-AI product news, opinion/framework pieces, or secondary wrappers rather than primary high-value signals.",
-    "Used official feeds, browser-rendered pages, and public text-mirror fallback together. Sitemap lastmod values and bare HTTP reachability were never promoted as publication evidence."
+    "Reviewed only the 14 true new candidates from the 2026-09-03 12:16 baseline cycle and did not reopen the 240-item carry-forward queue.",
+    "Mapped all 12 OpenAI sitemap hits through the official OpenAI News RSS before freshness judgment. Eight resolved to publication dates before the active 80-hour editorial window, so ChatGPT Ads Europe, teachers, Stampli, Thailand accelerator, Cursor, loveholidays, Admin plugin, and the Enterprise Signals write-up all stayed out of today’s bucket on date alone.",
+    "Reopened the in-window OpenAI Astra and healthcare URLs at body level. The current sitemap appearances did not add a new first-hand state change beyond the already-selected same-day cards, so they were treated as checked duplicates rather than new events.",
+    "Promoted one new signal after body review: Codex 0.153.0. The stable release moved remote plugin marketplaces, approval-mode Guardian behavior, account-scoped MCP approvals, review-history persistence, and experimental context management into the visible control plane. The same-day alpha tag was merged as prerelease context instead of becoming a second card.",
+    "Left the California youth-safety bill page out because it is a company policy endorsement for a bill not yet in force, not a completed structural policy change."
   ],
   "collection_contract": {
     "raw_candidates_in_rolling_window_is_not_increment": true,

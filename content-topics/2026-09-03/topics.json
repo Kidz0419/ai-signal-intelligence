@@ -10,6 +10,75 @@
   },
   "topics": [
     {
+      "id": "2026-09-03-gemini38-public-ga-vs-fairwind",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "model",
+      "source_signal_ids": [
+        "2026-09-02-google-gemini-38-flash-cyber-fairwind"
+      ],
+      "working_title_cn": "Google 这次发的不是单一模型，而是“公开主力 Flash + 受限 cyber access”组合",
+      "core_tension_cn": "同一基础模型能力越强，公开 GA 面和受限高风险面往往会越分裂。",
+      "why_now_cn": "Gemini 3.8 Flash 已 GA，同日的 Flash Cyber 则被装进 Fairwind 和 CodeMender，走 defender-only 路线。",
+      "target_audience_cn": [
+        "Agent / coding 产品团队",
+        "安全平台团队",
+        "开发者工具从业者"
+      ],
+      "evidence_boundary_cn": "性能与 partner 覆盖规模仍主要来自 Google 或合作方叙述，Flash Cyber 也不是广泛 GA。",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Google 这次发的不是单一模型，而是“公开主力 Flash + ",
+          "hook": "真正值得看的是，谁开始把公开模型、受限 access 和自动补丁 harness 打包成一套发行策略。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—权限边界图，少量术语，结论先行",
+          "cta": "你最想先验证哪条控制边界？"
+        },
+        "twitter": {
+          "title": "Google 这次发的不是单一模型，而是“公开主力 Flash + 受限 cyber access”组合",
+          "hook": "真正值得看的是，谁开始把公开模型、受限 access 和自动补丁 harness 打包成一套发行策略。",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one workflow or control-plane diagram",
+          "cta": "What would you test first?"
+        },
+        "wechat": {
+          "title": "Google 这次发的不是单一模型，而是“公开主力 Flash + 受限 cyber access”组合",
+          "hook": "真正值得看的是，谁开始把公开模型、受限 access 和自动补丁 harness 打包成一套发行策略。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流图、证据边界表、验证清单",
+          "cta": "文末附可复用的验收问题"
+        }
+      }
+    },
+    {
       "id": "2026-09-03-high-risk-model-gating-astra",
       "status": "candidate",
       "timeliness": "this_week",
@@ -79,30 +148,30 @@
       }
     },
     {
-      "id": "2026-09-03-gemini38-public-ga-vs-fairwind",
+      "id": "2026-09-03-codex-plugin-approval-context-control-plane",
       "status": "candidate",
       "timeliness": "this_week",
       "priority": "A",
-      "topic_lane": "model",
+      "topic_lane": "agent_architecture",
       "source_signal_ids": [
-        "2026-09-02-google-gemini-38-flash-cyber-fairwind"
+        "2026-09-03-openai-codex-01530-plugin-approval-context-controls"
       ],
-      "working_title_cn": "Google 这次发的不是单一模型，而是“公开主力 Flash + 受限 cyber access”组合",
-      "core_tension_cn": "同一基础模型能力越强，公开 GA 面和受限高风险面往往会越分裂。",
-      "why_now_cn": "Gemini 3.8 Flash 已 GA，同日的 Flash Cyber 则被装进 Fairwind 和 CodeMender，走 defender-only 路线。",
+      "working_title_cn": "Codex 正在把插件分发、审批路径和上下文预算收进同一层 agent control plane",
+      "core_tension_cn": "很多 coding agent 还停在“会不会写代码”，真正拉开差距的却越来越像基础设施问题：谁能装插件、谁能跳过复核、上下文怎么控预算、历史怎么保留。",
+      "why_now_cn": "Codex 0.153.0 稳定版把 remote marketplace plugin CLI、Guardian 模式分流、account-scoped MCP approvals 和 experimental context management 一起公开了。",
       "target_audience_cn": [
-        "Agent / coding 产品团队",
-        "安全平台团队",
-        "开发者工具从业者"
+        "Coding agent 产品团队",
+        "Agent runtime 工程师",
+        "平台安全与治理团队"
       ],
-      "evidence_boundary_cn": "性能与 partner 覆盖规模仍主要来自 Google 或合作方叙述，Flash Cyber 也不是广泛 GA。",
+      "evidence_boundary_cn": "release notes 能确认配置项和行为变化；experimental context management 默认关闭，且只限特定 ChatGPT 计划 / Codex backend，会话默认策略与真实成功率增益还没公开。",
       "source_urls": [
-        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+        "https://github.com/openai/codex/releases/tag/rust-v0.153.0"
       ],
       "platforms": {
         "xiaohongshu": {
-          "title": "Google 这次发的不是单一模型，而是“公开主力 Flash + ",
-          "hook": "真正值得看的是，谁开始把公开模型、受限 access 和自动补丁 harness 打包成一套发行策略。",
+          "title": "Codex 正在把插件分发、审批路径和上下文预算收进同一层控制面",
+          "hook": "别只盯着模型会不会写代码。真正的产品差距，越来越落在插件来源、审批模式、留痕和上下文预算这些基础设施细节上。",
           "format": "7页图文卡",
           "outline": [
             "已确认发生了什么",
@@ -113,11 +182,11 @@
             "接下来要继续验证什么"
           ],
           "visual_direction": "对象—动作—权限边界图，少量术语，结论先行",
-          "cta": "你最想先验证哪条控制边界？"
+          "cta": "你会先把哪条控制项做成产品默认值？"
         },
         "twitter": {
-          "title": "Google 这次发的不是单一模型，而是“公开主力 Flash + 受限 cyber access”组合",
-          "hook": "真正值得看的是，谁开始把公开模型、受限 access 和自动补丁 harness 打包成一套发行策略。",
+          "title": "Codex 正在把插件分发、审批路径和上下文预算收进同一层 agent control plane",
+          "hook": "The interesting part is no longer just code generation. It's plugin source policy, approval modes, review history, and context budgets becoming explicit runtime controls.",
           "format": "7帖 Thread",
           "outline": [
             "已确认发生了什么",
@@ -128,11 +197,11 @@
             "接下来要继续验证什么"
           ],
           "visual_direction": "one workflow or control-plane diagram",
-          "cta": "What would you test first?"
+          "cta": "Which control would you test first?"
         },
         "wechat": {
-          "title": "Google 这次发的不是单一模型，而是“公开主力 Flash + 受限 cyber access”组合",
-          "hook": "真正值得看的是，谁开始把公开模型、受限 access 和自动补丁 harness 打包成一套发行策略。",
+          "title": "Codex 正在把插件分发、审批路径和上下文预算收进同一层 agent control plane",
+          "hook": "这次更值得盯的不是又一个版本号，而是 coding agent 的插件来源、审批模式、历史留痕和上下文预算开始被一起产品化。",
           "format": "1800—2400字深度文章",
           "outline": [
             "已确认发生了什么",
@@ -143,7 +212,7 @@
             "接下来要继续验证什么"
           ],
           "visual_direction": "工作流图、证据边界表、验证清单",
-          "cta": "文末附可复用的验收问题"
+          "cta": "文末附 coding agent control plane 验收问题"
         }
       }
     },

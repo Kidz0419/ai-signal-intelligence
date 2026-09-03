@@ -142,6 +142,75 @@ window.DAILY_SIGNALS = [
     ]
   },
   {
+    "id": "2026-09-03-openai-codex-01530-plugin-approval-context-controls",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "OpenAI Codex 0.153.0 把插件市场、审批路径和实验性上下文管理一起拉进可见控制面",
+    "summary": "OpenAI 9 月 3 日发布 Codex 0.153.0。稳定版 release notes 写明，plugin CLI 已能从 remote marketplaces 列出、安装和移除插件；Full Access 会跳过 confirmation-only 动作的 Guardian review，User approval 模式则跳过后台 Guardian scoring 和 prewarming，但敏感动作检查与用户输入请求仍保留。正文还确认 Guardian review history 可跨 compaction、restart 和用户 fork 保留，MCP tool approvals 开始按所选 app account 隔离，并新增默认关闭的 experimental context management，可为符合条件的 Codex backend 会话打开 token-budget context、history notes 和 `new_context` 工具。",
+    "decision": "include",
+    "confidence": 91,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "technical_update",
+    "information_type": "agent_runtime",
+    "evidence_level": "confirmed",
+    "source": "OpenAI",
+    "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0",
+    "published_at": "2026-09-03T01:37:38Z",
+    "primary_tags": [
+      "OpenAI Codex",
+      "Plugin Marketplace",
+      "Guardian Review"
+    ],
+    "secondary_tags": [
+      "MCP Approvals",
+      "Context Management",
+      "Async User Input"
+    ],
+    "why_it_matters_cn": "这版值钱的不是 Vim undo 或配额提醒，而是插件来源、审批模式、Guardian 留痕、账号作用域和上下文预算开始被一起暴露成可见控制项。Codex 的 control plane 从单点补丁慢慢长成了一组连动配置。",
+    "personal_relevance_cn": "如果你在看 coding agent 的真实运行面，最该盯的是 remote plugin marketplace、Full Access / User approval 的分流、MCP 审批按账号隔离，以及 context_management.experimental_mode 到底能不能减少长任务漂移。",
+    "product_opportunity_cn": "可以把插件市场治理、审批模式切换、review history 持久化、异步用户追问和 token-budget context 管理，设计成自己的 coding agent control plane。",
+    "competitive_risk_cn": "能确认的是 release notes 列出的控制项与限制；experimental context management 默认关闭且限特定 ChatGPT 计划和 Codex backend，会话默认策略、团队级审计面和成功率提升还没公开。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "remote marketplace plugin install 的 allowlist、source policy 和审计记录会怎样落到管理员配置？",
+      "Full Access / User approval 跳过部分 Guardian 流程后，哪些敏感动作仍会被强制拦下或要求人工确认？",
+      "experimental context management 里的 history notes 与 `new_context`，会不会真正改变长任务成功率、回滚成本和可解释性？"
+    ],
+    "follow_up_triggers": [
+      "Codex 帮助中心或产品文档补充 plugin marketplace、approval mode 和 experimental context management 的默认策略",
+      "后续 release 公布管理员配置、审计导出或更广的团队 rollout 细节",
+      "出现围绕长任务、MCP 审批和 Guardian review 的真实使用复盘"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 4,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 1,
+      "agent_architecture_value": 5,
+      "ai_product_value": 4,
+      "macro_value": 1,
+      "actionability": 5
+    },
+    "report_date": "2026-09-03",
+    "event_date": "2026-09-03",
+    "canonical_url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0",
+    "first_seen_date": "2026-09-03",
+    "last_seen_date": "2026-09-03",
+    "run_dates": [
+      "2026-09-03"
+    ],
+    "evidence_boundary": "GitHub release notes 能确认 remote marketplace plugin CLI、Full Access / User approval 的 Guardian 行为变化、review history 持久化、account-scoped MCP approvals、异步用户输入请求，以及默认关闭的 experimental context management。release notes 不能证明这些设置的默认团队策略、最终审计面或对长任务成功率的实际提升。",
+    "related_sources": [
+      {
+        "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.5.1",
+        "type": "same_day_prerelease"
+      }
+    ]
+  },
+  {
     "id": "2026-09-01-anthropic-enterprise-frontier-safeguards",
     "demo": false,
     "topic_lane": "ai_product",
