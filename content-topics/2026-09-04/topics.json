@@ -8,5 +8,213 @@
     "type": "daily",
     "date": "2026-09-04"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-04-gpt6-astra-broad-deployment-monitorability",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "model",
+      "source_signal_ids": [
+        "2026-09-03-openai-gpt6-astra-broad-release-monitorability"
+      ],
+      "working_title_cn": "Astra 真正值得看的不是更强了，而是 OpenAI 一边开始广泛部署，一边公开承认 CoT 监控更难",
+      "core_tension_cn": "高风险模型一旦真的开始放量，产品竞争会很快从“谁能力更强”转到“谁能把监控、权限和人审一起做成默认控制面”。",
+      "why_now_cn": "OpenAI 9 月 3 日的官方 safety overview 首次把 broad deployment、Critical 阈值、全量 misalignment monitoring 和 monitorability 下降写进同一页。",
+      "target_audience_cn": [
+        "模型产品负责人",
+        "高风险 AI 治理团队",
+        "安全与合规研究者"
+      ],
+      "evidence_boundary_cn": "能确认的是 OpenAI 的官方发布与自述评估；可用范围、默认权限和第三方独立实测仍未在同批材料里完整公开。",
+      "source_urls": [
+        "https://openai.com/index/safety-overview-gpt-6-astra"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Astra 真正值得看的不是更强了，而是 OpenAI 公开承认 CoT 监控更难",
+          "hook": "别只看 GPT‑6 Astra 能发现漏洞。更关键的是，OpenAI 一边开始广泛部署，一边也承认这代模型更难靠 CoT 监控。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "对象—动作—权限边界图，结论先行",
+          "cta": "你最想先验证哪条监控或审批边界？"
+        },
+        "twitter": {
+          "title": "Astra is interesting not just because it is stronger, but because OpenAI is broad-deploying it while admitting CoT monitoring got harder",
+          "hook": "The key shift is not benchmark inflation. It's a critical cyber model moving into broad deployment with heavier monitoring and weaker CoT visibility at the same time.",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "one control-plane diagram",
+          "cta": "Which control would you pressure-test first?"
+        },
+        "wechat": {
+          "title": "Astra 真正值得看的不是更强了，而是 OpenAI 一边开始广泛部署，一边公开承认 CoT 监控更难",
+          "hook": "这轮真正的新信号不是模型又强了一点，而是 critical cyber model 的放量与控制代价同时被摊开了。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 控制面",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 架构判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "控制面图、证据边界表、验证清单",
+          "cta": "文末附高风险模型放量的验收问题"
+        }
+      }
+    },
+    {
+      "id": "2026-09-04-enterprise-agent-workflow-pattern",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-09-01-openai-enterprise-agent-workflow-pattern"
+      ],
+      "working_title_cn": "企业 agent 落地开始收敛成一条执行范式：稳定流程、持久上下文、测试和签核一起进场",
+      "core_tension_cn": "很多团队还在争论 agent 能不能做事，真正拉开差距的反而是怎样把任务定义、上下文、工具、证据和人审串成一个可复用工作流。",
+      "why_now_cn": "OpenAI 的 workflow 总结和 Gilbert + Tobin 案例，把 onboarding、销售、开发者生态、KYC/AML 和审计任务放进了同一种结构里。",
+      "target_audience_cn": [
+        "企业 AI 产品经理",
+        "Agent 设计与平台团队",
+        "受监管行业数字化负责人"
+      ],
+      "evidence_boundary_cn": "能确认的是官方案例描述的对象、动作和 review gate；效率、活跃率和 ROI 仍主要是厂商或客户自报。",
+      "source_urls": [
+        "https://openai.com/index/ai-native-company-workflows"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "企业 agent 落地开始收敛成一条执行范式：稳定流程、持久上下文、测试和签核一起进场",
+          "hook": "真正值得抄作业的不是哪家公司上了 AI，而是它们终于把 agent workflow 的骨架讲清楚了。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 工作流骨架",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 控制面判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流骨架图、对象—动作—人审表",
+          "cta": "你会先把哪类任务做成 reusable skill？"
+        },
+        "twitter": {
+          "title": "Enterprise agent deployment is converging on a clearer pattern: stable workflow, persistent context, tests, and human sign-off",
+          "hook": "The interesting move is not 'AI adoption' in the abstract. It's vendors and customers finally describing a reusable workflow skeleton for bounded execution.",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 工作流骨架",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 控制面判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "workflow skeleton diagram",
+          "cta": "Which layer matters most: context, controls, or sign-off?"
+        },
+        "wechat": {
+          "title": "企业 agent 落地开始收敛成一条执行范式：稳定流程、持久上下文、测试和签核一起进场",
+          "hook": "这次值得拆的，不是哪家企业‘开始用 AI’，而是 agent 从聊天走向执行时，骨架终于被讲清楚了。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 工作流骨架",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 控制面判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "工作流骨架图、边界表、验证清单",
+          "cta": "文末附企业 agent 工作流设计问题"
+        }
+      }
+    },
+    {
+      "id": "2026-09-04-daybreak-frontline-defenders-channel",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_macro",
+      "source_signal_ids": [
+        "2026-09-03-openai-daybreak-frontline-defenders-channel"
+      ],
+      "working_title_cn": "Daybreak 正在从特殊 access program 变成关键基础设施拿到 frontier cyber 能力的分发渠道",
+      "core_tension_cn": "真正的竞争不只是模型能力，而是谁能把高风险能力接到关键基础设施客户已经在用的伙伴产品、培训和修复流程里。",
+      "why_now_cn": "OpenAI 这次把 10 亿美元补贴、MS-ISAC 试点、35+ 合作产品和 2,000+ 已批准组织写进了同一份项目发布。",
+      "target_audience_cn": [
+        "AI 宏观研究者",
+        "安全平台团队",
+        "企业分发与合作负责人"
+      ],
+      "evidence_boundary_cn": "已确认的是项目发布与官方承诺；六个月内的真实消耗、部署深度和防守成效还没有独立核验。",
+      "source_urls": [
+        "https://openai.com/index/daybreak-for-frontline-defenders"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Daybreak 正在从特殊 access program 变成关键基础设施的分发渠道",
+          "hook": "这次值得看的不是 OpenAI 又喊了一次安全口号，而是它开始把 frontier cyber 能力按行业、按伙伴、按工作流卖出去。",
+          "format": "7页图文卡",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 分发结构",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 竞争判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "渠道结构图、角色关系图",
+          "cta": "你觉得补贴、伙伴还是培训，哪一个最决定落地？"
+        },
+        "twitter": {
+          "title": "Daybreak is starting to look less like a special access program and more like a distribution channel into critical-infrastructure security workflows",
+          "hook": "The notable move is not just a cyber-AI announcement. It's subsidy + training + partner products + public-sector pilots showing up as one go-to-market package.",
+          "format": "7帖 Thread",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 分发结构",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 竞争判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "channel map or workflow diagram",
+          "cta": "What would you watch first: eligibility, logs, or partner depth?"
+        },
+        "wechat": {
+          "title": "Daybreak 正在从特殊 access program 变成关键基础设施拿到 frontier cyber 能力的分发渠道",
+          "hook": "高风险 AI 能力的商业化，不再只是 API 开关，而是补贴、伙伴、培训和修复流程一起进场。",
+          "format": "1800—2400字深度文章",
+          "outline": [
+            "已确认发生了什么",
+            "关键对象与动作 / 分发结构",
+            "为什么这件事现在值得写",
+            "证据边界和不能误写的地方",
+            "对产品 / 竞争判断的启发",
+            "接下来要继续验证什么"
+          ],
+          "visual_direction": "分发结构图、角色表、验证清单",
+          "cta": "文末附关键基础设施 access program 观察框架"
+        }
+      }
+    }
+  ]
 }

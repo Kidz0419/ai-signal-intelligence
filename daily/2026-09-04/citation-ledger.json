@@ -1,5 +1,54 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "title": "OpenAI News RSS",
+      "url": "https://openai.com/news/rss.xml",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-04T16:21:33+08:00"
+    },
+    {
+      "id": 2,
+      "title": "OpenAI 开始广泛部署 GPT-6 Astra，并承认 CoT 监控更难了",
+      "url": "https://r.jina.ai/http://openai.com/index/safety-overview-gpt-6-astra",
+      "publisher": "OpenAI / r.jina.ai text mirror",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-04T16:21:33+08:00"
+    },
+    {
+      "id": 3,
+      "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+      "url": "https://r.jina.ai/http://openai.com/index/legora-financial-statement-review-with-astra",
+      "publisher": "OpenAI / r.jina.ai text mirror",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-04T16:21:33+08:00"
+    },
+    {
+      "id": 4,
+      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "url": "https://r.jina.ai/http://openai.com/index/daybreak-for-frontline-defenders",
+      "publisher": "OpenAI / r.jina.ai text mirror",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-04T16:21:33+08:00"
+    },
+    {
+      "id": 5,
+      "title": "How AI-native companies turn workflows into operating capability",
+      "url": "https://r.jina.ai/http://openai.com/index/ai-native-company-workflows",
+      "publisher": "OpenAI / r.jina.ai text mirror",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-04T16:21:33+08:00"
+    },
+    {
+      "id": 6,
+      "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
+      "url": "https://r.jina.ai/http://openai.com/index/gilbert-tobin",
+      "publisher": "OpenAI / r.jina.ai text mirror",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-04T16:21:33+08:00"
+    }
+  ]
 }
