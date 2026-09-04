@@ -1,129 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-04T12:08:31+08:00",
+  "generated_at": "2026-09-04T16:00:38+08:00",
   "window": {
-    "start": "2026-09-01T04:08:31+08:00",
-    "end": "2026-09-04T12:08:31+08:00",
+    "start": "2026-09-01T08:00:38+08:00",
+    "end": "2026-09-04T16:00:38+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 116,
-  "new_in_run_count": 28,
+  "candidate_count": 126,
+  "new_in_run_count": 10,
   "new_candidates": [
     {
-      "source_name": "Anthropic sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://www.anthropic.com/sitemap.xml",
-      "title": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
-      "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
-      "published_or_lastmod_at": "2026-09-04T03:24:16Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "Browser Use releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/browser-use/browser-use/releases.atom",
-      "title": "0.13.10",
-      "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.10",
-      "published_or_lastmod_at": "2026-09-04T03:28:53Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Browser Use releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/browser-use/browser-use/releases.atom",
-      "title": "0.13.9",
-      "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.9",
-      "published_or_lastmod_at": "2026-09-04T01:29:32Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Claude Code releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
-      "title": "v2.1.260",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
-      "published_or_lastmod_at": "2026-09-03T23:48:12Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.154.0-alpha.3",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.3",
-      "published_or_lastmod_at": "2026-09-04T01:01:00Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.154.0-alpha.2",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.2",
-      "published_or_lastmod_at": "2026-09-03T22:01:53Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "OpenAI Codex releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/openai/codex/releases.atom",
-      "title": "0.153.2",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.2",
-      "published_or_lastmod_at": "2026-09-03T23:54:50Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-6-astra/",
-      "url": "https://openai.com/index/gpt-6-astra/",
-      "published_or_lastmod_at": "2026-09-04T03:52:30.365000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/path-to-astra/",
-      "url": "https://openai.com/index/path-to-astra/",
-      "published_or_lastmod_at": "2026-09-04T03:21:17.471000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/daybreak-for-frontline-defenders/",
-      "url": "https://openai.com/index/daybreak-for-frontline-defenders/",
-      "published_or_lastmod_at": "2026-09-04T02:52:31.872000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-      "published_or_lastmod_at": "2026-09-04T02:00:02.168000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gilbert-tobin/",
-      "url": "https://openai.com/index/gilbert-tobin/",
-      "published_or_lastmod_at": "2026-09-04T01:47:14.378000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/ai-native-company-workflows/",
-      "url": "https://openai.com/index/ai-native-company-workflows/",
-      "published_or_lastmod_at": "2026-09-04T01:45:50.825000Z",
+      "title": "https://openai.com/index/stampli/",
+      "url": "https://openai.com/index/stampli/",
+      "published_or_lastmod_at": "2026-09-04T06:43:32.105000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -132,7 +24,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/legora-financial-statement-review-with-astra/",
       "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
-      "published_or_lastmod_at": "2026-09-04T00:56:04.109000Z",
+      "published_or_lastmod_at": "2026-09-04T06:38:37.793000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -141,16 +33,7 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/safety-overview-gpt-6-astra/",
       "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
-      "published_or_lastmod_at": "2026-09-04T00:53:46.697000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/stampli/",
-      "url": "https://openai.com/index/stampli/",
-      "published_or_lastmod_at": "2026-09-04T00:52:07.287000Z",
+      "published_or_lastmod_at": "2026-09-04T06:16:30.990000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -159,110 +42,155 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/chip-ganassi-racing/",
       "url": "https://openai.com/index/chip-ganassi-racing/",
-      "published_or_lastmod_at": "2026-09-03T23:21:15.135000Z",
+      "published_or_lastmod_at": "2026-09-04T05:53:24.753000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/atv-big-air-tour/",
-      "url": "https://openai.com/index/atv-big-air-tour/",
-      "published_or_lastmod_at": "2026-09-03T22:40:04.534000Z",
+      "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+      "published_or_lastmod_at": "2026-09-04T05:42:35.855000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-gpt-5/",
-      "url": "https://openai.com/index/introducing-gpt-5/",
-      "published_or_lastmod_at": "2026-09-03T21:51:37.144000Z",
+      "title": "https://openai.com/index/gpt-6-astra/",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "published_or_lastmod_at": "2026-09-04T05:30:42.462000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-6/",
-      "url": "https://openai.com/index/gpt-5-6/",
-      "published_or_lastmod_at": "2026-09-03T21:51:19.598000Z",
+      "title": "https://openai.com/index/ai-native-company-workflows/",
+      "url": "https://openai.com/index/ai-native-company-workflows/",
+      "published_or_lastmod_at": "2026-09-04T05:15:32.101000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/hello-gpt-4o/",
-      "url": "https://openai.com/index/hello-gpt-4o/",
-      "published_or_lastmod_at": "2026-09-03T21:51:06.223000Z",
+      "title": "https://openai.com/index/gilbert-tobin/",
+      "url": "https://openai.com/index/gilbert-tobin/",
+      "published_or_lastmod_at": "2026-09-04T05:07:47.843000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-genebench-pro/",
-      "url": "https://openai.com/index/introducing-genebench-pro/",
-      "published_or_lastmod_at": "2026-09-03T21:50:03.859000Z",
+      "title": "https://openai.com/index/daybreak-for-frontline-defenders/",
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders/",
+      "published_or_lastmod_at": "2026-09-04T04:56:06.643000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
-      "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
-      "published_or_lastmod_at": "2026-09-03T21:50:01.845000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-gpt-5-5/",
-      "url": "https://openai.com/index/introducing-gpt-5-5/",
-      "published_or_lastmod_at": "2026-09-03T21:48:27.105000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/previewing-ultrafast/",
-      "url": "https://openai.com/index/previewing-ultrafast/",
-      "published_or_lastmod_at": "2026-09-03T21:46:31.923000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-4/",
-      "url": "https://openai.com/index/gpt-4/",
-      "published_or_lastmod_at": "2026-09-03T21:38:19.989000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-6-in-kiro/",
-      "url": "https://openai.com/index/gpt-5-6-in-kiro/",
-      "published_or_lastmod_at": "2026-09-03T21:38:13.822000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-      "url": "https://openai.com/index/chatgpt-ads-expands-across-europe/",
-      "published_or_lastmod_at": "2026-09-03T21:35:11.539000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "August newsletter is out",
+      "url": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
+      "published_or_lastmod_at": "2026-09-04T05:54:40Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/stampli/",
+      "url": "https://openai.com/index/stampli/",
+      "published_or_lastmod_at": "2026-09-04T06:43:32.105000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+      "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+      "published_or_lastmod_at": "2026-09-04T06:38:37.793000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/safety-overview-gpt-6-astra/",
+      "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
+      "published_or_lastmod_at": "2026-09-04T06:16:30.990000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "August newsletter is out",
+      "url": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
+      "published_or_lastmod_at": "2026-09-04T05:54:40Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chip-ganassi-racing/",
+      "url": "https://openai.com/index/chip-ganassi-racing/",
+      "published_or_lastmod_at": "2026-09-04T05:53:24.753000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+      "published_or_lastmod_at": "2026-09-04T05:42:35.855000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-6-astra/",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "published_or_lastmod_at": "2026-09-04T05:30:42.462000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/ai-native-company-workflows/",
+      "url": "https://openai.com/index/ai-native-company-workflows/",
+      "published_or_lastmod_at": "2026-09-04T05:15:32.101000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gilbert-tobin/",
+      "url": "https://openai.com/index/gilbert-tobin/",
+      "published_or_lastmod_at": "2026-09-04T05:07:47.843000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/daybreak-for-frontline-defenders/",
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders/",
+      "published_or_lastmod_at": "2026-09-04T04:56:06.643000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",

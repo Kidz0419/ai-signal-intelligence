@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-04T12:08:31+08:00",
+  "run_at": "2026-09-04T16:00:38+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-01T04:08:31+08:00",
-    "end": "2026-09-04T12:08:31+08:00",
+    "start": "2026-09-01T08:00:38+08:00",
+    "end": "2026-09-04T16:00:38+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 265,
-  "unique_candidates": 230,
+  "raw_candidates": 246,
+  "unique_candidates": 215,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 265,
+  "unreviewed_candidate_count": 246,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,7 +35,7 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 11,
+  "collection_errors": 10,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 4,
-      "not_checked": 100
+      "mechanical_failure": 3,
+      "not_checked": 101
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -63,8 +63,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 12
+        "mechanical_failure": 1,
+        "not_checked": 13
       },
       "head_ai_product_release_notes": {
         "selected": 0,
@@ -457,9 +457,10 @@
         "name": "Kimi Developer Docs",
         "type": "developer_docs",
         "url": "https://platform.moonshot.cn/docs",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://platform.kimi.com/docs/get-api-key",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -1289,16 +1290,6 @@
           "title": "SQL Server to Aurora PostgreSQL conversion with AI agents for AWS DMS",
           "url": "https://aws.amazon.com/blogs/database/sql-server-to-aurora-postgresql-conversion-with-ai-agents-for-aws-dms/",
           "published_at": "2026-09-01T15:19:13Z"
-        },
-        {
-          "title": "Fix circular role dependencies before upgrading Amazon RDS and Amazon Aurora PostgreSQL",
-          "url": "https://aws.amazon.com/blogs/database/resolve-circular-role-dependencies-during-upgrades-of-amazon-rds-for-postgresql-and-amazon-aurora/",
-          "published_at": "2026-08-31T23:42:55Z"
-        },
-        {
-          "title": "Provision a secure Amazon DocumentDB cluster with Terraform",
-          "url": "https://aws.amazon.com/blogs/database/provision-a-secure-amazon-documentdb-cluster-with-terraform/",
-          "published_at": "2026-08-31T20:24:23Z"
         }
       ],
       "note": ""
@@ -1399,11 +1390,6 @@
           "title": "How Boomi Scribe streamlines documentation using AWS",
           "url": "https://aws.amazon.com/blogs/machine-learning/how-boomi-scribe-streamlines-documentation-using-aws/",
           "published_at": "2026-09-01T15:45:36Z"
-        },
-        {
-          "title": "Connect an AgentCore Runtime hosted MCP server to Amazon Quick",
-          "url": "https://aws.amazon.com/blogs/machine-learning/connect-an-agentcore-runtime-hosted-mcp-server-to-amazon-quick/",
-          "published_at": "2026-08-31T22:47:53Z"
         }
       ],
       "note": ""
@@ -1419,11 +1405,6 @@
           "title": "Reduce Traffic Interruptions with Gateway Load Balancer TCP Reset",
           "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/reduce-traffic-interruptions-with-gateway-load-balancer-tcp-reset/",
           "published_at": "2026-09-02T21:16:40Z"
-        },
-        {
-          "title": "Implementing encryption in transit across connectivity patterns with VPC Encryption Controls",
-          "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/implementing-encryption-in-transit-across-connectivity-patterns-with-vpc-encryption-controls/",
-          "published_at": "2026-08-31T22:43:25Z"
         }
       ],
       "note": ""
@@ -1459,11 +1440,6 @@
           "title": "How to secure communications beyond encryption with AWS Wickr",
           "url": "https://aws.amazon.com/blogs/publicsector/how-to-secure-communications-beyond-encryption-with-aws-wickr/",
           "published_at": "2026-09-01T14:57:07Z"
-        },
-        {
-          "title": "Army R&D team uses agentic engineering to build secure, compliant code",
-          "url": "https://aws.amazon.com/blogs/publicsector/army-rd-team-uses-agentic-engineering/",
-          "published_at": "2026-08-31T20:36:31Z"
         }
       ],
       "note": ""
@@ -1628,16 +1604,6 @@
           "title": "Claude Fable 5.1 is generally available in GitHub Copilot",
           "url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot",
           "published_at": "2026-09-01T14:29:23Z"
-        },
-        {
-          "title": "Copilot model access update for GitHub Team plans",
-          "url": "https://github.blog/changelog/2026-08-31-copilot-model-access-update-for-github-team-plans",
-          "published_at": "2026-08-31T21:58:46Z"
-        },
-        {
-          "title": "Selected GitHub Copilot models deprecated",
-          "url": "https://github.blog/changelog/2026-08-31-selected-github-copilot-models-deprecated",
-          "published_at": "2026-08-31T21:21:40Z"
         }
       ],
       "note": ""
@@ -1807,56 +1773,6 @@
           "title": "https://blog.google/products/ads-commerce/ads-decoded-podcast-merchant-center-holidays/",
           "url": "https://blog.google/products/ads-commerce/ads-decoded-podcast-merchant-center-holidays/",
           "published_at": "2026-09-02T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
-          "published_at": "2026-09-01T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-extreme-weather-cyclone-predictions/",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-extreme-weather-cyclone-predictions/",
-          "published_at": "2026-09-01T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
-          "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
-          "published_at": "2026-09-01T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/platforms/android/android-drop-september-2026/",
-          "url": "https://blog.google/products-and-platforms/platforms/android/android-drop-september-2026/",
-          "published_at": "2026-09-01T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
-          "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
-          "published_at": "2026-09-01T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/security/",
-          "url": "https://blog.google/security/",
-          "published_at": "2026-09-01T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/security/staying-one-step-ahead-strengthening-androids-lead-in-scam-protection/",
-          "url": "https://blog.google/security/staying-one-step-ahead-strengthening-androids-lead-in-scam-protection/",
-          "published_at": "2026-09-01T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/security/android-ai-security-eu-dma/",
-          "url": "https://blog.google/security/android-ai-security-eu-dma/",
-          "published_at": "2026-09-01T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/security/new-android-network-security-protections/",
-          "url": "https://blog.google/security/new-android-network-security-protections/",
-          "published_at": "2026-09-01T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/security/android-strongbox-and-open-standards-digital-credentials/",
-          "url": "https://blog.google/security/android-strongbox-and-open-standards-digital-credentials/",
-          "published_at": "2026-09-01T00:00:00Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1972,11 +1888,6 @@
           "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
           "url": "https://huggingface.co/blog/allenai/benchmirt",
           "published_at": "2026-09-01T21:39:07Z"
-        },
-        {
-          "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
-          "url": "https://huggingface.co/blog/webgpu-kernels",
-          "published_at": "2026-09-01T00:00:00Z"
         }
       ],
       "note": ""
@@ -2138,69 +2049,74 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/gpt-6-astra/",
-          "url": "https://openai.com/index/gpt-6-astra/",
-          "published_at": "2026-09-04T03:52:30.365000Z"
+          "title": "https://openai.com/index/stampli/",
+          "url": "https://openai.com/index/stampli/",
+          "published_at": "2026-09-04T06:43:32.105000Z"
+        },
+        {
+          "title": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+          "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+          "published_at": "2026-09-04T06:38:37.793000Z"
+        },
+        {
+          "title": "https://openai.com/index/safety-overview-gpt-6-astra/",
+          "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
+          "published_at": "2026-09-04T06:16:30.990000Z"
+        },
+        {
+          "title": "https://openai.com/index/chip-ganassi-racing/",
+          "url": "https://openai.com/index/chip-ganassi-racing/",
+          "published_at": "2026-09-04T05:53:24.753000Z"
+        },
+        {
+          "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+          "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
+          "published_at": "2026-09-04T05:42:35.855000Z"
         },
         {
           "title": "https://openai.com/index/gpt-6-astra/",
           "url": "https://openai.com/index/gpt-6-astra/",
-          "published_at": "2026-09-04T03:52:30.365000Z"
+          "published_at": "2026-09-04T05:30:42.462000Z"
         },
         {
           "title": "https://openai.com/index/gpt-6-astra/",
           "url": "https://openai.com/index/gpt-6-astra/",
-          "published_at": "2026-09-04T03:52:30.365000Z"
+          "published_at": "2026-09-04T05:30:42.462000Z"
         },
         {
-          "title": "https://openai.com/index/path-to-astra/",
-          "url": "https://openai.com/index/path-to-astra/",
-          "published_at": "2026-09-04T03:21:17.471000Z"
+          "title": "https://openai.com/index/gpt-6-astra/",
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "published_at": "2026-09-04T05:30:42.462000Z"
         },
         {
-          "title": "https://openai.com/index/path-to-astra/",
-          "url": "https://openai.com/index/path-to-astra/",
-          "published_at": "2026-09-04T03:21:17.471000Z"
+          "title": "https://openai.com/index/ai-native-company-workflows/",
+          "url": "https://openai.com/index/ai-native-company-workflows/",
+          "published_at": "2026-09-04T05:15:32.101000Z"
+        },
+        {
+          "title": "https://openai.com/index/gilbert-tobin/",
+          "url": "https://openai.com/index/gilbert-tobin/",
+          "published_at": "2026-09-04T05:07:47.843000Z"
         },
         {
           "title": "https://openai.com/index/daybreak-for-frontline-defenders/",
           "url": "https://openai.com/index/daybreak-for-frontline-defenders/",
-          "published_at": "2026-09-04T02:52:31.872000Z"
+          "published_at": "2026-09-04T04:56:06.643000Z"
+        },
+        {
+          "title": "https://openai.com/index/path-to-astra/",
+          "url": "https://openai.com/index/path-to-astra/",
+          "published_at": "2026-09-04T03:21:17.471000Z"
+        },
+        {
+          "title": "https://openai.com/index/path-to-astra/",
+          "url": "https://openai.com/index/path-to-astra/",
+          "published_at": "2026-09-04T03:21:17.471000Z"
         },
         {
           "title": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
           "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
           "published_at": "2026-09-04T02:00:02.168000Z"
-        },
-        {
-          "title": "https://openai.com/index/gilbert-tobin/",
-          "url": "https://openai.com/index/gilbert-tobin/",
-          "published_at": "2026-09-04T01:47:14.378000Z"
-        },
-        {
-          "title": "https://openai.com/index/ai-native-company-workflows/",
-          "url": "https://openai.com/index/ai-native-company-workflows/",
-          "published_at": "2026-09-04T01:45:50.825000Z"
-        },
-        {
-          "title": "https://openai.com/index/legora-financial-statement-review-with-astra/",
-          "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
-          "published_at": "2026-09-04T00:56:04.109000Z"
-        },
-        {
-          "title": "https://openai.com/index/safety-overview-gpt-6-astra/",
-          "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
-          "published_at": "2026-09-04T00:53:46.697000Z"
-        },
-        {
-          "title": "https://openai.com/index/stampli/",
-          "url": "https://openai.com/index/stampli/",
-          "published_at": "2026-09-04T00:52:07.287000Z"
-        },
-        {
-          "title": "https://openai.com/index/chip-ganassi-racing/",
-          "url": "https://openai.com/index/chip-ganassi-racing/",
-          "published_at": "2026-09-03T23:21:15.135000Z"
         },
         {
           "title": "https://openai.com/index/atv-big-air-tour/",
@@ -2311,11 +2227,6 @@
           "title": "https://openai.com/index/playco-game-prototyping-with-astra/",
           "url": "https://openai.com/index/playco-game-prototyping-with-astra/",
           "published_at": "2026-09-03T20:42:42.980000Z"
-        },
-        {
-          "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-          "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-          "published_at": "2026-09-03T17:10:07.593000Z"
         },
         {
           "title": "https://openai.com/index/introducing-b2b-signals/",
@@ -2757,6 +2668,11 @@
       "checked_items": 30,
       "recent_items": [
         {
+          "title": "August newsletter is out",
+          "url": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
+          "published_at": "2026-09-04T05:54:40Z"
+        },
+        {
           "title": "GPT‑6 Astra",
           "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
           "published_at": "2026-09-03T20:18:41Z"
@@ -2805,16 +2721,6 @@
           "title": "Python 3.15.0 candidate 2 is here!",
           "url": "https://simonwillison.net/2026/Sep/1/python-315-rc-2/",
           "published_at": "2026-09-01T14:59:18Z"
-        },
-        {
-          "title": "Introducing wrapture",
-          "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
-          "published_at": "2026-08-31T23:59:36Z"
-        },
-        {
-          "title": "Quoting Andrew Digby",
-          "url": "https://simonwillison.net/2026/Aug/31/andrew-digby/",
-          "published_at": "2026-08-31T22:25:02Z"
         }
       ],
       "note": ""
@@ -2834,7 +2740,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "265 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "246 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
