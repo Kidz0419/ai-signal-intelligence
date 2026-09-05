@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-05T16:00:32+08:00",
+  "run_at": "2026-09-05T20:00:55+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-02T08:00:32+08:00",
-    "end": "2026-09-05T16:00:32+08:00",
+    "start": "2026-09-02T12:00:55+08:00",
+    "end": "2026-09-05T20:00:55+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 103,
-  "unique_candidates": 100,
+  "raw_candidates": 105,
+  "unique_candidates": 102,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 103,
+  "unreviewed_candidate_count": 105,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,17 +35,17 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 11,
+  "collection_errors": 12,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 6,
+      "access_blocked": 5,
       "auth_required": 0,
-      "mechanical_failure": 5,
-      "not_checked": 100
+      "mechanical_failure": 7,
+      "not_checked": 99
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -63,8 +63,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 12
+        "mechanical_failure": 1,
+        "not_checked": 13
       },
       "head_ai_product_release_notes": {
         "selected": 0,
@@ -72,8 +72,8 @@
         "checked_no_match": 0,
         "access_blocked": 1,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 15
+        "mechanical_failure": 1,
+        "not_checked": 14
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -90,16 +90,16 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 10
+        "mechanical_failure": 1,
+        "not_checked": 9
       },
       "ai_macro_primary": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 2,
+        "access_blocked": 1,
         "auth_required": 0,
-        "mechanical_failure": 1,
+        "mechanical_failure": 2,
         "not_checked": 14
       },
       "practitioner_and_product_leader_longform": {
@@ -330,7 +330,8 @@
         "type": "energy_research",
         "url": "https://www.iea.org/topics/data-centres-and-data-transmission-networks",
         "status": "mechanical_failure",
-        "http_code": "404"
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "ai_macro_primary",
@@ -367,8 +368,9 @@
         "name": "OpenAI Company News",
         "type": "company_primary",
         "url": "https://openai.com/news/company/",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
@@ -502,9 +504,9 @@
         "name": "Qwen Blog",
         "type": "official_blog",
         "url": "https://qwenlm.github.io/blog/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -585,9 +587,9 @@
         "name": "Anthropic Research",
         "type": "official_research",
         "url": "https://www.anthropic.com/research",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "frontier_model_official",
@@ -670,9 +672,9 @@
         "name": "Meta AI Blog",
         "type": "official_research",
         "url": "https://ai.meta.com/blog/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -697,10 +699,9 @@
         "name": "Microsoft AI Blog",
         "type": "official_news",
         "url": "https://microsoft.ai/news/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://microsoft.ai/blog/",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "frontier_model_official",
@@ -770,9 +771,10 @@
         "name": "Vertex AI Generative AI Release Notes",
         "type": "cloud_release_notes",
         "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -807,9 +809,9 @@
         "name": "Canva Newsroom AI",
         "type": "official_product_blog",
         "url": "https://www.canva.com/newsroom/news/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -1127,9 +1129,9 @@
         "name": "SWE-bench",
         "type": "benchmark",
         "url": "https://www.swebench.com/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       }
     ]
   },
@@ -1372,10 +1374,21 @@
       "name": "AWS Networking RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/networking-and-content-delivery/feed/",
-      "status": "mechanical_failure",
-      "checked_items": 0,
-      "recent_items": [],
-      "note": "URLError: <urlopen error _ssl.c:999: The handshake operation timed out>"
+      "status": "candidate_only",
+      "checked_items": 20,
+      "recent_items": [
+        {
+          "title": "When and how to centralize AWS PrivateLink Interface endpoints with Amazon VPC Lattice",
+          "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/when-and-how-to-centralize-aws-privatelink-interface-endpoints-with-amazon-vpc-lattice/",
+          "published_at": "2026-09-04T21:09:12Z"
+        },
+        {
+          "title": "Reduce Traffic Interruptions with Gateway Load Balancer TCP Reset",
+          "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/reduce-traffic-interruptions-with-gateway-load-balancer-tcp-reset/",
+          "published_at": "2026-09-02T21:16:40Z"
+        }
+      ],
+      "note": ""
     },
     {
       "name": "AWS Public Sector RSS",
@@ -1819,10 +1832,10 @@
       "name": "LangGraph releases",
       "adapter": "atom",
       "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "status": "mechanical_failure",
-      "checked_items": 0,
+      "status": "checked_no_match",
+      "checked_items": 10,
       "recent_items": [],
-      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+      "note": ""
     },
     {
       "name": "LlamaIndex releases",
@@ -1951,7 +1964,7 @@
       "status": "mechanical_failure",
       "checked_items": 0,
       "recent_items": [],
-      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+      "note": "URLError: <urlopen error _ssl.c:999: The handshake operation timed out>"
     },
     {
       "name": "OpenHands releases",
@@ -2022,7 +2035,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "103 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "105 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
