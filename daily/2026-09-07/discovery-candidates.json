@@ -1,34 +1,232 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-07T16:00:48+08:00",
+  "generated_at": "2026-09-07T20:31:05+08:00",
   "window": {
-    "start": "2026-09-04T08:00:48+08:00",
-    "end": "2026-09-07T16:00:48+08:00",
+    "start": "2026-09-04T12:31:05+08:00",
+    "end": "2026-09-07T20:31:05+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 36,
-  "new_in_run_count": 2,
+  "candidate_count": 48,
+  "new_in_run_count": 12,
   "new_candidates": [
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "published_or_lastmod_at": "2026-09-07T11:07:52Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "published_or_lastmod_at": "2026-09-07T09:43:45Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Innovation & AI RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/innovation-and-ai/rss/",
+      "title": "Our new contrail avoidance trial in Asia-Pacific",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/contrail-avoidance-ultra-long-haul-flights/",
+      "published_or_lastmod_at": "2026-09-07T08:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
-      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
-      "published_or_lastmod_at": "2026-09-07T07:02:01.630000Z",
+      "title": "https://openai.com/index/frontier-builders/",
+      "url": "https://openai.com/index/frontier-builders/",
+      "published_or_lastmod_at": "2026-09-07T12:59:36.681000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/atv-big-air-tour/",
-      "url": "https://openai.com/index/atv-big-air-tour/",
-      "published_or_lastmod_at": "2026-09-06T23:01:35.058000Z",
+      "title": "https://openai.com/index/small-business-stories/",
+      "url": "https://openai.com/index/small-business-stories/",
+      "published_or_lastmod_at": "2026-09-07T12:59:35.766000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/navigating-health-questions/",
+      "url": "https://openai.com/index/navigating-health-questions/",
+      "published_or_lastmod_at": "2026-09-07T12:59:33.800000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chip-ganassi-racing/",
+      "url": "https://openai.com/index/chip-ganassi-racing/",
+      "published_or_lastmod_at": "2026-09-07T12:59:21.294000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/learning-never-stops/",
+      "url": "https://openai.com/index/learning-never-stops/",
+      "published_or_lastmod_at": "2026-09-07T12:42:19.114000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/playco-game-prototyping-with-astra/",
+      "url": "https://openai.com/index/playco-game-prototyping-with-astra/",
+      "published_or_lastmod_at": "2026-09-07T12:22:48.346000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/ai-native-company-workflows/",
+      "url": "https://openai.com/index/ai-native-company-workflows/",
+      "published_or_lastmod_at": "2026-09-07T11:58:01.906000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-6-astra/",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "published_or_lastmod_at": "2026-09-07T11:47:01.593000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+      "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+      "published_or_lastmod_at": "2026-09-07T11:34:07.461000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/frontier-builders/",
+      "url": "https://openai.com/index/frontier-builders/",
+      "published_or_lastmod_at": "2026-09-07T12:59:36.681000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/small-business-stories/",
+      "url": "https://openai.com/index/small-business-stories/",
+      "published_or_lastmod_at": "2026-09-07T12:59:35.766000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/navigating-health-questions/",
+      "url": "https://openai.com/index/navigating-health-questions/",
+      "published_or_lastmod_at": "2026-09-07T12:59:33.800000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/chip-ganassi-racing/",
+      "url": "https://openai.com/index/chip-ganassi-racing/",
+      "published_or_lastmod_at": "2026-09-07T12:59:21.294000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/learning-never-stops/",
+      "url": "https://openai.com/index/learning-never-stops/",
+      "published_or_lastmod_at": "2026-09-07T12:42:19.114000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/playco-game-prototyping-with-astra/",
+      "url": "https://openai.com/index/playco-game-prototyping-with-astra/",
+      "published_or_lastmod_at": "2026-09-07T12:22:48.346000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/ai-native-company-workflows/",
+      "url": "https://openai.com/index/ai-native-company-workflows/",
+      "published_or_lastmod_at": "2026-09-07T11:58:01.906000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-6-astra/",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "published_or_lastmod_at": "2026-09-07T11:47:01.593000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+      "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+      "published_or_lastmod_at": "2026-09-07T11:34:07.461000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "published_or_lastmod_at": "2026-09-07T11:07:52Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "published_or_lastmod_at": "2026-09-07T09:43:45Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Innovation & AI RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/innovation-and-ai/rss/",
+      "title": "Our new contrail avoidance trial in Asia-Pacific",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/contrail-avoidance-ultra-long-haul-flights/",
+      "published_or_lastmod_at": "2026-09-07T08:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
