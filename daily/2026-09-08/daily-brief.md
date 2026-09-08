@@ -1,105 +1,73 @@
 # AI Signal 日报｜2026-09-08
 
-**窗口：** 北京时间 2026-09-04 16:03 至 2026-09-08 00:03  
-**一句话结论：** 本轮完成 111 个主注册信源的连通性审计，并对 34 个 Feed、Release 与 Sitemap 通道执行增量发现；候选只进入待核验池，不由机械脚本自动升级为正式 Signal。
+**发现窗口：** 北京时间 2026-09-05 08:00:06 至 2026-09-08 16:00:06  
+**一句话结论：** 本轮出现 16 个跨轮新增 cursor 候选，但没有新的正式 Signal；其中 2 个并回既有事件，11 个属于历史页面或未达到门槛，3 个因正文或日期不足继续留在 candidate_only。
 
 ## 四主线重点
 
 | 主线 | 数量 | 今日重点 |
 |---|---:|---|
-| 模型 | 0 | 无达到正式入选门槛的新增事件 |
-| Agent 架构 | 0 | 无达到正式入选门槛的新增事件 |
-| AI 产品 | 0 | 无达到正式入选门槛的新增事件 |
-| AI 宏观 | 0 | 无达到正式入选门槛的新增事件 |
+| 模型 | 0 | 没有新增模型发布、能力或部署边界变化 |
+| Agent 架构 | 0 | 没有新的运行时、权限、审批、日志或回滚机制 |
+| AI 产品 | 0 | 没有达到门槛的新工作流或真实产品变化 |
+| AI 宏观 | 0 | 没有足以改变供给、分发、监管或竞争结构的新事件 |
 
 ## 模型｜0 条
 
-本窗口没有发现同时满足“官方或原始证据明确、发生在当日窗口内、且对模型能力/价格/部署边界形成实质变化”的新增事件。
+GPT-6 Astra 的客户案例属于 9 月 3 日已收录事件的同批部署证据，没有新的上线状态、访问层级或独立评测。其余模型相关 URL 是历史页面，或只有 Sitemap lastmod 而没有可核验的新正文。
 
 ## Agent 架构｜0 条
 
-代表性 GitHub Releases / Atom 与技术 feed 巡检后，没有发现落在今日窗口内、并能支撑正式架构卡片的新版本或新工件。
+本轮新增 cursor 候选没有带来新的 Agent 运行机制。Codex Security 与 Aardvark 页面都是历史发布，不能因 Sitemap 更新时间重新建卡。
 
 ## AI 产品｜0 条
 
-产品 Changelog/Help Center/官方博客的代表性巡检没有发现今日窗口内且证据足够的新工作流、权限边界或真实 UI 变化。
+唯一需要正文判断的近期项目是面向乌克兰新闻机构的培训、额度和试点计划。它属于采用支持，没有给出足以进入正式 Signal 的产品对象、执行闭环、审批控制或可验证工作流变化。
 
 ## AI 宏观｜0 条
 
-本窗口没有发现同时满足“结构发生变化、受影响者明确、存在后续可验证指标”的宏观事件。
+本轮没有发现会改变 AI 产业供给、平台控制权、监管状态或竞争位置的新增事件。
 
 ## 模型大厂高管模型长文 / 访谈｜0 条
 
-本轮没有发现进入正式日报的模型负责人高价值原创长内容更新。
+没有新的模型负责人原创内容达到收录门槛。
 
 ## AI 一线实践者观点｜0 条
 
-本轮没有发现带新数据、真实案例、失败复盘、技术解释或原创框架的一手实践者内容达到正式入选门槛。
+没有带新数据、可复现方法、真实失败复盘或原创框架的一手内容达到收录门槛。
 
-## 代表性探针结果
+## 本轮增量审查
 
-- A2A Protocol releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Anthropic Cookbook releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- Anthropic sitemap：candidate_only，检查 120 条最近 feed/release 项。
-- AutoGen releases：checked_no_match，检查 10 条最近 feed/release 项。
-- AWS Architecture RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- AWS Database RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- AWS ML Blog RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Networking RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Public Sector RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- AWS Security RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Storage RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- Browser Use releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Claude Code releases：candidate_only，检查 10 条最近 feed/release 项。
-- CrewAI releases：candidate_only，检查 10 条最近 feed/release 项。
-- GitHub Copilot Changelog feed：candidate_only，检查 10 条最近 feed/release 项。
-- Google Agent Development Kit releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Google Blog sitemap：candidate_only，检查 120 条最近 feed/release 项。
-- Google Innovation & AI RSS：candidate_only，检查 20 条最近 feed/release 项。
-- Google Products & Platforms RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- Google Security RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- Hugging Face Blog：checked_no_match，检查 40 条最近 feed/release 项。
-- Kimi Code releases：candidate_only，检查 10 条最近 feed/release 项。
-- LangGraph releases：checked_no_match，检查 10 条最近 feed/release 项。
-- LlamaIndex releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- Microsoft Agent Framework releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Moonshot AI Kimi GitHub releases：checked_no_match，检查 0 条最近 feed/release 项。
-- NVIDIA NeMo GitHub releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- OpenAI Agents SDK releases：checked_no_match，检查 10 条最近 feed/release 项。
-- OpenAI Codex releases：candidate_only，检查 10 条最近 feed/release 项。
-- OpenAI Cookbook releases：checked_no_match，检查 0 条最近 feed/release 项。
-- OpenAI sitemap：candidate_only，检查 120 条最近 feed/release 项。
-- OpenHands releases：mechanical_failure，检查 0 条最近 feed/release 项。
-- Simon Willison atom：candidate_only，检查 30 条最近 feed/release 项。
-- SWE-agent releases：mechanical_failure，检查 0 条最近 feed/release 项。
+- 只审查 `new_in_run_count=16` 的候选，没有重跑 70 条待审队列，也没有把滚动窗口内 30 条原始候选当成本轮新增。
+- 15 个 URL 在更早的 discovery run 已经出现；Legora 和 Playco 都归入既有 GPT-6 Astra 事件簇。
+- OpenAI Academy for News Organizations 是本轮唯一首次出现的 URL，但正文日期属于历史发布。
+- 10 个候选按历史发布日期排除，1 个近期项目因信息增量不足排除，3 个正文或日期未完整恢复的页面保留为 candidate_only。
+- OpenAI 直连及文本镜像仍有 403、SSL EOF 和超时。阻断没有被写成 checked_no_match，Sitemap lastmod 也没有被当作发布时间。
 
 ## 覆盖与缺口
 
-- 主注册信源连通性状态：not_checked 95（仅可访问、未解析内容变化）、access_blocked 5、mechanical_failure 11。
-- 日期解析探针状态：checked_no_match 16、candidate_only 13。
-- OpenAI News / Research 等普通抓取仍可能返回 403；本轮如实记录为 access_blocked，没有把 403 写成无内容。
-- X 官方 API 仍未配置 OAuth；只使用公开网页与非 X 替代源，不声称完成闭源或登录墙覆盖。
+- 主注册信源共 111 个；本轮机械采集记录 access_blocked 3、mechanical_failure 74、not_checked 34。
+- 日期解析探针中，OpenAI Sitemap 和 Codex Release Feed 只承担发现，不直接决定收录。
+- 3 个 unresolved 候选继续等待正文或可信 datePublished，不影响本轮维持 0 条正式 Signal。
 
 ## 今日判断
 
-1. 早晨窗口天然偏静默，尤其是需要欧美官方正文或产品变更的主线。
-2. 代表性 feed/release 巡检没有给出足够强的新证据，因此维持高阈值比凑日报更重要。
-3. 本轮主要价值在于确认“没有正式新增”并同步覆盖状态，而不是重复昨日事件。
+这次增量主要是 OpenAI Sitemap 批量刷新，不是 16 个新事件。把历史页面重新发成日报会制造虚假新鲜度，因此当天继续保持静默。
 
 ## 建议行动
 
-- 继续等待同日后续窗口；如果欧美官方源在北京时间白天/晚间发布正式材料，再进入同日合并。
-- 对 access_blocked 的关键站点优先准备浏览器或官方 API 替代路径，避免把封锁误判成静默。
-- 保持 topics 候选池为空，不自动制造选题。
+- 下一轮只处理新的 cursor 增量，不回扫 70 条队列。
+- 如果 unresolved 页面恢复正文，只在出现新的上线状态、能力、价格、权限或评测证据时更新既有事件。
+- 正式 Signal 为 0，选题池继续为空，不生成社交平台草稿。
 
 ## 证据边界
 
-- 本轮没有正式入选事件，因此没有外部事实卡片和引用账本条目。
-- 结论仅表示“在本次有界代表性巡检中未见达到门槛的新增正式信号”，不代表全网没有任何 AI 动态。
+本轮没有正式入选事件，因此引用账本为空。结论只说明这次有界增量审查没有发现达到规则门槛的新信号，不表示全网没有 AI 动态。
 
 ## 飞书短版
 
-**一句话结论：** 本轮完成 111 个注册源连通性审计和 34 个增量发现探针；候选等待正文与发布日期核验。  
-**判断：** 不为数量降标，继续等同日后续窗口。  
-**覆盖：** not_checked 95，access_blocked 5，mechanical_failure 11；日期解析探针 checked_no_match 16。  
+**结论：** 16 个新 cursor 候选全部完成处置，没有新增正式 Signal。  
+**去重：** 2 个并回既有 GPT-6 Astra 事件。  
+**排除：** 10 个历史页面，1 个近期项目低于门槛。  
+**待核验：** 3 个正文或日期不足的页面保留 candidate_only。  
 **结果：** previous_count=0，new_count=0，updated_count=0，total_count=0。

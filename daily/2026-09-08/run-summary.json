@@ -1,5 +1,5 @@
 {
-  "run_type": "daily_four_lane_incremental",
+  "run_type": "daily_four_lane_incremental_manual_review",
   "run_at": "2026-09-08T16:00:06+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
@@ -12,12 +12,16 @@
   "registered_sources": 111,
   "raw_candidates": 30,
   "unique_candidates": 25,
-  "editorial_shortlist": 0,
+  "candidate_queue_count": 70,
+  "new_in_run_count": 16,
+  "reviewed_new_candidates": 16,
+  "editorial_shortlist": 1,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
-  "excluded_count": 0,
-  "unreviewed_candidate_count": 30,
+  "excluded_count": 14,
+  "unreviewed_candidate_count": 0,
+  "unresolved_candidate_count": 3,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -32,10 +36,133 @@
     "P2": 0,
     "P3": 0
   },
+  "decision_counts": {
+    "include": 0,
+    "watchlist": 0
+  },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 0,
+  "cross_day_duplicates_removed": 2,
   "collection_errors": 77,
+  "review_breakdown": {
+    "selected": 0,
+    "duplicate_existing_or_related": 2,
+    "outside_editorial_window": 10,
+    "below_formal_bar": 1,
+    "date_or_body_unresolved": 3
+  },
+  "review_notes": [
+    "Reviewed only the 16 true cursor additions in discovery-candidates.json; the 70-item carry-forward queue and the full 111-source registry were not re-reviewed.",
+    "Fifteen URLs had already appeared in earlier discovery runs. Legora was already merged into the September 3 GPT-6 Astra event; the Playco case is the same Astra deployment cluster and adds no new control or release boundary.",
+    "The one first-seen URL, OpenAI Academy for News Organizations, is an official page dated December 17, 2025, so its sitemap lastmod is not a new publication event.",
+    "The September 7 Ukraine newsroom programme page was opened at content level. It describes training, credits, roadmaps, and pilots, but does not clear the formal AI product-workflow or macro-structure threshold.",
+    "Direct OpenAI and text-mirror retrieval was partly blocked by 403 and SSL timeouts. Unresolved bodies remain candidate_only; no HTTP reachability or sitemap timestamp was treated as a no-match decision."
+  ],
+  "candidate_reviews": [
+    {
+      "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+      "decision": "duplicate_existing_or_related",
+      "published_at": "2026-09-03T12:00:00Z",
+      "reason": "already retained as deployment evidence on signal 2026-09-03-openai-gpt6-astra-broad-release-monitorability"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra",
+      "decision": "candidate_only",
+      "published_at": null,
+      "reason": "sitemap lastmod changed, but the standalone body and datePublished still could not be recovered; the Astra release event already exists under its verified safety overview"
+    },
+    {
+      "url": "https://openai.com/index/why-codex-security-doesnt-include-sast",
+      "decision": "checked_no_match",
+      "published_at": "2026-03-16T00:00:00Z",
+      "reason": "official article body and original publication date are historical; no verified September 8 content event"
+    },
+    {
+      "url": "https://openai.com/index/codex-security-now-in-research-preview",
+      "decision": "checked_no_match",
+      "published_at": "2026-03-06T00:00:00Z",
+      "reason": "official article body and original publication date are historical; sitemap lastmod alone is not a new launch"
+    },
+    {
+      "url": "https://openai.com/index/introducing-aardvark",
+      "decision": "checked_no_match",
+      "published_at": "2025-10-30T00:00:00Z",
+      "reason": "historical private-beta announcement with a March 6, 2026 Codex Security update; no new September 8 event"
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard",
+      "decision": "checked_no_match",
+      "published_at": "2025-10-29T00:00:00Z",
+      "reason": "historical model release; repeated sitemap appearance does not establish a new event"
+    },
+    {
+      "url": "https://openai.com/index/playco-game-prototyping-with-astra",
+      "decision": "duplicate_existing_or_related",
+      "published_at": "2026-09-03T00:00:00Z",
+      "reason": "vendor-reported Astra deployment case from the already selected September 3 Astra launch cluster; no separate release, access, approval, logging, or rollback change"
+    },
+    {
+      "url": "https://openai.com/index/openai-academy-for-news-organizations",
+      "decision": "checked_no_match",
+      "published_at": "2025-12-17T00:00:00Z",
+      "reason": "first seen by the cursor in this run but the official page date is historical; sitemap lastmod is not publication evidence"
+    },
+    {
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "decision": "checked_no_match",
+      "published_at": "2026-09-07T00:00:00Z",
+      "reason": "content-level review found a bounded training, credits, roadmap, and pilot programme; it is ordinary adoption support without a new AI product workflow, execution boundary, or structural market change"
+    },
+    {
+      "url": "https://openai.com/index/small-business-stories",
+      "decision": "checked_no_match",
+      "published_at": "2026-02-04T00:00:00Z",
+      "reason": "historical collection of customer stories and below the formal product-workflow bar"
+    },
+    {
+      "url": "https://openai.com/index/o1-coding",
+      "decision": "candidate_only",
+      "published_at": null,
+      "reason": "accessible evidence exposed only the historical video title, not a trustworthy datePublished or new body-level increment"
+    },
+    {
+      "url": "https://openai.com/index/gpt-5-creative-writing",
+      "decision": "checked_no_match",
+      "published_at": "2025-08-07T00:00:00Z",
+      "reason": "historical GPT-5 example page; no new release or capability evidence"
+    },
+    {
+      "url": "https://openai.com/index/gpt-5-first-look",
+      "decision": "candidate_only",
+      "published_at": "2025-08-07T00:00:00Z",
+      "reason": "official related-page metadata identifies a historical date, but the page body did not render enough content for a body-level no-match classification"
+    },
+    {
+      "url": "https://openai.com/index/my-dog-the-math-tutor",
+      "decision": "checked_no_match",
+      "published_at": "2025-02-04T00:00:00Z",
+      "reason": "historical user story without a new product or model event"
+    },
+    {
+      "url": "https://openai.com/index/navigating-health-questions",
+      "decision": "checked_no_match",
+      "published_at": "2026-02-05T00:00:00Z",
+      "reason": "historical ChatGPT page with no verified September content change"
+    },
+    {
+      "url": "https://openai.com/index/gpt-5-medical-research",
+      "decision": "checked_no_match",
+      "published_at": "2025-08-07T00:00:00Z",
+      "reason": "historical GPT-5 example page; no new release or capability evidence"
+    }
+  ],
+  "collection_contract": {
+    "raw_candidates_in_rolling_window_is_not_increment": true,
+    "candidate_queue_count_is_not_new_count": true,
+    "sitemap_lastmod_is_not_publication_date": true,
+    "feed_titles_require_body_verification": true,
+    "http_2xx_is_not_checked_no_match": true
+  },
   "source_coverage": {
     "registered": 111,
     "status_counts": {
