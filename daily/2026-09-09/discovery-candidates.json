@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-09T00:05:29+08:00",
+  "window": {
+    "start": "2026-09-05T16:05:29+08:00",
+    "end": "2026-09-09T00:05:29+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "candidate_count": 16,
+  "new_in_run_count": 16,
+  "new_candidates": [
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "published_or_lastmod_at": "2026-09-08T10:48:11Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "published_or_lastmod_at": "2026-09-08T10:47:50Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
+      "url": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
+      "published_or_lastmod_at": "2026-09-08T10:47:28Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/disrupting-AI-espionage",
+      "url": "https://www.anthropic.com/news/disrupting-AI-espionage",
+      "published_or_lastmod_at": "2026-09-08T10:47:10Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025",
+      "url": "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025",
+      "published_or_lastmod_at": "2026-09-08T10:46:50Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "AWS Networking RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/networking-and-content-delivery/feed/",
+      "title": "How AWS unified its routing control plane to improve network availability and performance",
+      "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/how-aws-unified-its-routing-control-plane-to-improve-network-availability-and-performance/",
+      "published_or_lastmod_at": "2026-09-08T16:35:29Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Public Sector RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
+      "title": "AI-powered customs classification, duty calculation, and pre-departure collection now available to postal operators across 192 nations",
+      "url": "https://aws.amazon.com/blogs/publicsector/ai-powered-customs-classification-duty-calculation-and-pre-departure-collection-now-available-to-postal-operators-across-192-nations/",
+      "published_or_lastmod_at": "2026-09-08T15:18:35Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Products & Platforms RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/products-and-platforms/rss/",
+      "title": "Missouri and Google partner on AI and career training",
+      "url": "https://blog.google/products-and-platforms/products/education/missouri-state-education-partnership/",
+      "published_or_lastmod_at": "2026-09-08T15:05:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Hugging Face Blog",
+      "adapter": "rss",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+      "published_or_lastmod_at": "2026-09-08T14:23:07Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "rust-v0.154.0-alpha.7",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.7",
+      "published_or_lastmod_at": "2026-09-08T15:38:05Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/ai-native-company-workflows/",
+      "url": "https://openai.com/index/ai-native-company-workflows/",
+      "published_or_lastmod_at": "2026-09-08T09:01:03.866000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "llm 0.35",
+      "url": "https://simonwillison.net/2026/Sep/7/llm/",
+      "published_or_lastmod_at": "2026-09-07T23:54:54Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Creepy crawlies",
+      "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+      "published_or_lastmod_at": "2026-09-07T23:08:58Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Quoting Jakub Pachocki",
+      "url": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
+      "published_or_lastmod_at": "2026-09-07T22:26:25Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Video compressor",
+      "url": "https://simonwillison.net/2026/Sep/7/video-compressor/",
+      "published_or_lastmod_at": "2026-09-07T18:29:07Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Mercator ↔ Equal Earth",
+      "url": "https://simonwillison.net/2026/Sep/7/equal-earth/",
+      "published_or_lastmod_at": "2026-09-07T16:24:16Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    }
+  ],
+  "candidates": [
+    {
+      "source_name": "AWS Networking RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/networking-and-content-delivery/feed/",
+      "title": "How AWS unified its routing control plane to improve network availability and performance",
+      "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/how-aws-unified-its-routing-control-plane-to-improve-network-availability-and-performance/",
+      "published_or_lastmod_at": "2026-09-08T16:35:29Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "rust-v0.154.0-alpha.7",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.7",
+      "published_or_lastmod_at": "2026-09-08T15:38:05Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Public Sector RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
+      "title": "AI-powered customs classification, duty calculation, and pre-departure collection now available to postal operators across 192 nations",
+      "url": "https://aws.amazon.com/blogs/publicsector/ai-powered-customs-classification-duty-calculation-and-pre-departure-collection-now-available-to-postal-operators-across-192-nations/",
+      "published_or_lastmod_at": "2026-09-08T15:18:35Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Products & Platforms RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/products-and-platforms/rss/",
+      "title": "Missouri and Google partner on AI and career training",
+      "url": "https://blog.google/products-and-platforms/products/education/missouri-state-education-partnership/",
+      "published_or_lastmod_at": "2026-09-08T15:05:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Hugging Face Blog",
+      "adapter": "rss",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+      "published_or_lastmod_at": "2026-09-08T14:23:07Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "published_or_lastmod_at": "2026-09-08T10:48:11Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "published_or_lastmod_at": "2026-09-08T10:47:50Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
+      "url": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
+      "published_or_lastmod_at": "2026-09-08T10:47:28Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/disrupting-AI-espionage",
+      "url": "https://www.anthropic.com/news/disrupting-AI-espionage",
+      "published_or_lastmod_at": "2026-09-08T10:47:10Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Anthropic sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://www.anthropic.com/sitemap.xml",
+      "title": "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025",
+      "url": "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025",
+      "published_or_lastmod_at": "2026-09-08T10:46:50Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/ai-native-company-workflows/",
+      "url": "https://openai.com/index/ai-native-company-workflows/",
+      "published_or_lastmod_at": "2026-09-08T09:01:03.866000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "llm 0.35",
+      "url": "https://simonwillison.net/2026/Sep/7/llm/",
+      "published_or_lastmod_at": "2026-09-07T23:54:54Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Creepy crawlies",
+      "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+      "published_or_lastmod_at": "2026-09-07T23:08:58Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Quoting Jakub Pachocki",
+      "url": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
+      "published_or_lastmod_at": "2026-09-07T22:26:25Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Video compressor",
+      "url": "https://simonwillison.net/2026/Sep/7/video-compressor/",
+      "published_or_lastmod_at": "2026-09-07T18:29:07Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Mercator ↔ Equal Earth",
+      "url": "https://simonwillison.net/2026/Sep/7/equal-earth/",
+      "published_or_lastmod_at": "2026-09-07T16:24:16Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    }
+  ],
+  "contract": {
+    "candidate_is_not_signal": true,
+    "sitemap_lastmod_is_not_publication_date": true,
+    "search_or_feed_title_requires_body_verification": true
+  }
+}
