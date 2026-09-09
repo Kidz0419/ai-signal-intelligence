@@ -1,6 +1,6 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-10T00:00:40+08:00",
+  "run_at": "2026-09-10T00:44:43+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
@@ -12,69 +12,42 @@
   "registered_sources": 111,
   "raw_candidates": 201,
   "unique_candidates": 174,
-  "editorial_shortlist": 0,
+  "editorial_shortlist": 9,
   "previous_count": 0,
-  "new_count": 0,
+  "new_count": 7,
   "updated_count": 0,
-  "excluded_count": 0,
-  "unreviewed_candidate_count": 201,
-  "total_count": 0,
-  "selected": 0,
+  "excluded_count": 68,
+  "unreviewed_candidate_count": 0,
+  "total_count": 7,
+  "selected": 7,
   "lane_counts": {
-    "model": 0,
-    "agent_architecture": 0,
-    "ai_product": 0,
-    "ai_macro": 0
+    "agent_architecture": 3,
+    "model": 2,
+    "ai_product": 1,
+    "ai_macro": 1
   },
   "priority_counts": {
-    "P0": 0,
-    "P1": 0,
-    "P2": 0,
+    "P0": 1,
+    "P1": 4,
+    "P2": 2,
     "P3": 0
   },
-  "executive_model_longform": 0,
-  "practitioner_statements": 0,
+  "executive_model_longform": 1,
+  "practitioner_statements": 1,
   "cross_day_duplicates_removed": 0,
   "collection_errors": 11,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
-      "selected": 0,
+      "selected": 4,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 7,
+      "access_blocked": 6,
       "auth_required": 0,
       "mechanical_failure": 4,
-      "not_checked": 100
+      "not_checked": 97
     },
     "channel_counts": {
-      "frontier_model_official": {
-        "selected": 0,
-        "candidate_only": 0,
-        "checked_no_match": 0,
-        "access_blocked": 3,
-        "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 24
-      },
-      "china_frontier_models": {
-        "selected": 0,
-        "candidate_only": 0,
-        "checked_no_match": 0,
-        "access_blocked": 0,
-        "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 13
-      },
-      "head_ai_product_release_notes": {
-        "selected": 0,
-        "candidate_only": 0,
-        "checked_no_match": 0,
-        "access_blocked": 2,
-        "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 14
-      },
       "agent_runtime_and_open_source": {
         "selected": 0,
         "candidate_only": 0,
@@ -83,15 +56,6 @@
         "auth_required": 0,
         "mechanical_failure": 0,
         "not_checked": 16
-      },
-      "research_and_evaluation": {
-        "selected": 0,
-        "candidate_only": 0,
-        "checked_no_match": 0,
-        "access_blocked": 0,
-        "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 9
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -102,6 +66,33 @@
         "mechanical_failure": 1,
         "not_checked": 14
       },
+      "china_frontier_models": {
+        "selected": 0,
+        "candidate_only": 0,
+        "checked_no_match": 0,
+        "access_blocked": 0,
+        "auth_required": 0,
+        "mechanical_failure": 1,
+        "not_checked": 13
+      },
+      "frontier_model_official": {
+        "selected": 3,
+        "candidate_only": 0,
+        "checked_no_match": 0,
+        "access_blocked": 2,
+        "auth_required": 0,
+        "mechanical_failure": 0,
+        "not_checked": 22
+      },
+      "head_ai_product_release_notes": {
+        "selected": 1,
+        "candidate_only": 0,
+        "checked_no_match": 0,
+        "access_blocked": 2,
+        "auth_required": 0,
+        "mechanical_failure": 0,
+        "not_checked": 13
+      },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
         "candidate_only": 0,
@@ -110,6 +101,15 @@
         "auth_required": 0,
         "mechanical_failure": 1,
         "not_checked": 10
+      },
+      "research_and_evaluation": {
+        "selected": 0,
+        "candidate_only": 0,
+        "checked_no_match": 0,
+        "access_blocked": 0,
+        "auth_required": 0,
+        "mechanical_failure": 1,
+        "not_checked": 9
       }
     },
     "records": [
@@ -603,9 +603,9 @@
         "name": "AWS Machine Learning Blog",
         "type": "official_technical_blog",
         "url": "https://aws.amazon.com/blogs/machine-learning/",
-        "status": "not_checked",
+        "status": "selected",
         "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "note": "Content-level verification completed; at least one current-window event selected."
       },
       {
         "channel": "frontier_model_official",
@@ -661,9 +661,9 @@
         "name": "Google Innovation & AI",
         "type": "official_news",
         "url": "https://blog.google/innovation-and-ai/",
-        "status": "not_checked",
+        "status": "selected",
         "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "note": "Content-level verification completed; at least one current-window event selected."
       },
       {
         "channel": "frontier_model_official",
@@ -753,9 +753,9 @@
         "name": "OpenAI News",
         "type": "official_news",
         "url": "https://openai.com/news/",
-        "status": "access_blocked",
+        "status": "selected",
         "http_code": "403",
-        "note": "curl 403; registry fallback requires browser or official article/index alternative, so this is not treated as no match."
+        "note": "Content-level verification completed; at least one current-window event selected."
       },
       {
         "channel": "frontier_model_official",
@@ -880,9 +880,9 @@
         "name": "Hugging Face Blog",
         "type": "official_technical_blog",
         "url": "https://huggingface.co/blog",
-        "status": "not_checked",
+        "status": "selected",
         "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "note": "Content-level verification completed; at least one current-window event selected."
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -2514,5 +2514,21 @@
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
-  ]
+  ],
+  "editorial_merges": 2,
+  "editorial_review": {
+    "new_in_run_count": 77,
+    "reviewed_count": 77,
+    "promoted_source_candidates": 9,
+    "selected_event_count": 7,
+    "merged_source_candidates": 2,
+    "excluded_count": 68,
+    "exclusion_reasons": {
+      "stale_or_outside_window_sitemap_lastmod": 52,
+      "insufficient_domain_or_editorial_increment": 10,
+      "empty_alpha_release_notes": 6
+    },
+    "date_policy": "Official RSS, article datePublished, feed timestamp, or GitHub Release API. Sitemap lastmod is discovery-only.",
+    "catch_up_policy": "Events retain actual event_date and are labeled as late additions in the 2026-09-10 daily bucket."
+  }
 }

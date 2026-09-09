@@ -4,12 +4,20 @@ window.DAILY_HISTORY = {
   "days": [
     {
       "date": "2026-09-10",
-      "signal_ids": [],
+      "signal_ids": [
+        "2026-09-06-openai-automated-research-intern-rsi-controls",
+        "2026-09-08-openai-chatgpt-images-2-5",
+        "2026-09-09-kimi-code-0-42-agent-control-plane",
+        "2026-09-08-openai-codex-quantum-lab-agent",
+        "2026-09-09-google-finland-ai-infrastructure-energy",
+        "2026-09-09-ibm-granite-time-series-r2",
+        "2026-09-09-aws-ray-serve-dlc"
+      ],
       "counts": {
-        "total": 0,
-        "P0": 0,
-        "P1": 0,
-        "P2": 0
+        "total": 7,
+        "P0": 1,
+        "P1": 4,
+        "P2": 2
       }
     },
     {
@@ -373,6 +381,485 @@ window.DAILY_HISTORY = {
     }
   ],
   "signals": [
+    {
+      "id": "2026-09-06-openai-automated-research-intern-rsi-controls",
+      "demo": false,
+      "topic_lane": "agent_architecture",
+      "title": "OpenAI 称自动化研究实习生里程碑已达成，但 4–8 小时任务过半仍需人工介入",
+      "summary": "OpenAI 在 9 月 6 日的内部数据报告中称，已经达到“自动化研究实习生”目标：系统可在人类指导下完成原本需要熟练研究者数日的明确任务。到 8 月中旬，研究组织每个人人工作日对应 3.1 个 Agent 工作日；不过，在有可判定结果的成功任务里，超过一半的 4–8 小时任务至少需要一次人工介入。OpenAI 首席科学家 Jakub Pachocki 同日长文把自动化 AI 研究、对齐与监控绑在一起，并主张安全信心不足时减速。",
+      "decision": "include",
+      "confidence": 91,
+      "relevance_level": "P0",
+      "signal_type": "core",
+      "content_type": "executive_statement",
+      "information_type": "agent_runtime",
+      "evidence_level": "primary_statement",
+      "source": "OpenAI / Jakub Pachocki",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "published_at": "2026-09-06T08:00:00Z",
+      "primary_tags": [
+        "OpenAI",
+        "Automated AI Researcher",
+        "RSI"
+      ],
+      "secondary_tags": [
+        "Human Steering",
+        "Research Agents",
+        "Safety Controls"
+      ],
+      "why_it_matters_cn": "这批材料第一次把研发 Agent 的组织用量、任务时长、人工介入率和训练暂停放在同一套叙述里。它说明自动化研发不是未来概念，但离无人监督也很远。",
+      "personal_relevance_cn": "对 Agent 产品和控制面设计，最有用的不是“3.1 个 Agent 工作日”这个大数，而是长任务仍频繁需要人工介入，以及人类继续掌握优先级、扩训、暂停和部署决定。",
+      "product_opportunity_cn": "可把并发任务、干预点、实验证据、环境权限、暂停原因和恢复条件做成研发 Agent 的标准运行记录，而不是只展示最终代码或结论。",
+      "competitive_risk_cn": "所有效率和使用数据都来自 OpenAI 内部统计；样本定义、失败任务、真实研究产出和外部可复现性没有独立审计。Jakub 的路线判断是负责人表态，不等于 RSI 已实现。",
+      "recommended_action": "investigate",
+      "questions_to_validate": [
+        "4–8 小时任务需要人工介入时，最常见的是澄清目标、修复环境、判断结果还是权限升级？",
+        "研究环境被加固后，哪些工具、网络和训练权限被收紧，恢复条件如何审计？",
+        "OpenAI 所称 2028 年自动化研究员目标将用什么外部可复现指标验收？"
+      ],
+      "follow_up_triggers": [
+        "OpenAI 发布自动化研究实习生的任务集、失败率或独立评测",
+        "出现更具体的研究环境权限、暂停、恢复和审计文档",
+        "其他模型实验室披露可比较的 AI 研发产出与人工介入数据"
+      ],
+      "scores": {
+        "topic_relevance": 5,
+        "novelty": 5,
+        "technical_or_product_significance": 5,
+        "strategic_value": 5,
+        "source_quality": 4,
+        "model_value": 4,
+        "agent_architecture_value": 5,
+        "ai_product_value": 4,
+        "macro_value": 5,
+        "actionability": 5
+      },
+      "report_date": "2026-09-10",
+      "event_date": "2026-09-06",
+      "canonical_url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "first_seen_date": "2026-09-10",
+      "last_seen_date": "2026-09-10",
+      "run_dates": [
+        "2026-09-10"
+      ],
+      "evidence_boundary": "发布时间由 OpenAI 官方 RSS 确认。数据报告和 Jakub Pachocki 长文均为 OpenAI 一手材料；内部用量、成功率和研发提速尚无独立复核。两篇同日、同主题材料按一个自动化研发事件合并。",
+      "related_sources": [
+        {
+          "url": "https://openai.com/news/rss.xml",
+          "type": "official_rss_date"
+        },
+        {
+          "url": "https://openai.com/index/an-alien-mind",
+          "type": "executive_longform_context"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-08-openai-chatgpt-images-2-5",
+      "demo": false,
+      "topic_lane": "model",
+      "title": "OpenAI 发布 Images 2.5：多轮局部编辑、Sketch 和双 API 模型同时上线",
+      "summary": "OpenAI 9 月 8 日发布 ChatGPT Images 2.5，并称已向 ChatGPT、ChatGPT Work 和 Codex 全档位滚动开放。产品新增 Sketch、模板和图片评论；API 同时提供 GPT-Image-2.5 Flare 与 Sunburst。官方称相较 Images 2.0，默认 Flare 的延迟降低 50%，多轮编辑和参考图主体保持更稳定。",
+      "decision": "include",
+      "confidence": 94,
+      "relevance_level": "P1",
+      "signal_type": "core",
+      "content_type": "official_release",
+      "information_type": "model_release",
+      "evidence_level": "confirmed",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "published_at": "2026-09-08T11:30:00Z",
+      "primary_tags": [
+        "OpenAI",
+        "ChatGPT Images 2.5",
+        "GPT-Image-2.5"
+      ],
+      "secondary_tags": [
+        "Sketch",
+        "Multi-turn Editing",
+        "API"
+      ],
+      "why_it_matters_cn": "模型、交互入口和 API 分层在同一批上线。图片生成从一次性出图继续转向可反复局部修改的工作流。",
+      "personal_relevance_cn": "做 AI 产品时可重点验证评论定位、参考图保持和多轮修改是否真的降低返工，而不是只看官方样例。",
+      "product_opportunity_cn": "围绕局部批注、版本对比、素材锁定和品牌元素保护，可设计更完整的创意审批与资产生产流程。",
+      "competitive_risk_cn": "质量、50% 延迟改善和主体保持都来自厂商自报；不同套餐的额度、实际速度和复杂编辑稳定性仍需实测。",
+      "recommended_action": "investigate",
+      "questions_to_validate": [
+        "图片评论对应的是区域坐标、蒙版还是自然语言引用，能否审计每次修改？",
+        "Flare 与 Sunburst 的价格、延迟、分辨率和编辑一致性差异有多大？",
+        "多轮编辑在人物、文字和品牌素材上经过多少轮后开始漂移？"
+      ],
+      "follow_up_triggers": [
+        "API 价格、限制和模型卡补充",
+        "独立多轮编辑与参考图保持测试",
+        "ChatGPT 中出现版本历史、批注协作或企业审批能力"
+      ],
+      "scores": {
+        "topic_relevance": 5,
+        "novelty": 5,
+        "technical_or_product_significance": 4,
+        "strategic_value": 4,
+        "source_quality": 5,
+        "model_value": 5,
+        "agent_architecture_value": 2,
+        "ai_product_value": 5,
+        "macro_value": 2,
+        "actionability": 5
+      },
+      "report_date": "2026-09-10",
+      "event_date": "2026-09-08",
+      "canonical_url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "first_seen_date": "2026-09-10",
+      "last_seen_date": "2026-09-10",
+      "run_dates": [
+        "2026-09-10"
+      ],
+      "evidence_boundary": "发布时间来自 OpenAI 官方 RSS；正文确认产品与 API 已发布。性能和质量提升为 OpenAI 自报，尚未独立复现。",
+      "related_sources": [
+        {
+          "url": "https://openai.com/news/rss.xml",
+          "type": "official_rss_date"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-09-kimi-code-0-42-agent-control-plane",
+      "demo": false,
+      "topic_lane": "agent_architecture",
+      "title": "Kimi Code 0.42 把 Remote Control 和多模型池转正，并补上任务进度与会话可靠性",
+      "summary": "Kimi Code 0.42.0 的正式 Release 将 Remote Control、subagent model pool、minidb 会话索引和搜索 worker 从实验开关转为默认能力；新增可分页查看主 Agent 与子 Agent 进度的实验性 Updates 面板、只读 /btw side agent、后台任务模型显示，并修复长会话压缩后恢复错误请求。版本还为未信任项目跳过 MCP server 时增加明确警告。",
+      "decision": "include",
+      "confidence": 94,
+      "relevance_level": "P1",
+      "signal_type": "core",
+      "content_type": "technical_update",
+      "information_type": "agent_governance",
+      "evidence_level": "confirmed",
+      "source": "MoonshotAI / Kimi Code",
+      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.42.0",
+      "published_at": "2026-09-09T06:24:42Z",
+      "primary_tags": [
+        "Kimi Code",
+        "Remote Control",
+        "Subagent Model Pool"
+      ],
+      "secondary_tags": [
+        "Updates Panel",
+        "MCP Trust",
+        "Session Recovery"
+      ],
+      "why_it_matters_cn": "这不是一次单点 UI 更新。远程控制、模型分工、进度可见性和长会话恢复一起进入更稳定的默认路径，Agent 控制面正在补齐。",
+      "personal_relevance_cn": "可直接对照编码 Agent 的桌面控制设计：谁在运行、用了哪个模型、压缩后恢复哪个请求、未信任项目为何跳过 MCP，都应有明确状态。",
+      "product_opportunity_cn": "把主/子 Agent 进度、模型、上下文压缩点、远程连接和 MCP 信任状态汇总为可审计任务面板。",
+      "competitive_risk_cn": "Updates 面板仍需实验变量开启；Release 没有给出远程控制的权限粒度、认证方式和企业审计字段。",
+      "recommended_action": "investigate",
+      "questions_to_validate": [
+        "Remote Control 默认开启后，认证、会话撤销和网络暴露边界是什么？",
+        "Updates 面板何时转正，能否关联到具体工具调用、失败和人工接管？",
+        "上下文压缩恢复修复是否覆盖多任务并发、排队输入和子 Agent 回写？"
+      ],
+      "follow_up_triggers": [
+        "Remote Control 安全文档或管理员控制项发布",
+        "Updates 面板转为默认并增加暂停、重试或审计导出",
+        "会话恢复与多 Agent 并发出现公开回归测试或复盘"
+      ],
+      "scores": {
+        "topic_relevance": 5,
+        "novelty": 4,
+        "technical_or_product_significance": 4,
+        "strategic_value": 4,
+        "source_quality": 5,
+        "model_value": 1,
+        "agent_architecture_value": 5,
+        "ai_product_value": 4,
+        "macro_value": 2,
+        "actionability": 5
+      },
+      "report_date": "2026-09-10",
+      "event_date": "2026-09-09",
+      "canonical_url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.42.0",
+      "first_seen_date": "2026-09-10",
+      "last_seen_date": "2026-09-10",
+      "run_dates": [
+        "2026-09-10"
+      ],
+      "evidence_boundary": "GitHub Release API 确认正式版本和发布时间；功能描述来自 Release 与关联 PR。Updates 面板仍为实验能力，不能写成默认上线。",
+      "related_sources": []
+    },
+    {
+      "id": "2026-09-08-openai-codex-quantum-lab-agent",
+      "demo": false,
+      "topic_lane": "ai_product",
+      "title": "MIT 团队把 Codex 接进量子实验闭环：能连跑测量，也会在弱信号下卡住",
+      "summary": "OpenAI 9 月 8 日案例称，MIT EQuS 团队把 GPT-5.6 Sol/Codex 接到实验室软件，让 Agent 选择参数、运行量子芯片测量、分析数据，并决定是继续细化还是保存结果进入下一步。团队已让 Agent 夜间运行常规测量，研究者可用手机查看和纠偏；弱或噪声信号仍会拖慢任务，并需要有经验的研究者介入。",
+      "decision": "include",
+      "confidence": 88,
+      "relevance_level": "P1",
+      "signal_type": "research",
+      "content_type": "practitioner_statement",
+      "information_type": "product_workflow",
+      "evidence_level": "primary_statement",
+      "source": "OpenAI / MIT EQuS",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "published_at": "2026-09-08T17:00:00Z",
+      "primary_tags": [
+        "Codex",
+        "MIT EQuS",
+        "Lab Agent"
+      ],
+      "secondary_tags": [
+        "Quantum Calibration",
+        "Skills",
+        "Human Steering"
+      ],
+      "why_it_matters_cn": "这里有完整的感知、分析、决策和再执行闭环，也把失败边界说清楚了：明确流程可以长时间自治，模糊物理信号仍要专家接管。",
+      "personal_relevance_cn": "这类物理世界 Agent 最值得借鉴的是任务限定、远程查看和随时纠偏，而不是简单照搬“无人实验室”叙事。",
+      "product_opportunity_cn": "可把实验技能、参数范围、异常阈值、手机检查点和人工接管记录做成通用科学 Agent 控制层。",
+      "competitive_risk_cn": "案例由 OpenAI 发布，时间节省和常规使用情况来自单一团队自述；没有公开完整运行日志、失败率或安全联锁细节。",
+      "recommended_action": "investigate",
+      "questions_to_validate": [
+        "Agent 能修改哪些实验参数，硬件和安全边界由软件还是独立联锁限制？",
+        "手机查看能否暂停任务、回退参数并确认异常处置？",
+        "多 Agent 并发时如何避免资源冲突、错误累积和不可逆实验动作？"
+      ],
+      "follow_up_triggers": [
+        "MIT EQuS 发布技术论文、代码或完整实验日志",
+        "出现异常阈值、暂停、回滚或硬件联锁的产品细节",
+        "同类科学实验从单团队案例扩展到可复现平台"
+      ],
+      "scores": {
+        "topic_relevance": 5,
+        "novelty": 5,
+        "technical_or_product_significance": 4,
+        "strategic_value": 4,
+        "source_quality": 4,
+        "model_value": 3,
+        "agent_architecture_value": 5,
+        "ai_product_value": 5,
+        "macro_value": 2,
+        "actionability": 5
+      },
+      "report_date": "2026-09-10",
+      "event_date": "2026-09-08",
+      "canonical_url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "first_seen_date": "2026-09-10",
+      "last_seen_date": "2026-09-10",
+      "run_dates": [
+        "2026-09-10"
+      ],
+      "evidence_boundary": "发布时间来自 OpenAI 官方 RSS。正文是 OpenAI 与 MIT 研究者的一手案例，能确认工作流与研究者描述的限制；不能视为独立评测或普遍可复制效果。",
+      "related_sources": [
+        {
+          "url": "https://openai.com/news/rss.xml",
+          "type": "official_rss_date"
+        }
+      ],
+      "speaker_name": "Beatriz Yankelevich",
+      "speaker_role": "Graduate student, MIT Engineering Quantum Systems Group",
+      "speaker_type": "ai_developer",
+      "statement_topic": "Agent-controlled quantum measurement workflows and human intervention boundaries",
+      "original_source_url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "new_information": "Codex can run routine qubit calibration loops for hours, but weak or noisy signals still require expert guidance.",
+      "evidence_artifact": "OpenAI case study with a named MIT researcher, workflow description, limitations, and experiment screenshots."
+    },
+    {
+      "id": "2026-09-09-google-finland-ai-infrastructure-energy",
+      "demo": false,
+      "topic_lane": "ai_macro",
+      "title": "Google 计划两年向芬兰投 130 亿欧元，AI 数据中心开始和核电延寿、风电与储能一起签",
+      "summary": "Google 9 月 9 日宣布，计划在 2027–2028 年向芬兰数字基础设施投入至少 130 亿欧元，覆盖 Hamina、Kajaani、Muhos 和 Vaala 的数据中心及配套设施。配套能源方案包括与 Fortum 签署 22 年 Loviisa 核电站延寿 PPA、把在芬兰签约的新增陆上风电扩至 629MW，以及支持一套计划 2027 年投运的 94MW 电池系统。",
+      "decision": "include",
+      "confidence": 93,
+      "relevance_level": "P1",
+      "signal_type": "strategic_radar",
+      "content_type": "official_release",
+      "information_type": "compute_infrastructure",
+      "evidence_level": "primary_statement",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland",
+      "published_at": "2026-09-09T07:00:00Z",
+      "primary_tags": [
+        "Google",
+        "Finland",
+        "AI Infrastructure"
+      ],
+      "secondary_tags": [
+        "Nuclear PPA",
+        "Wind",
+        "Battery Storage"
+      ],
+      "why_it_matters_cn": "算力扩张和长期电力安排被打成一个项目包。大型模型公司的竞争继续外溢到选址、核电资产、风电和电网灵活性。",
+      "personal_relevance_cn": "做 AI 宏观与产品成本判断时，这类项目比单看 GPU 采购更有用：供给约束已经落到两年建设期和二十多年电力合同。",
+      "product_opportunity_cn": "持续跟踪区域算力、电价、建设进度和能源合同，可为模型成本、区域可用性和数据驻留判断建立前置指标。",
+      "competitive_risk_cn": "130 亿欧元、就业和 GDP 影响均来自 Google 与其委托分析；多数设施仍处于计划或建设前阶段，不能写成算力已经上线。",
+      "recommended_action": "investigate",
+      "questions_to_validate": [
+        "130 亿欧元中数据中心、网络、土地和能源配套各占多少？",
+        "新设施的计算容量、上电时间和 Gemini 训练/推理占比何时披露？",
+        "核电延寿、629MW 风电和 94MW 电池能覆盖多少新增负荷？"
+      ],
+      "follow_up_triggers": [
+        "建设许可、开工、上电或具体算力容量公开",
+        "Fortum、风电开发商或 Fingrid 披露合同与并网进度",
+        "Google 更新欧洲 AI 基础设施资本开支与区域服务能力"
+      ],
+      "scores": {
+        "topic_relevance": 5,
+        "novelty": 5,
+        "technical_or_product_significance": 5,
+        "strategic_value": 5,
+        "source_quality": 5,
+        "model_value": 2,
+        "agent_architecture_value": 1,
+        "ai_product_value": 2,
+        "macro_value": 5,
+        "actionability": 4
+      },
+      "report_date": "2026-09-10",
+      "event_date": "2026-09-09",
+      "canonical_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland",
+      "first_seen_date": "2026-09-10",
+      "last_seen_date": "2026-09-10",
+      "run_dates": [
+        "2026-09-10"
+      ],
+      "evidence_boundary": "Google 官方页面与新闻稿确认的是投资计划和已宣布/签署的能源安排。2027–2028 年建设、就业、GDP 和电力效果尚未兑现；两篇同日材料按一个基础设施事件合并。",
+      "related_sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/clean-energy-finland",
+          "type": "energy_contract_details"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-09-ibm-granite-time-series-r2",
+      "demo": false,
+      "topic_lane": "model",
+      "title": "IBM 开源 Granite 时间序列模型 r2：385M 参数、8192 上下文和可复现零样本评测",
+      "summary": "IBM Research 9 月 9 日发布 Granite Time Series PatchTST-FM-r2，开放权重、架构、推理流程和复现代码，并提供 Apache 2.0 / OpenMDW 1.0 双许可。r2 改用结合注意力与时间卷积的 Conformer block，支持 8192 步上下文、99 分位概率预测和缺失值插补。IBM 称其在 GIFT-Eval 可复现零样本模型中综合排名第二，并在宽松商业许可模型中排名第一。",
+      "decision": "include",
+      "confidence": 90,
+      "relevance_level": "P2",
+      "signal_type": "research",
+      "content_type": "official_release",
+      "information_type": "model_release",
+      "evidence_level": "confirmed",
+      "source": "IBM Research / Hugging Face",
+      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "published_at": "2026-09-09T15:36:24Z",
+      "primary_tags": [
+        "IBM Granite",
+        "Time Series",
+        "Open Weights"
+      ],
+      "secondary_tags": [
+        "GIFT-Eval",
+        "Conformer",
+        "Apache 2.0"
+      ],
+      "why_it_matters_cn": "这是少见的可商用、可复现专用基础模型更新，直接覆盖需求、价格、能耗、流量和遥测预测。",
+      "personal_relevance_cn": "对产品团队，价值不在“第二名”本身，而在小模型、零样本、概率输出和宽松许可能否降低每条业务序列单独训练的成本。",
+      "product_opportunity_cn": "可用公开代码做交易量、商户需求或系统负载的零样本基线，再与现有统计模型和微调模型比较。",
+      "competitive_risk_cn": "排行榜筛选口径和领先结论由 IBM 自报；模型对业务分布漂移、长尾序列和在线成本的表现仍需独立测试。",
+      "recommended_action": "monitor",
+      "questions_to_validate": [
+        "在真实业务数据上，零样本效果与简单统计基线、TimesFM-3 和微调模型差多少？",
+        "99 分位输出的校准质量能否支撑库存、容量或风险决策？",
+        "双许可在模型衍生、托管服务和数据使用上有哪些差异？"
+      ],
+      "follow_up_triggers": [
+        "GIFT-Eval 排名或复现结果更新",
+        "独立业务数据集测试与成本对比",
+        "Confluent 流式集成从 Early Access 转为正式可用"
+      ],
+      "scores": {
+        "topic_relevance": 4,
+        "novelty": 4,
+        "technical_or_product_significance": 4,
+        "strategic_value": 3,
+        "source_quality": 5,
+        "model_value": 5,
+        "agent_architecture_value": 1,
+        "ai_product_value": 3,
+        "macro_value": 2,
+        "actionability": 4
+      },
+      "report_date": "2026-09-10",
+      "event_date": "2026-09-09",
+      "canonical_url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "first_seen_date": "2026-09-10",
+      "last_seen_date": "2026-09-10",
+      "run_dates": [
+        "2026-09-10"
+      ],
+      "evidence_boundary": "Hugging Face 上的 IBM Research 原文、模型页和代码确认发布与开放工件。GIFT-Eval 排名和性能比较为 IBM 截至 9 月 8 日的自报口径。",
+      "related_sources": []
+    },
+    {
+      "id": "2026-09-09-aws-ray-serve-dlc",
+      "demo": false,
+      "topic_lane": "agent_architecture",
+      "title": "AWS 推出 Ray Serve DLC，为退出维护的 TorchServe 提供受维护的推理容器路径",
+      "summary": "AWS 9 月 9 日发布 Ray Serve Deep Learning Containers，提供面向 EKS、EC2 和 SageMaker 的 CPU/GPU 镜像，把 PyTorch、Ray Serve、FastAPI、Uvicorn 与 GPU 依赖打包为测试组合。官方教程展示了视觉语言模型在单 GPU EKS 节点上的部署，并明确指出 TorchServe 已停止积极维护和安全更新。",
+      "decision": "include",
+      "confidence": 91,
+      "relevance_level": "P2",
+      "signal_type": "core",
+      "content_type": "technical_update",
+      "information_type": "agent_runtime",
+      "evidence_level": "confirmed",
+      "source": "AWS",
+      "url": "https://aws.amazon.com/blogs/machine-learning/simplify-and-support-your-torchserve-workloads-using-ray-serve-deep-learning-containers",
+      "published_at": "2026-09-09T15:51:29Z",
+      "primary_tags": [
+        "AWS",
+        "Ray Serve DLC",
+        "Model Serving"
+      ],
+      "secondary_tags": [
+        "TorchServe",
+        "EKS",
+        "SageMaker"
+      ],
+      "why_it_matters_cn": "受维护的镜像、版本组合和安全补丁路径，比单纯换一个 serving 框架更影响真实迁移成本。",
+      "personal_relevance_cn": "对自建模型或 Agent runtime 团队，这条适合转成迁移清单：镜像、GPU 栈、伸缩、监控和安全补丁分别由谁负责。",
+      "product_opportunity_cn": "可围绕 TorchServe 迁移评估、兼容性测试、灰度切换和运行监控提供标准化工具或服务。",
+      "competitive_risk_cn": "官方教程只覆盖单 GPU 基础部署，没有给出高并发、自动伸缩、回滚、成本和生产故障数据。",
+      "recommended_action": "monitor",
+      "questions_to_validate": [
+        "Ray Serve DLC 的补丁 SLA、镜像保留和 CVE 响应机制是什么？",
+        "从 TorchServe 迁移时模型 handler、批处理和指标如何映射？",
+        "EKS 与 SageMaker 版本在伸缩、日志和回滚能力上有何差异？"
+      ],
+      "follow_up_triggers": [
+        "AWS 发布正式迁移指南、兼容矩阵或生产基准",
+        "Ray Serve DLC 增加多节点、自动伸缩或可观测性模板",
+        "TorchServe 用户公开迁移成本与故障复盘"
+      ],
+      "scores": {
+        "topic_relevance": 4,
+        "novelty": 4,
+        "technical_or_product_significance": 4,
+        "strategic_value": 3,
+        "source_quality": 5,
+        "model_value": 4,
+        "agent_architecture_value": 4,
+        "ai_product_value": 3,
+        "macro_value": 2,
+        "actionability": 5
+      },
+      "report_date": "2026-09-10",
+      "event_date": "2026-09-09",
+      "canonical_url": "https://aws.amazon.com/blogs/machine-learning/simplify-and-support-your-torchserve-workloads-using-ray-serve-deep-learning-containers",
+      "first_seen_date": "2026-09-10",
+      "last_seen_date": "2026-09-10",
+      "run_dates": [
+        "2026-09-10"
+      ],
+      "evidence_boundary": "AWS 官方正文和发布日期元数据确认容器与教程已发布。生产性能、迁移成本和安全运维效果没有独立数据。",
+      "related_sources": []
+    },
     {
       "id": "2026-09-03-openai-gpt6-astra-broad-release-monitorability",
       "demo": false,

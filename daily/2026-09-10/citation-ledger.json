@@ -1,5 +1,86 @@
 {
   "version": 1,
-  "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "grounding_policy": "Each factual claim in daily-brief.md cites an entry in this ledger. Sources are rendered mechanically by ascending id.",
+  "sources": [
+    {
+      "id": 1,
+      "title": "OpenAI News RSS",
+      "url": "https://openai.com/news/rss.xml",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-10T00:44:43+08:00"
+    },
+    {
+      "id": 2,
+      "title": "Research acceleration: The view inside OpenAI",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "publisher": "OpenAI",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-10T00:44:43+08:00"
+    },
+    {
+      "id": 3,
+      "title": "An Alien Mind",
+      "url": "https://openai.com/index/an-alien-mind",
+      "publisher": "OpenAI / Jakub Pachocki",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-10T00:44:43+08:00"
+    },
+    {
+      "id": 4,
+      "title": "Introducing ChatGPT Images 2.5",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-10T00:44:43+08:00"
+    },
+    {
+      "id": 5,
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "publisher": "OpenAI / MIT EQuS",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-10T00:44:43+08:00"
+    },
+    {
+      "id": 6,
+      "title": "Kimi Code 0.42.0 release",
+      "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.42.0",
+      "publisher": "MoonshotAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-10T00:44:43+08:00"
+    },
+    {
+      "id": 7,
+      "title": "Ray Serve Deep Learning Containers",
+      "url": "https://aws.amazon.com/blogs/machine-learning/simplify-and-support-your-torchserve-workloads-using-ray-serve-deep-learning-containers",
+      "publisher": "AWS",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-10T00:44:43+08:00"
+    },
+    {
+      "id": 8,
+      "title": "Google AI infrastructure investment in Finland",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland",
+      "publisher": "Google",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-10T00:44:43+08:00"
+    },
+    {
+      "id": 9,
+      "title": "Google clean energy growth in Finland",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/clean-energy-finland",
+      "publisher": "Google",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-10T00:44:43+08:00"
+    },
+    {
+      "id": 10,
+      "title": "IBM Granite Time Series PatchTST-FM-r2",
+      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "publisher": "IBM Research / Hugging Face",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-10T00:44:43+08:00"
+    }
+  ]
 }

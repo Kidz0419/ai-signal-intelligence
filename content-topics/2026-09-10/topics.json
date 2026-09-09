@@ -3,10 +3,473 @@
   "report_date": "2026-09-10",
   "timezone": "Asia/Shanghai",
   "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。",
-  "scope_label_cn": "当日增量 · 2026-09-10",
+  "scope_label_cn": "当日增量 · 2026-09-10（含 9 月 6–9 日迟到补录）",
   "source_scope": {
     "type": "daily",
     "date": "2026-09-10"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-10-openai-automated-research-intern-rsi-controls",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-06-openai-automated-research-intern-rsi-controls"
+      ],
+      "working_title_cn": "OpenAI 说自动化研究实习生已经到了，但长任务过半仍要人救场",
+      "core_tension_cn": "Agent 工作量已经超过人类工时，真正限制自动化研发的却还是干预、环境安全和停止权。",
+      "why_now_cn": "OpenAI 同日公开内部使用数据与首席科学家的路线长文，首次把研发提速和减速条件摆在一起。",
+      "target_audience_cn": [
+        "AI 研发负责人",
+        "Agent 平台团队",
+        "模型治理研究者"
+      ],
+      "evidence_boundary_cn": "内部数据和路线判断均来自 OpenAI，尚无独立复核。",
+      "source_urls": [
+        "https://openai.com/index/research-acceleration-view-inside-openai"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "OpenAI 说自动化研究实习生已经到了，但长任务过半仍要人救场",
+          "hook": "3.1 个 Agent 工作日听上去很猛，但 4–8 小时成功任务过半仍需人工介入。",
+          "format": "7页图文卡",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "研发闭环与干预点图",
+          "cta": "你会把哪一个停止权留给人？"
+        },
+        "twitter": {
+          "title": "OpenAI 说自动化研究实习生已经到了，但长任务过半仍要人救场",
+          "hook": "3.1 个 Agent 工作日听上去很猛，但 4–8 小时成功任务过半仍需人工介入。",
+          "format": "6帖 Thread",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "研发闭环与干预点图",
+          "cta": "Which stop condition would you keep human-owned?"
+        },
+        "wechat": {
+          "title": "OpenAI 说自动化研究实习生已经到了，但长任务过半仍要人救场",
+          "hook": "3.1 个 Agent 工作日听上去很猛，但 4–8 小时成功任务过半仍需人工介入。",
+          "format": "1800—2400字分析",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "研发闭环与干预点图，附证据表",
+          "cta": "你会把哪一个停止权留给人？"
+        }
+      }
+    },
+    {
+      "id": "2026-09-10-openai-chatgpt-images-2-5",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "model",
+      "source_signal_ids": [
+        "2026-09-08-openai-chatgpt-images-2-5"
+      ],
+      "working_title_cn": "Images 2.5 真正的新入口不是更会画，而是让人能在图上直接改",
+      "core_tension_cn": "生成模型开始从一次性输出变成可批注、可多轮局部编辑的创意工作台。",
+      "why_now_cn": "OpenAI 同时上线模型、Sketch、图片评论和两个 API 档位。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "创意工具团队",
+        "多模态开发者"
+      ],
+      "evidence_boundary_cn": "功能已发布；质量和速度数字是厂商自报。",
+      "source_urls": [
+        "https://openai.com/index/introducing-chatgpt-images-2-5"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Images 2.5 真正的新入口不是更会画，而是让人能在图上直接改",
+          "hook": "别只盯 50% 延迟。图片评论和多轮局部修改更可能改变真实工作流。",
+          "format": "7页图文卡",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "图片编辑对象与版本流",
+          "cta": "你最想先压测哪种局部编辑？"
+        },
+        "twitter": {
+          "title": "Images 2.5 真正的新入口不是更会画，而是让人能在图上直接改",
+          "hook": "别只盯 50% 延迟。图片评论和多轮局部修改更可能改变真实工作流。",
+          "format": "6帖 Thread",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "图片编辑对象与版本流",
+          "cta": "Which editing failure would you test first?"
+        },
+        "wechat": {
+          "title": "Images 2.5 真正的新入口不是更会画，而是让人能在图上直接改",
+          "hook": "别只盯 50% 延迟。图片评论和多轮局部修改更可能改变真实工作流。",
+          "format": "1800—2400字分析",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "图片编辑对象与版本流，附证据表",
+          "cta": "你最想先压测哪种局部编辑？"
+        }
+      }
+    },
+    {
+      "id": "2026-09-10-openai-codex-quantum-lab-agent",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-09-08-openai-codex-quantum-lab-agent"
+      ],
+      "working_title_cn": "量子实验 Agent 已经能通宵跑，但弱信号一来还是得叫人",
+      "core_tension_cn": "物理世界 Agent 可以接管明确流程，却不能把模糊结果的责任交给模型。",
+      "why_now_cn": "MIT EQuS 案例给出了参数选择、测量、分析、再决策和手机纠偏的完整闭环。",
+      "target_audience_cn": [
+        "科学智能产品团队",
+        "Agent 架构师",
+        "实验自动化负责人"
+      ],
+      "evidence_boundary_cn": "这是单一团队的一手案例，不是普遍性能结论。",
+      "source_urls": [
+        "https://openai.com/index/codex-quantum-computing-experiments"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "量子实验 Agent 已经能通宵跑，但弱信号一来还是得叫人",
+          "hook": "最有价值的不是“Agent 进实验室”，而是它在哪些信号条件下必须把控制权还给研究者。",
+          "format": "7页图文卡",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "实验闭环与人工接管图",
+          "cta": "你会把异常阈值设在哪一层？"
+        },
+        "twitter": {
+          "title": "量子实验 Agent 已经能通宵跑，但弱信号一来还是得叫人",
+          "hook": "最有价值的不是“Agent 进实验室”，而是它在哪些信号条件下必须把控制权还给研究者。",
+          "format": "6帖 Thread",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "实验闭环与人工接管图",
+          "cta": "Where would you put the handoff threshold?"
+        },
+        "wechat": {
+          "title": "量子实验 Agent 已经能通宵跑，但弱信号一来还是得叫人",
+          "hook": "最有价值的不是“Agent 进实验室”，而是它在哪些信号条件下必须把控制权还给研究者。",
+          "format": "1800—2400字分析",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "实验闭环与人工接管图，附证据表",
+          "cta": "你会把异常阈值设在哪一层？"
+        }
+      }
+    },
+    {
+      "id": "2026-09-10-kimi-code-0-42-agent-control-plane",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-09-kimi-code-0-42-agent-control-plane"
+      ],
+      "working_title_cn": "Kimi Code 0.42 把几个实验开关转正，编码 Agent 的控制面开始像个产品了",
+      "core_tension_cn": "远程控制和多 Agent 分工一旦默认开启，进度、信任状态和会话恢复必须跟上。",
+      "why_now_cn": "0.42 同时改了 Remote Control、模型池、Updates 面板、MCP 警告和压缩恢复。",
+      "target_audience_cn": [
+        "编码 Agent 产品经理",
+        "开发工具工程师",
+        "企业安全团队"
+      ],
+      "evidence_boundary_cn": "正式 Release 可确认默认能力；Updates 面板仍是实验功能。",
+      "source_urls": [
+        "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.42.0"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Kimi Code 0.42 把几个实验开关转正，编码 Agent 的控制面开始像个产品了",
+          "hook": "真正该看的不是功能数，而是远程控制默认开启后，用户还能不能看清谁在做什么。",
+          "format": "7页图文卡",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "控制面状态与信任边界图",
+          "cta": "哪个状态缺失最容易出事故？"
+        },
+        "twitter": {
+          "title": "Kimi Code 0.42 把几个实验开关转正，编码 Agent 的控制面开始像个产品了",
+          "hook": "真正该看的不是功能数，而是远程控制默认开启后，用户还能不能看清谁在做什么。",
+          "format": "6帖 Thread",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "控制面状态与信任边界图",
+          "cta": "Which missing state is most dangerous?"
+        },
+        "wechat": {
+          "title": "Kimi Code 0.42 把几个实验开关转正，编码 Agent 的控制面开始像个产品了",
+          "hook": "真正该看的不是功能数，而是远程控制默认开启后，用户还能不能看清谁在做什么。",
+          "format": "1800—2400字分析",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "控制面状态与信任边界图，附证据表",
+          "cta": "哪个状态缺失最容易出事故？"
+        }
+      }
+    },
+    {
+      "id": "2026-09-10-google-finland-ai-infrastructure-energy",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_macro",
+      "source_signal_ids": [
+        "2026-09-09-google-finland-ai-infrastructure-energy"
+      ],
+      "working_title_cn": "Google 的 130 亿欧元芬兰计划，把 AI 算力竞争一路签到了核电站",
+      "core_tension_cn": "模型公司争的已经不只是 GPU，还包括二十多年电力合同和地区电网承载力。",
+      "why_now_cn": "同日材料把数据中心、核电延寿、629MW 风电和 94MW 储能放在一张项目表里。",
+      "target_audience_cn": [
+        "AI 宏观研究者",
+        "云与算力团队",
+        "能源科技从业者"
+      ],
+      "evidence_boundary_cn": "投资与建设多为未来计划，不能写成容量已经上线。",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Google 的 130 亿欧元芬兰计划，把 AI 算力竞争一路签到了核电站",
+          "hook": "130 亿欧元很显眼，但更值得看的是 22 年核电 PPA 和 2027 年才投运的电池。",
+          "format": "7页图文卡",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "算力建设与能源合同时间轴",
+          "cta": "你会先盯资本开支还是上电进度？"
+        },
+        "twitter": {
+          "title": "Google 的 130 亿欧元芬兰计划，把 AI 算力竞争一路签到了核电站",
+          "hook": "130 亿欧元很显眼，但更值得看的是 22 年核电 PPA 和 2027 年才投运的电池。",
+          "format": "6帖 Thread",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "算力建设与能源合同时间轴",
+          "cta": "Would you track capex or energization first?"
+        },
+        "wechat": {
+          "title": "Google 的 130 亿欧元芬兰计划，把 AI 算力竞争一路签到了核电站",
+          "hook": "130 亿欧元很显眼，但更值得看的是 22 年核电 PPA 和 2027 年才投运的电池。",
+          "format": "1800—2400字分析",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "算力建设与能源合同时间轴，附证据表",
+          "cta": "你会先盯资本开支还是上电进度？"
+        }
+      }
+    },
+    {
+      "id": "2026-09-10-aws-ray-serve-dlc",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "B",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-09-aws-ray-serve-dlc"
+      ],
+      "working_title_cn": "TorchServe 停更之后，AWS 想把迁移路径收进一套受维护的 Ray Serve 镜像",
+      "core_tension_cn": "换 serving 框架不难，难的是谁长期负责 CUDA 组合、安全补丁和回滚。",
+      "why_now_cn": "AWS 新 DLC 已覆盖 EKS、EC2 和 SageMaker，但公开教程仍停在单 GPU。",
+      "target_audience_cn": [
+        "模型平台工程师",
+        "MLOps 团队",
+        "AI 基础设施产品经理"
+      ],
+      "evidence_boundary_cn": "产品与教程已发布，生产规模效果没有公开数据。",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/machine-learning/simplify-and-support-your-torchserve-workloads-using-ray-serve-deep-learning-containers"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "TorchServe 停更之后，AWS 想把迁移路径收进一套受维护的 Ray Serve 镜像",
+          "hook": "TorchServe 用户真正要迁的不是 API，而是整条依赖和补丁责任链。",
+          "format": "7页图文卡",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "迁移责任矩阵",
+          "cta": "你的 serving 栈由谁负责打补丁？"
+        },
+        "twitter": {
+          "title": "TorchServe 停更之后，AWS 想把迁移路径收进一套受维护的 Ray Serve 镜像",
+          "hook": "TorchServe 用户真正要迁的不是 API，而是整条依赖和补丁责任链。",
+          "format": "6帖 Thread",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "迁移责任矩阵",
+          "cta": "Who owns patching in your serving stack?"
+        },
+        "wechat": {
+          "title": "TorchServe 停更之后，AWS 想把迁移路径收进一套受维护的 Ray Serve 镜像",
+          "hook": "TorchServe 用户真正要迁的不是 API，而是整条依赖和补丁责任链。",
+          "format": "1800—2400字分析",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "迁移责任矩阵，附证据表",
+          "cta": "你的 serving 栈由谁负责打补丁？"
+        }
+      }
+    },
+    {
+      "id": "2026-09-10-ibm-granite-time-series-r2",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "B",
+      "topic_lane": "model",
+      "source_signal_ids": [
+        "2026-09-09-ibm-granite-time-series-r2"
+      ],
+      "working_title_cn": "一个 385M 的开源时间序列模型，可能比大模型更适合先做业务预测",
+      "core_tension_cn": "零样本和宽松许可降低试错成本，但排行榜不能替代自己的业务基线。",
+      "why_now_cn": "IBM 同时开放权重、架构、推理代码和复现材料。",
+      "target_audience_cn": [
+        "数据产品经理",
+        "预测系统工程师",
+        "开源模型研究者"
+      ],
+      "evidence_boundary_cn": "发布与工件可确认；排行榜结论由 IBM 自报。",
+      "source_urls": [
+        "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "一个 385M 的开源时间序列模型，可能比大模型更适合先做业务预测",
+          "hook": "先别被“SOTA”带跑。真正值得试的是 385M、零样本和 99 分位输出能否打赢你的简单基线。",
+          "format": "7页图文卡",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "模型选择与验证清单",
+          "cta": "你会先拿哪类序列做盲测？"
+        },
+        "twitter": {
+          "title": "一个 385M 的开源时间序列模型，可能比大模型更适合先做业务预测",
+          "hook": "先别被“SOTA”带跑。真正值得试的是 385M、零样本和 99 分位输出能否打赢你的简单基线。",
+          "format": "6帖 Thread",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "模型选择与验证清单",
+          "cta": "Which time series would you blind-test first?"
+        },
+        "wechat": {
+          "title": "一个 385M 的开源时间序列模型，可能比大模型更适合先做业务预测",
+          "hook": "先别被“SOTA”带跑。真正值得试的是 385M、零样本和 99 分位输出能否打赢你的简单基线。",
+          "format": "1800—2400字分析",
+          "outline": [
+            "事实与发布日期",
+            "对象、动作与工作流",
+            "证据边界",
+            "产品判断",
+            "验证清单"
+          ],
+          "visual_direction": "模型选择与验证清单，附证据表",
+          "cta": "你会先拿哪类序列做盲测？"
+        }
+      }
+    }
+  ]
 }
