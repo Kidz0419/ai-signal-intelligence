@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-11T00:13:21+08:00",
+  "window": {
+    "start": "2026-09-07T16:13:21+08:00",
+    "end": "2026-09-11T00:13:21+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "candidate_count": 6,
+  "new_in_run_count": 6,
+  "new_candidates": [
+    {
+      "source_name": "AWS Architecture RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
+      "title": "Building resilient real-time streaming workers with Amazon DynamoDB leases",
+      "url": "https://aws.amazon.com/blogs/architecture/building-resilient-real-time-streaming-workers-with-amazon-dynamodb-leases/",
+      "published_or_lastmod_at": "2026-09-10T16:14:22Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Products & Platforms RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/products-and-platforms/rss/",
+      "title": "3 ways to prep for your next big race with Search",
+      "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+      "published_or_lastmod_at": "2026-09-10T16:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Products & Platforms RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/products-and-platforms/rss/",
+      "title": "Switching password managers is easy and safe on Android",
+      "url": "https://blog.google/products-and-platforms/platforms/android/switch-password-managers/",
+      "published_or_lastmod_at": "2026-09-10T16:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Microsoft Agent Framework releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/microsoft/agent-framework/releases.atom",
+      "title": "python-1.18.0",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.18.0",
+      "published_or_lastmod_at": "2026-09-10T09:25:06Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "rust-v0.155.0-alpha.2",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.2",
+      "published_or_lastmod_at": "2026-09-10T17:08:19Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.155.0-alpha.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.1",
+      "published_or_lastmod_at": "2026-09-10T11:56:10Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    }
+  ],
+  "candidates": [
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "rust-v0.155.0-alpha.2",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.2",
+      "published_or_lastmod_at": "2026-09-10T17:08:19Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Architecture RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
+      "title": "Building resilient real-time streaming workers with Amazon DynamoDB leases",
+      "url": "https://aws.amazon.com/blogs/architecture/building-resilient-real-time-streaming-workers-with-amazon-dynamodb-leases/",
+      "published_or_lastmod_at": "2026-09-10T16:14:22Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Products & Platforms RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/products-and-platforms/rss/",
+      "title": "3 ways to prep for your next big race with Search",
+      "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+      "published_or_lastmod_at": "2026-09-10T16:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Products & Platforms RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/products-and-platforms/rss/",
+      "title": "Switching password managers is easy and safe on Android",
+      "url": "https://blog.google/products-and-platforms/platforms/android/switch-password-managers/",
+      "published_or_lastmod_at": "2026-09-10T16:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.155.0-alpha.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.1",
+      "published_or_lastmod_at": "2026-09-10T11:56:10Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Microsoft Agent Framework releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/microsoft/agent-framework/releases.atom",
+      "title": "python-1.18.0",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.18.0",
+      "published_or_lastmod_at": "2026-09-10T09:25:06Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    }
+  ],
+  "contract": {
+    "candidate_is_not_signal": true,
+    "sitemap_lastmod_is_not_publication_date": true,
+    "search_or_feed_title_requires_body_verification": true
+  }
+}
