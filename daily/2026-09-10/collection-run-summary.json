@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-10T12:00:41+08:00",
+  "run_at": "2026-09-10T17:06:53+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-07T04:00:41+08:00",
-    "end": "2026-09-10T12:00:41+08:00",
+    "start": "2026-09-07T09:06:53+08:00",
+    "end": "2026-09-10T17:06:53+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 199,
-  "unique_candidates": 195,
+  "raw_candidates": 10,
+  "unique_candidates": 10,
   "editorial_shortlist": 0,
   "previous_count": 7,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 199,
+  "unreviewed_candidate_count": 10,
   "total_count": 7,
   "selected": 7,
   "lane_counts": {
@@ -35,27 +35,27 @@
   "executive_model_longform": 1,
   "practitioner_statements": 1,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 10,
+  "collection_errors": 34,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 7,
+      "access_blocked": 4,
       "auth_required": 0,
-      "mechanical_failure": 3,
-      "not_checked": 101
+      "mechanical_failure": 30,
+      "not_checked": 77
     },
     "channel_counts": {
       "frontier_model_official": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 3,
+        "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 24
+        "mechanical_failure": 25,
+        "not_checked": 2
       },
       "china_frontier_models": {
         "selected": 0,
@@ -72,8 +72,8 @@
         "checked_no_match": 0,
         "access_blocked": 2,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 14
+        "mechanical_failure": 1,
+        "not_checked": 13
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -81,8 +81,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 16
+        "mechanical_failure": 1,
+        "not_checked": 15
       },
       "research_and_evaluation": {
         "selected": 0,
@@ -127,10 +127,9 @@
         "name": "Anthropic Cookbook",
         "type": "github_changes",
         "url": "https://github.com/anthropics/anthropic-cookbook",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://github.com/anthropics/claude-cookbooks",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "agent_runtime_and_open_source",
@@ -547,9 +546,9 @@
         "name": "Amazon Science AI",
         "type": "official_research",
         "url": "https://www.amazon.science/tag/artificial-intelligence",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
@@ -565,160 +564,153 @@
         "name": "Anthropic API Release Notes",
         "type": "developer_changelog",
         "url": "https://docs.anthropic.com/en/release-notes/api",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://platform.claude.com/docs/en/release-notes/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Anthropic News",
         "type": "official_news",
         "url": "https://www.anthropic.com/news",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Anthropic Research",
         "type": "official_research",
         "url": "https://www.anthropic.com/research",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Apple Machine Learning Research",
         "type": "official_research",
         "url": "https://machinelearning.apple.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "AWS Machine Learning Blog",
         "type": "official_technical_blog",
         "url": "https://aws.amazon.com/blogs/machine-learning/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "AWS What's New AI/ML",
         "type": "cloud_release_notes",
         "url": "https://aws.amazon.com/about-aws/whats-new/machine-learning/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://aws.amazon.com/about-aws/",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Azure AI Foundry What's New",
         "type": "cloud_release_notes",
         "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/whats-new-azure-ai-foundry",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/whats-new-foundry",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Claude Release Notes",
         "type": "product_release_notes",
         "url": "https://support.anthropic.com/en/articles/12138966-release-notes",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://support.claude.com/en/articles/12138966-release-notes",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Gemini API Changelog",
         "type": "developer_changelog",
         "url": "https://ai.google.dev/gemini-api/docs/changelog",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Google DeepMind Blog",
         "type": "official_research",
         "url": "https://deepmind.google/discover/blog/",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://deepmind.google/blog/",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Google Innovation & AI",
         "type": "official_news",
         "url": "https://blog.google/innovation-and-ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Meta AI Blog",
         "type": "official_research",
         "url": "https://ai.meta.com/blog/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Meta Llama GitHub",
         "type": "github_org",
         "url": "https://github.com/meta-llama",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Meta Newsroom AI",
         "type": "official_newsroom",
         "url": "https://about.fb.com/news/tag/ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Microsoft AI Blog",
         "type": "official_news",
         "url": "https://microsoft.ai/news/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://microsoft.ai/blog/",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "NVIDIA AI Developer Blog",
         "type": "official_technical_blog",
         "url": "https://developer.nvidia.com/blog/category/generative-ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "NVIDIA NeMo GitHub",
         "type": "github_releases",
         "url": "https://github.com/NVIDIA/NeMo",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://github.com/NVIDIA-NeMo/Speech",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
@@ -734,64 +726,63 @@
         "name": "OpenAI API Changelog",
         "type": "developer_changelog",
         "url": "https://platform.openai.com/docs/changelog",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://developers.openai.com/api/docs/changelog",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI Help Center Release Notes",
         "type": "product_release_notes",
         "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI News",
         "type": "official_news",
         "url": "https://openai.com/news/",
-        "status": "access_blocked",
-        "http_code": "403",
-        "note": "curl 403; registry fallback requires browser or official article/index alternative, so this is not treated as no match."
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI Research",
         "type": "official_research",
         "url": "https://openai.com/research/",
-        "status": "access_blocked",
-        "http_code": "403"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "Vertex AI Generative AI Release Notes",
         "type": "cloud_release_notes",
         "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "xAI Docs",
         "type": "developer_docs",
         "url": "https://docs.x.ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://docs.x.ai/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
         "name": "xAI News",
         "type": "official_news",
         "url": "https://x.ai/news",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -879,9 +870,9 @@
         "name": "Hugging Face Blog",
         "type": "official_technical_blog",
         "url": "https://huggingface.co/blog",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -1179,813 +1170,91 @@
       "name": "A2A Protocol releases",
       "adapter": "atom",
       "source_url": "https://github.com/a2aproject/A2A/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "Anthropic Cookbook releases",
       "adapter": "atom",
       "source_url": "https://github.com/anthropics/anthropic-cookbook/releases.atom",
-      "status": "checked_no_match",
+      "status": "mechanical_failure",
       "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "Anthropic sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://www.anthropic.com/sitemap.xml",
-      "status": "candidate_only",
-      "checked_items": 120,
-      "recent_items": [
-        {
-          "title": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-          "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-          "published_at": "2026-09-10T01:13:21Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/bloom",
-          "url": "https://www.anthropic.com/research/bloom",
-          "published_at": "2026-09-09T21:55:31Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/compliance-framework-SB53",
-          "url": "https://www.anthropic.com/news/compliance-framework-SB53",
-          "published_at": "2026-09-09T21:54:48Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/critical-infrastructure-defense",
-          "url": "https://www.anthropic.com/research/critical-infrastructure-defense",
-          "published_at": "2026-09-09T21:53:55Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/next-generation-constitutional-classifiers",
-          "url": "https://www.anthropic.com/research/next-generation-constitutional-classifiers",
-          "published_at": "2026-09-09T21:53:20Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/introducing-anthropic-labs",
-          "url": "https://www.anthropic.com/news/introducing-anthropic-labs",
-          "published_at": "2026-09-09T21:51:07Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/property-based-testing",
-          "url": "https://www.anthropic.com/research/property-based-testing",
-          "published_at": "2026-09-09T21:50:18Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/economic-index-primitives",
-          "url": "https://www.anthropic.com/research/economic-index-primitives",
-          "published_at": "2026-09-09T21:49:08Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
-          "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
-          "published_at": "2026-09-09T21:47:42Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/accelerating-scientific-research",
-          "url": "https://www.anthropic.com/news/accelerating-scientific-research",
-          "published_at": "2026-09-09T21:45:55Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/cyber-toolkits-update",
-          "url": "https://www.anthropic.com/research/cyber-toolkits-update",
-          "published_at": "2026-09-09T21:44:37Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-appoints-irina-ghose-as-managing-director-of-india",
-          "url": "https://www.anthropic.com/news/anthropic-appoints-irina-ghose-as-managing-director-of-india",
-          "published_at": "2026-09-09T21:44:01Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/mariano-florentino-long-term-benefit-trust",
-          "url": "https://www.anthropic.com/news/mariano-florentino-long-term-benefit-trust",
-          "published_at": "2026-09-09T21:43:11Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-teach-for-all",
-          "url": "https://www.anthropic.com/news/anthropic-teach-for-all",
-          "published_at": "2026-09-09T21:41:24Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/gov-UK-partnership",
-          "url": "https://www.anthropic.com/news/gov-UK-partnership",
-          "published_at": "2026-09-09T21:38:02Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/disempowerment-patterns",
-          "url": "https://www.anthropic.com/research/disempowerment-patterns",
-          "published_at": "2026-09-09T21:37:15Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/servicenow-anthropic-claude",
-          "url": "https://www.anthropic.com/news/servicenow-anthropic-claude",
-          "published_at": "2026-09-09T21:36:33Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/AI-assistance-coding-skills",
-          "url": "https://www.anthropic.com/research/AI-assistance-coding-skills",
-          "published_at": "2026-09-09T21:35:43Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
-          "url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
-          "published_at": "2026-09-09T21:34:03Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/apple-xcode-claude-agent-sdk",
-          "url": "https://www.anthropic.com/news/apple-xcode-claude-agent-sdk",
-          "published_at": "2026-09-09T21:33:07Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-          "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-          "published_at": "2026-09-09T21:31:05Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/zero-days",
-          "url": "https://www.anthropic.com/research/zero-days",
-          "published_at": "2026-09-09T21:29:19Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-opus-4-6",
-          "url": "https://www.anthropic.com/news/claude-opus-4-6",
-          "published_at": "2026-09-09T21:28:45Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/covering-electricity-price-increases",
-          "url": "https://www.anthropic.com/news/covering-electricity-price-increases",
-          "published_at": "2026-09-09T21:27:55Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/donate-public-first-action",
-          "url": "https://www.anthropic.com/news/donate-public-first-action",
-          "published_at": "2026-09-09T21:26:55Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
-          "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
-          "published_at": "2026-09-09T21:25:59Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board",
-          "url": "https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board",
-          "published_at": "2026-09-09T21:25:04Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-codepath-partnership",
-          "url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
-          "published_at": "2026-09-09T21:24:21Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/india-brief-economic-index",
-          "url": "https://www.anthropic.com/research/india-brief-economic-index",
-          "published_at": "2026-09-09T21:22:54Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
-          "url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
-          "published_at": "2026-09-09T21:22:06Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-rwanda-mou",
-          "url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
-          "published_at": "2026-09-09T21:21:11Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-infosys",
-          "url": "https://www.anthropic.com/news/anthropic-infosys",
-          "published_at": "2026-09-09T21:20:06Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/measuring-agent-autonomy",
-          "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
-          "published_at": "2026-09-09T21:19:12Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
-          "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
-          "published_at": "2026-09-09T21:16:18Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/deprecation-updates-opus-3",
-          "url": "https://www.anthropic.com/research/deprecation-updates-opus-3",
-          "published_at": "2026-09-09T21:14:42Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/acquires-vercept",
-          "url": "https://www.anthropic.com/news/acquires-vercept",
-          "published_at": "2026-09-09T21:13:17Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/statement-department-of-war",
-          "url": "https://www.anthropic.com/news/statement-department-of-war",
-          "published_at": "2026-09-09T21:12:19Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/labor-market-impacts",
-          "url": "https://www.anthropic.com/research/labor-market-impacts",
-          "published_at": "2026-09-09T21:04:49Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/exploit",
-          "url": "https://www.anthropic.com/research/exploit",
-          "published_at": "2026-09-09T21:03:08Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/mozilla-firefox-security",
-          "url": "https://www.anthropic.com/news/mozilla-firefox-security",
-          "published_at": "2026-09-09T21:02:22Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/sydney-fourth-office-asia-pacific",
-          "url": "https://www.anthropic.com/news/sydney-fourth-office-asia-pacific",
-          "published_at": "2026-09-09T20:58:44Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-partner-network",
-          "url": "https://www.anthropic.com/news/claude-partner-network",
-          "published_at": "2026-09-09T20:54:40Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/diff-tool",
-          "url": "https://www.anthropic.com/research/diff-tool",
-          "published_at": "2026-09-09T20:53:28Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/vibe-physics",
-          "url": "https://www.anthropic.com/research/vibe-physics",
-          "published_at": "2026-09-09T20:52:19Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/long-running-Claude",
-          "url": "https://www.anthropic.com/research/long-running-Claude",
-          "published_at": "2026-09-09T20:51:12Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/introducing-anthropic-science",
-          "url": "https://www.anthropic.com/research/introducing-anthropic-science",
-          "published_at": "2026-09-09T20:50:27Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/economic-index-march-2026-report",
-          "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
-          "published_at": "2026-09-09T20:49:46Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/how-australia-uses-claude",
-          "url": "https://www.anthropic.com/research/how-australia-uses-claude",
-          "published_at": "2026-09-09T20:48:08Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/australia-MOU",
-          "url": "https://www.anthropic.com/news/australia-MOU",
-          "published_at": "2026-09-09T20:47:04Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/emotion-concepts-function",
-          "url": "https://www.anthropic.com/research/emotion-concepts-function",
-          "published_at": "2026-09-09T20:44:29Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/team/alignment",
-          "url": "https://www.anthropic.com/research/team/alignment",
-          "published_at": "2026-09-09T20:44:04Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-          "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-          "published_at": "2026-09-09T20:43:14Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/mythos-preview",
-          "url": "https://www.anthropic.com/research/mythos-preview",
-          "published_at": "2026-09-09T20:42:09Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/trustworthy-agents",
-          "url": "https://www.anthropic.com/research/trustworthy-agents",
-          "published_at": "2026-09-09T20:38:30Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/automated-alignment-researchers",
-          "url": "https://www.anthropic.com/research/automated-alignment-researchers",
-          "published_at": "2026-09-09T20:37:06Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/narasimhan-board",
-          "url": "https://www.anthropic.com/news/narasimhan-board",
-          "published_at": "2026-09-09T20:35:38Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-          "published_at": "2026-09-09T20:34:10Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-amazon-compute",
-          "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
-          "published_at": "2026-09-09T20:33:26Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/economic-index-survey-announcement",
-          "url": "https://www.anthropic.com/research/economic-index-survey-announcement",
-          "published_at": "2026-09-09T20:32:35Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/81k-economics",
-          "url": "https://www.anthropic.com/research/81k-economics",
-          "published_at": "2026-09-09T20:31:20Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/election-safeguards-update",
-          "url": "https://www.anthropic.com/news/election-safeguards-update",
-          "published_at": "2026-09-09T20:30:24Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-nec",
-          "url": "https://www.anthropic.com/news/anthropic-nec",
-          "published_at": "2026-09-09T20:29:29Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
-          "url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
-          "published_at": "2026-09-09T20:28:46Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-for-creative-work",
-          "url": "https://www.anthropic.com/news/claude-for-creative-work",
-          "published_at": "2026-09-09T20:26:17Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
-          "url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
-          "published_at": "2026-09-09T20:24:31Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/enterprise-ai-services-company",
-          "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
-          "published_at": "2026-09-09T20:23:29Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/finance-agents",
-          "url": "https://www.anthropic.com/news/finance-agents",
-          "published_at": "2026-09-09T20:22:41Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/higher-limits-spacex",
-          "url": "https://www.anthropic.com/news/higher-limits-spacex",
-          "published_at": "2026-09-09T20:21:59Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/uk-ai-safety-summit",
-          "url": "https://www.anthropic.com/news/uk-ai-safety-summit",
-          "published_at": "2026-09-09T20:19:39Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/specific-versus-general-principles-for-constitutional-ai",
-          "url": "https://www.anthropic.com/research/specific-versus-general-principles-for-constitutional-ai",
-          "published_at": "2026-09-09T20:18:42Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models",
-          "url": "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models",
-          "published_at": "2026-09-09T20:17:38Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input",
-          "url": "https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input",
-          "published_at": "2026-09-09T20:16:34Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/decomposing-language-models-into-understandable-components",
-          "url": "https://www.anthropic.com/research/decomposing-language-models-into-understandable-components",
-          "published_at": "2026-09-09T20:15:01Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning",
-          "url": "https://www.anthropic.com/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning",
-          "published_at": "2026-09-09T20:13:59Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/evaluating-ai-systems",
-          "url": "https://www.anthropic.com/research/evaluating-ai-systems",
-          "published_at": "2026-09-09T20:12:26Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-amazon",
-          "url": "https://www.anthropic.com/news/anthropic-amazon",
-          "published_at": "2026-09-09T20:11:23Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/prompting-long-context",
-          "url": "https://www.anthropic.com/news/prompting-long-context",
-          "published_at": "2026-09-09T20:09:35Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy",
-          "url": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy",
-          "published_at": "2026-09-09T20:08:24Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/the-long-term-benefit-trust",
-          "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
-          "published_at": "2026-09-09T20:05:50Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-bcg",
-          "url": "https://www.anthropic.com/news/anthropic-bcg",
-          "published_at": "2026-09-09T20:05:01Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-pro",
-          "url": "https://www.anthropic.com/news/claude-pro",
-          "published_at": "2026-09-09T20:04:17Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/skt-partnership-announcement",
-          "url": "https://www.anthropic.com/news/skt-partnership-announcement",
-          "published_at": "2026-09-09T20:03:09Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/releasing-claude-instant-1-2",
-          "url": "https://www.anthropic.com/news/releasing-claude-instant-1-2",
-          "published_at": "2026-09-09T20:02:21Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/influence-functions",
-          "url": "https://www.anthropic.com/research/influence-functions",
-          "published_at": "2026-09-09T20:01:19Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions",
-          "url": "https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions",
-          "published_at": "2026-09-09T20:00:28Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/frontier-threats-red-teaming-for-ai-safety",
-          "url": "https://www.anthropic.com/news/frontier-threats-red-teaming-for-ai-safety",
-          "published_at": "2026-09-09T19:59:08Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/frontier-model-security",
-          "url": "https://www.anthropic.com/news/frontier-model-security",
-          "published_at": "2026-09-09T19:57:29Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning",
-          "url": "https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning",
-          "published_at": "2026-09-09T19:56:50Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning",
-          "url": "https://www.anthropic.com/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning",
-          "published_at": "2026-09-09T19:54:49Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claude-2",
-          "url": "https://www.anthropic.com/news/claude-2",
-          "published_at": "2026-09-09T19:53:12Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models",
-          "url": "https://www.anthropic.com/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models",
-          "published_at": "2026-09-09T19:51:23Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/charting-a-path-to-ai-accountability",
-          "url": "https://www.anthropic.com/news/charting-a-path-to-ai-accountability",
-          "published_at": "2026-09-09T19:49:43Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/circuits-updates-may-2023",
-          "url": "https://www.anthropic.com/research/circuits-updates-may-2023",
-          "published_at": "2026-09-09T19:48:40Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/interpretability-dreams",
-          "url": "https://www.anthropic.com/research/interpretability-dreams",
-          "published_at": "2026-09-09T19:45:56Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-series-c",
-          "url": "https://www.anthropic.com/news/anthropic-series-c",
-          "published_at": "2026-09-09T19:45:17Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/zoom-partnership-and-investment",
-          "url": "https://www.anthropic.com/news/zoom-partnership-and-investment",
-          "published_at": "2026-09-09T19:43:41Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/100k-context-windows",
-          "url": "https://www.anthropic.com/news/100k-context-windows",
-          "published_at": "2026-09-09T19:42:51Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/claudes-constitution",
-          "url": "https://www.anthropic.com/news/claudes-constitution",
-          "published_at": "2026-09-09T19:42:15Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/distributed-representations-composition-superposition",
-          "url": "https://www.anthropic.com/research/distributed-representations-composition-superposition",
-          "published_at": "2026-09-09T19:38:49Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/partnering-with-scale",
-          "url": "https://www.anthropic.com/news/partnering-with-scale",
-          "published_at": "2026-09-09T19:37:38Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/an-ai-policy-tool-for-today-ambitiously-invest-in-nist",
-          "url": "https://www.anthropic.com/news/an-ai-policy-tool-for-today-ambitiously-invest-in-nist",
-          "published_at": "2026-09-09T19:36:11Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/privileged-bases-in-the-transformer-residual-stream",
-          "url": "https://www.anthropic.com/research/privileged-bases-in-the-transformer-residual-stream",
-          "published_at": "2026-09-09T19:33:22Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/introducing-claude",
-          "url": "https://www.anthropic.com/news/introducing-claude",
-          "published_at": "2026-09-09T19:31:04Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/core-views-on-ai-safety",
-          "url": "https://www.anthropic.com/news/core-views-on-ai-safety",
-          "published_at": "2026-09-09T19:29:33Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/the-capacity-for-moral-self-correction-in-large-language-models",
-          "url": "https://www.anthropic.com/research/the-capacity-for-moral-self-correction-in-large-language-models",
-          "published_at": "2026-09-09T19:28:33Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-partners-with-google-cloud",
-          "url": "https://www.anthropic.com/news/anthropic-partners-with-google-cloud",
-          "published_at": "2026-09-09T19:27:41Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/superposition-memorization-and-double-descent",
-          "url": "https://www.anthropic.com/research/superposition-memorization-and-double-descent",
-          "published_at": "2026-09-09T19:26:39Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/discovering-language-model-behaviors-with-model-written-evaluations",
-          "url": "https://www.anthropic.com/research/discovering-language-model-behaviors-with-model-written-evaluations",
-          "published_at": "2026-09-09T19:25:48Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback",
-          "url": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback",
-          "published_at": "2026-09-09T19:24:37Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models",
-          "url": "https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models",
-          "published_at": "2026-09-09T19:23:46Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/toy-models-of-superposition",
-          "url": "https://www.anthropic.com/research/toy-models-of-superposition",
-          "published_at": "2026-09-09T19:22:49Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned",
-          "url": "https://www.anthropic.com/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned",
-          "published_at": "2026-09-09T19:22:02Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/language-models-mostly-know-what-they-know",
-          "url": "https://www.anthropic.com/research/language-models-mostly-know-what-they-know",
-          "published_at": "2026-09-09T19:21:02Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/softmax-linear-units",
-          "url": "https://www.anthropic.com/research/softmax-linear-units",
-          "published_at": "2026-09-09T19:19:35Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/scaling-laws-and-interpretability-of-learning-from-repeated-data",
-          "url": "https://www.anthropic.com/research/scaling-laws-and-interpretability-of-learning-from-repeated-data",
-          "published_at": "2026-09-09T19:17:55Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/anthropic-raises-series-b-to-build-safe-reliable-ai",
-          "url": "https://www.anthropic.com/news/anthropic-raises-series-b-to-build-safe-reliable-ai",
-          "published_at": "2026-09-09T19:16:22Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback",
-          "url": "https://www.anthropic.com/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback",
-          "published_at": "2026-09-09T19:15:01Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/in-context-learning-and-induction-heads",
-          "url": "https://www.anthropic.com/research/in-context-learning-and-induction-heads",
-          "published_at": "2026-09-09T19:13:29Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/predictability-and-surprise-in-large-generative-models",
-          "url": "https://www.anthropic.com/research/predictability-and-surprise-in-large-generative-models",
-          "published_at": "2026-09-09T19:11:51Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/a-mathematical-framework-for-transformer-circuits",
-          "url": "https://www.anthropic.com/research/a-mathematical-framework-for-transformer-circuits",
-          "published_at": "2026-09-09T19:10:50Z"
-        }
-      ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "AutoGen releases",
       "adapter": "atom",
       "source_url": "https://github.com/microsoft/autogen/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "AWS Architecture RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/architecture/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "Testing application resilience with Amazon SQS and AWS Fault Injection Service",
-          "url": "https://aws.amazon.com/blogs/architecture/testing-application-resilience-with-amazon-sqs-and-aws-fault-injection-service/",
-          "published_at": "2026-09-09T21:33:59Z"
-        },
-        {
-          "title": "Validating multi-Region DR for Terraform Enterprise with AWS FIS",
-          "url": "https://aws.amazon.com/blogs/architecture/validating-multi-region-dr-for-terraform-enterprise-with-aws-fis/",
-          "published_at": "2026-09-09T21:05:02Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "TimeoutError: The read operation timed out"
     },
     {
       "name": "AWS Database RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/database/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "Building async Python applications with Tortoise ORM and Amazon Aurora DSQL",
-          "url": "https://aws.amazon.com/blogs/database/building-async-python-applications-with-tortoise-orm-and-amazon-aurora-dsql/",
-          "published_at": "2026-09-09T15:27:43Z"
-        },
-        {
-          "title": "From noise to signal: Monitoring Amazon DocumentDB like a pro",
-          "url": "https://aws.amazon.com/blogs/database/from-noise-to-signal-monitoring-amazon-documentdb-like-a-pro/",
-          "published_at": "2026-09-09T15:23:20Z"
-        },
-        {
-          "title": "Getting started with Oracle Database@AWS: A complete onboarding guide",
-          "url": "https://aws.amazon.com/blogs/database/getting-started-with-oracle-databaseaws-a-complete-onboarding-guide/",
-          "published_at": "2026-09-08T16:59:29Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "TimeoutError: The read operation timed out"
     },
     {
       "name": "AWS ML Blog RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "Deploying Qwen3.8-2.4T-A95B on Amazon SageMaker HyperPod with vLLM",
-          "url": "https://aws.amazon.com/blogs/machine-learning/deploying-qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperpod-with-vllm/",
-          "published_at": "2026-09-09T22:26:29Z"
-        },
-        {
-          "title": "ICYMI: What landed for AI builders in August 2026",
-          "url": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-august-2026/",
-          "published_at": "2026-09-09T20:01:03Z"
-        },
-        {
-          "title": "How Heurist Finance built an AI-native investment workbench on Amazon Bedrock AgentCore",
-          "url": "https://aws.amazon.com/blogs/machine-learning/how-heurist-finance-built-an-ai-native-investment-workbench-on-amazon-bedrock-agentcore/",
-          "published_at": "2026-09-09T18:11:12Z"
-        },
-        {
-          "title": "Simplify and support your TorchServe workloads using Ray Serve Deep Learning Containers",
-          "url": "https://aws.amazon.com/blogs/machine-learning/simplify-and-support-your-torchserve-workloads-using-ray-serve-deep-learning-containers/",
-          "published_at": "2026-09-09T15:51:29Z"
-        },
-        {
-          "title": "Automate user-level custom permissions for Amazon Quick",
-          "url": "https://aws.amazon.com/blogs/machine-learning/automate-user-level-custom-permissions-for-amazon-quick/",
-          "published_at": "2026-09-09T15:45:24Z"
-        },
-        {
-          "title": "Take on your most ambitious work with GPT-6 Astra on Amazon Bedrock",
-          "url": "https://aws.amazon.com/blogs/machine-learning/take-on-your-most-ambitious-work-with-gpt-6-astra-on-amazon-bedrock/",
-          "published_at": "2026-09-08T22:06:58Z"
-        },
-        {
-          "title": "Pathway’s brain-inspired architecture development on Amazon SageMaker HyperPod",
-          "url": "https://aws.amazon.com/blogs/machine-learning/pathways-brain-inspired-architecture-development-on-amazon-sagemaker-hyperpod/",
-          "published_at": "2026-09-08T19:12:51Z"
-        },
-        {
-          "title": "Amazon SageMaker Feature Store introduces UpdateRecord for feature-level writes",
-          "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-feature-store-introduces-updaterecord-for-feature-level-writes/",
-          "published_at": "2026-09-08T18:29:15Z"
-        },
-        {
-          "title": "Govern models with MLflow and Amazon SageMaker AI Model Registry sync: Part 2",
-          "url": "https://aws.amazon.com/blogs/machine-learning/govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-2/",
-          "published_at": "2026-09-08T17:03:50Z"
-        },
-        {
-          "title": "Govern models with MLflow and Amazon SageMaker AI Model Registry sync: Part 1",
-          "url": "https://aws.amazon.com/blogs/machine-learning/govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-1/",
-          "published_at": "2026-09-08T17:03:20Z"
-        },
-        {
-          "title": "Automated agent evaluation with Amazon Bedrock AgentCore and GitHub Actions",
-          "url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions/",
-          "published_at": "2026-09-08T16:23:21Z"
-        },
-        {
-          "title": "Benchmarking small LLM inference on SageMaker AI: G7 vs G5 and G6",
-          "url": "https://aws.amazon.com/blogs/machine-learning/benchmarking-small-llm-inference-on-sagemaker-ai-g7-vs-g5-and-g6/",
-          "published_at": "2026-09-08T16:21:57Z"
-        },
-        {
-          "title": "How HPE Zerto built an agentic troubleshooting system with Amazon Bedrock",
-          "url": "https://aws.amazon.com/blogs/machine-learning/how-hpe-zerto-built-an-agentic-troubleshooting-system-with-amazon-bedrock/",
-          "published_at": "2026-09-08T16:15:23Z"
-        },
-        {
-          "title": "How DiDi built intelligent contact center QA with Amazon Bedrock",
-          "url": "https://aws.amazon.com/blogs/machine-learning/how-didi-built-intelligent-contact-center-qa-with-amazon-bedrock/",
-          "published_at": "2026-09-08T16:11:11Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "TimeoutError: The read operation timed out"
     },
     {
       "name": "AWS Networking RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/networking-and-content-delivery/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "How AWS unified its routing control plane to improve network availability and performance",
-          "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/how-aws-unified-its-routing-control-plane-to-improve-network-availability-and-performance/",
-          "published_at": "2026-09-08T16:35:29Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "TimeoutError: The read operation timed out"
     },
     {
       "name": "AWS Public Sector RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "How Forseti and AWS connect domestic violence survivors to services in real time",
-          "url": "https://aws.amazon.com/blogs/publicsector/how-forseti-and-aws-connect-domestic-violence-survivors-to-services-in-real-time/",
-          "published_at": "2026-09-09T16:04:34Z"
-        },
-        {
-          "title": "AI-powered customs classification, duty calculation, and pre-departure collection now available to postal operators across 192 nations",
-          "url": "https://aws.amazon.com/blogs/publicsector/ai-powered-customs-classification-duty-calculation-and-pre-departure-collection-now-available-to-postal-operators-across-192-nations/",
-          "published_at": "2026-09-08T15:18:35Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "TimeoutError: The read operation timed out"
     },
     {
       "name": "AWS Security RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/security/feed/",
-      "status": "candidate_only",
-      "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "The state of AI for security: Measuring what matters most for building trust",
-          "url": "https://aws.amazon.com/blogs/security/the-state-of-ai-for-security-measuring-what-matters-most-for-building-trust/",
-          "published_at": "2026-09-09T19:09:14Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error _ssl.c:999: The handshake operation timed out>"
     },
     {
       "name": "AWS Storage RSS",
@@ -2011,10 +1280,10 @@
       "name": "Browser Use releases",
       "adapter": "atom",
       "source_url": "https://github.com/browser-use/browser-use/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "Claude Code releases",
@@ -2045,140 +1314,37 @@
       "name": "CrewAI releases",
       "adapter": "atom",
       "source_url": "https://github.com/crewAIInc/crewAI/releases.atom",
-      "status": "candidate_only",
-      "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "1.15.21",
-          "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.21",
-          "published_at": "2026-09-09T22:54:19Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "GitHub Copilot Changelog feed",
       "adapter": "rss",
       "source_url": "https://github.blog/changelog/label/copilot/feed/",
-      "status": "candidate_only",
-      "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "Enterprise managed permissions for GitHub Copilot agent operations",
-          "url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations",
-          "published_at": "2026-09-09T20:08:14Z"
-        },
-        {
-          "title": "Enterprise-managed sandbox in Copilot for JetBrains",
-          "url": "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains",
-          "published_at": "2026-09-09T02:43:38Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error _ssl.c:999: The handshake operation timed out>"
     },
     {
       "name": "Google Agent Development Kit releases",
       "adapter": "atom",
       "source_url": "https://github.com/google/adk-python/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "Google Blog sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://blog.google/en-us/sitemap.xml",
-      "status": "candidate_only",
-      "checked_items": 120,
-      "recent_items": [
-        {
-          "title": "https://blog.google/",
-          "url": "https://blog.google/",
-          "published_at": "2026-09-09T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/clean-energy-finland/",
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/clean-energy-finland/",
-          "published_at": "2026-09-09T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/",
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/",
-          "published_at": "2026-09-09T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/models-and-research/google-research/mapping-global-methane-emissions-from-space/",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/mapping-global-methane-emissions-from-space/",
-          "published_at": "2026-09-09T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
-          "published_at": "2026-09-09T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/outreach-and-initiatives/entrepreneurs/google-accelerators-10-years/",
-          "url": "https://blog.google/company-news/outreach-and-initiatives/entrepreneurs/google-accelerators-10-years/",
-          "published_at": "2026-09-09T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/outreach-and-initiatives/civics/midterm-elections-2026/",
-          "url": "https://blog.google/company-news/outreach-and-initiatives/civics/midterm-elections-2026/",
-          "published_at": "2026-09-09T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
-          "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
-          "published_at": "2026-09-09T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/google-one/fall-2026-ai-plan-updates/",
-          "url": "https://blog.google/products-and-platforms/products/google-one/fall-2026-ai-plan-updates/",
-          "published_at": "2026-09-09T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/gemini/ai-navigate-bureaucracy/",
-          "url": "https://blog.google/products-and-platforms/products/gemini/ai-navigate-bureaucracy/",
-          "published_at": "2026-09-09T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/waze/waze-carin-leon/",
-          "url": "https://blog.google/waze/waze-carin-leon/",
-          "published_at": "2026-09-08T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
-          "published_at": "2026-09-08T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/outreach-and-initiatives/grow-with-google/route-66-small-businesses/",
-          "url": "https://blog.google/company-news/outreach-and-initiatives/grow-with-google/route-66-small-businesses/",
-          "published_at": "2026-09-08T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/company-news/outreach-and-initiatives/sustainability/electric-semi-trucks-texas/",
-          "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/electric-semi-trucks-texas/",
-          "published_at": "2026-09-08T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/products-and-platforms/products/education/missouri-state-education-partnership/",
-          "url": "https://blog.google/products-and-platforms/products/education/missouri-state-education-partnership/",
-          "published_at": "2026-09-08T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/models-and-research/google-research/contrail-avoidance-ultra-long-haul-flights/",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/contrail-avoidance-ultra-long-haul-flights/",
-          "published_at": "2026-09-07T00:00:00Z"
-        },
-        {
-          "title": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ai-planet-accelerator-apac/",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ai-planet-accelerator-apac/",
-          "published_at": "2026-09-07T00:00:00Z"
-        }
-      ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "Google Innovation & AI RSS",
@@ -2233,21 +1399,10 @@
       "name": "Hugging Face Blog",
       "adapter": "rss",
       "source_url": "https://huggingface.co/blog/feed.xml",
-      "status": "candidate_only",
-      "checked_items": 40,
-      "recent_items": [
-        {
-          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-          "published_at": "2026-09-09T15:36:24Z"
-        },
-        {
-          "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
-          "published_at": "2026-09-08T14:23:07Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error _ssl.c:999: The handshake operation timed out>"
     },
     {
       "name": "Kimi Code releases",
@@ -2268,135 +1423,73 @@
       "name": "LangGraph releases",
       "adapter": "atom",
       "source_url": "https://github.com/langchain-ai/langgraph/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "LlamaIndex releases",
       "adapter": "atom",
       "source_url": "https://github.com/run-llama/llama_index/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "Microsoft Agent Framework releases",
       "adapter": "atom",
       "source_url": "https://github.com/microsoft/agent-framework/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "Moonshot AI Kimi GitHub releases",
       "adapter": "atom",
       "source_url": "https://github.com/MoonshotAI/Kimi-K3/releases.atom",
-      "status": "checked_no_match",
+      "status": "mechanical_failure",
       "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "NVIDIA NeMo GitHub releases",
       "adapter": "atom",
       "source_url": "https://github.com/NVIDIA/NeMo/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "OpenAI Agents SDK releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/openai-agents-python/releases.atom",
-      "status": "candidate_only",
-      "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "v0.22.2",
-          "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.22.2",
-          "published_at": "2026-09-09T12:36:10Z"
-        },
-        {
-          "title": "v0.22.1",
-          "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.22.1",
-          "published_at": "2026-09-08T09:18:00Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "OpenAI Codex releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/codex/releases.atom",
-      "status": "candidate_only",
-      "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "0.154.0",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0",
-          "published_at": "2026-09-09T22:37:29Z"
-        },
-        {
-          "title": "0.154.0-alpha.11",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.11",
-          "published_at": "2026-09-09T09:17:35Z"
-        },
-        {
-          "title": "0.154.0-alpha.10.2",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.10.2",
-          "published_at": "2026-09-09T07:58:18Z"
-        },
-        {
-          "title": "rust-v0.154.0-alpha.10.1",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.10.1",
-          "published_at": "2026-09-09T06:08:47Z"
-        },
-        {
-          "title": "rust-v0.154.0-alpha.10",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.10",
-          "published_at": "2026-09-09T05:23:29Z"
-        },
-        {
-          "title": "rust-v0.154.0-alpha.9",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.9",
-          "published_at": "2026-09-09T02:21:53Z"
-        },
-        {
-          "title": "rust-v0.154.0-alpha.8.1",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.8.1",
-          "published_at": "2026-09-09T05:06:08Z"
-        },
-        {
-          "title": "0.154.0-alpha.6.1",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.6.1",
-          "published_at": "2026-09-09T11:54:58Z"
-        },
-        {
-          "title": "0.154.0-alpha.8",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.8",
-          "published_at": "2026-09-08T23:19:30Z"
-        },
-        {
-          "title": "0.154.0-alpha.7",
-          "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.7",
-          "published_at": "2026-09-08T17:47:35Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "OpenAI Cookbook releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/openai-cookbook/releases.atom",
-      "status": "checked_no_match",
+      "status": "mechanical_failure",
       "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "OpenAI sitemap",
@@ -2411,90 +1504,28 @@
       "name": "OpenHands releases",
       "adapter": "atom",
       "source_url": "https://github.com/All-Hands-AI/OpenHands/releases.atom",
-      "status": "candidate_only",
-      "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "v1.17.0",
-          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.17.0",
-          "published_at": "2026-09-09T19:31:50Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "Simon Willison atom",
       "adapter": "atom",
       "source_url": "https://simonwillison.net/atom/everything/",
-      "status": "candidate_only",
-      "checked_items": 30,
-      "recent_items": [
-        {
-          "title": "Quoting Calif Research",
-          "url": "https://simonwillison.net/2026/Sep/10/calif-research/",
-          "published_at": "2026-09-10T00:56:41Z"
-        },
-        {
-          "title": ".blend URL Viewer",
-          "url": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
-          "published_at": "2026-09-09T23:58:32Z"
-        },
-        {
-          "title": "Quoting Terence Tao",
-          "url": "https://simonwillison.net/2026/Sep/9/terence-tao/",
-          "published_at": "2026-09-09T00:20:17Z"
-        },
-        {
-          "title": "On the Navier–Stokes Millennium Prize Problem",
-          "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
-          "published_at": "2026-09-08T23:55:12Z"
-        },
-        {
-          "title": "Introducing ChatGPT Images 2.5",
-          "url": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
-          "published_at": "2026-09-08T22:46:33Z"
-        },
-        {
-          "title": "llm 0.35",
-          "url": "https://simonwillison.net/2026/Sep/7/llm/",
-          "published_at": "2026-09-07T23:54:54Z"
-        },
-        {
-          "title": "Creepy crawlies",
-          "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
-          "published_at": "2026-09-07T23:08:58Z"
-        },
-        {
-          "title": "Quoting Jakub Pachocki",
-          "url": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
-          "published_at": "2026-09-07T22:26:25Z"
-        },
-        {
-          "title": "Video compressor",
-          "url": "https://simonwillison.net/2026/Sep/7/video-compressor/",
-          "published_at": "2026-09-07T18:29:07Z"
-        },
-        {
-          "title": "Mercator ↔ Equal Earth",
-          "url": "https://simonwillison.net/2026/Sep/7/equal-earth/",
-          "published_at": "2026-09-07T16:24:16Z"
-        },
-        {
-          "title": "Research acceleration: The view inside OpenAI",
-          "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
-          "published_at": "2026-09-06T23:57:40Z"
-        }
-      ],
-      "note": ""
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "SWE-agent releases",
       "adapter": "atom",
       "source_url": "https://github.com/SWE-agent/SWE-agent/releases.atom",
-      "status": "checked_no_match",
-      "checked_items": 10,
+      "status": "mechanical_failure",
+      "checked_items": 0,
       "recent_items": [],
-      "note": ""
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     }
   ],
   "content_topics": {
@@ -2502,7 +1533,7 @@
     "platform_variants": 21
   },
   "notes": [
-    "199 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "10 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
