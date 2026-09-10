@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-10T10:01:38+08:00",
+  "run_at": "2026-09-10T12:00:41+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-07T02:01:38+08:00",
-    "end": "2026-09-10T10:01:38+08:00",
+    "start": "2026-09-07T04:00:41+08:00",
+    "end": "2026-09-10T12:00:41+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 308,
-  "unique_candidates": 276,
+  "raw_candidates": 199,
+  "unique_candidates": 195,
   "editorial_shortlist": 0,
   "previous_count": 7,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 308,
+  "unreviewed_candidate_count": 199,
   "total_count": 7,
   "selected": 7,
   "lane_counts": {
@@ -35,27 +35,27 @@
   "executive_model_longform": 1,
   "practitioner_statements": 1,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 43,
+  "collection_errors": 10,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 4,
+      "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 39,
-      "not_checked": 68
+      "mechanical_failure": 3,
+      "not_checked": 101
     },
     "channel_counts": {
       "frontier_model_official": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 0,
+        "access_blocked": 3,
         "auth_required": 0,
-        "mechanical_failure": 27,
-        "not_checked": 0
+        "mechanical_failure": 0,
+        "not_checked": 24
       },
       "china_frontier_models": {
         "selected": 0,
@@ -63,8 +63,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 5,
-        "not_checked": 9
+        "mechanical_failure": 1,
+        "not_checked": 13
       },
       "head_ai_product_release_notes": {
         "selected": 0,
@@ -72,8 +72,8 @@
         "checked_no_match": 0,
         "access_blocked": 2,
         "auth_required": 0,
-        "mechanical_failure": 4,
-        "not_checked": 10
+        "mechanical_failure": 0,
+        "not_checked": 14
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 8
+        "mechanical_failure": 0,
+        "not_checked": 10
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -99,8 +99,8 @@
         "checked_no_match": 0,
         "access_blocked": 2,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 14
+        "mechanical_failure": 2,
+        "not_checked": 13
       },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
@@ -357,10 +357,9 @@
         "name": "NVIDIA Investor Relations",
         "type": "company_ir",
         "url": "https://investor.nvidia.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://investor.nvidia.com/home/default.aspx",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "ai_macro_primary",
@@ -430,9 +429,9 @@
         "name": "DeepSeek GitHub",
         "type": "github_org",
         "url": "https://github.com/deepseek-ai",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -448,9 +447,9 @@
         "name": "DeepSeek News",
         "type": "official_site",
         "url": "https://www.deepseek.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -484,9 +483,9 @@
         "name": "Moonshot AI GitHub",
         "type": "github_org",
         "url": "https://github.com/MoonshotAI",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -511,9 +510,9 @@
         "name": "Qwen GitHub",
         "type": "github_org",
         "url": "https://github.com/QwenLM",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -548,243 +547,251 @@
         "name": "Amazon Science AI",
         "type": "official_research",
         "url": "https://www.amazon.science/tag/artificial-intelligence",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "AMD Newsroom",
         "type": "official_newsroom",
         "url": "https://newsroom.amd.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Anthropic API Release Notes",
         "type": "developer_changelog",
         "url": "https://docs.anthropic.com/en/release-notes/api",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Anthropic News",
         "type": "official_news",
         "url": "https://www.anthropic.com/news",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Anthropic Research",
         "type": "official_research",
         "url": "https://www.anthropic.com/research",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Apple Machine Learning Research",
         "type": "official_research",
         "url": "https://machinelearning.apple.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[Errno 54] Connection reset by peer"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "AWS Machine Learning Blog",
         "type": "official_technical_blog",
         "url": "https://aws.amazon.com/blogs/machine-learning/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "AWS What's New AI/ML",
         "type": "cloud_release_notes",
         "url": "https://aws.amazon.com/about-aws/whats-new/machine-learning/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://aws.amazon.com/about-aws/",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Azure AI Foundry What's New",
         "type": "cloud_release_notes",
         "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/whats-new-azure-ai-foundry",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/whats-new-foundry",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Claude Release Notes",
         "type": "product_release_notes",
         "url": "https://support.anthropic.com/en/articles/12138966-release-notes",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[Errno 54] Connection reset by peer"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://support.claude.com/en/articles/12138966-release-notes",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Gemini API Changelog",
         "type": "developer_changelog",
         "url": "https://ai.google.dev/gemini-api/docs/changelog",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Google DeepMind Blog",
         "type": "official_research",
         "url": "https://deepmind.google/discover/blog/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://deepmind.google/blog/",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Google Innovation & AI",
         "type": "official_news",
         "url": "https://blog.google/innovation-and-ai/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Meta AI Blog",
         "type": "official_research",
         "url": "https://ai.meta.com/blog/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Meta Llama GitHub",
         "type": "github_org",
         "url": "https://github.com/meta-llama",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[Errno 54] Connection reset by peer"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Meta Newsroom AI",
         "type": "official_newsroom",
         "url": "https://about.fb.com/news/tag/ai/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "Microsoft AI Blog",
         "type": "official_news",
         "url": "https://microsoft.ai/news/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[Errno 54] Connection reset by peer"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://microsoft.ai/blog/",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "NVIDIA AI Developer Blog",
         "type": "official_technical_blog",
         "url": "https://developer.nvidia.com/blog/category/generative-ai/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[Errno 54] Connection reset by peer"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "NVIDIA NeMo GitHub",
         "type": "github_releases",
         "url": "https://github.com/NVIDIA/NeMo",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://github.com/NVIDIA-NeMo/Speech",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "NVIDIA Newsroom",
         "type": "official_newsroom",
         "url": "https://nvidianews.nvidia.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI API Changelog",
         "type": "developer_changelog",
         "url": "https://platform.openai.com/docs/changelog",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://developers.openai.com/api/docs/changelog",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI Help Center Release Notes",
         "type": "product_release_notes",
         "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI News",
         "type": "official_news",
         "url": "https://openai.com/news/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[Errno 54] Connection reset by peer"
+        "status": "access_blocked",
+        "http_code": "403",
+        "note": "curl 403; registry fallback requires browser or official article/index alternative, so this is not treated as no match."
       },
       {
         "channel": "frontier_model_official",
         "name": "OpenAI Research",
         "type": "official_research",
         "url": "https://openai.com/research/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "frontier_model_official",
         "name": "Vertex AI Generative AI Release Notes",
         "type": "cloud_release_notes",
         "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "xAI Docs",
         "type": "developer_docs",
         "url": "https://docs.x.ai/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://docs.x.ai/overview",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
         "name": "xAI News",
         "type": "official_news",
         "url": "https://x.ai/news",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -845,9 +852,9 @@
         "name": "GitHub Changelog Copilot",
         "type": "product_changelog",
         "url": "https://github.blog/changelog/label/copilot/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -881,18 +888,18 @@
         "name": "Microsoft 365 Roadmap",
         "type": "product_roadmap",
         "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
         "name": "Microsoft Copilot Blog",
         "type": "official_product_blog",
         "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -926,9 +933,10 @@
         "name": "Slack Release Notes",
         "type": "product_release_notes",
         "url": "https://slack.com/intl/en-gb/release-notes",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://slack.com/intl/en-gb/release-notes/mac",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
@@ -1052,18 +1060,18 @@
         "name": "arXiv cs.CL",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "mechanical_failure",
-        "http_code": "429",
-        "note": "rate limited"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
@@ -2394,556 +2402,10 @@
       "name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "status": "candidate_only",
-      "checked_items": 120,
-      "recent_items": [
-        {
-          "title": "https://openai.com/index/teen-development-research-grants/",
-          "url": "https://openai.com/index/teen-development-research-grants/",
-          "published_at": "2026-09-10T01:54:29.744000Z"
-        },
-        {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-10T01:53:01.870000Z"
-        },
-        {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-10T01:53:01.870000Z"
-        },
-        {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-10T01:53:01.870000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-6-astra-next-generation-work/",
-          "url": "https://openai.com/index/gpt-6-astra-next-generation-work/",
-          "published_at": "2026-09-10T01:50:02.220000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-6-astra/",
-          "url": "https://openai.com/index/gpt-6-astra/",
-          "published_at": "2026-09-10T01:49:41.399000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-6-astra/",
-          "url": "https://openai.com/index/gpt-6-astra/",
-          "published_at": "2026-09-10T01:49:41.399000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-6-astra/",
-          "url": "https://openai.com/index/gpt-6-astra/",
-          "published_at": "2026-09-10T01:49:41.399000Z"
-        },
-        {
-          "title": "https://openai.com/index/election-safeguards-2026/",
-          "url": "https://openai.com/index/election-safeguards-2026/",
-          "published_at": "2026-09-10T01:35:44.984000Z"
-        },
-        {
-          "title": "https://openai.com/index/codex-quantum-computing-experiments/",
-          "url": "https://openai.com/index/codex-quantum-computing-experiments/",
-          "published_at": "2026-09-10T01:26:47.248000Z"
-        },
-        {
-          "title": "https://openai.com/index/an-alien-mind/",
-          "url": "https://openai.com/index/an-alien-mind/",
-          "published_at": "2026-09-10T00:39:05.524000Z"
-        },
-        {
-          "title": "https://openai.com/index/an-alien-mind/",
-          "url": "https://openai.com/index/an-alien-mind/",
-          "published_at": "2026-09-10T00:39:05.524000Z"
-        },
-        {
-          "title": "https://openai.com/index/ai-policy-window/",
-          "url": "https://openai.com/index/ai-policy-window/",
-          "published_at": "2026-09-09T23:41:25.781000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-          "published_at": "2026-09-09T23:23:54.405000Z"
-        },
-        {
-          "title": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
-          "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
-          "published_at": "2026-09-09T23:22:41.432000Z"
-        },
-        {
-          "title": "https://openai.com/index/1password/",
-          "url": "https://openai.com/index/1password/",
-          "published_at": "2026-09-09T22:56:01.683000Z"
-        },
-        {
-          "title": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
-          "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
-          "published_at": "2026-09-09T22:29:02.343000Z"
-        },
-        {
-          "title": "https://openai.com/index/playco-game-prototyping-with-astra/",
-          "url": "https://openai.com/index/playco-game-prototyping-with-astra/",
-          "published_at": "2026-09-09T21:59:18.969000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-chatgpt-images-2-5/",
-          "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
-          "published_at": "2026-09-09T21:51:01.639000Z"
-        },
-        {
-          "title": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
-          "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
-          "published_at": "2026-09-09T21:43:37.910000Z"
-        },
-        {
-          "title": "https://openai.com/index/atv-big-air-tour/",
-          "url": "https://openai.com/index/atv-big-air-tour/",
-          "published_at": "2026-09-09T21:17:53.117000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-chatgpt-images-2-0/",
-          "url": "https://openai.com/index/introducing-chatgpt-images-2-0/",
-          "published_at": "2026-09-09T20:53:14.657000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-chatgpt-images-2-0/",
-          "url": "https://openai.com/index/introducing-chatgpt-images-2-0/",
-          "published_at": "2026-09-09T20:53:14.657000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-chatgpt-images-2-0/",
-          "url": "https://openai.com/index/introducing-chatgpt-images-2-0/",
-          "published_at": "2026-09-09T20:53:14.657000Z"
-        },
-        {
-          "title": "https://openai.com/index/legora-financial-statement-review-with-astra/",
-          "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
-          "published_at": "2026-09-09T19:56:02.492000Z"
-        },
-        {
-          "title": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-          "published_at": "2026-09-09T18:14:25.731000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-6/",
-          "url": "https://openai.com/index/gpt-5-6/",
-          "published_at": "2026-09-09T18:14:19.881000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-6/",
-          "url": "https://openai.com/index/gpt-5-6/",
-          "published_at": "2026-09-09T18:14:19.881000Z"
-        },
-        {
-          "title": "https://openai.com/index/builders-guide-to-gpt-5-6/",
-          "url": "https://openai.com/index/builders-guide-to-gpt-5-6/",
-          "published_at": "2026-09-09T18:14:17.896000Z"
-        },
-        {
-          "title": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-          "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety/",
-          "published_at": "2026-09-09T17:20:04.756000Z"
-        },
-        {
-          "title": "https://openai.com/index/path-to-astra/",
-          "url": "https://openai.com/index/path-to-astra/",
-          "published_at": "2026-09-09T17:15:02.056000Z"
-        },
-        {
-          "title": "https://openai.com/index/path-to-astra/",
-          "url": "https://openai.com/index/path-to-astra/",
-          "published_at": "2026-09-09T17:15:02.056000Z"
-        },
-        {
-          "title": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms/",
-          "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms/",
-          "published_at": "2026-09-09T17:00:25.471000Z"
-        },
-        {
-          "title": "https://openai.com/index/polimill/",
-          "url": "https://openai.com/index/polimill/",
-          "published_at": "2026-09-09T16:42:00.747000Z"
-        },
-        {
-          "title": "https://openai.com/index/growing-atv-big-air-tour/",
-          "url": "https://openai.com/index/growing-atv-big-air-tour/",
-          "published_at": "2026-09-09T16:01:36.727000Z"
-        },
-        {
-          "title": "https://openai.com/index/two-blind-brothers/",
-          "url": "https://openai.com/index/two-blind-brothers/",
-          "published_at": "2026-09-09T16:01:36.545000Z"
-        },
-        {
-          "title": "https://openai.com/index/accelerating-antibiotic-discovery/",
-          "url": "https://openai.com/index/accelerating-antibiotic-discovery/",
-          "published_at": "2026-09-09T16:01:36.099000Z"
-        },
-        {
-          "title": "https://openai.com/index/ai-native-company-workflows/",
-          "url": "https://openai.com/index/ai-native-company-workflows/",
-          "published_at": "2026-09-09T15:16:25.867000Z"
-        },
-        {
-          "title": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-          "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-          "published_at": "2026-09-09T14:49:03.383000Z"
-        },
-        {
-          "title": "https://openai.com/index/safety-overview-gpt-6-astra/",
-          "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
-          "published_at": "2026-09-09T13:51:26.374000Z"
-        },
-        {
-          "title": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-          "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
-          "published_at": "2026-09-09T13:28:37.699000Z"
-        },
-        {
-          "title": "https://openai.com/index/gilbert-tobin/",
-          "url": "https://openai.com/index/gilbert-tobin/",
-          "published_at": "2026-09-09T11:51:05.357000Z"
-        },
-        {
-          "title": "https://openai.com/index/learning-never-stops/",
-          "url": "https://openai.com/index/learning-never-stops/",
-          "published_at": "2026-09-09T11:04:57.520000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/",
-          "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/",
-          "published_at": "2026-09-09T03:08:23.271000Z"
-        },
-        {
-          "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-          "published_at": "2026-09-09T03:08:23.106000Z"
-        },
-        {
-          "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-          "published_at": "2026-09-09T03:08:23.106000Z"
-        },
-        {
-          "title": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands/",
-          "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands/",
-          "published_at": "2026-09-09T03:08:22.852000Z"
-        },
-        {
-          "title": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands/",
-          "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands/",
-          "published_at": "2026-09-09T03:08:22.852000Z"
-        },
-        {
-          "title": "https://openai.com/index/accelerating-cyber-defense-ecosystem/",
-          "url": "https://openai.com/index/accelerating-cyber-defense-ecosystem/",
-          "published_at": "2026-09-09T03:08:22.797000Z"
-        },
-        {
-          "title": "https://openai.com/index/accelerating-cyber-defense-ecosystem/",
-          "url": "https://openai.com/index/accelerating-cyber-defense-ecosystem/",
-          "published_at": "2026-09-09T03:08:22.797000Z"
-        },
-        {
-          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "published_at": "2026-09-09T03:08:21.735000Z"
-        },
-        {
-          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "published_at": "2026-09-09T03:08:21.735000Z"
-        },
-        {
-          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "published_at": "2026-09-09T03:08:21.735000Z"
-        },
-        {
-          "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-          "published_at": "2026-09-09T03:08:21.735000Z"
-        },
-        {
-          "title": "https://openai.com/index/designing-agents-to-resist-prompt-injection/",
-          "url": "https://openai.com/index/designing-agents-to-resist-prompt-injection/",
-          "published_at": "2026-09-09T03:08:21.395000Z"
-        },
-        {
-          "title": "https://openai.com/index/safety-bug-bounty/",
-          "url": "https://openai.com/index/safety-bug-bounty/",
-          "published_at": "2026-09-09T03:08:21.079000Z"
-        },
-        {
-          "title": "https://openai.com/index/safety-bug-bounty/",
-          "url": "https://openai.com/index/safety-bug-bounty/",
-          "published_at": "2026-09-09T03:08:21.079000Z"
-        },
-        {
-          "title": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
-          "url": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
-          "published_at": "2026-09-09T03:08:20.941000Z"
-        },
-        {
-          "title": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
-          "url": "https://openai.com/index/why-codex-security-doesnt-include-sast/",
-          "published_at": "2026-09-09T03:08:20.941000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-cybersecurity-grant-program/",
-          "url": "https://openai.com/index/openai-cybersecurity-grant-program/",
-          "published_at": "2026-09-09T03:08:20.691000Z"
-        },
-        {
-          "title": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-          "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-          "published_at": "2026-09-09T03:08:20.690000Z"
-        },
-        {
-          "title": "https://openai.com/index/strengthening-cyber-resilience/",
-          "url": "https://openai.com/index/strengthening-cyber-resilience/",
-          "published_at": "2026-09-09T03:08:20.620000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/",
-          "url": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/",
-          "published_at": "2026-09-09T03:08:20.217000Z"
-        },
-        {
-          "title": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/",
-          "url": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/",
-          "published_at": "2026-09-09T03:08:20.217000Z"
-        },
-        {
-          "title": "https://openai.com/index/codex-security-now-in-research-preview/",
-          "url": "https://openai.com/index/codex-security-now-in-research-preview/",
-          "published_at": "2026-09-09T03:08:20.160000Z"
-        },
-        {
-          "title": "https://openai.com/index/codex-security-now-in-research-preview/",
-          "url": "https://openai.com/index/codex-security-now-in-research-preview/",
-          "published_at": "2026-09-09T03:08:20.160000Z"
-        },
-        {
-          "title": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
-          "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
-          "published_at": "2026-09-09T03:08:19.911000Z"
-        },
-        {
-          "title": "https://openai.com/index/prompt-injections/",
-          "url": "https://openai.com/index/prompt-injections/",
-          "published_at": "2026-09-09T03:08:19.885000Z"
-        },
-        {
-          "title": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
-          "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
-          "published_at": "2026-09-09T03:08:19.798000Z"
-        },
-        {
-          "title": "https://openai.com/index/patch-the-planet/",
-          "url": "https://openai.com/index/patch-the-planet/",
-          "published_at": "2026-09-09T03:08:19.305000Z"
-        },
-        {
-          "title": "https://openai.com/index/the-defenders-window/",
-          "url": "https://openai.com/index/the-defenders-window/",
-          "published_at": "2026-09-09T03:08:18.579000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-aardvark/",
-          "url": "https://openai.com/index/introducing-aardvark/",
-          "published_at": "2026-09-09T03:08:17.978000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-aardvark/",
-          "url": "https://openai.com/index/introducing-aardvark/",
-          "published_at": "2026-09-09T03:08:17.978000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-aardvark/",
-          "url": "https://openai.com/index/introducing-aardvark/",
-          "published_at": "2026-09-09T03:08:17.978000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-aardvark/",
-          "url": "https://openai.com/index/introducing-aardvark/",
-          "published_at": "2026-09-09T03:08:17.978000Z"
-        },
-        {
-          "title": "https://openai.com/index/trusted-access-for-cyber/",
-          "url": "https://openai.com/index/trusted-access-for-cyber/",
-          "published_at": "2026-09-09T03:08:17.573000Z"
-        },
-        {
-          "title": "https://openai.com/index/trusted-access-for-cyber/",
-          "url": "https://openai.com/index/trusted-access-for-cyber/",
-          "published_at": "2026-09-09T03:08:17.573000Z"
-        },
-        {
-          "title": "https://openai.com/index/daybreak-for-frontline-defenders/",
-          "url": "https://openai.com/index/daybreak-for-frontline-defenders/",
-          "published_at": "2026-09-09T03:08:15.719000Z"
-        },
-        {
-          "title": "https://openai.com/index/chip-ganassi-racing/",
-          "url": "https://openai.com/index/chip-ganassi-racing/",
-          "published_at": "2026-09-08T22:42:52.947000Z"
-        },
-        {
-          "title": "https://openai.com/index/the-work-now-within-reach/",
-          "url": "https://openai.com/index/the-work-now-within-reach/",
-          "published_at": "2026-09-08T20:48:41.432000Z"
-        },
-        {
-          "title": "https://openai.com/index/small-business-stories/",
-          "url": "https://openai.com/index/small-business-stories/",
-          "published_at": "2026-09-08T20:26:10.630000Z"
-        },
-        {
-          "title": "https://openai.com/index/sora-vallee-duhamel/",
-          "url": "https://openai.com/index/sora-vallee-duhamel/",
-          "published_at": "2026-09-08T20:26:10.180000Z"
-        },
-        {
-          "title": "https://openai.com/index/sora-vallee-duhamel/",
-          "url": "https://openai.com/index/sora-vallee-duhamel/",
-          "published_at": "2026-09-08T20:26:10.180000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-cursor/",
-          "url": "https://openai.com/index/gpt-5-cursor/",
-          "published_at": "2026-09-08T20:26:09.603000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-first-look/",
-          "url": "https://openai.com/index/gpt-5-first-look/",
-          "published_at": "2026-09-08T20:26:09.270000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-medical-research/",
-          "url": "https://openai.com/index/gpt-5-medical-research/",
-          "published_at": "2026-09-08T20:26:09.105000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-amgen/",
-          "url": "https://openai.com/index/gpt-5-amgen/",
-          "published_at": "2026-09-08T20:26:08.712000Z"
-        },
-        {
-          "title": "https://openai.com/index/o1-coding/",
-          "url": "https://openai.com/index/o1-coding/",
-          "published_at": "2026-09-08T20:26:08.495000Z"
-        },
-        {
-          "title": "https://openai.com/index/navigating-health-questions/",
-          "url": "https://openai.com/index/navigating-health-questions/",
-          "published_at": "2026-09-08T20:26:08.056000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-creative-writing/",
-          "url": "https://openai.com/index/gpt-5-creative-writing/",
-          "published_at": "2026-09-08T20:26:07.869000Z"
-        },
-        {
-          "title": "https://openai.com/index/fishing-for-first-timers/",
-          "url": "https://openai.com/index/fishing-for-first-timers/",
-          "published_at": "2026-09-08T20:26:07.376000Z"
-        },
-        {
-          "title": "https://openai.com/index/gpt-5-coding-design/",
-          "url": "https://openai.com/index/gpt-5-coding-design/",
-          "published_at": "2026-09-08T20:26:07.372000Z"
-        },
-        {
-          "title": "https://openai.com/index/cycling-across-antarctica/",
-          "url": "https://openai.com/index/cycling-across-antarctica/",
-          "published_at": "2026-09-08T20:26:06.367000Z"
-        },
-        {
-          "title": "https://openai.com/index/ten-tiny-canvases/",
-          "url": "https://openai.com/index/ten-tiny-canvases/",
-          "published_at": "2026-09-08T20:26:06.361000Z"
-        },
-        {
-          "title": "https://openai.com/index/my-dog-the-math-tutor/",
-          "url": "https://openai.com/index/my-dog-the-math-tutor/",
-          "published_at": "2026-09-08T20:26:06.270000Z"
-        },
-        {
-          "title": "https://openai.com/index/the-met-museum/",
-          "url": "https://openai.com/index/the-met-museum/",
-          "published_at": "2026-09-08T20:26:06.184000Z"
-        },
-        {
-          "title": "https://openai.com/index/creating-new-simulations-black-holes/",
-          "url": "https://openai.com/index/creating-new-simulations-black-holes/",
-          "published_at": "2026-09-08T20:26:05.464000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-rosalind/",
-          "url": "https://openai.com/index/introducing-gpt-rosalind/",
-          "published_at": "2026-09-08T20:07:46.468000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-rosalind/",
-          "url": "https://openai.com/index/introducing-gpt-rosalind/",
-          "published_at": "2026-09-08T20:07:46.468000Z"
-        },
-        {
-          "title": "https://openai.com/index/frontier-builders/",
-          "url": "https://openai.com/index/frontier-builders/",
-          "published_at": "2026-09-08T19:05:16.571000Z"
-        },
-        {
-          "title": "https://openai.com/index/navier-stokes-solution/",
-          "url": "https://openai.com/index/navier-stokes-solution/",
-          "published_at": "2026-09-08T18:13:59.989000Z"
-        },
-        {
-          "title": "https://openai.com/index/navier-stokes-solution/",
-          "url": "https://openai.com/index/navier-stokes-solution/",
-          "published_at": "2026-09-08T18:13:59.989000Z"
-        },
-        {
-          "title": "https://openai.com/index/bug-bounty-program/",
-          "url": "https://openai.com/index/bug-bounty-program/",
-          "published_at": "2026-09-08T12:48:46.621000Z"
-        },
-        {
-          "title": "https://openai.com/index/empowering-defenders-through-our-cybersecurity-grant-program/",
-          "url": "https://openai.com/index/empowering-defenders-through-our-cybersecurity-grant-program/",
-          "published_at": "2026-09-08T12:48:43.667000Z"
-        },
-        {
-          "title": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
-          "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
-          "published_at": "2026-09-08T08:52:55.909000Z"
-        },
-        {
-          "title": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
-          "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
-          "published_at": "2026-09-08T08:52:55.909000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "published_at": "2026-09-08T00:17:23.237000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
-          "published_at": "2026-09-08T00:17:23.237000Z"
-        },
-        {
-          "title": "https://openai.com/index/openai-academy-for-news-organizations/",
-          "url": "https://openai.com/index/openai-academy-for-news-organizations/",
-          "published_at": "2026-09-07T21:17:15.441000Z"
-        }
-      ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "status": "mechanical_failure",
+      "checked_items": 0,
+      "recent_items": [],
+      "note": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
     },
     {
       "name": "OpenHands releases",
@@ -3040,7 +2502,7 @@
     "platform_variants": 21
   },
   "notes": [
-    "308 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "199 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
