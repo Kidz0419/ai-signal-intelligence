@@ -1,5 +1,14 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "title": "Google Agent Development Kit Python v2.9.0",
+      "url": "https://github.com/google/adk-python/releases/tag/v2.9.0",
+      "publisher": "Google / GitHub",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-11T16:11:31+08:00"
+    }
+  ]
 }

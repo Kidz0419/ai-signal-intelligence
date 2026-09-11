@@ -1,6 +1,6 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-11T16:00:07+08:00",
+  "run_at": "2026-09-11T16:11:31+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
@@ -12,86 +12,50 @@
   "registered_sources": 111,
   "raw_candidates": 340,
   "unique_candidates": 300,
-  "editorial_shortlist": 0,
+  "editorial_shortlist": 10,
   "previous_count": 0,
-  "new_count": 0,
+  "new_count": 1,
   "updated_count": 0,
-  "excluded_count": 0,
-  "unreviewed_candidate_count": 340,
-  "total_count": 0,
-  "selected": 0,
+  "excluded_count": 9,
+  "unreviewed_candidate_count": 274,
+  "total_count": 1,
+  "selected": 1,
   "lane_counts": {
     "model": 0,
-    "agent_architecture": 0,
+    "agent_architecture": 1,
     "ai_product": 0,
     "ai_macro": 0
   },
   "priority_counts": {
     "P0": 0,
-    "P1": 0,
+    "P1": 1,
     "P2": 0,
     "P3": 0
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 0,
+  "cross_day_duplicates_removed": 1,
   "collection_errors": 24,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
-      "selected": 0,
+      "selected": 1,
       "candidate_only": 0,
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
       "mechanical_failure": 17,
-      "not_checked": 87
+      "not_checked": 86
     },
     "channel_counts": {
-      "frontier_model_official": {
-        "selected": 0,
-        "candidate_only": 0,
-        "checked_no_match": 0,
-        "access_blocked": 3,
-        "auth_required": 0,
-        "mechanical_failure": 5,
-        "not_checked": 19
-      },
-      "china_frontier_models": {
-        "selected": 0,
-        "candidate_only": 0,
-        "checked_no_match": 0,
-        "access_blocked": 0,
-        "auth_required": 0,
-        "mechanical_failure": 3,
-        "not_checked": 11
-      },
-      "head_ai_product_release_notes": {
-        "selected": 0,
-        "candidate_only": 0,
-        "checked_no_match": 0,
-        "access_blocked": 2,
-        "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 13
-      },
       "agent_runtime_and_open_source": {
-        "selected": 0,
+        "selected": 1,
         "candidate_only": 0,
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
         "mechanical_failure": 0,
-        "not_checked": 16
-      },
-      "research_and_evaluation": {
-        "selected": 0,
-        "candidate_only": 0,
-        "checked_no_match": 0,
-        "access_blocked": 0,
-        "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 8
+        "not_checked": 15
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -102,6 +66,33 @@
         "mechanical_failure": 5,
         "not_checked": 10
       },
+      "china_frontier_models": {
+        "selected": 0,
+        "candidate_only": 0,
+        "checked_no_match": 0,
+        "access_blocked": 0,
+        "auth_required": 0,
+        "mechanical_failure": 3,
+        "not_checked": 11
+      },
+      "frontier_model_official": {
+        "selected": 0,
+        "candidate_only": 0,
+        "checked_no_match": 0,
+        "access_blocked": 3,
+        "auth_required": 0,
+        "mechanical_failure": 5,
+        "not_checked": 19
+      },
+      "head_ai_product_release_notes": {
+        "selected": 0,
+        "candidate_only": 0,
+        "checked_no_match": 0,
+        "access_blocked": 2,
+        "auth_required": 0,
+        "mechanical_failure": 1,
+        "not_checked": 13
+      },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
         "candidate_only": 0,
@@ -110,6 +101,15 @@
         "auth_required": 0,
         "mechanical_failure": 1,
         "not_checked": 10
+      },
+      "research_and_evaluation": {
+        "selected": 0,
+        "candidate_only": 0,
+        "checked_no_match": 0,
+        "access_blocked": 0,
+        "auth_required": 0,
+        "mechanical_failure": 2,
+        "not_checked": 8
       }
     },
     "records": [
@@ -173,9 +173,10 @@
         "name": "Google Agent Development Kit",
         "type": "github_releases",
         "url": "https://github.com/google/adk-python",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "selected",
+        "http_code": "200",
+        "note": "v2.9.0 release timestamp and body verified through the official GitHub Release page/API",
+        "final_url": "https://github.com/google/adk-python/releases/tag/v2.9.0"
       },
       {
         "channel": "agent_runtime_and_open_source",
@@ -2125,7 +2126,7 @@
       "name": "Google Agent Development Kit releases",
       "adapter": "atom",
       "source_url": "https://github.com/google/adk-python/releases.atom",
-      "status": "candidate_only",
+      "status": "selected",
       "checked_items": 10,
       "recent_items": [
         {
@@ -2134,7 +2135,7 @@
           "published_at": "2026-09-10T21:22:43Z"
         }
       ],
-      "note": ""
+      "note": "v2.9.0 official release body and timestamp verified; one formal signal selected"
     },
     {
       "name": "Google Blog sitemap",
@@ -2448,7 +2449,7 @@
       "name": "OpenAI Codex releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/codex/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
       "recent_items": [
         {
@@ -2502,7 +2503,7 @@
           "published_at": "2026-09-10T20:19:50Z"
         }
       ],
-      "note": ""
+      "note": "the two cross-run new alpha tags had no substantive release body"
     },
     {
       "name": "OpenAI Cookbook releases",
@@ -3121,7 +3122,7 @@
           "published_at": "2026-09-10T21:13:39.799000Z"
         }
       ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "note": "new sitemap hits were body-reviewed; missing first-party dates, old page dates, and duplicate Astra pages were not promoted"
     },
     {
       "name": "OpenHands releases",
@@ -3199,13 +3200,73 @@
     }
   ],
   "content_topics": {
-    "topic_count": 0,
-    "platform_variants": 0
+    "topic_count": 1,
+    "platform_variants": 3
   },
   "notes": [
-    "340 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
-    "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
-    "Static pages were not promoted as fresh based on collected_at alone.",
-    "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
+    "Only the 10 cross-run new candidates were reviewed; the 274-item standing queue was not rescanned.",
+    "One official Google ADK release passed the body, date, relevance, and event-deduplication gates.",
+    "OpenAI sitemap lastmod values were kept as discovery metadata and were not used as publication dates.",
+    "The Astra pages were not turned into duplicate cards; one remains candidate_only pending a first-party publication date."
+  ],
+  "candidate_queue_count": 274,
+  "new_in_run_count": 10,
+  "candidate_reviews": [
+    {
+      "url": "https://github.com/google/adk-python/releases/tag/v2.9.0",
+      "decision": "selected",
+      "signal_id": "2026-09-10-google-adk-python-2-9-resilience-resume",
+      "published_at": "2026-09-10T21:22:43Z",
+      "reason": "official release body confirms material agent-runtime changes and breaking resume semantics"
+    },
+    {
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.3.7",
+      "decision": "exclude",
+      "reason": "official release contains only the version label; no substantive body or workflow delta"
+    },
+    {
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.3.6",
+      "decision": "exclude",
+      "reason": "release body is empty and the tag-specific GitHub Release API returned 404"
+    },
+    {
+      "url": "https://openai.com/index/election-safeguards-2026",
+      "decision": "candidate_only",
+      "reason": "official body was retrieved but first-party datePublished was not recovered; sitemap lastmod is discovery-only"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "decision": "candidate_only",
+      "reason": "same Astra launch theme as an existing event; official body adds controls but first-party datePublished was not recovered"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra",
+      "decision": "duplicate_existing",
+      "reason": "same release and governance event already stored as 2026-09-03-openai-gpt6-astra-broad-release-monitorability"
+    },
+    {
+      "url": "https://openai.com/index/cred-swamy-seetharaman",
+      "decision": "exclude_outside_window",
+      "published_at": "2025-11-05",
+      "reason": "old customer story surfaced by sitemap lastmod"
+    },
+    {
+      "url": "https://openai.com/index/model-ml-chaz-englander",
+      "decision": "exclude_outside_window",
+      "published_at": "2025-07-23",
+      "reason": "old customer story surfaced by sitemap lastmod"
+    },
+    {
+      "url": "https://openai.com/index/john-deere-justin-rose",
+      "decision": "exclude_outside_window",
+      "published_at": "2025-05-06",
+      "reason": "old customer story surfaced by sitemap lastmod"
+    },
+    {
+      "url": "https://openai.com/index/speak-connor-zwick",
+      "decision": "exclude_outside_window",
+      "published_at": "2025-04-22",
+      "reason": "old customer story surfaced by sitemap lastmod"
+    }
   ]
 }

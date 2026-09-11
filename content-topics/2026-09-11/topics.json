@@ -2,11 +2,78 @@
   "schema_version": 1,
   "report_date": "2026-09-11",
   "timezone": "Asia/Shanghai",
-  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。",
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。自动流程只生成 candidate，不自动发布。",
   "scope_label_cn": "当日增量 · 2026-09-11",
   "source_scope": {
     "type": "daily",
     "date": "2026-09-11"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-11-google-adk-resume-idempotency",
+      "status": "candidate",
+      "timeliness": "today",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-10-google-adk-python-2-9-resilience-resume"
+      ],
+      "working_title_cn": "Agent 会自动恢复，不代表业务动作不会执行两次",
+      "core_tension_cn": "模型 failover 提高了可用性，但失败节点重跑会把幂等、补偿和审批变成产品级问题。",
+      "why_now_cn": "Google ADK 2.9.0 同时发布自动模型故障转移和新的工作流恢复语义，并明确提醒外部副作用可能重复执行。",
+      "target_audience_cn": [
+        "Agent 产品经理",
+        "Agent 平台工程师",
+        "企业自动化负责人"
+      ],
+      "evidence_boundary_cn": "正式 Release 已确认语义变化；生产故障率、成本与补偿效果没有公开数据。",
+      "source_urls": [
+        "https://github.com/google/adk-python/releases/tag/v2.9.0"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Agent 自动恢复后，为什么可能扣两次钱？",
+          "hook": "Google ADK 2.9.0 的 breaking change 把一个真实风险写明了：失败节点会重跑，外部动作不幂等就可能重复执行。",
+          "format": "7页图文卡",
+          "outline": [
+            "版本变化",
+            "故障转移流程",
+            "失败节点重跑",
+            "重复副作用案例",
+            "幂等与审批清单"
+          ],
+          "visual_direction": "主模型失败到备用模型接管、节点重放与外部副作用的时序图",
+          "cta": "你的 Agent 恢复前会检查幂等键吗？"
+        },
+        "twitter": {
+          "title": "Agent failover is not enough: resumed nodes can repeat side effects",
+          "hook": "Google ADK 2.9.0 adds automatic model failover, but its resume semantics expose the harder problem: a failed node may run again after an external action already succeeded.",
+          "format": "6帖 Thread",
+          "outline": [
+            "Release fact",
+            "Failover path",
+            "Replay boundary",
+            "Side-effect failure case",
+            "Control checklist"
+          ],
+          "visual_direction": "Failover and replay sequence diagram",
+          "cta": "Where do you enforce idempotency in your agent runtime?"
+        },
+        "wechat": {
+          "title": "Agent 自动恢复之后，谁来保证业务动作不会执行两次",
+          "hook": "Google ADK 2.9.0 同时带来模型 failover 和节点重跑语义，可靠性问题已经从“能不能恢复”转到“恢复后会不会重复执行”。",
+          "format": "1800—2400字分析",
+          "outline": [
+            "版本事实",
+            "模型故障转移",
+            "checkpoint 与重放语义",
+            "幂等、补偿与人工审批",
+            "故障注入测试清单"
+          ],
+          "visual_direction": "恢复语义架构图，附风险动作测试表",
+          "cta": "先挑一个高风险动作，做一次恢复故障注入。"
+        }
+      }
+    }
+  ]
 }
