@@ -8,5 +8,78 @@
     "type": "daily",
     "date": "2026-09-12"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-12-coding-agent-secret-injection-control-plane",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-09-08-1password-codex-secure-engineering-workflow"
+      ],
+      "working_title_cn": "企业 Coding Agent 的安全边界，不该只写在 Prompt 里",
+      "core_tension_cn": "Agent 要深入研发链路才能产生价值，但凭据、工具授权和生产交接不能跟着自动化一起失控。",
+      "why_now_cn": "1Password 首次公开了 Codex 覆盖需求、实现、PR、测试和故障调查的用法，也写明凭据只在获批工具调用的动作点注入。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "企业开发平台负责人",
+        "Agent 安全与治理团队"
+      ],
+      "evidence_boundary_cn": "工作流和内部测量来自 OpenAI 与 1Password 客户案例；没有真实管理员 UI、审计日志、暂停和回滚证据，ROI 也不是独立评测。",
+      "source_urls": [
+        "https://openai.com/index/1password"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI 写代码可以，凭什么拿到你的生产密钥？",
+          "hook": "1Password 把 Codex 接进整条研发链路，但明文凭据不进模型上下文，只在获批工具真正执行时注入。",
+          "format": "8页图文卡",
+          "outline": [
+            "完整研发链路",
+            "模型能自动做什么",
+            "人工在哪里接手",
+            "secret reference 怎么工作",
+            "AppSec skill 的位置",
+            "缺失的日志与回滚证据",
+            "企业评估清单"
+          ],
+          "visual_direction": "从需求到生产的泳道图，标出凭据注入点和人工交接点",
+          "cta": "你的 Agent 在哪个动作点才拿到凭据？"
+        },
+        "twitter": {
+          "title": "The useful part of 1Password's Codex case is secret injection, not the ROI headline",
+          "hook": "Codex spans planning, implementation, review, testing, and incident investigation at 1Password. Plaintext credentials stay out of model context and are injected only when an approved tool acts.",
+          "format": "7帖 Thread",
+          "outline": [
+            "case-study boundary",
+            "workflow map",
+            "human handoff",
+            "secret references",
+            "AppSec skills",
+            "self-reported metrics",
+            "missing controls"
+          ],
+          "visual_direction": "tool-call authorization and secret-injection sequence diagram",
+          "cta": "Where does your coding agent receive credentials, and who can revoke them?"
+        },
+        "wechat": {
+          "title": "Coding Agent 进入企业研发链路后，凭据、工具和人审应该怎么分层",
+          "hook": "1Password 的案例给出了一条可拆解的企业路径：Agent 覆盖研发全链路，但凭据按动作注入，后端生产落地仍交给工程师。",
+          "format": "2000—2600字分析",
+          "outline": [
+            "案例事实与自报边界",
+            "研发工作流拆解",
+            "凭据按动作注入",
+            "AppSec skill 与工具授权",
+            "人工交接和责任链",
+            "日志、暂停、回滚缺口",
+            "企业控制面清单"
+          ],
+          "visual_direction": "对象—动作—凭据—审批—日志矩阵",
+          "cta": "附一份企业 Coding Agent 上线前核对表。"
+        }
+      }
+    }
+  ]
 }

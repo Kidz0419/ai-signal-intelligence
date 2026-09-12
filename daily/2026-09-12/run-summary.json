@@ -1,6 +1,6 @@
 {
   "run_type": "daily_four_lane_incremental_editorial_review",
-  "run_at": "2026-09-12T17:46:04+08:00",
+  "run_at": "2026-09-12T20:03:58+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
@@ -12,23 +12,23 @@
   "registered_sources": 111,
   "raw_candidates": 342,
   "unique_candidates": 295,
-  "editorial_shortlist": 4,
+  "editorial_shortlist": 2,
   "previous_count": 0,
-  "new_count": 0,
+  "new_count": 1,
   "updated_count": 0,
-  "excluded_count": 4,
-  "unreviewed_candidate_count": 208,
-  "total_count": 0,
-  "selected": 0,
+  "excluded_count": 1,
+  "unreviewed_candidate_count": 210,
+  "total_count": 1,
+  "selected": 1,
   "lane_counts": {
     "model": 0,
     "agent_architecture": 0,
-    "ai_product": 0,
+    "ai_product": 1,
     "ai_macro": 0
   },
   "priority_counts": {
     "P0": 0,
-    "P1": 0,
+    "P1": 1,
     "P2": 0,
     "P3": 0
   },
@@ -3081,7 +3081,7 @@
           "published_at": "2026-09-11T16:28:07.919000Z"
         }
       ],
-      "note": "the 4 cross-run lastmod changes were body-reviewed; two were old pages and two belonged to the existing Astra launch event"
+      "note": "the 2 cross-run lastmod changes were body-reviewed; one September 8 catch-up signal was selected and one partnership programme was excluded below the formal bar"
     },
     {
       "name": "OpenHands releases",
@@ -3209,18 +3209,19 @@
     }
   ],
   "content_topics": {
-    "topic_count": 0,
-    "platform_variants": 0
+    "topic_count": 1,
+    "platform_variants": 3
   },
   "notes": [
-    "Only the 4 cross-run new candidates were reviewed; the 208-item standing queue was not rescanned.",
-    "All four candidates came from OpenAI sitemap lastmod changes and were opened at the first-party article URL through the available public-text fallback.",
-    "The two Astra pages were merged with the existing 2026-09-03 event rather than emitted as duplicate cards.",
-    "The election and board-appointment pages retained their first-party May 27 and September 9 dates; sitemap lastmod was not used as event time."
+    "Only the 2 cross-run new candidates from the 20:00 cycle were reviewed; the 210-item standing queue was not rescanned.",
+    "Both candidates came from OpenAI sitemap lastmod changes and were opened at the first-party article URL through the available public-text fallback.",
+    "The 1Password case was selected as a September 8 catch-up because its body adds a complete engineering workflow, credential injection boundary, human handoff, and attributed measurement assumptions.",
+    "The Ukrainian newsroom programme was excluded below the formal bar: the official body confirms training and pilots, not a distinct product mechanism, measured result, or structural market change.",
+    "The four candidates from the earlier same-day review remain in candidate_reviews for daily audit continuity."
   ],
-  "reviewed_new_candidates": 4,
-  "candidate_queue_count": 208,
-  "new_in_run_count": 4,
+  "reviewed_new_candidates": 2,
+  "candidate_queue_count": 210,
+  "new_in_run_count": 2,
   "candidate_reviews": [
     {
       "url": "https://openai.com/index/election-safeguards-2026",
@@ -3247,6 +3248,19 @@
       "decision": "exclude_outside_window_below_formal_bar",
       "published_at": "2026-09-09",
       "reason": "official page confirms a board and committee appointment, but no change to committee powers, policy, approval process, or operating controls is disclosed"
+    },
+    {
+      "url": "https://openai.com/index/1password",
+      "decision": "selected_catch_up",
+      "signal_id": "2026-09-08-1password-codex-secure-engineering-workflow",
+      "published_at": "2026-09-08",
+      "reason": "the first-party case study gives a complete engineering workflow, credential-handling boundary, human handoff, and explicitly attributed measurement assumptions"
+    },
+    {
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "decision": "exclude_below_formal_bar",
+      "published_at": "2026-09-07",
+      "reason": "the official body confirms a training and pilot programme but discloses no distinct product mechanism, operating control, measured adoption result, or structural market change"
     }
   ],
   "collection_contract": {
@@ -3255,5 +3269,6 @@
     "sitemap_lastmod_is_not_publication_date": true,
     "feed_titles_require_body_verification": true,
     "http_2xx_is_not_checked_no_match": true
-  }
+  },
+  "day_reviewed_candidates_total": 6
 }

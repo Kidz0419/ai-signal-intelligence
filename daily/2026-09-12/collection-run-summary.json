@@ -1,6 +1,6 @@
 {
-  "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-12T20:00:34+08:00",
+  "run_type": "daily_four_lane_incremental_editorial_review",
+  "run_at": "2026-09-12T20:03:58+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
@@ -12,29 +12,29 @@
   "registered_sources": 111,
   "raw_candidates": 340,
   "unique_candidates": 293,
-  "editorial_shortlist": 0,
+  "editorial_shortlist": 2,
   "previous_count": 0,
-  "new_count": 0,
+  "new_count": 1,
   "updated_count": 0,
-  "excluded_count": 0,
-  "unreviewed_candidate_count": 340,
-  "total_count": 0,
-  "selected": 0,
+  "excluded_count": 1,
+  "unreviewed_candidate_count": 210,
+  "total_count": 1,
+  "selected": 1,
   "lane_counts": {
     "model": 0,
     "agent_architecture": 0,
-    "ai_product": 0,
+    "ai_product": 1,
     "ai_macro": 0
   },
   "priority_counts": {
     "P0": 0,
-    "P1": 0,
+    "P1": 1,
     "P2": 0,
     "P3": 0
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 0,
+  "cross_day_duplicates_removed": 2,
   "collection_errors": 11,
   "source_coverage": {
     "registered": 111,
@@ -3083,7 +3083,7 @@
           "published_at": "2026-09-11T16:28:08.225000Z"
         }
       ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "note": "the 2 cross-run lastmod changes were body-reviewed; one September 8 catch-up signal was selected and one partnership programme was excluded below the formal bar"
     },
     {
       "name": "OpenHands releases",
@@ -3206,13 +3206,66 @@
     }
   ],
   "content_topics": {
-    "topic_count": 0,
-    "platform_variants": 0
+    "topic_count": 1,
+    "platform_variants": 3
   },
   "notes": [
-    "340 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
-    "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
-    "Static pages were not promoted as fresh based on collected_at alone.",
-    "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
-  ]
+    "Only the 2 cross-run new candidates from the 20:00 cycle were reviewed; the 210-item standing queue was not rescanned.",
+    "Both candidates came from OpenAI sitemap lastmod changes and were opened at the first-party article URL through the available public-text fallback.",
+    "The 1Password case was selected as a September 8 catch-up because its body adds a complete engineering workflow, credential injection boundary, human handoff, and attributed measurement assumptions.",
+    "The Ukrainian newsroom programme was excluded below the formal bar: the official body confirms training and pilots, not a distinct product mechanism, measured result, or structural market change.",
+    "The four candidates from the earlier same-day review remain in candidate_reviews for daily audit continuity."
+  ],
+  "reviewed_new_candidates": 2,
+  "day_reviewed_candidates_total": 6,
+  "candidate_queue_count": 210,
+  "new_in_run_count": 2,
+  "candidate_reviews": [
+    {
+      "url": "https://openai.com/index/election-safeguards-2026",
+      "decision": "exclude_outside_window",
+      "published_at": "2026-05-27",
+      "reason": "official article date and body confirm an older policy page; repeated sitemap lastmod changes do not prove a new editorial event"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "decision": "duplicate_existing",
+      "signal_id": "2026-09-03-openai-gpt6-astra-broad-release-monitorability",
+      "published_at": null,
+      "reason": "official body describes the same Astra launch and enterprise controls already reviewed; no standalone first-party publication date or proven new event was recovered"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra",
+      "decision": "duplicate_existing",
+      "signal_id": "2026-09-03-openai-gpt6-astra-broad-release-monitorability",
+      "published_at": "2026-09-03",
+      "reason": "official launch body belongs to the Astra release already stored under the stable event ID; sitemap lastmod is not a new publication timestamp"
+    },
+    {
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "decision": "exclude_outside_window_below_formal_bar",
+      "published_at": "2026-09-09",
+      "reason": "official page confirms a board and committee appointment, but no change to committee powers, policy, approval process, or operating controls is disclosed"
+    },
+    {
+      "url": "https://openai.com/index/1password",
+      "decision": "selected_catch_up",
+      "signal_id": "2026-09-08-1password-codex-secure-engineering-workflow",
+      "published_at": "2026-09-08",
+      "reason": "the first-party case study gives a complete engineering workflow, credential-handling boundary, human handoff, and explicitly attributed measurement assumptions"
+    },
+    {
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "decision": "exclude_below_formal_bar",
+      "published_at": "2026-09-07",
+      "reason": "the official body confirms a training and pilot programme but discloses no distinct product mechanism, operating control, measured adoption result, or structural market change"
+    }
+  ],
+  "collection_contract": {
+    "raw_candidates_in_rolling_window_is_not_increment": true,
+    "candidate_queue_count_is_not_new_count": true,
+    "sitemap_lastmod_is_not_publication_date": true,
+    "feed_titles_require_body_verification": true,
+    "http_2xx_is_not_checked_no_match": true
+  }
 }
