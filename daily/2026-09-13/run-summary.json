@@ -1,22 +1,22 @@
 {
   "run_type": "daily_four_lane_incremental_editorial_review",
-  "run_at": "2026-09-13T00:06:08+08:00",
+  "run_at": "2026-09-13T04:03:35+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-09T16:00:22+08:00",
-    "end": "2026-09-13T00:00:22+08:00",
+    "start": "2026-09-09T20:00:26+08:00",
+    "end": "2026-09-13T04:00:26+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 339,
-  "unique_candidates": 292,
+  "raw_candidates": 341,
+  "unique_candidates": 294,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
-  "excluded_count": 2,
+  "excluded_count": 3,
   "unreviewed_candidate_count": 0,
   "total_count": 0,
   "selected": 0,
@@ -34,8 +34,8 @@
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 1,
-  "collection_errors": 13,
+  "cross_day_duplicates_removed": 2,
+  "collection_errors": 9,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 6,
-      "not_checked": 98
+      "mechanical_failure": 2,
+      "not_checked": 102
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -54,8 +54,8 @@
         "checked_no_match": 0,
         "access_blocked": 3,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 23
+        "mechanical_failure": 0,
+        "not_checked": 24
       },
       "china_frontier_models": {
         "selected": 0,
@@ -72,8 +72,8 @@
         "checked_no_match": 0,
         "access_blocked": 2,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 13
+        "mechanical_failure": 0,
+        "not_checked": 14
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 8
+        "mechanical_failure": 0,
+        "not_checked": 10
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -265,7 +265,7 @@
         "type": "company_ir",
         "url": "https://abc.xyz/investor/",
         "status": "not_checked",
-        "http_code": "206",
+        "http_code": "200",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
@@ -566,9 +566,10 @@
         "name": "Anthropic API Release Notes",
         "type": "developer_changelog",
         "url": "https://docs.anthropic.com/en/release-notes/api",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -870,9 +871,9 @@
         "name": "Google Workspace Updates",
         "type": "product_release_notes",
         "url": "https://workspaceupdates.googleblog.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -1060,18 +1061,18 @@
         "name": "arXiv cs.CL",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
@@ -2049,6 +2050,11 @@
       "checked_items": 10,
       "recent_items": [
         {
+          "title": "v2.1.270",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.270",
+          "published_at": "2026-09-12T19:45:44Z"
+        },
+        {
           "title": "v2.1.269",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.269",
           "published_at": "2026-09-11T19:17:55Z"
@@ -2064,7 +2070,7 @@
           "published_at": "2026-09-09T19:58:14Z"
         }
       ],
-      "note": ""
+      "note": "v2.1.270 body and release timestamp reviewed; excluded as a narrow regression fix below the formal bar"
     },
     {
       "name": "CrewAI releases",
@@ -2476,6 +2482,11 @@
       "status": "candidate_only",
       "checked_items": 120,
       "recent_items": [
+        {
+          "title": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+          "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+          "published_at": "2026-09-12T18:37:32.561000Z"
+        },
         {
           "title": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
           "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
@@ -3070,15 +3081,9 @@
           "title": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work/",
           "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work/",
           "published_at": "2026-09-11T16:28:08.318000Z"
-        },
-        {
-          "title": "https://openai.com/index/responsible-ai-infrastructure-texas/",
-          "url": "https://openai.com/index/responsible-ai-infrastructure-texas/",
-          "published_at": "2026-09-11T16:28:08.225000Z"
         }
       ],
-      "note": "2 cross-run lastmod changes were body-reviewed; both were excluded and neither lastmod was treated as publication evidence",
-      "recent_count": 120
+      "note": "new Legora lastmod was body-reviewed and matched an existing September 3 event; lastmod was not treated as publication evidence"
     },
     {
       "name": "OpenHands releases",
@@ -3107,6 +3112,11 @@
       "status": "candidate_only",
       "checked_items": 30,
       "recent_items": [
+        {
+          "title": "Quoting Paul Ford",
+          "url": "https://simonwillison.net/2026/Sep/12/paul-ford/",
+          "published_at": "2026-09-12T18:00:21Z"
+        },
         {
           "title": "OpenAI agents attacked RubyGems back in May",
           "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
@@ -3188,7 +3198,7 @@
           "published_at": "2026-09-09T23:58:32Z"
         }
       ],
-      "note": ""
+      "note": "new Paul Ford quotation page was opened; excluded because the accessible body contains only a short secondary quotation"
     },
     {
       "name": "SWE-agent releases",
@@ -3205,15 +3215,16 @@
     "platform_variants": 0
   },
   "notes": [
-    "Reviewed only the 2 cross-run new candidates; the 339-item rolling discovery pool was not rescanned.",
-    "Both OpenAI sitemap candidates were opened at the first-party article URL through the available public-text fallback after direct curl returned HTTP 403.",
-    "Paul Christiano's September 9 appointment was already reviewed on September 12 and remains below the formal bar because the page discloses no change to governance powers or operating controls.",
-    "The Two Blind Brothers customer story was excluded below the formal product bar: it documents accessibility and nonprofit workflows but no new feature, UI, control boundary, measured result, or structural adoption change.",
-    "The Two Blind Brothers article date remains unresolved; sitemap lastmod was not used as publication evidence."
+    "Reviewed only the 3 cross-run new candidates; the 341-item rolling discovery pool was not rescanned.",
+    "Claude Code v2.1.270 was verified through the official GitHub Release page and API; its sole change is a narrow permission-prompt regression fix below the formal signal bar.",
+    "The Legora article is dated September 3 and is already attached to the existing Astra event; another sitemap lastmod is not a new editorial event.",
+    "The Simon Willison item is a short quotation of a linked opinion article and contains no content-level practitioner evidence that meets the inclusion threshold.",
+    "The two candidates from the earlier same-day review remain in candidate_reviews for daily audit continuity."
   ],
-  "reviewed_new_candidates": 2,
-  "candidate_queue_count": 2,
-  "new_in_run_count": 2,
+  "reviewed_new_candidates": 3,
+  "day_reviewed_candidates_total": 5,
+  "candidate_queue_count": 5,
+  "new_in_run_count": 3,
   "candidate_reviews": [
     {
       "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
@@ -3227,6 +3238,25 @@
       "decision": "exclude_below_formal_bar_date_unresolved",
       "published_at": null,
       "reason": "the first-party customer story describes accessibility and nonprofit workflows, but no distinct product release, interface change, control boundary, measured result, or structural adoption change; the article body exposes no publication date and sitemap lastmod is not substituted for one"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.270",
+      "decision": "exclude_below_formal_bar",
+      "published_at": "2026-09-12T19:45:44Z",
+      "reason": "the official release contains one narrow regression fix for read-only git commands asking for permission after a long-running session; it adds no new permission model, approval control, workflow, logging, pause, recovery, or rollback mechanism"
+    },
+    {
+      "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+      "decision": "duplicate_existing_no_material_update",
+      "signal_id": "2026-09-03-openai-gpt6-astra-broad-release-monitorability",
+      "published_at": "2026-09-03",
+      "reason": "the first-party article is the same September 3 Legora deployment case already attached to the Astra event; the new sitemap lastmod does not prove a new release, evidence upgrade, or workflow change"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/12/paul-ford/",
+      "decision": "exclude_below_practitioner_bar",
+      "published_at": "2026-09-12T18:00:21Z",
+      "reason": "the page reproduces a short quotation from a linked opinion article; it contains no builder case, new data, technical explanation, failure review, reusable method, or product mechanism that can be evaluated from the accessible first-party page"
     }
   ],
   "collection_contract": {
