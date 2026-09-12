@@ -1,6 +1,6 @@
 {
-  "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-12T16:20:16+08:00",
+  "run_type": "daily_four_lane_incremental_editorial_review",
+  "run_at": "2026-09-12T17:46:04+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
@@ -12,12 +12,12 @@
   "registered_sources": 111,
   "raw_candidates": 342,
   "unique_candidates": 295,
-  "editorial_shortlist": 0,
+  "editorial_shortlist": 4,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
-  "excluded_count": 0,
-  "unreviewed_candidate_count": 342,
+  "excluded_count": 4,
+  "unreviewed_candidate_count": 208,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -34,7 +34,7 @@
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 0,
+  "cross_day_duplicates_removed": 2,
   "collection_errors": 31,
   "source_coverage": {
     "registered": 111,
@@ -3081,7 +3081,7 @@
           "published_at": "2026-09-11T16:28:07.919000Z"
         }
       ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "note": "the 4 cross-run lastmod changes were body-reviewed; two were old pages and two belonged to the existing Astra launch event"
     },
     {
       "name": "OpenHands releases",
@@ -3213,9 +3213,47 @@
     "platform_variants": 0
   },
   "notes": [
-    "342 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
-    "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
-    "Static pages were not promoted as fresh based on collected_at alone.",
-    "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
-  ]
+    "Only the 4 cross-run new candidates were reviewed; the 208-item standing queue was not rescanned.",
+    "All four candidates came from OpenAI sitemap lastmod changes and were opened at the first-party article URL through the available public-text fallback.",
+    "The two Astra pages were merged with the existing 2026-09-03 event rather than emitted as duplicate cards.",
+    "The election and board-appointment pages retained their first-party May 27 and September 9 dates; sitemap lastmod was not used as event time."
+  ],
+  "reviewed_new_candidates": 4,
+  "candidate_queue_count": 208,
+  "new_in_run_count": 4,
+  "candidate_reviews": [
+    {
+      "url": "https://openai.com/index/election-safeguards-2026",
+      "decision": "exclude_outside_window",
+      "published_at": "2026-05-27",
+      "reason": "official article date and body confirm an older policy page; repeated sitemap lastmod changes do not prove a new editorial event"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "decision": "duplicate_existing",
+      "signal_id": "2026-09-03-openai-gpt6-astra-broad-release-monitorability",
+      "published_at": null,
+      "reason": "official body describes the same Astra launch and enterprise controls already reviewed; no standalone first-party publication date or proven new event was recovered"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra",
+      "decision": "duplicate_existing",
+      "signal_id": "2026-09-03-openai-gpt6-astra-broad-release-monitorability",
+      "published_at": "2026-09-03",
+      "reason": "official launch body belongs to the Astra release already stored under the stable event ID; sitemap lastmod is not a new publication timestamp"
+    },
+    {
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "decision": "exclude_outside_window_below_formal_bar",
+      "published_at": "2026-09-09",
+      "reason": "official page confirms a board and committee appointment, but no change to committee powers, policy, approval process, or operating controls is disclosed"
+    }
+  ],
+  "collection_contract": {
+    "raw_candidates_in_rolling_window_is_not_increment": true,
+    "candidate_queue_count_is_not_new_count": true,
+    "sitemap_lastmod_is_not_publication_date": true,
+    "feed_titles_require_body_verification": true,
+    "http_2xx_is_not_checked_no_match": true
+  }
 }

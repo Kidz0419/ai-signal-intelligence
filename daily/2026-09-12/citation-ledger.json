@@ -1,5 +1,38 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "title": "Election information and safeguards in 2026",
+      "url": "https://openai.com/index/election-safeguards-2026",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-12T17:46:04+08:00"
+    },
+    {
+      "id": 2,
+      "title": "GPT-6 Astra: The next generation in intelligence for work",
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-12T17:46:04+08:00"
+    },
+    {
+      "id": 3,
+      "title": "GPT-6 Astra: A new generation of intelligence",
+      "url": "https://openai.com/index/gpt-6-astra",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-12T17:46:04+08:00"
+    },
+    {
+      "id": 4,
+      "title": "Paul Christiano joins OpenAI Foundation Board",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-12T17:46:04+08:00"
+    }
+  ]
 }
