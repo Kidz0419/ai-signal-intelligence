@@ -1,129 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T12:15:54+08:00",
+  "generated_at": "2026-09-12T16:20:16+08:00",
   "window": {
-    "start": "2026-09-09T04:15:54+08:00",
-    "end": "2026-09-12T12:15:54+08:00",
+    "start": "2026-09-09T08:20:16+08:00",
+    "end": "2026-09-12T16:20:16+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 204,
-  "new_in_run_count": 42,
+  "candidate_count": 208,
+  "new_in_run_count": 4,
   "new_candidates": [
     {
-      "source_name": "Claude Code releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
-      "title": "v2.1.269",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.269",
-      "published_or_lastmod_at": "2026-09-11T19:17:55Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "GitHub Copilot Changelog feed",
-      "adapter": "rss",
-      "source_url": "https://github.blog/changelog/label/copilot/feed/",
-      "title": "Add VS Code Agents to Copilot usage metrics",
-      "url": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics",
-      "published_or_lastmod_at": "2026-09-11T21:30:30Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/an-alien-mind/",
-      "url": "https://openai.com/index/an-alien-mind/",
-      "published_or_lastmod_at": "2026-09-12T03:40:25.418000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
-      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
-      "published_or_lastmod_at": "2026-09-12T03:00:45.177000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/scaling-storage-one-billion-users-part-one/",
-      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one/",
-      "published_or_lastmod_at": "2026-09-12T02:19:32.976000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-      "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-      "published_or_lastmod_at": "2026-09-12T02:14:41.507000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-      "published_or_lastmod_at": "2026-09-12T00:48:07.659000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/atv-big-air-tour/",
-      "url": "https://openai.com/index/atv-big-air-tour/",
-      "published_or_lastmod_at": "2026-09-12T00:29:37.452000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/emergent-misalignment/",
-      "url": "https://openai.com/index/emergent-misalignment/",
-      "published_or_lastmod_at": "2026-09-12T00:15:00.817000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/perplexity-improving-accuracy-with-astra/",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra/",
-      "published_or_lastmod_at": "2026-09-12T00:04:23.213000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/cognition-devin-testing-with-astra/",
-      "url": "https://openai.com/index/cognition-devin-testing-with-astra/",
-      "published_or_lastmod_at": "2026-09-12T00:04:06.826000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-chatgpt-financial-services/",
-      "url": "https://openai.com/index/introducing-chatgpt-financial-services/",
-      "published_or_lastmod_at": "2026-09-11T23:41:13.520000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-6-astra/",
-      "url": "https://openai.com/index/gpt-6-astra/",
-      "published_or_lastmod_at": "2026-09-11T23:05:20.972000Z",
+      "title": "https://openai.com/index/election-safeguards-2026/",
+      "url": "https://openai.com/index/election-safeguards-2026/",
+      "published_or_lastmod_at": "2026-09-12T06:00:12.285000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
@@ -132,263 +24,65 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/gpt-6-astra-next-generation-work/",
       "url": "https://openai.com/index/gpt-6-astra-next-generation-work/",
-      "published_or_lastmod_at": "2026-09-11T23:05:19.958000Z",
+      "published_or_lastmod_at": "2026-09-12T05:24:01.862000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-gpt-5/",
-      "url": "https://openai.com/index/introducing-gpt-5/",
-      "published_or_lastmod_at": "2026-09-11T22:35:24.528000Z",
+      "title": "https://openai.com/index/gpt-6-astra/",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "published_or_lastmod_at": "2026-09-12T05:23:04.889000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations/",
-      "url": "https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations/",
-      "published_or_lastmod_at": "2026-09-11T22:33:23.115000Z",
+      "title": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
+      "published_or_lastmod_at": "2026-09-12T04:38:39.510000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/codex-quantum-computing-experiments/",
-      "url": "https://openai.com/index/codex-quantum-computing-experiments/",
-      "published_or_lastmod_at": "2026-09-11T22:20:15.198000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/two-blind-brothers/",
-      "url": "https://openai.com/index/two-blind-brothers/",
-      "published_or_lastmod_at": "2026-09-11T22:05:02.915000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
-      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
-      "published_or_lastmod_at": "2026-09-11T21:49:35.362000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/teen-development-research-grants/",
-      "url": "https://openai.com/index/teen-development-research-grants/",
-      "published_or_lastmod_at": "2026-09-11T21:46:03.159000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/daybreak-for-frontline-defenders/",
-      "url": "https://openai.com/index/daybreak-for-frontline-defenders/",
-      "published_or_lastmod_at": "2026-09-11T19:22:58.705000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-      "published_or_lastmod_at": "2026-09-11T19:21:35.461000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/accelerating-cyber-defense-ecosystem/",
-      "url": "https://openai.com/index/accelerating-cyber-defense-ecosystem/",
-      "published_or_lastmod_at": "2026-09-11T19:21:34.328000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/",
-      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/",
-      "published_or_lastmod_at": "2026-09-11T19:21:34.311000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/designing-agents-to-resist-prompt-injection/",
-      "url": "https://openai.com/index/designing-agents-to-resist-prompt-injection/",
-      "published_or_lastmod_at": "2026-09-11T19:21:33.039000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/strengthening-cyber-resilience/",
-      "url": "https://openai.com/index/strengthening-cyber-resilience/",
-      "published_or_lastmod_at": "2026-09-11T19:21:32.651000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/safety-bug-bounty/",
-      "url": "https://openai.com/index/safety-bug-bounty/",
-      "published_or_lastmod_at": "2026-09-11T19:21:32.405000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
-      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
-      "published_or_lastmod_at": "2026-09-11T19:21:32.221000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-      "published_or_lastmod_at": "2026-09-11T19:21:31.159000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/openai-cybersecurity-grant-program/",
-      "url": "https://openai.com/index/openai-cybersecurity-grant-program/",
-      "published_or_lastmod_at": "2026-09-11T19:21:31.060000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
-      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
-      "published_or_lastmod_at": "2026-09-11T19:21:30.774000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/the-defenders-window/",
-      "url": "https://openai.com/index/the-defenders-window/",
-      "published_or_lastmod_at": "2026-09-11T19:21:30.663000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/prompt-injections/",
-      "url": "https://openai.com/index/prompt-injections/",
-      "published_or_lastmod_at": "2026-09-11T19:21:29.982000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/trusted-access-for-cyber/",
-      "url": "https://openai.com/index/trusted-access-for-cyber/",
-      "published_or_lastmod_at": "2026-09-11T19:21:28.706000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenHands releases",
-      "adapter": "atom",
-      "source_url": "https://github.com/All-Hands-AI/OpenHands/releases.atom",
-      "title": "v1.18.0",
-      "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.18.0",
-      "published_or_lastmod_at": "2026-09-11T18:32:07Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "OpenAI agents attacked RubyGems back in May",
-      "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
-      "published_or_lastmod_at": "2026-09-12T00:42:25Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "So you want to use OpenRouter?",
-      "url": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
-      "published_or_lastmod_at": "2026-09-11T22:49:18Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "Feeling sad about AI",
-      "url": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/",
-      "published_or_lastmod_at": "2026-09-11T17:28:37Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "datasette-publish-fly 1.4",
-      "url": "https://simonwillison.net/2026/Sep/11/datasette-publish-fly/",
-      "published_or_lastmod_at": "2026-09-11T02:58:52Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "github-to-sqlite 2.9.1",
-      "url": "https://simonwillison.net/2026/Sep/11/github-to-sqlite/",
-      "published_or_lastmod_at": "2026-09-11T00:28:39Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "datasette 0.65.4",
-      "url": "https://simonwillison.net/2026/Sep/11/datasette/",
-      "published_or_lastmod_at": "2026-09-11T00:06:55Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "datasette 1.0a39",
-      "url": "https://simonwillison.net/2026/Sep/11/datasette-2/",
-      "published_or_lastmod_at": "2026-09-11T00:05:54Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/election-safeguards-2026/",
+      "url": "https://openai.com/index/election-safeguards-2026/",
+      "published_or_lastmod_at": "2026-09-12T06:00:12.285000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-6-astra-next-generation-work/",
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work/",
+      "published_or_lastmod_at": "2026-09-12T05:24:01.862000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/gpt-6-astra/",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "published_or_lastmod_at": "2026-09-12T05:23:04.889000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
+      "published_or_lastmod_at": "2026-09-12T04:38:39.510000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
