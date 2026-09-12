@@ -1,23 +1,23 @@
 {
-  "run_type": "daily_four_lane_incremental_editorial_review",
-  "run_at": "2026-09-12T17:46:04+08:00",
+  "run_type": "daily_four_lane_incremental",
+  "run_at": "2026-09-12T20:00:34+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-09T08:20:16+08:00",
-    "end": "2026-09-12T16:20:16+08:00",
+    "start": "2026-09-09T12:00:34+08:00",
+    "end": "2026-09-12T20:00:34+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 342,
-  "unique_candidates": 295,
-  "editorial_shortlist": 4,
+  "raw_candidates": 340,
+  "unique_candidates": 293,
+  "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
-  "excluded_count": 4,
-  "unreviewed_candidate_count": 208,
+  "excluded_count": 0,
+  "unreviewed_candidate_count": 340,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -34,18 +34,18 @@
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 2,
-  "collection_errors": 31,
+  "cross_day_duplicates_removed": 0,
+  "collection_errors": 11,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 6,
+      "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 25,
-      "not_checked": 80
+      "mechanical_failure": 4,
+      "not_checked": 100
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -63,17 +63,17 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 12
+        "mechanical_failure": 1,
+        "not_checked": 13
       },
       "head_ai_product_release_notes": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 1,
+        "access_blocked": 2,
         "auth_required": 0,
-        "mechanical_failure": 2,
-        "not_checked": 13
+        "mechanical_failure": 0,
+        "not_checked": 14
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 3,
-        "not_checked": 7
+        "mechanical_failure": 0,
+        "not_checked": 10
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -99,8 +99,8 @@
         "checked_no_match": 0,
         "access_blocked": 2,
         "auth_required": 0,
-        "mechanical_failure": 9,
-        "not_checked": 6
+        "mechanical_failure": 1,
+        "not_checked": 14
       },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
@@ -108,8 +108,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 7,
-        "not_checked": 4
+        "mechanical_failure": 0,
+        "not_checked": 11
       }
     },
     "records": [
@@ -209,9 +209,9 @@
         "name": "Microsoft Research AutoGen Blog",
         "type": "official_research",
         "url": "https://www.microsoft.com/en-us/research/project/autogen/",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "agent_runtime_and_open_source",
@@ -245,9 +245,10 @@
         "name": "OpenHands",
         "type": "github_releases",
         "url": "https://github.com/All-Hands-AI/OpenHands",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://github.com/OpenHands/OpenHands",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "agent_runtime_and_open_source",
@@ -272,36 +273,38 @@
         "name": "Amazon Investor Relations",
         "type": "company_ir",
         "url": "https://ir.aboutamazon.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://ir.aboutamazon.com/overview/default.aspx",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "China CAC",
         "type": "regulator",
         "url": "https://www.cac.gov.cn/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "China MIIT",
         "type": "regulator",
         "url": "https://www.miit.gov.cn/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
         "name": "CoreWeave Investor Relations",
         "type": "company_ir",
         "url": "https://investors.coreweave.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "final_url": "https://investors.coreweave.com/overview/default.aspx",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
@@ -334,9 +337,10 @@
         "name": "Meta Investor Relations",
         "type": "company_ir",
         "url": "https://investor.atmeta.com/",
-        "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://investor.atmeta.com/home/default.aspx",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
@@ -353,9 +357,10 @@
         "name": "NVIDIA Investor Relations",
         "type": "company_ir",
         "url": "https://investor.nvidia.com/",
-        "status": "mechanical_failure",
-        "http_code": "IncompleteRead",
-        "note": "IncompleteRead(98328 bytes read)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://investor.nvidia.com/home/default.aspx",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
@@ -379,9 +384,9 @@
         "name": "UK AI Security Institute",
         "type": "government_research",
         "url": "https://www.aisi.gov.uk/",
-        "status": "mechanical_failure",
-        "http_code": "RemoteDisconnected",
-        "note": "Remote end closed connection without response"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "ai_macro_primary",
@@ -406,9 +411,9 @@
         "name": "US NIST AI",
         "type": "regulator",
         "url": "https://www.nist.gov/artificial-intelligence",
-        "status": "mechanical_failure",
-        "http_code": "IncompleteRead",
-        "note": "IncompleteRead(0 bytes read)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -515,9 +520,9 @@
         "name": "Qwen Hugging Face",
         "type": "model_hub",
         "url": "https://huggingface.co/Qwen",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "china_frontier_models",
@@ -561,9 +566,10 @@
         "name": "Anthropic API Release Notes",
         "type": "developer_changelog",
         "url": "https://docs.anthropic.com/en/release-notes/api",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "frontier_model_official",
@@ -774,10 +780,9 @@
         "name": "xAI Docs",
         "type": "developer_docs",
         "url": "https://docs.x.ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://docs.x.ai/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
       },
       {
         "channel": "frontier_model_official",
@@ -910,9 +915,8 @@
         "name": "Perplexity Changelog",
         "type": "product_changelog",
         "url": "https://www.perplexity.ai/changelog",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -929,9 +933,10 @@
         "name": "Slack Release Notes",
         "type": "product_release_notes",
         "url": "https://slack.com/intl/en-gb/release-notes",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://slack.com/intl/en-gb/release-notes/mac",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
@@ -947,27 +952,27 @@
         "name": "Chip Huyen",
         "type": "personal_blog",
         "url": "https://huyenchip.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Every",
         "type": "longform_blog_podcast",
         "url": "https://every.to/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Hamel Husain",
         "type": "personal_blog",
         "url": "https://hamel.dev/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
@@ -983,27 +988,27 @@
         "name": "Interconnects",
         "type": "researcher_newsletter",
         "url": "https://www.interconnects.ai/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Latent Space",
         "type": "longform_blog_podcast",
         "url": "https://www.latent.space/",
-        "status": "mechanical_failure",
-        "http_code": "RemoteDisconnected",
-        "note": "Remote end closed connection without response"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
         "name": "Lenny's Newsletter",
         "type": "longform_blog_podcast",
         "url": "https://www.lennysnewsletter.com/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
@@ -1028,9 +1033,9 @@
         "name": "The Pragmatic Engineer",
         "type": "longform_blog",
         "url": "https://newsletter.pragmaticengineer.com/",
-        "status": "mechanical_failure",
-        "http_code": "IncompleteRead",
-        "note": "IncompleteRead(0 bytes read)"
+        "status": "not_checked",
+        "http_code": "200",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
@@ -1055,9 +1060,9 @@
         "name": "arXiv cs.CL",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
-        "status": "mechanical_failure",
-        "http_code": "RemoteDisconnected",
-        "note": "Remote end closed connection without response"
+        "status": "not_checked",
+        "http_code": "206",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
@@ -1083,18 +1088,20 @@
         "name": "Hugging Face Daily Papers",
         "type": "paper_index",
         "url": "https://huggingface.co/papers",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://huggingface.co/papers/date/2026-09-11",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
         "name": "LMSYS Chatbot Arena",
         "type": "benchmark",
         "url": "https://lmarena.ai/",
-        "status": "mechanical_failure",
-        "http_code": "url_error",
-        "note": "_ssl.c:999: The handshake operation timed out"
+        "status": "not_checked",
+        "http_code": "200",
+        "final_url": "https://arena.ai/",
+        "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
       {
         "channel": "research_and_evaluation",
@@ -2105,11 +2112,6 @@
           "title": "Enterprise managed permissions for GitHub Copilot agent operations",
           "url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations",
           "published_at": "2026-09-09T20:08:14Z"
-        },
-        {
-          "title": "Enterprise-managed sandbox in Copilot for JetBrains",
-          "url": "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains",
-          "published_at": "2026-09-09T02:43:38Z"
         }
       ],
       "note": ""
@@ -2481,6 +2483,16 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/1password/",
+          "url": "https://openai.com/index/1password/",
+          "published_at": "2026-09-12T10:30:05.265000Z"
+        },
+        {
+          "title": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
+          "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
+          "published_at": "2026-09-12T10:17:04.038000Z"
+        },
+        {
           "title": "https://openai.com/index/election-safeguards-2026/",
           "url": "https://openai.com/index/election-safeguards-2026/",
           "published_at": "2026-09-12T06:00:12.285000Z"
@@ -2811,11 +2823,6 @@
           "published_at": "2026-09-11T19:03:29.956000Z"
         },
         {
-          "title": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
-          "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
-          "published_at": "2026-09-11T18:14:39.244000Z"
-        },
-        {
           "title": "https://openai.com/index/new-chatgpt-images-is-here/",
           "url": "https://openai.com/index/new-chatgpt-images-is-here/",
           "published_at": "2026-09-11T17:51:47.934000Z"
@@ -3074,14 +3081,9 @@
           "title": "https://openai.com/index/responsible-ai-infrastructure-texas/",
           "url": "https://openai.com/index/responsible-ai-infrastructure-texas/",
           "published_at": "2026-09-11T16:28:08.225000Z"
-        },
-        {
-          "title": "https://openai.com/index/introducing-admin-plugin/",
-          "url": "https://openai.com/index/introducing-admin-plugin/",
-          "published_at": "2026-09-11T16:28:07.919000Z"
         }
       ],
-      "note": "the 4 cross-run lastmod changes were body-reviewed; two were old pages and two belonged to the existing Astra launch event"
+      "note": "lastmod is discovery-only; verify datePublished/body before selection"
     },
     {
       "name": "OpenHands releases",
@@ -3189,11 +3191,6 @@
           "title": ".blend URL Viewer",
           "url": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
           "published_at": "2026-09-09T23:58:32Z"
-        },
-        {
-          "title": "Quoting Terence Tao",
-          "url": "https://simonwillison.net/2026/Sep/9/terence-tao/",
-          "published_at": "2026-09-09T00:20:17Z"
         }
       ],
       "note": ""
@@ -3213,47 +3210,9 @@
     "platform_variants": 0
   },
   "notes": [
-    "Only the 4 cross-run new candidates were reviewed; the 208-item standing queue was not rescanned.",
-    "All four candidates came from OpenAI sitemap lastmod changes and were opened at the first-party article URL through the available public-text fallback.",
-    "The two Astra pages were merged with the existing 2026-09-03 event rather than emitted as duplicate cards.",
-    "The election and board-appointment pages retained their first-party May 27 and September 9 dates; sitemap lastmod was not used as event time."
-  ],
-  "reviewed_new_candidates": 4,
-  "candidate_queue_count": 208,
-  "new_in_run_count": 4,
-  "candidate_reviews": [
-    {
-      "url": "https://openai.com/index/election-safeguards-2026",
-      "decision": "exclude_outside_window",
-      "published_at": "2026-05-27",
-      "reason": "official article date and body confirm an older policy page; repeated sitemap lastmod changes do not prove a new editorial event"
-    },
-    {
-      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
-      "decision": "duplicate_existing",
-      "signal_id": "2026-09-03-openai-gpt6-astra-broad-release-monitorability",
-      "published_at": null,
-      "reason": "official body describes the same Astra launch and enterprise controls already reviewed; no standalone first-party publication date or proven new event was recovered"
-    },
-    {
-      "url": "https://openai.com/index/gpt-6-astra",
-      "decision": "duplicate_existing",
-      "signal_id": "2026-09-03-openai-gpt6-astra-broad-release-monitorability",
-      "published_at": "2026-09-03",
-      "reason": "official launch body belongs to the Astra release already stored under the stable event ID; sitemap lastmod is not a new publication timestamp"
-    },
-    {
-      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
-      "decision": "exclude_outside_window_below_formal_bar",
-      "published_at": "2026-09-09",
-      "reason": "official page confirms a board and committee appointment, but no change to committee powers, policy, approval process, or operating controls is disclosed"
-    }
-  ],
-  "collection_contract": {
-    "raw_candidates_in_rolling_window_is_not_increment": true,
-    "candidate_queue_count_is_not_new_count": true,
-    "sitemap_lastmod_is_not_publication_date": true,
-    "feed_titles_require_body_verification": true,
-    "http_2xx_is_not_checked_no_match": true
-  }
+    "340 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
+    "Static pages were not promoted as fresh based on collected_at alone.",
+    "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
+  ]
 }
