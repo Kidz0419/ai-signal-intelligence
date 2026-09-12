@@ -1,6 +1,6 @@
 {
-  "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-13T00:00:22+08:00",
+  "run_type": "daily_four_lane_incremental_editorial_review",
+  "run_at": "2026-09-13T00:06:08+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
@@ -16,8 +16,8 @@
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
-  "excluded_count": 0,
-  "unreviewed_candidate_count": 339,
+  "excluded_count": 2,
+  "unreviewed_candidate_count": 0,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -34,7 +34,7 @@
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 0,
+  "cross_day_duplicates_removed": 1,
   "collection_errors": 13,
   "source_coverage": {
     "registered": 111,
@@ -3077,7 +3077,8 @@
           "published_at": "2026-09-11T16:28:08.225000Z"
         }
       ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "note": "2 cross-run lastmod changes were body-reviewed; both were excluded and neither lastmod was treated as publication evidence",
+      "recent_count": 120
     },
     {
       "name": "OpenHands releases",
@@ -3204,9 +3205,35 @@
     "platform_variants": 0
   },
   "notes": [
-    "339 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
-    "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
-    "Static pages were not promoted as fresh based on collected_at alone.",
-    "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
-  ]
+    "Reviewed only the 2 cross-run new candidates; the 339-item rolling discovery pool was not rescanned.",
+    "Both OpenAI sitemap candidates were opened at the first-party article URL through the available public-text fallback after direct curl returned HTTP 403.",
+    "Paul Christiano's September 9 appointment was already reviewed on September 12 and remains below the formal bar because the page discloses no change to governance powers or operating controls.",
+    "The Two Blind Brothers customer story was excluded below the formal product bar: it documents accessibility and nonprofit workflows but no new feature, UI, control boundary, measured result, or structural adoption change.",
+    "The Two Blind Brothers article date remains unresolved; sitemap lastmod was not used as publication evidence."
+  ],
+  "reviewed_new_candidates": 2,
+  "candidate_queue_count": 2,
+  "new_in_run_count": 2,
+  "candidate_reviews": [
+    {
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
+      "decision": "duplicate_prior_review_below_formal_bar",
+      "published_at": "2026-09-09T17:00:00Z",
+      "prior_review_date": "2026-09-12",
+      "reason": "the official article still describes the same board and Safety and Security Committee appointment; it discloses no new committee powers, approval process, operating control, or model-level information, so another sitemap lastmod change is not a new event"
+    },
+    {
+      "url": "https://openai.com/index/two-blind-brothers/",
+      "decision": "exclude_below_formal_bar_date_unresolved",
+      "published_at": null,
+      "reason": "the first-party customer story describes accessibility and nonprofit workflows, but no distinct product release, interface change, control boundary, measured result, or structural adoption change; the article body exposes no publication date and sitemap lastmod is not substituted for one"
+    }
+  ],
+  "collection_contract": {
+    "raw_candidates_in_rolling_window_is_not_increment": true,
+    "candidate_queue_count_is_not_new_count": true,
+    "sitemap_lastmod_is_not_publication_date": true,
+    "feed_titles_require_body_verification": true,
+    "http_2xx_is_not_checked_no_match": true
+  }
 }

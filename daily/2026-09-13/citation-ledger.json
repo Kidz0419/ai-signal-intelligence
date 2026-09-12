@@ -1,5 +1,22 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "title": "Paul Christiano joins OpenAI Foundation Board",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "publisher": "OpenAI",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-13T00:06:08+08:00"
+    },
+    {
+      "id": 2,
+      "title": "Supporting the blind community with ChatGPT",
+      "url": "https://openai.com/index/two-blind-brothers",
+      "publisher": "OpenAI",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-13T00:06:08+08:00"
+    }
+  ]
 }
