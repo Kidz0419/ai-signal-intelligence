@@ -1,22 +1,22 @@
 {
   "run_type": "daily_four_lane_incremental_editorial_review",
-  "run_at": "2026-09-13T04:03:35+08:00",
+  "run_at": "2026-09-13T08:06:52+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-09T20:00:26+08:00",
-    "end": "2026-09-13T04:00:26+08:00",
+    "start": "2026-09-10T00:00:07+08:00",
+    "end": "2026-09-13T08:00:07+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 341,
-  "unique_candidates": 294,
+  "raw_candidates": 335,
+  "unique_candidates": 288,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
-  "excluded_count": 3,
+  "excluded_count": 4,
   "unreviewed_candidate_count": 0,
   "total_count": 0,
   "selected": 0,
@@ -34,8 +34,8 @@
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 2,
-  "collection_errors": 9,
+  "cross_day_duplicates_removed": 4,
+  "collection_errors": 11,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 2,
-      "not_checked": 102
+      "mechanical_failure": 4,
+      "not_checked": 100
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -90,8 +90,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 10
+        "mechanical_failure": 2,
+        "not_checked": 8
       },
       "ai_macro_primary": {
         "selected": 0,
@@ -274,7 +274,7 @@
         "type": "company_ir",
         "url": "https://ir.aboutamazon.com/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "final_url": "https://ir.aboutamazon.com/overview/default.aspx",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
@@ -302,7 +302,7 @@
         "type": "company_ir",
         "url": "https://investors.coreweave.com/",
         "status": "not_checked",
-        "http_code": "206",
+        "http_code": "200",
         "final_url": "https://investors.coreweave.com/overview/default.aspx",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
@@ -338,7 +338,7 @@
         "type": "company_ir",
         "url": "https://investor.atmeta.com/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "final_url": "https://investor.atmeta.com/home/default.aspx",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
@@ -358,7 +358,7 @@
         "type": "company_ir",
         "url": "https://investor.nvidia.com/",
         "status": "not_checked",
-        "http_code": "200",
+        "http_code": "206",
         "final_url": "https://investor.nvidia.com/home/default.aspx",
         "note": "reachable only; publication date/content delta not parsed in this adapter"
       },
@@ -1061,18 +1061,18 @@
         "name": "arXiv cs.CL",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "429",
+        "note": "rate limited"
       },
       {
         "channel": "research_and_evaluation",
         "name": "arXiv cs.LG",
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "429",
+        "note": "rate limited"
       },
       {
         "channel": "research_and_evaluation",
@@ -1855,16 +1855,6 @@
           "title": "Run DuckDB analytics on your Amazon DynamoDB data with zero-ETL",
           "url": "https://aws.amazon.com/blogs/database/run-duckdb-analytics-on-your-amazon-dynamodb-data-with-zero-etl/",
           "published_at": "2026-09-11T14:53:57Z"
-        },
-        {
-          "title": "Building async Python applications with Tortoise ORM and Amazon Aurora DSQL",
-          "url": "https://aws.amazon.com/blogs/database/building-async-python-applications-with-tortoise-orm-and-amazon-aurora-dsql/",
-          "published_at": "2026-09-09T15:27:43Z"
-        },
-        {
-          "title": "From noise to signal: Monitoring Amazon DocumentDB like a pro",
-          "url": "https://aws.amazon.com/blogs/database/from-noise-to-signal-monitoring-amazon-documentdb-like-a-pro/",
-          "published_at": "2026-09-09T15:23:20Z"
         }
       ],
       "note": ""
@@ -1945,16 +1935,6 @@
           "title": "How Heurist Finance built an AI-native investment workbench on Amazon Bedrock AgentCore",
           "url": "https://aws.amazon.com/blogs/machine-learning/how-heurist-finance-built-an-ai-native-investment-workbench-on-amazon-bedrock-agentcore/",
           "published_at": "2026-09-09T18:11:12Z"
-        },
-        {
-          "title": "Simplify and support your TorchServe workloads using Ray Serve Deep Learning Containers",
-          "url": "https://aws.amazon.com/blogs/machine-learning/simplify-and-support-your-torchserve-workloads-using-ray-serve-deep-learning-containers/",
-          "published_at": "2026-09-09T15:51:29Z"
-        },
-        {
-          "title": "Automate user-level custom permissions for Amazon Quick",
-          "url": "https://aws.amazon.com/blogs/machine-learning/automate-user-level-custom-permissions-for-amazon-quick/",
-          "published_at": "2026-09-09T15:45:24Z"
         }
       ],
       "note": ""
@@ -2070,7 +2050,7 @@
           "published_at": "2026-09-09T19:58:14Z"
         }
       ],
-      "note": "v2.1.270 body and release timestamp reviewed; excluded as a narrow regression fix below the formal bar"
+      "note": ""
     },
     {
       "name": "CrewAI releases",
@@ -2288,11 +2268,6 @@
           "title": "Switching password managers is easy and safe on Android",
           "url": "https://blog.google/products-and-platforms/platforms/android/switch-password-managers/",
           "published_at": "2026-09-10T16:00:00Z"
-        },
-        {
-          "title": "Get ready for the game with new football features in Search",
-          "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
-          "published_at": "2026-09-09T16:00:00Z"
         }
       ],
       "note": ""
@@ -2317,11 +2292,6 @@
           "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
           "url": "https://huggingface.co/blog/gradio-workflow-1111",
           "published_at": "2026-09-10T00:00:00Z"
-        },
-        {
-          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-          "published_at": "2026-09-09T15:36:24Z"
         }
       ],
       "note": ""
@@ -2395,15 +2365,9 @@
       "name": "OpenAI Agents SDK releases",
       "adapter": "atom",
       "source_url": "https://github.com/openai/openai-agents-python/releases.atom",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 10,
-      "recent_items": [
-        {
-          "title": "v0.22.2",
-          "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.22.2",
-          "published_at": "2026-09-09T12:36:10Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -2483,6 +2447,31 @@
       "checked_items": 120,
       "recent_items": [
         {
+          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "published_at": "2026-09-12T21:45:29.606000Z"
+        },
+        {
+          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "published_at": "2026-09-12T21:45:29.606000Z"
+        },
+        {
+          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "published_at": "2026-09-12T21:45:29.606000Z"
+        },
+        {
+          "title": "https://openai.com/index/two-blind-brothers/",
+          "url": "https://openai.com/index/two-blind-brothers/",
+          "published_at": "2026-09-12T21:12:00.763000Z"
+        },
+        {
+          "title": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+          "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+          "published_at": "2026-09-12T21:07:03.699000Z"
+        },
+        {
           "title": "https://openai.com/index/legora-financial-statement-review-with-astra/",
           "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
           "published_at": "2026-09-12T18:37:32.561000Z"
@@ -2491,11 +2480,6 @@
           "title": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
           "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
           "published_at": "2026-09-12T15:59:01.806000Z"
-        },
-        {
-          "title": "https://openai.com/index/two-blind-brothers/",
-          "url": "https://openai.com/index/two-blind-brothers/",
-          "published_at": "2026-09-12T15:36:00.643000Z"
         },
         {
           "title": "https://openai.com/index/1password/",
@@ -2546,21 +2530,6 @@
           "title": "https://openai.com/index/scaling-storage-one-billion-users-part-one/",
           "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one/",
           "published_at": "2026-09-12T02:19:32.976000Z"
-        },
-        {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-12T02:14:41.507000Z"
-        },
-        {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-12T02:14:41.507000Z"
-        },
-        {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-12T02:14:41.507000Z"
         },
         {
           "title": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
@@ -3076,14 +3045,9 @@
           "title": "https://openai.com/index/partnering-with-codeai/",
           "url": "https://openai.com/index/partnering-with-codeai/",
           "published_at": "2026-09-11T16:28:08.786000Z"
-        },
-        {
-          "title": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work/",
-          "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work/",
-          "published_at": "2026-09-11T16:28:08.318000Z"
         }
       ],
-      "note": "new Legora lastmod was body-reviewed and matched an existing September 3 event; lastmod was not treated as publication evidence"
+      "note": "3 new lastmod candidates were body-reviewed: 2 matched existing signals and 1 repeated a same-day below-threshold customer story; lastmod was not treated as publication evidence"
     },
     {
       "name": "OpenHands releases",
@@ -3112,6 +3076,11 @@
       "status": "candidate_only",
       "checked_items": 30,
       "recent_items": [
+        {
+          "title": "California Brown Pelican",
+          "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
+          "published_at": "2026-09-12T21:16:09Z"
+        },
         {
           "title": "Quoting Paul Ford",
           "url": "https://simonwillison.net/2026/Sep/12/paul-ford/",
@@ -3198,7 +3167,7 @@
           "published_at": "2026-09-09T23:58:32Z"
         }
       ],
-      "note": "new Paul Ford quotation page was opened; excluded because the accessible body contains only a short secondary quotation"
+      "note": "new California Brown Pelican sighting was body-reviewed and excluded as outside the AI Signal domain"
     },
     {
       "name": "SWE-agent releases",
@@ -3215,16 +3184,16 @@
     "platform_variants": 0
   },
   "notes": [
-    "Reviewed only the 3 cross-run new candidates; the 341-item rolling discovery pool was not rescanned.",
-    "Claude Code v2.1.270 was verified through the official GitHub Release page and API; its sole change is a narrow permission-prompt regression fix below the formal signal bar.",
-    "The Legora article is dated September 3 and is already attached to the existing Astra event; another sitemap lastmod is not a new editorial event.",
-    "The Simon Willison item is a short quotation of a linked opinion article and contains no content-level practitioner evidence that meets the inclusion threshold.",
-    "The two candidates from the earlier same-day review remain in candidate_reviews for daily audit continuity."
+    "Reviewed only the 4 cross-run new candidates; the 335-item rolling discovery pool was not rescanned.",
+    "The OpenAI research-acceleration and Images 2.5 pages match events already selected on September 10; sitemap lastmod changes were not treated as new editorial events.",
+    "The Two Blind Brothers page was reviewed again because it was cross-run new, but it remains the same below-threshold customer story with no resolvable publication date.",
+    "The Simon Willison page is a bird sighting and was excluded as outside all four AI Signal lanes.",
+    "Five candidates from earlier same-day reviews remain in candidate_reviews for audit continuity."
   ],
-  "reviewed_new_candidates": 3,
-  "day_reviewed_candidates_total": 5,
-  "candidate_queue_count": 5,
-  "new_in_run_count": 3,
+  "reviewed_new_candidates": 4,
+  "day_reviewed_candidates_total": 9,
+  "candidate_queue_count": 9,
+  "new_in_run_count": 4,
   "candidate_reviews": [
     {
       "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
@@ -3257,6 +3226,32 @@
       "decision": "exclude_below_practitioner_bar",
       "published_at": "2026-09-12T18:00:21Z",
       "reason": "the page reproduces a short quotation from a linked opinion article; it contains no builder case, new data, technical explanation, failure review, reusable method, or product mechanism that can be evaluated from the accessible first-party page"
+    },
+    {
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+      "decision": "duplicate_existing_no_material_update",
+      "signal_id": "2026-09-06-openai-automated-research-intern-rsi-controls",
+      "published_at": "2026-09-06T08:00:00Z",
+      "reason": "the first-party body still contains the same automated-research-intern milestone, internal usage metrics, human-intervention limit, and pacing controls already captured on September 10; the new sitemap lastmod adds no new evidence or status change"
+    },
+    {
+      "url": "https://openai.com/index/two-blind-brothers/",
+      "decision": "duplicate_same_day_review_no_material_update",
+      "published_at": null,
+      "reason": "the accessible first-party body is unchanged in editorial substance from the same-day review: it remains an accessibility customer story without a product release, new interface, control boundary, measured result, or resolvable publication date"
+    },
+    {
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "decision": "duplicate_existing_no_material_update",
+      "signal_id": "2026-09-08-openai-chatgpt-images-2-5",
+      "published_at": "2026-09-08T11:30:00Z",
+      "reason": "the first-party body still describes the September 8 Images 2.5 release, Sketch, templates, image comments, prompt sharing, and the Flare and Sunburst API models already captured on September 10; another sitemap lastmod is not a new launch"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
+      "decision": "exclude_out_of_scope",
+      "published_at": "2026-09-12T21:16:09Z",
+      "reason": "the first-party page is a California Brown Pelican sighting and contains no information about models, agent architecture, AI products, AI industry structure, or practitioner AI work"
     }
   ],
   "collection_contract": {

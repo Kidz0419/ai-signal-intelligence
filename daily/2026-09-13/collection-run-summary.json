@@ -1,6 +1,6 @@
 {
-  "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-13T08:00:07+08:00",
+  "run_type": "daily_four_lane_incremental_editorial_review",
+  "run_at": "2026-09-13T08:06:52+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
@@ -16,8 +16,8 @@
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
-  "excluded_count": 0,
-  "unreviewed_candidate_count": 335,
+  "excluded_count": 4,
+  "unreviewed_candidate_count": 0,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -34,7 +34,7 @@
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 0,
+  "cross_day_duplicates_removed": 4,
   "collection_errors": 11,
   "source_coverage": {
     "registered": 111,
@@ -3047,7 +3047,7 @@
           "published_at": "2026-09-11T16:28:08.786000Z"
         }
       ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "note": "3 new lastmod candidates were body-reviewed: 2 matched existing signals and 1 repeated a same-day below-threshold customer story; lastmod was not treated as publication evidence"
     },
     {
       "name": "OpenHands releases",
@@ -3167,7 +3167,7 @@
           "published_at": "2026-09-09T23:58:32Z"
         }
       ],
-      "note": ""
+      "note": "new California Brown Pelican sighting was body-reviewed and excluded as outside the AI Signal domain"
     },
     {
       "name": "SWE-agent releases",
@@ -3184,9 +3184,81 @@
     "platform_variants": 0
   },
   "notes": [
-    "335 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
-    "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
-    "Static pages were not promoted as fresh based on collected_at alone.",
-    "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
-  ]
+    "Reviewed only the 4 cross-run new candidates; the 335-item rolling discovery pool was not rescanned.",
+    "The OpenAI research-acceleration and Images 2.5 pages match events already selected on September 10; sitemap lastmod changes were not treated as new editorial events.",
+    "The Two Blind Brothers page was reviewed again because it was cross-run new, but it remains the same below-threshold customer story with no resolvable publication date.",
+    "The Simon Willison page is a bird sighting and was excluded as outside all four AI Signal lanes.",
+    "Five candidates from earlier same-day reviews remain in candidate_reviews for audit continuity."
+  ],
+  "reviewed_new_candidates": 4,
+  "day_reviewed_candidates_total": 9,
+  "candidate_queue_count": 9,
+  "new_in_run_count": 4,
+  "candidate_reviews": [
+    {
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
+      "decision": "duplicate_prior_review_below_formal_bar",
+      "published_at": "2026-09-09T17:00:00Z",
+      "prior_review_date": "2026-09-12",
+      "reason": "the official article still describes the same board and Safety and Security Committee appointment; it discloses no new committee powers, approval process, operating control, or model-level information, so another sitemap lastmod change is not a new event"
+    },
+    {
+      "url": "https://openai.com/index/two-blind-brothers/",
+      "decision": "exclude_below_formal_bar_date_unresolved",
+      "published_at": null,
+      "reason": "the first-party customer story describes accessibility and nonprofit workflows, but no distinct product release, interface change, control boundary, measured result, or structural adoption change; the article body exposes no publication date and sitemap lastmod is not substituted for one"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.270",
+      "decision": "exclude_below_formal_bar",
+      "published_at": "2026-09-12T19:45:44Z",
+      "reason": "the official release contains one narrow regression fix for read-only git commands asking for permission after a long-running session; it adds no new permission model, approval control, workflow, logging, pause, recovery, or rollback mechanism"
+    },
+    {
+      "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
+      "decision": "duplicate_existing_no_material_update",
+      "signal_id": "2026-09-03-openai-gpt6-astra-broad-release-monitorability",
+      "published_at": "2026-09-03",
+      "reason": "the first-party article is the same September 3 Legora deployment case already attached to the Astra event; the new sitemap lastmod does not prove a new release, evidence upgrade, or workflow change"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/12/paul-ford/",
+      "decision": "exclude_below_practitioner_bar",
+      "published_at": "2026-09-12T18:00:21Z",
+      "reason": "the page reproduces a short quotation from a linked opinion article; it contains no builder case, new data, technical explanation, failure review, reusable method, or product mechanism that can be evaluated from the accessible first-party page"
+    },
+    {
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+      "decision": "duplicate_existing_no_material_update",
+      "signal_id": "2026-09-06-openai-automated-research-intern-rsi-controls",
+      "published_at": "2026-09-06T08:00:00Z",
+      "reason": "the first-party body still contains the same automated-research-intern milestone, internal usage metrics, human-intervention limit, and pacing controls already captured on September 10; the new sitemap lastmod adds no new evidence or status change"
+    },
+    {
+      "url": "https://openai.com/index/two-blind-brothers/",
+      "decision": "duplicate_same_day_review_no_material_update",
+      "published_at": null,
+      "reason": "the accessible first-party body is unchanged in editorial substance from the same-day review: it remains an accessibility customer story without a product release, new interface, control boundary, measured result, or resolvable publication date"
+    },
+    {
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "decision": "duplicate_existing_no_material_update",
+      "signal_id": "2026-09-08-openai-chatgpt-images-2-5",
+      "published_at": "2026-09-08T11:30:00Z",
+      "reason": "the first-party body still describes the September 8 Images 2.5 release, Sketch, templates, image comments, prompt sharing, and the Flare and Sunburst API models already captured on September 10; another sitemap lastmod is not a new launch"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
+      "decision": "exclude_out_of_scope",
+      "published_at": "2026-09-12T21:16:09Z",
+      "reason": "the first-party page is a California Brown Pelican sighting and contains no information about models, agent architecture, AI products, AI industry structure, or practitioner AI work"
+    }
+  ],
+  "collection_contract": {
+    "raw_candidates_in_rolling_window_is_not_increment": true,
+    "candidate_queue_count_is_not_new_count": true,
+    "sitemap_lastmod_is_not_publication_date": true,
+    "feed_titles_require_body_verification": true,
+    "http_2xx_is_not_checked_no_match": true
+  }
 }
