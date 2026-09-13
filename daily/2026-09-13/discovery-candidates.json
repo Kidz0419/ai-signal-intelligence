@@ -1,52 +1,52 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T08:00:07+08:00",
+  "generated_at": "2026-09-13T12:00:36+08:00",
   "window": {
-    "start": "2026-09-10T00:00:07+08:00",
-    "end": "2026-09-13T08:00:07+08:00",
+    "start": "2026-09-10T04:00:36+08:00",
+    "end": "2026-09-13T12:00:36+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 9,
-  "new_in_run_count": 4,
+  "candidate_count": 11,
+  "new_in_run_count": 2,
   "new_candidates": [
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-      "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-      "published_or_lastmod_at": "2026-09-12T21:45:29.606000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/two-blind-brothers/",
       "url": "https://openai.com/index/two-blind-brothers/",
-      "published_or_lastmod_at": "2026-09-12T21:12:00.763000Z",
-      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
-    },
-    {
-      "source_name": "OpenAI sitemap",
-      "adapter": "sitemap_lastmod",
-      "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/introducing-chatgpt-images-2-5/",
-      "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
-      "published_or_lastmod_at": "2026-09-12T21:07:03.699000Z",
+      "published_or_lastmod_at": "2026-09-13T03:46:03.093000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "Simon Willison atom",
       "adapter": "atom",
       "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "California Brown Pelican",
-      "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
-      "published_or_lastmod_at": "2026-09-12T21:16:09Z",
+      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+      "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+      "published_or_lastmod_at": "2026-09-12T23:56:42Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/two-blind-brothers/",
+      "url": "https://openai.com/index/two-blind-brothers/",
+      "published_or_lastmod_at": "2026-09-13T03:46:03.093000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+      "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+      "published_or_lastmod_at": "2026-09-12T23:56:42Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",

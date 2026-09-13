@@ -1,23 +1,23 @@
 {
-  "run_type": "daily_four_lane_incremental_editorial_review",
-  "run_at": "2026-09-13T08:06:52+08:00",
+  "run_type": "daily_four_lane_incremental",
+  "run_at": "2026-09-13T12:00:36+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-10T00:00:07+08:00",
-    "end": "2026-09-13T08:00:07+08:00",
+    "start": "2026-09-10T04:00:36+08:00",
+    "end": "2026-09-13T12:00:36+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 335,
-  "unique_candidates": 288,
+  "raw_candidates": 329,
+  "unique_candidates": 282,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
-  "excluded_count": 4,
-  "unreviewed_candidate_count": 0,
+  "excluded_count": 0,
+  "unreviewed_candidate_count": 329,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -34,8 +34,8 @@
   },
   "executive_model_longform": 0,
   "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 4,
-  "collection_errors": 11,
+  "cross_day_duplicates_removed": 0,
+  "collection_errors": 12,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
@@ -44,8 +44,8 @@
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 4,
-      "not_checked": 100
+      "mechanical_failure": 5,
+      "not_checked": 99
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -99,8 +99,8 @@
         "checked_no_match": 0,
         "access_blocked": 2,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 14
+        "mechanical_failure": 2,
+        "not_checked": 13
       },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
@@ -292,9 +292,9 @@
         "name": "China MIIT",
         "type": "regulator",
         "url": "https://www.miit.gov.cn/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "ai_macro_primary",
@@ -1071,8 +1071,8 @@
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
         "status": "mechanical_failure",
-        "http_code": "429",
-        "note": "rate limited"
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "research_and_evaluation",
@@ -1930,11 +1930,6 @@
           "title": "ICYMI: What landed for AI builders in August 2026",
           "url": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-august-2026/",
           "published_at": "2026-09-09T20:01:03Z"
-        },
-        {
-          "title": "How Heurist Finance built an AI-native investment workbench on Amazon Bedrock AgentCore",
-          "url": "https://aws.amazon.com/blogs/machine-learning/how-heurist-finance-built-an-ai-native-investment-workbench-on-amazon-bedrock-agentcore/",
-          "published_at": "2026-09-09T18:11:12Z"
         }
       ],
       "note": ""
@@ -1964,11 +1959,6 @@
           "title": "Building supply chain multi-agent workloads in AWS GovCloud (US)",
           "url": "https://aws.amazon.com/blogs/publicsector/building-supply-chain-multi-agent-workloads-in-aws-govcloud-us/",
           "published_at": "2026-09-10T18:25:58Z"
-        },
-        {
-          "title": "How Forseti and AWS connect domestic violence survivors to services in real time",
-          "url": "https://aws.amazon.com/blogs/publicsector/how-forseti-and-aws-connect-domestic-violence-survivors-to-services-in-real-time/",
-          "published_at": "2026-09-09T16:04:34Z"
         }
       ],
       "note": ""
@@ -1977,15 +1967,9 @@
       "name": "AWS Security RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/security/feed/",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "The state of AI for security: Measuring what matters most for building trust",
-          "url": "https://aws.amazon.com/blogs/security/the-state-of-ai-for-security-measuring-what-matters-most-for-building-trust/",
-          "published_at": "2026-09-09T19:09:14Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -2004,11 +1988,6 @@
           "title": "Enable zero-copy access to AWS services on Amazon FSx for NetApp ONTAP with Amazon S3 Access Points",
           "url": "https://aws.amazon.com/blogs/storage/enable-zero-copy-access-to-aws-services-on-amazon-fsx-for-netapp-ontap-with-amazon-s3-access-points/",
           "published_at": "2026-09-11T14:27:23Z"
-        },
-        {
-          "title": "Secure team file sharing on Amazon WorkSpaces with Amazon EFS",
-          "url": "https://aws.amazon.com/blogs/storage/secure-team-file-sharing-on-amazon-workspaces-with-amazon-efs/",
-          "published_at": "2026-09-09T19:01:22Z"
         }
       ],
       "note": ""
@@ -2043,11 +2022,6 @@
           "title": "v2.1.268",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.268",
           "published_at": "2026-09-10T20:30:54Z"
-        },
-        {
-          "title": "v2.1.267",
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.267",
-          "published_at": "2026-09-09T19:58:14Z"
         }
       ],
       "note": ""
@@ -2241,15 +2215,9 @@
       "name": "Google Innovation & AI RSS",
       "adapter": "rss",
       "source_url": "https://blog.google/innovation-and-ai/rss/",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "A new deep learning model maps global methane emissions from space.",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/mapping-global-methane-emissions-from-space/",
-          "published_at": "2026-09-09T18:15:00Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -2447,24 +2415,24 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-12T21:45:29.606000Z"
-        },
-        {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-12T21:45:29.606000Z"
-        },
-        {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-12T21:45:29.606000Z"
-        },
-        {
           "title": "https://openai.com/index/two-blind-brothers/",
           "url": "https://openai.com/index/two-blind-brothers/",
-          "published_at": "2026-09-12T21:12:00.763000Z"
+          "published_at": "2026-09-13T03:46:03.093000Z"
+        },
+        {
+          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "published_at": "2026-09-12T21:45:29.606000Z"
+        },
+        {
+          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "published_at": "2026-09-12T21:45:29.606000Z"
+        },
+        {
+          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "published_at": "2026-09-12T21:45:29.606000Z"
         },
         {
           "title": "https://openai.com/index/introducing-chatgpt-images-2-5/",
@@ -3047,7 +3015,7 @@
           "published_at": "2026-09-11T16:28:08.786000Z"
         }
       ],
-      "note": "3 new lastmod candidates were body-reviewed: 2 matched existing signals and 1 repeated a same-day below-threshold customer story; lastmod was not treated as publication evidence"
+      "note": "lastmod is discovery-only; verify datePublished/body before selection"
     },
     {
       "name": "OpenHands releases",
@@ -3060,11 +3028,6 @@
           "title": "v1.18.0",
           "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.18.0",
           "published_at": "2026-09-11T18:32:07Z"
-        },
-        {
-          "title": "v1.17.0",
-          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.17.0",
-          "published_at": "2026-09-09T19:31:50Z"
         }
       ],
       "note": ""
@@ -3076,6 +3039,11 @@
       "status": "candidate_only",
       "checked_items": 30,
       "recent_items": [
+        {
+          "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+          "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+          "published_at": "2026-09-12T23:56:42Z"
+        },
         {
           "title": "California Brown Pelican",
           "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
@@ -3167,7 +3135,7 @@
           "published_at": "2026-09-09T23:58:32Z"
         }
       ],
-      "note": "new California Brown Pelican sighting was body-reviewed and excluded as outside the AI Signal domain"
+      "note": ""
     },
     {
       "name": "SWE-agent releases",
@@ -3184,81 +3152,9 @@
     "platform_variants": 0
   },
   "notes": [
-    "Reviewed only the 4 cross-run new candidates; the 335-item rolling discovery pool was not rescanned.",
-    "The OpenAI research-acceleration and Images 2.5 pages match events already selected on September 10; sitemap lastmod changes were not treated as new editorial events.",
-    "The Two Blind Brothers page was reviewed again because it was cross-run new, but it remains the same below-threshold customer story with no resolvable publication date.",
-    "The Simon Willison page is a bird sighting and was excluded as outside all four AI Signal lanes.",
-    "Five candidates from earlier same-day reviews remain in candidate_reviews for audit continuity."
-  ],
-  "reviewed_new_candidates": 4,
-  "day_reviewed_candidates_total": 9,
-  "candidate_queue_count": 9,
-  "new_in_run_count": 4,
-  "candidate_reviews": [
-    {
-      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
-      "decision": "duplicate_prior_review_below_formal_bar",
-      "published_at": "2026-09-09T17:00:00Z",
-      "prior_review_date": "2026-09-12",
-      "reason": "the official article still describes the same board and Safety and Security Committee appointment; it discloses no new committee powers, approval process, operating control, or model-level information, so another sitemap lastmod change is not a new event"
-    },
-    {
-      "url": "https://openai.com/index/two-blind-brothers/",
-      "decision": "exclude_below_formal_bar_date_unresolved",
-      "published_at": null,
-      "reason": "the first-party customer story describes accessibility and nonprofit workflows, but no distinct product release, interface change, control boundary, measured result, or structural adoption change; the article body exposes no publication date and sitemap lastmod is not substituted for one"
-    },
-    {
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.270",
-      "decision": "exclude_below_formal_bar",
-      "published_at": "2026-09-12T19:45:44Z",
-      "reason": "the official release contains one narrow regression fix for read-only git commands asking for permission after a long-running session; it adds no new permission model, approval control, workflow, logging, pause, recovery, or rollback mechanism"
-    },
-    {
-      "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
-      "decision": "duplicate_existing_no_material_update",
-      "signal_id": "2026-09-03-openai-gpt6-astra-broad-release-monitorability",
-      "published_at": "2026-09-03",
-      "reason": "the first-party article is the same September 3 Legora deployment case already attached to the Astra event; the new sitemap lastmod does not prove a new release, evidence upgrade, or workflow change"
-    },
-    {
-      "url": "https://simonwillison.net/2026/Sep/12/paul-ford/",
-      "decision": "exclude_below_practitioner_bar",
-      "published_at": "2026-09-12T18:00:21Z",
-      "reason": "the page reproduces a short quotation from a linked opinion article; it contains no builder case, new data, technical explanation, failure review, reusable method, or product mechanism that can be evaluated from the accessible first-party page"
-    },
-    {
-      "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-      "decision": "duplicate_existing_no_material_update",
-      "signal_id": "2026-09-06-openai-automated-research-intern-rsi-controls",
-      "published_at": "2026-09-06T08:00:00Z",
-      "reason": "the first-party body still contains the same automated-research-intern milestone, internal usage metrics, human-intervention limit, and pacing controls already captured on September 10; the new sitemap lastmod adds no new evidence or status change"
-    },
-    {
-      "url": "https://openai.com/index/two-blind-brothers/",
-      "decision": "duplicate_same_day_review_no_material_update",
-      "published_at": null,
-      "reason": "the accessible first-party body is unchanged in editorial substance from the same-day review: it remains an accessibility customer story without a product release, new interface, control boundary, measured result, or resolvable publication date"
-    },
-    {
-      "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
-      "decision": "duplicate_existing_no_material_update",
-      "signal_id": "2026-09-08-openai-chatgpt-images-2-5",
-      "published_at": "2026-09-08T11:30:00Z",
-      "reason": "the first-party body still describes the September 8 Images 2.5 release, Sketch, templates, image comments, prompt sharing, and the Flare and Sunburst API models already captured on September 10; another sitemap lastmod is not a new launch"
-    },
-    {
-      "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
-      "decision": "exclude_out_of_scope",
-      "published_at": "2026-09-12T21:16:09Z",
-      "reason": "the first-party page is a California Brown Pelican sighting and contains no information about models, agent architecture, AI products, AI industry structure, or practitioner AI work"
-    }
-  ],
-  "collection_contract": {
-    "raw_candidates_in_rolling_window_is_not_increment": true,
-    "candidate_queue_count_is_not_new_count": true,
-    "sitemap_lastmod_is_not_publication_date": true,
-    "feed_titles_require_body_verification": true,
-    "http_2xx_is_not_checked_no_match": true
-  }
+    "329 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
+    "Static pages were not promoted as fresh based on collected_at alone.",
+    "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
+  ]
 }
