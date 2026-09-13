@@ -1,51 +1,51 @@
 {
   "run_type": "daily_four_lane_incremental_editorial_review",
-  "run_at": "2026-09-13T08:06:52+08:00",
+  "run_at": "2026-09-13T12:11:21+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-10T00:00:07+08:00",
-    "end": "2026-09-13T08:00:07+08:00",
+    "start": "2026-09-10T04:00:36+08:00",
+    "end": "2026-09-13T12:00:36+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 335,
-  "unique_candidates": 288,
-  "editorial_shortlist": 0,
+  "raw_candidates": 329,
+  "unique_candidates": 282,
+  "editorial_shortlist": 1,
   "previous_count": 0,
-  "new_count": 0,
+  "new_count": 1,
   "updated_count": 0,
-  "excluded_count": 4,
+  "excluded_count": 1,
   "unreviewed_candidate_count": 0,
-  "total_count": 0,
-  "selected": 0,
+  "total_count": 1,
+  "selected": 1,
   "lane_counts": {
     "model": 0,
-    "agent_architecture": 0,
+    "agent_architecture": 1,
     "ai_product": 0,
     "ai_macro": 0
   },
   "priority_counts": {
     "P0": 0,
-    "P1": 0,
+    "P1": 1,
     "P2": 0,
     "P3": 0
   },
   "executive_model_longform": 0,
-  "practitioner_statements": 0,
-  "cross_day_duplicates_removed": 4,
-  "collection_errors": 11,
+  "practitioner_statements": 1,
+  "cross_day_duplicates_removed": 1,
+  "collection_errors": 12,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
-      "selected": 0,
+      "selected": 1,
       "candidate_only": 0,
       "checked_no_match": 0,
       "access_blocked": 7,
       "auth_required": 0,
-      "mechanical_failure": 4,
-      "not_checked": 100
+      "mechanical_failure": 5,
+      "not_checked": 98
     },
     "channel_counts": {
       "frontier_model_official": {
@@ -99,17 +99,17 @@
         "checked_no_match": 0,
         "access_blocked": 2,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 14
+        "mechanical_failure": 2,
+        "not_checked": 13
       },
       "practitioner_and_product_leader_longform": {
-        "selected": 0,
+        "selected": 1,
         "candidate_only": 0,
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
         "mechanical_failure": 0,
-        "not_checked": 11
+        "not_checked": 10
       }
     },
     "records": [
@@ -292,9 +292,9 @@
         "name": "China MIIT",
         "type": "regulator",
         "url": "https://www.miit.gov.cn/",
-        "status": "not_checked",
-        "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "url_error",
+        "note": "_ssl.c:999: The handshake operation timed out"
       },
       {
         "channel": "ai_macro_primary",
@@ -1025,9 +1025,9 @@
         "name": "Simon Willison",
         "type": "personal_blog",
         "url": "https://simonwillison.net/",
-        "status": "not_checked",
+        "status": "selected",
         "http_code": "206",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "note": "Atom timestamp and first-party body reviewed; one practitioner signal selected from the current increment"
       },
       {
         "channel": "practitioner_and_product_leader_longform",
@@ -1071,8 +1071,8 @@
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
         "status": "mechanical_failure",
-        "http_code": "429",
-        "note": "rate limited"
+        "http_code": "TimeoutError",
+        "note": "The read operation timed out"
       },
       {
         "channel": "research_and_evaluation",
@@ -1930,11 +1930,6 @@
           "title": "ICYMI: What landed for AI builders in August 2026",
           "url": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-august-2026/",
           "published_at": "2026-09-09T20:01:03Z"
-        },
-        {
-          "title": "How Heurist Finance built an AI-native investment workbench on Amazon Bedrock AgentCore",
-          "url": "https://aws.amazon.com/blogs/machine-learning/how-heurist-finance-built-an-ai-native-investment-workbench-on-amazon-bedrock-agentcore/",
-          "published_at": "2026-09-09T18:11:12Z"
         }
       ],
       "note": ""
@@ -1964,11 +1959,6 @@
           "title": "Building supply chain multi-agent workloads in AWS GovCloud (US)",
           "url": "https://aws.amazon.com/blogs/publicsector/building-supply-chain-multi-agent-workloads-in-aws-govcloud-us/",
           "published_at": "2026-09-10T18:25:58Z"
-        },
-        {
-          "title": "How Forseti and AWS connect domestic violence survivors to services in real time",
-          "url": "https://aws.amazon.com/blogs/publicsector/how-forseti-and-aws-connect-domestic-violence-survivors-to-services-in-real-time/",
-          "published_at": "2026-09-09T16:04:34Z"
         }
       ],
       "note": ""
@@ -1977,15 +1967,9 @@
       "name": "AWS Security RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/security/feed/",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "The state of AI for security: Measuring what matters most for building trust",
-          "url": "https://aws.amazon.com/blogs/security/the-state-of-ai-for-security-measuring-what-matters-most-for-building-trust/",
-          "published_at": "2026-09-09T19:09:14Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -2004,11 +1988,6 @@
           "title": "Enable zero-copy access to AWS services on Amazon FSx for NetApp ONTAP with Amazon S3 Access Points",
           "url": "https://aws.amazon.com/blogs/storage/enable-zero-copy-access-to-aws-services-on-amazon-fsx-for-netapp-ontap-with-amazon-s3-access-points/",
           "published_at": "2026-09-11T14:27:23Z"
-        },
-        {
-          "title": "Secure team file sharing on Amazon WorkSpaces with Amazon EFS",
-          "url": "https://aws.amazon.com/blogs/storage/secure-team-file-sharing-on-amazon-workspaces-with-amazon-efs/",
-          "published_at": "2026-09-09T19:01:22Z"
         }
       ],
       "note": ""
@@ -2043,11 +2022,6 @@
           "title": "v2.1.268",
           "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.268",
           "published_at": "2026-09-10T20:30:54Z"
-        },
-        {
-          "title": "v2.1.267",
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.267",
-          "published_at": "2026-09-09T19:58:14Z"
         }
       ],
       "note": ""
@@ -2241,15 +2215,9 @@
       "name": "Google Innovation & AI RSS",
       "adapter": "rss",
       "source_url": "https://blog.google/innovation-and-ai/rss/",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "A new deep learning model maps global methane emissions from space.",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/mapping-global-methane-emissions-from-space/",
-          "published_at": "2026-09-09T18:15:00Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -2447,24 +2415,24 @@
       "checked_items": 120,
       "recent_items": [
         {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-12T21:45:29.606000Z"
-        },
-        {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-12T21:45:29.606000Z"
-        },
-        {
-          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-          "published_at": "2026-09-12T21:45:29.606000Z"
-        },
-        {
           "title": "https://openai.com/index/two-blind-brothers/",
           "url": "https://openai.com/index/two-blind-brothers/",
-          "published_at": "2026-09-12T21:12:00.763000Z"
+          "published_at": "2026-09-13T03:46:03.093000Z"
+        },
+        {
+          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "published_at": "2026-09-12T21:45:29.606000Z"
+        },
+        {
+          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "published_at": "2026-09-12T21:45:29.606000Z"
+        },
+        {
+          "title": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+          "published_at": "2026-09-12T21:45:29.606000Z"
         },
         {
           "title": "https://openai.com/index/introducing-chatgpt-images-2-5/",
@@ -3047,7 +3015,7 @@
           "published_at": "2026-09-11T16:28:08.786000Z"
         }
       ],
-      "note": "3 new lastmod candidates were body-reviewed: 2 matched existing signals and 1 repeated a same-day below-threshold customer story; lastmod was not treated as publication evidence"
+      "note": "The new Two Blind Brothers lastmod was body-reviewed and matched the same same-day below-threshold customer story; lastmod was not used as publication evidence"
     },
     {
       "name": "OpenHands releases",
@@ -3060,11 +3028,6 @@
           "title": "v1.18.0",
           "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.18.0",
           "published_at": "2026-09-11T18:32:07Z"
-        },
-        {
-          "title": "v1.17.0",
-          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.17.0",
-          "published_at": "2026-09-09T19:31:50Z"
         }
       ],
       "note": ""
@@ -3073,9 +3036,14 @@
       "name": "Simon Willison atom",
       "adapter": "atom",
       "source_url": "https://simonwillison.net/atom/everything/",
-      "status": "candidate_only",
+      "status": "selected",
       "checked_items": 30,
       "recent_items": [
+        {
+          "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+          "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+          "published_at": "2026-09-12T23:56:42Z"
+        },
         {
           "title": "California Brown Pelican",
           "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
@@ -3167,7 +3135,7 @@
           "published_at": "2026-09-09T23:58:32Z"
         }
       ],
-      "note": "new California Brown Pelican sighting was body-reviewed and excluded as outside the AI Signal domain"
+      "note": "The new running-route article was body-reviewed with its linked HTML artifact; selected for the concrete compaction and execution-provenance failure"
     },
     {
       "name": "SWE-agent releases",
@@ -3180,20 +3148,20 @@
     }
   ],
   "content_topics": {
-    "topic_count": 0,
-    "platform_variants": 0
+    "topic_count": 1,
+    "platform_variants": 3
   },
   "notes": [
-    "Reviewed only the 4 cross-run new candidates; the 335-item rolling discovery pool was not rescanned.",
-    "The OpenAI research-acceleration and Images 2.5 pages match events already selected on September 10; sitemap lastmod changes were not treated as new editorial events.",
-    "The Two Blind Brothers page was reviewed again because it was cross-run new, but it remains the same below-threshold customer story with no resolvable publication date.",
-    "The Simon Willison page is a bird sighting and was excluded as outside all four AI Signal lanes.",
-    "Five candidates from earlier same-day reviews remain in candidate_reviews for audit continuity."
+    "Reviewed only the 2 cross-run new candidates; the 329-item rolling discovery pool and 11-item queue were not rescanned.",
+    "The Two Blind Brothers page was body-reviewed again because its sitemap lastmod changed, but no publication date or material product evidence changed.",
+    "Simon Willison's article and linked HTML artifact document a distinct long-task reproducibility failure: final artifacts survived while executed code was not visible and could not be recovered after thread compaction.",
+    "The Simon item is kept separate from the August 30 ChatGPT Work overview because it is a new experiment, a new canonical source, and a distinct execution-provenance finding.",
+    "Nine candidates from earlier same-day reviews remain in candidate_reviews for audit continuity."
   ],
-  "reviewed_new_candidates": 4,
-  "day_reviewed_candidates_total": 9,
-  "candidate_queue_count": 9,
-  "new_in_run_count": 4,
+  "reviewed_new_candidates": 2,
+  "day_reviewed_candidates_total": 11,
+  "candidate_queue_count": 11,
+  "new_in_run_count": 2,
   "candidate_reviews": [
     {
       "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
@@ -3252,6 +3220,19 @@
       "decision": "exclude_out_of_scope",
       "published_at": "2026-09-12T21:16:09Z",
       "reason": "the first-party page is a California Brown Pelican sighting and contains no information about models, agent architecture, AI products, AI industry structure, or practitioner AI work"
+    },
+    {
+      "url": "https://openai.com/index/two-blind-brothers/",
+      "decision": "duplicate_same_day_review_no_material_update",
+      "published_at": null,
+      "reason": "the first-party body remains the same accessibility customer story already reviewed twice today; the latest sitemap lastmod exposes no publication date, product release, interface change, control boundary, measured result, or other material evidence update"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+      "decision": "include",
+      "signal_id": "2026-09-12-simon-chatgpt-work-compaction-provenance-gap",
+      "published_at": "2026-09-12T23:56:42Z",
+      "reason": "the first-party article and linked runnable HTML artifact document a 27-minute ChatGPT Work task, concrete exported outputs, and a reproducibility failure: the executed code was hidden and could not be recovered after thread compaction"
     }
   ],
   "collection_contract": {

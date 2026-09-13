@@ -2,11 +2,83 @@
   "schema_version": 1,
   "report_date": "2026-09-13",
   "timezone": "Asia/Shanghai",
-  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。",
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。自动流程只生成 candidate，不自动发布。",
   "scope_label_cn": "当日增量 · 2026-09-13",
   "source_scope": {
     "type": "daily",
     "date": "2026-09-13"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-13-agent-compaction-execution-provenance",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-12-simon-chatgpt-work-compaction-provenance-gap"
+      ],
+      "working_title_cn": "Agent 交付了结果，却交不出它做过什么",
+      "core_tension_cn": "长任务靠上下文压缩才能继续运行，但压缩不能顺手删掉代码、工具轨迹和可复查证据。",
+      "why_now_cn": "Simon Willison 的 27 分钟路线任务成功交付地图与文件，却无法从 ChatGPT Work 取回实际执行代码；这把 Agent 的结果正确性和过程可审计性拆成了两个验收项。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "Agent 平台与运行时团队",
+        "企业 AI 治理与审计团队"
+      ],
+      "evidence_boundary_cn": "这是单次一线实测，不是 OpenAI 官方文档。公开页面和 HTML 产物能证明输出存在及代码不可见，但不能确认普遍发生，也没有独立验证路线正确性或 compaction 内部实现。",
+      "source_urls": [
+        "https://simonwillison.net/2026/Sep/12/astra-running-routes"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI 跑了 27 分钟，最后却交不出它写过的代码",
+          "hook": "地图、GPX、GeoJSON 都有，唯独执行代码和完整过程拿不回来。长任务 Agent 的验收不能只看结果文件。",
+          "format": "8页图文卡",
+          "outline": [
+            "任务输入与 27 分钟执行",
+            "Agent 交付了哪些文件",
+            "真正缺失的过程证据",
+            "上下文压缩为什么会影响审计",
+            "结果正确不等于可复查",
+            "产品应保留的执行包",
+            "长任务 Agent 验收清单"
+          ],
+          "visual_direction": "左侧是地图、GPX、GeoJSON，右侧把代码、工具轨迹和压缩前 transcript 标成缺失",
+          "cta": "你会把只有结果、没有执行记录的 Agent 任务算作完成吗？"
+        },
+        "twitter": {
+          "title": "An agent result without its execution trace is not a reproducible deliverable",
+          "hook": "ChatGPT Work spent 27 minutes producing a map, GPX and GeoJSON. The output survived; the Python code and exact execution path did not remain available after compaction.",
+          "format": "6帖 Thread",
+          "outline": [
+            "task and outputs",
+            "what the UI hid",
+            "what compaction removed from reach",
+            "artifact versus provenance",
+            "minimum immutable run bundle",
+            "evidence boundary"
+          ],
+          "visual_direction": "run bundle diagram linking prompt, tool calls, code, data sources and exported artifacts",
+          "cta": "Does your agent preserve pre-compaction transcripts and executable traces?"
+        },
+        "wechat": {
+          "title": "长任务 Agent 的交付标准：文件出来了，执行过程也必须取得回来",
+          "hook": "一次成功的路线生成任务暴露了更难处理的问题：Agent 能交付最终文件，却无法交付当时运行的代码和完整步骤。",
+          "format": "2200—2800字分析",
+          "outline": [
+            "实测任务与可核验证据",
+            "最终产物和过程证据的区别",
+            "上下文压缩带来的产品缺口",
+            "为什么这会影响复查、复跑和责任界定",
+            "不可变执行包应该包含什么",
+            "日志、暂停、恢复与导出设计",
+            "企业 Agent 验收问题清单"
+          ],
+          "visual_direction": "上下文层与审计存储层分离的架构图，标出压缩不应删除的证据",
+          "cta": "附一份长任务 Agent 的可复查性交付清单。"
+        }
+      }
+    }
+  ]
 }
