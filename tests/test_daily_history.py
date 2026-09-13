@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 import json
 import re
+import sys
 import unittest
 from difflib import SequenceMatcher
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from scripts.run_daily_incremental import is_true_increment
 
 
 def normalized_title(value: str) -> str:
@@ -125,6 +129,23 @@ class DailyHistoryContractTest(unittest.TestCase):
         self.assertIn("CONTENT TOPIC STUDIO", page)
         if topics:
             self.assertEqual(len(topics) * 3, sum(len(row["platforms"]) for row in topics))
+
+    def test_incremental_cursor_ignores_sitemap_lastmod_churn(self):
+        self.assertTrue(is_true_increment("sitemap_lastmod", None, "2026-09-13T12:00:00Z"))
+        self.assertFalse(
+            is_true_increment(
+                "sitemap_lastmod",
+                "2026-09-12T12:00:00Z",
+                "2026-09-13T12:00:00Z",
+            )
+        )
+        self.assertTrue(
+            is_true_increment(
+                "rss",
+                "2026-09-12T12:00:00Z",
+                "2026-09-13T12:00:00Z",
+            )
+        )
 
 
 if __name__ == "__main__":

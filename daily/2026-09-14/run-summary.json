@@ -1,8 +1,8 @@
 {
-  "run_type": "daily_four_lane_incremental",
+  "run_type": "daily_four_lane_incremental_cursor_reconciliation",
   "run_at": "2026-09-14T00:00:25+08:00",
   "deliverable_outcome": "success",
-  "scheduler_outcome": "success",
+  "scheduler_outcome": "initial_script_error_recovered",
   "window": {
     "timezone": "Asia/Shanghai",
     "start": "2026-09-10T16:00:25+08:00",
@@ -17,7 +17,7 @@
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 237,
+  "unreviewed_candidate_count": 0,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -2676,5 +2676,175 @@
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
-  ]
+  ],
+  "candidate_queue_count": 0,
+  "new_in_run_count": 0,
+  "reviewed_new_candidates": 0,
+  "reviewed_cursor_false_positives": 18,
+  "cross_run_candidate_duplicates_removed": 18,
+  "review_breakdown": {
+    "cross_run_duplicate": 18,
+    "selected": 0,
+    "watchlist": 0,
+    "unresolved": 0
+  },
+  "review_notes": [
+    "Reconciled only the 18 entries marked new by the collector; the rolling candidate pool was not rescanned.",
+    "Every entry was a sitemap_lastmod observation for a canonical URL already present in earlier daily discovery artifacts, so none qualifies as a true cross-run increment.",
+    "Body fallbacks were opened for the 18 URLs. Their accessible publication dates were historical or absent; GPT-6 Astra was already represented by stable event 2026-09-03-openai-gpt6-astra-broad-release-monitorability.",
+    "The initial publication script committed locally but its first GitHub connection failed with LibreSSL SSL_ERROR_SYSCALL. A later push and three-layer public verification recovered the deliverable."
+  ],
+  "candidate_reviews": [
+    {
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-09-04",
+      "last_seen_before_run": "2026-09-12",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-09-09",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/chatgpt-whatsapp-transition/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-09-01",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-09-01",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-08-17",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/introducing-parental-controls/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-09-01",
+      "last_seen_before_run": "2026-09-03",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-09-02",
+      "last_seen_before_run": "2026-09-03",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/helping-people-when-they-need-it-most/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-08-17",
+      "last_seen_before_run": "2026-09-03",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-09-01",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/optimizing-chatgpt/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-08-17",
+      "last_seen_before_run": "2026-09-03",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-08-17",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/testing-ads-in-chatgpt/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-09-01",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/introducing-openai-presence/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-09-01",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/introducing-chatgpt-health/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-08-17",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/building-towards-age-prediction/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-08-17",
+      "last_seen_before_run": "2026-09-03",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-08-17",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/sora-2/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-08-17",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "decision": "cross_run_duplicate",
+      "published_at": null,
+      "first_seen_date": "2026-08-18",
+      "last_seen_before_run": "2026-09-11",
+      "reason": "sitemap lastmod changed, but the canonical URL already appeared in an earlier daily discovery artifact; lastmod alone is not publication or body-change evidence"
+    }
+  ],
+  "collection_contract": {
+    "raw_candidates_in_rolling_window_is_not_increment": true,
+    "candidate_queue_count_is_not_new_count": true,
+    "sitemap_lastmod_is_discovery_only": true,
+    "previously_seen_sitemap_url_requires_content_hash_change": true,
+    "true_increment_source": "new_in_run_count and new_candidates after cursor reconciliation"
+  }
 }

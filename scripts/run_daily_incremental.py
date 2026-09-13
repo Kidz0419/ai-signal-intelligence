@@ -48,6 +48,21 @@ def iso_utc(dt: datetime) -> str:
     return dt.astimezone(UTC).isoformat().replace("+00:00", "Z")
 
 
+def is_true_increment(adapter: str, previous_timestamp: str | None, current_timestamp: str) -> bool:
+    """Return whether an adapter observation belongs in the cross-run increment.
+
+    Sitemap ``lastmod`` is discovery metadata, not a publication timestamp. A
+    changed value on an already-seen URL therefore cannot create a new
+    candidate by itself. Feed and release adapters may emit a meaningful
+    update on the same URL, so they retain timestamp-sensitive behavior.
+    """
+    if previous_timestamp is None:
+        return True
+    if adapter == "sitemap_lastmod":
+        return False
+    return previous_timestamp != current_timestamp
+
+
 def request_text(url: str, timeout: int = HTTP_TIMEOUT, use_range: bool = True) -> tuple[int, str, str]:
     headers = {
         "User-Agent": USER_AGENT,
@@ -564,7 +579,7 @@ def main() -> None:
                 ),
             }
             state_key = f"{probe.adapter}|{item.url}"
-            if seen_timestamps.get(state_key) != item.published_at:
+            if is_true_increment(probe.adapter, seen_timestamps.get(state_key), item.published_at):
                 discovered_this_run.append(candidate)
             seen_timestamps[state_key] = item.published_at
 
