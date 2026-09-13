@@ -2,6 +2,8 @@
 .DS_Store
 .cache/
 test-results/
+__pycache__/
+*.py[cod]
 
 # Raw collection and acceptance artifacts (not public site data)
 daily/*/discovered-*.json
