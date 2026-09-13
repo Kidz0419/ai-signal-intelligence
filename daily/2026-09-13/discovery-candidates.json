@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T12:00:36+08:00",
+  "generated_at": "2026-09-13T16:00:20+08:00",
   "window": {
-    "start": "2026-09-10T04:00:36+08:00",
-    "end": "2026-09-13T12:00:36+08:00",
+    "start": "2026-09-10T08:00:20+08:00",
+    "end": "2026-09-13T16:00:20+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 11,
+  "candidate_count": 13,
   "new_in_run_count": 2,
   "new_candidates": [
     {
@@ -15,20 +15,38 @@
       "source_url": "https://openai.com/sitemap.xml",
       "title": "https://openai.com/index/two-blind-brothers/",
       "url": "https://openai.com/index/two-blind-brothers/",
-      "published_or_lastmod_at": "2026-09-13T03:46:03.093000Z",
+      "published_or_lastmod_at": "2026-09-13T06:16:01.203000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
-      "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
-      "published_or_lastmod_at": "2026-09-12T23:56:42Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/1password/",
+      "url": "https://openai.com/index/1password/",
+      "published_or_lastmod_at": "2026-09-13T05:13:30.532000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/two-blind-brothers/",
+      "url": "https://openai.com/index/two-blind-brothers/",
+      "published_or_lastmod_at": "2026-09-13T06:16:01.203000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/1password/",
+      "url": "https://openai.com/index/1password/",
+      "published_or_lastmod_at": "2026-09-13T05:13:30.532000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
     {
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
