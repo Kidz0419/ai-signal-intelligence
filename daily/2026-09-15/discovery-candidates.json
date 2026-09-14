@@ -241,5 +241,69 @@
     "candidate_is_not_signal": true,
     "sitemap_lastmod_is_not_publication_date": true,
     "search_or_feed_title_requires_body_verification": true
+  },
+  "editorial_review": {
+    "completed_at": "2026-09-15T04:08:21+08:00",
+    "reviewed_new_candidates": 9,
+    "selected": 1,
+    "excluded": 6,
+    "candidate_only": 2,
+    "reviews": [
+      {
+        "url": "https://aws.amazon.com/blogs/database/resolve-amazon-aurora-postgresql-lock-contention-with-database-insights-part-2/",
+        "decision": "checked_no_match",
+        "published_at": "2026-09-14T16:02:16Z",
+        "reason": "body and RSS describe PostgreSQL lock analysis and contention mitigation; the workload example contains no material model, agent, AI product or AI market event"
+      },
+      {
+        "url": "https://aws.amazon.com/blogs/database/troubleshooting-row-lock-contention-in-amazon-aurora-postgresql-part-1-understanding-row-lock-contention-in-postgresql/",
+        "decision": "checked_no_match",
+        "published_at": "2026-09-14T16:02:08Z",
+        "reason": "body and RSS describe PostgreSQL locking internals and monitoring; it is database engineering rather than an AI signal"
+      },
+      {
+        "url": "https://aws.amazon.com/blogs/security/aws-security-reference-architecture-a-deep-dive-into-pci-dss-compliance/",
+        "decision": "checked_no_match",
+        "published_at": "2026-09-14T17:46:56Z",
+        "reason": "body and RSS confirm a PCI DSS security reference guide, but it does not introduce an AI model, agent workflow, AI product control or AI market-structure change"
+      },
+      {
+        "url": "https://aws.amazon.com/blogs/storage/connect-workloads-to-amazon-s3-files-across-vpcs-and-accounts/",
+        "decision": "checked_no_match",
+        "published_at": "2026-09-14T17:10:24Z",
+        "reason": "body and RSS document cross-VPC and cross-account file-system networking; mentions of agents and generative-AI workloads are examples, not a new agent capability or workflow"
+      },
+      {
+        "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+        "decision": "include",
+        "signal_id": "2026-09-14-github-copilot-auto-model-selection-tiers",
+        "published_at": "2026-09-14T16:05:27Z",
+        "reason": "official changelog and product documentation confirm a user-visible three-tier routing control, per-prompt model choice, policy constraints, actual-model disclosure and usage-based billing"
+      },
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+        "decision": "checked_no_match",
+        "published_at": "2026-09-14",
+        "reason": "the first-party body is an event invitation and agenda overview; it announces no material model, agent architecture, product workflow or structural market change"
+      },
+      {
+        "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials/",
+        "decision": "outside_incremental_window_no_material_update",
+        "published_at": "2026-09-10",
+        "reason": "the first-party body is dated September 10; the September 14 sitemap lastmod does not establish a new publication or material update inside the 80-hour window"
+      },
+      {
+        "url": "https://openai.com/index/estee-lauder/",
+        "decision": "candidate_only_missing_published_at",
+        "published_at": null,
+        "reason": "the first-party body was readable and describes an enterprise case study, but no datePublished or documented update date was exposed; sitemap lastmod alone cannot satisfy the strict window"
+      },
+      {
+        "url": "https://openai.com/index/detecting-wildfires-early/",
+        "decision": "candidate_only_missing_published_at",
+        "published_at": null,
+        "reason": "the first-party body was readable and describes a ChatGPT-assisted wildfire workflow, but no datePublished or documented update date was exposed; sitemap lastmod alone cannot satisfy the strict window"
+      }
+    ]
   }
 }

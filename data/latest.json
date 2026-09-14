@@ -288,5 +288,76 @@
         "type": "author_identity"
       }
     ]
+  },
+  {
+    "id": "2026-09-14-github-copilot-auto-model-selection-tiers",
+    "demo": false,
+    "topic_lane": "ai_product",
+    "title": "GitHub Copilot 把自动选模拆成三档：用户选目标，系统按每个 Prompt 选模型",
+    "summary": "GitHub Copilot 的自动选模新增 efficiency、balance 和 intelligence 三档。用户选择成本、质量与响应时间的偏好，路由器仍按每个 Prompt 的复杂度、系统健康和可用性选择模型；三档使用同一候选模型池。该功能正向 VS Code、Copilot CLI 和 GitHub Copilot app 推送，费用按实际选中的模型计算，付费用户通过 auto 仍享 10% 折扣。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "official_release",
+    "information_type": "product_workflow",
+    "evidence_level": "confirmed",
+    "source": "GitHub",
+    "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+    "published_at": "2026-09-14T16:05:27Z",
+    "primary_tags": [
+      "Auto model selection",
+      "Cost-quality control",
+      "Per-prompt routing"
+    ],
+    "secondary_tags": [
+      "GitHub Copilot",
+      "VS Code",
+      "Copilot CLI",
+      "Usage-based billing"
+    ],
+    "why_it_matters_cn": "多模型产品开始把选模从隐藏的系统决定变成用户可配置的策略，但控制粒度仍停在目标偏好，而不是模型白名单、单次预算或任务规则。它把产品问题从“默认用哪个模型”推进到“谁决定路由目标、每次实际用了什么、费用如何解释”。",
+    "personal_relevance_cn": "评估自动选模时，应同时检查用户偏好、管理员模型策略、任务级实际模型、费用、延迟和结果质量。只给三档入口还不够，至少要能回看每次路由结果，并区分用户偏好与组织政策谁优先。",
+    "product_opportunity_cn": "把自动选模做成可审计策略对象：目标偏好、允许模型、任务类型、成本上限和回退顺序分别配置；每次响应记录候选模型、最终选择、费用、延迟和策略版本，方便复盘质量与成本。",
+    "competitive_risk_cn": "GitHub 已经把自动路由扩展到多端，并允许管理员政策缩小候选模型池。当前三档仍是粗粒度控制，官方没有公开路由评分、阈值或逐任务成本预估，也没有证明 intelligence 档在真实代码任务上稳定优于 balance。",
+    "recommended_action": "test",
+    "questions_to_validate": [
+      "三档设置是按设备、产品端、用户还是组织保存，跨端是否一致？",
+      "管理员禁用模型、数据驻留和 FedRAMP 策略与用户选择的 tier 如何裁决？",
+      "每次响应能看到最终模型，但能否导出路由理由、费用、延迟和策略版本？",
+      "intelligence 与 balance 在同一任务集上的质量、费用和响应时间差异有多大？"
+    ],
+    "follow_up_triggers": [
+      "Auto tiers 扩展到 GitHub 网页、JetBrains、Visual Studio、Xcode 或 Eclipse",
+      "GitHub 开放任务级路由日志、成本预估或组织级 tier 策略",
+      "出现独立测试比较三档在同一代码任务集上的质量、费用和延迟"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 4,
+      "technical_or_product_significance": 4,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 3,
+      "agent_architecture_value": 4,
+      "ai_product_value": 5,
+      "macro_value": 2,
+      "actionability": 5
+    },
+    "report_date": "2026-09-15",
+    "event_date": "2026-09-14",
+    "canonical_url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+    "first_seen_date": "2026-09-15",
+    "last_seen_date": "2026-09-15",
+    "run_dates": [
+      "2026-09-15"
+    ],
+    "evidence_boundary": "GitHub Changelog 正文确认三档含义、相同候选模型池、逐 Prompt 选择、推送端、按实际模型计费和 10% auto 折扣；官方文档补充了系统健康、任务复杂度、管理员模型政策与逐响应显示实际模型。Changelog 使用 2026-09-14 日期路径，RSS 给出 2026-09-14T16:05:27Z。功能仍在 rollout，未核验所有账户可见性，也没有独立比较三档质量、费用和延迟。",
+    "related_sources": [
+      {
+        "url": "https://docs.github.com/copilot/concepts/models/auto-model-selection",
+        "type": "official_product_documentation"
+      }
+    ]
   }
 ]

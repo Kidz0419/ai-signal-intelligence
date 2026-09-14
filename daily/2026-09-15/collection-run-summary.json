@@ -2338,5 +2338,14 @@
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
-  ]
+  ],
+  "editorial_handoff": {
+    "completed_at": "2026-09-15T04:08:21+08:00",
+    "new_in_run_count": 9,
+    "reviewed_new_candidates": 9,
+    "selected": 1,
+    "excluded": 6,
+    "candidate_only": 2,
+    "final_day_signal_count": 5
+  }
 }

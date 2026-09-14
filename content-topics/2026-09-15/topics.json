@@ -302,6 +302,78 @@
           "cta": "把岗位预测改写成一份团队能力建设清单。"
         }
       }
+    },
+    {
+      "id": "2026-09-15-auto-model-selection-needs-audit-log",
+      "status": "candidate",
+      "timeliness": "today",
+      "priority": "A",
+      "topic_lane": "ai_product",
+      "source_signal_ids": [
+        "2026-09-14-github-copilot-auto-model-selection-tiers"
+      ],
+      "working_title_cn": "自动选模不该只是三档按钮，还要能解释每次模型和费用",
+      "core_tension_cn": "用户可以选择成本、均衡或质量目标，但系统仍决定每个 Prompt 用哪个模型；没有任务级路由记录，就很难复盘质量、延迟和费用。",
+      "why_now_cn": "GitHub Copilot 刚把 auto model selection 做成 efficiency、balance、intelligence 三档，并扩展到 VS Code、CLI 和 Copilot app。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "开发者工具团队",
+        "企业 AI 平台与成本治理团队"
+      ],
+      "evidence_boundary_cn": "官方 Changelog 和文档确认三档、路由输入、管理员政策、实际模型显示与计费方式；功能仍在 rollout，路由评分和三档独立效果对比没有公开。",
+      "source_urls": [
+        "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI 自动选模型有三档了，但真正缺的是这张账单",
+          "hook": "省钱、均衡、质量，选项很直观。问题是：每个任务到底用了哪个模型、花了多少、为什么这么选？",
+          "format": "7页图文卡",
+          "outline": [
+            "三档分别控制什么",
+            "每个 Prompt 怎样进入路由",
+            "管理员政策怎样缩小模型池",
+            "按实际模型计费",
+            "目前能看到什么",
+            "还缺哪些路由日志",
+            "自动选模验收清单"
+          ],
+          "visual_direction": "策略输入、候选模型、路由结果、费用与质量复盘的五段流程图",
+          "cta": "你更想要一个自动档，还是一份能解释每次选择的路由账单？"
+        },
+        "twitter": {
+          "title": "Auto model selection needs an audit trail, not just three tiers",
+          "hook": "Copilot now lets users bias auto routing toward cost, balance, or quality. The router still chooses per prompt, and billing follows the model actually used.",
+          "format": "6帖 Thread",
+          "outline": [
+            "three user-facing tiers",
+            "per-prompt routing",
+            "health and complexity inputs",
+            "admin policy precedence",
+            "actual-model billing",
+            "missing route-level evidence"
+          ],
+          "visual_direction": "policy-to-routing diagram with cost, latency and quality outputs",
+          "cta": "Can your auto-router explain the model, cost, and policy used for every response?"
+        },
+        "wechat": {
+          "title": "从 GitHub Copilot 三档自动选模，看多模型产品下一步该补什么",
+          "hook": "自动选模开始从黑盒默认值变成用户可配置策略，但三档偏好只是入口，任务级路由记录才决定它能否被企业复盘。",
+          "format": "2200—2800字产品分析",
+          "outline": [
+            "三档控制语义",
+            "任务复杂度与系统健康",
+            "候选模型和管理员政策",
+            "逐响应显示与实际计费",
+            "用户偏好和组织政策冲突",
+            "路由日志应有哪些字段",
+            "同任务集测试方法",
+            "多模型控制面机会"
+          ],
+          "visual_direction": "自动选模控制面字段表，区分用户策略、组织政策、运行记录和评测结果",
+          "cta": "附一份自动选模产品的可观测性与成本验收表。"
+        }
+      }
     }
   ]
 }

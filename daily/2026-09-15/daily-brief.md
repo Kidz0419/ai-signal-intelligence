@@ -1,7 +1,7 @@
 # AI Signal 日报｜2026-09-15
 
-**窗口：** 00:00 增量只核验本轮 7 个 `new_candidates`，没有重扫 171 条滚动候选，也没有重审完整队列。四条正式记录都在北京时间 9 月 14 日晚间发布，本日报按 catch-up 收录并保留 `event_date=2026-09-14`。
-**一句话结论：** 新增 4 条 Signal。两条 P1 把 Agent 的生产控制边界说得很具体：开放金融案例把租户隔离与确定性评分留在应用层，补货样例则把业务规则、无确认运行和人工例外拆成不同控制。[1][3][4]
+**窗口：** 04:00 增量只核验本轮 9 个 `new_candidates`，没有重扫 166 条滚动候选，也没有重审完整队列。加上 00:00 已核验的 7 个候选，本日累计核验 16 个；五条正式记录都保留真实 `event_date=2026-09-14`。
+**一句话结论：** 本日累计新增 5 条 Signal。三条 P1 分别把确定性评分、自动写动作和自动选模的控制权拆开：模型可以参与判断，但最终分数、执行授权、路由目标与费用都要留下可复盘记录。[1][3][4][15][16]
 
 ## 四主线重点
 
@@ -9,7 +9,7 @@
 |---|---:|---|
 | 模型 | 1 | 用失败证据决定提示、RAG、蒸馏、微调或继续预训练 |
 | Agent 架构 | 2 | 确定性评分与自动写动作都不能被一个“Agent 自动模式”吞掉 |
-| AI 产品 | 0 | 两个生产案例归入架构主线，没有把厂商自报效果另建产品卡 |
+| AI 产品 | 1 | Copilot 自动选模新增成本、均衡、质量三档，并按实际模型计费 |
 | AI 宏观 | 1 | Product Engineering 岗位迁移进入 Strategic Radar，仍是带强假设的预测 |
 
 ## 模型｜1 条
@@ -38,9 +38,15 @@ AWS 与 Databricks 的参考实现把预测、检测、决策和执行连起来�
 
 **判断：** “规则判断可自动”和“当前运行被授权自动写入”是两个状态。生产版还要补幂等键、金额或批次上限、重试去重、计划暂停和订单撤销，正文与仓库目前没有证明这些能力。
 
-## AI 产品｜0 条
+## AI 产品｜1 条
 
-Ninth Wave 与补货样例都涉及真实业务工作流，但本轮把它们按架构事件记录，避免把同一份证据拆成重复产品卡。厂商自报效果没有独立评测，不另建产品采用信号。[1][3]
+### Copilot 自动选模：用户选目标，系统逐 Prompt 选模型
+
+GitHub Copilot 的 auto model selection 新增 efficiency、balance 和 intelligence 三档。用户表达成本、综合权衡或质量偏好；系统仍结合任务复杂度、实时健康和可用性逐 Prompt 选模型。三档使用同一候选模型池，管理员政策、订阅、数据驻留和 FedRAMP 限制可以进一步缩小范围。[15][16]
+
+该功能正向 VS Code、Copilot CLI 和 GitHub Copilot app 推送。费用按实际选中的模型计算，付费用户通过 auto 仍享 10% 折扣；官方文档称用户可查看每次响应实际使用的模型。当前没有公开路由评分、阈值或三档在同一任务集上的质量与成本对照。[15][16]
+
+**判断：** 三档偏好把自动路由从黑盒默认值变成了用户策略，但企业控制面还需要任务级路由日志：策略版本、候选池、实际模型、费用、延迟、质量和回退原因。
 
 ## AI 宏观｜1 条
 
@@ -63,11 +69,17 @@ Simon Willison 的候选只是摘录 Laurie Voss 的结论段，本轮回到 19 
 - RDS Custom for Oracle 迁移指南：`checked_no_match`。正文是数据库迁移与支持终止指南，Oracle 26ai 的名称不能把它变成 AI Signal。[5]
 - Google Lea County：`checked_no_match`。正文只说仍在探索潜在数据中心，没有规模、资本承诺、容量、AI 工作负载、能源协议或已执行项目。[6]
 - OpenAI 与 Apple 诉讼页面：`outside_incremental_window_no_material_update`。正文日期是 8 月 3 日，可见更新截至 9 月 1 日；9 月 14 日 Sitemap `lastmod` 不能证明出现了新事件。[7]
+- Aurora PostgreSQL 锁争用两篇：`checked_no_match`。正文是数据库锁、监控和吞吐优化，没有模型、Agent 或 AI 产品增量。[12][11]
+- AWS PCI DSS Deep Dive：`checked_no_match`。它是支付卡数据环境的安全参考架构，不是 AI 或 Agent 治理更新。[13]
+- S3 Files 跨 VPC / 账户接入：`checked_no_match`。正文讲文件系统网络与权限，Agent 只是工作负载示例。[14]
+- Google DevFest 2026：`checked_no_match`。正文是活动邀请和议程概览，没有发布新能力。[17]
+- OpenAI 抗菌分子案例：`outside_incremental_window_no_material_update`。官方正文日期为 9 月 10 日，9 月 14 日 Sitemap `lastmod` 不能把它改成窗口内事件。[18]
+- OpenAI Estée Lauder 与野火案例：`candidate_only_missing_published_at`。两篇正文可读，但页面没有暴露可核验的发布日期或更新日期；只保留候选，不进入正式日桶。[19][20]
 
 ## 覆盖与缺口
 
-- 7 个真新增候选都完成了正文和日期核验；Sitemap `lastmod` 没有被当作发布日期。
-- AWS 三篇文章的 HTML metadata 与 RSS 时间一致。RDS 条目因领域不符排除；Google 因仍是缺少规模和执行承诺的探索排除。
+- 04:00 的 9 个真新增候选都完成正文核验；两篇 OpenAI 页面因缺少可核验日期保留为 `candidate_only`，没有把 Sitemap `lastmod` 当成发布日期。
+- AWS Database、Security、Storage 的五篇新增正文均与 AI 四主线无实质关系；GitHub Copilot Changelog 与官方文档共同确认三档控制、逐 Prompt 路由、政策边界和实际模型计费。
 - OpenAI 普通采集曾返回 403，本轮通过可读官方正文确认原始日期和更新边界，没有把 403 当成无内容。[7]
 - 补货样例核对了公开仓库和相关提交，但没有使用付费 AWS 与 Databricks 账户运行整套云部署；该限制已写入 Signal 证据边界。[4]
 
@@ -76,27 +88,31 @@ Simon Willison 的候选只是摘录 Laurie Voss 的结论段，本轮回到 19 
 1. 用 Ninth Wave 案例检查现有 Agent：租户装配、模型路由、确定性评分、逐 Agent 指标和版本回滚是否分层留痕。
 2. 用补货样例检查写动作：业务规则、运行授权、人工例外、认证、幂等、预算、暂停和撤销是否各有独立状态。
 3. 模型定制项目增加“失败证据”评审；没有基线和退出条件，不直接升级到微调或继续预训练。
-4. 持续观察 Product Engineer 与现场部署岗位，但暂不把十年预测当作劳动力事实。
+4. 对 Copilot 三档做同任务集对照，记录实际模型、费用、延迟和完成质量；不要只比较档位名称。
+5. 持续观察 Product Engineer 与现场部署岗位，但暂不把十年预测当作劳动力事实。
 
 ## 证据边界
 
 - 两条 P1 都来自厂商或方案参与方的一手技术材料。架构与公开代码可确认，性能和业务效果仍是自报。[1][3][4]
 - AWS 模型定制路径是分析框架，不是产品发布或独立标准。[2]
 - Laurie Voss 条目是具名作者的预测；两项前提、当前能力缺口和未复核的数据边界均保留。[9]
+- Copilot 三档与计费来自官方发布和文档；仍处于 rollout，路由规则与独立效果对比未公开。[15][16]
 
 ## 飞书短版
 
-**一句话结论：** 7 个真新增候选完成正文核验，新增 4 条 Signal：P1 两条、P2 两条。
+**一句话结论：** 本日两轮共核验 16 个真新增候选，累计新增 5 条 Signal：P1 三条、P2 两条。
 
 **重点 1：** Ninth Wave 的七 Agent 架构把租户上下文装配放在应用层，FDX 就绪分数由确定性代码计算，不交给模型。[1]
 
 **重点 2：** AWS/Databricks 补货闭环只有在业务规则判定常规、且计划启用无确认运行后才自动写订单；例外转人工。样例默认无认证接口不能照搬生产。[3][4]
 
-**判断：** Agent 自动化要把“能否判断”“是否获权执行”“失败后怎么停和撤销”分开；模型定制也要先证明失败模式，再增加训练成本。
+**重点 3：** Copilot 自动选模新增成本、均衡、质量三档，系统仍逐 Prompt 选模型，并按实际模型计费。[15][16]
+
+**判断：** Agent 自动化要把“能否判断”“是否获权执行”“失败后怎么停和撤销”分开；自动选模还要能解释实际模型与费用。
 
 **边界：** 两个案例的效果数字都不是独立评测；Product Engineering 岗位迁移仍是带强假设的 P2 预测。[1][9]
 
-**结果：** previous_count=0，new_count=4，updated_count=0，total_count=4。
+**结果：** 04:00 增量 previous_count=4，new_count=1，updated_count=0，total_count=5。
 
 ## Sources
 
@@ -110,3 +126,13 @@ Simon Willison 的候选只是摘录 Laurie Voss 的结论段，本轮回到 19 
 [8] https://simonwillison.net/2026/Sep/14/laurie-voss/
 [9] https://seldo.com/posts/we-are-all-product-engineers-now/
 [10] https://seldo.com/
+[11] https://aws.amazon.com/blogs/database/resolve-amazon-aurora-postgresql-lock-contention-with-database-insights-part-2/
+[12] https://aws.amazon.com/blogs/database/troubleshooting-row-lock-contention-in-amazon-aurora-postgresql-part-1-understanding-row-lock-contention-in-postgresql/
+[13] https://aws.amazon.com/blogs/security/aws-security-reference-architecture-a-deep-dive-into-pci-dss-compliance/
+[14] https://aws.amazon.com/blogs/storage/connect-workloads-to-amazon-s3-files-across-vpcs-and-accounts/
+[15] https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection
+[16] https://docs.github.com/copilot/concepts/models/auto-model-selection
+[17] https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/
+[18] https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials/
+[19] https://openai.com/index/estee-lauder/
+[20] https://openai.com/index/detecting-wildfires-early/
