@@ -1,56 +1,65 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-15T00:00:38+08:00",
+  "generated_at": "2026-09-15T04:00:32+08:00",
   "window": {
-    "start": "2026-09-11T16:00:38+08:00",
-    "end": "2026-09-15T00:00:38+08:00",
+    "start": "2026-09-11T20:00:32+08:00",
+    "end": "2026-09-15T04:00:32+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 7,
-  "new_in_run_count": 7,
+  "candidate_count": 16,
+  "new_in_run_count": 9,
   "new_candidates": [
     {
-      "source_name": "AWS ML Blog RSS",
+      "source_name": "AWS Database RSS",
       "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "title": "How Ninth Wave built AI-powered open finance onboarding on Amazon Bedrock",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/",
-      "published_or_lastmod_at": "2026-09-14T15:58:57Z",
+      "source_url": "https://aws.amazon.com/blogs/database/feed/",
+      "title": "Resolve Amazon Aurora PostgreSQL lock contention with Database Insights: Part 2",
+      "url": "https://aws.amazon.com/blogs/database/resolve-amazon-aurora-postgresql-lock-contention-with-database-insights-part-2/",
+      "published_or_lastmod_at": "2026-09-14T16:02:16Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "AWS ML Blog RSS",
+      "source_name": "AWS Database RSS",
       "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "title": "The generative AI customization spectrum: From prompt engineering to custom models on AWS",
-      "url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/",
-      "published_or_lastmod_at": "2026-09-14T15:47:12Z",
+      "source_url": "https://aws.amazon.com/blogs/database/feed/",
+      "title": "Troubleshooting row lock contention in Amazon Aurora PostgreSQL: Part 1 – Understanding row lock contention in PostgreSQL",
+      "url": "https://aws.amazon.com/blogs/database/troubleshooting-row-lock-contention-in-amazon-aurora-postgresql-part-1-understanding-row-lock-contention-in-postgresql/",
+      "published_or_lastmod_at": "2026-09-14T16:02:08Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "AWS ML Blog RSS",
+      "source_name": "AWS Security RSS",
       "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "title": "Automate replenishment with MMF, Databricks Genie, and Amazon Quick",
-      "url": "https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick/",
-      "published_or_lastmod_at": "2026-09-14T15:42:06Z",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "AWS Security Reference Architecture: A deep dive into PCI DSS compliance",
+      "url": "https://aws.amazon.com/blogs/security/aws-security-reference-architecture-a-deep-dive-into-pci-dss-compliance/",
+      "published_or_lastmod_at": "2026-09-14T17:46:56Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
-      "source_name": "AWS Public Sector RSS",
+      "source_name": "AWS Storage RSS",
       "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "title": "From Amazon RDS Custom for Oracle to what’s next: A technical guide to Oracle migration paths on AWS",
-      "url": "https://aws.amazon.com/blogs/publicsector/from-amazon-rds-custom-for-oracle-to-whats-next-a-technical-guide-to-oracle-migration-paths-on-aws/",
-      "published_or_lastmod_at": "2026-09-14T16:01:44Z",
+      "source_url": "https://aws.amazon.com/blogs/storage/feed/",
+      "title": "Connect workloads to Amazon S3 Files across VPCs and accounts",
+      "url": "https://aws.amazon.com/blogs/storage/connect-workloads-to-amazon-s3-files-across-vpcs-and-accounts/",
+      "published_or_lastmod_at": "2026-09-14T17:10:24Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "GitHub Copilot Changelog feed",
+      "adapter": "rss",
+      "source_url": "https://github.blog/changelog/label/copilot/feed/",
+      "title": "Configure cost and quality in Copilot auto model selection",
+      "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+      "published_or_lastmod_at": "2026-09-14T16:05:27Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
     },
     {
       "source_name": "Google Blog sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://blog.google/en-us/sitemap.xml",
-      "title": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/",
+      "title": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
       "published_or_lastmod_at": "2026-09-14T00:00:00Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
@@ -58,22 +67,103 @@
       "source_name": "OpenAI sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://openai.com/sitemap.xml",
-      "title": "https://openai.com/index/apple-is-getting-this-wrong/",
-      "url": "https://openai.com/index/apple-is-getting-this-wrong/",
-      "published_or_lastmod_at": "2026-09-14T16:01:15.817000Z",
+      "title": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials/",
+      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials/",
+      "published_or_lastmod_at": "2026-09-14T18:19:46.366000Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
-      "source_name": "Simon Willison atom",
-      "adapter": "atom",
-      "source_url": "https://simonwillison.net/atom/everything/",
-      "title": "Quoting Laurie Voss",
-      "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
-      "published_or_lastmod_at": "2026-09-14T14:34:29Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/estee-lauder/",
+      "url": "https://openai.com/index/estee-lauder/",
+      "published_or_lastmod_at": "2026-09-14T18:07:49.994000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/detecting-wildfires-early/",
+      "url": "https://openai.com/index/detecting-wildfires-early/",
+      "published_or_lastmod_at": "2026-09-14T17:40:18.809000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     }
   ],
   "candidates": [
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials/",
+      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials/",
+      "published_or_lastmod_at": "2026-09-14T18:19:46.366000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/estee-lauder/",
+      "url": "https://openai.com/index/estee-lauder/",
+      "published_or_lastmod_at": "2026-09-14T18:07:49.994000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "AWS Security RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "AWS Security Reference Architecture: A deep dive into PCI DSS compliance",
+      "url": "https://aws.amazon.com/blogs/security/aws-security-reference-architecture-a-deep-dive-into-pci-dss-compliance/",
+      "published_or_lastmod_at": "2026-09-14T17:46:56Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/detecting-wildfires-early/",
+      "url": "https://openai.com/index/detecting-wildfires-early/",
+      "published_or_lastmod_at": "2026-09-14T17:40:18.809000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "AWS Storage RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/storage/feed/",
+      "title": "Connect workloads to Amazon S3 Files across VPCs and accounts",
+      "url": "https://aws.amazon.com/blogs/storage/connect-workloads-to-amazon-s3-files-across-vpcs-and-accounts/",
+      "published_or_lastmod_at": "2026-09-14T17:10:24Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "GitHub Copilot Changelog feed",
+      "adapter": "rss",
+      "source_url": "https://github.blog/changelog/label/copilot/feed/",
+      "title": "Configure cost and quality in Copilot auto model selection",
+      "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+      "published_or_lastmod_at": "2026-09-14T16:05:27Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Database RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/database/feed/",
+      "title": "Resolve Amazon Aurora PostgreSQL lock contention with Database Insights: Part 2",
+      "url": "https://aws.amazon.com/blogs/database/resolve-amazon-aurora-postgresql-lock-contention-with-database-insights-part-2/",
+      "published_or_lastmod_at": "2026-09-14T16:02:16Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Database RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/database/feed/",
+      "title": "Troubleshooting row lock contention in Amazon Aurora PostgreSQL: Part 1 – Understanding row lock contention in PostgreSQL",
+      "url": "https://aws.amazon.com/blogs/database/troubleshooting-row-lock-contention-in-amazon-aurora-postgresql-part-1-understanding-row-lock-contention-in-postgresql/",
+      "published_or_lastmod_at": "2026-09-14T16:02:08Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
     {
       "source_name": "AWS Public Sector RSS",
       "adapter": "rss",
@@ -127,6 +217,15 @@
       "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
       "published_or_lastmod_at": "2026-09-14T14:34:29Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+      "published_or_lastmod_at": "2026-09-14T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "Google Blog sitemap",
