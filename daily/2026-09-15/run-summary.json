@@ -1,6 +1,6 @@
 {
-  "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-15T00:00:38+08:00",
+  "run_type": "daily_four_lane_incremental_editorial_review",
+  "run_at": "2026-09-15T00:17:52+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
@@ -12,28 +12,28 @@
   "registered_sources": 111,
   "raw_candidates": 171,
   "unique_candidates": 127,
-  "editorial_shortlist": 0,
+  "editorial_shortlist": 4,
   "previous_count": 0,
-  "new_count": 0,
+  "new_count": 4,
   "updated_count": 0,
-  "excluded_count": 0,
-  "unreviewed_candidate_count": 171,
-  "total_count": 0,
-  "selected": 0,
+  "excluded_count": 3,
+  "unreviewed_candidate_count": 0,
+  "total_count": 4,
+  "selected": 4,
   "lane_counts": {
-    "model": 0,
-    "agent_architecture": 0,
+    "model": 1,
+    "agent_architecture": 2,
     "ai_product": 0,
-    "ai_macro": 0
+    "ai_macro": 1
   },
   "priority_counts": {
     "P0": 0,
-    "P1": 0,
-    "P2": 0,
+    "P1": 2,
+    "P2": 2,
     "P3": 0
   },
   "executive_model_longform": 0,
-  "practitioner_statements": 0,
+  "practitioner_statements": 1,
   "cross_day_duplicates_removed": 0,
   "collection_errors": 26,
   "source_coverage": {
@@ -1306,7 +1306,7 @@
       "name": "AWS ML Blog RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "status": "candidate_only",
+      "status": "selected",
       "checked_items": 20,
       "recent_items": [
         {
@@ -1340,7 +1340,7 @@
           "published_at": "2026-09-11T18:23:17Z"
         }
       ],
-      "note": ""
+      "note": "Three cross-run new articles were body-reviewed: two P1 architecture cases and one P2 model-customization framework selected"
     },
     {
       "name": "AWS Networking RSS",
@@ -1355,7 +1355,7 @@
       "name": "AWS Public Sector RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/publicsector/feed/",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 20,
       "recent_items": [
         {
@@ -1369,7 +1369,7 @@
           "published_at": "2026-09-11T18:37:33Z"
         }
       ],
-      "note": ""
+      "note": "The only cross-run new article is an Oracle database migration guide outside the four AI lanes"
     },
     {
       "name": "AWS Security RSS",
@@ -1471,7 +1471,7 @@
       "name": "Google Blog sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://blog.google/en-us/sitemap.xml",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 120,
       "recent_items": [
         {
@@ -1480,7 +1480,7 @@
           "published_at": "2026-09-14T00:00:00Z"
         }
       ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "note": "The Lea County article date and body were reviewed; it only describes an exploratory data-center conversation without scale or commitment"
     },
     {
       "name": "Google Innovation & AI RSS",
@@ -2245,7 +2245,7 @@
           "published_at": "2026-09-11T16:28:09.399000Z"
         }
       ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "note": "The new lastmod points to an August 3 legal statement with updates only through September 1; lastmod was not used as publication evidence"
     },
     {
       "name": "OpenHands releases",
@@ -2266,7 +2266,7 @@
       "name": "Simon Willison atom",
       "adapter": "atom",
       "source_url": "https://simonwillison.net/atom/everything/",
-      "status": "candidate_only",
+      "status": "selected",
       "checked_items": 30,
       "recent_items": [
         {
@@ -2335,7 +2335,7 @@
           "published_at": "2026-09-11T13:51:32Z"
         }
       ],
-      "note": ""
+      "note": "The quote-only candidate was replaced by Laurie Voss's complete first-party September 14 article and selected as P2 strategic radar"
     },
     {
       "name": "SWE-agent releases",
@@ -2348,13 +2348,88 @@
     }
   ],
   "content_topics": {
-    "topic_count": 0,
-    "platform_variants": 0
+    "topic_count": 4,
+    "platform_variants": 12
   },
   "notes": [
     "171 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
+  ],
+  "reviewed_new_candidates": 7,
+  "day_reviewed_candidates_total": 7,
+  "candidate_queue_count": 7,
+  "new_in_run_count": 7,
+  "candidate_reviews": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/",
+      "decision": "include",
+      "signal_id": "2026-09-14-ninth-wave-compass-tenant-grounded-multi-agent",
+      "published_at": "2026-09-14T15:58:57Z",
+      "reason": "body and metadata document a production multi-agent architecture with tenant-scoped grounding, deterministic readiness scoring, per-agent observability and deployment rollback; launch timing and performance remain vendor-reported"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/",
+      "decision": "include",
+      "signal_id": "2026-09-14-aws-genai-customization-escalation-spectrum",
+      "published_at": "2026-09-14T15:47:12Z",
+      "reason": "the body provides a durable eight-step customization and escalation framework tied to explicit failure modes; selected as P2 research, not a product launch"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick/",
+      "decision": "include",
+      "signal_id": "2026-09-14-aws-quick-autonomous-replenishment-loop",
+      "published_at": "2026-09-14T15:42:06Z",
+      "reason": "body and companion repository expose a reproducible detect-decide-act workflow, unattended-write configuration, human exception routing and authentication boundaries"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/publicsector/from-amazon-rds-custom-for-oracle-to-whats-next-a-technical-guide-to-oracle-migration-paths-on-aws/",
+      "decision": "checked_no_match",
+      "published_at": "2026-09-14T16:01:44Z",
+      "reason": "the body is an Oracle database migration guide; Oracle 26ai is a database version name and the article contains no material model, agent, AI product or AI industry-structure event"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/",
+      "decision": "checked_no_match",
+      "published_at": "2026-09-14T14:00:00Z",
+      "reason": "the page confirms only that Google is exploring a possible Lea County data center; it gives no size, capital commitment, capacity, AI workload, energy agreement or executed project state"
+    },
+    {
+      "url": "https://openai.com/index/apple-is-getting-this-wrong/",
+      "decision": "outside_incremental_window_no_material_update",
+      "published_at": "2026-08-03",
+      "reason": "the first-party page is dated August 3 with visible updates through September 1; the September 14 sitemap lastmod does not identify a new filing, product event or body update"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
+      "decision": "include_primary_source_replacement",
+      "signal_id": "2026-09-14-laurie-voss-product-engineering-bottleneck",
+      "published_at": "2026-09-14T14:34:29Z",
+      "reason": "Simon Willison's post is only a quotation; editorial selection was moved to Laurie Voss's complete first-party article, which states its assumptions, thesis, current agent limits and long-term training risk"
+    }
+  ],
+  "review_breakdown": {
+    "selected": 4,
+    "below_formal_bar": 2,
+    "outside_incremental_window": 1,
+    "duplicate_or_merged": 0,
+    "unresolved": 0
+  },
+  "collection_contract": {
+    "raw_candidates_in_rolling_window_is_not_increment": true,
+    "candidate_queue_count_is_not_new_count": true,
+    "sitemap_lastmod_is_discovery_only": true,
+    "feed_titles_require_body_verification": true,
+    "http_2xx_is_not_checked_no_match": true,
+    "true_increment_source": "new_in_run_count and new_candidates followed by body-level editorial review"
+  },
+  "review_notes": [
+    "Reviewed only the 7 cross-run new candidates; the 171-item rolling pool and full registry were not rescanned.",
+    "All four selected records retain event_date 2026-09-14 and are published in the September 15 day bucket as catch-up findings.",
+    "The Simon Willison quotation was treated as discovery and replaced by Laurie Voss's complete first-party article.",
+    "The OpenAI sitemap lastmod was rejected as freshness evidence after the body resolved to an August 3 article with visible updates only through September 1.",
+    "The Google data-center page was excluded because exploration without size, commitment, capacity or AI workload does not clear the macro gate.",
+    "The replenishment companion repository and security-control commits were inspected, but the paid cloud deployment was not executed."
   ]
 }

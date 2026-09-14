@@ -2,11 +2,306 @@
   "schema_version": 1,
   "report_date": "2026-09-15",
   "timezone": "Asia/Shanghai",
-  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。",
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。自动流程只生成 candidate，不自动发布。",
   "scope_label_cn": "当日增量 · 2026-09-15",
   "source_scope": {
     "type": "daily",
     "date": "2026-09-15"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-15-regulated-agent-deterministic-control-plane",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-14-ninth-wave-compass-tenant-grounded-multi-agent"
+      ],
+      "working_title_cn": "受监管 Agent 最该先拆开的，不是角色，而是判断责任",
+      "core_tension_cn": "模型可以生成映射解释和就绪度叙述，但最终评分、租户隔离和发布回滚必须有可复算、可追责的控制链。",
+      "why_now_cn": "Ninth Wave 刚公开 Compass 的七 Agent 生产架构，并明确把 FDX 就绪分数留在应用代码中，提供了一个比“多 Agent 协作”更具体的治理样本。",
+      "target_audience_cn": [
+        "企业 AI 产品经理",
+        "Agent 平台架构师",
+        "金融科技安全与合规团队"
+      ],
+      "evidence_boundary_cn": "架构和上线日期来自 Ninth Wave 与 AWS 联合技术复盘；95% 时间缩短是案例方自报。真实 UI、业务动作审批、错误输出撤销和独立评测仍缺失。",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "金融 Agent 不该什么都交给模型：这 5 层必须留在控制面",
+          "hook": "七个 Agent 不是重点。真正决定系统能不能进生产的，是租户隔离、确定性评分、逐 Agent 计量、发布回滚和审计记录。",
+          "format": "8页图文卡",
+          "outline": [
+            "Compass 处理的开放金融接入问题",
+            "七个专用 Agent 如何分工",
+            "租户上下文在哪一层收口",
+            "为什么就绪分数由代码计算",
+            "逐 Agent 指标如何定位回退",
+            "基础设施回滚与业务撤销的差别",
+            "仍缺失的审批与日志证据",
+            "受监管 Agent 验收清单"
+          ],
+          "visual_direction": "一张责任分层图，把模型生成、确定性计算、租户隔离、监控和回滚放在不同层",
+          "cta": "你的 Agent 里，哪些结论绝不能由模型直接给最终分？"
+        },
+        "twitter": {
+          "title": "The useful part of a seven-agent system is not the number seven",
+          "hook": "Ninth Wave's Compass keeps tenant grounding outside the model and computes readiness scores in deterministic application code. That separation matters more than the multi-agent diagram.",
+          "format": "7帖 Thread",
+          "outline": [
+            "workflow and actors",
+            "intent routing",
+            "tenant-scoped context assembly",
+            "deterministic readiness score",
+            "per-agent observability",
+            "deployment rollback versus business rollback",
+            "open evidence gaps"
+          ],
+          "visual_direction": "control boundary diagram separating probabilistic outputs from deterministic decisions",
+          "cta": "Which outputs in your agent system must remain reproducible code?"
+        },
+        "wechat": {
+          "title": "七个 Agent 之外：受监管业务真正需要的确定性控制层",
+          "hook": "Ninth Wave 的开放金融案例有一个值得单独拆解的决定：Agent 负责分析和叙述，但最终就绪度评分仍由应用代码计算。",
+          "format": "2600—3200字架构分析",
+          "outline": [
+            "开放金融接入的对象与参与者",
+            "七类 Agent 的任务边界",
+            "租户隔离与上下文装配",
+            "生成式叙述和确定性评分的分工",
+            "逐 Agent 指标与质量回退",
+            "部署回滚为什么不等于业务撤销",
+            "证据缺口与待验证问题",
+            "金融 Agent 产品验收表"
+          ],
+          "visual_direction": "端到端数据流加责任矩阵，标出模型、应用代码、身份系统和运维系统",
+          "cta": "附一份可复用的受监管 Agent 控制面验收表。"
+        }
+      }
+    },
+    {
+      "id": "2026-09-15-agent-auto-execution-two-gates",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-14-aws-quick-autonomous-replenishment-loop"
+      ],
+      "working_title_cn": "Agent 自动下单至少有两道门：决策可自动，运行才可免确认",
+      "core_tension_cn": "常规与异常由业务规则判断，是否无确认执行由运行设置决定；把两者合成一个自动模式会掩盖权限、重试和重复下单风险。",
+      "why_now_cn": "AWS 与 Databricks 的补货样例把预测、供应商选择、下单和人工工单连成了可复现闭环，也公开了默认无认证演示接口和计划重复运行的风险。",
+      "target_audience_cn": [
+        "Agent 产品经理",
+        "企业自动化与供应链团队",
+        "AI 安全与平台工程团队"
+      ],
+      "evidence_boundary_cn": "正文与公开仓库能确认实现和配置边界，但本轮没有运行付费云部署。真实生产错误率、幂等、预算限制和订单撤销没有公开证据。",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI 自动下单前，产品至少要做这 2 道门",
+          "hook": "系统先判断这是不是常规订单，再判断这次运行能不能免确认。少任何一道，自动化都会变得危险。",
+          "format": "8页图文卡",
+          "outline": [
+            "预测到订单的完整闭环",
+            "第一道门：业务规则",
+            "第二道门：运行确认模式",
+            "异常为什么转人工工单",
+            "默认无认证 API 的演示边界",
+            "计划重试与重复下单",
+            "暂停、撤销和预算控制",
+            "自动执行验收清单"
+          ],
+          "visual_direction": "双闸门流程图，旁路标出人工工单、幂等键和暂停按钮",
+          "cta": "你的自动模式能分别配置决策门和执行门吗？"
+        },
+        "twitter": {
+          "title": "Autonomous ordering needs two gates, not one toggle",
+          "hook": "The AWS/Databricks replenishment sample separates policy classification from run-time confirmation. Routine decisions can qualify for automation, but writes happen unattended only when the schedule explicitly allows it.",
+          "format": "7帖 Thread",
+          "outline": [
+            "forecast-to-action loop",
+            "deterministic surge query",
+            "supplier decision rule",
+            "run without confirmation",
+            "human exception path",
+            "authentication and idempotency gaps",
+            "minimum production controls"
+          ],
+          "visual_direction": "two-gate state machine with routine and exception branches",
+          "cta": "Does your agent distinguish eligible-for-automation from authorized-to-execute?"
+        },
+        "wechat": {
+          "title": "从补货样例看 Agent 自动执行：决策门和权限门必须分开",
+          "hook": "一套能自动下单的 Agent 参考实现，最值得看的不是模型，而是它怎样区分常规订单、人工例外和无确认运行。",
+          "format": "2600—3200字产品拆解",
+          "outline": [
+            "预测、检测、决策、执行四段链路",
+            "固定查询如何减少漂移",
+            "常规与异常的业务规则",
+            "无确认运行的权限语义",
+            "写接口认证和凭证风险",
+            "幂等、预算、重试与重复执行",
+            "暂停和撤销该由谁负责",
+            "生产化验收问题"
+          ],
+          "visual_direction": "动作控制矩阵，列出规则、凭证、确认、幂等、预算、暂停和撤销",
+          "cta": "附一份 Agent 写动作上线前检查表。"
+        }
+      }
+    },
+    {
+      "id": "2026-09-15-model-customization-needs-failure-evidence",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "B",
+      "topic_lane": "model",
+      "source_signal_ids": [
+        "2026-09-14-aws-genai-customization-escalation-spectrum"
+      ],
+      "working_title_cn": "模型定制不该从微调开始，而该从失败证据开始",
+      "core_tension_cn": "事实缺失、行为偏差、领域结构不理解和成本过高不是同一个问题，却常被团队用同一种微调方案处理。",
+      "why_now_cn": "AWS 新发布的八级路径把每种失败模式映射到提示、RAG、缓存、蒸馏、微调或继续预训练，可改写成一套不依赖云厂商的评审方法。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "模型应用团队",
+        "企业 AI 架构与采购团队"
+      ],
+      "evidence_boundary_cn": "这是 AWS 作者的一手方法，不是独立标准；服务能力和效果数字带厂商立场。可复用的是失败诊断顺序，不是照搬服务清单。",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "别一上来就微调：先回答模型到底失败在哪",
+          "hook": "答不出事实、格式不对、看不懂行业术语、成本太高，四种问题对应四条路。混在一起，训练费很容易白花。",
+          "format": "7页图文卡",
+          "outline": [
+            "八级路径全图",
+            "事实缺失先看 RAG",
+            "行为偏差再看微调",
+            "成本过高考虑缓存或蒸馏",
+            "领域结构不理解才看继续预训练",
+            "每次升级需要什么证据",
+            "模型定制评审模板"
+          ],
+          "visual_direction": "失败症状到技术方案的诊断树，不使用厂商服务 Logo 作为主结构",
+          "cta": "你最近一次微调，是为了解决哪一种失败？"
+        },
+        "twitter": {
+          "title": "Model customization should start with failure evidence",
+          "hook": "Missing facts, bad behavior, weak domain comprehension, and high serving cost are different failures. They should not all end in fine-tuning.",
+          "format": "6帖 Thread",
+          "outline": [
+            "four failure classes",
+            "prompting and RAG",
+            "caching and distillation",
+            "fine-tuning",
+            "continued pretraining",
+            "evidence required before escalation"
+          ],
+          "visual_direction": "failure-mode decision tree with quality, latency, cost and data gates",
+          "cta": "What evidence does your team require before moving up the customization stack?"
+        },
+        "wechat": {
+          "title": "模型定制的正确起点：不是选技术，而是证明当前方案怎么失败",
+          "hook": "很多团队把微调当成模型不够好的通用解法。更稳的做法是先区分知识、行为、理解和成本问题，再决定是否增加训练投入。",
+          "format": "2200—2800字方法文",
+          "outline": [
+            "八级路径及其适用边界",
+            "四类常见失败",
+            "为什么事实缺失不等于需要训练",
+            "微调能改什么、不能改什么",
+            "继续预训练的高成本门槛",
+            "混合架构而非单向阶梯",
+            "实验台账和退出条件",
+            "评审模板"
+          ],
+          "visual_direction": "实验台账示例，包含任务集、质量、延迟、成本、数据和升级理由",
+          "cta": "附一个可直接用于模型方案会的失败证据表。"
+        }
+      }
+    },
+    {
+      "id": "2026-09-15-product-engineering-after-code-cost-collapse",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "B",
+      "topic_lane": "ai_macro",
+      "source_signal_ids": [
+        "2026-09-14-laurie-voss-product-engineering-bottleneck"
+      ],
+      "working_title_cn": "代码越来越便宜，产品判断为什么反而更贵",
+      "core_tension_cn": "Agent 可以复制代码生产能力，但每个场景的需求定义、现场上下文和产品品味仍要重新获得，无法靠一份通用模型直接摊薄。",
+      "why_now_cn": "Laurie Voss 的新长文把岗位争论转成成本结构问题，并把初级工程师训练链断裂列为长期风险，适合与单纯的失业预测分开讨论。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "工程与产品负责人",
+        "开发者工具和组织设计团队"
+      ],
+      "evidence_boundary_cn": "这是作者基于两项强假设作出的十年预测。岗位、薪酬和招聘数字尚未在本轮逐项复核，不能写成已经发生的行业定论。",
+      "source_urls": [
+        "https://seldo.com/posts/we-are-all-product-engineers-now"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI 把代码变便宜后，最贵的可能变成这 3 件事",
+          "hook": "会写代码不再稀缺，不代表软件会自动变好。理解人要什么、把问题说清楚、做出让人愿意用的东西，可能才是剩下的大头。",
+          "format": "8页图文卡",
+          "outline": [
+            "作者的两项强假设",
+            "代码之后还有哪些工作",
+            "需求定义为何难复制",
+            "产品品味为何不能批量生产",
+            "Product Engineer 是什么",
+            "初级工程师训练链为什么断",
+            "哪些数据还要验证",
+            "个人能力建设清单"
+          ],
+          "visual_direction": "软件成本结构前后对比图，把确定事实与作者预测用不同颜色分开",
+          "cta": "如果不再靠写小需求成长，下一代资深工程师怎么练出来？"
+        },
+        "twitter": {
+          "title": "Cheap code does not make product judgment cheap",
+          "hook": "Laurie Voss argues that as agents absorb more of the software lifecycle, the remaining cost shifts to requirements, context, and taste. His forecast is useful because he states the assumptions and the broken training loop.",
+          "format": "7帖 Thread",
+          "outline": [
+            "two explicit assumptions",
+            "what agents do poorly today",
+            "non-transferable product decisions",
+            "rise of product engineering",
+            "broken junior training loop",
+            "evidence still needed",
+            "implications for AI tools"
+          ],
+          "visual_direction": "cost stack moving from code production to requirements and product judgment",
+          "cta": "How should teams train judgment when junior coding work disappears?"
+        },
+        "wechat": {
+          "title": "代码成本下降之后，软件行业真正稀缺的东西会变成什么",
+          "hook": "一篇关于 Product Engineer 的长文提供了一个比“AI 会不会替代程序员”更能落地的问法：软件生命周期被自动化后，哪部分成本无法复制？",
+          "format": "2600—3400字趋势分析",
+          "outline": [
+            "先列清楚两项预测前提",
+            "代码、评审和运维的自动化顺序",
+            "需求定义的非规模化成本",
+            "产品判断和设计的剩余价值",
+            "Product Engineer 与现场部署岗位",
+            "初级人才培养链断裂",
+            "哪些数据支持、哪些仍待核验",
+            "对 AI 产品团队的组织建议"
+          ],
+          "visual_direction": "事实、作者判断、待验证指标三栏证据表",
+          "cta": "把岗位预测改写成一份团队能力建设清单。"
+        }
+      }
+    }
+  ]
 }

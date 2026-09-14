@@ -1,5 +1,86 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "title": "How Ninth Wave built AI-powered open finance onboarding on Amazon Bedrock",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/",
+      "publisher": "Ninth Wave / AWS",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-15T00:17:52+08:00"
+    },
+    {
+      "id": 2,
+      "title": "The generative AI customization spectrum",
+      "url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/",
+      "publisher": "AWS",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-15T00:17:52+08:00"
+    },
+    {
+      "id": 3,
+      "title": "Automate replenishment with MMF, Databricks Genie, and Amazon Quick",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick/",
+      "publisher": "AWS / Databricks",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-15T00:17:52+08:00"
+    },
+    {
+      "id": 4,
+      "title": "Autonomous retail replenishment companion repository",
+      "url": "https://github.com/aws-samples/sample-isv-databricks/tree/main/autonomous-retail-replenishment-genie-quick-mmf",
+      "publisher": "AWS Samples / GitHub",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-15T00:17:52+08:00"
+    },
+    {
+      "id": 5,
+      "title": "RDS Custom for Oracle migration guide",
+      "url": "https://aws.amazon.com/blogs/publicsector/from-amazon-rds-custom-for-oracle-to-whats-next-a-technical-guide-to-oracle-migration-paths-on-aws/",
+      "publisher": "AWS",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-15T00:17:52+08:00"
+    },
+    {
+      "id": 6,
+      "title": "Potential Lea County data center",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/",
+      "publisher": "Google",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-15T00:17:52+08:00"
+    },
+    {
+      "id": 7,
+      "title": "Apple is getting this wrong",
+      "url": "https://openai.com/index/apple-is-getting-this-wrong/",
+      "publisher": "OpenAI",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-15T00:17:52+08:00"
+    },
+    {
+      "id": 8,
+      "title": "A quote from Laurie Voss",
+      "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
+      "publisher": "Simon Willison",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-15T00:17:52+08:00"
+    },
+    {
+      "id": 9,
+      "title": "We are all Product Engineers now",
+      "url": "https://seldo.com/posts/we-are-all-product-engineers-now/",
+      "publisher": "Laurie Voss",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-15T00:17:52+08:00"
+    },
+    {
+      "id": 10,
+      "title": "Laurie Voss author profile",
+      "url": "https://seldo.com/",
+      "publisher": "Laurie Voss",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-15T00:17:52+08:00"
+    }
+  ]
 }
