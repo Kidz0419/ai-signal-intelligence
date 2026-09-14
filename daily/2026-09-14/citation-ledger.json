@@ -1,5 +1,22 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "title": "Release: commit-rewriter 0.1",
+      "url": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
+      "publisher": "Simon Willison",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-14T09:00:00+08:00"
+    },
+    {
+      "id": 2,
+      "title": "Release: shot-scraper 1.12",
+      "url": "https://simonwillison.net/2026/Sep/13/shot-scraper/",
+      "publisher": "Simon Willison",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-14T09:00:00+08:00"
+    }
+  ]
 }
