@@ -1,7 +1,7 @@
 # AI Signal 日报｜2026-09-15
 
 **窗口：** 04:00 增量只核验本轮 9 个 `new_candidates`，没有重扫 166 条滚动候选，也没有重审完整队列。加上 00:00 已核验的 7 个候选，本日累计核验 16 个；五条正式记录都保留真实 `event_date=2026-09-14`。
-**一句话结论：** 本日累计新增 5 条 Signal。三条 P1 分别把确定性评分、自动写动作和自动选模的控制权拆开：模型可以参与判断，但最终分数、执行授权、路由目标与费用都要留下可复盘记录。[1][3][4][15][16]
+**一句话结论：** 本日累计新增 5 条 Signal。三条 P1 分别把确定性评分、自动写动作和自动选模的控制权拆开：模型可以参与判断，但最终分数、执行授权、路由目标与费用都要留下可复盘记录。[1][3][15]
 
 ## 四主线重点
 
@@ -116,23 +116,23 @@ Simon Willison 的候选只是摘录 Laurie Voss 的结论段，本轮回到 19 
 
 ## Sources
 
-[1] https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/
-[2] https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/
-[3] https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick/
-[4] https://github.com/aws-samples/sample-isv-databricks/tree/main/autonomous-retail-replenishment-genie-quick-mmf
-[5] https://aws.amazon.com/blogs/publicsector/from-amazon-rds-custom-for-oracle-to-whats-next-a-technical-guide-to-oracle-migration-paths-on-aws/
-[6] https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/
-[7] https://openai.com/index/apple-is-getting-this-wrong/
-[8] https://simonwillison.net/2026/Sep/14/laurie-voss/
-[9] https://seldo.com/posts/we-are-all-product-engineers-now/
-[10] https://seldo.com/
-[11] https://aws.amazon.com/blogs/database/resolve-amazon-aurora-postgresql-lock-contention-with-database-insights-part-2/
-[12] https://aws.amazon.com/blogs/database/troubleshooting-row-lock-contention-in-amazon-aurora-postgresql-part-1-understanding-row-lock-contention-in-postgresql/
-[13] https://aws.amazon.com/blogs/security/aws-security-reference-architecture-a-deep-dive-into-pci-dss-compliance/
-[14] https://aws.amazon.com/blogs/storage/connect-workloads-to-amazon-s3-files-across-vpcs-and-accounts/
-[15] https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection
-[16] https://docs.github.com/copilot/concepts/models/auto-model-selection
-[17] https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/
-[18] https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials/
-[19] https://openai.com/index/estee-lauder/
-[20] https://openai.com/index/detecting-wildfires-early/
+[1] https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock — How Ninth Wave built AI-powered open finance onboarding on Amazon Bedrock
+[2] https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws — The generative AI customization spectrum
+[3] https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick — Automate replenishment with MMF, Databricks Genie, and Amazon Quick
+[4] https://github.com/aws-samples/sample-isv-databricks/tree/main/autonomous-retail-replenishment-genie-quick-mmf — Autonomous retail replenishment companion repository
+[5] https://aws.amazon.com/blogs/publicsector/from-amazon-rds-custom-for-oracle-to-whats-next-a-technical-guide-to-oracle-migration-paths-on-aws — RDS Custom for Oracle migration guide
+[6] https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico — Potential Lea County data center
+[7] https://openai.com/index/apple-is-getting-this-wrong — Apple is getting this wrong
+[8] https://simonwillison.net/2026/Sep/14/laurie-voss — A quote from Laurie Voss
+[9] https://seldo.com/posts/we-are-all-product-engineers-now — We are all Product Engineers now
+[10] https://seldo.com — Laurie Voss author profile
+[11] https://aws.amazon.com/blogs/database/resolve-amazon-aurora-postgresql-lock-contention-with-database-insights-part-2 — Resolve Aurora PostgreSQL lock contention with Database Insights: Part 2
+[12] https://aws.amazon.com/blogs/database/troubleshooting-row-lock-contention-in-amazon-aurora-postgresql-part-1-understanding-row-lock-contention-in-postgresql — Troubleshooting row lock contention in Aurora PostgreSQL: Part 1
+[13] https://aws.amazon.com/blogs/security/aws-security-reference-architecture-a-deep-dive-into-pci-dss-compliance — AWS Security Reference Architecture PCI DSS deep dive
+[14] https://aws.amazon.com/blogs/storage/connect-workloads-to-amazon-s3-files-across-vpcs-and-accounts — Connect workloads to Amazon S3 Files across VPCs and accounts
+[15] https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection — Configure cost and quality in Copilot auto model selection
+[16] https://docs.github.com/copilot/concepts/models/auto-model-selection — About Copilot auto model selection
+[17] https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026 — DevFest 2026: Google Developer Events
+[18] https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials — How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules
+[19] https://openai.com/index/estee-lauder — Data-driven beauty: Estée Lauder and ChatGPT
+[20] https://openai.com/index/detecting-wildfires-early — Using ChatGPT to detect wildfires early

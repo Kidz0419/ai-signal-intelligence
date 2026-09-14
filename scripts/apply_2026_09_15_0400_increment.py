@@ -173,9 +173,11 @@ def main() -> None:
     for url, title, publisher, level in NEW_SOURCES:
         if url.rstrip("/") in known:
             continue
-        ledger["sources"].append({"id": next_id, "title": title, "url": url, "publisher": publisher, "evidence_level": level, "accessed": RUN_AT})
+        ledger["sources"].append({"id": next_id, "title": title, "url": url.rstrip("/"), "publisher": publisher, "evidence_level": level, "accessed": RUN_AT})
         known.add(url.rstrip("/"))
         next_id += 1
+    for source in ledger["sources"]:
+        source["url"] = source["url"].rstrip("/")
     dump(ledger_path, ledger)
     dump(DAY / "citations.json", [{"id": row["id"], "url": row["url"]} for row in ledger["sources"]])
     cite = {row["url"].rstrip("/"): f'[{row["id"]}]' for row in ledger["sources"]}
@@ -184,7 +186,7 @@ def main() -> None:
     brief_path = DAY / "daily-brief.md"
     brief = brief_path.read_text()
     brief = replace_once(brief, "**窗口：** 00:00 增量只核验本轮 7 个 `new_candidates`，没有重扫 171 条滚动候选，也没有重审完整队列。四条正式记录都在北京时间 9 月 14 日晚间发布，本日报按 catch-up 收录并保留 `event_date=2026-09-14`。", "**窗口：** 04:00 增量只核验本轮 9 个 `new_candidates`，没有重扫 166 条滚动候选，也没有重审完整队列。加上 00:00 已核验的 7 个候选，本日累计核验 16 个；五条正式记录都保留真实 `event_date=2026-09-14`。")
-    brief = replace_once(brief, "**一句话结论：** 新增 4 条 Signal。两条 P1 把 Agent 的生产控制边界说得很具体：开放金融案例把租户隔离与确定性评分留在应用层，补货样例则把业务规则、无确认运行和人工例外拆成不同控制。[1][3][4]", f"**一句话结论：** 本日累计新增 5 条 Signal。三条 P1 分别把确定性评分、自动写动作和自动选模的控制权拆开：模型可以参与判断，但最终分数、执行授权、路由目标与费用都要留下可复盘记录。[1][3][4]{c(COPILOT)}{c(COPILOT_DOCS)}")
+    brief = replace_once(brief, "**一句话结论：** 新增 4 条 Signal。两条 P1 把 Agent 的生产控制边界说得很具体：开放金融案例把租户隔离与确定性评分留在应用层，补货样例则把业务规则、无确认运行和人工例外拆成不同控制。[1][3][4]", f"**一句话结论：** 本日累计新增 5 条 Signal。三条 P1 分别把确定性评分、自动写动作和自动选模的控制权拆开：模型可以参与判断，但最终分数、执行授权、路由目标与费用都要留下可复盘记录。[1][3]{c(COPILOT)}")
     brief = replace_once(brief, "| AI 产品 | 0 | 两个生产案例归入架构主线，没有把厂商自报效果另建产品卡 |", "| AI 产品 | 1 | Copilot 自动选模新增成本、均衡、质量三档，并按实际模型计费 |")
     brief = replace_once(brief, "## AI 产品｜0 条\n\nNinth Wave 与补货样例都涉及真实业务工作流，但本轮把它们按架构事件记录，避免把同一份证据拆成重复产品卡。厂商自报效果没有独立评测，不另建产品采用信号。[1][3]", f'''## AI 产品｜1 条
 

@@ -42,7 +42,7 @@ def main():
     cited = sorted({int(x) for x in re.findall(r"\[(\d+)\]", brief)})
     declared = [s["id"] for s in ledger["sources"]]
     assert cited == declared
-    source_lines = re.findall(r"^\[(\d+)\] (https?://\S+)$", brief, re.M)
+    source_lines = re.findall(r"^\[(\d+)\] (https?://\S+)(?: — .*)?$", brief, re.M)
     assert source_lines == [(str(s["id"]), s["url"]) for s in ledger["sources"]]
     # The first historical brief predates the four-lane presentation; preserve it as an immutable archive.
     if args.date >= "2026-08-13":
