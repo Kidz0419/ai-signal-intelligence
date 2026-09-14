@@ -1,23 +1,23 @@
 {
   "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-14T04:00:01+08:00",
+  "run_at": "2026-09-14T08:56:41+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
-    "start": "2026-09-10T20:00:01+08:00",
-    "end": "2026-09-14T04:00:01+08:00",
+    "start": "2026-09-11T00:56:41+08:00",
+    "end": "2026-09-14T08:56:41+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
-  "raw_candidates": 244,
-  "unique_candidates": 199,
+  "raw_candidates": 235,
+  "unique_candidates": 190,
   "editorial_shortlist": 0,
   "previous_count": 0,
   "new_count": 0,
   "updated_count": 0,
   "excluded_count": 0,
-  "unreviewed_candidate_count": 244,
+  "unreviewed_candidate_count": 235,
   "total_count": 0,
   "selected": 0,
   "lane_counts": {
@@ -35,27 +35,27 @@
   "executive_model_longform": 0,
   "practitioner_statements": 0,
   "cross_day_duplicates_removed": 0,
-  "collection_errors": 12,
+  "collection_errors": 21,
   "source_coverage": {
     "registered": 111,
     "status_counts": {
       "selected": 0,
       "candidate_only": 0,
       "checked_no_match": 0,
-      "access_blocked": 7,
+      "access_blocked": 12,
       "auth_required": 0,
-      "mechanical_failure": 5,
-      "not_checked": 99
+      "mechanical_failure": 9,
+      "not_checked": 90
     },
     "channel_counts": {
       "frontier_model_official": {
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 3,
+        "access_blocked": 4,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 24
+        "mechanical_failure": 1,
+        "not_checked": 22
       },
       "china_frontier_models": {
         "selected": 0,
@@ -63,8 +63,8 @@
         "checked_no_match": 0,
         "access_blocked": 0,
         "auth_required": 0,
-        "mechanical_failure": 1,
-        "not_checked": 13
+        "mechanical_failure": 3,
+        "not_checked": 11
       },
       "head_ai_product_release_notes": {
         "selected": 0,
@@ -72,8 +72,8 @@
         "checked_no_match": 0,
         "access_blocked": 2,
         "auth_required": 0,
-        "mechanical_failure": 0,
-        "not_checked": 14
+        "mechanical_failure": 1,
+        "not_checked": 13
       },
       "agent_runtime_and_open_source": {
         "selected": 0,
@@ -97,10 +97,10 @@
         "selected": 0,
         "candidate_only": 0,
         "checked_no_match": 0,
-        "access_blocked": 2,
+        "access_blocked": 6,
         "auth_required": 0,
         "mechanical_failure": 1,
-        "not_checked": 14
+        "not_checked": 10
       },
       "practitioner_and_product_leader_longform": {
         "selected": 0,
@@ -273,10 +273,8 @@
         "name": "Amazon Investor Relations",
         "type": "company_ir",
         "url": "https://ir.aboutamazon.com/",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://ir.aboutamazon.com/overview/default.aspx",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "ai_macro_primary",
@@ -301,10 +299,8 @@
         "name": "CoreWeave Investor Relations",
         "type": "company_ir",
         "url": "https://investors.coreweave.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://investors.coreweave.com/overview/default.aspx",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "ai_macro_primary",
@@ -337,10 +333,8 @@
         "name": "Meta Investor Relations",
         "type": "company_ir",
         "url": "https://investor.atmeta.com/",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://investor.atmeta.com/home/default.aspx",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "ai_macro_primary",
@@ -357,10 +351,8 @@
         "name": "NVIDIA Investor Relations",
         "type": "company_ir",
         "url": "https://investor.nvidia.com/",
-        "status": "not_checked",
-        "http_code": "206",
-        "final_url": "https://investor.nvidia.com/home/default.aspx",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "ai_macro_primary",
@@ -457,10 +449,8 @@
         "name": "Kimi Developer Docs",
         "type": "developer_docs",
         "url": "https://platform.moonshot.cn/docs",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://platform.kimi.com/docs/get-api-key",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "308"
       },
       {
         "channel": "china_frontier_models",
@@ -538,10 +528,8 @@
         "name": "Zhipu AI Open Platform",
         "type": "developer_docs",
         "url": "https://open.bigmodel.cn/dev/api",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://docs.bigmodel.cn/cn/guide/start/introduction",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "308"
       },
       {
         "channel": "frontier_model_official",
@@ -780,19 +768,16 @@
         "name": "xAI Docs",
         "type": "developer_docs",
         "url": "https://docs.x.ai/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://docs.x.ai/overview",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "308"
       },
       {
         "channel": "frontier_model_official",
         "name": "xAI News",
         "type": "official_news",
         "url": "https://x.ai/news",
-        "status": "not_checked",
-        "http_code": "200",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "access_blocked",
+        "http_code": "403"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -825,10 +810,8 @@
         "name": "Cursor Docs",
         "type": "product_docs",
         "url": "https://docs.cursor.com/",
-        "status": "not_checked",
-        "http_code": "200",
-        "final_url": "https://cursor.com/docs",
-        "note": "reachable only; publication date/content delta not parsed in this adapter"
+        "status": "mechanical_failure",
+        "http_code": "308"
       },
       {
         "channel": "head_ai_product_release_notes",
@@ -1062,7 +1045,7 @@
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.CL",
         "status": "mechanical_failure",
-        "http_code": "TimeoutError",
+        "http_code": "timeout",
         "note": "The read operation timed out"
       },
       {
@@ -1071,8 +1054,8 @@
         "type": "paper_api",
         "url": "https://export.arxiv.org/api/query?search_query=cat:cs.LG",
         "status": "mechanical_failure",
-        "http_code": "TimeoutError",
-        "note": "The read operation timed out"
+        "http_code": "429",
+        "note": "rate limited"
       },
       {
         "channel": "research_and_evaluation",
@@ -1516,21 +1499,6 @@
           "title": "https://www.anthropic.com/news/genesis-mission-partnership",
           "url": "https://www.anthropic.com/news/genesis-mission-partnership",
           "published_at": "2026-09-10T18:12:11Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
-          "url": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
-          "published_at": "2026-09-10T16:31:24Z"
-        },
-        {
-          "title": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
-          "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
-          "published_at": "2026-09-10T16:29:36Z"
-        },
-        {
-          "title": "https://www.anthropic.com/research/riemann-zeta",
-          "url": "https://www.anthropic.com/research/riemann-zeta",
-          "published_at": "2026-09-10T13:15:27Z"
         }
       ],
       "note": "lastmod is discovery-only; verify datePublished/body before selection"
@@ -1555,11 +1523,6 @@
           "title": "From zero-shot forecast to purchase order with Amazon Bedrock AgentCore",
           "url": "https://aws.amazon.com/blogs/architecture/from-zero-shot-forecast-to-purchase-order-with-amazon-bedrock-agentcore/",
           "published_at": "2026-09-11T14:08:01Z"
-        },
-        {
-          "title": "Building resilient real-time streaming workers with Amazon DynamoDB leases",
-          "url": "https://aws.amazon.com/blogs/architecture/building-resilient-real-time-streaming-workers-with-amazon-dynamodb-leases/",
-          "published_at": "2026-09-10T16:14:22Z"
         }
       ],
       "note": ""
@@ -1620,26 +1583,6 @@
           "title": "Amazon Quick is now generally available on desktop",
           "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-is-now-generally-available-on-desktop/",
           "published_at": "2026-09-10T18:16:37Z"
-        },
-        {
-          "title": "Build an end-to-end RFI questionnaire workflow using Amazon Quick Automate",
-          "url": "https://aws.amazon.com/blogs/machine-learning/build-an-end-to-end-rfi-questionnaire-workflow-using-amazon-quick-automate/",
-          "published_at": "2026-09-10T16:08:57Z"
-        },
-        {
-          "title": "Model-agnostic PII detection with LLMs",
-          "url": "https://aws.amazon.com/blogs/machine-learning/model-agnostic-pii-detection-with-llms/",
-          "published_at": "2026-09-10T16:02:16Z"
-        },
-        {
-          "title": "Agent Evaluation Metric for multi-turn conversations",
-          "url": "https://aws.amazon.com/blogs/machine-learning/agent-evaluation-metric-for-multi-turn-conversations/",
-          "published_at": "2026-09-10T15:55:41Z"
-        },
-        {
-          "title": "How AvioBook builds turnaround insights from operational data with Amazon Bedrock AgentCore",
-          "url": "https://aws.amazon.com/blogs/machine-learning/how-aviobook-uses-generative-ai-to-drive-airline-turnaround-insights/",
-          "published_at": "2026-09-10T15:53:05Z"
         }
       ],
       "note": ""
@@ -1766,11 +1709,6 @@
           "title": "GitHub Copilot weekly releases — September 7",
           "url": "https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7",
           "published_at": "2026-09-10T22:55:07Z"
-        },
-        {
-          "title": "MAI-Code-1-Flash deprecated",
-          "url": "https://github.blog/changelog/2026-09-10-mai-code-1-flash-deprecated",
-          "published_at": "2026-09-10T16:54:01Z"
         }
       ],
       "note": ""
@@ -1818,20 +1756,9 @@
       "name": "Google Products & Platforms RSS",
       "adapter": "rss",
       "source_url": "https://blog.google/products-and-platforms/rss/",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 20,
-      "recent_items": [
-        {
-          "title": "3 ways to prep for your next big race with Search",
-          "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
-          "published_at": "2026-09-10T16:00:00Z"
-        },
-        {
-          "title": "Switching password managers is easy and safe on Android",
-          "url": "https://blog.google/products-and-platforms/platforms/android/switch-password-managers/",
-          "published_at": "2026-09-10T16:00:00Z"
-        }
-      ],
+      "recent_items": [],
       "note": ""
     },
     {
@@ -2000,7 +1927,12 @@
         {
           "title": "https://openai.com/index/two-blind-brothers/",
           "url": "https://openai.com/index/two-blind-brothers/",
-          "published_at": "2026-09-13T17:53:01.942000Z"
+          "published_at": "2026-09-14T00:54:04.401000Z"
+        },
+        {
+          "title": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
+          "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
+          "published_at": "2026-09-13T22:23:33.963000Z"
         },
         {
           "title": "https://openai.com/index/1password/",
@@ -2051,11 +1983,6 @@
           "title": "https://openai.com/index/legora-financial-statement-review-with-astra/",
           "url": "https://openai.com/index/legora-financial-statement-review-with-astra/",
           "published_at": "2026-09-12T18:37:32.561000Z"
-        },
-        {
-          "title": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
-          "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
-          "published_at": "2026-09-12T15:59:01.806000Z"
         },
         {
           "title": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
@@ -2623,6 +2550,16 @@
       "checked_items": 30,
       "recent_items": [
         {
+          "title": "commit-rewriter 0.1",
+          "url": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
+          "published_at": "2026-09-14T00:28:10Z"
+        },
+        {
+          "title": "shot-scraper 1.12",
+          "url": "https://simonwillison.net/2026/Sep/13/shot-scraper/",
+          "published_at": "2026-09-13T23:58:14Z"
+        },
+        {
           "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
           "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
           "published_at": "2026-09-12T23:56:42Z"
@@ -2725,7 +2662,7 @@
     "platform_variants": 0
   },
   "notes": [
-    "244 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "235 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."
