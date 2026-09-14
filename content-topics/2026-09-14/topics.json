@@ -2,11 +2,86 @@
   "schema_version": 1,
   "report_date": "2026-09-14",
   "timezone": "Asia/Shanghai",
-  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。",
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。自动流程只生成 candidate，不自动发布。",
   "scope_label_cn": "当日增量 · 2026-09-14",
   "source_scope": {
     "type": "daily",
     "date": "2026-09-14"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-14-agent-control-is-more-than-permission-mode",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-14-kimi-code-043-dynamic-tools-steering-controls"
+      ],
+      "working_title_cn": "Agent 控制权不该只有一个“自动模式”开关",
+      "core_tension_cn": "工具披露、人工打断、后台任务、上下文压缩和危险命令确认是五种不同控制权，压成一个自动/手动开关会掩盖风险。",
+      "why_now_cn": "Kimi Code 0.43 同时改了 MCP 工具按需披露、steering 中断等待、compaction 重试和 `rm -rf` 确认例外，正好提供了一组可落到字段与日志的 Agent 控制面样本。",
+      "target_audience_cn": [
+        "AI 产品经理",
+        "Agent Runtime 开发者",
+        "企业 AI 安全与治理团队"
+      ],
+      "evidence_boundary_cn": "依据 Kimi Code 正式 Release 和已合并 PR。动态工具选择仍为实验能力，官方没有公开性能收益；steering 只释放等待，不等于取消后台任务；日志、暂停和回滚仍需产品实测。",
+      "source_urls": [
+        "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.43.0"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Agent 的“自动模式”太粗了：至少要拆成 5 个开关",
+          "hook": "能不能自动执行，只回答了一小部分问题。工具何时给模型、用户能否插话、后台任务是否停、压缩失败怎么重试、哪些命令免确认，都得单独设计。",
+          "format": "8页图文卡",
+          "outline": [
+            "为什么自动/手动二分不够",
+            "工具披露：inline 与 deferred",
+            "人工 steering：打断等待但不取消任务",
+            "后台任务的继续、暂停与取消",
+            "上下文压缩的重试预算",
+            "危险命令的确认例外",
+            "统一审计时间线应该记录什么",
+            "Agent 控制面验收清单"
+          ],
+          "visual_direction": "一张五层控制面剖面图，分别标出默认值、用户动作、后台状态和审计事件",
+          "cta": "你现在用的 Agent，能分清“打断等待”和“取消任务”吗？"
+        },
+        "twitter": {
+          "title": "Agent control is not one autonomy toggle",
+          "hook": "Kimi Code 0.43 separates tool disclosure, human steering, background-task lifecycle, compaction retries, and command confirmation. Those controls need different defaults and logs.",
+          "format": "7帖 Thread",
+          "outline": [
+            "why one autonomy toggle fails",
+            "deferred MCP tool disclosure",
+            "policy veto with disallowedTools",
+            "steering versus cancellation",
+            "compaction retry budgets",
+            "dangerous-command exceptions",
+            "minimum audit timeline"
+          ],
+          "visual_direction": "state machine showing wait interrupted while the background task remains running",
+          "cta": "Which of these controls does your agent expose and log today?"
+        },
+        "wechat": {
+          "title": "别再用一个“自动模式”管理 Agent：控制面至少要拆成五层",
+          "hook": "Kimi Code 0.43 的价值不在又多了几个配置项，而在它把工具披露、人工插话、后台任务、压缩重试和命令确认拆成了不同的运行时契约。",
+          "format": "2500—3200字产品分析",
+          "outline": [
+            "从 0.43 Release 看 Agent 控制权的拆分",
+            "工具 schema 为什么不该全部常驻上下文",
+            "按需加载的能力声明与策略否决",
+            "steering、暂停、取消三个动作的差别",
+            "compaction 重试预算如何进入运维",
+            "危险命令例外的边界与审计",
+            "统一运行时间线与管理员策略",
+            "产品验收问题清单"
+          ],
+          "visual_direction": "控制面字段表加状态机：配置层、策略层、运行层、审计层分开标注",
+          "cta": "附一份可直接用于 Agent 产品评审的控制面字段清单。"
+        }
+      }
+    }
+  ]
 }

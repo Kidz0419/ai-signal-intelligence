@@ -1,1 +1,92 @@
-window.DAILY_SIGNALS = [];
+window.DAILY_SIGNALS = [
+  {
+    "id": "2026-09-14-kimi-code-043-dynamic-tools-steering-controls",
+    "demo": false,
+    "topic_lane": "agent_architecture",
+    "title": "Kimi Code 0.43 把 MCP 工具改成按需披露，并让人工指令打断后台等待",
+    "summary": "Kimi Code 0.43.0 的正式 Release 补上了两段控制链路。模型声明支持动态工具后，MCP server 可显式设为 `deferred: true`，不再把全部工具 schema 固定塞进顶层工具列表，而由实验性的 `select_tools` 按需加载；默认仍是 inline，`disallowedTools` 仍可否决。另一项更新让用户 steering 消息以非错误结果中断 `WaitFor`，保留工具历史且不终止后台任务。版本还开放 compaction 最大尝试次数，并细化权限提示与临时目录删除确认边界。",
+    "decision": "include",
+    "confidence": 94,
+    "relevance_level": "P1",
+    "signal_type": "core",
+    "content_type": "technical_update",
+    "information_type": "agent_governance",
+    "evidence_level": "confirmed",
+    "source": "MoonshotAI / Kimi Code",
+    "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.43.0",
+    "published_at": "2026-09-14T12:03:30Z",
+    "primary_tags": [
+      "Kimi Code",
+      "Dynamic Tool Loading",
+      "Human Steering"
+    ],
+    "secondary_tags": [
+      "MCP Deferred Disclosure",
+      "Context Compaction",
+      "Permission Guard"
+    ],
+    "why_it_matters_cn": "这次更新处理的不是工具数量本身，而是工具何时进入模型上下文、人工指令何时能抢回控制、后台任务是否继续，以及重试和确认由谁配置。Agent 控制面开始从单一权限模式拆成可组合的运行时策略。",
+    "personal_relevance_cn": "评估 Agent 平台时，可把工具披露、人工 steering、后台任务生命周期、压缩重试和命令确认分开验收。尤其要检查默认值、覆盖优先级、事件日志，以及“打断等待”是否被误解成“取消任务”。",
+    "product_opportunity_cn": "可设计一套显式控制面：按 server 展示 inline/deferred、实际选中的工具和策略否决；把 steering、wait interrupted、后台任务继续运行、compaction 重试与危险命令例外写入同一条运行时间线，并提供暂停、取消和审计导出。",
+    "competitive_risk_cn": "动态工具加载仍依赖实验性 `tool-select`，且模型与服务端都要声明能力；Release 没有证明大规模 MCP 工具集的 token、准确率或延迟收益。steering 只中断等待，不会停止后台任务。`/tmp`、`/temp` 下字面路径的 `rm -rf` 可跳过确认，但混合目标、通配符、变量和 `..` 仍会保留危险判定。没有看到面向用户的完整审计日志或回滚说明。",
+    "recommended_action": "investigate",
+    "questions_to_validate": [
+      "deferred MCP server 的工具何时被 `select_tools` 选中，选择理由、参数和策略否决是否写入可导出的运行日志？",
+      "用户 steering 中断 `WaitFor` 后，如何继续、暂停或取消仍在运行的后台任务，连续多条 steering 如何排序？",
+      "compaction 失败次数、原因和缩减路径是否可观测，配置能否被团队策略设上限？",
+      "临时目录删除免确认如何处理挂载点、符号链接和审计记录，管理员能否关闭该例外？"
+    ],
+    "follow_up_triggers": [
+      "`tool-select` 退出实验状态，并公布动态工具加载的 token、延迟或任务成功率评测",
+      "Kimi Code 增加工具选择、steering、后台任务和 compaction 的统一审计时间线",
+      "权限策略增加团队级配置、例外审计、暂停/取消与恢复说明"
+    ],
+    "scores": {
+      "topic_relevance": 5,
+      "novelty": 5,
+      "technical_or_product_significance": 5,
+      "strategic_value": 4,
+      "source_quality": 5,
+      "model_value": 2,
+      "agent_architecture_value": 5,
+      "ai_product_value": 4,
+      "macro_value": 1,
+      "actionability": 5
+    },
+    "report_date": "2026-09-14",
+    "event_date": "2026-09-14",
+    "canonical_url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai%2Fkimi-code%400.43.0",
+    "first_seen_date": "2026-09-14",
+    "last_seen_date": "2026-09-14",
+    "run_dates": [
+      "2026-09-14"
+    ],
+    "evidence_boundary": "GitHub Release API 确认 0.43.0 为非 prerelease，并给出 2026-09-14T12:03:30Z 发布时间；Atom 的 12:14:33Z 是 feed 更新时间。功能边界来自 Release 与已合并 PR。动态工具加载仍需实验性 tool-select；AI session title 的服务端转正不等于预构建 Web UI 已同步；性能收益、完整日志和回滚能力没有公开验证。",
+    "related_sources": [
+      {
+        "url": "https://github.com/MoonshotAI/kimi-code/pull/3667",
+        "type": "merged_pr_dynamic_tool_loading"
+      },
+      {
+        "url": "https://github.com/MoonshotAI/kimi-code/pull/3697",
+        "type": "merged_pr_human_steering"
+      },
+      {
+        "url": "https://github.com/MoonshotAI/kimi-code/pull/3750",
+        "type": "merged_pr_compaction_retry_config"
+      },
+      {
+        "url": "https://github.com/MoonshotAI/kimi-code/pull/3728",
+        "type": "merged_pr_permission_context_boundary"
+      },
+      {
+        "url": "https://github.com/MoonshotAI/kimi-code/pull/3714",
+        "type": "merged_pr_dangerous_command_exception"
+      },
+      {
+        "url": "https://github.com/MoonshotAI/kimi-code/releases.atom",
+        "type": "official_atom_timestamp"
+      }
+    ]
+  }
+];
