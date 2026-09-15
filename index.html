@@ -467,7 +467,7 @@
             <p class="signal-summary">${escapeHtml(s.summary||'')}</p>
             <span class="tags">${(s.primary_tags||[]).slice(0,3).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}</span>
           </span>
-          <span class="signal-meta"><strong>${escapeHtml(s.source||'未知来源')}</strong><span class="info-type">${escapeHtml(informationLabel[s.information_type]||s.information_type||'未分类')}</span><span>${escapeHtml(contentLabel[s.content_type]||s.content_type||'')}</span><br/><span class="evidence">${escapeHtml(evidenceLabel[s.evidence_level]||s.evidence_level||'')}</span><br/>${escapeHtml(dateText(s.published_at))}</span>
+          <span class="signal-meta"><strong>${escapeHtml(s.source||'未知来源')}</strong><span class="info-type">${escapeHtml(informationLabel[s.information_type]||s.information_type||'未分类')}</span><span>${escapeHtml(contentLabel[s.content_type]||s.content_type||'')}</span><br/><span class="evidence">${escapeHtml(evidenceLabel[s.evidence_level]||s.evidence_level||'')}</span><br/>${escapeHtml(dateText(s.event_date || s.published_at))}</span>
         </button>`).join("");
       el("resultCount").textContent = `${rows.length} 条信号`;
       el("empty").style.display = rows.length ? "none" : "block";
@@ -512,7 +512,7 @@
         <div class="detail-section"><h3>评分</h3><div class="score-grid">${scoreBlock(s.scores)}</div></div>
         <div class="detail-section"><h3>建议行动 · ${escapeHtml(actionLabel[s.recommended_action]||s.recommended_action||'')}</h3>${listBlock(s.questions_to_validate)}</div>
         <div class="detail-section"><h3>后续触发器</h3>${listBlock(s.follow_up_triggers)}</div>
-        <div class="detail-section"><h3>来源</h3><p>${escapeHtml(s.source||'未知来源')} · ${escapeHtml(dateText(s.published_at))}</p>${s.url?`<p style="margin-top:7px"><a class="source-link" href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.url)}</a></p>`:''}</div>`;
+        <div class="detail-section"><h3>来源</h3><p>${escapeHtml(s.source||'未知来源')} · ${escapeHtml(dateText(s.event_date || s.published_at))}</p>${s.url?`<p style="margin-top:7px"><a class="source-link" href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.url)}</a></p>`:''}</div>`;
       el("saveBtn").textContent = state.saved.has(id)?'★':'☆';
       el("detail").classList.add("open"); el("detailBackdrop").classList.add("open"); el("detail").setAttribute("aria-hidden","false"); render();
     }
