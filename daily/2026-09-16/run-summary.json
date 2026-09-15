@@ -1,34 +1,34 @@
 {
-  "run_type": "daily_four_lane_incremental",
-  "run_at": "2026-09-16T00:00:00+08:00",
+  "run_type": "daily_four_lane_incremental_editorial_review",
+  "run_at": "2026-09-16T00:06:56+08:00",
   "deliverable_outcome": "success",
   "scheduler_outcome": "success",
   "window": {
     "timezone": "Asia/Shanghai",
     "start": "2026-09-12T16:00:00+08:00",
-    "end": "2026-09-16T00:00:00+08:00",
+    "end": "2026-09-16T00:06:56+08:00",
     "incremental_since": null
   },
   "registered_sources": 111,
   "raw_candidates": 157,
   "unique_candidates": 114,
-  "editorial_shortlist": 0,
+  "editorial_shortlist": 2,
   "previous_count": 0,
-  "new_count": 0,
+  "new_count": 2,
   "updated_count": 0,
-  "excluded_count": 0,
-  "unreviewed_candidate_count": 157,
-  "total_count": 0,
-  "selected": 0,
+  "excluded_count": 1,
+  "unreviewed_candidate_count": 0,
+  "total_count": 2,
+  "selected": 2,
   "lane_counts": {
     "model": 0,
-    "agent_architecture": 0,
+    "agent_architecture": 1,
     "ai_product": 0,
-    "ai_macro": 0
+    "ai_macro": 1
   },
   "priority_counts": {
     "P0": 0,
-    "P1": 0,
+    "P1": 2,
     "P2": 0,
     "P3": 0
   },
@@ -1306,7 +1306,7 @@
       "name": "AWS Security RSS",
       "adapter": "rss",
       "source_url": "https://aws.amazon.com/blogs/security/feed/",
-      "status": "candidate_only",
+      "status": "checked_no_match",
       "checked_items": 20,
       "recent_items": [
         {
@@ -1320,7 +1320,7 @@
           "published_at": "2026-09-14T17:46:56Z"
         }
       ],
-      "note": ""
+      "note": "The only cross-run new article was body-reviewed and excluded as generic IAM/CI/CD security automation outside the four AI lanes"
     },
     {
       "name": "AWS Storage RSS",
@@ -1408,7 +1408,7 @@
       "name": "Google Blog sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://blog.google/en-us/sitemap.xml",
-      "status": "candidate_only",
+      "status": "selected",
       "checked_items": 120,
       "recent_items": [
         {
@@ -1442,7 +1442,7 @@
           "published_at": "2026-09-14T00:00:00Z"
         }
       ],
-      "note": "lastmod is discovery-only; verify datePublished/body before selection"
+      "note": "The ATLAS article's own Sep 15 date and body were verified; its joint research PDF supports the selected AI-adoption and workflow-bottleneck signal. Sitemap lastmod was not used as publication evidence"
     },
     {
       "name": "Google Innovation & AI RSS",
@@ -1475,7 +1475,7 @@
       "name": "Hugging Face Blog",
       "adapter": "rss",
       "source_url": "https://huggingface.co/blog/feed.xml",
-      "status": "candidate_only",
+      "status": "selected",
       "checked_items": 40,
       "recent_items": [
         {
@@ -1484,7 +1484,7 @@
           "published_at": "2026-09-15T16:00:44Z"
         }
       ],
-      "note": ""
+      "note": "The IBM Research body, arXiv submission date, and exact ALTK-Evolve source commit were verified; the research event is published as a Sep 8 catch-up rather than a Sep 15 first-launch claim"
     },
     {
       "name": "Kimi Code releases",
@@ -2279,11 +2279,13 @@
     }
   ],
   "content_topics": {
-    "topic_count": 0,
-    "platform_variants": 0
+    "topic_count": 2,
+    "platform_variants": 6
   },
   "notes": [
-    "157 discovery candidates were found across 34 adapters; they remain unreviewed until publication date and body verification.",
+    "The rolling window still exposed 157 discovery items, but this editorial pass reviewed only the 3 true cross-run new_candidates.",
+    "Two candidates cleared the formal bar after first-party body verification; one generic IAM article was excluded.",
+    "Google's date-only publication value was preserved, and the IBM research event retained the Sep 8 arXiv date as a catch-up.",
     "A successful HTTP response is recorded as not_checked unless publication dates or content deltas were parsed.",
     "Static pages were not promoted as fresh based on collected_at alone.",
     "OpenAI and other curl-blocked pages are recorded as access_blocked rather than no-match."

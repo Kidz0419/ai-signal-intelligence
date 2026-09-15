@@ -1,105 +1,95 @@
 # AI Signal 日报｜2026-09-16
 
-**窗口：** 北京时间 2026-09-12 16:00 至 2026-09-16 00:00  
-**一句话结论：** 本轮完成 111 个主注册信源的连通性审计，并对 34 个 Feed、Release 与 Sitemap 通道执行增量发现；候选只进入待核验池，不由机械脚本自动升级为正式 Signal。
+**窗口：** 北京时间 00:00 增量只核验本轮 3 个 `new_candidates`，没有重扫 157 条滚动窗口记录，也没有重审历史候选队列。  
+**一句话结论：** 新增 2 条 P1。一个提醒 Agent 评测不能只看平均成功率，另一个显示 AI 节省科研时间后，瓶颈会转移到核验、实验和临床验证。
 
 ## 四主线重点
 
 | 主线 | 数量 | 今日重点 |
 |---|---:|---|
-| 模型 | 0 | 无达到正式入选门槛的新增事件 |
-| Agent 架构 | 0 | 无达到正式入选门槛的新增事件 |
-| AI 产品 | 0 | 无达到正式入选门槛的新增事件 |
-| AI 宏观 | 0 | 无达到正式入选门槛的新增事件 |
+| 模型 | 0 | 没有新模型、价格、开放范围或独立评测 |
+| Agent 架构 | 1 | 用 Pass^k 单独衡量同一任务连续成功的可靠性 |
+| AI 产品 | 0 | 没有达到门槛的新产品工作流或真实 UI 变化 |
+| AI 宏观 | 1 | 科研 AI 采用增加后，流程瓶颈从生成转向验证和实验 |
 
 ## 模型｜0 条
 
-本窗口没有发现同时满足“官方或原始证据明确、发生在当日窗口内、且对模型能力/价格/部署边界形成实质变化”的新增事件。
+本轮没有模型发布、模型能力变化或独立模型评测达到正式门槛。
 
-## Agent 架构｜0 条
+## Agent 架构｜1 条
 
-代表性 GitHub Releases / Atom 与技术 feed 巡检后，没有发现落在今日窗口内、并能支撑正式架构卡片的新版本或新工件。
+### Agent 平均能做对，不等于下一次还能做对
+
+IBM Research 团队把 Mean@k 与 Pass^k 分开：前者是多次运行的平均通过率，后者要求同一任务连续 k 次全部成功。在 AppWorld `test_normal` 的 168 个任务上，作者报告 GPT-4.1 ReAct Agent 的 Mean@5 为 77.4%，Pass^5 只有 53.0%，相差 24.4 个百分点。[4][5]
+
+团队用一条已记录轨迹逐决策点重采样，寻找输出容易翻转的步骤，再把诊断转成可检索的 consistency guidelines。作者自报该方法把 Pass^5 提升到 69.0%，Mean@5 提升到 81.0%；相似任务的 Pass^5 也提升 13 个百分点。[4][5]
+
+代码工件确实存在，但不是 9 月 15 日才首次出现。精确 commit `bfff8238a0a8` 在 8 月已经加入 consistency pipeline、配置和测试；当前开源仓库继续保留相关实现。[6][7]
+
+**为什么重要：** 支付核对、合同检查等高责任任务不能靠平均准确率掩盖同任务的偶发失败。Pass^k 适合和 Mean@k、可验证后重试的 Pass@k、人工干预率一起使用。
+
+**建议动作：** 在自有高风险任务集上固定模型、温度、工具和环境，每个任务重复运行至少 3 次；记录 Pass^k、轨迹差异和失败翻转点。先用确定性工具、人工确认或更窄策略修复不稳定步骤，再看平均准确率是否一起保持。
 
 ## AI 产品｜0 条
 
-产品 Changelog/Help Center/官方博客的代表性巡检没有发现今日窗口内且证据足够的新工作流、权限边界或真实 UI 变化。
+本轮没有新的产品对象、用户动作、审批、自动执行、日志、暂停或回滚能力达到正式门槛。
 
-## AI 宏观｜0 条
+## AI 宏观｜1 条
 
-本窗口没有发现同时满足“结构发生变化、受影响者明确、存在后续可验证指标”的宏观事件。
+### AI 省下来的时间没有消失，它把瓶颈推到了后面
+
+Google、Google DeepMind 与 MIT FutureTech 的联合研究使用约 1500 万条 Gemini、AI Mode 和 API 匿名交互，筛出约 36 万条可能属于科学工作流的交互；另整理 2690 个有论文和官方代码关联的专业科学模型，并调查了 637 名英美科学家。[2][3]
+
+约 47% 的受访科学家称每天使用某种 AI，31% 称每周使用；平均自报每周节省 6.9 小时。报告同时发现更多输出核验、未测试假设积压，以及物理实验和临床验证等下游瓶颈。[3]
+
+**为什么重要：** 采用率和节时不是最终产出。AI 加快上游任务后，组织可能把等待和成本推到专家复核、实验设备或审批环节；如果这些环节不扩容，节省时间不会自动变成更多科研成果。
+
+**建议动作：** 把 AI 采用看板从席位和调用量扩展到任务阶段：记录节省时间、复核时间、错误率、待处理队列和下游 SLA，按流程而不是按单一工具判断生产率。
 
 ## 模型大厂高管模型长文 / 访谈｜0 条
 
-本轮没有发现进入正式日报的模型负责人高价值原创长内容更新。
+本轮没有模型负责人关于训练、推理、能力边界或路线的新原创内容。
 
 ## AI 一线实践者观点｜0 条
 
-本轮没有发现带新数据、真实案例、失败复盘、技术解释或原创框架的一手实践者内容达到正式入选门槛。
+两条入选内容都是团队研究与技术工件，不作为个人实践者观点卡重复收录。
 
-## 代表性探针结果
+## 本轮审核但未入选
 
-- A2A Protocol releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Anthropic Cookbook releases：checked_no_match，检查 0 条最近 feed/release 项。
-- Anthropic sitemap：checked_no_match，检查 120 条最近 feed/release 项。
-- AutoGen releases：checked_no_match，检查 10 条最近 feed/release 项。
-- AWS Architecture RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- AWS Database RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS ML Blog RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Networking RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- AWS Public Sector RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Security RSS：candidate_only，检查 20 条最近 feed/release 项。
-- AWS Storage RSS：candidate_only，检查 20 条最近 feed/release 项。
-- Browser Use releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Claude Code releases：candidate_only，检查 10 条最近 feed/release 项。
-- CrewAI releases：checked_no_match，检查 10 条最近 feed/release 项。
-- GitHub Copilot Changelog feed：candidate_only，检查 10 条最近 feed/release 项。
-- Google Agent Development Kit releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Google Blog sitemap：candidate_only，检查 120 条最近 feed/release 项。
-- Google Innovation & AI RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- Google Products & Platforms RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- Google Security RSS：checked_no_match，检查 20 条最近 feed/release 项。
-- Hugging Face Blog：candidate_only，检查 40 条最近 feed/release 项。
-- Kimi Code releases：candidate_only，检查 10 条最近 feed/release 项。
-- LangGraph releases：checked_no_match，检查 10 条最近 feed/release 项。
-- LlamaIndex releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Microsoft Agent Framework releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Moonshot AI Kimi GitHub releases：checked_no_match，检查 0 条最近 feed/release 项。
-- NVIDIA NeMo GitHub releases：checked_no_match，检查 10 条最近 feed/release 项。
-- OpenAI Agents SDK releases：checked_no_match，检查 10 条最近 feed/release 项。
-- OpenAI Codex releases：candidate_only，检查 10 条最近 feed/release 项。
-- OpenAI Cookbook releases：checked_no_match，检查 0 条最近 feed/release 项。
-- OpenAI sitemap：candidate_only，检查 120 条最近 feed/release 项。
-- OpenHands releases：checked_no_match，检查 10 条最近 feed/release 项。
-- Simon Willison atom：candidate_only，检查 30 条最近 feed/release 项。
-- SWE-agent releases：checked_no_match，检查 10 条最近 feed/release 项。
+- AWS IAM 最小权限文章：`checked_no_match`。正文是一套 IAM Access Analyzer、IaC 与 CI/CD 自动修复流程，虽然监控示例提到 Amazon Bedrock 可用性，但没有模型、Agent 架构、AI 产品工作流或 AI 产业结构增量。[1]
 
-## 覆盖与缺口
+## 去重与日期
 
-- 主注册信源连通性状态：not_checked 97（仅可访问、未解析内容变化）、access_blocked 7、mechanical_failure 7。
-- 日期解析探针状态：checked_no_match 21、candidate_only 13。
-- OpenAI News / Research 等普通抓取仍可能返回 403；本轮如实记录为 access_blocked，没有把 403 写成无内容。
-- X 官方 API 仍未配置 OAuth；只使用公开网页与非 X 替代源，不声称完成闭源或登录墙覆盖。
-
-## 今日判断
-
-1. 早晨窗口天然偏静默，尤其是需要欧美官方正文或产品变更的主线。
-2. 代表性 feed/release 巡检没有给出足够强的新证据，因此维持高阈值比凑日报更重要。
-3. 本轮主要价值在于确认“没有正式新增”并同步覆盖状态，而不是重复昨日事件。
-
-## 建议行动
-
-- 继续等待同日后续窗口；如果欧美官方源在北京时间白天/晚间发布正式材料，再进入同日合并。
-- 对 access_blocked 的关键站点优先准备浏览器或官方 API 替代路径，避免把封锁误判成静默。
-- 保持 topics 候选池为空，不自动制造选题。
+- IBM 研究论文 v1 在 2026 年 9 月 8 日提交，Hugging Face 上的 IBM Research 文章在 9 月 15 日发布；本次按一个研究事件合并，保留真实 `event_date=2026-09-08`，标记为 catch-up，而不是写成今天首次上线。[4][5]
+- Google 博客正文明确标注 2026 年 9 月 15 日，但没有时区和时分。本记录保留 date-only，没有把 Sitemap `lastmod` 当发布日期。[2]
+- 当日历史库没有找到相同稳定 ID、canonical URL 或同主题既有事件，净新增 2 条。
 
 ## 证据边界
 
-- 本轮没有正式入选事件，因此没有外部事实卡片和引用账本条目。
-- 结论仅表示“在本次有界代表性巡检中未见达到门槛的新增正式信号”，不代表全网没有任何 AI 动态。
+- IBM 的 77.4%、53.0%、69.0% 和 81.0% 均为作者在单一基准、Agent 架构和模型上的自报结果，没有独立复现。[4][5]
+- Google 的使用率与 6.9 小时来自英美 637 名科学家的自报问卷；交互日志只覆盖 Google 自有样本并排除企业流量，不能外推为全行业生产率。[3]
+- 本轮没有把 Feed 标题或 Sitemap `lastmod` 直接升级为 Signal。三条新候选都打开一手正文，研究条目还核验了论文、PDF 和代码工件。
 
 ## 飞书短版
 
-**一句话结论：** 本轮完成 111 个注册源连通性审计和 34 个增量发现探针；候选等待正文与发布日期核验。  
-**判断：** 不为数量降标，继续等同日后续窗口。  
-**覆盖：** not_checked 97，access_blocked 7，mechanical_failure 7；日期解析探针 checked_no_match 21。  
-**结果：** previous_count=0，new_count=0，updated_count=0，total_count=0。
+**一句话结论：** 3 个真新增候选完成正文核验，新增 2 条 P1；1 条普通 IAM 自动化排除。
+
+**Agent 架构：** 平均成功率会藏住重复运行的不稳定。IBM 团队在 AppWorld 上报告 Mean@5 77.4%，但 Pass^5 只有 53.0%；上线评测应把 Pass^k、Mean@k 和 Pass@k 分开。[4][5]
+
+**AI 宏观：** 637 名英美科学家的问卷显示，AI 自报节时接近每周 7 小时，但核验、实验和临床验证开始接过瓶颈。[3]
+
+**建议动作：** 一边给高风险 Agent 增加重复运行可靠性指标，一边把企业 AI 采用看板补上复核成本、队列和下游 SLA。
+
+**边界：** 两组结果都来自研究发布方，尚无独立复现；Google 数据不能代表全部企业和国家。
+
+**结果：** previous_count=0，new_count=2，updated_count=0，total_count=2。
+
+## Sources
+
+[1] https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline
+[2] https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026
+[3] https://ai.google/static/documents/AI-in-Science.pdf
+[4] https://huggingface.co/blog/ibm-research/altk-evolve-consistency
+[5] https://arxiv.org/abs/2609.08832
+[6] https://github.com/AgentToolkit/altk-evolve/commit/bfff8238a0a897d591a7fee14953038f7adfdf4b
+[7] https://github.com/AgentToolkit/altk-evolve

@@ -1,5 +1,62 @@
 {
   "version": 1,
   "grounding_policy": "Each factual claim in daily-brief.md must cite an entry in this independent ledger. Sources are mechanically rendered by ascending id.",
-  "sources": []
+  "sources": [
+    {
+      "id": 1,
+      "title": "Operationalizing least privilege: Automate IAM remediation through your CI/CD pipeline",
+      "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline",
+      "publisher": "AWS Security Blog",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-16T00:06:56+08:00"
+    },
+    {
+      "id": 2,
+      "title": "New insights from Google's AI & Economy ATLAS",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026",
+      "publisher": "Google",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-16T00:06:56+08:00"
+    },
+    {
+      "id": 3,
+      "title": "AI in Science: Early Insights",
+      "url": "https://ai.google/static/documents/AI-in-Science.pdf",
+      "publisher": "Google / Google DeepMind / MIT FutureTech",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-16T00:06:56+08:00"
+    },
+    {
+      "id": 4,
+      "title": "Your Agent Aced the Task. Will It Do It Again?",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "publisher": "IBM Research / Hugging Face",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-16T00:06:56+08:00"
+    },
+    {
+      "id": 5,
+      "title": "Closing the Consistency Gap: Self-Evolving Agents That Learn to Stay on Course",
+      "url": "https://arxiv.org/abs/2609.08832",
+      "publisher": "IBM Research authors / arXiv",
+      "evidence_level": "primary_statement",
+      "accessed": "2026-09-16T00:06:56+08:00"
+    },
+    {
+      "id": 6,
+      "title": "ALTK-Evolve consistency pipeline commit bfff8238a0a8",
+      "url": "https://github.com/AgentToolkit/altk-evolve/commit/bfff8238a0a897d591a7fee14953038f7adfdf4b",
+      "publisher": "AgentToolkit / GitHub",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-16T00:06:56+08:00"
+    },
+    {
+      "id": 7,
+      "title": "ALTK-Evolve open-source repository",
+      "url": "https://github.com/AgentToolkit/altk-evolve",
+      "publisher": "AgentToolkit / GitHub",
+      "evidence_level": "confirmed",
+      "accessed": "2026-09-16T00:06:56+08:00"
+    }
+  ]
 }

@@ -2,11 +2,159 @@
   "schema_version": 1,
   "report_date": "2026-09-16",
   "timezone": "Asia/Shanghai",
-  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。",
+  "disclaimer_cn": "个人独立 AI 研究内容，不代表任何公司或机构。自动流程只生成 candidate，不自动发布。",
   "scope_label_cn": "当日增量 · 2026-09-16",
   "source_scope": {
     "type": "daily",
     "date": "2026-09-16"
   },
-  "topics": []
+  "topics": [
+    {
+      "id": "2026-09-16-agent-evals-need-pass-k",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "agent_architecture",
+      "source_signal_ids": [
+        "2026-09-08-ibm-altk-evolve-consistency-gap"
+      ],
+      "working_title_cn": "Agent 测评里最容易被平均数藏住的问题：同一任务下一次还能不能做对",
+      "core_tension_cn": "Mean@k 衡量平均能力，Pass^k 衡量连续可靠性。对高责任工作流，前者高而后者低，仍然不能放心上线。",
+      "why_now_cn": "IBM Research 刚把 consistency gap、逐决策点诊断和可复用指南放进一套公开论文、长文与代码工件，并给出同任务和相似任务结果。",
+      "target_audience_cn": [
+        "Agent 产品经理",
+        "AI 评测与平台团队",
+        "金融、法律和企业自动化负责人"
+      ],
+      "evidence_boundary_cn": "实验只覆盖 AppWorld、ReAct 与 GPT-4.1 等有限设置，数字来自作者自报，尚无独立复现。代码早于 9 月文章存在，不能写成当天首次上线。",
+      "source_urls": [
+        "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "Agent 准确率 77%，为什么真正能连续信任的任务只有 53%？",
+          "hook": "平均能做对，和下一次还能做对，是两件事。高风险 Agent 上线前，至少要补一项 Pass^k。",
+          "format": "8页图文卡",
+          "outline": [
+            "Mean@k 隐藏了什么",
+            "Pass^k 与 Pass@k 的区别",
+            "24.4 个百分点 consistency gap",
+            "逐决策点重采样怎么找翻转",
+            "指南怎样进入后续运行",
+            "为什么固定温度仍可能不稳定",
+            "作者实验的边界",
+            "高风险 Agent 评测清单"
+          ],
+          "visual_direction": "同一任务五次运行矩阵，分别计算 Mean@5、Pass^5 和 Pass@5，并标出失败翻转点",
+          "cta": "你现在的 Agent 评测，能看出同一个任务时好时坏吗？"
+        },
+        "twitter": {
+          "title": "Agent evals need Pass^k, not only average accuracy",
+          "hook": "A GPT-4.1 ReAct agent averaged 77.4% on AppWorld, but passed all five repeated runs on only 53.0% of tasks. Capability and repeatability are different axes.",
+          "format": "7帖 Thread",
+          "outline": [
+            "Mean@k versus Pass^k",
+            "why Pass^k is not Pass@k",
+            "the 24.4-point gap",
+            "decision-point resampling",
+            "guideline generation",
+            "single-benchmark evidence boundary",
+            "a production eval contract"
+          ],
+          "visual_direction": "three-metric diagram comparing average success, every-run success, and at-least-one success",
+          "cta": "What is the Pass^k of your highest-risk agent task?"
+        },
+        "wechat": {
+          "title": "别再只看 Agent 平均准确率：一套面向重复可靠性的评测合同",
+          "hook": "一个 Agent 五次平均通过 77.4%，不代表它能稳定工作。IBM Research 的新研究提供了一个更适合生产系统的拆法。",
+          "format": "2400—3200字评测方法文",
+          "outline": [
+            "平均准确率为什么不够",
+            "Mean@k、Pass^k 与 Pass@k",
+            "consistency gap 的计算",
+            "逐决策点诊断方法",
+            "指南、人工门和确定性工具",
+            "模型波动与环境波动如何分开",
+            "论文和代码的证据边界",
+            "高风险工作流验收模板"
+          ],
+          "visual_direction": "指标定义表加重复运行轨迹图，区分模型、工具和环境三类不稳定来源",
+          "cta": "文末附一份可直接加入 Agent 测评 Case 的重复可靠性字段表。"
+        }
+      }
+    },
+    {
+      "id": "2026-09-16-ai-productivity-shifts-bottlenecks",
+      "status": "candidate",
+      "timeliness": "this_week",
+      "priority": "A",
+      "topic_lane": "ai_macro",
+      "source_signal_ids": [
+        "2026-09-15-google-ai-science-workflow-bottlenecks"
+      ],
+      "working_title_cn": "AI 节省时间之后，为什么组织反而会多出一条核验队列",
+      "core_tension_cn": "上游生成更快不等于最终产出更多；复核、实验、临床验证和审批容量不变时，瓶颈只会向后移动。",
+      "why_now_cn": "Google、Google DeepMind 与 MIT FutureTech 的新研究同时给出使用率、节时、自报复核成本和未测试假设积压，适合把 AI 采用从席位指标改写成流程指标。",
+      "target_audience_cn": [
+        "企业 AI 产品经理",
+        "组织效率与运营负责人",
+        "科研和专业服务团队"
+      ],
+      "evidence_boundary_cn": "交互日志来自 Google 自有产品并排除企业流量；6.9 小时是 637 名英美科学家的自报，不是随机对照或实际产出增量。",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026"
+      ],
+      "platforms": {
+        "xiaohongshu": {
+          "title": "AI 每周省 7 小时，为什么团队还是会更忙？",
+          "hook": "因为生成变快后，核验、实验和审批接过了排队。只看节省时间，很容易把瓶颈搬家误写成生产率提升。",
+          "format": "8页图文卡",
+          "outline": [
+            "637 名科学家的自报结果",
+            "15M 交互样本来自哪里",
+            "AI 先加速了哪些步骤",
+            "核验税怎么出现",
+            "未测试假设为何积压",
+            "瓶颈怎样移到实验和临床验证",
+            "研究样本的边界",
+            "企业 AI 采用看板该补什么"
+          ],
+          "visual_direction": "科研流程前后对比图，显示上游耗时下降、下游队列变长和总产出未必同步增长",
+          "cta": "你们的 AI 项目是在消灭瓶颈，还是把瓶颈推给下一个团队？"
+        },
+        "twitter": {
+          "title": "AI time savings can move the bottleneck instead of removing it",
+          "hook": "Google's science study reports 6.9 self-reported hours saved per week, alongside more validation work and a growing backlog of untested hypotheses.",
+          "format": "6帖 Thread",
+          "outline": [
+            "what the survey measured",
+            "where the interaction data came from",
+            "self-reported time savings",
+            "validation cost and hypothesis backlog",
+            "sample and causality limits",
+            "workflow metrics beyond seats and usage"
+          ],
+          "visual_direction": "workflow queue diagram before and after upstream AI acceleration",
+          "cta": "Which downstream queue grew after your team adopted AI?"
+        },
+        "wechat": {
+          "title": "AI 省下来的时间去了哪里：从科研样本看组织瓶颈转移",
+          "hook": "一项新研究报告科学家每周自报节省近 7 小时，却也发现更多核验和未测试假设。生产率问题需要按整条流程重算。",
+          "format": "2600—3400字数据解读",
+          "outline": [
+            "三组数据和各自样本",
+            "使用率与节时结果",
+            "核验税和假设积压",
+            "物理实验与临床验证的新瓶颈",
+            "为什么采用率不等于产出",
+            "Google 自有样本的偏差",
+            "企业流程如何做任务级测量",
+            "AI 采用看板字段清单"
+          ],
+          "visual_direction": "事实、作者结论、不能外推项三栏证据表，加一张端到端流程队列图",
+          "cta": "附一份从席位利用率升级到流程生产率的看板字段表。"
+        }
+      }
+    }
+  ]
 }
