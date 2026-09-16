@@ -1,14 +1,448 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-16T00:00:00+08:00",
+  "generated_at": "2026-09-16T09:51:23+08:00",
   "window": {
-    "start": "2026-09-12T16:00:00+08:00",
-    "end": "2026-09-16T00:00:00+08:00",
+    "start": "2026-09-13T01:51:23+08:00",
+    "end": "2026-09-16T09:51:23+08:00",
     "timezone": "Asia/Shanghai"
   },
-  "candidate_count": 3,
-  "new_in_run_count": 3,
+  "candidate_count": 32,
+  "new_in_run_count": 29,
   "new_candidates": [
+    {
+      "source_name": "AWS ML Blog RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "title": "Optimizing cost and latency with Amazon Bedrock prompt caching",
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching/",
+      "published_or_lastmod_at": "2026-09-15T16:18:19Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS ML Blog RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "title": "Build an AI-powered product tagging system with Amazon SageMaker serverless model customization",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization/",
+      "published_or_lastmod_at": "2026-09-15T16:11:36Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS ML Blog RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "title": "Announcing instance preference lists for Amazon SageMaker AI training jobs",
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs/",
+      "published_or_lastmod_at": "2026-09-15T16:01:47Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Security RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "AWS STS simplifies session token size limits and adds session token size monitoring",
+      "url": "https://aws.amazon.com/blogs/security/aws-sts-simplifies-session-token-size-limits-and-adds-session-token-size-monitoring/",
+      "published_or_lastmod_at": "2026-09-15T22:21:59Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Security RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Architecting resilient authentication with Amazon Cognito multi-Region replication",
+      "url": "https://aws.amazon.com/blogs/security/architecting-resilient-authentication-with-amazon-cognito-multi-region-replication/",
+      "published_or_lastmod_at": "2026-09-15T19:00:52Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Storage RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/storage/feed/",
+      "title": "How Precisely transforms user experience with AI agents using Amazon S3 Vectors",
+      "url": "https://aws.amazon.com/blogs/storage/how-precisely-transforms-user-experience-with-ai-agents-using-amazon-s3-vectors/",
+      "published_or_lastmod_at": "2026-09-15T19:32:29Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Claude Code releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
+      "title": "v2.1.273",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.273",
+      "published_or_lastmod_at": "2026-09-15T20:23:03Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "GitHub Copilot Changelog feed",
+      "adapter": "rss",
+      "source_url": "https://github.blog/changelog/label/copilot/feed/",
+      "title": "GitHub Copilot suggests custom properties definitions",
+      "url": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
+      "published_or_lastmod_at": "2026-09-15T19:07:47Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Agent Development Kit releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/google/adk-python/releases.atom",
+      "title": "v2.9.1",
+      "url": "https://github.com/google/adk-python/releases/tag/v2.9.1",
+      "published_or_lastmod_at": "2026-09-15T18:03:42Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/products/gemini-app/household-chores-tips/",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/household-chores-tips/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/nevada-clean-energy-fund/",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/nevada-clean-energy-fund/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/models-and-research/google-research/wildfire-tracking-ai/",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/wildfire-tracking-ai/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/company-news/outreach-and-initiatives/google-org/ai-government-innovation-recipients/",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/google-org/ai-government-innovation-recipients/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/products-and-platforms/devices/pixel/september-2026-pixel-drop/",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/september-2026-pixel-drop/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Innovation & AI RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/innovation-and-ai/rss/",
+      "title": "Building AI to accelerate science and improve lives",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "published_or_lastmod_at": "2026-09-15T16:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Innovation & AI RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/innovation-and-ai/rss/",
+      "title": "AI for everyone in every language",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "published_or_lastmod_at": "2026-09-15T16:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Innovation & AI RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/innovation-and-ai/rss/",
+      "title": "Ask a Scientist: How can researchers use AI to spot a wildfire?",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/wildfire-tracking-ai/",
+      "published_or_lastmod_at": "2026-09-15T16:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Products & Platforms RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/products-and-platforms/rss/",
+      "title": "September Pixel Drop: New Pixel VIP updates, Pixel Watch features, and more",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/september-2026-pixel-drop/",
+      "published_or_lastmod_at": "2026-09-15T18:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.155.0-alpha.9",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.9",
+      "published_or_lastmod_at": "2026-09-16T01:38:01Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.155.0-alpha.8",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.8",
+      "published_or_lastmod_at": "2026-09-15T22:29:30Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.155.0-alpha.7",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.7",
+      "published_or_lastmod_at": "2026-09-15T21:12:08Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/expanding-ai-access-us-government/",
+      "url": "https://openai.com/index/expanding-ai-access-us-government/",
+      "published_or_lastmod_at": "2026-09-16T01:16:26.200000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Gemini Live audio",
+      "url": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+      "published_or_lastmod_at": "2026-09-15T22:47:07Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    }
+  ],
+  "candidates": [
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.155.0-alpha.9",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.9",
+      "published_or_lastmod_at": "2026-09-16T01:38:01Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://openai.com/sitemap.xml",
+      "title": "https://openai.com/index/expanding-ai-access-us-government/",
+      "url": "https://openai.com/index/expanding-ai-access-us-government/",
+      "published_or_lastmod_at": "2026-09-16T01:16:26.200000Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Simon Willison atom",
+      "adapter": "atom",
+      "source_url": "https://simonwillison.net/atom/everything/",
+      "title": "Gemini Live audio",
+      "url": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+      "published_or_lastmod_at": "2026-09-15T22:47:07Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.155.0-alpha.8",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.8",
+      "published_or_lastmod_at": "2026-09-15T22:29:30Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Security RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "AWS STS simplifies session token size limits and adds session token size monitoring",
+      "url": "https://aws.amazon.com/blogs/security/aws-sts-simplifies-session-token-size-limits-and-adds-session-token-size-monitoring/",
+      "published_or_lastmod_at": "2026-09-15T22:21:59Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "OpenAI Codex releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/openai/codex/releases.atom",
+      "title": "0.155.0-alpha.7",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.155.0-alpha.7",
+      "published_or_lastmod_at": "2026-09-15T21:12:08Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Claude Code releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/anthropics/claude-code/releases.atom",
+      "title": "v2.1.273",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.273",
+      "published_or_lastmod_at": "2026-09-15T20:23:03Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Storage RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/storage/feed/",
+      "title": "How Precisely transforms user experience with AI agents using Amazon S3 Vectors",
+      "url": "https://aws.amazon.com/blogs/storage/how-precisely-transforms-user-experience-with-ai-agents-using-amazon-s3-vectors/",
+      "published_or_lastmod_at": "2026-09-15T19:32:29Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "GitHub Copilot Changelog feed",
+      "adapter": "rss",
+      "source_url": "https://github.blog/changelog/label/copilot/feed/",
+      "title": "GitHub Copilot suggests custom properties definitions",
+      "url": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
+      "published_or_lastmod_at": "2026-09-15T19:07:47Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS Security RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Architecting resilient authentication with Amazon Cognito multi-Region replication",
+      "url": "https://aws.amazon.com/blogs/security/architecting-resilient-authentication-with-amazon-cognito-multi-region-replication/",
+      "published_or_lastmod_at": "2026-09-15T19:00:52Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Agent Development Kit releases",
+      "adapter": "atom",
+      "source_url": "https://github.com/google/adk-python/releases.atom",
+      "title": "v2.9.1",
+      "url": "https://github.com/google/adk-python/releases/tag/v2.9.1",
+      "published_or_lastmod_at": "2026-09-15T18:03:42Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Products & Platforms RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/products-and-platforms/rss/",
+      "title": "September Pixel Drop: New Pixel VIP updates, Pixel Watch features, and more",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/september-2026-pixel-drop/",
+      "published_or_lastmod_at": "2026-09-15T18:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS ML Blog RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "title": "Optimizing cost and latency with Amazon Bedrock prompt caching",
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching/",
+      "published_or_lastmod_at": "2026-09-15T16:18:19Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS ML Blog RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "title": "Build an AI-powered product tagging system with Amazon SageMaker serverless model customization",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization/",
+      "published_or_lastmod_at": "2026-09-15T16:11:36Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "AWS ML Blog RSS",
+      "adapter": "rss",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "title": "Announcing instance preference lists for Amazon SageMaker AI training jobs",
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs/",
+      "published_or_lastmod_at": "2026-09-15T16:01:47Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Hugging Face Blog",
+      "adapter": "rss",
+      "source_url": "https://huggingface.co/blog/feed.xml",
+      "title": "Your Agent Aced the Task. Will It Do It Again?",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "published_or_lastmod_at": "2026-09-15T16:00:44Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Innovation & AI RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/innovation-and-ai/rss/",
+      "title": "AI for everyone in every language",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "published_or_lastmod_at": "2026-09-15T16:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Innovation & AI RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/innovation-and-ai/rss/",
+      "title": "Building AI to accelerate science and improve lives",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "published_or_lastmod_at": "2026-09-15T16:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Innovation & AI RSS",
+      "adapter": "rss",
+      "source_url": "https://blog.google/innovation-and-ai/rss/",
+      "title": "Ask a Scientist: How can researchers use AI to spot a wildfire?",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/wildfire-tracking-ai/",
+      "published_or_lastmod_at": "2026-09-15T16:00:00Z",
+      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
     {
       "source_name": "AWS Security RSS",
       "adapter": "rss",
@@ -17,6 +451,42 @@
       "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
       "published_or_lastmod_at": "2026-09-15T15:53:51Z",
       "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/products-and-platforms/devices/pixel/september-2026-pixel-drop/",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/september-2026-pixel-drop/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "Google Blog sitemap",
@@ -28,40 +498,65 @@
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
-      "source_name": "Hugging Face Blog",
-      "adapter": "rss",
-      "source_url": "https://huggingface.co/blog/feed.xml",
-      "title": "Your Agent Aced the Task. Will It Do It Again?",
-      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "published_or_lastmod_at": "2026-09-15T16:00:44Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    }
-  ],
-  "candidates": [
-    {
-      "source_name": "Hugging Face Blog",
-      "adapter": "rss",
-      "source_url": "https://huggingface.co/blog/feed.xml",
-      "title": "Your Agent Aced the Task. Will It Do It Again?",
-      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "published_or_lastmod_at": "2026-09-15T16:00:44Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
-    },
-    {
-      "source_name": "AWS Security RSS",
-      "adapter": "rss",
-      "source_url": "https://aws.amazon.com/blogs/security/feed/",
-      "title": "Operationalizing least privilege: Automate IAM remediation through your CI/CD pipeline",
-      "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
-      "published_or_lastmod_at": "2026-09-15T15:53:51Z",
-      "evidence_boundary": "feed/release timestamp; body and inclusion still require editorial verification"
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     },
     {
       "source_name": "Google Blog sitemap",
       "adapter": "sitemap_lastmod",
       "source_url": "https://blog.google/en-us/sitemap.xml",
-      "title": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
+      "title": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/products/gemini-app/household-chores-tips/",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/household-chores-tips/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/models-and-research/google-research/wildfire-tracking-ai/",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/wildfire-tracking-ai/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/nevada-clean-energy-fund/",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/nevada-clean-energy-fund/",
+      "published_or_lastmod_at": "2026-09-15T00:00:00Z",
+      "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
+    },
+    {
+      "source_name": "Google Blog sitemap",
+      "adapter": "sitemap_lastmod",
+      "source_url": "https://blog.google/en-us/sitemap.xml",
+      "title": "https://blog.google/company-news/outreach-and-initiatives/google-org/ai-government-innovation-recipients/",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/google-org/ai-government-innovation-recipients/",
       "published_or_lastmod_at": "2026-09-15T00:00:00Z",
       "evidence_boundary": "sitemap lastmod only; verify article datePublished and body"
     }
